@@ -1,0 +1,1423 @@
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Assigned Driver generic 1.00.a for instance plb_v46_0
+plb_v46_0 has been added to the project
+Assigned Driver cpu 1.15.a for instance microblaze_0
+microblaze_0 has been added to the project
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+Assigned Driver bram 3.03.a for instance xps_bram_if_cntlr_0
+xps_bram_if_cntlr_0 has been added to the project
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+ERROR:EDK:4125 - IPNAME: xps_bram_if_cntlr, INSTANCE: xps_bram_if_cntlr_0, PARAMETER: C_BASEADDR - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+ERROR:EDK:4125 - IPNAME: xps_bram_if_cntlr, INSTANCE: xps_bram_if_cntlr_0, PARAMETER: C_HIGHADDR - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+ERROR:EDK:4125 - IPNAME: xps_bram_if_cntlr, INSTANCE: xps_bram_if_cntlr_0, PARAMETER: C_SPLB_NATIVE_DWIDTH - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+WARNING:EDK:2137 - Peripheral xps_bram_if_cntlr_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:2137 - Peripheral xps_bram_if_cntlr_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+bram_block_0 has been added to the project
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:2137 - Peripheral xps_bram_if_cntlr_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:2137 - Peripheral xps_bram_if_cntlr_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+Assigned Driver uartlite 2.01.a for instance xps_uartlite_0
+xps_uartlite_0 has been added to the project
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+ERROR:EDK:4125 - IPNAME: xps_uartlite, INSTANCE: xps_uartlite_0, PARAMETER: C_BASEADDR - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+ERROR:EDK:4125 - IPNAME: xps_uartlite, INSTANCE: xps_uartlite_0, PARAMETER: C_HIGHADDR - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+WARNING:EDK:2137 - Peripheral xps_bram_if_cntlr_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_uartlite_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:2137 - Peripheral xps_bram_if_cntlr_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_uartlite_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+Assigned Driver gpio 3.01.a for instance xps_gpio_0
+xps_gpio_0 has been added to the project
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+ERROR:EDK:4125 - IPNAME: xps_gpio, INSTANCE: xps_gpio_0, PARAMETER: C_BASEADDR - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+ERROR:EDK:4125 - IPNAME: xps_gpio, INSTANCE: xps_gpio_0, PARAMETER: C_HIGHADDR - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+WARNING:EDK:2137 - Peripheral xps_bram_if_cntlr_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_uartlite_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_gpio_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:2137 - Peripheral xps_bram_if_cntlr_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_uartlite_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_gpio_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+Assigned Driver gpio 3.01.a for instance xps_gpio_1
+xps_gpio_1 has been added to the project
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+ERROR:EDK:4125 - IPNAME: xps_gpio, INSTANCE: xps_gpio_1, PARAMETER: C_BASEADDR - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+ERROR:EDK:4125 - IPNAME: xps_gpio, INSTANCE: xps_gpio_1, PARAMETER: C_HIGHADDR - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+WARNING:EDK:2137 - Peripheral xps_bram_if_cntlr_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_uartlite_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_gpio_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_gpio_1 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:2137 - Peripheral xps_bram_if_cntlr_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_uartlite_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_gpio_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_gpio_1 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:2137 - Peripheral xps_bram_if_cntlr_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_uartlite_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_gpio_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_gpio_1 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:2137 - Peripheral xps_bram_if_cntlr_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_uartlite_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_gpio_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_gpio_1 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:2137 - Peripheral xps_bram_if_cntlr_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_uartlite_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_gpio_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_gpio_1 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 17 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:2137 - Peripheral xps_uartlite_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_gpio_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_gpio_1 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 17 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 39 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:2137 - Peripheral xps_uartlite_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral xps_gpio_1 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 17 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 39 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_1) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 47 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:2137 - Peripheral xps_uartlite_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 17 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 30 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 39 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_1) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 47 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+Save project successfully
+Make instance xps_uartlite_0 port RX external with net as port name
+Instance xps_uartlite_0 port RX connector undefined, using xps_uartlite_0_RX
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 17 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 30 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 39 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_1) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 47 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 17 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 30 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 39 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_1) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 47 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+Make instance xps_uartlite_0 port TX external with net as port name
+Instance xps_uartlite_0 port TX connector undefined, using xps_uartlite_0_TX
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 17 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 30 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 39 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_1) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 47 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 17 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 30 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 39 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_1) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 47 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+Make instance plb_v46_0 port PLB_Clk external with net as port name
+Instance plb_v46_0 port PLB_Clk connector undefined, using plb_v46_0_PLB_Clk
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 17 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 30 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 39 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_1) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 47 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 17 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 30 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 39 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_1) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 47 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 17 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 30 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 39 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_1) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 47 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 17 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 30 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 39 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_1) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 47 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 17 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 30 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 39 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_1) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 47 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 17 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 30 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 39 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_1) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 47 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 17 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 30 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 39 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_1) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 47 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 17 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 30 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 39 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_1) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 47 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 17 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 30 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 39 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_1) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 47 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 17 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 30 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 39 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_1) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 47 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+WARNING:EDK:3967 - xps_bram_if_cntlr (xps_bram_if_cntlr_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 17 
+WARNING:EDK:3967 - xps_uartlite (xps_uartlite_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 30 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_0) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 39 
+WARNING:EDK:3967 - xps_gpio (xps_gpio_1) - ADDRESS specified by PARAMETER C_BASEADDR is ignored - C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 47 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 
+Address Map for Processor microblaze_0
+Address Map for Processor microblaze_0
+  (0000000000-0x0000ffff) xps_bram_if_cntlr_0	plb_v46_0
+  (0x81400000-0x8140ffff) xps_gpio_1	plb_v46_0
+  (0x81420000-0x8142ffff) xps_gpio_0	plb_v46_0
+  (0x84000000-0x8400ffff) xps_uartlite_0	plb_v46_0
+Generated Addresses Successfully
+Save project successfully
+Overriding Xilinx file <TextEditor.cfg> with local file <C:/Xilinx/14.7/ISE_DS/EDK/data/TextEditor.cfg>
+
+********************************************************************************
+At Local date and time: Wed Sep 21 17:13:57 2022
+ make -f practica2.make bits started...
+"****************************************************"
+"Creating system netlist for hardware specification.."
+"****************************************************"
+platgen -p xc3s1000ft256-5 -lang vhdl -intstyle default    -msg __xps/ise/xmsgprops.lst practica2.mhs
+
+Release 14.7 - platgen Xilinx EDK 14.7 Build EDK_P.20131013
+ (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+
+Command Line: platgen -p xc3s1000ft256-5 -lang vhdl -intstyle default -msg
+__xps/ise/xmsgprops.lst practica2.mhs 
+
+Parse C:/Users/Rpalomares/Dropbox/MasterII/SE/ws/practica2/practica2.mhs ...
+
+Read MPD definitions ...
+
+Overriding IP level properties ...
+
+Computing clock values...
+INFO:EDK:1432 - Frequency for Top-Level Input Clock 'Clk_pin' is not specified.
+   Clock DRCs will not be performed for IPs connected to that clock port, unless
+   they are connected through the clock generator IP. 
+
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00007fff) xps_bram_if_cntlr_0	plb_v46_0
+  (0x81400000-0x8140ffff) xps_gpio_1	plb_v46_0
+  (0x81420000-0x8142ffff) xps_gpio_0	plb_v46_0
+  (0x84000000-0x8400ffff) xps_uartlite_0	plb_v46_0
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_NUM_SLAVES value to 4 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_MID_WIDTH value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 81 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_DWIDTH value to 32 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 83 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:bram_block_0 - tool is overriding
+   PARAMETER C_MEMSIZE value to 0x8000 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+INFO:EDK:4130 - IPNAME: xps_uartlite, INSTANCE:xps_uartlite_0 - tool is
+   overriding PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_02_a
+   \data\xps_uartlite_v2_1_0.mpd line 84 
+INFO:EDK:4130 - IPNAME: xps_gpio, INSTANCE:xps_gpio_0 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_gpio_v2_00_a\dat
+   a\xps_gpio_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: xps_gpio, INSTANCE:xps_gpio_1 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_gpio_v2_00_a\dat
+   a\xps_gpio_v2_1_0.mpd line 82 
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: plb_v46, INSTANCE: plb_v46_0 - 2 master(s) : 4 slave(s) 
+
+Checking port drivers...
+WARNING:EDK:4180 - PORT: EXT_BRK, CONNECTOR: Ext_BRK - No driver found. Port
+   will be driven to GND -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 415 
+WARNING:EDK:4180 - PORT: EXT_NM_BRK, CONNECTOR: Ext_NM_BRK - No driver found.
+   Port will be driven to GND -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 416 
+
+Performing Clock DRCs...
+INFO:EDK:4060 - INSTANCE: microblaze_0, PARAMETER: C_FREQ - Did not implement
+   clock DRCs for the parameter. Top-level frequency could not be propagated to
+   this IP. Please make sure that you have specified the frequency of the
+   top-level clock port, and that the clocks are properly connected.
+INFO:EDK:4060 - INSTANCE: xps_uartlite_0, PARAMETER: C_SPLB_CLK_FREQ_HZ - Did
+   not implement clock DRCs for the parameter. Top-level frequency could not be
+   propagated to this IP. Please make sure that you have specified the frequency
+   of the top-level clock port, and that the clocks are properly connected.
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_PLB value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 233 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_LMB value to 0 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 234 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_I_PLB value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 236 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_I_LMB value to 0 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 237 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ADDR_TAG_BITS value to 0 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 337 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_ADDR_TAG value to 0 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 367 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+INFO: The microblaze_0 core has constraints automatically generated by XPS in
+implementation/microblaze_0_wrapper/microblaze_0_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+
+Managing cache ...
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:bram_block_0 -
+C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 38 -
+elaborating IP
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 0.00 seconds
+
+Constructing platform-level connectivity ...
+Completion time: 0.00 seconds
+
+Writing (top-level) BMM ...
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+
+Running XST synthesis ...
+
+INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+INSTANCE:plb_v46_0 -
+C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 13 -
+Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.7/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.7/ISE_DS/ISE/spartan3/data/spartan3.acd>
+WARNING:EDK:2631 - Unable to remove directory
+   'C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\synthesis\xst\'
+INSTANCE:microblaze_0 -
+C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 20 -
+Running XST synthesis
+WARNING:EDK:2631 - Unable to remove directory
+   'C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\synthesis\xst\'
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.7/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.7/ISE_DS/ISE/spartan3/data/spartan3.acd>
+ERROR:HDLParsers - Cannot rename dependency database for library "microblaze_v8_50_c", file is "xst/microblaze_v8_50_c/hdpdeps.ref", Temporary database file "C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\synthesis\xst\microblaze_v8_50_c\xil_2640_9" will remain.  System error message is:  File exists
+ERROR:HDLParsers - Cannot rename dependency database for library "microblaze_v8_50_c", file is "xst/microblaze_v8_50_c/hdpdeps.ref", Temporary database file "C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\synthesis\xst\microblaze_v8_50_c\xil_2640_11" will remain.  System error message is:  File exists
+ERROR:HDLParsers - Cannot rename dependency database for library "microblaze_v8_50_c", file is "xst/microblaze_v8_50_c/hdpdeps.ref", Temporary database file "C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\synthesis\xst\microblaze_v8_50_c\xil_2640_31" will remain.  System error message is:  File exists
+Trying to terminate Process...
+Writing filter settings....
+Done writing filter settings to:
+	C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\etc\practica2.filters
+Done writing Tab View settings to:
+	C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\etc\practica2.gui
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+
+********************************************************************************
+At Local date and time: Wed Sep 21 17:22:20 2022
+ make -f practica2.make bits started...
+"****************************************************"
+"Creating system netlist for hardware specification.."
+"****************************************************"
+platgen -p xc3s1000ft256-5 -lang vhdl -intstyle default    -msg __xps/ise/xmsgprops.lst practica2.mhs
+
+Release 14.7 - platgen Xilinx EDK 14.7 Build EDK_P.20131013
+ (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+
+Command Line: platgen -p xc3s1000ft256-5 -lang vhdl -intstyle default -msg
+__xps/ise/xmsgprops.lst practica2.mhs 
+
+Parse C:/Users/Rpalomares/Dropbox/MasterII/SE/ws/practica2/practica2.mhs ...
+
+Read MPD definitions ...
+
+Overriding IP level properties ...
+
+Computing clock values...
+INFO:EDK:1432 - Frequency for Top-Level Input Clock 'Clk_pin' is not specified.
+   Clock DRCs will not be performed for IPs connected to that clock port, unless
+   they are connected through the clock generator IP. 
+
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00007fff) xps_bram_if_cntlr_0	plb_v46_0
+  (0x81400000-0x8140ffff) xps_gpio_1	plb_v46_0
+  (0x81420000-0x8142ffff) xps_gpio_0	plb_v46_0
+  (0x84000000-0x8400ffff) xps_uartlite_0	plb_v46_0
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_NUM_SLAVES value to 4 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_MID_WIDTH value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 81 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_DWIDTH value to 32 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 83 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:bram_block_0 - tool is overriding
+   PARAMETER C_MEMSIZE value to 0x8000 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+INFO:EDK:4130 - IPNAME: xps_uartlite, INSTANCE:xps_uartlite_0 - tool is
+   overriding PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_02_a
+   \data\xps_uartlite_v2_1_0.mpd line 84 
+INFO:EDK:4130 - IPNAME: xps_gpio, INSTANCE:xps_gpio_0 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_gpio_v2_00_a\dat
+   a\xps_gpio_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: xps_gpio, INSTANCE:xps_gpio_1 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_gpio_v2_00_a\dat
+   a\xps_gpio_v2_1_0.mpd line 82 
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: plb_v46, INSTANCE: plb_v46_0 - 2 master(s) : 4 slave(s) 
+
+Checking port drivers...
+WARNING:EDK:4180 - PORT: EXT_BRK, CONNECTOR: Ext_BRK - No driver found. Port
+   will be driven to GND -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 415 
+WARNING:EDK:4180 - PORT: EXT_NM_BRK, CONNECTOR: Ext_NM_BRK - No driver found.
+   Port will be driven to GND -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 416 
+
+Performing Clock DRCs...
+INFO:EDK:4060 - INSTANCE: microblaze_0, PARAMETER: C_FREQ - Did not implement
+   clock DRCs for the parameter. Top-level frequency could not be propagated to
+   this IP. Please make sure that you have specified the frequency of the
+   top-level clock port, and that the clocks are properly connected.
+INFO:EDK:4060 - INSTANCE: xps_uartlite_0, PARAMETER: C_SPLB_CLK_FREQ_HZ - Did
+   not implement clock DRCs for the parameter. Top-level frequency could not be
+   propagated to this IP. Please make sure that you have specified the frequency
+   of the top-level clock port, and that the clocks are properly connected.
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_PLB value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 233 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_LMB value to 0 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 234 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_I_PLB value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 236 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_I_LMB value to 0 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 237 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ADDR_TAG_BITS value to 0 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 337 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_ADDR_TAG value to 0 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 367 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+INFO: The microblaze_0 core has constraints automatically generated by XPS in
+implementation/microblaze_0_wrapper/microblaze_0_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+
+Managing cache ...
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:bram_block_0 -
+C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 38 -
+elaborating IP
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 1.00 seconds
+
+Constructing platform-level connectivity ...
+Completion time: 0.00 seconds
+
+Writing (top-level) BMM ...
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+
+Running XST synthesis ...
+
+INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+INSTANCE:plb_v46_0 -
+C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 13 -
+Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.7/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.7/ISE_DS/ISE/spartan3/data/spartan3.acd>
+INSTANCE:microblaze_0 -
+C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 20 -
+Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.7/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.7/ISE_DS/ISE/spartan3/data/spartan3.acd>
+ERROR:HDLParsers - Cannot rename dependency database for library "microblaze_v8_50_c", file is "xst/microblaze_v8_50_c/hdpdeps.ref", Temporary database file "C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\synthesis\xst\microblaze_v8_50_c\xil_10096_43" will remain.  System error message is:  File exists
+ERROR:HDLParsers - Cannot rename dependency database for library "microblaze_v8_50_c", file is "xst/microblaze_v8_50_c/hdpdeps.ref", Temporary database file "C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\synthesis\xst\microblaze_v8_50_c\xil_10096_57" will remain.  System error message is:  File exists
+Trying to terminate Process...
+Writing filter settings....
+Done writing filter settings to:
+	C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\etc\practica2.filters
+Done writing Tab View settings to:
+	C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\etc\practica2.gui
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+
+********************************************************************************
+At Local date and time: Wed Sep 21 17:38:33 2022
+ make -f practica2.make bits started...
+"****************************************************"
+"Creating system netlist for hardware specification.."
+"****************************************************"
+platgen -p xc3s1000ft256-5 -lang vhdl -intstyle default    -msg __xps/ise/xmsgprops.lst practica2.mhs
+
+Release 14.7 - platgen Xilinx EDK 14.7 Build EDK_P.20131013
+ (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+
+Command Line: platgen -p xc3s1000ft256-5 -lang vhdl -intstyle default -msg
+__xps/ise/xmsgprops.lst practica2.mhs 
+
+Parse C:/Users/Rpalomares/Dropbox/MasterII/SE/ws/practica2/practica2.mhs ...
+
+Read MPD definitions ...
+
+Overriding IP level properties ...
+
+Computing clock values...
+INFO:EDK:1432 - Frequency for Top-Level Input Clock 'Clk_pin' is not specified.
+   Clock DRCs will not be performed for IPs connected to that clock port, unless
+   they are connected through the clock generator IP. 
+
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00007fff) xps_bram_if_cntlr_0	plb_v46_0
+  (0x81400000-0x8140ffff) xps_gpio_1	plb_v46_0
+  (0x81420000-0x8142ffff) xps_gpio_0	plb_v46_0
+  (0x84000000-0x8400ffff) xps_uartlite_0	plb_v46_0
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_NUM_SLAVES value to 4 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_MID_WIDTH value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 81 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_DWIDTH value to 32 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 83 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:bram_block_0 - tool is overriding
+   PARAMETER C_MEMSIZE value to 0x8000 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+INFO:EDK:4130 - IPNAME: xps_uartlite, INSTANCE:xps_uartlite_0 - tool is
+   overriding PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_02_a
+   \data\xps_uartlite_v2_1_0.mpd line 84 
+INFO:EDK:4130 - IPNAME: xps_gpio, INSTANCE:xps_gpio_0 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_gpio_v2_00_a\dat
+   a\xps_gpio_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: xps_gpio, INSTANCE:xps_gpio_1 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_gpio_v2_00_a\dat
+   a\xps_gpio_v2_1_0.mpd line 82 
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: plb_v46, INSTANCE: plb_v46_0 - 2 master(s) : 4 slave(s) 
+
+Checking port drivers...
+WARNING:EDK:4180 - PORT: EXT_BRK, CONNECTOR: Ext_BRK - No driver found. Port
+   will be driven to GND -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 415 
+WARNING:EDK:4180 - PORT: EXT_NM_BRK, CONNECTOR: Ext_NM_BRK - No driver found.
+   Port will be driven to GND -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 416 
+
+Performing Clock DRCs...
+INFO:EDK:4060 - INSTANCE: microblaze_0, PARAMETER: C_FREQ - Did not implement
+   clock DRCs for the parameter. Top-level frequency could not be propagated to
+   this IP. Please make sure that you have specified the frequency of the
+   top-level clock port, and that the clocks are properly connected.
+INFO:EDK:4060 - INSTANCE: xps_uartlite_0, PARAMETER: C_SPLB_CLK_FREQ_HZ - Did
+   not implement clock DRCs for the parameter. Top-level frequency could not be
+   propagated to this IP. Please make sure that you have specified the frequency
+   of the top-level clock port, and that the clocks are properly connected.
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_PLB value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 233 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_LMB value to 0 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 234 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_I_PLB value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 236 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_I_LMB value to 0 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 237 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ADDR_TAG_BITS value to 0 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 337 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_ADDR_TAG value to 0 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 367 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+INFO: The microblaze_0 core has constraints automatically generated by XPS in
+implementation/microblaze_0_wrapper/microblaze_0_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+
+Managing cache ...
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:bram_block_0 -
+C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 38 -
+elaborating IP
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 1.00 seconds
+
+Constructing platform-level connectivity ...
+Completion time: 0.00 seconds
+
+Writing (top-level) BMM ...
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+
+Running XST synthesis ...
+
+INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+INSTANCE:plb_v46_0 -
+C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 13 -
+Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.7/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.7/ISE_DS/ISE/spartan3/data/spartan3.acd>
+WARNING:EDK:2631 - Unable to remove directory
+   'C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\synthesis\xst\'
+INSTANCE:microblaze_0 -
+C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 20 -
+Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.7/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.7/ISE_DS/ISE/spartan3/data/spartan3.acd>
+ERROR:HDLParsers - Cannot rename dependency database for library "microblaze_v8_50_c", file is "xst/microblaze_v8_50_c/hdpdeps.ref", Temporary database file "C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\synthesis\xst\microblaze_v8_50_c\xil_5792_63" will remain.  System error message is:  File exists
+ERROR:HDLParsers - Cannot rename dependency database for library "microblaze_v8_50_c", file is "xst/microblaze_v8_50_c/hdpdeps.ref", Temporary database file "C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\synthesis\xst\microblaze_v8_50_c\xil_5792_105" will remain.  System error message is:  File exists
+Trying to terminate Process...
+Writing filter settings....
+Done writing filter settings to:
+	C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\etc\practica2.filters
+Done writing Tab View settings to:
+	C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\etc\practica2.gui
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+
+********************************************************************************
+At Local date and time: Wed Sep 28 15:21:23 2022
+ make -f practica2.make bits started...
+"****************************************************"
+"Creating system netlist for hardware specification.."
+"****************************************************"
+platgen -p xc3s1000ft256-5 -lang vhdl -intstyle default    -msg __xps/ise/xmsgprops.lst practica2.mhs
+
+Release 14.7 - platgen Xilinx EDK 14.7 Build EDK_P.20131013
+ (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+
+Command Line: platgen -p xc3s1000ft256-5 -lang vhdl -intstyle default -msg
+__xps/ise/xmsgprops.lst practica2.mhs 
+
+Parse C:/Users/Rpalomares/Dropbox/MasterII/SE/ws/practica2/practica2.mhs ...
+
+Read MPD definitions ...
+
+Overriding IP level properties ...
+
+Computing clock values...
+INFO:EDK:1432 - Frequency for Top-Level Input Clock 'Clk_pin' is not specified.
+   Clock DRCs will not be performed for IPs connected to that clock port, unless
+   they are connected through the clock generator IP. 
+
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00007fff) xps_bram_if_cntlr_0	plb_v46_0
+  (0x81400000-0x8140ffff) xps_gpio_1	plb_v46_0
+  (0x81420000-0x8142ffff) xps_gpio_0	plb_v46_0
+  (0x84000000-0x8400ffff) xps_uartlite_0	plb_v46_0
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_NUM_SLAVES value to 4 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_MID_WIDTH value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 81 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_DWIDTH value to 32 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 83 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:bram_block_0 - tool is overriding
+   PARAMETER C_MEMSIZE value to 0x8000 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+INFO:EDK:4130 - IPNAME: xps_uartlite, INSTANCE:xps_uartlite_0 - tool is
+   overriding PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_02_a
+   \data\xps_uartlite_v2_1_0.mpd line 84 
+INFO:EDK:4130 - IPNAME: xps_gpio, INSTANCE:xps_gpio_0 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_gpio_v2_00_a\dat
+   a\xps_gpio_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: xps_gpio, INSTANCE:xps_gpio_1 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_gpio_v2_00_a\dat
+   a\xps_gpio_v2_1_0.mpd line 82 
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: plb_v46, INSTANCE: plb_v46_0 - 2 master(s) : 4 slave(s) 
+
+Checking port drivers...
+WARNING:EDK:4180 - PORT: EXT_BRK, CONNECTOR: Ext_BRK - No driver found. Port
+   will be driven to GND -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 415 
+WARNING:EDK:4180 - PORT: EXT_NM_BRK, CONNECTOR: Ext_NM_BRK - No driver found.
+   Port will be driven to GND -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 416 
+
+Performing Clock DRCs...
+INFO:EDK:4060 - INSTANCE: microblaze_0, PARAMETER: C_FREQ - Did not implement
+   clock DRCs for the parameter. Top-level frequency could not be propagated to
+   this IP. Please make sure that you have specified the frequency of the
+   top-level clock port, and that the clocks are properly connected.
+INFO:EDK:4060 - INSTANCE: xps_uartlite_0, PARAMETER: C_SPLB_CLK_FREQ_HZ - Did
+   not implement clock DRCs for the parameter. Top-level frequency could not be
+   propagated to this IP. Please make sure that you have specified the frequency
+   of the top-level clock port, and that the clocks are properly connected.
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_PLB value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 233 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_LMB value to 0 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 234 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_I_PLB value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 236 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_I_LMB value to 0 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 237 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ADDR_TAG_BITS value to 0 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 337 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_ADDR_TAG value to 0 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 367 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+INFO: The microblaze_0 core has constraints automatically generated by XPS in
+implementation/microblaze_0_wrapper/microblaze_0_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+
+Managing cache ...
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:bram_block_0 -
+C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 38 -
+elaborating IP
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 1.00 seconds
+
+Constructing platform-level connectivity ...
+Completion time: 0.00 seconds
+
+Writing (top-level) BMM ...
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+
+Running XST synthesis ...
+
+INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+INSTANCE:plb_v46_0 -
+C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 13 -
+Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.7/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.7/ISE_DS/ISE/spartan3/data/spartan3.acd>
+WARNING:EDK:2631 - Unable to remove directory
+   'C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\synthesis\xst\'
+INSTANCE:microblaze_0 -
+C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 20 -
+Running XST synthesis
+WARNING:EDK:2631 - Unable to remove directory
+   'C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\synthesis\xst\'
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.7/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.7/ISE_DS/ISE/spartan3/data/spartan3.acd>
+ERROR:HDLParsers - Cannot rename dependency database for library "microblaze_v8_50_c", file is "xst/microblaze_v8_50_c/hdpdeps.ref", Temporary database file "C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\synthesis\xst\microblaze_v8_50_c\xil_13632_9" will remain.  System error message is:  File exists
+ERROR:HDLParsers - Cannot rename dependency database for library "microblaze_v8_50_c", file is "xst/microblaze_v8_50_c/hdpdeps.ref", Temporary database file "C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\synthesis\xst\microblaze_v8_50_c\xil_13632_57" will remain.  System error message is:  File exists
+Trying to terminate Process...
+Done!
+
+********************************************************************************
+At Local date and time: Wed Sep 28 15:37:03 2022
+ make -f practica2.make bits started...
+"****************************************************"
+"Creating system netlist for hardware specification.."
+"****************************************************"
+platgen -p xc3s1000ft256-5 -lang vhdl -intstyle default    -msg __xps/ise/xmsgprops.lst practica2.mhs
+
+Release 14.7 - platgen Xilinx EDK 14.7 Build EDK_P.20131013
+ (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+
+Command Line: platgen -p xc3s1000ft256-5 -lang vhdl -intstyle default -msg
+__xps/ise/xmsgprops.lst practica2.mhs 
+
+Parse C:/Users/Rpalomares/Dropbox/MasterII/SE/ws/practica2/practica2.mhs ...
+
+Read MPD definitions ...
+
+Overriding IP level properties ...
+
+Computing clock values...
+INFO:EDK:1432 - Frequency for Top-Level Input Clock 'Clk_pin' is not specified.
+   Clock DRCs will not be performed for IPs connected to that clock port, unless
+   they are connected through the clock generator IP. 
+
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00007fff) xps_bram_if_cntlr_0	plb_v46_0
+  (0x81400000-0x8140ffff) xps_gpio_1	plb_v46_0
+  (0x81420000-0x8142ffff) xps_gpio_0	plb_v46_0
+  (0x84000000-0x8400ffff) xps_uartlite_0	plb_v46_0
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_NUM_SLAVES value to 4 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_MID_WIDTH value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 81 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_DWIDTH value to 32 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 83 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:bram_block_0 - tool is overriding
+   PARAMETER C_MEMSIZE value to 0x8000 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+INFO:EDK:4130 - IPNAME: xps_uartlite, INSTANCE:xps_uartlite_0 - tool is
+   overriding PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_02_a
+   \data\xps_uartlite_v2_1_0.mpd line 84 
+INFO:EDK:4130 - IPNAME: xps_gpio, INSTANCE:xps_gpio_0 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_gpio_v2_00_a\dat
+   a\xps_gpio_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: xps_gpio, INSTANCE:xps_gpio_1 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_gpio_v2_00_a\dat
+   a\xps_gpio_v2_1_0.mpd line 82 
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: plb_v46, INSTANCE: plb_v46_0 - 2 master(s) : 4 slave(s) 
+
+Checking port drivers...
+WARNING:EDK:4180 - PORT: EXT_BRK, CONNECTOR: Ext_BRK - No driver found. Port
+   will be driven to GND -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 415 
+WARNING:EDK:4180 - PORT: EXT_NM_BRK, CONNECTOR: Ext_NM_BRK - No driver found.
+   Port will be driven to GND -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 416 
+
+Performing Clock DRCs...
+INFO:EDK:4060 - INSTANCE: microblaze_0, PARAMETER: C_FREQ - Did not implement
+   clock DRCs for the parameter. Top-level frequency could not be propagated to
+   this IP. Please make sure that you have specified the frequency of the
+   top-level clock port, and that the clocks are properly connected.
+INFO:EDK:4060 - INSTANCE: xps_uartlite_0, PARAMETER: C_SPLB_CLK_FREQ_HZ - Did
+   not implement clock DRCs for the parameter. Top-level frequency could not be
+   propagated to this IP. Please make sure that you have specified the frequency
+   of the top-level clock port, and that the clocks are properly connected.
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_PLB value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 233 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_LMB value to 0 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 234 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_I_PLB value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 236 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_I_LMB value to 0 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 237 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ADDR_TAG_BITS value to 0 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 337 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_ADDR_TAG value to 0 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 367 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+INFO: The microblaze_0 core has constraints automatically generated by XPS in
+implementation/microblaze_0_wrapper/microblaze_0_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+
+Managing cache ...
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:bram_block_0 -
+C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 38 -
+elaborating IP
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 1.00 seconds
+
+Constructing platform-level connectivity ...
+Completion time: 0.00 seconds
+
+Writing (top-level) BMM ...
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+
+Running XST synthesis ...
+
+INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+INSTANCE:plb_v46_0 -
+C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 13 -
+Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.7/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.7/ISE_DS/ISE/spartan3/data/spartan3.acd>
+WARNING:EDK:2631 - Unable to remove directory
+   'C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\synthesis\xst\'
+INSTANCE:microblaze_0 -
+C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 20 -
+Running XST synthesis
+WARNING:EDK:2631 - Unable to remove directory
+   'C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\synthesis\xst\'
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.7/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.7/ISE_DS/ISE/spartan3/data/spartan3.acd>
+ERROR:HDLParsers - Cannot rename dependency database for library "microblaze_v8_50_c", file is "xst/microblaze_v8_50_c/hdpdeps.ref", Temporary database file "C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\synthesis\xst\microblaze_v8_50_c\xil_5624_8" will remain.  System error message is:  File exists
+ERROR:HDLParsers - Cannot rename dependency database for library "microblaze_v8_50_c", file is "xst/microblaze_v8_50_c/hdpdeps.ref", Temporary database file "C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\synthesis\xst\microblaze_v8_50_c\xil_5624_31" will remain.  System error message is:  File exists
+ERROR:HDLParsers - Cannot rename dependency database for library "microblaze_v8_50_c", file is "xst/microblaze_v8_50_c/hdpdeps.ref", Temporary database file "C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\synthesis\xst\microblaze_v8_50_c\xil_5624_32" will remain.  System error message is:  File exists
+Trying to terminate Process...
+Done!
+
+********************************************************************************
+At Local date and time: Wed Sep 28 15:44:50 2022
+ make -f practica2.make exporttosdk started...
+IF NOT EXIST "SDK\SDK_Export\hw" @mkdir "SDK\SDK_Export\hw"
+psf2Edward -inp practica2.xmp -exit_on_error -dont_add_loginfo -make_inst_lower -edwver 1.2 -xml SDK\SDK_Export\hw/practica2.xml 
+Release 14.7 - psf2Edward EDK_P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Checking platform configuration ...
+IPNAME: plb_v46, INSTANCE: plb_v46_0 - 2 master(s) : 4 slave(s) 
+
+Checking port drivers...
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+Conversion to XML complete.
+xdsgen -inp practica2.xmp -report SDK\SDK_Export\hw/practica2.html  -make_docs_local
+Release 14.7 - xdsgen EDK_P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Generated Block Diagram.
+Rasterizing plb_v46_0.jpg.....
+Rasterizing microblaze_0.jpg.....
+Rasterizing xps_bram_if_cntlr_0.jpg.....
+Rasterizing bram_block_0.jpg.....
+Rasterizing xps_uartlite_0.jpg.....
+Rasterizing xps_gpio_0.jpg.....
+Rasterizing xps_gpio_1.jpg.....
+Rasterizing practica2_blkd.jpg.....
+Report generated.
+Report generation completed.
+"****************************************************"
+"Creating system netlist for hardware specification.."
+"****************************************************"
+platgen -p xc3s1000ft256-5 -lang vhdl -intstyle default    -msg __xps/ise/xmsgprops.lst practica2.mhs
+
+Release 14.7 - platgen Xilinx EDK 14.7 Build EDK_P.20131013
+ (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+
+Command Line: platgen -p xc3s1000ft256-5 -lang vhdl -intstyle default -msg
+__xps/ise/xmsgprops.lst practica2.mhs 
+
+Parse C:/Users/Rpalomares/Dropbox/MasterII/SE/ws/practica2/practica2.mhs ...
+
+Read MPD definitions ...
+
+Overriding IP level properties ...
+
+Computing clock values...
+INFO:EDK:1432 - Frequency for Top-Level Input Clock 'Clk_pin' is not specified.
+   Clock DRCs will not be performed for IPs connected to that clock port, unless
+   they are connected through the clock generator IP. 
+
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00007fff) xps_bram_if_cntlr_0	plb_v46_0
+  (0x81400000-0x8140ffff) xps_gpio_1	plb_v46_0
+  (0x81420000-0x8142ffff) xps_gpio_0	plb_v46_0
+  (0x84000000-0x8400ffff) xps_uartlite_0	plb_v46_0
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_NUM_SLAVES value to 4 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_MID_WIDTH value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 81 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_DWIDTH value to 32 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 83 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:bram_block_0 - tool is overriding
+   PARAMETER C_MEMSIZE value to 0x8000 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+INFO:EDK:4130 - IPNAME: xps_uartlite, INSTANCE:xps_uartlite_0 - tool is
+   overriding PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_02_a
+   \data\xps_uartlite_v2_1_0.mpd line 84 
+INFO:EDK:4130 - IPNAME: xps_gpio, INSTANCE:xps_gpio_0 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_gpio_v2_00_a\dat
+   a\xps_gpio_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: xps_gpio, INSTANCE:xps_gpio_1 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_gpio_v2_00_a\dat
+   a\xps_gpio_v2_1_0.mpd line 82 
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: plb_v46, INSTANCE: plb_v46_0 - 2 master(s) : 4 slave(s) 
+
+Checking port drivers...
+WARNING:EDK:4180 - PORT: EXT_BRK, CONNECTOR: Ext_BRK - No driver found. Port
+   will be driven to GND -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 415 
+WARNING:EDK:4180 - PORT: EXT_NM_BRK, CONNECTOR: Ext_NM_BRK - No driver found.
+   Port will be driven to GND -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 416 
+
+Performing Clock DRCs...
+INFO:EDK:4060 - INSTANCE: microblaze_0, PARAMETER: C_FREQ - Did not implement
+   clock DRCs for the parameter. Top-level frequency could not be propagated to
+   this IP. Please make sure that you have specified the frequency of the
+   top-level clock port, and that the clocks are properly connected.
+INFO:EDK:4060 - INSTANCE: xps_uartlite_0, PARAMETER: C_SPLB_CLK_FREQ_HZ - Did
+   not implement clock DRCs for the parameter. Top-level frequency could not be
+   propagated to this IP. Please make sure that you have specified the frequency
+   of the top-level clock port, and that the clocks are properly connected.
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_PLB value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 233 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_LMB value to 0 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 234 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_I_PLB value to 1 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 236 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_I_LMB value to 0 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 237 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ADDR_TAG_BITS value to 0 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 337 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_ADDR_TAG value to 0 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
+   ata\microblaze_v2_1_0.mpd line 367 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+INFO: The microblaze_0 core has constraints automatically generated by XPS in
+implementation/microblaze_0_wrapper/microblaze_0_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+
+Managing cache ...
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:bram_block_0 -
+C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 38 -
+elaborating IP
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 1.00 seconds
+
+Constructing platform-level connectivity ...
+Completion time: 0.00 seconds
+
+Writing (top-level) BMM ...
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+
+Running XST synthesis ...
+
+INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+INSTANCE:plb_v46_0 -
+C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 13 -
+Running XST synthesis
+WARNING:EDK:2631 - Unable to remove directory
+   'C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\synthesis\xst\'
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.7/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.7/ISE_DS/ISE/spartan3/data/spartan3.acd>
+INSTANCE:microblaze_0 -
+C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\practica2.mhs line 20 -
+Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.7/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.7/ISE_DS/ISE/spartan3/data/spartan3.acd>
+ERROR:HDLParsers - Cannot rename dependency database for library "microblaze_v8_50_c", file is "xst/microblaze_v8_50_c/hdpdeps.ref", Temporary database file "C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\synthesis\xst\microblaze_v8_50_c\xil_1560_82" will remain.  System error message is:  File exists
+Trying to terminate Process...
+Writing filter settings....
+Done writing filter settings to:
+	C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\etc\practica2.filters
+Done writing Tab View settings to:
+	C:\Users\Rpalomares\Dropbox\MasterII\SE\ws\practica2\etc\practica2.gui

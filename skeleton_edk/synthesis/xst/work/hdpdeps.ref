@@ -1,0 +1,9 @@
+V3 6
+FL C:/Users/Rpalomares/Dropbox/MasterII/SE/ws/practica2/hdl/practica2_microblaze_0_wrapper.vhd 2022/09/28.15:46:17 P.20131013
+EN work/practica2_microblaze_0_wrapper 1664373027 \
+      FL C:/Users/Rpalomares/Dropbox/MasterII/SE/ws/practica2/hdl/practica2_microblaze_0_wrapper.vhd \
+      PB ieee/std_logic_1164 1381692176 LB UNISIM PH unisim/VCOMPONENTS 1381692182 \
+      LB microblaze_v8_50_c
+AR work/practica2_microblaze_0_wrapper/STRUCTURE 1664373028 \
+      FL C:/Users/Rpalomares/Dropbox/MasterII/SE/ws/practica2/hdl/practica2_microblaze_0_wrapper.vhd \
+      EN work/practica2_microblaze_0_wrapper 1664373027 CP microblaze

@@ -51,4 +51,9 @@ int lightLEDs(
 	XGpio_SetDataDirection(&Gpio_LEDs, 1, 0x0); /*Coloca la dirección de salida */
 
     // FIXME: completar código
+{			u32  Data;
+/*para escribir una dato cualquiera (por ejemplo 5) hacemos*/
+			Data=0x00000005;
+			XGpio_DiscreteWrite(&Gpio_LEDs, 1, Data);
+
 }

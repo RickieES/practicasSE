@@ -1,6 +1,7 @@
-<EDKSYSTEM EDKVERSION="14.7" EDWVERSION="1.2" TIMESTAMP="Wed Sep 28 15:21:08 2022">
 
-  <SYSTEMINFO ARCH="spartan3" DEVICE="xc3s1000" PACKAGE="ft256" PART="xc3s1000ft256-5" SOURCE="C:/Users/Rpalomares/Dropbox/MasterII/SE/ws/practica2/practica2.xmp" SPEEDGRADE="-5"/>
+<EDKSYSTEM EDKVERSION="14.7" EDWVERSION="1.2" TIMESTAMP="Thu Sep 29 23:42:59 2022">
+
+  <SYSTEMINFO ARCH="spartan3" DEVICE="xc3s1000" PACKAGE="ft256" PART="xc3s1000ft256-5" SOURCE="C:/Users/Rpalomares/Dropbox/MasterII/SE/ws/skeleton_edk_14.7/practica2.xmp" SPEEDGRADE="-5"/>
 
   <EXTERNALPORTS>
     <PORT DIR="I" MHS_INDEX="0" NAME="RX_pin" SIGNAME="net_RX_pin">

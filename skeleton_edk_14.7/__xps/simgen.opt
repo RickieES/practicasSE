@@ -1,1 +1,1 @@
- -p spartan3 -lang vhdl$(PROJECT_SEARCHPATHOPT) $(GLOBAL_SEARCHPATHOPT) -msg __xps/ise/xmsgprops.lst -s isim -X C:/Users/Rpalomares/Dropbox/MasterII/SE/ws/practica2/
+ -p spartan3 -lang vhdl$(PROJECT_SEARCHPATHOPT) $(GLOBAL_SEARCHPATHOPT) -msg __xps/ise/xmsgprops.lst -s isim -X C:/Users/Rpalomares/Dropbox/MasterII/SE/ws/skeleton_edk_14.7/

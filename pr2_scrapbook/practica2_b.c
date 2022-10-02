@@ -43,7 +43,7 @@ int getNumber (){
 			XUartLite_SendByte(XPAR_RS232_UART_1_BASEADDR,byte);
 			digitIndex++;
 		}
-			 
+
 		// Calcula el número a partir de la cadena de dígitos recibidos
 		for(c = 0; c < (digitIndex - 1); c++){
 			if(c == 0){
@@ -79,85 +79,7 @@ int getNumber (){
 	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-int getSingleDigitNumber (){
-	Xuint8 byte;
-	Xuint8 uartBuffer[16];
-	Xboolean validNumber;
-	int digitIndex;
-	int digit;
-	
-	byte = 0x00;
-	digit = 0;
-	validNumber = XFALSE;
-
-	// Get bytes from uart until a digit is entered
-	while(validNumber == XFALSE){
-		byte = XUartLite_RecvByte(XPAR_RS232_UART_1_BASEADDR);
-        // Only needed if byte must be resent through UART to remote terminal
-		// XUartLite_SendByte(XPAR_RS232_UART_1_BASEADDR,byte);
-
-		// Check if byte is an ASCII digit
-		if((byte >> 4) == 0x03){
-            // Put in digit the decimal value of the ASCII char
-            // (ie.: ASCII "0" --> 0x30 --> digit = 0; ASCII "7" --> 0x37 --> digit = 7;)
-			digit = (byte & 0x0F);
-            validNumber = XTRUE
-		}
-	}
-    return digit;
-}
-
-void lightLEDs(int digit) {
+void displayOperandInLEDs(int number) {
 	XGpio Gpio_LEDs; /* The driver instance for GPIO Device configured as Salida */
     u32  Data;
 
@@ -168,10 +90,66 @@ void lightLEDs(int digit) {
 	XGpio_Initialize(&Gpio_LEDs, XPAR_LEDS_DEVICE_ID); /*Obtiene el puntero a la estructura */
 	XGpio_SetDataDirection(&Gpio_LEDs, 1, 0x0); /*Coloca la dirección de salida */
 
-    /* Para escribir una dato cualquiera (por ejemplo 5) hacemos
+    /* Para escribir un dato cualquiera (por ejemplo 5) hacemos
 	 * Data=0x00000005;
-    */
-    Data = (u32) digit;
+     *
+     * Esto no debería funcionar bien si son 10 LEDs, pero
+     * ¿cómo visualizar un número mayor que 9 entonces?
+     */
+    Data = (u32) number;
 	XGpio_DiscreteWrite(&Gpio_LEDs, 1, Data);
+
+	Xil_ICacheDisable();
+    Xil_DCacheDisable();
 }
 
+void displayOperandInScreen(int number) {
+	Xuint8 byte;
+    int i = 0;
+	Xuint8 uartBuffer[16];
+
+    while (number > 0) {
+        uartBuffer[i] = (number % 10) + 0x30;
+        number = number \ 10;
+        i++;
+    }
+
+    for(; i >= 0; i--) {
+	    XUartLite_SendByte(XPAR_RS232_UART_1_BASEADDR, uartBuffer[i]);	
+    }
+	print("\r\n");
+}
+
+void practica2b() {
+    Xuint8 byte;
+    int firstOperand = 0;
+    int secondOperand = 0;
+    int difference = 0;
+
+    while (1) {
+        displayBMenu();
+    	byte = XUartLite_RecvByte(XPAR_RS232_UART_1_BASEADDR);
+        switch (byte) {
+            case 0x61: // 'a'
+                firstOperand = getNumber();
+                if (firstOperand != NULL) {
+                    displayOperandInLEDs(firstOperand);
+                    displayOperandInScreen(firstOperand);
+                }
+            case 0x62: // 'b'
+                secondOperand = getNumber();
+                if (secondOperand != NULL) {
+                    displayOperandInLEDs(secondOperand);
+                    displayOperandInScreen(secondOperand);
+                }
+            case 0x63: // 'c'
+                if ((firstOperand != NULL) && (secondOperand != NULL)) {
+                    difference = firstOperand - secondOperand;
+                    displayOperandInLEDs(difference);
+                    displayOperandInScreen(difference);
+                }
+            default: // otro carácter
+                xil_printf("Debe introducir una de las opciones del menú (a, b, c).\r\n");
+        }
+    }
+}

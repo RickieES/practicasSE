@@ -39,10 +39,10 @@ int getSingleDigitNumber (){
     return digit;
 }
 
-
-int lightLEDs(
+void lightLEDs(int digit) {
 	XGpio Gpio_LEDs; /* The driver instance for GPIO Device configured as Salida */
-	u32 DataRead;
+    u32  Data;
+
 	Xil_ICacheEnable();
     Xil_DCacheEnable();
 
@@ -50,10 +50,10 @@ int lightLEDs(
 	XGpio_Initialize(&Gpio_LEDs, XPAR_LEDS_DEVICE_ID); /*Obtiene el puntero a la estructura */
 	XGpio_SetDataDirection(&Gpio_LEDs, 1, 0x0); /*Coloca la dirección de salida */
 
-    // FIXME: completar código
-{			u32  Data;
-/*para escribir una dato cualquiera (por ejemplo 5) hacemos*/
-			Data=0x00000005;
-			XGpio_DiscreteWrite(&Gpio_LEDs, 1, Data);
-
+    /* Para escribir una dato cualquiera (por ejemplo 5) hacemos
+	 * Data=0x00000005;
+    */
+    Data = (u32) digit;
+	XGpio_DiscreteWrite(&Gpio_LEDs, 1, Data);
 }
+

@@ -6,6 +6,8 @@
 C_SRCS += \
 ../src/practica2.c \
 ../src/practica2_a.c \
+../src/practica2_b.c \
+../src/practica2_c.c \
 ../src/testperiph.c \
 ../src/xbram_example.c \
 ../src/xgpio_tapp_example.c 
@@ -16,6 +18,8 @@ LD_SRCS += \
 OBJS += \
 ./src/practica2.o \
 ./src/practica2_a.o \
+./src/practica2_b.o \
+./src/practica2_c.o \
 ./src/testperiph.o \
 ./src/xbram_example.o \
 ./src/xgpio_tapp_example.o 
@@ -23,6 +27,8 @@ OBJS += \
 C_DEPS += \
 ./src/practica2.d \
 ./src/practica2_a.d \
+./src/practica2_b.d \
+./src/practica2_c.d \
 ./src/testperiph.d \
 ./src/xbram_example.d \
 ./src/xgpio_tapp_example.d 

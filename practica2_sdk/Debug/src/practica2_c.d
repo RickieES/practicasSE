@@ -1,4 +1,4 @@
-src/practica2.d: ../src/practica2.c \
+src/practica2_c.d: ../src/practica2_c.c \
  ../../peripheral_tests_bsp_0/microblaze_0/include/xstatus.h \
  ../../peripheral_tests_bsp_0/microblaze_0/include/xbasic_types.h \
  ../../peripheral_tests_bsp_0/microblaze_0/include/xparameters.h \

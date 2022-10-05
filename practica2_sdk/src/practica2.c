@@ -15,9 +15,6 @@
 #include "gpio_header.h"
 #include "practica2.h"
 
-#define XPAR_LEDS_DEVICE_ID (0x81400000)
-#define XPAR_SWITCHES_DEVICE_ID (0x81420000)
-#define XPAR_RS232_UART_1_BASEADDR (0x84000000)
 
 int main() {
     Xuint8 byte = 0;
@@ -30,17 +27,24 @@ int main() {
         xil_printf("  b. Comprobar parte b de la práctica\r\n");
         xil_printf("  c. Comprobar parte c de la práctica\r\n");
         xil_printf("  x. Salir\r\n");
-    	byte = XUartLite_RecvByte(XPAR_RS232_UART_1_BASEADDR);
+    	byte = XUartLite_RecvByte(XPAR_XPS_UARTLITE_0_BASEADDR);
         switch (byte) {
             case 0x61: // 'a'
+            	xil_printf("Ha elegido la opción a. Introduzca un dígito: ");
                 sdValue = getSingleDigitNumber();
+                xil_printf("\r\nHa pulsado el dígito: %d\r\n", sdValue);
                 lightLEDs(sdValue);
+                break;
             case 0x62: // 'b'
+            	xil_printf("Ha elegido la opción b.\r\n");
             	practica2b();
+            	break;
             case 0x63: // 'c'
+            	xil_printf("Ha elegido la opción c.\r\n");
             	practica2c();
+            	break;
             default: // otro carácter
-                xil_printf("Debe introducir una de las opciones del menÃº (a, b, c).\r\n");
+                xil_printf("Debe introducir una de las opciones del menú (a, b, c).\r\n");
         }
     }
     return 0;

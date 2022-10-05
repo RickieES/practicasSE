@@ -6,10 +6,7 @@
 #include "xbasic_types.h"
 #include "xgpio.h"
 #include "gpio_header.h"
-
-#define XPAR_LEDS_DEVICE_ID (0x81400000)
-#define XPAR_SWITCHES_DEVICE_ID (0x81420000)
-#define XPAR_RS232_UART_1_BASEADDR (0x84000000)
+#include "practica2.h"
 
 int getSingleDigitNumber (){
 	Xuint8 byte;
@@ -22,7 +19,7 @@ int getSingleDigitNumber (){
 
 	// Get bytes from UART until a digit is entered
 	while(validNumber == XFALSE){
-		byte = XUartLite_RecvByte(XPAR_RS232_UART_1_BASEADDR);
+		byte = XUartLite_RecvByte(XPAR_XPS_UARTLITE_0_BASEADDR);
         // Only needed if byte must be resent through UART to remote terminal
 		// XUartLite_SendByte(XPAR_RS232_UART_1_BASEADDR,byte);
 
@@ -37,15 +34,20 @@ int getSingleDigitNumber (){
     return digit;
 }
 
-void lightLEDs(int digit) {
+int lightLEDs(int digit) {
 	XGpio Gpio_LEDs; /* The driver instance for GPIO Device configured as Salida */
     u32  Data;
+    int status;
 
 	Xil_ICacheEnable();
     Xil_DCacheEnable();
 
 	// Configuración de la GPIO para los LEDs de la placa extendida
-	XGpio_Initialize(&Gpio_LEDs, (u16) XPAR_LEDS_DEVICE_ID); /* Obtiene el puntero a la estructura */
+	status = XGpio_Initialize(&Gpio_LEDs, (u16) XPAR_LEDS_DEVICE_ID); /* Obtiene el puntero a la estructura */
+	if (status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
 	XGpio_SetDataDirection(&Gpio_LEDs, 1, 0x0); /*Coloca la dirección de salida */
 
     /* Para escribir una dato cualquiera (por ejemplo 5) hacemos
@@ -53,4 +55,5 @@ void lightLEDs(int digit) {
     */
     Data = (u32) digit;
 	XGpio_DiscreteWrite(&Gpio_LEDs, 1, Data);
+	return 0;
 }

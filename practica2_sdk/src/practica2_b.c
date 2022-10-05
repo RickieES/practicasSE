@@ -6,10 +6,7 @@
 #include "xbasic_types.h"
 #include "xgpio.h"
 #include "gpio_header.h"
-
-#define XPAR_LEDS_DEVICE_ID (0x81400000)
-#define XPAR_SWITCHES_DEVICE_ID (0x81420000)
-#define XPAR_RS232_UART_1_BASEADDR (0x84000000)
+#include "practica2.h"
 
 /*
  * Muestra el menú de la práctica b. Está pensado para poder ser llamado desde
@@ -39,9 +36,9 @@ int getNumber() {
 	
 		// Recibe bytes de la UART hasta que se reciba RETURN (0x0D o 0x0A)
 		while(byte != 0x0d && byte != 0x0A){
-			byte = XUartLite_RecvByte(XPAR_RS232_UART_1_BASEADDR);
+			byte = XUartLite_RecvByte(XPAR_XPS_UARTLITE_0_BASEADDR);
 			uartBuffer[digitIndex] = byte; 
-			XUartLite_SendByte(XPAR_RS232_UART_1_BASEADDR, byte);
+			XUartLite_SendByte(XPAR_XPS_UARTLITE_0_BASEADDR, byte);
 			digitIndex++;
 		}
 
@@ -114,7 +111,7 @@ void displayOperandInScreen(int number) {
     }
 
     for(; i >= 0; i--) {
-	    XUartLite_SendByte(XPAR_RS232_UART_1_BASEADDR, uartBuffer[i]);	
+	    XUartLite_SendByte(XPAR_XPS_UARTLITE_0_BASEADDR, uartBuffer[i]);
     }
 	xil_printf("\r\n");
 }
@@ -128,30 +125,37 @@ void practica2b() {
     while (byte != 0x78) {
         displayBMenu();
         xil_printf("  x. Salir\r\n");
-    	byte = XUartLite_RecvByte(XPAR_RS232_UART_1_BASEADDR);
+    	byte = XUartLite_RecvByte(XPAR_XPS_UARTLITE_0_BASEADDR);
         switch (byte) {
             case 0x61: // 'a'
+            	xil_printf("Ha elegido la opción a. Introduzca primer operando: ");
                 firstOperand = getNumber();
                 if (firstOperand < 256) {
                     displayOperandInLEDs(firstOperand);
                     displayOperandInScreen(firstOperand);
                 }
+                break;
             case 0x62: // 'b'
+            	xil_printf("Ha elegido la opción b. Introduzca segundo operando: ");
                 secondOperand = getNumber();
                 if (secondOperand < 256) {
                     displayOperandInLEDs(secondOperand);
                     displayOperandInScreen(secondOperand);
                 }
+                break;
             case 0x63: // 'c'
                 if ((firstOperand < 256) && (secondOperand < 256)) {
                     difference = firstOperand - secondOperand;
+                	xil_printf("Ha elegido la opción c. La diferencia es: ");
                     displayOperandInLEDs(difference);
                     displayOperandInScreen(difference);
                 }
+                break;
             case 0x78: // 'x'
-            	xil_printf("Saliendo al menú principal...");
+            	xil_printf("Saliendo al menú principal...\r\n");
+            	break;
             default: // otro carácter
-                xil_printf("Debe introducir una de las opciones del menú (a, b, c).\r\n");
+                xil_printf("Debe introducir una de las opciones del menú (a, b, c, x).\r\n");
         }
     }
 }

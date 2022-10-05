@@ -8,8 +8,13 @@
 #ifndef PRACTICA2_H_
 #define PRACTICA2_H_
 
+#define XPAR_SWITCHES_BASEADDR  XPAR_XPS_GPIO_0_BASEADDR
+#define XPAR_LEDS_BASEADDR      XPAR_XPS_GPIO_1_BASEADDR
+#define XPAR_SWITCHES_DEVICE_ID XPAR_XPS_GPIO_0_DEVICE_ID
+#define XPAR_LEDS_DEVICE_ID     XPAR_XPS_GPIO_1_DEVICE_ID
+
 int getSingleDigitNumber ();
-void lightLEDs(int digit);
+int lightLEDs(int digit);
 
 void displayBMenu();
 int getNumber();

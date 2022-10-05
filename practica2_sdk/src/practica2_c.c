@@ -8,10 +8,6 @@
 #include "gpio_header.h"
 #include "practica2.h"
 
-#define XPAR_LEDS_DEVICE_ID (0x81400000)
-#define XPAR_SWITCHES_DEVICE_ID (0x81420000)
-#define XPAR_RS232_UART_1_BASEADDR (0x84000000)
-
 /*
  * Muestra el menú de la práctica c. Está pensado para poder ser llamado desde
  * una función displayCMenu que añada la opción pedida en el apartado c de la práctica
@@ -51,32 +47,41 @@ void practica2c() {
         displayBMenu();
         displayCMenu();
         xil_printf("  x. Salir\r\n");
-    	byte = XUartLite_RecvByte(XPAR_RS232_UART_1_BASEADDR);
+    	byte = XUartLite_RecvByte(XPAR_XPS_UARTLITE_0_BASEADDR);
         switch (byte) {
             case 0x61: // 'a'
+            	xil_printf("Ha elegido la opción a. Introduzca primer operando: ");
                 firstOperand = getNumber();
                 if (firstOperand < 256) {
                     displayOperandInLEDs(firstOperand);
                     displayOperandInScreen(firstOperand);
                 }
+                break;
             case 0x62: // 'b'
+            	xil_printf("Ha elegido la opción b. Introduzca segundo operando: ");
                 secondOperand = getNumber();
                 if (secondOperand < 256) {
                     displayOperandInLEDs(secondOperand);
                     displayOperandInScreen(secondOperand);
                 }
+                break;
             case 0x63: // 'c'
                 if ((firstOperand < 256) && (secondOperand < 256)) {
                     difference = firstOperand - secondOperand;
+                	xil_printf("Ha elegido la opción c. La diferencia es: ");
                     displayOperandInLEDs(difference);
                     displayOperandInScreen(difference);
+                    xil_printf("\r\n");
                 }
+                break;
             case 0x64: // 'd'
             	displaySwitchesValue();
+            	break;
             case 0x78: // 'x'
             	xil_printf("Saliendo al menú principal...");
+            	break;
             default: // otro carácter
-                xil_printf("Debe introducir una de las opciones del menú (a, b, c).\r\n");
+                xil_printf("Debe introducir una de las opciones del menú (a, b, c, d, x).\r\n");
         }
     }
 }

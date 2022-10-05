@@ -5,8 +5,6 @@ practica2.ngc
 PMSPEC -- Overriding Xilinx file
 <C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
 <C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
-.... Copying flowfile C:/Xilinx/14.1/ISE_DS/ISE/xilinx/data/fpga.flw into
-working directory N:/ws/practica2/implementation 
 
 Using Flow File: N:/ws/practica2/implementation/fpga.flw 
 Using Option File(s): 
@@ -83,8 +81,8 @@ NGDBUILD Design Results Summary:
   Number of warnings:   5
 
 Writing NGD file "practica2.ngd" ...
-Total REAL time to NGDBUILD completion:  15 sec
-Total CPU time to NGDBUILD completion:   15 sec
+Total REAL time to NGDBUILD completion:  34 sec
+Total CPU time to NGDBUILD completion:   33 sec
 
 Writing NGDBUILD log file "practica2.bld"...
 
@@ -109,72 +107,82 @@ Running directed packing...
 Running delay-based LUT packing...
 Updating timing models...
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 4 secs 
-Total CPU  time at the beginning of Placer: 4 secs 
+Total REAL time at the beginning of Placer: 8 secs 
+Total CPU  time at the beginning of Placer: 7 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:7f4847) REAL time: 5 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:ed87b1b5) REAL time: 0 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:7f4847) REAL time: 5 secs 
+WARNING:Place:837 - Partially locked IO Bus is found. 
+    Following components of the bus are not locked: 
+   	 Comp: leds<4>
+   	 Comp: leds<5>
+   	 Comp: leds<6>
+   	 Comp: leds<7>
+
+INFO:Place:834 - Only a subset of IOs are locked. Out of 20 IOs, 16 are locked
+   and 4 are not locked. If you would like to print the names of these IOs,
+   please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
+Phase 2.7  Design Feasibility Check (Checksum:ed87b1b5) REAL time: 0 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:7f4847) REAL time: 5 secs 
+Phase 3.31  Local Placement Optimization (Checksum:ed87b1b5) REAL time: 0 secs 
 
 Phase 4.2  Initial Clock and IO Placement
-...........
-Phase 4.2  Initial Clock and IO Placement (Checksum:a7d72cf7) REAL time: 6 secs 
+....
+Phase 4.2  Initial Clock and IO Placement (Checksum:b0169405) REAL time: 0 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:a7d72cf7) REAL time: 6 secs 
+Phase 5.36  Local Placement Optimization (Checksum:b0169405) REAL time: 0 secs 
 
 Phase 6.3  Local Placement Optimization
-..........
-Phase 6.3  Local Placement Optimization (Checksum:52c3585) REAL time: 6 secs 
+....
+Phase 6.3  Local Placement Optimization (Checksum:c282ecdd) REAL time: 0 secs 
 
 Phase 7.5  Local Placement Optimization
-Phase 7.5  Local Placement Optimization (Checksum:52c3585) REAL time: 6 secs 
+Phase 7.5  Local Placement Optimization (Checksum:c282ecdd) REAL time: 0 secs 
 
 Phase 8.4  Local Placement Optimization
-...............................................................................................
-Phase 8.4  Local Placement Optimization (Checksum:52c3585) REAL time: 8 secs 
+..................................
+Phase 8.4  Local Placement Optimization (Checksum:c282ecdd) REAL time: 0 secs 
 
 Phase 9.28  Local Placement Optimization
-Phase 9.28  Local Placement Optimization (Checksum:52c3585) REAL time: 8 secs 
+Phase 9.28  Local Placement Optimization (Checksum:c282ecdd) REAL time: 0 secs 
 
 Phase 10.8  Global Placement
-......................................................................................................................................................................................
-.....................
-............................................................................................................................................................
-........................................................................................
-Phase 10.8  Global Placement (Checksum:9d0bf0d9) REAL time: 15 secs 
+...............................................................
+..............
+...................................................................................
+..........................
+Phase 10.8  Global Placement (Checksum:4abb1392) REAL time: 0 secs 
 
 Phase 11.29  Local Placement Optimization
-Phase 11.29  Local Placement Optimization (Checksum:9d0bf0d9) REAL time: 15 secs 
+Phase 11.29  Local Placement Optimization (Checksum:4abb1392) REAL time: 0 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:9d0bf0d9) REAL time: 15 secs 
+Phase 12.5  Local Placement Optimization (Checksum:4abb1392) REAL time: 0 secs 
 
 Phase 13.18  Placement Optimization
-Phase 13.18  Placement Optimization (Checksum:d7952eb4) REAL time: 31 secs 
+Phase 13.18  Placement Optimization (Checksum:641114a) REAL time: 0 secs 
 
 Phase 14.5  Local Placement Optimization
-Phase 14.5  Local Placement Optimization (Checksum:d7952eb4) REAL time: 31 secs 
+Phase 14.5  Local Placement Optimization (Checksum:641114a) REAL time: 0 secs 
 
-Total REAL time to Placer completion: 31 secs 
-Total CPU  time to Placer completion: 31 secs 
+Total REAL time to Placer completion: 0 secs 
+Total CPU  time to Placer completion: 43 secs 
 Running post-placement packing...
 
 Design Summary:
 Number of errors:      0
-Number of warnings:    0
+Number of warnings:    1
 Logic Utilization:
   Number of Slice Flip Flops:         1,172 out of  15,360    7%
   Number of 4 input LUTs:             2,230 out of  15,360   14%
 Logic Distribution:
-  Number of occupied Slices:          1,569 out of   7,680   20%
-    Number of Slices containing only related logic:   1,569 out of   1,569 100%
-    Number of Slices containing unrelated logic:          0 out of   1,569   0%
+  Number of occupied Slices:          1,497 out of   7,680   19%
+    Number of Slices containing only related logic:   1,497 out of   1,497 100%
+    Number of Slices containing unrelated logic:          0 out of   1,497   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
   Total Number of 4 input LUTs:       2,271 out of  15,360   14%
     Number used as logic:             1,746
@@ -194,9 +202,9 @@ Logic Distribution:
 
 Average Fanout of Non-Clock Nets:                4.07
 
-Peak Memory Usage:  239 MB
-Total REAL time to MAP completion:  32 secs 
-Total CPU time to MAP completion:   32 secs 
+Peak Memory Usage:  240 MB
+Total REAL time to MAP completion:  0 secs 
+Total CPU time to MAP completion:   45 secs 
 
 Mapping completed.
 See MAP report file "practica2_map.mrp" for details.
@@ -236,11 +244,11 @@ Device Utilization Summary:
 
    Number of BUFGMUXs                        1 out of 8      12%
    Number of External IOBs                  20 out of 173    11%
-      Number of LOCed IOBs                   0 out of 20      0%
+      Number of LOCed IOBs                  16 out of 20     80%
 
    Number of MULT18X18s                      3 out of 24     12%
    Number of RAMB16s                        16 out of 24     66%
-   Number of Slices                       1569 out of 7680   20%
+   Number of Slices                       1497 out of 7680   19%
       Number of SLICEMs                    252 out of 3840    6%
 
 
@@ -248,8 +256,8 @@ Device Utilization Summary:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 3 secs 
-Finished initial Timing Analysis.  REAL time: 3 secs 
+Starting initial Timing Analysis.  REAL time: 8 secs 
+Finished initial Timing Analysis.  REAL time: 8 secs 
 
 WARNING:Par:288 - The signal xps_bram_if_cntlr_0_PORTA_BRAM_Addr<0> has no load.  PAR will not attempt to route this
    signal.
@@ -324,28 +332,28 @@ WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<31> has no load.  PAR will 
 Starting Router
 
 
-Phase  1  : 12641 unrouted;      REAL time: 4 secs 
+Phase  1  : 12618 unrouted;      REAL time: 11 secs 
 
-Phase  2  : 11043 unrouted;      REAL time: 4 secs 
+Phase  2  : 11082 unrouted;      REAL time: 13 secs 
 
-Phase  3  : 3326 unrouted;      REAL time: 6 secs 
+Phase  3  : 3671 unrouted;      REAL time: 17 secs 
 
-Phase  4  : 3555 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
+Phase  4  : 3915 unrouted; (Par is working to improve performance)     REAL time: 21 secs 
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 19 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 47 secs 
 
 Updating file: practica2.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 20 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 51 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 40 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 51 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 41 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 52 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 41 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 54 secs 
 
-Total REAL time to Router completion: 41 secs 
-Total CPU time to Router completion: 40 secs 
+Total REAL time to Router completion: 1 mins 54 secs 
+Total CPU time to Router completion: 1 mins 14 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -363,7 +371,7 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|       Clk_pin_BUFGP |      BUFGMUX0| No   | 1253 |  0.438     |  1.060      |
+|       Clk_pin_BUFGP |      BUFGMUX3| No   | 1248 |  0.424     |  1.039      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -383,8 +391,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net Clk | SETUP       |         N/A|    10.192ns|     N/A|           0
-  _pin_BUFGP                                | HOLD        |     0.641ns|            |       0|           0
+  Autotimespec constraint for clock net Clk | SETUP       |         N/A|     9.355ns|     N/A|           0
+  _pin_BUFGP                                | HOLD        |     0.657ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -402,8 +410,8 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 51 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 43 secs 
-Total CPU time to PAR completion: 41 secs 
+Total REAL time to PAR completion: 1 mins 58 secs 
+Total CPU time to PAR completion: 1 mins 16 secs 
 
 Peak Memory Usage:  263 MB
 
@@ -467,13 +475,13 @@ INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and
    calculation.  Please make appropriate modification to SYSTEM_JITTER to
    account for the unsupported Discrete Jitter and Phase Error.
 
-Analysis completed Sun Oct 02 11:44:09 2022
+Analysis completed Wed Oct 05 17:17:45 2022
 --------------------------------------------------------------------------------
 
 Generating Report ...
 
 Number of warnings: 0
 Number of info messages: 6
-Total time: 2 secs 
+Total time: 7 secs 
 
 

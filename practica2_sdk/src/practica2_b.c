@@ -13,7 +13,7 @@
  * una función displayCMenu que añada la opción pedida en el apartado c de la práctica
  */
 void displayBMenu() {
-    xil_printf("Elija una opción:\r\n");
+    xil_printf("Elija una opcion:\r\n");
     xil_printf("  a. Introducir primer operando\r\n");
     xil_printf("  b. Introducir segundo operando\r\n");
     xil_printf("  c. Obtener resta de operandos\r\n");
@@ -33,6 +33,10 @@ int getNumber() {
 		digitIndex = 0;
 		number = 0;
 		validNumber = XTRUE;
+
+		while(byte == 0x0d || byte == 0x0A) {
+			byte = XUartLite_RecvByte(XPAR_XPS_UARTLITE_0_BASEADDR);
+		}
 	
 		// Recibe bytes de la UART hasta que se reciba RETURN (0x0D o 0x0A)
 		while(byte != 0x0d && byte != 0x0A){
@@ -73,7 +77,7 @@ int getNumber() {
 		if(validNumber == XTRUE){
 			return number;
 		} else {
-			xil_printf("Esto no es un número válido.\n\r");
+			xil_printf("Esto no es un numero valido.\n\r");
 			return 256;
 		}
 	}
@@ -82,12 +86,18 @@ int getNumber() {
 void displayOperandInLEDs(int number) {
 	XGpio Gpio_LEDs; /* The driver instance for GPIO Device configured as Salida */
     u32  Data;
+    int status;
 
 	Xil_ICacheEnable();
     Xil_DCacheEnable();
 
 	// Configuración de la GPIO para los LEDs de la placa extendida
-	XGpio_Initialize(&Gpio_LEDs, (u16) XPAR_LEDS_DEVICE_ID); /*Obtiene el puntero a la estructura */
+	status = XGpio_Initialize(&Gpio_LEDs, (u16) XPAR_LEDS_DEVICE_ID); /*Obtiene el puntero a la estructura */
+	if (status != XST_SUCCESS) {
+		xil_printf("No se han podido inicializar los LED\r\n");
+		return XST_FAILURE;
+	}
+
 	XGpio_SetDataDirection(&Gpio_LEDs, 1, 0x0); /*Coloca la dirección de salida */
 
     /* Para escribir un dato cualquiera (por ejemplo 5) hacemos
@@ -104,6 +114,7 @@ void displayOperandInScreen(int number) {
     int i = 0;
 	Xuint8 uartBuffer[16];
 
+    xil_printf("Se va a imprimir el numero %d\r\n", number);
     while (number > 0) {
         uartBuffer[i] = (number % 10) + 0x30;
         number = number / 10;
@@ -128,7 +139,7 @@ void practica2b() {
     	byte = XUartLite_RecvByte(XPAR_XPS_UARTLITE_0_BASEADDR);
         switch (byte) {
             case 0x61: // 'a'
-            	xil_printf("Ha elegido la opción a. Introduzca primer operando: ");
+            	xil_printf("Ha elegido la opcion a. Introduzca primer operando: ");
                 firstOperand = getNumber();
                 if (firstOperand < 256) {
                     displayOperandInLEDs(firstOperand);
@@ -136,7 +147,7 @@ void practica2b() {
                 }
                 break;
             case 0x62: // 'b'
-            	xil_printf("Ha elegido la opción b. Introduzca segundo operando: ");
+            	xil_printf("Ha elegido la opcion b. Introduzca segundo operando: ");
                 secondOperand = getNumber();
                 if (secondOperand < 256) {
                     displayOperandInLEDs(secondOperand);
@@ -146,16 +157,16 @@ void practica2b() {
             case 0x63: // 'c'
                 if ((firstOperand < 256) && (secondOperand < 256)) {
                     difference = firstOperand - secondOperand;
-                	xil_printf("Ha elegido la opción c. La diferencia es: ");
+                	xil_printf("Ha elegido la opcion c. La diferencia es: ");
                     displayOperandInLEDs(difference);
                     displayOperandInScreen(difference);
                 }
                 break;
             case 0x78: // 'x'
-            	xil_printf("Saliendo al menú principal...\r\n");
+            	xil_printf("Saliendo al menu principal...\r\n");
             	break;
             default: // otro carácter
-                xil_printf("Debe introducir una de las opciones del menú (a, b, c, x).\r\n");
+                xil_printf("Debe introducir una de las opciones del menu (a, b, c, x).\r\n");
         }
     }
 }

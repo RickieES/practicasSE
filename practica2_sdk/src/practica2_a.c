@@ -39,12 +39,13 @@ int lightLEDs(int digit) {
     u32  Data;
     int status;
 
-	Xil_ICacheEnable();
-    Xil_DCacheEnable();
+	// Xil_ICacheEnable();
+    // Xil_DCacheEnable();
 
 	// Configuración de la GPIO para los LEDs de la placa extendida
 	status = XGpio_Initialize(&Gpio_LEDs, (u16) XPAR_LEDS_DEVICE_ID); /* Obtiene el puntero a la estructura */
 	if (status != XST_SUCCESS) {
+		xil_printf("No se han podido inicializar los LED\r\n");
 		return XST_FAILURE;
 	}
 
@@ -54,6 +55,23 @@ int lightLEDs(int digit) {
 	 * Data=0x00000005;
     */
     Data = (u32) digit;
+    xil_printf("Se va a enviar el dato %d\r\n", Data);
 	XGpio_DiscreteWrite(&Gpio_LEDs, 1, Data);
+
+
+	// Rotación 10 veces de 1 LED
+	int delay = 0, i = 0;
+	Xuint32 bit = 0;
+
+	while (i < 160){
+		// Escribe en los leds
+		XGpio_DiscreteWrite(&Gpio_LEDs, 1, 1<<bit);
+		// Retardo. Se escriben puntos en la pantalla
+		for (delay = 0; delay < 50; delay++){
+			print(".");
+		}
+		bit = (bit + 1) % 4;
+		i = i + 1;
+	}
 	return 0;
 }

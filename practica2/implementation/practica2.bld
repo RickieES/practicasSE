@@ -58,10 +58,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   5
 
-Total memory usage is 133480 kilobytes
+Total memory usage is 133032 kilobytes
 
 Writing NGD file "practica2.ngd" ...
-Total REAL time to NGDBUILD completion:  20 sec
-Total CPU time to NGDBUILD completion:   20 sec
+Total REAL time to NGDBUILD completion:  22 sec
+Total CPU time to NGDBUILD completion:   21 sec
 
 Writing NGDBUILD log file "practica2.bld"...

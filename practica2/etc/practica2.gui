@@ -14,9 +14,10 @@
       <VARIABLE COL_INDEX="6" IS_VISIBLE="FALSE" VIEWDISP="Type" VIEWTYPE="HEADER"/>
     </HEADERS>
     <SPLITTERS COLLAPSIBLE="1" HANDLEWIDTH="4" MARKER="255" ORIENTATION="1" RESIZE="1" SIZES="180,450,200" VERSION="0"/>
+    <SET ID="xps_gpio_1" IS_EXPANDED="TRUE"/>
     <STATUS>
       <SELECTIONS>
-        <VARIABLE ID="xps_uartlite_0"/>
+        <VARIABLE ID="xps_gpio_1"/>
       </SELECTIONS>
     </STATUS>
     <SEQUENCES IS_DEF_SEQUENCES="TRUE">
@@ -25,7 +26,7 @@
       <VARIABLE ID="xps_bram_if_cntlr_0" ROW_INDEX="3"/>
       <VARIABLE ID="bram_block_0" ROW_INDEX="2"/>
       <VARIABLE ID="xps_gpio_0" ROW_INDEX="4"/>
-      <VARIABLE ID="xps_gpio_1" ROW_INDEX="5"/>
+      <VARIABLE ID="xps_gpio_1" IS_EXPANDED="TRUE" ROW_INDEX="5"/>
       <VARIABLE ID="xps_uartlite_0" ROW_INDEX="6"/>
     </SEQUENCES>
   </SET>

@@ -1,0 +1,37 @@
+
+**** Build of configuration Debug for project practica2_sdk ****
+
+make all 
+Building file: ../src/practica2_b.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../peripheral_tests_bsp_1/microblaze_0/include -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -MMD -MP -MF"src/practica2_b.d" -MT"src/practica2_b.d" -o"src/practica2_b.o" "../src/practica2_b.c"
+../src/practica2_b.c: In function 'displayBMenu':
+../src/practica2_b.c:16:5: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+../src/practica2_b.c: In function 'displayOperandInLEDs':
+../src/practica2_b.c:101:3: warning: 'return' with a value, in function returning void [enabled by default]
+Finished building: ../src/practica2_b.c
+' '
+Building target: practica2_sdk.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../peripheral_tests_bsp_1/microblaze_0/lib -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -o"practica2_sdk.elf"  ./src/practica2.o ./src/practica2_a.o ./src/practica2_b.o ./src/practica2_c.o ./src/testperiph.o ./src/xbram_example.o ./src/xgpio_tapp_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: practica2_sdk.elf
+' '
+Invoking: MicroBlaze Print Size
+mb-size practica2_sdk.elf  |tee "practica2_sdk.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17102	    400	   2208	  19710	   4cfe	practica2_sdk.elf
+Finished building: practica2_sdk.elf.size
+' '
+Invoking: Xilinx ELF Check
+elfcheck practica2_sdk.elf -hw ../../practica2_hw_platform/system.xml -pe microblaze_0  |tee "practica2_sdk.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../practica2_hw_platform/system.xml -pe
+microblaze_0 practica2_sdk.elf 
+
+ELF file	: practica2_sdk.elf
+elfcheck passed.
+Finished building: practica2_sdk.elf.elfcheck
+' '

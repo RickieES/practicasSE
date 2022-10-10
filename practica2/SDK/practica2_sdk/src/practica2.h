@@ -18,12 +18,9 @@
 int getSingleDigitNumber ();
 int lightLEDs(int digit);
 
-void displayBMenu();
 int getNumber();
 void displayOperandInLEDs(int number);
 void displayOperandInScreen(int number);
-void practica2b();
-
-void practica2c();
+void displaySwitchesValue();
 
 #endif /* PRACTICA2_H_ */

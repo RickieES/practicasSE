@@ -5,7 +5,6 @@
 #include "xuartlite_i.h"
 #include "xbasic_types.h"
 #include "xgpio.h"
-#include "gpio_header.h"
 #include "practica2.h"
 
 int getSingleDigitNumber (){

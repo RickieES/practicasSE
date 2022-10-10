@@ -15,9 +15,6 @@ src/practica2_c.d: ../src/practica2_c.c \
  ../../peripheral_tests_bsp_1/microblaze_0/include/xbasic_types.h \
  ../../peripheral_tests_bsp_1/microblaze_0/include/xgpio.h \
  ../../peripheral_tests_bsp_1/microblaze_0/include/xgpio_l.h \
- ../src/gpio_header.h \
- ../../peripheral_tests_bsp_1/microblaze_0/include/xil_types.h \
- ../../peripheral_tests_bsp_1/microblaze_0/include/xil_assert.h \
  ../src/practica2.h
 
 ../../peripheral_tests_bsp_1/microblaze_0/include/xstatus.h:
@@ -51,11 +48,5 @@ src/practica2_c.d: ../src/practica2_c.c \
 ../../peripheral_tests_bsp_1/microblaze_0/include/xgpio.h:
 
 ../../peripheral_tests_bsp_1/microblaze_0/include/xgpio_l.h:
-
-../src/gpio_header.h:
-
-../../peripheral_tests_bsp_1/microblaze_0/include/xil_types.h:
-
-../../peripheral_tests_bsp_1/microblaze_0/include/xil_assert.h:
 
 ../src/practica2.h:

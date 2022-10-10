@@ -5,19 +5,7 @@
 #include "xuartlite_i.h"
 #include "xbasic_types.h"
 #include "xgpio.h"
-#include "gpio_header.h"
 #include "practica2.h"
-
-/*
- * Muestra el menú de la práctica b. Está pensado para poder ser llamado desde
- * una función displayCMenu que añada la opción pedida en el apartado c de la práctica
- */
-void displayBMenu() {
-    xil_printf("Elija una opcion:\r\n");
-    xil_printf("  a. Introducir primer operando\r\n");
-    xil_printf("  b. Introducir segundo operando\r\n");
-    xil_printf("  c. Obtener resta de operandos\r\n");
-}
 
 int getNumber() {
 	Xuint8 byte;
@@ -130,51 +118,3 @@ void displayOperandInScreen(int number) {
 	XUartLite_SendByte(XPAR_XPS_UARTLITE_0_BASEADDR, (Xuint8) 0x0A);
 }
 
-void practica2b() {
-    Xuint8 byte = 0;
-    int firstOperand = 0;
-    int secondOperand = 0;
-    int difference = 0;
-
-    while (byte != 0x78) {
-        displayBMenu();
-        xil_printf("  x. Salir\r\n");
-
-        // Filtra los caracteres LF y CR
-    	byte = XUartLite_RecvByte(XPAR_XPS_UARTLITE_0_BASEADDR);
-        while ((byte == 0x0A) || (byte == 0x0D)) {
-        	byte = XUartLite_RecvByte(XPAR_XPS_UARTLITE_0_BASEADDR);
-        }
-        switch (byte) {
-            case 0x61: // 'a'
-            	xil_printf("Ha elegido la opcion a. Introduzca primer operando: ");
-                firstOperand = getNumber();
-                if (firstOperand < 256) {
-                    displayOperandInLEDs(firstOperand);
-                    // displayOperandInScreen(firstOperand);
-                }
-                break;
-            case 0x62: // 'b'
-            	xil_printf("Ha elegido la opcion b. Introduzca segundo operando: ");
-                secondOperand = getNumber();
-                if (secondOperand < 256) {
-                    displayOperandInLEDs(secondOperand);
-                    // displayOperandInScreen(secondOperand);
-                }
-                break;
-            case 0x63: // 'c'
-                if ((firstOperand < 256) && (secondOperand < 256)) {
-                    difference = firstOperand - secondOperand;
-                	xil_printf("Ha elegido la opcion c. La diferencia es: ");
-                    displayOperandInLEDs(difference);
-                    displayOperandInScreen(difference);
-                }
-                break;
-            case 0x78: // 'x'
-            	xil_printf("Saliendo al menu principal...\r\n");
-            	break;
-            default: // otro carácter
-                xil_printf("Debe introducir una de las opciones del menu (a, b, c, x).\r\n");
-        }
-    }
-}

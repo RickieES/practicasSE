@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "\\vboxsvr\se\ws\practica3\pcores\top_sumador_v1_00_a\devl\synthesis\top_sumador_xst.prj"
+-top top_sumador
+-p virtex6
+-ofn "\\vboxsvr\se\ws\practica3\pcores\top_sumador_v1_00_a\devl\synthesis\top_sumador_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib top_sumador_v1_00_a

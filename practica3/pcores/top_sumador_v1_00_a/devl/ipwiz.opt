@@ -1,0 +1,10 @@
+-batch 
+-create top_sumador 
+-ver 1.00.a 
+-dir "N:\ws\practica3" 
+-lang vhdl 
+-bus plbv46 s 
+-reg 4 
+-xps 
+-ise 
+-driver 

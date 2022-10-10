@@ -1,0 +1,27 @@
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Overriding Xilinx file <TextEditor.cfg> with local file <C:/Xilinx/14.1/ISE_DS/EDK/data/TextEditor.cfg>
+xps_gpio_0 has been deleted from the project
+xps_gpio_1 has been deleted from the project
+Writing filter settings....
+Done writing filter settings to:
+	\\vboxsvr\se\ws\practica3\etc\practica3.filters
+Done writing Tab View settings to:
+	\\vboxsvr\se\ws\practica3\etc\practica3.gui
+Assigned Driver top_sumador 1.00.a for instance top_sumador_0
+top_sumador_0 has been added to the project
+WARNING:EDK:2137 - Peripheral top_sumador_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral top_sumador_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+Address Map for Processor microblaze_0
+  (0000000000-0x00007fff) xps_bram_if_cntlr_0	plb_v46_0
+  (0x84000000-0x8400ffff) xps_uartlite_0	plb_v46_0
+  (0xc4c00000-0xc4c0ffff) top_sumador_0	plb_v46_0
+Generated Addresses Successfully
+Save project successfully
+Writing filter settings....
+Done writing filter settings to:
+	\\vboxsvr\se\ws\practica3\etc\practica3.filters
+Done writing Tab View settings to:
+	\\vboxsvr\se\ws\practica3\etc\practica3.gui

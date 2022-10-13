@@ -97,7 +97,8 @@ entity user_logic is
   port
   (
     -- ADD USER PORTS BELOW THIS LINE ------------------
-    --USER ports added here
+    switches                       : in  std_logic(3 downto 0);
+	 leds                           : out std_logic(7 downto 0);
     -- ADD USER PORTS ABOVE THIS LINE ------------------
 
     -- DO NOT EDIT BELOW THIS LINE ---------------------
@@ -202,11 +203,11 @@ begin
               end if;
             end loop;
           when "0001" =>
-            for byte_index in 0 to (C_SLV_DWIDTH/8)-1 loop
-              if ( Bus2IP_BE(byte_index) = '1' ) then
-                slv_reg3(byte_index*8 to byte_index*8+7) <= Bus2IP_Data(byte_index*8 to byte_index*8+7);
-              end if;
-            end loop;
+				if (slv_reg0(31) = '0') then
+					slv_reg3 <= slv_reg1 + slv_reg2;
+				else
+					slv_reg3 <= slv_reg1 - slv_reg2;
+				end if;
           when others => null;
         end case;
       end if;
@@ -228,18 +229,23 @@ begin
 
   end process SLAVE_REG_READ_PROC;
   
-  SUMADOR : process ( Bus2IP_Clk ) is
+  SW2LEDS : process( switches ) is
   begin
     if Bus2IP_Clk'event and Bus2IP_Clk = '1' then
-		if (slv_reg0(31) = '0') then
-			slv_reg3 <= slv_reg1 + slv_reg2;
+      if Bus2IP_Reset = '1' then
+		  leds <= (others => '0');
 		else
-			slv_reg3 <= slv_reg1 - slv_reg2;
-		end if
-	 end if;
-	 
-  end process SUMADOR;
-
+		  case switches(1 to 0) is
+		    when "00" => leds <= slv_reg0(7 downto 0);
+			 when "01" => leds <= slv_reg1(7 downto 0);
+			 when "10" => leds <= slv_reg2(7 downto 0);
+			 when "11" => leds <= slv_reg3(7 downto 0);
+			 when others => leds <= (others => '0');
+		  end case;
+		end if;
+    end if;
+  end process SW2LEDS;
+  
   ------------------------------------------
   -- Example code to drive IP to Bus signals
   ------------------------------------------

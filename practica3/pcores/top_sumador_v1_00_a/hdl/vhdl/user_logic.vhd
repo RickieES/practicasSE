@@ -227,6 +227,18 @@ begin
     end case;
 
   end process SLAVE_REG_READ_PROC;
+  
+  SUMADOR : process ( Bus2IP_Clk ) is
+  begin
+    if Bus2IP_Clk'event and Bus2IP_Clk = '1' then
+		if (slv_reg0(31) = '0') then
+			slv_reg3 <= slv_reg1 + slv_reg2;
+		else
+			slv_reg3 <= slv_reg1 - slv_reg2;
+		end if
+	 end if;
+	 
+  end process SUMADOR;
 
   ------------------------------------------
   -- Example code to drive IP to Bus signals

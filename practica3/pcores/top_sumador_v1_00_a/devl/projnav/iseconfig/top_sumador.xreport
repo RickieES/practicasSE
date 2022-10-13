@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2022-10-10T18:23:48</DateModified>
+  <DateModified>2022-10-12T20:54:33</DateModified>
   <ModuleName>top_sumador</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>N:/ws/practica3/pcores/top_sumador_v1_00_a/devl/projnav/iseconfig/top_sumador.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>N:/ws/practica3/pcores/top_sumador_v1_00_a/devl/projnav</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>N:/ws/practica3/pcores/top_sumador_v1_00_a/devl/projnav\</ImplementationReportsDirectory>
   <DateInitialized>2022-10-10T18:23:48</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

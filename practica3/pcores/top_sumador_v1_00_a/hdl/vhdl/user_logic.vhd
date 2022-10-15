@@ -129,8 +129,15 @@ end entity user_logic;
 ------------------------------------------------------------------------------
 
 architecture IMP of user_logic is
-
+  component divisor1
+    port (
+      rst    : in  std_logic;
+      clk_in : in  std_logic;
+      clk_out: out std_logic
+    );
+  end component divisor1;
   --USER signal declarations added here, as needed for user logic
+  signal my_counter                     : std_logic_vector(7 downto 0);
 
   ------------------------------------------
   -- Signals for user logic slave model s/w accessible register example
@@ -146,7 +153,8 @@ architecture IMP of user_logic is
   signal slv_write_ack                  : std_logic;
 
 begin
-
+  mi_divisor: divisor1 port map(Bus2IP_Reset, Bus2IP_Clk, Clk_div);
+  
   --USER logic implementation added here
 
   ------------------------------------------
@@ -229,22 +237,39 @@ begin
 
   end process SLAVE_REG_READ_PROC;
   
-  SW2LEDS : process( switches ) is
+  SW2LEDS : process( Bus2IP_Reset, Bus2IP_Clk, switches ) is
   begin
     if Bus2IP_Clk'event and Bus2IP_Clk = '1' then
       if Bus2IP_Reset = '1' then
 		  leds <= (others => '0');
 		else
-		  case switches(1 to 0) is
-		    when "00" => leds <= slv_reg0(7 downto 0);
-			 when "01" => leds <= slv_reg1(7 downto 0);
-			 when "10" => leds <= slv_reg2(7 downto 0);
-			 when "11" => leds <= slv_reg3(7 downto 0);
-			 when others => leds <= (others => '0');
-		  end case;
+		  if (switches(3) = '1') then
+		    leds <= my_counter;
+		  else
+		    case switches(1 to 0) is
+			   when "00" => leds <= slv_reg0(7 downto 0);
+				when "01" => leds <= slv_reg1(7 downto 0);
+				when "10" => leds <= slv_reg2(7 downto 0);
+				when "11" => leds <= slv_reg3(7 downto 0);
+				when others => leds <= (others => '0');
+			 end case;
+		  end if;
 		end if;
     end if;
   end process SW2LEDS;
+  
+  COUNTERLEDS : process( Bus2IP_Reset, Clk_div ) is
+  begin
+    if Clk_div'event and Clk_div = '1' then
+      if Bus2IP_Reset = '1' then
+        my_counter <= (others => '0');
+		else
+		  if (my_counter < slv_reg3(7 downto 0)) then
+		    my_counter <= my_counter + '1';
+		  end if;
+		end if;
+    end if;
+  end process COUNTERLEDS;
   
   ------------------------------------------
   -- Example code to drive IP to Bus signals

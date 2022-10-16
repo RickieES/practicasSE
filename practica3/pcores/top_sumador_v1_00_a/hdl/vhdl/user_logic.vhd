@@ -213,49 +213,23 @@ begin
               end if;
             end loop;
           when "0001" =>
-				if (slv_reg0(31) = '0') then
-					slv_reg3 <= slv_reg1 + slv_reg2;
-				else
-					slv_reg3 <= slv_reg1 - slv_reg2;
-				end if;
-
+                 -- Parte D (opcional) de la práctica
+                 -- Si segundo MSB de switches es 0 y reg0(30) es 1 
+			    if ((switches(2) = '0') and (slv_reg0(30) = '1')) then
+					slv_reg3 <= my_counter;
+                else
+				    if (slv_reg0(31) = '0') then
+					    slv_reg3 <= slv_reg1 + slv_reg2;
+				    else
+					    slv_reg3 <= slv_reg1 - slv_reg2;
+				    end if;
+                end if;
           when others => null;
         end case;
       end if;
     end if;
 
   end process SLAVE_REG_WRITE_PROC;
-  
-  --Proceso para el apartado D (opcional) 
-  
-procesoD : process( Bus2IP_Clk, Bus2IP_Reset ) is
-  begin
-
-    if Bus2IP_Clk'event and Bus2IP_Clk = '1' then
-      if Bus2IP_Reset = '1' then
-        slv_reg3 <= (others => '0');
-      else
-			if switches(2) = '0' then --Segundo bit mas significativo a 0
-				if slv_reg0(30) = '1' then --si reg0(30) a 1
-					slv_reg3 <= my_counter;
-				else -- a 0
-					if slv_reg0(31) = '0' then
-						slv_reg3 <= slv_reg1 + slv_reg2;
-					else
-						slv_reg3 <= slv_reg1 - slv_reg2;
-					end if;
-				end if;
-			else --si no esta switches(2) a 0, apartado a
-				if slv_reg0(31) = '0' then
-					slv_reg3 <= slv_reg1 + slv_reg2;
-				else
-					slv_reg3 <= slv_reg1 - slv_reg2;
-				end if;
-			end if;
-      end if;
-    end if;
-
-  end process procesoD;
   
 			
   -- implement slave model software accessible register(s) read mux
@@ -304,7 +278,7 @@ procesoD : process( Bus2IP_Clk, Bus2IP_Reset ) is
       if Bus2IP_Reset = '1' then
         my_counter <= (others => '0');
 		else
-		  if (my_counter < slv_reg3(7 downto 0)) then
+		  if (my_counter < slv_reg3(0 to 7)) then
 		    my_counter <= my_counter + '1';
 		  end if;
 		end if;

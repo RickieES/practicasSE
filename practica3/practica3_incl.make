@@ -123,7 +123,8 @@ C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_
 C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd \
 C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plbv46_slave_single.vhd \
 pcores/top_sumador_v1_00_a/hdl/vhdl/user_logic.vhd \
-pcores/top_sumador_v1_00_a/hdl/vhdl/top_sumador.vhd
+pcores/top_sumador_v1_00_a/hdl/vhdl/top_sumador.vhd \
+pcores/top_sumador_v1_00_a/hdl/vhdl/divisor1Hz.vhd
 
 WRAPPER_NGC_FILES = implementation/practica3_microblaze_0_wrapper.ngc \
 implementation/practica3_plb_v46_0_wrapper.ngc \

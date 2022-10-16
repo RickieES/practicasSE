@@ -5,6 +5,9 @@
  PORT Rst_pin = net_Rst_pin, DIR = I, SIGIS = RST
  PORT RX_pin = net_RX_pin, DIR = I
  PORT TX_pin = xps_uartlite_0_TX, DIR = O
+ PORT Clk_pin = net_Clk_pin, DIR = I, SIGIS = CLK
+ PORT switches = net_switches, DIR = I, VEC = [3:0]
+ PORT leds = top_sumador_0_leds, DIR = O, VEC = [7:0]
 
 
 BEGIN microblaze
@@ -56,5 +59,7 @@ BEGIN top_sumador
  PARAMETER C_BASEADDR = 0xC4C00000
  PARAMETER C_HIGHADDR = 0xC4C07FFF
  BUS_INTERFACE SPLB = plb_v46_0
+ PORT switches = net_switches
+ PORT leds = top_sumador_0_leds
 END
 

@@ -162,8 +162,8 @@ entity top_sumador is
   port
   (
     -- ADD USER PORTS BELOW THIS LINE ------------------
-    switches                       : in  std_logic(3 downto 0);
-	 leds                           : out std_logic(7 downto 0);
+    switches                       : in  std_logic_vector(3 downto 0);
+	 leds                           : out std_logic_vector(7 downto 0);
     -- ADD USER PORTS ABOVE THIS LINE ------------------
 
     -- DO NOT EDIT BELOW THIS LINE ---------------------

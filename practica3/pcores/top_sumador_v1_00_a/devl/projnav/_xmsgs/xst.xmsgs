@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">top_sumador_v1_00_a/user_logic</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">N:/ws/practica3/pcores/top_sumador_v1_00_a/devl/projnav/../../hdl/vhdl/user_logic.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">//vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/user_logic.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">top_sumador_v1_00_a/user_logic/IMP</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">N:/ws/practica3/pcores/top_sumador_v1_00_a/devl/projnav/../../hdl/vhdl/user_logic.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">//vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/user_logic.vhd</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLParsers" num="807" delta="new" >&quot;<arg fmt="%s" index="1">//vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/user_logic.vhd</arg>&quot; Line <arg fmt="%d" index="2">251</arg>. <arg fmt="%s" index="3">slv_reg0</arg> can not be used with range <arg fmt="%s" index="4">downto</arg>.
+</msg>
+
+<msg type="error" file="HDLParsers" num="807" delta="new" >&quot;<arg fmt="%s" index="1">//vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/user_logic.vhd</arg>&quot; Line <arg fmt="%d" index="2">252</arg>. <arg fmt="%s" index="3">slv_reg1</arg> can not be used with range <arg fmt="%s" index="4">downto</arg>.
+</msg>
+
+<msg type="error" file="HDLParsers" num="807" delta="new" >&quot;<arg fmt="%s" index="1">//vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/user_logic.vhd</arg>&quot; Line <arg fmt="%d" index="2">253</arg>. <arg fmt="%s" index="3">slv_reg2</arg> can not be used with range <arg fmt="%s" index="4">downto</arg>.
+</msg>
+
+<msg type="error" file="HDLParsers" num="807" delta="new" >&quot;<arg fmt="%s" index="1">//vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/user_logic.vhd</arg>&quot; Line <arg fmt="%d" index="2">254</arg>. <arg fmt="%s" index="3">slv_reg3</arg> can not be used with range <arg fmt="%s" index="4">downto</arg>.
+</msg>
+
+<msg type="error" file="HDLParsers" num="807" delta="new" >&quot;<arg fmt="%s" index="1">//vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/user_logic.vhd</arg>&quot; Line <arg fmt="%d" index="2">268</arg>. <arg fmt="%s" index="3">slv_reg3</arg> can not be used with range <arg fmt="%s" index="4">downto</arg>.
+</msg>
+
+</messages>
+

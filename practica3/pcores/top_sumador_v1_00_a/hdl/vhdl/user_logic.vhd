@@ -97,8 +97,8 @@ entity user_logic is
   port
   (
     -- ADD USER PORTS BELOW THIS LINE ------------------
-    switches                       : in  std_logic(3 downto 0);
-	 leds                           : out std_logic(7 downto 0);
+    switches                       : in  std_logic_vector(3 downto 0);
+	 leds                           : out std_logic_vector(7 downto 0);
     -- ADD USER PORTS ABOVE THIS LINE ------------------
 
     -- DO NOT EDIT BELOW THIS LINE ---------------------
@@ -135,9 +135,10 @@ architecture IMP of user_logic is
       clk_in : in  std_logic;
       clk_out: out std_logic
     );
-  end component divisor1;
+  end component;
   --USER signal declarations added here, as needed for user logic
   signal my_counter                     : std_logic_vector(7 downto 0);
+  signal Clk_div                        : std_logic;
 
   ------------------------------------------
   -- Signals for user logic slave model s/w accessible register example
@@ -246,11 +247,11 @@ begin
 		  if (switches(3) = '1') then
 		    leds <= my_counter;
 		  else
-		    case switches(1 to 0) is
-			   when "00" => leds <= slv_reg0(7 downto 0);
-				when "01" => leds <= slv_reg1(7 downto 0);
-				when "10" => leds <= slv_reg2(7 downto 0);
-				when "11" => leds <= slv_reg3(7 downto 0);
+		    case switches(1 downto 0) is
+			   when "00" => leds <= slv_reg0(0 to 7);
+				when "01" => leds <= slv_reg1(0 to 7);
+				when "10" => leds <= slv_reg2(0 to 7);
+				when "11" => leds <= slv_reg3(0 to 7);
 				when others => leds <= (others => '0');
 			 end case;
 		  end if;

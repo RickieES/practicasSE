@@ -8,7 +8,7 @@
 <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;N:/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/user_logic.vhd&quot; into library top_sumador_v1_00_a</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;N:/ws/practica3/pcores/top_sumador_v1_00_a/devl/projnav/test_sumador.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

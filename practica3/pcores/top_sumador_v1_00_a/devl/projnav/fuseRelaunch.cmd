@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "N:/ws/practica3/pcores/top_sumador_v1_00_a/devl/projnav/testbench_isim_beh.exe" -prj "N:/ws/practica3/pcores/top_sumador_v1_00_a/devl/projnav/testbench_beh.prj" "work.testbench" 

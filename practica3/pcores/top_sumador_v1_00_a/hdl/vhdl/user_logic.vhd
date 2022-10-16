@@ -191,6 +191,7 @@ begin
         slv_reg1 <= (others => '0');
         slv_reg2 <= (others => '0');
         slv_reg3 <= (others => '0');
+		
       else
         case slv_reg_write_sel is
           when "1000" =>
@@ -217,13 +218,46 @@ begin
 				else
 					slv_reg3 <= slv_reg1 - slv_reg2;
 				end if;
+
           when others => null;
         end case;
       end if;
     end if;
 
   end process SLAVE_REG_WRITE_PROC;
+  
+  --Proceso para el apartado D (opcional) 
+  
+procesoD : process( Bus2IP_Clk, Bus2IP_Reset ) is
+  begin
 
+    if Bus2IP_Clk'event and Bus2IP_Clk = '1' then
+      if Bus2IP_Reset = '1' then
+        slv_reg3 <= (others => '0');
+      else
+			if switches(2) = '0' then --Segundo bit mas significativo a 0
+				if slv_reg0(30) = '1' then --si reg0(30) a 1
+					slv_reg3 <= my_counter;
+				else -- a 0
+					if slv_reg0(31) = '0' then
+						slv_reg3 <= slv_reg1 + slv_reg2;
+					else
+						slv_reg3 <= slv_reg1 - slv_reg2;
+					end if;
+				end if;
+			else --si no esta switches(2) a 0, apartado a
+				if slv_reg0(31) = '0' then
+					slv_reg3 <= slv_reg1 + slv_reg2;
+				else
+					slv_reg3 <= slv_reg1 - slv_reg2;
+				end if;
+			end if;
+      end if;
+    end if;
+
+  end process procesoD;
+  
+			
   -- implement slave model software accessible register(s) read mux
   SLAVE_REG_READ_PROC : process( slv_reg_read_sel, slv_reg0, slv_reg1, slv_reg2, slv_reg3 ) is
   begin
@@ -235,8 +269,11 @@ begin
       when "0001" => slv_ip2bus_data <= slv_reg3;
       when others => slv_ip2bus_data <= (others => '0');
     end case;
+	
 
   end process SLAVE_REG_READ_PROC;
+  
+  --Proceso apartado B
   
   SW2LEDS : process( Bus2IP_Reset, Bus2IP_Clk, switches ) is
   begin
@@ -258,6 +295,8 @@ begin
 		end if;
     end if;
   end process SW2LEDS;
+  
+  --Proceso para el contador desde  hasta el valor de reg3 en el apatado C
   
   COUNTERLEDS : process( Bus2IP_Reset, Clk_div ) is
   begin

@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2022-10-16T22:37:39</DateModified>
+  <DateModified>2022-10-19T00:28:09</DateModified>
   <ModuleName>practica3</ModuleName>
-  <SummaryTimeStamp>2022-10-16T22:37:39</SummaryTimeStamp>
+  <SummaryTimeStamp>2022-10-19T00:24:19</SummaryTimeStamp>
   <SavedFilePath>N:/ws/practica3/__xps/ise/practica3.xreport</SavedFilePath>
   <FilterFile>filter.filter</FilterFile>
   <SavedFilterFilePath>N:/ws/practica3/__xps/ise</SavedFilterFilePath>
@@ -20,7 +20,7 @@
     <toc-item title="Detailed Reports" target="Detailed Reports" />
    </view>
    <view inputState="Unknown" program="implementation" contextTags="FPGA_ONLY" hidden="true" type="HTML" file="implementation\practica3_envsettings.html" label="System Settings" />
-   <view inputState="Translated" program="map" locator="MAP_IOB_TABLE" contextTags="FPGA_ONLY" type="IOBProperties" file="implementation\practica3_map.xrpt" label="IOB Properties" />
+   <view inputState="Translated" program="map" locator="MAP_IOB_TABLE" contextTags="FPGA_ONLY" type="IOBProperties" file="implementation\practica3_map.xrpt" showConstraints="0" label="IOB Properties" />
    <view inputState="Translated" program="map" contextTags="FPGA_ONLY" hidden="true" type="Control_Sets" file="implementation\practica3_map.xrpt" label="Control Set Information" />
    <view inputState="Translated" program="map" locator="MAP_MODULE_HIERARCHY" contextTags="FPGA_ONLY" type="Module_Utilization" file="implementation\practica3_map.xrpt" label="Module Level Utilization" />
    <view inputState="Mapped" program="par" locator="CONSTRAINT_TABLE" contextTags="FPGA_ONLY" type="ConstraintsData" file="implementation\practica3.ptwx" label="Timing Constraints" translator="ptwxToTableXML.xslt" />
@@ -44,7 +44,7 @@
   <viewgroup label="Errors and Warnings" >
    <view program="pn" WrapMessages="true" contextTags="EDK_OFF" hidden="true" type="MessageList" hideColumns="Filtered, New" file="implementation\_xmsgs/pn_parser.xmsgs" label="Parser Messages" />
    <view program="xst" WrapMessages="true" contextTags="XST_ONLY,EDK_OFF" hidden="true" type="MessageList" hideColumns="Filtered" file="synthesis\_xmsgs/xst.xmsgs" label="Synthesis Messages" />
-   <view inputState="Synthesized" program="ngdbuild" WrapMessages="true" type="MessageList" hideColumns="Filtered" file="implementation\_xmsgs/ngdbuild.xmsgs" label="Translation Messages" />
+   <view inputState="Synthesized" program="ngdbuild" WrapMessages="true" showErrors="1" showInfos="0" type="MessageList" hideColumns="Filtered" file="implementation\_xmsgs/ngdbuild.xmsgs" label="Translation Messages" showWarnings="1" />
    <view inputState="Translated" program="map" WrapMessages="true" contextTags="FPGA_ONLY" type="MessageList" hideColumns="Filtered" file="implementation\_xmsgs/map.xmsgs" label="Map Messages" />
    <view inputState="Mapped" program="par" WrapMessages="true" contextTags="FPGA_ONLY" type="MessageList" hideColumns="Filtered" file="implementation\_xmsgs/par.xmsgs" label="Place and Route Messages" />
    <view inputState="Routed" program="trce" WrapMessages="true" contextTags="FPGA_ONLY" type="MessageList" hideColumns="Filtered" file="implementation\_xmsgs/trce.xmsgs" label="Timing Messages" />

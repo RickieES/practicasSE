@@ -2,6 +2,7 @@
     "files.associations": {
         "bram_header.h": "c",
         "xil_cache.h": "c",
-        "xbasic_types.h": "c"
+        "xbasic_types.h": "c",
+        "xparameters.h": "c"
     }
 }

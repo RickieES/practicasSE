@@ -159,26 +159,26 @@ int main()
             case 'a': 
             	xil_printf("Ontroduzca operando");
                singleDigit = getSingleDigitNumber();
-               TOP_SUMADOR_mWriteSlaveReg0(Base,0,singleDigit);
+               TOP_SUMADOR_mWriteSlaveReg0(XPAR_TOP_SUMADOR_0_BASEADDR,0,singleDigit);
                 xil_printf("\r\n");
                 break;
             case 'b': 
             	xil_printf(" Introduzca primer operando");
                 firstOperand = getNumber();
                 if (firstOperand < 256) {
-                  TOP_SUMADOR_mWriteSlaveReg1(Base,0,firstOperand);
+                  TOP_SUMADOR_mWriteSlaveReg1(XPAR_TOP_SUMADOR_0_BASEADDR,0,firstOperand);
                 }
             	break;
             case 'c': 
                 secondOperand = getNumber();
                 if (secondOperand < 256) {
-                  TOP_SUMADOR_mWriteSlaveReg2(Base,0,secondOperand);
+                  TOP_SUMADOR_mWriteSlaveReg2(XPAR_TOP_SUMADOR_0_BASEADDR,0,secondOperand);
                 }
             	break;
             case 'd':
                 if ((firstOperand < 256) && (secondOperand < 256)) {
                    // result = firstOperand - secondOperand;
-                    result = TOP_SUMADOR_mReadSlaveReg3(Base,0);
+                    result = TOP_SUMADOR_mReadSlaveReg3(XPAR_TOP_SUMADOR_0_BASEADDR,0);
                 	xil_printf("El resulado es: %d \n\r ", result);
                 }
             break;

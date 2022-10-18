@@ -13,6 +13,7 @@
 #include "xbasic_types.h"
 #include "xstatus.h"
 #include "xil_io.h"
+#include "xparameters.h"
 
 /************************** Constant Definitions ***************************/
 

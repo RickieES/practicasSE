@@ -4,7 +4,7 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> 
 TABLE OF CONTENTS
@@ -476,7 +476,7 @@ Analyzing generic Entity <user_logic> in library <top_sumador_v1_00_a> (Architec
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:1610 - "//vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/user_logic.vhd" line 219: Width mismatch. <slv_reg3> has a width of 32 bits but assigned expression is 8-bit wide.
-INFO:Xst:1561 - "//vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/user_logic.vhd" line 265: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "//vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/user_logic.vhd" line 258: Mux is complete : default of case is discarded
 Entity <user_logic> analyzed. Unit <user_logic> generated.
 
 Analyzing Entity <divisor1> in library <top_sumador_v1_00_a> (Architecture <divisor1_arch>).
@@ -534,7 +534,7 @@ Synthesizing Unit <user_logic>.
     Related source file is "//vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/user_logic.vhd".
     Found 8-bit register for signal <leds>.
     Found 8-bit up counter for signal <my_counter>.
-    Found 8-bit comparator less for signal <my_counter$cmp_lt0000> created at line 281.
+    Found 8-bit comparator less for signal <my_counter$cmp_lt0000> created at line 273.
     Found 32-bit register for signal <slv_reg0>.
     Found 32-bit register for signal <slv_reg1>.
     Found 32-bit register for signal <slv_reg2>.
@@ -1034,12 +1034,12 @@ Offset:              0.626ns (Levels of Logic = 0)
 =========================================================================
 
 
-Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 9.46 secs
+Total REAL time to Xst completion: 21.00 secs
+Total CPU time to Xst completion: 20.28 secs
  
 --> 
 
-Total memory usage is 308560 kilobytes
+Total memory usage is 308556 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  106 (   0 filtered)

@@ -5,15 +5,12 @@ make all
 Building file: ../src/testperiph.c
 Invoking: MicroBlaze gcc compiler
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../peripheral_tests_bsp_0/microblaze_0/include -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.d" -o"src/testperiph.o" "../src/testperiph.c"
-../src/testperiph.c: In function 'main':
-../src/testperiph.c:46:4: warning: implicit declaration of function 'print' [-Wimplicit-function-declaration]
-../src/testperiph.c:58:10: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+../src/testperiph.c: In function 'getSingleDigitNumber':
+../src/testperiph.c:51:3: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+../src/testperiph.c: In function 'getNumber':
+../src/testperiph.c:89:4: warning: implicit declaration of function 'XUartLite_SendByte' [-Wimplicit-function-declaration]
+../src/testperiph.c:127:4: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
 Finished building: ../src/testperiph.c
-' '
-Building file: ../src/xbram_example.c
-Invoking: MicroBlaze gcc compiler
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../peripheral_tests_bsp_0/microblaze_0/include -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -MMD -MP -MF"src/xbram_example.d" -MT"src/xbram_example.d" -o"src/xbram_example.o" "../src/xbram_example.c"
-Finished building: ../src/xbram_example.c
 ' '
 Building target: practica3_sdk.elf
 Invoking: MicroBlaze gcc linker
@@ -23,7 +20,7 @@ Finished building target: practica3_sdk.elf
 Invoking: MicroBlaze Print Size
 mb-size practica3_sdk.elf  |tee "practica3_sdk.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   9154	    368	   2182	  11704	   2db8	practica3_sdk.elf
+  10202	    368	   2182	  12752	   31d0	practica3_sdk.elf
 Finished building: practica3_sdk.elf.size
 ' '
 Invoking: Xilinx ELF Check

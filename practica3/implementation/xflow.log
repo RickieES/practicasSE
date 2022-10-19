@@ -79,8 +79,8 @@ NGDBUILD Design Results Summary:
   Number of warnings:   5
 
 Writing NGD file "practica3.ngd" ...
-Total REAL time to NGDBUILD completion:  16 sec
-Total CPU time to NGDBUILD completion:   15 sec
+Total REAL time to NGDBUILD completion:  36 sec
+Total CPU time to NGDBUILD completion:   33 sec
 
 Writing NGDBUILD log file "practica3.bld"...
 
@@ -105,11 +105,11 @@ Running directed packing...
 Running delay-based LUT packing...
 Updating timing models...
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 4 secs 
-Total CPU  time at the beginning of Placer: 3 secs 
+Total REAL time at the beginning of Placer: 12 secs 
+Total CPU  time at the beginning of Placer: 11 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:3c9df8ed) REAL time: 5 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:3c9df8ed) REAL time: 15 secs 
 
 Phase 2.7  Design Feasibility Check
 WARNING:Place:837 - Partially locked IO Bus is found. 
@@ -119,32 +119,32 @@ WARNING:Place:837 - Partially locked IO Bus is found.
 INFO:Place:834 - Only a subset of IOs are locked. Out of 16 IOs, 14 are locked
    and 2 are not locked. If you would like to print the names of these IOs,
    please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
-Phase 2.7  Design Feasibility Check (Checksum:3c9df8ed) REAL time: 5 secs 
+Phase 2.7  Design Feasibility Check (Checksum:3c9df8ed) REAL time: 15 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:3c9df8ed) REAL time: 5 secs 
+Phase 3.31  Local Placement Optimization (Checksum:3c9df8ed) REAL time: 15 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 .....
-Phase 4.2  Initial Clock and IO Placement (Checksum:120254d) REAL time: 5 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:120254d) REAL time: 16 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:120254d) REAL time: 5 secs 
+Phase 5.36  Local Placement Optimization (Checksum:120254d) REAL time: 16 secs 
 
 Phase 6.3  Local Placement Optimization
 .....
-Phase 6.3  Local Placement Optimization (Checksum:1d8ab88) REAL time: 5 secs 
+Phase 6.3  Local Placement Optimization (Checksum:1d8ab88) REAL time: 16 secs 
 
 Phase 7.5  Local Placement Optimization
-Phase 7.5  Local Placement Optimization (Checksum:1d8ab88) REAL time: 5 secs 
+Phase 7.5  Local Placement Optimization (Checksum:1d8ab88) REAL time: 16 secs 
 
 Phase 8.4  Local Placement Optimization
 ......................................
 ................................................................................
-Phase 8.4  Local Placement Optimization (Checksum:1d8ab88) REAL time: 9 secs 
+Phase 8.4  Local Placement Optimization (Checksum:1d8ab88) REAL time: 24 secs 
 
 Phase 9.28  Local Placement Optimization
-Phase 9.28  Local Placement Optimization (Checksum:1d8ab88) REAL time: 9 secs 
+Phase 9.28  Local Placement Optimization (Checksum:1d8ab88) REAL time: 24 secs 
 
 Phase 10.8  Global Placement
 ...................................
@@ -153,22 +153,22 @@ Phase 10.8  Global Placement
 .....................................................................
 .........................
 ............................................................
-Phase 10.8  Global Placement (Checksum:3013dc13) REAL time: 16 secs 
+Phase 10.8  Global Placement (Checksum:3013dc13) REAL time: 38 secs 
 
 Phase 11.29  Local Placement Optimization
-Phase 11.29  Local Placement Optimization (Checksum:3013dc13) REAL time: 16 secs 
+Phase 11.29  Local Placement Optimization (Checksum:3013dc13) REAL time: 38 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:3013dc13) REAL time: 16 secs 
+Phase 12.5  Local Placement Optimization (Checksum:3013dc13) REAL time: 38 secs 
 
 Phase 13.18  Placement Optimization
-Phase 13.18  Placement Optimization (Checksum:9485a68d) REAL time: 27 secs 
+Phase 13.18  Placement Optimization (Checksum:9485a68d) REAL time: 1 mins 1 secs 
 
 Phase 14.5  Local Placement Optimization
-Phase 14.5  Local Placement Optimization (Checksum:9485a68d) REAL time: 27 secs 
+Phase 14.5  Local Placement Optimization (Checksum:9485a68d) REAL time: 1 mins 1 secs 
 
-Total REAL time to Placer completion: 27 secs 
-Total CPU  time to Placer completion: 26 secs 
+Total REAL time to Placer completion: 1 mins 1 secs 
+Total CPU  time to Placer completion: 59 secs 
 Running post-placement packing...
 
 Design Summary:
@@ -200,9 +200,9 @@ Logic Distribution:
 
 Average Fanout of Non-Clock Nets:                4.04
 
-Peak Memory Usage:  241 MB
-Total REAL time to MAP completion:  28 secs 
-Total CPU time to MAP completion:   27 secs 
+Peak Memory Usage:  243 MB
+Total REAL time to MAP completion:  1 mins 3 secs 
+Total CPU time to MAP completion:   1 mins 1 secs 
 
 Mapping completed.
 See MAP report file "practica3_map.mrp" for details.
@@ -254,8 +254,8 @@ Device Utilization Summary:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 2 secs 
-Finished initial Timing Analysis.  REAL time: 2 secs 
+Starting initial Timing Analysis.  REAL time: 5 secs 
+Finished initial Timing Analysis.  REAL time: 5 secs 
 
 WARNING:Par:288 - The signal xps_bram_if_cntlr_0_PORTA_BRAM_Addr<0> has no load.  PAR will not attempt to route this
    signal.
@@ -330,30 +330,30 @@ WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<31> has no load.  PAR will 
 Starting Router
 
 
-Phase  1  : 13297 unrouted;      REAL time: 3 secs 
+Phase  1  : 13297 unrouted;      REAL time: 8 secs 
 
-Phase  2  : 11800 unrouted;      REAL time: 4 secs 
+Phase  2  : 11800 unrouted;      REAL time: 9 secs 
 
-Phase  3  : 4101 unrouted;      REAL time: 5 secs 
+Phase  3  : 4101 unrouted;      REAL time: 11 secs 
 
-Phase  4  : 4414 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
+Phase  4  : 4414 unrouted; (Par is working to improve performance)     REAL time: 14 secs 
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 16 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 29 secs 
 
 Updating file: practica3.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 17 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 32 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 48 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 28 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 48 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 28 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 49 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 29 secs 
 WARNING:Route:455 - CLK Net:top_sumador_0/top_sumador_0/USER_LOGIC_I/mi_divisor/clk_aux may have excessive skew because 
       0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 
-Total REAL time to Router completion: 49 secs 
-Total CPU time to Router completion: 48 secs 
+Total REAL time to Router completion: 1 mins 29 secs 
+Total CPU time to Router completion: 1 mins 27 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -418,10 +418,10 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 51 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 50 secs 
-Total CPU time to PAR completion: 49 secs 
+Total REAL time to PAR completion: 1 mins 33 secs 
+Total CPU time to PAR completion: 1 mins 29 secs 
 
-Peak Memory Usage:  271 MB
+Peak Memory Usage:  270 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
@@ -483,13 +483,13 @@ INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and
    calculation.  Please make appropriate modification to SYSTEM_JITTER to
    account for the unsupported Discrete Jitter and Phase Error.
 
-Analysis completed Sun Oct 16 22:51:46 2022
+Analysis completed Wed Oct 19 21:37:06 2022
 --------------------------------------------------------------------------------
 
 Generating Report ...
 
 Number of warnings: 0
 Number of info messages: 6
-Total time: 2 secs 
+Total time: 4 secs 
 
 

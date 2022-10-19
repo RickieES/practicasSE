@@ -1,8 +1,8 @@
 V3 3
 FL //vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/divisor1Hz.vhd 2022/09/26.16:30:19 P.15xf
-EN work/divisor1 1666131123 \
+EN work/divisor1 1666196751 \
       FL //vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/divisor1Hz.vhd \
       PB ieee/std_logic_1164 1335251622 PB ieee/STD_LOGIC_UNSIGNED 1335251625
-AR work/divisor1/divisor1_arch 1666131124 \
+AR work/divisor1/divisor1_arch 1666196752 \
       FL //vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/divisor1Hz.vhd \
-      EN work/divisor1 1666131123
+      EN work/divisor1 1666196751

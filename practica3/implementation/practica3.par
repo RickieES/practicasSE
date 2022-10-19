@@ -1,7 +1,7 @@
 Release 14.1 par P.15xf (nt)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-CJRIPA-PC::  Sun Oct 16 22:50:52 2022
+CJRIPA-PC::  Wed Oct 19 21:35:26 2022
 
 par -w -ol high practica3_map.ncd practica3.ncd practica3.pcf 
 
@@ -40,8 +40,8 @@ Device Utilization Summary:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 2 secs 
-Finished initial Timing Analysis.  REAL time: 2 secs 
+Starting initial Timing Analysis.  REAL time: 5 secs 
+Finished initial Timing Analysis.  REAL time: 5 secs 
 
 WARNING:Par:288 - The signal xps_bram_if_cntlr_0_PORTA_BRAM_Addr<0> has no load.  PAR will not attempt to route this
    signal.
@@ -116,30 +116,30 @@ WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<31> has no load.  PAR will 
 Starting Router
 
 
-Phase  1  : 13297 unrouted;      REAL time: 3 secs 
+Phase  1  : 13297 unrouted;      REAL time: 8 secs 
 
-Phase  2  : 11800 unrouted;      REAL time: 4 secs 
+Phase  2  : 11800 unrouted;      REAL time: 9 secs 
 
-Phase  3  : 4101 unrouted;      REAL time: 5 secs 
+Phase  3  : 4101 unrouted;      REAL time: 11 secs 
 
-Phase  4  : 4414 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
+Phase  4  : 4414 unrouted; (Par is working to improve performance)     REAL time: 14 secs 
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 16 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 29 secs 
 
 Updating file: practica3.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 17 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 32 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 48 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 28 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 48 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 28 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 49 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 29 secs 
 WARNING:Route:455 - CLK Net:top_sumador_0/top_sumador_0/USER_LOGIC_I/mi_divisor/clk_aux may have excessive skew because 
       0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 
-Total REAL time to Router completion: 49 secs 
-Total CPU time to Router completion: 48 secs 
+Total REAL time to Router completion: 1 mins 29 secs 
+Total CPU time to Router completion: 1 mins 27 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -204,10 +204,10 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 51 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 50 secs 
-Total CPU time to PAR completion: 49 secs 
+Total REAL time to PAR completion: 1 mins 33 secs 
+Total CPU time to PAR completion: 1 mins 29 secs 
 
-Peak Memory Usage:  271 MB
+Peak Memory Usage:  270 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

@@ -14,7 +14,9 @@ src/testperiph.d: ../src/testperiph.c \
  ../src/bram_header.h \
  ../../peripheral_tests_bsp_0/microblaze_0/include/xil_types.h \
  ../../peripheral_tests_bsp_0/microblaze_0/include/xil_assert.h \
- ../../peripheral_tests_bsp_0/microblaze_0/include/xstatus.h
+ ../../peripheral_tests_bsp_0/microblaze_0/include/xstatus.h \
+ ../src/top_sumador.h \
+ ../../peripheral_tests_bsp_0/microblaze_0/include/xil_io.h
 
 ../../peripheral_tests_bsp_0/microblaze_0/include/xparameters.h:
 
@@ -47,3 +49,7 @@ src/testperiph.d: ../src/testperiph.c \
 ../../peripheral_tests_bsp_0/microblaze_0/include/xil_assert.h:
 
 ../../peripheral_tests_bsp_0/microblaze_0/include/xstatus.h:
+
+../src/top_sumador.h:
+
+../../peripheral_tests_bsp_0/microblaze_0/include/xil_io.h:

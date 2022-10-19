@@ -156,6 +156,8 @@ IPNAME:bram_block INSTANCE:bram_block_0 - N:\ws\practica3\practica3.mhs line 38
 - Copying cache implementation netlist
 IPNAME:xps_uartlite INSTANCE:xps_uartlite_0 - N:\ws\practica3\practica3.mhs line
 44 - Copying cache implementation netlist
+IPNAME:top_sumador INSTANCE:top_sumador_0 - N:\ws\practica3\practica3.mhs line
+56 - Copying cache implementation netlist
 
 Elaborating instances ...
 IPNAME:bram_block INSTANCE:bram_block_0 - N:\ws\practica3\practica3.mhs line 38
@@ -190,4 +192,4 @@ INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
 
 Rebuilding cache ...
 
-Total run time: 13.00 seconds
+Total run time: 30.00 seconds

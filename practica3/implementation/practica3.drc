@@ -1,7 +1,7 @@
 Release 14.1 Drc P.15xf (nt)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Sun Oct 16 22:51:48 2022
+Wed Oct 19 21:37:11 2022
 
 drc -z practica3.ncd practica3.pcf
 

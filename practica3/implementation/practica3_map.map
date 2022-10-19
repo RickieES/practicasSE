@@ -9,7 +9,7 @@ Target Device  : xc3s1000
 Target Package : ft256
 Target Speed   : -5
 Mapper Version : spartan3 -- $Revision: 1.55 $
-Mapped Date    : Sun Oct 16 22:50:22 2022
+Mapped Date    : Wed Oct 19 21:34:21 2022
 
 Mapping design into LUTs...
 Writing file practica3_map.ngm...
@@ -17,11 +17,11 @@ Running directed packing...
 Running delay-based LUT packing...
 Updating timing models...
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 4 secs 
-Total CPU  time at the beginning of Placer: 3 secs 
+Total REAL time at the beginning of Placer: 12 secs 
+Total CPU  time at the beginning of Placer: 11 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:3c9df8ed) REAL time: 5 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:3c9df8ed) REAL time: 15 secs 
 
 Phase 2.7  Design Feasibility Check
 WARNING:Place:837 - Partially locked IO Bus is found. 
@@ -31,32 +31,32 @@ WARNING:Place:837 - Partially locked IO Bus is found.
 INFO:Place:834 - Only a subset of IOs are locked. Out of 16 IOs, 14 are locked
    and 2 are not locked. If you would like to print the names of these IOs,
    please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
-Phase 2.7  Design Feasibility Check (Checksum:3c9df8ed) REAL time: 5 secs 
+Phase 2.7  Design Feasibility Check (Checksum:3c9df8ed) REAL time: 15 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:3c9df8ed) REAL time: 5 secs 
+Phase 3.31  Local Placement Optimization (Checksum:3c9df8ed) REAL time: 15 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 .....
-Phase 4.2  Initial Clock and IO Placement (Checksum:120254d) REAL time: 5 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:120254d) REAL time: 16 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:120254d) REAL time: 5 secs 
+Phase 5.36  Local Placement Optimization (Checksum:120254d) REAL time: 16 secs 
 
 Phase 6.3  Local Placement Optimization
 .....
-Phase 6.3  Local Placement Optimization (Checksum:1d8ab88) REAL time: 5 secs 
+Phase 6.3  Local Placement Optimization (Checksum:1d8ab88) REAL time: 16 secs 
 
 Phase 7.5  Local Placement Optimization
-Phase 7.5  Local Placement Optimization (Checksum:1d8ab88) REAL time: 5 secs 
+Phase 7.5  Local Placement Optimization (Checksum:1d8ab88) REAL time: 16 secs 
 
 Phase 8.4  Local Placement Optimization
 ......................................
 ................................................................................
-Phase 8.4  Local Placement Optimization (Checksum:1d8ab88) REAL time: 9 secs 
+Phase 8.4  Local Placement Optimization (Checksum:1d8ab88) REAL time: 24 secs 
 
 Phase 9.28  Local Placement Optimization
-Phase 9.28  Local Placement Optimization (Checksum:1d8ab88) REAL time: 9 secs 
+Phase 9.28  Local Placement Optimization (Checksum:1d8ab88) REAL time: 24 secs 
 
 Phase 10.8  Global Placement
 ...................................
@@ -65,22 +65,22 @@ Phase 10.8  Global Placement
 .....................................................................
 .........................
 ............................................................
-Phase 10.8  Global Placement (Checksum:3013dc13) REAL time: 16 secs 
+Phase 10.8  Global Placement (Checksum:3013dc13) REAL time: 38 secs 
 
 Phase 11.29  Local Placement Optimization
-Phase 11.29  Local Placement Optimization (Checksum:3013dc13) REAL time: 16 secs 
+Phase 11.29  Local Placement Optimization (Checksum:3013dc13) REAL time: 38 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:3013dc13) REAL time: 16 secs 
+Phase 12.5  Local Placement Optimization (Checksum:3013dc13) REAL time: 38 secs 
 
 Phase 13.18  Placement Optimization
-Phase 13.18  Placement Optimization (Checksum:9485a68d) REAL time: 27 secs 
+Phase 13.18  Placement Optimization (Checksum:9485a68d) REAL time: 1 mins 1 secs 
 
 Phase 14.5  Local Placement Optimization
-Phase 14.5  Local Placement Optimization (Checksum:9485a68d) REAL time: 27 secs 
+Phase 14.5  Local Placement Optimization (Checksum:9485a68d) REAL time: 1 mins 1 secs 
 
-Total REAL time to Placer completion: 27 secs 
-Total CPU  time to Placer completion: 26 secs 
+Total REAL time to Placer completion: 1 mins 1 secs 
+Total CPU  time to Placer completion: 59 secs 
 Running post-placement packing...
 
 Design Summary
@@ -115,9 +115,9 @@ Logic Distribution:
 
 Average Fanout of Non-Clock Nets:                4.04
 
-Peak Memory Usage:  241 MB
-Total REAL time to MAP completion:  28 secs 
-Total CPU time to MAP completion:   27 secs 
+Peak Memory Usage:  243 MB
+Total REAL time to MAP completion:  1 mins 3 secs 
+Total CPU time to MAP completion:   1 mins 1 secs 
 
 Mapping completed.
 See MAP report file "practica3_map.mrp" for details.

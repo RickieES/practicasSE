@@ -1,5 +1,5 @@
 Release 14.1 - libgen Xilinx EDK 14.1 Build EDK_P.15xf
- (nt)
+ (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 Command Line: libgen -hw ../practica2_hw_platform/system.xml -pe microblaze_0

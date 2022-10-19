@@ -2967,3 +2967,47 @@ Done writing filter settings to:
 	\\vboxsvr\se\ws\practica2\etc\practica2.filters
 Done writing Tab View settings to:
 	\\vboxsvr\se\ws\practica2\etc\practica2.gui
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Overriding Xilinx file <TextEditor.cfg> with local file <C:/software/electronica/xilinx/14.1/ISE_DS/EDK/data/TextEditor.cfg>
+
+********************************************************************************
+At Local date and time: Wed Oct 19 16:28:11 2022
+ make -f practica2.make exporttosdk started...
+make: No se hace nada para `exporttosdk'.
+Done!
+
+********************************************************************************
+At Local date and time: Wed Oct 19 16:28:12 2022
+ xsdk.exe -hwspec U:\hlocal\practicasSE-main\practica2\SDK\SDK_Export\hw\practica2.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+Done!
+
+********************************************************************************
+At Local date and time: Wed Oct 19 17:17:19 2022
+ make -f practica2.make exporttosdk started...
+make: No se hace nada para `exporttosdk'.
+Done!
+
+********************************************************************************
+At Local date and time: Wed Oct 19 17:17:19 2022
+ xsdk.exe -hwspec U:\hlocal\practicasSE-main\practica2\SDK\SDK_Export\hw\practica2.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+Done!
+
+********************************************************************************
+At Local date and time: Wed Oct 19 17:37:15 2022
+ make -f practica2.make bits started...
+make: No se hace nada para `bits'.
+Done!
+Writing filter settings....
+Done writing filter settings to:
+	U:\hlocal\practicasSE-main\practica2\etc\practica2.filters
+Done writing Tab View settings to:
+	U:\hlocal\practicasSE-main\practica2\etc\practica2.gui

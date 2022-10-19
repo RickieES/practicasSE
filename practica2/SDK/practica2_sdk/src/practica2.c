@@ -14,6 +14,9 @@
 #include "xgpio.h"
 #include "practica2.h"
 
+XGpio GpioSwitches;  /* The driver instance for GPIO Device configured as Entrada */
+XGpio GpioLEDs;     /* The driver instance for GPIO Device configured as Salida */
+
 /*
  * Muestra el menú de la parte b
  */
@@ -81,7 +84,7 @@ void practica2bc(char apartado) {
             case 0x64: // 'd'
             	// Ignora la opción si no estamos en la parte b de la práctica
             	if (apartado == 'c') {
-            		displaySwitchesValue();
+            		displaySwitchesValue(GpioSwitches, GpioLEDs);
             	} else {
                     xil_printf("Debe introducir una de las opciones del menu.\r\n");
             	}
@@ -99,8 +102,24 @@ void practica2bc(char apartado) {
 int main() {
     Xuint8 byte = 0;
     int sdValue;
+    int status;
 
     xil_printf("Practica 2 por Nestor Marin y Ricardo Palomares\r\n\r\n");
+	status = XGpio_Initialize(&GpioSwitches, (u16) XPAR_SWITCHES_DEVICE_ID); /*Obtiene el puntero a la estructura */
+	// Configuración de la GPIO para los Switches
+	if (status != XST_SUCCESS) {
+		xil_printf("No se han podido inicializar los SWITCHES\r\n");
+		return XST_FAILURE;
+	}
+	// Configuración de la GPIO para los LEDs de la placa extendida
+	status = XGpio_Initialize(&GpioLEDs, (u16) XPAR_LEDS_DEVICE_ID); /*Obtiene el puntero a la estructura */
+	if (status != XST_SUCCESS) {
+		xil_printf("No se han podido inicializar los LED\r\n");
+		return XST_FAILURE;
+	}
+
+	XGpio_SetDataDirection(&GpioSwitches, SWITCHES_CHANNEL, 0xFF); /*Coloca la dirección de entrada */
+	XGpio_SetDataDirection(&GpioLEDs, LED_CHANNEL, 0x0); /*Coloca la dirección de salida */
 
     // Mientras no pulse 'X' o 'x'
     while ((byte != 0x58) && (byte != 0x78)) {

@@ -4,6 +4,9 @@
 <scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
 <instance id="xilinx.gnu.mb.exe.debug.298378830;xilinx.gnu.mb.exe.debug.298378830.">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="c:\software\electronica\xilinx\14.1\ise_ds\edk\gnu\microblaze\nt64\bin\../lib/gcc/microblaze-xilinx-elf/4.6.2/include"/>
+<includePath path="c:\software\electronica\xilinx\14.1\ise_ds\edk\gnu\microblaze\nt64\bin\../lib/gcc/microblaze-xilinx-elf/4.6.2/include-fixed"/>
+<includePath path="c:\software\electronica\xilinx\14.1\ise_ds\edk\gnu\microblaze\nt64\bin\../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/include"/>
 <includePath path="c:\xilinx\14.1\ise_ds\edk\gnu\microblaze\nt\bin\../lib/gcc/microblaze-xilinx-elf/4.6.2/include"/>
 <includePath path="c:\xilinx\14.1\ise_ds\edk\gnu\microblaze\nt\bin\../lib/gcc/microblaze-xilinx-elf/4.6.2/include-fixed"/>
 <includePath path="c:\xilinx\14.1\ise_ds\edk\gnu\microblaze\nt\bin\../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/include"/>
@@ -396,6 +399,9 @@
 </instance>
 <instance id="xilinx.gnu.mb.exe.debug.298378830;xilinx.gnu.mb.exe.debug.298378830.;xilinx.gnu.mb.c.toolchain.compiler.debug.203181001;xilinx.gnu.compiler.input.928569255">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="c:\software\electronica\xilinx\14.1\ise_ds\edk\gnu\microblaze\nt64\bin\../lib/gcc/microblaze-xilinx-elf/4.6.2/include"/>
+<includePath path="c:\software\electronica\xilinx\14.1\ise_ds\edk\gnu\microblaze\nt64\bin\../lib/gcc/microblaze-xilinx-elf/4.6.2/include-fixed"/>
+<includePath path="c:\software\electronica\xilinx\14.1\ise_ds\edk\gnu\microblaze\nt64\bin\../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/include"/>
 <includePath path="c:\xilinx\14.1\ise_ds\edk\gnu\microblaze\nt\bin\../lib/gcc/microblaze-xilinx-elf/4.6.2/include"/>
 <includePath path="c:\xilinx\14.1\ise_ds\edk\gnu\microblaze\nt\bin\../lib/gcc/microblaze-xilinx-elf/4.6.2/include-fixed"/>
 <includePath path="c:\xilinx\14.1\ise_ds\edk\gnu\microblaze\nt\bin\../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/include"/>

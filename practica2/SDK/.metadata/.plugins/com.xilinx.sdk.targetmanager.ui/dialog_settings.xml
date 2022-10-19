@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="N:\ws\practica2\SDK\practica2_hw_platform\system.bit" key="practica2_hw_platform-bitFile"/>
-	<item value="N:\ws\practica2\SDK\practica2_hw_platform\system_bd.bmm" key="practica2_hw_platform-bmmFile"/>
-	<item value="N:\ws\practica2\SDK\practica2_sdk\Debug\practica2_sdk.elf" key="practica2_hw_platform-microblaze_0-initElf"/>
+	<item value="U:\hlocal\practicasSE-main\practica2\practica2_hw_platform\system.bit" key="practica2_hw_platform-bitFile"/>
+	<item value="U:\hlocal\practicasSE-main\practica2\practica2_hw_platform\system_bd.bmm" key="practica2_hw_platform-bmmFile"/>
+	<item value="U:\hlocal\practicasSE-main\practica2\SDK\practica2_sdk\Debug\practica2_sdk.elf" key="practica2_hw_platform-microblaze_0-initElf"/>
 </section>

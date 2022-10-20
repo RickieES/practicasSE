@@ -12,6 +12,11 @@ mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../peripheral_tes
 ../src/testperiph.c:127:4: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
 Finished building: ../src/testperiph.c
 ' '
+Building file: ../src/xbram_example.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../peripheral_tests_bsp_0/microblaze_0/include -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -MMD -MP -MF"src/xbram_example.d" -MT"src/xbram_example.d" -o"src/xbram_example.o" "../src/xbram_example.c"
+Finished building: ../src/xbram_example.c
+' '
 Building target: practica3_sdk.elf
 Invoking: MicroBlaze gcc linker
 mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../peripheral_tests_bsp_0/microblaze_0/lib -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -o"practica3_sdk.elf"  ./src/testperiph.o ./src/xbram_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
@@ -20,7 +25,7 @@ Finished building target: practica3_sdk.elf
 Invoking: MicroBlaze Print Size
 mb-size practica3_sdk.elf  |tee "practica3_sdk.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  10202	    368	   2182	  12752	   31d0	practica3_sdk.elf
+  10610	    368	   2182	  13160	   3368	practica3_sdk.elf
 Finished building: practica3_sdk.elf.size
 ' '
 Invoking: Xilinx ELF Check

@@ -1,7 +1,7 @@
 #Release 14.1 - par P.15xf (nt)
 #Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-#Wed Oct 19 21:36:58 2022
+#Fri Oct 21 00:19:48 2022
 
 #
 ## NOTE: This file is designed to be imported into a spreadsheet program
@@ -164,7 +164,7 @@ J14,,DIFFS,IO_L39N_3,UNUSED,,3,,,,,,,,,
 J15,,,GND,,,,,,,,,,,,
 J16,,DIFFS,IO_L40N_3/VREF_3,UNUSED,,3,,,,,,,,,
 K1,leds<0>,IOB,IO,OUTPUT,LVCMOS25*,6,12,SLOW,NONE**,,,UNLOCATED,YES,NONE,
-K2,switches<2>,IOB,IO_L24P_6,INPUT,LVCMOS25*,6,,,,NONE,,LOCATED,NO,NONE,
+K2,,DIFFM,IO_L24P_6,UNUSED,,6,,,,,,,,,
 K3,switches<1>,IOB,IO_L24N_6/VREF_6,INPUT,LVCMOS25*,6,,,,NONE,,LOCATED,NO,NONE,
 K4,switches<0>,IOB,IO_L23P_6,INPUT,LVCMOS25*,6,,,,NONE,,LOCATED,NO,NONE,
 K5,,DIFFS,IO_L23N_6,UNUSED,,6,,,,,,,,,
@@ -232,7 +232,7 @@ P2,,DIFFS,IO_L16N_6,UNUSED,,6,,,,,,,,,
 P3,,,M0,,,,,,,,,,,,
 P4,,,M2,,,,,,,,,,,,
 P5,,DIFFM,IO_L27P_5,UNUSED,,5,,,,,,,,,
-P6,Rst_pin,IOB,IO_L29P_5/VREF_5,INPUT,LVCMOS25*,5,,,,IFD,,UNLOCATED,YES,NONE,
+P6,,DIFFM,IO_L29P_5/VREF_5,UNUSED,,5,,,,,,,,,
 P7,,IOB,IO,UNUSED,,5,,,,,,,,,
 P8,Clk_pin,IOB,IO_L32N_5/GCLK3,INPUT,LVCMOS25*,5,,,,NONE,,LOCATED,NO,NONE,
 P9,,DIFFM,IO_L31P_4/DOUT/BUSY,UNUSED,,4,,,,,,,,,
@@ -249,7 +249,7 @@ R3,,DIFFM,IO_L01P_5/CS_B,UNUSED,,5,,,,,,,,,
 R4,,DIFFM,IO_L10P_5/VRN_5,UNUSED,,5,,,,,,,,,
 R5,,DIFFS,IO_L27N_5/VREF_5,UNUSED,,5,,,,,,,,,
 R6,,DIFFS,IO_L29N_5,UNUSED,,5,,,,,,,,,
-R7,,DIFFM,IO_L31P_5/D5,UNUSED,,5,,,,,,,,,
+R7,Rst_pin,IOB,IO_L31P_5/D5,INPUT,LVCMOS25*,5,,,,IFD,,UNLOCATED,YES,NONE,
 R8,,,GND,,,,,,,,,,,,
 R9,,DIFFS,IO_L32N_4/GCLK1,UNUSED,,4,,,,,,,,,
 R10,,DIFFM,IO_L30P_4/D3,UNUSED,,4,,,,,,,,,

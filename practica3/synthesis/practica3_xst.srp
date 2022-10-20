@@ -4,7 +4,7 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.20 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> 
 TABLE OF CONTENTS
@@ -503,7 +503,6 @@ INFO:Xst:2260 - The FF/Latch <top_sumador_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACH
 INFO:Xst:2260 - The FF/Latch <top_sumador_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_0> in Unit <top_sumador_0> is equivalent to the following FF/Latch : <top_sumador_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_0_1> 
 INFO:Xst:2260 - The FF/Latch <top_sumador_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_3> in Unit <top_sumador_0> is equivalent to the following FF/Latch : <top_sumador_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_3_1> 
 INFO:Xst:2260 - The FF/Latch <top_sumador_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_2> in Unit <top_sumador_0> is equivalent to the following FF/Latch : <top_sumador_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_2_1> 
-INFO:Xst:2260 - The FF/Latch <top_sumador_0/USER_LOGIC_I/slv_reg0_31> in Unit <top_sumador_0> is equivalent to the following 2 FFs/Latches : <top_sumador_0/USER_LOGIC_I/slv_reg0_31_1> <top_sumador_0/USER_LOGIC_I/slv_reg0_31_2> 
 INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_2> in Unit <microblaze_0> is equivalent to the following 2 FFs/Latches : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_2_1> <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_2_2> 
 INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/sync_reset> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/sync_reset_1> 
 INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_4> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_4_1> 
@@ -519,7 +518,6 @@ INFO:Xst:2260 - The FF/Latch <top_sumador_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACH
 INFO:Xst:2260 - The FF/Latch <top_sumador_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_1> in Unit <top_sumador_0> is equivalent to the following FF/Latch : <top_sumador_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_1_1> 
 INFO:Xst:2260 - The FF/Latch <top_sumador_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_2> in Unit <top_sumador_0> is equivalent to the following FF/Latch : <top_sumador_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_2_1> 
 INFO:Xst:2260 - The FF/Latch <top_sumador_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_3> in Unit <top_sumador_0> is equivalent to the following FF/Latch : <top_sumador_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_3_1> 
-INFO:Xst:2260 - The FF/Latch <top_sumador_0/USER_LOGIC_I/slv_reg0_31> in Unit <top_sumador_0> is equivalent to the following 2 FFs/Latches : <top_sumador_0/USER_LOGIC_I/slv_reg0_31_1> <top_sumador_0/USER_LOGIC_I/slv_reg0_31_2> 
 
 Final Macro Processing ...
 
@@ -553,17 +551,17 @@ Design Statistics
 # IOs                              : 16
 
 Cell Usage :
-# BELS                             : 3313
+# BELS                             : 3280
 #      GND                         : 22
 #      INV                         : 28
 #      LUT1                        : 102
-#      LUT2                        : 240
-#      LUT2_D                      : 13
+#      LUT2                        : 221
+#      LUT2_D                      : 12
 #      LUT2_L                      : 20
-#      LUT3                        : 852
+#      LUT3                        : 847
 #      LUT3_D                      : 26
 #      LUT3_L                      : 28
-#      LUT4                        : 972
+#      LUT4                        : 964
 #      LUT4_D                      : 21
 #      LUT4_L                      : 36
 #      MULT_AND                    : 34
@@ -572,12 +570,12 @@ Cell Usage :
 #      MUXF5                       : 352
 #      VCC                         : 5
 #      XORCY                       : 212
-# FlipFlops/Latches                : 1963
+# FlipFlops/Latches                : 1961
 #      FD                          : 5
 #      FDC                         : 27
 #      FDE                         : 200
 #      FDR                         : 772
-#      FDRE                        : 858
+#      FDRE                        : 856
 #      FDRS                        : 21
 #      FDRSE                       : 3
 #      FDS                         : 33
@@ -601,10 +599,10 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-5 
 
- Number of Slices:                     1859  out of   7680    24%  
- Number of Slice Flip Flops:           1963  out of  15360    12%  
- Number of 4 input LUTs:               2806  out of  15360    18%  
-    Number used as logic:              2338
+ Number of Slices:                     1853  out of   7680    24%  
+ Number of Slice Flip Flops:           1961  out of  15360    12%  
+ Number of 4 input LUTs:               2773  out of  15360    18%  
+    Number used as logic:              2305
     Number used as Shift registers:      84
     Number used as RAMs:                384
  Number of IOs:                          16
@@ -634,7 +632,7 @@ Clock Information:
 -----------------------------------------------------------+--------------------------------------------------------------+-------+
 Clock Signal                                               | Clock buffer(FF name)                                        | Load  |
 -----------------------------------------------------------+--------------------------------------------------------------+-------+
-Clk_pin                                                    | BUFGP                                                        | 2250  |
+Clk_pin                                                    | BUFGP                                                        | 2248  |
 N0                                                         | NONE(bram_block_0/bram_block_0/ramb16_s2_s2_0/ramb16_s2_s2_0)| 16    |
 top_sumador_0/top_sumador_0/USER_LOGIC_I/mi_divisor/clk_aux| NONE(top_sumador_0/top_sumador_0/USER_LOGIC_I/my_counter_7)  | 8     |
 -----------------------------------------------------------+--------------------------------------------------------------+-------+
@@ -655,7 +653,7 @@ Timing Summary:
 Speed Grade: -5
 
    Minimum period: 11.888ns (Maximum Frequency: 84.119MHz)
-   Minimum input arrival time before clock: 4.527ns
+   Minimum input arrival time before clock: 4.464ns
    Maximum output required time after clock: 6.216ns
    Maximum combinational path delay: No path found
 
@@ -666,7 +664,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Clk_pin'
   Clock period: 11.888ns (frequency: 84.119MHz)
-  Total number of paths / destination ports: 181108 / 7073
+  Total number of paths / destination ports: 181062 / 7067
 -------------------------------------------------------------------------
 Delay:               11.888ns (Levels of Logic = 6)
   Source:            microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers_Mux.Instruction_Prefetch_Mux[7].Gen_Instr_DFF (FF)
@@ -692,10 +690,10 @@ Delay:               11.888ns (Levels of Logic = 6)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'top_sumador_0/top_sumador_0/USER_LOGIC_I/mi_divisor/clk_aux'
-  Clock period: 5.691ns (frequency: 175.705MHz)
+  Clock period: 5.683ns (frequency: 175.968MHz)
   Total number of paths / destination ports: 164 / 16
 -------------------------------------------------------------------------
-Delay:               5.691ns (Levels of Logic = 10)
+Delay:               5.683ns (Levels of Logic = 10)
   Source:            top_sumador_0/top_sumador_0/USER_LOGIC_I/my_counter_0 (FF)
   Destination:       top_sumador_0/top_sumador_0/USER_LOGIC_I/my_counter_7 (FF)
   Source Clock:      top_sumador_0/top_sumador_0/USER_LOGIC_I/mi_divisor/clk_aux rising
@@ -705,7 +703,7 @@ Delay:               5.691ns (Levels of Logic = 10)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             4   0.626   0.949  top_sumador_0/USER_LOGIC_I/my_counter_0 (top_sumador_0/USER_LOGIC_I/my_counter<0>)
+     FDRE:C->Q             3   0.626   0.941  top_sumador_0/USER_LOGIC_I/my_counter_0 (top_sumador_0/USER_LOGIC_I/my_counter<0>)
      LUT2:I1->O            1   0.479   0.000  top_sumador_0/USER_LOGIC_I/Mcompar_my_counter_cmp_lt0000_lut<0> (top_sumador_0/USER_LOGIC_I/Mcompar_my_counter_cmp_lt0000_lut<0>)
      MUXCY:S->O            1   0.435   0.000  top_sumador_0/USER_LOGIC_I/Mcompar_my_counter_cmp_lt0000_cy<0> (top_sumador_0/USER_LOGIC_I/Mcompar_my_counter_cmp_lt0000_cy<0>)
      MUXCY:CI->O           1   0.056   0.000  top_sumador_0/USER_LOGIC_I/Mcompar_my_counter_cmp_lt0000_cy<1> (top_sumador_0/USER_LOGIC_I/Mcompar_my_counter_cmp_lt0000_cy<1>)
@@ -718,30 +716,29 @@ Delay:               5.691ns (Levels of Logic = 10)
      INV:I->O              8   0.479   0.921  top_sumador_0/USER_LOGIC_I/Mcompar_my_counter_cmp_lt0000_cy<7>_inv_INV_0 (top_sumador_0/USER_LOGIC_I/my_counter_cmp_lt0000)
      FDRE:CE                   0.524          top_sumador_0/USER_LOGIC_I/my_counter_0
     ----------------------------------------
-    Total                      5.691ns (3.141ns logic, 2.551ns route)
-                                       (55.2% logic, 44.8% route)
+    Total                      5.683ns (3.141ns logic, 2.542ns route)
+                                       (55.3% logic, 44.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk_pin'
-  Total number of paths / destination ports: 376 / 344
+  Total number of paths / destination ports: 344 / 312
 -------------------------------------------------------------------------
-Offset:              4.527ns (Levels of Logic = 4)
-  Source:            switches<2> (PAD)
-  Destination:       top_sumador_0/top_sumador_0/USER_LOGIC_I/slv_reg3_0 (FF)
+Offset:              4.464ns (Levels of Logic = 3)
+  Source:            switches<3> (PAD)
+  Destination:       top_sumador_0/top_sumador_0/USER_LOGIC_I/leds_7 (FF)
   Destination Clock: Clk_pin rising
 
-  Data Path: switches<2> to top_sumador_0/top_sumador_0/USER_LOGIC_I/slv_reg3_0
+  Data Path: switches<3> to top_sumador_0/top_sumador_0/USER_LOGIC_I/leds_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            14   0.715   1.179  switches_2_IBUF (switches_2_IBUF)
+     IBUF:I->O            24   0.715   1.697  switches_3_IBUF (switches_3_IBUF)
      begin scope: 'top_sumador_0'
-     LUT2_D:I1->O         18   0.479   1.499  top_sumador_0/USER_LOGIC_I/slv_reg3_mux0001<0>11 (top_sumador_0/USER_LOGIC_I/N0)
-     LUT2:I0->O            1   0.479   0.000  top_sumador_0/USER_LOGIC_I/slv_reg3_mux0001<14>1 (top_sumador_0/USER_LOGIC_I/slv_reg3_mux0001<14>)
-     FDRE:D                    0.176          top_sumador_0/USER_LOGIC_I/slv_reg3_17
+     LUT2:I1->O            1   0.479   0.681  top_sumador_0/USER_LOGIC_I/leds_mux0003<7>0 (top_sumador_0/USER_LOGIC_I/leds_mux0003<7>0)
+     FDRS:S                    0.892          top_sumador_0/USER_LOGIC_I/leds_7
     ----------------------------------------
-    Total                      4.527ns (1.849ns logic, 2.678ns route)
-                                       (40.8% logic, 59.2% route)
+    Total                      4.464ns (2.086ns logic, 2.378ns route)
+                                       (46.7% logic, 53.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk_pin'
@@ -766,14 +763,14 @@ Offset:              6.216ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 120.00 secs
-Total CPU time to Xst completion: 119.95 secs
+Total REAL time to Xst completion: 95.00 secs
+Total CPU time to Xst completion: 95.27 secs
  
 --> 
 
-Total memory usage is 235212 kilobytes
+Total memory usage is 266252 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  349 (   0 filtered)
-Number of infos    :   49 (   0 filtered)
+Number of infos    :   47 (   0 filtered)
 

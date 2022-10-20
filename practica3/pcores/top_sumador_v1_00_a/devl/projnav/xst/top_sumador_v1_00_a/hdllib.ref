@@ -1,4 +1,4 @@
-AR user_logic imp //vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/user_logic.vhd sub00/vhpl01 1666196754
-EN user_logic NULL //vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/user_logic.vhd sub00/vhpl00 1666196753
-AR top_sumador imp //vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/top_sumador.vhd sub00/vhpl03 1666131132
-EN top_sumador NULL //vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/top_sumador.vhd sub00/vhpl02 1666131131
+AR user_logic imp //vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/user_logic.vhd sub00/vhpl01 1666303883
+EN user_logic NULL //vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/user_logic.vhd sub00/vhpl00 1666303882
+AR top_sumador imp //vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/top_sumador.vhd sub00/vhpl03 1666303885
+EN top_sumador NULL //vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/top_sumador.vhd sub00/vhpl02 1666303884

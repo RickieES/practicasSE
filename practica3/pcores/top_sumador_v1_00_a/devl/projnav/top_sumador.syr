@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.19 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.19 secs
  
 --> Reading design: top_sumador.prj
 
@@ -105,49 +105,37 @@ Slice Utilization Ratio Delta      : 5
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" in Library proc_common_v3_00_a.
-Package <proc_common_pkg> compiled.
-Package body <proc_common_pkg> compiled.
+Architecture proc_common_pkg of Entity proc_common_pkg is up to date.
 Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd" in Library proc_common_v3_00_a.
-Entity <or_muxcy> compiled.
-Entity <or_muxcy> (Architecture <implementation>) compiled.
+Architecture implementation of Entity or_muxcy is up to date.
 Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd" in Library proc_common_v3_00_a.
-Package <family_support> compiled.
-Package body <family_support> compiled.
+Architecture family_support of Entity family_support is up to date.
 Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" in Library proc_common_v3_00_a.
-Entity <counter_f> compiled.
-Entity <counter_f> (Architecture <imp>) compiled.
+Architecture imp of Entity counter_f is up to date.
 Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd" in Library proc_common_v3_00_a.
-Entity <pselect_f> compiled.
-Entity <pselect_f> (Architecture <imp>) compiled.
+Architecture imp of Entity pselect_f is up to date.
 Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd" in Library proc_common_v3_00_a.
-Entity <or_gate128> compiled.
-Entity <or_gate128> (Architecture <imp>) compiled.
+Architecture imp of Entity or_gate128 is up to date.
 Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd" in Library proc_common_v3_00_a.
-Package <ipif_pkg> compiled.
-Package body <ipif_pkg> compiled.
+Architecture ipif_pkg of Entity ipif_pkg is up to date.
 Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_address_decoder.vhd" in Library plbv46_slave_single_v1_01_a.
-Entity <plb_address_decoder> compiled.
-Entity <plb_address_decoder> (Architecture <IMP>) compiled.
+Architecture imp of Entity plb_address_decoder is up to date.
 Compiling vhdl file "//vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/divisor1Hz.vhd" in Library work.
-Entity <divisor1> compiled.
-Entity <divisor1> (Architecture <divisor1_arch>) compiled.
+Architecture divisor1_arch of Entity divisor1 is up to date.
 Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd" in Library plbv46_slave_single_v1_01_a.
-Entity <plb_slave_attachment> compiled.
-Entity <plb_slave_attachment> (Architecture <implementation>) compiled.
+Architecture implementation of Entity plb_slave_attachment is up to date.
 Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plbv46_slave_single.vhd" in Library plbv46_slave_single_v1_01_a.
-Entity <plbv46_slave_single> compiled.
-Entity <plbv46_slave_single> (Architecture <implementation>) compiled.
+Architecture implementation of Entity plbv46_slave_single is up to date.
 Compiling vhdl file "//vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/user_logic.vhd" in Library top_sumador_v1_00_a.
 Entity <user_logic> compiled.
-Entity <user_logic> (Architecture <IMP>) compiled.
+Entity <user_logic> (Architecture <imp>) compiled.
 Compiling vhdl file "//vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/top_sumador.vhd" in Library top_sumador_v1_00_a.
-Entity <top_sumador> compiled.
-Entity <top_sumador> (Architecture <IMP>) compiled.
+Architecture imp of Entity top_sumador is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <top_sumador> in library <top_sumador_v1_00_a> (architecture <IMP>) with generics.
+Analyzing hierarchy for entity <top_sumador> in library <top_sumador_v1_00_a> (architecture <imp>) with generics.
 	C_BASEADDR = "11111111111111111111111111111111"
 	C_FAMILY = "virtex6"
 	C_HIGHADDR = "00000000000000000000000000000000"
@@ -246,7 +234,7 @@ Analyzing hierarchy for entity <or_muxcy> in library <proc_common_v3_00_a> (arch
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing generic Entity <top_sumador> in library <top_sumador_v1_00_a> (Architecture <IMP>).
+Analyzing generic Entity <top_sumador> in library <top_sumador_v1_00_a> (Architecture <imp>).
 	C_BASEADDR = "11111111111111111111111111111111"
 	C_FAMILY = "virtex6"
 	C_HIGHADDR = "00000000000000000000000000000000"
@@ -356,8 +344,7 @@ Analyzing generic Entity <user_logic> in library <top_sumador_v1_00_a> (Architec
 	C_SLV_DWIDTH = 32
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
-WARNING:Xst:1610 - "//vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/user_logic.vhd" line 219: Width mismatch. <slv_reg3> has a width of 32 bits but assigned expression is 8-bit wide.
-INFO:Xst:1561 - "//vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/user_logic.vhd" line 258: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "//vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/user_logic.vhd" line 259: Mux is complete : default of case is discarded
 Entity <user_logic> analyzed. Unit <user_logic> generated.
 
 Analyzing Entity <divisor1> in library <work> (Architecture <divisor1_arch>).
@@ -413,14 +400,15 @@ Unit <divisor1> synthesized.
 
 Synthesizing Unit <user_logic>.
     Related source file is "//vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/user_logic.vhd".
+WARNING:Xst:647 - Input <switches<2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 8-bit register for signal <leds>.
     Found 8-bit up counter for signal <my_counter>.
-    Found 8-bit comparator less for signal <my_counter$cmp_lt0000> created at line 273.
+    Found 8-bit comparator less for signal <my_counter$cmp_lt0000> created at line 274.
     Found 32-bit register for signal <slv_reg0>.
     Found 32-bit register for signal <slv_reg1>.
     Found 32-bit register for signal <slv_reg2>.
     Found 32-bit register for signal <slv_reg3>.
-    Found 32-bit addsub for signal <slv_reg3$addsub0000>.
+    Found 32-bit addsub for signal <slv_reg3$mux0000>.
     Summary:
 	inferred   1 Counter(s).
 	inferred 136 D-type flip-flop(s).
@@ -731,12 +719,11 @@ WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_3
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block top_sumador, actual ratio is 3.
+Found area constraint ratio of 100 (+ 5) on block top_sumador, actual ratio is 2.
 FlipFlop PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_0 has been replicated 1 time(s)
 FlipFlop PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_1 has been replicated 1 time(s)
 FlipFlop PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_2 has been replicated 1 time(s)
 FlipFlop PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_3 has been replicated 1 time(s)
-FlipFlop USER_LOGIC_I/slv_reg0_31 has been replicated 2 time(s)
 
 Final Macro Processing ...
 
@@ -744,8 +731,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 293
- Flip-Flops                                            : 293
+# Registers                                            : 291
+ Flip-Flops                                            : 291
 
 =========================================================================
 
@@ -774,29 +761,29 @@ Design Statistics
 # IOs                              : 443
 
 Cell Usage :
-# BELS                             : 510
+# BELS                             : 478
 #      GND                         : 1
 #      INV                         : 5
 #      LUT1                        : 33
-#      LUT2                        : 79
-#      LUT2_D                      : 1
-#      LUT3                        : 85
-#      LUT4                        : 111
+#      LUT2                        : 60
+#      LUT2_L                      : 1
+#      LUT3                        : 80
+#      LUT4                        : 103
 #      LUT4_D                      : 4
 #      MUXCY                       : 79
 #      MUXF5                       : 44
 #      VCC                         : 1
 #      XORCY                       : 67
-# FlipFlops/Latches                : 293
+# FlipFlops/Latches                : 291
 #      FDC                         : 27
 #      FDE                         : 1
 #      FDR                         : 88
-#      FDRE                        : 169
+#      FDRE                        : 167
 #      FDRS                        : 8
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 250
-#      IBUF                        : 67
+# IO Buffers                       : 249
+#      IBUF                        : 66
 #      OBUF                        : 183
 =========================================================================
 
@@ -805,11 +792,11 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-5 
 
- Number of Slices:                      237  out of   7680     3%  
- Number of Slice Flip Flops:            293  out of  15360     1%  
- Number of 4 input LUTs:                318  out of  15360     2%  
+ Number of Slices:                      218  out of   7680     2%  
+ Number of Slice Flip Flops:            291  out of  15360     1%  
+ Number of 4 input LUTs:                286  out of  15360     1%  
  Number of IOs:                         443
- Number of bonded IOBs:                 251  out of    173   145% (*) 
+ Number of bonded IOBs:                 250  out of    173   144% (*) 
  Number of GCLKs:                         1  out of      8    12%  
 
 WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
@@ -836,7 +823,7 @@ Clock Information:
 Clock Signal                       | Clock buffer(FF name)          | Load  |
 -----------------------------------+--------------------------------+-------+
 USER_LOGIC_I/mi_divisor/clk_aux    | NONE(USER_LOGIC_I/my_counter_7)| 8     |
-SPLB_Clk                           | BUFGP                          | 285   |
+SPLB_Clk                           | BUFGP                          | 283   |
 -----------------------------------+--------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -852,8 +839,8 @@ Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 6.537ns (Maximum Frequency: 152.968MHz)
-   Minimum input arrival time before clock: 6.403ns
+   Minimum period: 6.532ns (Maximum Frequency: 153.093MHz)
+   Minimum input arrival time before clock: 6.393ns
    Maximum output required time after clock: 7.081ns
    Maximum combinational path delay: No path found
 
@@ -863,10 +850,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'USER_LOGIC_I/mi_divisor/clk_aux'
-  Clock period: 5.691ns (frequency: 175.705MHz)
+  Clock period: 5.683ns (frequency: 175.968MHz)
   Total number of paths / destination ports: 164 / 16
 -------------------------------------------------------------------------
-Delay:               5.691ns (Levels of Logic = 10)
+Delay:               5.683ns (Levels of Logic = 10)
   Source:            USER_LOGIC_I/my_counter_0 (FF)
   Destination:       USER_LOGIC_I/my_counter_7 (FF)
   Source Clock:      USER_LOGIC_I/mi_divisor/clk_aux rising
@@ -876,7 +863,7 @@ Delay:               5.691ns (Levels of Logic = 10)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             4   0.626   0.949  USER_LOGIC_I/my_counter_0 (USER_LOGIC_I/my_counter_0)
+     FDRE:C->Q             3   0.626   0.941  USER_LOGIC_I/my_counter_0 (USER_LOGIC_I/my_counter_0)
      LUT2:I1->O            1   0.479   0.000  USER_LOGIC_I/Mcompar_my_counter_cmp_lt0000_lut<0> (USER_LOGIC_I/Mcompar_my_counter_cmp_lt0000_lut<0>)
      MUXCY:S->O            1   0.435   0.000  USER_LOGIC_I/Mcompar_my_counter_cmp_lt0000_cy<0> (USER_LOGIC_I/Mcompar_my_counter_cmp_lt0000_cy<0>)
      MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/Mcompar_my_counter_cmp_lt0000_cy<1> (USER_LOGIC_I/Mcompar_my_counter_cmp_lt0000_cy<1>)
@@ -889,69 +876,44 @@ Delay:               5.691ns (Levels of Logic = 10)
      INV:I->O              8   0.479   0.921  USER_LOGIC_I/Mcompar_my_counter_cmp_lt0000_cy<7>_inv_INV_0 (USER_LOGIC_I/my_counter_cmp_lt0000)
      FDRE:CE                   0.524          USER_LOGIC_I/my_counter_0
     ----------------------------------------
-    Total                      5.691ns (3.141ns logic, 2.551ns route)
-                                       (55.2% logic, 44.8% route)
+    Total                      5.683ns (3.141ns logic, 2.542ns route)
+                                       (55.3% logic, 44.7% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'SPLB_Clk'
-  Clock period: 6.537ns (frequency: 152.968MHz)
-  Total number of paths / destination ports: 4899 / 450
+  Clock period: 6.532ns (frequency: 153.093MHz)
+  Total number of paths / destination ports: 4855 / 446
 -------------------------------------------------------------------------
-Delay:               6.537ns (Levels of Logic = 34)
-  Source:            USER_LOGIC_I/slv_reg1_31 (FF)
-  Destination:       USER_LOGIC_I/slv_reg3_0 (FF)
+Delay:               6.532ns (Levels of Logic = 9)
+  Source:            USER_LOGIC_I/mi_divisor/cuenta_7 (FF)
+  Destination:       USER_LOGIC_I/mi_divisor/clk_aux (FF)
   Source Clock:      SPLB_Clk rising
   Destination Clock: SPLB_Clk rising
 
-  Data Path: USER_LOGIC_I/slv_reg1_31 to USER_LOGIC_I/slv_reg3_0
+  Data Path: USER_LOGIC_I/mi_divisor/cuenta_7 to USER_LOGIC_I/mi_divisor/clk_aux
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             2   0.626   1.040  USER_LOGIC_I/slv_reg1_31 (USER_LOGIC_I/slv_reg1_31)
-     LUT3:I0->O            1   0.479   0.000  USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_lut<0> (USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_lut<0>)
-     MUXCY:S->O            1   0.435   0.000  USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<0> (USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<0>)
-     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<1> (USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<1>)
-     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<2> (USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<2>)
-     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<3> (USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<3>)
-     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<4> (USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<4>)
-     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<5> (USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<5>)
-     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<6> (USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<6>)
-     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<7> (USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<7>)
-     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<8> (USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<8>)
-     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<9> (USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<9>)
-     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<10> (USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<10>)
-     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<11> (USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<11>)
-     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<12> (USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<12>)
-     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<13> (USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<13>)
-     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<14> (USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<14>)
-     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<15> (USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<15>)
-     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<16> (USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<16>)
-     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<17> (USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<17>)
-     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<18> (USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<18>)
-     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<19> (USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<19>)
-     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<20> (USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<20>)
-     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<21> (USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<21>)
-     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<22> (USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<22>)
-     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<23> (USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<23>)
-     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<24> (USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<24>)
-     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<25> (USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<25>)
-     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<26> (USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<26>)
-     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<27> (USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<27>)
-     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<28> (USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<28>)
-     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<29> (USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<29>)
-     MUXCY:CI->O           0   0.056   0.000  USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<30> (USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_cy<30>)
-     XORCY:CI->O           1   0.786   0.851  USER_LOGIC_I/Maddsub_slv_reg3_addsub0000_xor<31> (USER_LOGIC_I/slv_reg3_addsub0000<31>)
-     LUT2:I1->O            1   0.479   0.000  USER_LOGIC_I/slv_reg3_mux0001<31>1 (USER_LOGIC_I/slv_reg3_mux0001<31>)
-     FDRE:D                    0.176          USER_LOGIC_I/slv_reg3_0
+     FDC:C->Q              2   0.626   1.040  USER_LOGIC_I/mi_divisor/cuenta_7 (USER_LOGIC_I/mi_divisor/cuenta_7)
+     LUT3:I0->O            1   0.479   0.000  USER_LOGIC_I/mi_divisor/cuenta_cmp_eq0000_wg_lut<0> (USER_LOGIC_I/mi_divisor/cuenta_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.435   0.000  USER_LOGIC_I/mi_divisor/cuenta_cmp_eq0000_wg_cy<0> (USER_LOGIC_I/mi_divisor/cuenta_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/mi_divisor/cuenta_cmp_eq0000_wg_cy<1> (USER_LOGIC_I/mi_divisor/cuenta_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/mi_divisor/cuenta_cmp_eq0000_wg_cy<2> (USER_LOGIC_I/mi_divisor/cuenta_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/mi_divisor/cuenta_cmp_eq0000_wg_cy<3> (USER_LOGIC_I/mi_divisor/cuenta_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/mi_divisor/cuenta_cmp_eq0000_wg_cy<4> (USER_LOGIC_I/mi_divisor/cuenta_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/mi_divisor/cuenta_cmp_eq0000_wg_cy<5> (USER_LOGIC_I/mi_divisor/cuenta_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O          28   0.265   1.726  USER_LOGIC_I/mi_divisor/cuenta_cmp_eq0000_wg_cy<6> (USER_LOGIC_I/mi_divisor/cuenta_cmp_eq0000)
+     LUT2:I1->O            1   0.479   0.681  USER_LOGIC_I/mi_divisor/clk_aux_and00001 (USER_LOGIC_I/mi_divisor/clk_aux_and0000)
+     FDE:CE                    0.524          USER_LOGIC_I/mi_divisor/clk_aux
     ----------------------------------------
-    Total                      6.537ns (4.646ns logic, 1.891ns route)
-                                       (71.1% logic, 28.9% route)
+    Total                      6.532ns (3.085ns logic, 3.447ns route)
+                                       (47.2% logic, 52.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'USER_LOGIC_I/mi_divisor/clk_aux'
   Total number of paths / destination ports: 8 / 8
 -------------------------------------------------------------------------
-Offset:              4.054ns (Levels of Logic = 1)
+Offset:              4.044ns (Levels of Logic = 1)
   Source:            SPLB_Rst (PAD)
   Destination:       USER_LOGIC_I/my_counter_7 (FF)
   Destination Clock: USER_LOGIC_I/mi_divisor/clk_aux rising
@@ -960,17 +922,17 @@ Offset:              4.054ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           211   0.715   2.447  SPLB_Rst_IBUF (SPLB_Rst_IBUF)
+     IBUF:I->O           209   0.715   2.437  SPLB_Rst_IBUF (SPLB_Rst_IBUF)
      FDRE:R                    0.892          USER_LOGIC_I/my_counter_0
     ----------------------------------------
-    Total                      4.054ns (1.607ns logic, 2.447ns route)
-                                       (39.6% logic, 60.4% route)
+    Total                      4.044ns (1.607ns logic, 2.437ns route)
+                                       (39.7% logic, 60.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'SPLB_Clk'
-  Total number of paths / destination ports: 412 / 356
+  Total number of paths / destination ports: 378 / 322
 -------------------------------------------------------------------------
-Offset:              6.403ns (Levels of Logic = 2)
+Offset:              6.393ns (Levels of Logic = 2)
   Source:            SPLB_Rst (PAD)
   Destination:       PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_0 (FF)
   Destination Clock: SPLB_Clk rising
@@ -979,11 +941,11 @@ Offset:              6.403ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           211   0.715   2.742  SPLB_Rst_IBUF (SPLB_Rst_IBUF)
+     IBUF:I->O           209   0.715   2.732  SPLB_Rst_IBUF (SPLB_Rst_IBUF)
      LUT2:I0->O           32   0.479   1.575  PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_or00001 (PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_or0000)
      FDR:R                     0.892          PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_31
     ----------------------------------------
-    Total                      6.403ns (2.086ns logic, 4.317ns route)
+    Total                      6.393ns (2.086ns logic, 4.307ns route)
                                        (32.6% logic, 67.4% route)
 
 =========================================================================
@@ -1008,12 +970,12 @@ Offset:              7.081ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 18.00 secs
-Total CPU time to Xst completion: 17.44 secs
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 19.42 secs
  
 --> 
 
-Total memory usage is 295244 kilobytes
+Total memory usage is 298316 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  183 (   0 filtered)

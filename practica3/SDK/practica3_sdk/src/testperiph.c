@@ -90,7 +90,7 @@ int getNumber() {
 			digitIndex++;
 			byte = XUartLite_RecvByte(XPAR_XPS_UARTLITE_0_BASEADDR);
 		} while ((byte != 0x0A) && (byte != 0x0D));
-		// Envía un salto de linea
+		// Envia un salto de linea
 		XUartLite_SendByte(XPAR_XPS_UARTLITE_0_BASEADDR, (Xuint8) 0x0A);
 
 		// Calcula el numero a partir de la cadena de digitos recibidos
@@ -125,7 +125,7 @@ int getNumber() {
 			return number;
 		} else {
 			xil_printf("Esto no es un numero valido.\n\r");
-			return 256;
+			return -1;
 		}
 	}
 }
@@ -157,32 +157,44 @@ int main()
 
 		switch (byte) {
 		case 'a':
-			xil_printf("Introduzca operando");
+			xil_printf("Introduzca operando (1 para sumar, 2 para restar): ");
 			singleDigit = getSingleDigitNumber();
-			TOP_SUMADOR_mWriteSlaveReg0(XPAR_TOP_SUMADOR_0_BASEADDR,0,singleDigit);
+			if (singleDigit == 1 || singleDigit == 2) {
+				TOP_SUMADOR_mWriteSlaveReg0(XPAR_TOP_SUMADOR_0_BASEADDR,0,
+						(singleDigit==1) ? 0 : -1);
+				xil_printf("\r\nHa elegido el operando %s\r\n", (singleDigit ==1) ? "+" : "-");
+			} else {
+				xil_printf("\r\nValor introducido no valido. Los valores admitidos son 1 y 2.\r\n");
+			}
 			xil_printf("\r\n");
 			break;
 		case 'b':
-			xil_printf(" Introduzca primer operando");
+			xil_printf(" Introduzca primer operando: ");
 			firstOperand = getNumber();
-			if (firstOperand < 256) {
+			if (firstOperand > 0) {
 				TOP_SUMADOR_mWriteSlaveReg1(XPAR_TOP_SUMADOR_0_BASEADDR,0,firstOperand);
+				xil_printf("\r\nEl valor guardado es: %d\r\n",
+						TOP_SUMADOR_mReadSlaveReg1(XPAR_TOP_SUMADOR_0_BASEADDR,0));
 			}
 			break;
 		case 'c':
+			xil_printf(" Introduzca segundo operando: ");
 			secondOperand = getNumber();
-			if (secondOperand < 256) {
+			if (secondOperand > 0) {
 				TOP_SUMADOR_mWriteSlaveReg2(XPAR_TOP_SUMADOR_0_BASEADDR,0,secondOperand);
+				xil_printf("\r\nEl valor guardado es: %d\r\n",
+						TOP_SUMADOR_mReadSlaveReg2(XPAR_TOP_SUMADOR_0_BASEADDR,0));
 			}
 			break;
 		case 'd':
-			if ((firstOperand < 256) && (secondOperand < 256)) {
-				// result = firstOperand - secondOperand;
+			if ((firstOperand > 0) && (secondOperand > 0)) {
+				// Debemos "escribir" antes de leer para forzar el calculo de la operacion
+				TOP_SUMADOR_mWriteSlaveReg3(XPAR_TOP_SUMADOR_0_BASEADDR,0,0);
 				result = TOP_SUMADOR_mReadSlaveReg3(XPAR_TOP_SUMADOR_0_BASEADDR,0);
-				xil_printf("El resultado es: %d \n\r ", result);
+				xil_printf("\r\nEl resultado es: %d \n\r ", result);
 			}
 			break;
-			//            default: // otro carácter
+			//            default: // otro caracter
 			//                xil_printf("Debe introducir una de las opciones del menu (a, b, c).\r\n");
 		}
 	}

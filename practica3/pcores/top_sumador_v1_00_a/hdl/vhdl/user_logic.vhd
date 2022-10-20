@@ -213,11 +213,12 @@ begin
               end if;
             end loop;
           when "0001" =>
-                 -- Parte D (opcional) de la practica
-                 -- Si segundo MSB de switches es 0 y reg0(30) es 1 
-			    if ((switches(2) = '0') and (slv_reg0(30) = '1')) then
-					slv_reg3 <= my_counter;
-             elsif (slv_reg0(31) = '0') then
+             -- Parte D (opcional) de la practica
+             -- Si segundo MSB de switches es 0 y reg0(30) es 1 
+			    -- if ((switches(2) = '0') and (slv_reg0(30) = '1')) then
+				 --	slv_reg3 <= my_counter;
+             -- elsif (slv_reg0(31) = '0') then
+             if (slv_reg0(31) = '0') then
 				   slv_reg3 <= slv_reg1 + slv_reg2;
 				 else
 				   slv_reg3 <= slv_reg1 - slv_reg2;

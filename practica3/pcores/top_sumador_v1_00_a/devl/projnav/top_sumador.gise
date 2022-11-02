@@ -51,7 +51,11 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="top_sumador_map.mrp" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="top_sumador_map.ncd" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="top_sumador_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="top_sumador_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="top_sumador_ngdbuild.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="top_sumador_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="top_sumador_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="top_sumador_usage.xml"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="top_sumador_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="top_sumador_xst.xrpt"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="user_logic.bld"/>
@@ -162,8 +166,9 @@
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
-      <outfile xil_pn:name="fuse.log"/>
+      <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="testbench_beh.prj"/>
       <outfile xil_pn:name="testbench_isim_beh.exe"/>
@@ -206,10 +211,12 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1666303879" xil_pn:in_ck="-8188016094751567606" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="2764806711987114147" xil_pn:start_ts="1666303856">
+    <transform xil_pn:end_ts="1666464629" xil_pn:in_ck="-8188016094751567606" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="2764806711987114147" xil_pn:start_ts="1666464604">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="top_sumador.lso"/>
       <outfile xil_pn:name="top_sumador.ngc"/>
@@ -224,10 +231,33 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1666196759" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-5951151244454902259" xil_pn:start_ts="1666196759">
+    <transform xil_pn:end_ts="1667158433" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-1854269130198926674" xil_pn:start_ts="1667158433">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
+    </transform>
+    <transform xil_pn:end_ts="1667158438" xil_pn:in_ck="803602350778593573" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="6788048601596665313" xil_pn:start_ts="1667158433">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="top_sumador.bld"/>
+      <outfile xil_pn:name="top_sumador.ngd"/>
+      <outfile xil_pn:name="top_sumador_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1667158442" xil_pn:in_ck="-9092379162666393881" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="1502724157172790344" xil_pn:start_ts="1667158438">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="top_sumador.pcf"/>
+      <outfile xil_pn:name="top_sumador_map.map"/>
+      <outfile xil_pn:name="top_sumador_map.mrp"/>
+      <outfile xil_pn:name="top_sumador_map.ncd"/>
+      <outfile xil_pn:name="top_sumador_map.ngm"/>
+      <outfile xil_pn:name="top_sumador_map.xrpt"/>
+      <outfile xil_pn:name="top_sumador_summary.xml"/>
+      <outfile xil_pn:name="top_sumador_usage.xml"/>
     </transform>
   </transforms>
 

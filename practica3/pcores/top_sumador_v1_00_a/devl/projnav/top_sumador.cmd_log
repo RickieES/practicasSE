@@ -2,3 +2,6 @@ xst -intstyle ise -ifn "N:/ws/practica3/pcores/top_sumador_v1_00_a/devl/projnav/
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-5 top_sumador.ngc top_sumador.ngd  
 map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o top_sumador_map.ncd top_sumador.ngd top_sumador.pcf 
 xst -intstyle ise -ifn "N:/ws/practica3/pcores/top_sumador_v1_00_a/devl/projnav/top_sumador.xst" -ofn "N:/ws/practica3/pcores/top_sumador_v1_00_a/devl/projnav/top_sumador.syr" 
+xst -intstyle ise -ifn "N:/ws/practica3/pcores/top_sumador_v1_00_a/devl/projnav/top_sumador.xst" -ofn "N:/ws/practica3/pcores/top_sumador_v1_00_a/devl/projnav/top_sumador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-5 top_sumador.ngc top_sumador.ngd  
+map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o top_sumador_map.ncd top_sumador.ngd top_sumador.pcf 

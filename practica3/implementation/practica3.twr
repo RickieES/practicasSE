@@ -45,10 +45,10 @@ Setup/Hold to clock Clk_pin
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
 RX_pin      |    3.342(R)|   -1.221(R)|Clk_pin_BUFGP     |   0.000|
-Rst_pin     |    3.476(R)|    0.692(R)|Clk_pin_BUFGP     |   0.000|
-switches<0> |    6.632(R)|   -2.359(R)|Clk_pin_BUFGP     |   0.000|
-switches<1> |    6.471(R)|   -2.248(R)|Clk_pin_BUFGP     |   0.000|
-switches<3> |    7.424(R)|   -1.088(R)|Clk_pin_BUFGP     |   0.000|
+Rst_pin     |    3.476(R)|    0.419(R)|Clk_pin_BUFGP     |   0.000|
+switches<0> |    6.265(R)|   -2.641(R)|Clk_pin_BUFGP     |   0.000|
+switches<1> |    8.771(R)|   -3.629(R)|Clk_pin_BUFGP     |   0.000|
+switches<3> |   10.501(R)|   -2.090(R)|Clk_pin_BUFGP     |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock Clk_pin to Pad
@@ -56,15 +56,15 @@ Clock Clk_pin to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-TX_pin      |    6.532(R)|Clk_pin_BUFGP     |   0.000|
-leds<0>     |    6.502(R)|Clk_pin_BUFGP     |   0.000|
-leds<1>     |    6.523(R)|Clk_pin_BUFGP     |   0.000|
-leds<2>     |    6.351(R)|Clk_pin_BUFGP     |   0.000|
-leds<3>     |    6.370(R)|Clk_pin_BUFGP     |   0.000|
-leds<4>     |    6.351(R)|Clk_pin_BUFGP     |   0.000|
-leds<5>     |    6.414(R)|Clk_pin_BUFGP     |   0.000|
+TX_pin      |    6.523(R)|Clk_pin_BUFGP     |   0.000|
+leds<0>     |    6.523(R)|Clk_pin_BUFGP     |   0.000|
+leds<1>     |    6.351(R)|Clk_pin_BUFGP     |   0.000|
+leds<2>     |    6.370(R)|Clk_pin_BUFGP     |   0.000|
+leds<3>     |    6.351(R)|Clk_pin_BUFGP     |   0.000|
+leds<4>     |    6.408(R)|Clk_pin_BUFGP     |   0.000|
+leds<5>     |    6.505(R)|Clk_pin_BUFGP     |   0.000|
 leds<6>     |    6.505(R)|Clk_pin_BUFGP     |   0.000|
-leds<7>     |    6.505(R)|Clk_pin_BUFGP     |   0.000|
+leds<7>     |    6.516(R)|Clk_pin_BUFGP     |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock Clk_pin
@@ -72,11 +72,11 @@ Clock to Setup on destination clock Clk_pin
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clk_pin        |   10.150|         |         |         |
+Clk_pin        |   10.228|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Fri Oct 21 00:19:55 2022 
+Analysis completed Sun Oct 30 20:41:48 2022 
 --------------------------------------------------------------------------------
 
 Trace Settings:

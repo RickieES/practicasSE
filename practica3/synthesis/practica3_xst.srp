@@ -4,7 +4,7 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.21 secs
  
 --> 
 TABLE OF CONTENTS
@@ -725,17 +725,17 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk_pin'
 -------------------------------------------------------------------------
 Offset:              4.464ns (Levels of Logic = 3)
   Source:            switches<3> (PAD)
-  Destination:       top_sumador_0/top_sumador_0/USER_LOGIC_I/leds_7 (FF)
+  Destination:       top_sumador_0/top_sumador_0/USER_LOGIC_I/my_leds_7 (FF)
   Destination Clock: Clk_pin rising
 
-  Data Path: switches<3> to top_sumador_0/top_sumador_0/USER_LOGIC_I/leds_7
+  Data Path: switches<3> to top_sumador_0/top_sumador_0/USER_LOGIC_I/my_leds_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            24   0.715   1.697  switches_3_IBUF (switches_3_IBUF)
      begin scope: 'top_sumador_0'
-     LUT2:I1->O            1   0.479   0.681  top_sumador_0/USER_LOGIC_I/leds_mux0003<7>0 (top_sumador_0/USER_LOGIC_I/leds_mux0003<7>0)
-     FDRS:S                    0.892          top_sumador_0/USER_LOGIC_I/leds_7
+     LUT2:I1->O            1   0.479   0.681  top_sumador_0/USER_LOGIC_I/my_leds_mux0003<7>0 (top_sumador_0/USER_LOGIC_I/my_leds_mux0003<7>0)
+     FDRS:S                    0.892          top_sumador_0/USER_LOGIC_I/my_leds_7
     ----------------------------------------
     Total                      4.464ns (2.086ns logic, 2.378ns route)
                                        (46.7% logic, 53.3% route)
@@ -763,12 +763,12 @@ Offset:              6.216ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 95.00 secs
-Total CPU time to Xst completion: 95.27 secs
+Total REAL time to Xst completion: 137.00 secs
+Total CPU time to Xst completion: 136.73 secs
  
 --> 
 
-Total memory usage is 266252 kilobytes
+Total memory usage is 234704 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  349 (   0 filtered)

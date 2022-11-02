@@ -139,6 +139,7 @@ architecture IMP of user_logic is
   --USER signal declarations added here, as needed for user logic
   signal my_counter                     : std_logic_vector(7 downto 0);
   signal Clk_div                        : std_logic;
+  signal my_leds								 : std_logic_vector(7 downto 0);
 
   ------------------------------------------
   -- Signals for user logic slave model s/w accessible register example
@@ -216,8 +217,9 @@ begin
              -- Parte D (opcional) de la practica
              -- Si segundo MSB de switches es 0 y reg0(30) es 1 
 			    -- if ((switches(2) = '0') and (slv_reg0(30) = '1')) then
-				 --	slv_reg3 <= my_counter;
+				 --  slv_reg3 <= my_counter;
              -- elsif (slv_reg0(31) = '0') then
+				 -- FIXME: variar el valor de slv_reg3 debería inicializar el contador de LED
              if (slv_reg0(31) = '0') then
 				   slv_reg3 <= slv_reg1 + slv_reg2;
 				 else
@@ -247,17 +249,17 @@ begin
   begin
     if Bus2IP_Clk'event and Bus2IP_Clk = '1' then
       if Bus2IP_Reset = '1' then
-		  leds <= (others => '0');
+		  my_leds <= (others => '0');
 		else
 		  if (switches(3) = '1') then
-		    leds <= my_counter;
+		    my_leds <= my_counter;
 		  else
 		    case switches(1 downto 0) is
-			   when "00" => leds <= slv_reg0(0 to 7);
-				when "01" => leds <= slv_reg1(0 to 7);
-				when "10" => leds <= slv_reg2(0 to 7);
-				when "11" => leds <= slv_reg3(0 to 7);
-				when others => leds <= (others => '0');
+			   when "00" => my_leds <= slv_reg0(0 to 7);
+				when "01" => my_leds <= slv_reg1(0 to 7);
+				when "10" => my_leds <= slv_reg2(0 to 7);
+				when "11" => my_leds <= slv_reg3(0 to 7);
+				when others => my_leds <= (others => '0');
 			 end case;
 		  end if;
 		end if;
@@ -287,5 +289,6 @@ begin
   IP2Bus_WrAck <= slv_write_ack;
   IP2Bus_RdAck <= slv_read_ack;
   IP2Bus_Error <= '0';
+  leds <= my_leds;
 
 end IMP;

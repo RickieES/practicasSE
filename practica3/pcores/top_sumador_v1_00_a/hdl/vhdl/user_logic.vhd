@@ -219,7 +219,7 @@ begin
 			    -- if ((switches(2) = '0') and (slv_reg0(30) = '1')) then
 				 --  slv_reg3 <= my_counter;
              -- elsif (slv_reg0(31) = '0') then
-				 -- FIXME: variar el valor de slv_reg3 debería inicializar el contador de LED
+				 my_counter <= (others => '0');
              if (slv_reg0(31) = '0') then
 				   slv_reg3 <= slv_reg1 + slv_reg2;
 				 else

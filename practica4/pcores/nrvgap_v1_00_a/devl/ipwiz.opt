@@ -1,0 +1,10 @@
+-batch 
+-create nrvgap 
+-ver 1.00.a 
+-dir "N:\ws\practica4" 
+-lang vhdl 
+-bus plbv46 s 
+-wfifo 1 512 
+-xps 
+-ise 
+-driver 

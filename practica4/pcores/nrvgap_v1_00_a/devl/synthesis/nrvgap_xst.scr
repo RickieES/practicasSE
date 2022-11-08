@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "\\vboxsvr\se\ws\practica4\pcores\nrvgap_v1_00_a\devl\synthesis\nrvgap_xst.prj"
+-top nrvgap
+-p virtex6
+-ofn "\\vboxsvr\se\ws\practica4\pcores\nrvgap_v1_00_a\devl\synthesis\nrvgap_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib nrvgap_v1_00_a

@@ -1,0 +1,14 @@
+##############################################################################
+## Filename:          N:/ws/practica4/pcores/nrvgap_v1_00_a/data/nrvgap_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Sat Nov 12 21:50:59 2022 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib plbv46_slave_single_v1_01_a  all 
+lib wrpfifo_v5_01_a  all 
+lib nrvgap_v1_00_a user_logic vhdl
+lib nrvgap_v1_00_a nrvgap vhdl
+lib nrvgap_v1_00_a counter2 vhdl
+lib nrvgap_v1_00_a vgacore vhdl
+

@@ -502,6 +502,8 @@ begin
       hsyncb                         => hsyncb,
       vsyncb                         => vsyncb,
       rgb                            => rgb,
+      mover_derecha_pin              => mover_derecha_pin,
+			mover_izquierda_pin            => mover_izquierda_pin
       -- MAP USER PORTS ABOVE THIS LINE ------------------
 
       Bus2IP_Clk                     => ipif_Bus2IP_Clk,

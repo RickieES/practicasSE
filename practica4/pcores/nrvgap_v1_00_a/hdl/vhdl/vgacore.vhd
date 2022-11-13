@@ -161,7 +161,7 @@ end process;
 
 -- A partir de aqui escribir la parte de dibujar en la pantalla
 
--- Dibujamos rectángulos de 16x8
+-- Dibujamos rectï¿½ngulos de 16x8
 -- vcnt(8 downto 4)x hcnt(6 downto 3)
 process(clock, load, rectangulo)
 begin

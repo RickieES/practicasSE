@@ -1140,6 +1140,7 @@ begin
   hsyncb_pin <= nrvgap_0_hsyncb;
   vsyncb_pin <= nrvgap_0_vsyncb;
   rgb_pin <= nrvgap_0_rgb;
+
   net_gnd0 <= '0';
   net_gnd1(0 downto 0) <= B"0";
   net_gnd10(0 to 9) <= B"0000000000";

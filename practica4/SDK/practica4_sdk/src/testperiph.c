@@ -27,88 +27,61 @@
  *
  */
 
-
 #include <stdio.h>
 #include "xparameters.h"
 #include "xil_cache.h"
-#include "xbasic_types.h"
-#include "xbram.h"
-#include "bram_header.h"
+#include "xuartlite_i.h"
 #include "xbasic_types.h"
 #include "xgpio.h"
-#include "gpio_header.h"
+#include "nrvgap.h"
+#define ROJO 				0x000001C0
+#define VERDE 				0x00000038
+#define VERDE_OSCURO		0x00000018
+#define AZUL 				0x00000007
+#define BLANCO				0X000001FF
+#define nfilas				16
+#define ncolumnas			8
 
+int main() {
 
-int main() 
-{
+	Xil_ICacheEnable();
+	Xil_DCacheEnable();
 
+	print("---Entering main---\n\r");
 
-   Xil_ICacheEnable();
-   Xil_DCacheEnable();
+	{
+		Xuint32 baseaddr;
+		Xuint32 Data;
+		char fila, columna, posicion, color;
+		baseaddr = XPAR_NRVGAP_0_BASEADDR;
+		color = BLANCO; /*ponemos color blanco */
 
-   print("---Entering main---\n\r");
+		xil_printf("Data configuracion =%x\r\n", Data);
 
-   
+		while (!(NRVGAP_mWriteFIFOFull(baseaddr))) {
+			/* La pantalla es un array de 16 filas por 8 columnas
+			 * Se accede a una posición dada por columna*16+fila
+			 * El dato hay que enviarlo con el siguiente formato
+			 * 7 bits menos significativos (bits 6..0) la posición
+			 * 9 bits mas significativos (bits 31 .. 23) el color
+			 */
+			for (fila = 0; fila < nfilas; fila++) {
+				for (columna = 0; columna < ncolumnas; columna++) {
+					posicion = columna * nfilas + fila;
 
-   {
-      int status;
-      
-      print("\r\nRunning Bram Example() for xps_bram_if_cntlr_0...\r\n");
+					Data = ((color & 0x1FF) << 23) | (posicion & 0x7f);
+					NRVGAP_mWriteToFIFO(baseaddr, 0, Data);
+					xil_printf("Data configuracion =%d %d %08x\r\n", fila,
+							columna, Data);
+				}
+			}
+		}
+	}
 
-      status = BramExample(XPAR_XPS_BRAM_IF_CNTLR_0_DEVICE_ID);
+	print("---Exiting main---\n\r");
 
-      if (status == 0) {
-         xil_printf("Bram Example PASSED.\r\n");
-      }
-      else {
-         print("Bram Example FAILED.\r\n");
-      }
-   }
+	Xil_DCacheDisable();
+	Xil_ICacheDisable();
 
-   
-
-   {
-      u32 status;
-      
-      print("\r\nRunning GpioOutputExample() for xps_gpio_0...\r\n");
-
-      status = GpioOutputExample(XPAR_XPS_GPIO_0_DEVICE_ID,8);
-      
-      if (status == 0) {
-         print("GpioOutputExample PASSED.\r\n");
-      }
-      else {
-         print("GpioOutputExample FAILED.\r\n");
-      }
-   }
-   
-
-   {
-      u32 status;
-      
-      print("\r\nRunning GpioOutputExample() for xps_gpio_1...\r\n");
-
-      status = GpioOutputExample(XPAR_XPS_GPIO_1_DEVICE_ID,8);
-      
-      if (status == 0) {
-         print("GpioOutputExample PASSED.\r\n");
-      }
-      else {
-         print("GpioOutputExample FAILED.\r\n");
-      }
-   }
-   
-   /*
-    * Peripheral SelfTest will not be run for xps_uartlite_0
-    * because it has been selected as the STDOUT device
-    */
-
-
-   print("---Exiting main---\n\r");
-
-   Xil_DCacheDisable();
-   Xil_ICacheDisable();
-
-   return 0;
+	return 0;
 }
-

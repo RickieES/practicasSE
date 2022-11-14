@@ -183,8 +183,8 @@ vhdl wrpfifo_v5_01_a C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\wr
 vhdl wrpfifo_v5_01_a C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\wrpfifo_v5_01_a/hdl/vhdl/ipif_control_wr_dre.vhd
 vhdl wrpfifo_v5_01_a C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\wrpfifo_v5_01_a/hdl/vhdl/blkmem_wrapper.vhd
 vhdl wrpfifo_v5_01_a C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\wrpfifo_v5_01_a/hdl/vhdl/wrpfifo_top.vhd
-vhdl nrvgap_v1_00_a \\vboxsvr\se\ws\practica4\pcores\nrvgap_v1_00_a/hdl/vhdl/user_logic.vhd
-vhdl nrvgap_v1_00_a \\vboxsvr\se\ws\practica4\pcores\nrvgap_v1_00_a/hdl/vhdl/nrvgap.vhd
-vhdl nrvgap_v1_00_a \\vboxsvr\se\ws\practica4\pcores\nrvgap_v1_00_a/hdl/vhdl/counter2.vhd
-vhdl nrvgap_v1_00_a \\vboxsvr\se\ws\practica4\pcores\nrvgap_v1_00_a/hdl/vhdl/vgacore.vhd
+vhdl nrvgap_v1_00_a C:\Users\CJRipa\Downloads\practicasSE\practica4\pcores\nrvgap_v1_00_a/hdl/vhdl/user_logic.vhd
+vhdl nrvgap_v1_00_a C:\Users\CJRipa\Downloads\practicasSE\practica4\pcores\nrvgap_v1_00_a/hdl/vhdl/nrvgap.vhd
+vhdl nrvgap_v1_00_a C:\Users\CJRipa\Downloads\practicasSE\practica4\pcores\nrvgap_v1_00_a/hdl/vhdl/counter2.vhd
+vhdl nrvgap_v1_00_a C:\Users\CJRipa\Downloads\practicasSE\practica4\pcores\nrvgap_v1_00_a/hdl/vhdl/vgacore.vhd
 vhdl work ../hdl/practica4_nrvgap_0_wrapper.vhd

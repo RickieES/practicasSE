@@ -37,14 +37,30 @@ entity vgacore is
 		color: in std_logic_vector(8 downto 0); -- color
 		rectangulo: in std_logic_vector(6 downto 0); -- rectangulo a borrar
 		vsyncb: out std_logic;	-- vertical (frame) sync
-		rgb: out std_logic_vector(8 downto 0)	-- red,green,blue colors
+		rgb: out std_logic_vector(8 downto 0);	-- red,green,blue colors
+		mover_derecha_pin: in std_logic; --para mover derecha
+    	mover_izquierda_pin: in std_logic --para mover izquierda
 	);
 end vgacore;
 
 architecture vgacore_arch of vgacore is
 
+component debouncer
+	port 
+	(
+	rst: in std_logic;
+	clk: in std_logic;
+	x: in std_logic;
+	xDeb: out std_logic;
+	xDebFallingEdge: out std_logic;
+	xDebRisingEdge: out std_logic
+	);
+end component;
+
 signal hcnt: std_logic_vector(8 downto 0);	-- horizontal pixel counter
 signal vcnt: std_logic_vector(9 downto 0);	-- vertical line counter
+signal cnt: std_logic_vector(2 downto 0); --contador
+
 type ram_type is array (0 to 127) of std_logic_vector(8 downto 0);
 signal RAM : ram_type :=
 (
@@ -90,10 +106,48 @@ signal RAM : ram_type :=
 
 
 signal hsyncbAux : std_logic;
+signal debouncer_d : std_logic;
+signal debouncer_i : std_logic;
+signal deb_rising_d : std_logic;
+signal deb_rising_i : std_logic;
+signal der : std_logic;
+signal izq : std_logic;
 
 begin
 
 hsyncb <= hsyncbAux;
+
+debouncer_izquierdo: debouncer port map(
+	rst => not reset,
+	clk => clock,
+	x => mover_izquierda_pin,
+	xDeb => debouncer_i,
+	xDebFallingEdge => izq,
+	xDebRisingEdge => deb_rising_i
+);
+
+debouncer_derecho: debouncer port map(
+	rst => not reset,
+	clk => clock,
+	x => mover_derecha_pin,
+	xDeb => debouncer_d,
+	xDebFallingEdge => der,
+	xDebRisingEdge => deb_rising_d
+);
+
+process(clock,reset,der,izq)
+begin
+    if reset = '1' then 
+	cnt <="000";
+    elsif (clock' event and clock='1') then
+	if izq='1' then 
+		cnt <= cnt+1;
+	elsif der ='1' then
+		cnt <= cnt-1;
+	end if;
+    end if;
+end process;
+
 
 A: process(clock,reset)
 begin
@@ -161,7 +215,7 @@ end process;
 
 -- A partir de aqui escribir la parte de dibujar en la pantalla
 
--- Dibujamos rect�ngulos de 16x8
+-- Dibujamos rect?ngulos de 16x8
 -- vcnt(8 downto 4)x hcnt(6 downto 3)
 process(clock, load, rectangulo)
 begin

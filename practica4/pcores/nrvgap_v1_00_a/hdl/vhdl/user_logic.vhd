@@ -154,9 +154,9 @@ architecture IMP of user_logic is
 			color: in std_logic_vector(8 downto 0); -- color
 			rectangulo: in std_logic_vector(6 downto 0); -- rectangulo a borrar
 			vsyncb: out std_logic;	-- vertical (frame) sync
-			rgb: out std_logic_vector(8 downto 0)	-- red,green,blue colors
-		    mover_derecha_pin: in std_logic;
-    		mover_izquierda_pin: in std_logic;
+			rgb: out std_logic_vector(8 downto 0);	-- red,green,blue colors
+		   mover_derecha_pin: in std_logic;
+    		mover_izquierda_pin: in std_logic
 		);
 	end component;
 component counter2 IS
@@ -227,9 +227,9 @@ timeOut <= "11"; -- 12,5 MHz
 			color => color,
 			rectangulo => rectangulo,
 			vsyncb => vsyncb,
-			rgb => rgb
+			rgb => rgb,
 			mover_derecha_pin => mover_derecha_pin,
-			mover_izquierda_pin =>mover_izquierda_pin
+			mover_izquierda_pin => mover_izquierda_pin
 		);
 
 		sincro : counter2 

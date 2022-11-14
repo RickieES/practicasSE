@@ -1,7 +1,7 @@
 
-<EDKSYSTEM EDKVERSION="14.1" EDWVERSION="1.2" TIMESTAMP="Sun Nov 13 18:37:40 2022">
+<EDKSYSTEM EDKVERSION="14.1" EDWVERSION="1.2" TIMESTAMP="Mon Nov 14 18:43:41 2022">
 
-  <SYSTEMINFO ARCH="spartan3" DEVICE="xc3s1000" PACKAGE="ft256" PART="xc3s1000ft256-5" SOURCE="//vboxsvr/se/ws/practica4/practica4.xmp" SPEEDGRADE="-5"/>
+  <SYSTEMINFO ARCH="spartan3" DEVICE="xc3s1000" PACKAGE="ft256" PART="xc3s1000ft256-5" SOURCE="C:/Users/CJRipa/Downloads/practicasSE/practica4/practica4.xmp" SPEEDGRADE="-5"/>
 
   <EXTERNALPORTS>
     <PORT DIR="I" MHS_INDEX="0" NAME="Clk_pin" SIGIS="CLK" SIGNAME="net_Clk_pin">

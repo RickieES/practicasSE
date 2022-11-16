@@ -139,7 +139,7 @@ int main()
 
 	xil_printf("Practica 3 por Nestor Marin y Ricardo Palomares\r\n\r\n");
 
-/*	// Mientras no pulse 'X' o 'x'
+	// Mientras no pulse 'X' o 'x'
 	while ((byte != 0x58) && (byte != 0x78)) {
 		xil_printf("Elija una opcion:\r\n");
 		xil_printf("  a. Elegir operacion\r\n");
@@ -197,7 +197,7 @@ int main()
 			//                xil_printf("Debe introducir una de las opciones del menu (a, b, c).\r\n");
 		}
 	}
-*/	xil_printf("Ha elegido salir del menu. Fin de la ejecucion del programa de Spartan.\r\n");
+	xil_printf("Ha elegido salir del menu. Fin de la ejecucion del programa de Spartan.\r\n");
 	xil_printf("Practica 3 por Nestor Marin y Ricardo Palomares\r\n\r\n");
 
 	return 0;

@@ -1,7 +1,7 @@
 Release 14.1 - par P.15xf (nt)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Sun Oct 30 20:41:42 2022
+Wed Nov 16 00:58:31 2022
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -167,7 +167,7 @@ Pinout by Pin Number:
 |K1        |           |DIFFM    |IO                 |UNUSED   |           |6             |          |         |           |         |         |          |           |                |
 |K2        |           |DIFFM    |IO_L24P_6          |UNUSED   |           |6             |          |         |           |         |         |          |           |                |
 |K3        |           |DIFFS    |IO_L24N_6/VREF_6   |UNUSED   |           |6             |          |         |           |         |         |          |           |                |
-|K4        |           |DIFFM    |IO_L23P_6          |UNUSED   |           |6             |          |         |           |         |         |          |           |                |
+|K4        |Rst_pin    |IOB      |IO_L23P_6          |INPUT    |LVCMOS25*  |6             |          |         |           |IFD      |         |LOCATED   |YES        |NONE            |
 |K5        |           |DIFFS    |IO_L23N_6          |UNUSED   |           |6             |          |         |           |         |         |          |           |                |
 |K6        |           |         |VCCO_6             |         |           |6             |          |         |           |         |2.50     |          |           |                |
 |K7        |           |         |GND                |         |           |              |          |         |           |         |         |          |           |                |
@@ -236,7 +236,7 @@ Pinout by Pin Number:
 |P6        |           |DIFFM    |IO_L29P_5/VREF_5   |UNUSED   |           |5             |          |         |           |         |         |          |           |                |
 |P7        |           |IOB      |IO                 |UNUSED   |           |5             |          |         |           |         |         |          |           |                |
 |P8        |Clk_pin    |IOB      |IO_L32N_5/GCLK3    |INPUT    |LVCMOS25*  |5             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
-|P9        |Rst_pin    |IOB      |IO_L31P_4/DOUT/BUSY|INPUT    |LVCMOS25*  |4             |          |         |           |IFD      |         |UNLOCATED |YES        |NONE            |
+|P9        |           |DIFFM    |IO_L31P_4/DOUT/BUSY|UNUSED   |           |4             |          |         |           |         |         |          |           |                |
 |P10       |           |DIFFS    |IO_L30N_4/D2       |UNUSED   |           |4             |          |         |           |         |         |          |           |                |
 |P11       |           |DIFFS    |IO_L28N_4          |UNUSED   |           |4             |          |         |           |         |         |          |           |                |
 |P12       |switches<0>|IOB      |IO_L25N_4          |INPUT    |LVCMOS25*  |4             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |

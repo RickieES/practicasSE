@@ -26,7 +26,7 @@
 <msg type="warning" file="Xst" num="37" delta="old" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">SIGIS</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
 </msg>
 
-<msg type="info" file="Xst" num="1561" delta="new" >&quot;<arg fmt="%s" index="1">//vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/user_logic.vhd</arg>&quot; line <arg fmt="%d" index="2">260</arg>: Mux is complete : default of case is discarded
+<msg type="info" file="Xst" num="1561" delta="new" >&quot;<arg fmt="%s" index="1">//vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/user_logic.vhd</arg>&quot; line <arg fmt="%d" index="2">262</arg>: Mux is complete : default of case is discarded
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">A</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.

@@ -5,3 +5,14 @@ xst -intstyle ise -ifn "N:/ws/practica3/pcores/top_sumador_v1_00_a/devl/projnav/
 xst -intstyle ise -ifn "N:/ws/practica3/pcores/top_sumador_v1_00_a/devl/projnav/top_sumador.xst" -ofn "N:/ws/practica3/pcores/top_sumador_v1_00_a/devl/projnav/top_sumador.syr" 
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-5 top_sumador.ngc top_sumador.ngd  
 map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o top_sumador_map.ncd top_sumador.ngd top_sumador.pcf 
+xst -intstyle ise -ifn "N:/ws/practica3/pcores/top_sumador_v1_00_a/devl/projnav/top_sumador.xst" -ofn "N:/ws/practica3/pcores/top_sumador_v1_00_a/devl/projnav/top_sumador.syr" 
+xst -intstyle ise -ifn "N:/ws/practica3/pcores/top_sumador_v1_00_a/devl/projnav/top_sumador.xst" -ofn "N:/ws/practica3/pcores/top_sumador_v1_00_a/devl/projnav/top_sumador.syr" 
+netgen -intstyle ise -ar Structure -tm top_sumador -w -dir netgen/synthesis -ofmt vhdl -sim top_sumador.ngc top_sumador_synthesis.vhd 
+xst -intstyle ise -ifn "N:/ws/practica3/pcores/top_sumador_v1_00_a/devl/projnav/top_sumador.xst" -ofn "N:/ws/practica3/pcores/top_sumador_v1_00_a/devl/projnav/top_sumador.syr" 
+xst -intstyle ise -ifn "N:/ws/practica3/pcores/top_sumador_v1_00_a/devl/projnav/top_sumador.xst" -ofn "N:/ws/practica3/pcores/top_sumador_v1_00_a/devl/projnav/top_sumador.syr" 
+xst -intstyle ise -ifn "N:/ws/practica3/pcores/top_sumador_v1_00_a/devl/projnav/top_sumador.xst" -ofn "N:/ws/practica3/pcores/top_sumador_v1_00_a/devl/projnav/top_sumador.syr" 
+xst -intstyle ise -ifn "N:/ws/practica3/pcores/top_sumador_v1_00_a/devl/projnav/top_sumador.xst" -ofn "N:/ws/practica3/pcores/top_sumador_v1_00_a/devl/projnav/top_sumador.syr" 
+xst -intstyle ise -ifn "N:/ws/practica3/pcores/top_sumador_v1_00_a/devl/projnav/top_sumador.xst" -ofn "N:/ws/practica3/pcores/top_sumador_v1_00_a/devl/projnav/top_sumador.syr" 
+netgen -intstyle ise -ar Structure -tm top_sumador -w -dir netgen/synthesis -ofmt vhdl -sim top_sumador.ngc top_sumador_synthesis.vhd 
+xst -intstyle ise -ifn "N:/ws/practica3/pcores/top_sumador_v1_00_a/devl/projnav/top_sumador.xst" -ofn "N:/ws/practica3/pcores/top_sumador_v1_00_a/devl/projnav/top_sumador.syr" 
+netgen -intstyle ise -ar Structure -tm top_sumador -w -dir netgen/synthesis -ofmt vhdl -sim top_sumador.ngc top_sumador_synthesis.vhd 

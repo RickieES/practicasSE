@@ -4,7 +4,7 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.21 secs
+Total CPU time to Xst completion: 0.20 secs
  
 --> 
 TABLE OF CONTENTS
@@ -570,15 +570,15 @@ Cell Usage :
 #      MUXF5                       : 352
 #      VCC                         : 5
 #      XORCY                       : 212
-# FlipFlops/Latches                : 1961
+# FlipFlops/Latches                : 1962
 #      FD                          : 5
 #      FDC                         : 27
-#      FDE                         : 200
+#      FDE                         : 201
 #      FDR                         : 772
 #      FDRE                        : 856
-#      FDRS                        : 21
+#      FDRS                        : 13
 #      FDRSE                       : 3
-#      FDS                         : 33
+#      FDS                         : 41
 #      FDSE                        : 44
 # RAMS                             : 208
 #      RAM16X1D                    : 192
@@ -599,8 +599,8 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-5 
 
- Number of Slices:                     1853  out of   7680    24%  
- Number of Slice Flip Flops:           1961  out of  15360    12%  
+ Number of Slices:                     1842  out of   7680    23%  
+ Number of Slice Flip Flops:           1962  out of  15360    12%  
  Number of 4 input LUTs:               2773  out of  15360    18%  
     Number used as logic:              2305
     Number used as Shift registers:      84
@@ -632,7 +632,7 @@ Clock Information:
 -----------------------------------------------------------+--------------------------------------------------------------+-------+
 Clock Signal                                               | Clock buffer(FF name)                                        | Load  |
 -----------------------------------------------------------+--------------------------------------------------------------+-------+
-Clk_pin                                                    | BUFGP                                                        | 2248  |
+Clk_pin                                                    | BUFGP                                                        | 2249  |
 N0                                                         | NONE(bram_block_0/bram_block_0/ramb16_s2_s2_0/ramb16_s2_s2_0)| 16    |
 top_sumador_0/top_sumador_0/USER_LOGIC_I/mi_divisor/clk_aux| NONE(top_sumador_0/top_sumador_0/USER_LOGIC_I/my_counter_7)  | 8     |
 -----------------------------------------------------------+--------------------------------------------------------------+-------+
@@ -664,7 +664,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Clk_pin'
   Clock period: 11.888ns (frequency: 84.119MHz)
-  Total number of paths / destination ports: 181062 / 7067
+  Total number of paths / destination ports: 181059 / 7061
 -------------------------------------------------------------------------
 Delay:               11.888ns (Levels of Logic = 6)
   Source:            microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers_Mux.Instruction_Prefetch_Mux[7].Gen_Instr_DFF (FF)
@@ -734,8 +734,8 @@ Offset:              4.464ns (Levels of Logic = 3)
     ----------------------------------------  ------------
      IBUF:I->O            24   0.715   1.697  switches_3_IBUF (switches_3_IBUF)
      begin scope: 'top_sumador_0'
-     LUT2:I1->O            1   0.479   0.681  top_sumador_0/USER_LOGIC_I/my_leds_mux0003<7>0 (top_sumador_0/USER_LOGIC_I/my_leds_mux0003<7>0)
-     FDRS:S                    0.892          top_sumador_0/USER_LOGIC_I/my_leds_7
+     LUT2:I1->O            1   0.479   0.681  top_sumador_0/USER_LOGIC_I/my_leds_mux0002<7>0 (top_sumador_0/USER_LOGIC_I/my_leds_mux0002<7>0)
+     FDS:S                     0.892          top_sumador_0/USER_LOGIC_I/my_leds_7
     ----------------------------------------
     Total                      4.464ns (2.086ns logic, 2.378ns route)
                                        (46.7% logic, 53.3% route)
@@ -763,12 +763,12 @@ Offset:              6.216ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 137.00 secs
-Total CPU time to Xst completion: 136.73 secs
+Total REAL time to Xst completion: 100.00 secs
+Total CPU time to Xst completion: 100.02 secs
  
 --> 
 
-Total memory usage is 234704 kilobytes
+Total memory usage is 235724 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  349 (   0 filtered)

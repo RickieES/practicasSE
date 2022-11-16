@@ -4,7 +4,7 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.28 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> 
 TABLE OF CONTENTS
@@ -475,7 +475,7 @@ Analyzing generic Entity <user_logic> in library <top_sumador_v1_00_a> (Architec
 	C_SLV_DWIDTH = 32
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
-INFO:Xst:1561 - "//vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/user_logic.vhd" line 260: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "//vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/user_logic.vhd" line 262: Mux is complete : default of case is discarded
 Entity <user_logic> analyzed. Unit <user_logic> generated.
 
 Analyzing Entity <divisor1> in library <top_sumador_v1_00_a> (Architecture <divisor1_arch>).
@@ -533,7 +533,8 @@ Synthesizing Unit <user_logic>.
     Related source file is "//vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/user_logic.vhd".
 WARNING:Xst:647 - Input <switches<2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 8-bit up counter for signal <my_counter>.
-    Found 8-bit comparator less for signal <my_counter$cmp_lt0000> created at line 275.
+    Found 8-bit comparator less for signal <my_counter$cmp_lt0000> created at line 276.
+    Found 1-bit register for signal <my_counter_reset>.
     Found 8-bit register for signal <my_leds>.
     Found 32-bit register for signal <slv_reg0>.
     Found 32-bit register for signal <slv_reg1>.
@@ -542,7 +543,7 @@ WARNING:Xst:647 - Input <switches<2>> is never used. This port will be preserved
     Found 32-bit addsub for signal <slv_reg3$mux0000>.
     Summary:
 	inferred   1 Counter(s).
-	inferred 136 D-type flip-flop(s).
+	inferred 137 D-type flip-flop(s).
 	inferred   1 Adder/Subtractor(s).
 	inferred   1 Comparator(s).
 Unit <user_logic> synthesized.
@@ -669,8 +670,8 @@ Macro Statistics
 # Counters                                             : 2
  27-bit up counter                                     : 1
  8-bit up counter                                      : 1
-# Registers                                            : 138
- 1-bit register                                        : 127
+# Registers                                            : 139
+ 1-bit register                                        : 128
  3-bit register                                        : 1
  32-bit register                                       : 5
  4-bit register                                        : 4
@@ -696,8 +697,8 @@ Macro Statistics
 # Counters                                             : 2
  27-bit up counter                                     : 1
  8-bit up counter                                      : 1
-# Registers                                            : 312
- Flip-Flops                                            : 312
+# Registers                                            : 313
+ Flip-Flops                                            : 313
 # Comparators                                          : 1
  8-bit comparator less                                 : 1
 
@@ -781,8 +782,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 298
- Flip-Flops                                            : 298
+# Registers                                            : 299
+ Flip-Flops                                            : 299
 
 =========================================================================
 
@@ -822,12 +823,12 @@ Cell Usage :
 #      MUXF5                       : 40
 #      VCC                         : 1
 #      XORCY                       : 67
-# FlipFlops/Latches                : 298
+# FlipFlops/Latches                : 299
 #      FDC                         : 27
-#      FDE                         : 1
+#      FDE                         : 2
 #      FDR                         : 103
 #      FDRE                        : 159
-#      FDRS                        : 8
+#      FDS                         : 8
 =========================================================================
 
 Device utilization summary:
@@ -836,7 +837,7 @@ Device utilization summary:
 Selected Device : 3s1000ft256-5 
 
  Number of Slices:                      217  out of   7680     2%  
- Number of Slice Flip Flops:            298  out of  15360     1%  
+ Number of Slice Flip Flops:            299  out of  15360     1%  
  Number of 4 input LUTs:                277  out of  15360     1%  
  Number of IOs:                         213
  Number of bonded IOBs:                   0  out of    173     0%  
@@ -863,7 +864,7 @@ Clock Information:
 Clock Signal                                 | Clock buffer(FF name)                                | Load  |
 ---------------------------------------------+------------------------------------------------------+-------+
 top_sumador_0/USER_LOGIC_I/mi_divisor/clk_aux| NONE(top_sumador_0/USER_LOGIC_I/my_counter_7)        | 8     |
-SPLB_Clk                                     | NONE(top_sumador_0/USER_LOGIC_I/mi_divisor/cuenta_26)| 290   |
+SPLB_Clk                                     | NONE(top_sumador_0/USER_LOGIC_I/mi_divisor/cuenta_26)| 291   |
 ---------------------------------------------+------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -922,7 +923,7 @@ Delay:               5.683ns (Levels of Logic = 10)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'SPLB_Clk'
   Clock period: 6.532ns (frequency: 153.093MHz)
-  Total number of paths / destination ports: 5080 / 430
+  Total number of paths / destination ports: 5084 / 431
 -------------------------------------------------------------------------
 Delay:               6.532ns (Levels of Logic = 9)
   Source:            top_sumador_0/USER_LOGIC_I/mi_divisor/cuenta_7 (FF)
@@ -950,26 +951,8 @@ Delay:               6.532ns (Levels of Logic = 9)
                                        (47.2% logic, 52.8% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'top_sumador_0/USER_LOGIC_I/mi_divisor/clk_aux'
-  Total number of paths / destination ports: 8 / 8
--------------------------------------------------------------------------
-Offset:              0.892ns (Levels of Logic = 0)
-  Source:            SPLB_Rst (PAD)
-  Destination:       top_sumador_0/USER_LOGIC_I/my_counter_7 (FF)
-  Destination Clock: top_sumador_0/USER_LOGIC_I/mi_divisor/clk_aux rising
-
-  Data Path: SPLB_Rst to top_sumador_0/USER_LOGIC_I/my_counter_7
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDRE:R                    0.892          top_sumador_0/USER_LOGIC_I/my_counter_0
-    ----------------------------------------
-    Total                      0.892ns (0.892ns logic, 0.000ns route)
-                                       (100.0% logic, 0.0% route)
-
-=========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'SPLB_Clk'
-  Total number of paths / destination ports: 376 / 344
+  Total number of paths / destination ports: 369 / 337
 -------------------------------------------------------------------------
 Offset:              3.241ns (Levels of Logic = 1)
   Source:            SPLB_Rst (PAD)
@@ -1007,12 +990,12 @@ Offset:              0.626ns (Levels of Logic = 0)
 =========================================================================
 
 
-Total REAL time to Xst completion: 23.00 secs
-Total CPU time to Xst completion: 23.66 secs
+Total REAL time to Xst completion: 18.00 secs
+Total CPU time to Xst completion: 18.27 secs
  
 --> 
 
-Total memory usage is 309136 kilobytes
+Total memory usage is 308556 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  106 (   0 filtered)

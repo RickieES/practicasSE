@@ -22,16 +22,23 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="top_sumador.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="divisor1.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="divisor1.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="divisor1.xst"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
+    <file xil_pn:branch="PostSynthSim" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/synthesis/top_sumador_synthesis.nlf"/>
+    <file xil_pn:branch="PostSynthSim" xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/synthesis/top_sumador_synthesis.vhd"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="testbench_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testbench_stx_beh.prj"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="top_sumador.bld"/>
@@ -109,6 +116,10 @@
     <transform xil_pn:end_ts="1667641294" xil_pn:in_ck="-6944360477507519564" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1667641293">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../../hdl/vhdl/divisor1Hz.vhd"/>
       <outfile xil_pn:name="../../hdl/vhdl/top_sumador.vhd"/>
       <outfile xil_pn:name="../../hdl/vhdl/user_logic.vhd"/>
@@ -139,6 +150,11 @@
     <transform xil_pn:end_ts="1667641388" xil_pn:in_ck="-6944360477507519564" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1667641388">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../../hdl/vhdl/divisor1Hz.vhd"/>
       <outfile xil_pn:name="../../hdl/vhdl/top_sumador.vhd"/>
       <outfile xil_pn:name="../../hdl/vhdl/user_logic.vhd"/>
@@ -157,8 +173,11 @@
     <transform xil_pn:end_ts="1667641800" xil_pn:in_ck="-6944360477507519564" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-7949313700944077754" xil_pn:start_ts="1667641796">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
@@ -206,12 +225,11 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1666464629" xil_pn:in_ck="-8188016094751567606" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="2764806711987114147" xil_pn:start_ts="1666464604">
+    <transform xil_pn:end_ts="1668556401" xil_pn:in_ck="-8188016094751567606" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="2764806711987114147" xil_pn:start_ts="1668556382">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="top_sumador.lso"/>
       <outfile xil_pn:name="top_sumador.ngc"/>
@@ -231,9 +249,10 @@
       <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1667158438" xil_pn:in_ck="803602350778593573" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="6788048601596665313" xil_pn:start_ts="1667158433">
-      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="AbortedRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="top_sumador.bld"/>
@@ -253,6 +272,13 @@
       <outfile xil_pn:name="top_sumador_map.xrpt"/>
       <outfile xil_pn:name="top_sumador_summary.xml"/>
       <outfile xil_pn:name="top_sumador_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1668556403" xil_pn:in_ck="803602350778593573" xil_pn:name="TRAN_postSynthesisSimModel" xil_pn:prop_ck="7655528737203590326" xil_pn:start_ts="1668556401">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="netgen"/>
+      <outfile xil_pn:name="netgen/synthesis/top_sumador_synthesis.nlf"/>
+      <outfile xil_pn:name="netgen/synthesis/top_sumador_synthesis.vhd"/>
     </transform>
   </transforms>
 

@@ -11,4 +11,5 @@ lib nrvgap_v1_00_a user_logic vhdl
 lib nrvgap_v1_00_a nrvgap vhdl
 lib nrvgap_v1_00_a counter2 vhdl
 lib nrvgap_v1_00_a vgacore vhdl
+lib nrvgap_v1_00_a debouncer vhdl
 

@@ -1,1 +1,1 @@
- -p spartan3 -lang vhdl$(PROJECT_SEARCHPATHOPT) $(GLOBAL_SEARCHPATHOPT) -msg __xps/ise/xmsgprops.lst -s isim -X C:/Users/CJRipa/Downloads/practicasSE/practica4/
+ -p spartan3 -lang vhdl$(PROJECT_SEARCHPATHOPT) $(GLOBAL_SEARCHPATHOPT) -msg __xps/ise/xmsgprops.lst -s isim -X U:/hlocal/practicasSE-main/practica4/

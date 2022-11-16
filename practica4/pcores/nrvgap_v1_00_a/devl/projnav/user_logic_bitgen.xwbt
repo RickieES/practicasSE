@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=U:\hlocal\practicasSE-main\practica4\pcores\nrvgap_v1_00_a\devl\projnav\user_logic.ncd
+OUTFILE=U:\hlocal\practicasSE-main\practica4\pcores\nrvgap_v1_00_a\devl\projnav\user_logic.bit
+FAMILY=Spartan3
+PART=xc3s1000-5ft256
+WORKINGDIR=U:\hlocal\practicasSE-main\practica4\pcores\nrvgap_v1_00_a\devl\projnav
+LICENSE=ISE
+USER_INFO=210699396_1777489394_210552810_807

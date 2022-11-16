@@ -56,7 +56,9 @@ entity practica4_nrvgap_0_wrapper is
     Sl_MIRQ : out std_logic_vector(0 to 1);
     hsyncb : out std_logic;
     vsyncb : out std_logic;
-    rgb : out std_logic_vector(0 to 8)
+    rgb : out std_logic_vector(0 to 8);
+    mover_izquierda_pin : in std_logic;
+    mover_derecha_pin : in std_logic
   );
 end practica4_nrvgap_0_wrapper;
 
@@ -123,7 +125,9 @@ architecture STRUCTURE of practica4_nrvgap_0_wrapper is
       Sl_MIRQ : out std_logic_vector(0 to (C_SPLB_NUM_MASTERS-1));
       hsyncb : out std_logic;
       vsyncb : out std_logic;
-      rgb : out std_logic_vector(0 to 8)
+      rgb : out std_logic_vector(0 to 8);
+      mover_izquierda_pin : in std_logic;
+      mover_derecha_pin : in std_logic
     );
   end component;
 
@@ -131,8 +135,8 @@ begin
 
   nrvgap_0 : nrvgap
     generic map (
-      C_BASEADDR => X"CAC00000",
-      C_HIGHADDR => X"CAC07FFF",
+      C_BASEADDR => X"00038000",
+      C_HIGHADDR => X"0003ffff",
       C_SPLB_AWIDTH => 32,
       C_SPLB_DWIDTH => 32,
       C_SPLB_NUM_MASTERS => 2,
@@ -190,7 +194,9 @@ begin
       Sl_MIRQ => Sl_MIRQ,
       hsyncb => hsyncb,
       vsyncb => vsyncb,
-      rgb => rgb
+      rgb => rgb,
+      mover_izquierda_pin => mover_izquierda_pin,
+      mover_derecha_pin => mover_derecha_pin
     );
 
 end architecture STRUCTURE;

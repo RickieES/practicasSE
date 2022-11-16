@@ -26,11 +26,5 @@
 <msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">nrvgap_0/nrvgap_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_CARRY_OUT</arg>&apos; has unconnected output pin
 </msg>
 
-<msg type="error" file="NgdBuild" num="604" delta="new" ><arg fmt="%s" index="1">logical</arg> block &apos;<arg fmt="%s" index="2">nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/debouncer_derecho</arg>&apos; with type &apos;<arg fmt="%s" index="3">debouncer</arg>&apos; could not be resolved. A pin name misspelling can cause this, a missing edif or ngc file, case mismatch between the block name and the edif or ngc file name, or the misspelling of a type name. Symbol &apos;<arg fmt="%s" index="4">debouncer</arg>&apos; is not supported in target &apos;<arg fmt="%s" index="5">spartan3</arg>&apos;.
-</msg>
-
-<msg type="error" file="NgdBuild" num="604" delta="new" ><arg fmt="%s" index="1">logical</arg> block &apos;<arg fmt="%s" index="2">nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/debouncer_izquierdo</arg>&apos; with type &apos;<arg fmt="%s" index="3">debouncer</arg>&apos; could not be resolved. A pin name misspelling can cause this, a missing edif or ngc file, case mismatch between the block name and the edif or ngc file name, or the misspelling of a type name. Symbol &apos;<arg fmt="%s" index="4">debouncer</arg>&apos; is not supported in target &apos;<arg fmt="%s" index="5">spartan3</arg>&apos;.
-</msg>
-
 </messages>
 

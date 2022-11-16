@@ -1,0 +1,6 @@
+AR plb_address_decoder imp S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_address_decoder.vhd sub00/vhpl01 1668614435
+EN plbv46_slave_single NULL S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plbv46_slave_single.vhd sub00/vhpl04 1668614452
+AR plbv46_slave_single implementation S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plbv46_slave_single.vhd sub00/vhpl05 1668614453
+AR plb_slave_attachment implementation S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd sub00/vhpl03 1668614443
+EN plb_address_decoder NULL S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_address_decoder.vhd sub00/vhpl00 1668614434
+EN plb_slave_attachment NULL S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd sub00/vhpl02 1668614442

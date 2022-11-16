@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="37" delta="old" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">SIGIS</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="old" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">SIGIS</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">debouncer_i</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">debouncer_d</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">deb_rising_i</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">deb_rising_d</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">Bus2IP_Data</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">Bus2IP_RdCE&lt;0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">WFIFO2IP_AlmostEmpty</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">Bus2IP_WrCE&lt;0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">WFIFO2IP_Data&lt;9:24&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">WFIFO2IP_RdAck</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">Bus2IP_BE</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">debouncer_izquierdo</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">vga</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">debouncer_derecho</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">vga</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_RAM</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_izquierdo/aux1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_izquierdo/xSync</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_izquierdo/count_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_izquierdo/count_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_izquierdo/count_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_izquierdo/count_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_izquierdo/count_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_izquierdo/count_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_izquierdo/count_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_izquierdo/count_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_izquierdo/count_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_izquierdo/count_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_izquierdo/count_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_izquierdo/count_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_izquierdo/count_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_izquierdo/count_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_izquierdo/count_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_izquierdo/count_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_izquierdo/count_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_izquierdo/count_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_izquierdo/count_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_izquierdo/count_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_izquierdo/count_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_izquierdo/count_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_izquierdo/state_FSM_FFd1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_izquierdo/state_FSM_FFd2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_derecho/aux1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_derecho/xSync</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_derecho/count_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_derecho/count_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_derecho/count_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_derecho/count_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_derecho/count_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_derecho/count_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_derecho/count_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_derecho/count_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_derecho/count_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_derecho/count_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_derecho/count_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_derecho/count_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_derecho/count_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_derecho/count_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_derecho/count_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_derecho/count_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_derecho/count_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_derecho/count_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_derecho/count_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_derecho/count_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_derecho/count_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_derecho/count_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_derecho/state_FSM_FFd1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">vga/debouncer_derecho/state_FSM_FFd2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

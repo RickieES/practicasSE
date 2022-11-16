@@ -1,0 +1,6 @@
+AR vgacore vgacore_arch U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/vgacore.vhd sub00/vhpl01 1668614680
+AR debouncer debouncerarch U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/debouncer.vhd sub00/vhpl05 1668614676
+AR counter2 rtl U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/counter2.vhd sub00/vhpl03 1668614682
+EN debouncer NULL U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/debouncer.vhd sub00/vhpl04 1668614675
+EN vgacore NULL U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/vgacore.vhd sub00/vhpl00 1668614679
+EN counter2 NULL U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/counter2.vhd sub00/vhpl02 1668614681

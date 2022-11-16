@@ -9,7 +9,6 @@ use UNISIM.VCOMPONENTS.ALL;
 
 entity practica4 is
   port (
-    Clk_pin : in std_logic;
     Rst_pin : in std_logic;
     switches : inout std_logic_vector(0 to 7);
     leds : inout std_logic_vector(0 to 7);
@@ -17,7 +16,10 @@ entity practica4 is
     TX_pin : out std_logic;
     hsyncb_pin : out std_logic;
     vsyncb_pin : out std_logic;
-    rgb_pin : out std_logic_vector(0 to 8)
+    rgb_pin : out std_logic_vector(0 to 8);
+    mover_derecha_pin : in std_logic;
+    mover_izquierda_pin : in std_logic;
+    Clk_pin : in std_logic
   );
 end practica4;
 
@@ -630,7 +632,7 @@ architecture STRUCTURE of practica4 is
       PLB_Clk : in std_logic;
       SYS_Rst : in std_logic;
       PLB_Rst : out std_logic;
-      SPLB_Rst : out std_logic_vector(0 to 4);
+      SPLB_Rst : out std_logic_vector(0 to 6);
       MPLB_Rst : out std_logic_vector(0 to 1);
       PLB_dcrAck : out std_logic;
       PLB_dcrDBus : out std_logic_vector(0 to 31);
@@ -654,22 +656,22 @@ architecture STRUCTURE of practica4 is
       M_type : in std_logic_vector(0 to 5);
       M_wrBurst : in std_logic_vector(0 to 1);
       M_wrDBus : in std_logic_vector(0 to 63);
-      Sl_addrAck : in std_logic_vector(0 to 4);
-      Sl_MRdErr : in std_logic_vector(0 to 9);
-      Sl_MWrErr : in std_logic_vector(0 to 9);
-      Sl_MBusy : in std_logic_vector(0 to 9);
-      Sl_rdBTerm : in std_logic_vector(0 to 4);
-      Sl_rdComp : in std_logic_vector(0 to 4);
-      Sl_rdDAck : in std_logic_vector(0 to 4);
-      Sl_rdDBus : in std_logic_vector(0 to 159);
-      Sl_rdWdAddr : in std_logic_vector(0 to 19);
-      Sl_rearbitrate : in std_logic_vector(0 to 4);
-      Sl_SSize : in std_logic_vector(0 to 9);
-      Sl_wait : in std_logic_vector(0 to 4);
-      Sl_wrBTerm : in std_logic_vector(0 to 4);
-      Sl_wrComp : in std_logic_vector(0 to 4);
-      Sl_wrDAck : in std_logic_vector(0 to 4);
-      Sl_MIRQ : in std_logic_vector(0 to 9);
+      Sl_addrAck : in std_logic_vector(0 to 6);
+      Sl_MRdErr : in std_logic_vector(0 to 13);
+      Sl_MWrErr : in std_logic_vector(0 to 13);
+      Sl_MBusy : in std_logic_vector(0 to 13);
+      Sl_rdBTerm : in std_logic_vector(0 to 6);
+      Sl_rdComp : in std_logic_vector(0 to 6);
+      Sl_rdDAck : in std_logic_vector(0 to 6);
+      Sl_rdDBus : in std_logic_vector(0 to 223);
+      Sl_rdWdAddr : in std_logic_vector(0 to 27);
+      Sl_rearbitrate : in std_logic_vector(0 to 6);
+      Sl_SSize : in std_logic_vector(0 to 13);
+      Sl_wait : in std_logic_vector(0 to 6);
+      Sl_wrBTerm : in std_logic_vector(0 to 6);
+      Sl_wrComp : in std_logic_vector(0 to 6);
+      Sl_wrDAck : in std_logic_vector(0 to 6);
+      Sl_MIRQ : in std_logic_vector(0 to 13);
       PLB_MIRQ : out std_logic_vector(0 to 1);
       PLB_ABus : out std_logic_vector(0 to 31);
       PLB_UABus : out std_logic_vector(0 to 31);
@@ -701,13 +703,13 @@ architecture STRUCTURE of practica4 is
       PLB_rdPendReq : out std_logic;
       PLB_wrPendReq : out std_logic;
       PLB_rdBurst : out std_logic;
-      PLB_rdPrim : out std_logic_vector(0 to 4);
+      PLB_rdPrim : out std_logic_vector(0 to 6);
       PLB_reqPri : out std_logic_vector(0 to 1);
       PLB_size : out std_logic_vector(0 to 3);
       PLB_type : out std_logic_vector(0 to 2);
       PLB_wrBurst : out std_logic;
       PLB_wrDBus : out std_logic_vector(0 to 31);
-      PLB_wrPrim : out std_logic_vector(0 to 4);
+      PLB_wrPrim : out std_logic_vector(0 to 6);
       PLB_SaddrAck : out std_logic;
       PLB_SMRdErr : out std_logic_vector(0 to 1);
       PLB_SMWrErr : out std_logic_vector(0 to 1);
@@ -1004,7 +1006,117 @@ architecture STRUCTURE of practica4 is
       Sl_MIRQ : out std_logic_vector(0 to 1);
       hsyncb : out std_logic;
       vsyncb : out std_logic;
-      rgb : out std_logic_vector(0 to 8)
+      rgb : out std_logic_vector(0 to 8);
+      mover_izquierda_pin : in std_logic;
+      mover_derecha_pin : in std_logic
+    );
+  end component;
+
+  component practica4_boton_derecha_wrapper is
+    port (
+      SPLB_Clk : in std_logic;
+      SPLB_Rst : in std_logic;
+      PLB_ABus : in std_logic_vector(0 to 31);
+      PLB_UABus : in std_logic_vector(0 to 31);
+      PLB_PAValid : in std_logic;
+      PLB_SAValid : in std_logic;
+      PLB_rdPrim : in std_logic;
+      PLB_wrPrim : in std_logic;
+      PLB_masterID : in std_logic_vector(0 to 0);
+      PLB_abort : in std_logic;
+      PLB_busLock : in std_logic;
+      PLB_RNW : in std_logic;
+      PLB_BE : in std_logic_vector(0 to 3);
+      PLB_MSize : in std_logic_vector(0 to 1);
+      PLB_size : in std_logic_vector(0 to 3);
+      PLB_type : in std_logic_vector(0 to 2);
+      PLB_lockErr : in std_logic;
+      PLB_wrDBus : in std_logic_vector(0 to 31);
+      PLB_wrBurst : in std_logic;
+      PLB_rdBurst : in std_logic;
+      PLB_wrPendReq : in std_logic;
+      PLB_rdPendReq : in std_logic;
+      PLB_wrPendPri : in std_logic_vector(0 to 1);
+      PLB_rdPendPri : in std_logic_vector(0 to 1);
+      PLB_reqPri : in std_logic_vector(0 to 1);
+      PLB_TAttribute : in std_logic_vector(0 to 15);
+      Sl_addrAck : out std_logic;
+      Sl_SSize : out std_logic_vector(0 to 1);
+      Sl_wait : out std_logic;
+      Sl_rearbitrate : out std_logic;
+      Sl_wrDAck : out std_logic;
+      Sl_wrComp : out std_logic;
+      Sl_wrBTerm : out std_logic;
+      Sl_rdDBus : out std_logic_vector(0 to 31);
+      Sl_rdWdAddr : out std_logic_vector(0 to 3);
+      Sl_rdDAck : out std_logic;
+      Sl_rdComp : out std_logic;
+      Sl_rdBTerm : out std_logic;
+      Sl_MBusy : out std_logic_vector(0 to 1);
+      Sl_MWrErr : out std_logic_vector(0 to 1);
+      Sl_MRdErr : out std_logic_vector(0 to 1);
+      Sl_MIRQ : out std_logic_vector(0 to 1);
+      IP2INTC_Irpt : out std_logic;
+      GPIO_IO_I : in std_logic_vector(0 to 0);
+      GPIO_IO_O : out std_logic_vector(0 to 0);
+      GPIO_IO_T : out std_logic_vector(0 to 0);
+      GPIO2_IO_I : in std_logic_vector(0 to 31);
+      GPIO2_IO_O : out std_logic_vector(0 to 31);
+      GPIO2_IO_T : out std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component practica4_boton_izquierda_wrapper is
+    port (
+      SPLB_Clk : in std_logic;
+      SPLB_Rst : in std_logic;
+      PLB_ABus : in std_logic_vector(0 to 31);
+      PLB_UABus : in std_logic_vector(0 to 31);
+      PLB_PAValid : in std_logic;
+      PLB_SAValid : in std_logic;
+      PLB_rdPrim : in std_logic;
+      PLB_wrPrim : in std_logic;
+      PLB_masterID : in std_logic_vector(0 to 0);
+      PLB_abort : in std_logic;
+      PLB_busLock : in std_logic;
+      PLB_RNW : in std_logic;
+      PLB_BE : in std_logic_vector(0 to 3);
+      PLB_MSize : in std_logic_vector(0 to 1);
+      PLB_size : in std_logic_vector(0 to 3);
+      PLB_type : in std_logic_vector(0 to 2);
+      PLB_lockErr : in std_logic;
+      PLB_wrDBus : in std_logic_vector(0 to 31);
+      PLB_wrBurst : in std_logic;
+      PLB_rdBurst : in std_logic;
+      PLB_wrPendReq : in std_logic;
+      PLB_rdPendReq : in std_logic;
+      PLB_wrPendPri : in std_logic_vector(0 to 1);
+      PLB_rdPendPri : in std_logic_vector(0 to 1);
+      PLB_reqPri : in std_logic_vector(0 to 1);
+      PLB_TAttribute : in std_logic_vector(0 to 15);
+      Sl_addrAck : out std_logic;
+      Sl_SSize : out std_logic_vector(0 to 1);
+      Sl_wait : out std_logic;
+      Sl_rearbitrate : out std_logic;
+      Sl_wrDAck : out std_logic;
+      Sl_wrComp : out std_logic;
+      Sl_wrBTerm : out std_logic;
+      Sl_rdDBus : out std_logic_vector(0 to 31);
+      Sl_rdWdAddr : out std_logic_vector(0 to 3);
+      Sl_rdDAck : out std_logic;
+      Sl_rdComp : out std_logic;
+      Sl_rdBTerm : out std_logic;
+      Sl_MBusy : out std_logic_vector(0 to 1);
+      Sl_MWrErr : out std_logic_vector(0 to 1);
+      Sl_MRdErr : out std_logic_vector(0 to 1);
+      Sl_MIRQ : out std_logic_vector(0 to 1);
+      IP2INTC_Irpt : out std_logic;
+      GPIO_IO_I : in std_logic_vector(0 to 0);
+      GPIO_IO_O : out std_logic_vector(0 to 0);
+      GPIO_IO_T : out std_logic_vector(0 to 0);
+      GPIO2_IO_I : in std_logic_vector(0 to 31);
+      GPIO2_IO_O : out std_logic_vector(0 to 31);
+      GPIO2_IO_T : out std_logic_vector(0 to 31)
     );
   end component;
 
@@ -1030,6 +1142,8 @@ architecture STRUCTURE of practica4 is
   signal net_gnd10 : std_logic_vector(0 to 9);
   signal net_gnd32 : std_logic_vector(0 to 31);
   signal net_gnd4096 : std_logic_vector(0 to 4095);
+  signal net_mover_derecha_pin : std_logic_vector(0 to 0);
+  signal net_mover_izquierda_pin : std_logic_vector(0 to 0);
   signal nrvgap_0_hsyncb : std_logic;
   signal nrvgap_0_rgb : std_logic_vector(0 to 8);
   signal nrvgap_0_vsyncb : std_logic;
@@ -1078,7 +1192,7 @@ architecture STRUCTURE of practica4 is
   signal plb_v46_0_PLB_rdBurst : std_logic;
   signal plb_v46_0_PLB_rdPendPri : std_logic_vector(0 to 1);
   signal plb_v46_0_PLB_rdPendReq : std_logic;
-  signal plb_v46_0_PLB_rdPrim : std_logic_vector(0 to 4);
+  signal plb_v46_0_PLB_rdPrim : std_logic_vector(0 to 6);
   signal plb_v46_0_PLB_reqPri : std_logic_vector(0 to 1);
   signal plb_v46_0_PLB_size : std_logic_vector(0 to 3);
   signal plb_v46_0_PLB_type : std_logic_vector(0 to 2);
@@ -1086,24 +1200,24 @@ architecture STRUCTURE of practica4 is
   signal plb_v46_0_PLB_wrDBus : std_logic_vector(0 to 31);
   signal plb_v46_0_PLB_wrPendPri : std_logic_vector(0 to 1);
   signal plb_v46_0_PLB_wrPendReq : std_logic;
-  signal plb_v46_0_PLB_wrPrim : std_logic_vector(0 to 4);
-  signal plb_v46_0_SPLB_Rst : std_logic_vector(0 to 4);
-  signal plb_v46_0_Sl_MBusy : std_logic_vector(0 to 9);
-  signal plb_v46_0_Sl_MIRQ : std_logic_vector(0 to 9);
-  signal plb_v46_0_Sl_MRdErr : std_logic_vector(0 to 9);
-  signal plb_v46_0_Sl_MWrErr : std_logic_vector(0 to 9);
-  signal plb_v46_0_Sl_SSize : std_logic_vector(0 to 9);
-  signal plb_v46_0_Sl_addrAck : std_logic_vector(0 to 4);
-  signal plb_v46_0_Sl_rdBTerm : std_logic_vector(0 to 4);
-  signal plb_v46_0_Sl_rdComp : std_logic_vector(0 to 4);
-  signal plb_v46_0_Sl_rdDAck : std_logic_vector(0 to 4);
-  signal plb_v46_0_Sl_rdDBus : std_logic_vector(0 to 159);
-  signal plb_v46_0_Sl_rdWdAddr : std_logic_vector(0 to 19);
-  signal plb_v46_0_Sl_rearbitrate : std_logic_vector(0 to 4);
-  signal plb_v46_0_Sl_wait : std_logic_vector(0 to 4);
-  signal plb_v46_0_Sl_wrBTerm : std_logic_vector(0 to 4);
-  signal plb_v46_0_Sl_wrComp : std_logic_vector(0 to 4);
-  signal plb_v46_0_Sl_wrDAck : std_logic_vector(0 to 4);
+  signal plb_v46_0_PLB_wrPrim : std_logic_vector(0 to 6);
+  signal plb_v46_0_SPLB_Rst : std_logic_vector(0 to 6);
+  signal plb_v46_0_Sl_MBusy : std_logic_vector(0 to 13);
+  signal plb_v46_0_Sl_MIRQ : std_logic_vector(0 to 13);
+  signal plb_v46_0_Sl_MRdErr : std_logic_vector(0 to 13);
+  signal plb_v46_0_Sl_MWrErr : std_logic_vector(0 to 13);
+  signal plb_v46_0_Sl_SSize : std_logic_vector(0 to 13);
+  signal plb_v46_0_Sl_addrAck : std_logic_vector(0 to 6);
+  signal plb_v46_0_Sl_rdBTerm : std_logic_vector(0 to 6);
+  signal plb_v46_0_Sl_rdComp : std_logic_vector(0 to 6);
+  signal plb_v46_0_Sl_rdDAck : std_logic_vector(0 to 6);
+  signal plb_v46_0_Sl_rdDBus : std_logic_vector(0 to 223);
+  signal plb_v46_0_Sl_rdWdAddr : std_logic_vector(0 to 27);
+  signal plb_v46_0_Sl_rearbitrate : std_logic_vector(0 to 6);
+  signal plb_v46_0_Sl_wait : std_logic_vector(0 to 6);
+  signal plb_v46_0_Sl_wrBTerm : std_logic_vector(0 to 6);
+  signal plb_v46_0_Sl_wrComp : std_logic_vector(0 to 6);
+  signal plb_v46_0_Sl_wrDAck : std_logic_vector(0 to 6);
   signal xps_bram_if_cntlr_0_PORTA_BRAM_Addr : std_logic_vector(0 to 31);
   signal xps_bram_if_cntlr_0_PORTA_BRAM_Clk : std_logic;
   signal xps_bram_if_cntlr_0_PORTA_BRAM_Din : std_logic_vector(0 to 31);
@@ -1128,18 +1242,22 @@ architecture STRUCTURE of practica4 is
   attribute BOX_TYPE of practica4_xps_gpio_1_wrapper : component is "user_black_box";
   attribute BOX_TYPE of practica4_xps_uartlite_0_wrapper : component is "user_black_box";
   attribute BOX_TYPE of practica4_nrvgap_0_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of practica4_boton_derecha_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of practica4_boton_izquierda_wrapper : component is "user_black_box";
 
 begin
 
   -- Internal assignments
 
-  net_Clk_pin <= Clk_pin;
   net_Rst_pin <= Rst_pin;
   net_RX_pin <= RX_pin;
   TX_pin <= xps_uartlite_0_TX;
   hsyncb_pin <= nrvgap_0_hsyncb;
   vsyncb_pin <= nrvgap_0_vsyncb;
   rgb_pin <= nrvgap_0_rgb;
+  net_mover_derecha_pin(0) <= mover_derecha_pin;
+  net_mover_izquierda_pin(0) <= mover_izquierda_pin;
+  net_Clk_pin <= Clk_pin;
   net_gnd0 <= '0';
   net_gnd1(0 downto 0) <= B"0";
   net_gnd10(0 to 9) <= B"0000000000";
@@ -2123,7 +2241,115 @@ begin
       Sl_MIRQ => plb_v46_0_Sl_MIRQ(8 to 9),
       hsyncb => nrvgap_0_hsyncb,
       vsyncb => nrvgap_0_vsyncb,
-      rgb => nrvgap_0_rgb
+      rgb => nrvgap_0_rgb,
+      mover_izquierda_pin => net_gnd0,
+      mover_derecha_pin => net_gnd0
+    );
+
+  boton_derecha : practica4_boton_derecha_wrapper
+    port map (
+      SPLB_Clk => net_Clk_pin,
+      SPLB_Rst => plb_v46_0_SPLB_Rst(5),
+      PLB_ABus => plb_v46_0_PLB_ABus,
+      PLB_UABus => plb_v46_0_PLB_UABus,
+      PLB_PAValid => plb_v46_0_PLB_PAValid,
+      PLB_SAValid => plb_v46_0_PLB_SAValid,
+      PLB_rdPrim => plb_v46_0_PLB_rdPrim(5),
+      PLB_wrPrim => plb_v46_0_PLB_wrPrim(5),
+      PLB_masterID => plb_v46_0_PLB_masterID(0 to 0),
+      PLB_abort => plb_v46_0_PLB_abort,
+      PLB_busLock => plb_v46_0_PLB_busLock,
+      PLB_RNW => plb_v46_0_PLB_RNW,
+      PLB_BE => plb_v46_0_PLB_BE,
+      PLB_MSize => plb_v46_0_PLB_MSize,
+      PLB_size => plb_v46_0_PLB_size,
+      PLB_type => plb_v46_0_PLB_type,
+      PLB_lockErr => plb_v46_0_PLB_lockErr,
+      PLB_wrDBus => plb_v46_0_PLB_wrDBus,
+      PLB_wrBurst => plb_v46_0_PLB_wrBurst,
+      PLB_rdBurst => plb_v46_0_PLB_rdBurst,
+      PLB_wrPendReq => plb_v46_0_PLB_wrPendReq,
+      PLB_rdPendReq => plb_v46_0_PLB_rdPendReq,
+      PLB_wrPendPri => plb_v46_0_PLB_wrPendPri,
+      PLB_rdPendPri => plb_v46_0_PLB_rdPendPri,
+      PLB_reqPri => plb_v46_0_PLB_reqPri,
+      PLB_TAttribute => plb_v46_0_PLB_TAttribute,
+      Sl_addrAck => plb_v46_0_Sl_addrAck(5),
+      Sl_SSize => plb_v46_0_Sl_SSize(10 to 11),
+      Sl_wait => plb_v46_0_Sl_wait(5),
+      Sl_rearbitrate => plb_v46_0_Sl_rearbitrate(5),
+      Sl_wrDAck => plb_v46_0_Sl_wrDAck(5),
+      Sl_wrComp => plb_v46_0_Sl_wrComp(5),
+      Sl_wrBTerm => plb_v46_0_Sl_wrBTerm(5),
+      Sl_rdDBus => plb_v46_0_Sl_rdDBus(160 to 191),
+      Sl_rdWdAddr => plb_v46_0_Sl_rdWdAddr(20 to 23),
+      Sl_rdDAck => plb_v46_0_Sl_rdDAck(5),
+      Sl_rdComp => plb_v46_0_Sl_rdComp(5),
+      Sl_rdBTerm => plb_v46_0_Sl_rdBTerm(5),
+      Sl_MBusy => plb_v46_0_Sl_MBusy(10 to 11),
+      Sl_MWrErr => plb_v46_0_Sl_MWrErr(10 to 11),
+      Sl_MRdErr => plb_v46_0_Sl_MRdErr(10 to 11),
+      Sl_MIRQ => plb_v46_0_Sl_MIRQ(10 to 11),
+      IP2INTC_Irpt => open,
+      GPIO_IO_I => net_mover_derecha_pin(0 to 0),
+      GPIO_IO_O => open,
+      GPIO_IO_T => open,
+      GPIO2_IO_I => net_gnd32,
+      GPIO2_IO_O => open,
+      GPIO2_IO_T => open
+    );
+
+  boton_izquierda : practica4_boton_izquierda_wrapper
+    port map (
+      SPLB_Clk => net_Clk_pin,
+      SPLB_Rst => plb_v46_0_SPLB_Rst(6),
+      PLB_ABus => plb_v46_0_PLB_ABus,
+      PLB_UABus => plb_v46_0_PLB_UABus,
+      PLB_PAValid => plb_v46_0_PLB_PAValid,
+      PLB_SAValid => plb_v46_0_PLB_SAValid,
+      PLB_rdPrim => plb_v46_0_PLB_rdPrim(6),
+      PLB_wrPrim => plb_v46_0_PLB_wrPrim(6),
+      PLB_masterID => plb_v46_0_PLB_masterID(0 to 0),
+      PLB_abort => plb_v46_0_PLB_abort,
+      PLB_busLock => plb_v46_0_PLB_busLock,
+      PLB_RNW => plb_v46_0_PLB_RNW,
+      PLB_BE => plb_v46_0_PLB_BE,
+      PLB_MSize => plb_v46_0_PLB_MSize,
+      PLB_size => plb_v46_0_PLB_size,
+      PLB_type => plb_v46_0_PLB_type,
+      PLB_lockErr => plb_v46_0_PLB_lockErr,
+      PLB_wrDBus => plb_v46_0_PLB_wrDBus,
+      PLB_wrBurst => plb_v46_0_PLB_wrBurst,
+      PLB_rdBurst => plb_v46_0_PLB_rdBurst,
+      PLB_wrPendReq => plb_v46_0_PLB_wrPendReq,
+      PLB_rdPendReq => plb_v46_0_PLB_rdPendReq,
+      PLB_wrPendPri => plb_v46_0_PLB_wrPendPri,
+      PLB_rdPendPri => plb_v46_0_PLB_rdPendPri,
+      PLB_reqPri => plb_v46_0_PLB_reqPri,
+      PLB_TAttribute => plb_v46_0_PLB_TAttribute,
+      Sl_addrAck => plb_v46_0_Sl_addrAck(6),
+      Sl_SSize => plb_v46_0_Sl_SSize(12 to 13),
+      Sl_wait => plb_v46_0_Sl_wait(6),
+      Sl_rearbitrate => plb_v46_0_Sl_rearbitrate(6),
+      Sl_wrDAck => plb_v46_0_Sl_wrDAck(6),
+      Sl_wrComp => plb_v46_0_Sl_wrComp(6),
+      Sl_wrBTerm => plb_v46_0_Sl_wrBTerm(6),
+      Sl_rdDBus => plb_v46_0_Sl_rdDBus(192 to 223),
+      Sl_rdWdAddr => plb_v46_0_Sl_rdWdAddr(24 to 27),
+      Sl_rdDAck => plb_v46_0_Sl_rdDAck(6),
+      Sl_rdComp => plb_v46_0_Sl_rdComp(6),
+      Sl_rdBTerm => plb_v46_0_Sl_rdBTerm(6),
+      Sl_MBusy => plb_v46_0_Sl_MBusy(12 to 13),
+      Sl_MWrErr => plb_v46_0_Sl_MWrErr(12 to 13),
+      Sl_MRdErr => plb_v46_0_Sl_MRdErr(12 to 13),
+      Sl_MIRQ => plb_v46_0_Sl_MIRQ(12 to 13),
+      IP2INTC_Irpt => open,
+      GPIO_IO_I => net_mover_izquierda_pin(0 to 0),
+      GPIO_IO_O => open,
+      GPIO_IO_T => open,
+      GPIO2_IO_I => net_gnd32,
+      GPIO2_IO_O => open,
+      GPIO2_IO_T => open
     );
 
   iobuf_0 : IOBUF

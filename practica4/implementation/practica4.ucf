@@ -20,6 +20,13 @@ Net Rst_pin TIG;
 Net RX_pin LOC=G5;
 Net TX_pin LOC=J2;
 
+
+# Push button placa extendida
+NET mover_izquierda_pin LOC=H4;
+#NET pushb2 LOC=L5;
+#NET pushb3 LOC=N2;
+NET mover_derecha_pin LOC=M3;
+
 ## GPIO LEDs #####################################
 
 #barra de leds placa extendida

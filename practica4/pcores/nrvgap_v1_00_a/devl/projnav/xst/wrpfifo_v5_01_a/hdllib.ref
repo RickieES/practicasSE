@@ -1,0 +1,10 @@
+AR blkmem_wrapper implementation S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/blkmem_wrapper.vhd sub00/vhpl07 1668614449
+AR wrpfifo_dp_cntl implementation S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/wrpfifo_dp_cntl.vhd sub00/vhpl05 1668614447
+AR pf_dly1_mux implementation S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/pf_dly1_mux.vhd sub00/vhpl01 1668614437
+AR ipif_control_wr_dre implementation S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/ipif_control_wr_dre.vhd sub00/vhpl03 1668614445
+EN pf_dly1_mux NULL S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/pf_dly1_mux.vhd sub00/vhpl00 1668614436
+AR wrpfifo_top implementation S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/wrpfifo_top.vhd sub00/vhpl09 1668614451
+EN blkmem_wrapper NULL S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/blkmem_wrapper.vhd sub00/vhpl06 1668614448
+EN wrpfifo_dp_cntl NULL S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/wrpfifo_dp_cntl.vhd sub00/vhpl04 1668614446
+EN ipif_control_wr_dre NULL S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/ipif_control_wr_dre.vhd sub00/vhpl02 1668614444
+EN wrpfifo_top NULL S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/wrpfifo_top.vhd sub00/vhpl08 1668614450

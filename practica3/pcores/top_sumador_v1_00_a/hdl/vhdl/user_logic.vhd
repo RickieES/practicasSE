@@ -137,6 +137,7 @@ architecture IMP of user_logic is
     );
   end component;
   --USER signal declarations added here, as needed for user logic
+  signal my_counter_reset					 : std_logic;
   signal my_counter                     : std_logic_vector(7 downto 0);
   signal Clk_div                        : std_logic;
   signal my_leds								 : std_logic_vector(7 downto 0);
@@ -192,8 +193,9 @@ begin
         slv_reg1 <= (others => '0');
         slv_reg2 <= (others => '0');
         slv_reg3 <= (others => '0');
-		
       else
+		  -- my_counter_reset se establece '1' si my_counter tiene que reiniciarse a 0
+		  my_counter_reset <= '0';
         case slv_reg_write_sel is
           when "1000" =>
             for byte_index in 0 to (C_SLV_DWIDTH/8)-1 loop
@@ -219,7 +221,8 @@ begin
 			    -- if ((switches(2) = '0') and (slv_reg0(30) = '1')) then
 				 --  slv_reg3 <= my_counter;
              -- elsif (slv_reg0(31) = '0') then
-				 my_counter <= (others => '0');
+		       -- my_counter_reset se establece '1' si my_counter tiene que reiniciarse a 0
+				 my_counter_reset <= '1';
              if (slv_reg0(31) = '0') then
 				   slv_reg3 <= slv_reg1 + slv_reg2;
 				 else
@@ -245,32 +248,29 @@ begin
   end process SLAVE_REG_READ_PROC;
   
   -- Proceso apartado B
-  SW2LEDS : process( Bus2IP_Reset, Bus2IP_Clk, switches ) is
+  SW2LEDS : process( Bus2IP_Clk, switches ) is
   begin
     if Bus2IP_Clk'event and Bus2IP_Clk = '1' then
-      if Bus2IP_Reset = '1' then
-		  my_leds <= (others => '0');
+	   if (switches(3) = '1') then
+		  my_leds <= my_counter;
 		else
-		  if (switches(3) = '1') then
-		    my_leds <= my_counter;
-		  else
-		    case switches(1 downto 0) is
-			   when "00" => my_leds <= slv_reg0(0 to 7);
-				when "01" => my_leds <= slv_reg1(0 to 7);
-				when "10" => my_leds <= slv_reg2(0 to 7);
-				when "11" => my_leds <= slv_reg3(0 to 7);
-				when others => my_leds <= (others => '0');
-			 end case;
-		  end if;
+		  my_leds <= (others => '0');
+		  case switches(1 downto 0) is
+		    when "00" => my_leds <= slv_reg0(0 to 7);
+			 when "01" => my_leds <= slv_reg1(0 to 7);
+			 when "10" => my_leds <= slv_reg2(0 to 7);
+			 when "11" => my_leds <= slv_reg3(0 to 7);
+			 when others => my_leds <= (others => '1');
+		  end case;
 		end if;
     end if;
   end process SW2LEDS;
   
   --Proceso para el contador desde 0 hasta el valor de reg3 en el apartado C
-  COUNTERLEDS : process( Bus2IP_Reset, Clk_div ) is
+  COUNTERLEDS : process( Clk_div, my_counter_reset ) is
   begin
     if Clk_div'event and Clk_div = '1' then
-      if Bus2IP_Reset = '1' then
+      if my_counter_reset = '1' then
         my_counter <= (others => '0');
 		else
 		  if (my_counter < slv_reg3(0 to 7)) then

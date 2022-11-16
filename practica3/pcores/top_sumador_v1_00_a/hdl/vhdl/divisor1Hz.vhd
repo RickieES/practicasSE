@@ -11,8 +11,8 @@ entity divisor1 is
 end divisor1;
 
 architecture divisor1_arch of divisor1 is
-	-- CONSTANT MAX_COUNT: std_logic_vector(26 downto 0) := "101111101011110000100000000";
-	CONSTANT MAX_COUNT: std_logic_vector(26 downto 0) := "000000000000000000000000010";
+	CONSTANT MAX_COUNT: std_logic_vector(26 downto 0) := "101111101011110000100000000";
+	-- CONSTANT MAX_COUNT: std_logic_vector(26 downto 0) := "000000000000000000000000010";
 	SIGNAL cuenta: std_logic_vector(26 downto 0) := (others => '0');
 	SIGNAL clk, clk_aux: std_logic := '0';
 

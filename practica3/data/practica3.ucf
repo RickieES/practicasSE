@@ -15,7 +15,7 @@ NET "Tx_pin" FLOAT;
 
 
 #switches placa superior
-#NET switches<0> LOC=K4;
+NET Rst_pin LOC=K4;
 #NET switches<1> LOC=K3;
 #NET switches<2> LOC=K2;
 #NET switches<3> LOC=J4;

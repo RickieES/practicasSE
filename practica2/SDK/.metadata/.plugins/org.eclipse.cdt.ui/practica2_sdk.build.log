@@ -2,12 +2,12 @@
 **** Build of configuration Debug for project practica2_sdk ****
 
 make all 
-Building file: ../src/practica2_c.c
+Building file: ../src/practica2.c
 Invoking: MicroBlaze gcc compiler
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../peripheral_tests_bsp_1/microblaze_0/include -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -MMD -MP -MF"src/practica2_c.d" -MT"src/practica2_c.d" -o"src/practica2_c.o" "../src/practica2_c.c"
-../src/practica2_c.c: In function 'displaySwitchesValue':
-../src/practica2_c.c:19:5: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
-Finished building: ../src/practica2_c.c
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../peripheral_tests_bsp_1/microblaze_0/include -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -MMD -MP -MF"src/practica2.d" -MT"src/practica2.d" -o"src/practica2.o" "../src/practica2.c"
+../src/practica2.c: In function 'displayBMenu':
+../src/practica2.c:24:5: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+Finished building: ../src/practica2.c
 ' '
 Building target: practica2_sdk.elf
 Invoking: MicroBlaze gcc linker

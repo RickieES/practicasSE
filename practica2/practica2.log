@@ -3011,3 +3011,45 @@ Done writing filter settings to:
 	U:\hlocal\practicasSE-main\practica2\etc\practica2.filters
 Done writing Tab View settings to:
 	U:\hlocal\practicasSE-main\practica2\etc\practica2.gui
+
+********************************************************************************
+At Local date and time: Mon Oct 24 18:31:19 2022
+ make -f practica2.make exporttosdk started...
+make: No se hace nada para `exporttosdk'.
+Done!
+
+********************************************************************************
+At Local date and time: Mon Oct 24 18:31:20 2022
+ xsdk.exe -hwspec \\vboxsvr\se\ws\practica2\SDK\SDK_Export\hw\practica2.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+Done!
+Writing filter settings....
+Done writing filter settings to:
+	\\vboxsvr\se\ws\practica2\etc\practica2.filters
+Done writing Tab View settings to:
+	\\vboxsvr\se\ws\practica2\etc\practica2.gui
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+
+********************************************************************************
+At Local date and time: Mon Oct 24 18:37:57 2022
+ make -f practica2.make exporttosdk started...
+make: No se hace nada para `exporttosdk'.
+Done!
+
+********************************************************************************
+At Local date and time: Mon Oct 24 18:37:58 2022
+ xsdk.exe -hwspec \\vboxsvr\se\ws\practica2\SDK\SDK_Export\hw\practica2.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+Done!
+Writing filter settings....
+Done writing filter settings to:
+	\\vboxsvr\se\ws\practica2\etc\practica2.filters
+Done writing Tab View settings to:
+	\\vboxsvr\se\ws\practica2\etc\practica2.gui

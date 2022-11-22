@@ -155,11 +155,12 @@ architecture IMP of user_logic is
 			rectangulo: in std_logic_vector(6 downto 0); -- rectangulo a borrar
 			vsyncb: out std_logic;	-- vertical (frame) sync
 			rgb: out std_logic_vector(8 downto 0);	-- red,green,blue colors
-		   mover_derecha_pin: in std_logic;
+		    mover_derecha_pin: in std_logic;
     		mover_izquierda_pin: in std_logic
 		);
 	end component;
-component counter2 IS
+
+    component counter2 IS
 		GENERIC (
 			numBits_g: INTEGER := 8
 		);
@@ -167,7 +168,7 @@ component counter2 IS
 			rst		: IN  STD_LOGIC;
 			clk		: IN  STD_LOGIC;
 			inc_in	: IN  STD_LOGIC;
-			d_out		: OUT STD_LOGIC_VECTOR (numBits_g-1 DOWNTO 0)
+			d_out	: OUT STD_LOGIC_VECTOR (numBits_g-1 DOWNTO 0)
 		);
 	END component;
 	type statesLectura is (estadoEsperaLectura, estadoEnviarDato);
@@ -240,7 +241,7 @@ timeOut <= "11"; -- 12,5 MHz
 			rst		=> Bus2IP_Reset,
 			clk		=> Bus2IP_Clk,
 			inc_in	=> incContador,
-			d_out		=> ciclo
+			d_out	=> ciclo
 		);
 		
 		-- Maquinas de estados		

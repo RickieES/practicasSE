@@ -35,11 +35,6 @@ NET mover_derecha_pin LOC=M3;
 #NET leds<3> LOC=M3;
 #NET leds<4> LOC=N1;
 
-Net leds<0> LOC=L5;
-Net leds<1> LOC=N2;
-Net leds<2> LOC=M3;
-Net leds<3> LOC=N1;
-
 ## GPIO SWITCHEs #################################
 
 #switches placa superior

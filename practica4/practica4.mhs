@@ -3,15 +3,13 @@
 
 
  PORT Rst_pin = net_Rst_pin, DIR = I, SIGIS = RST
- PORT switches = xps_gpio_0_GPIO_IO, DIR = IO, VEC = [0:7]
- PORT leds = xps_gpio_1_GPIO_IO, DIR = IO, VEC = [0:7]
  PORT RX_pin = net_RX_pin, DIR = I
  PORT TX_pin = xps_uartlite_0_TX, DIR = O
  PORT hsyncb_pin = nrvgap_0_hsyncb, DIR = O
  PORT vsyncb_pin = nrvgap_0_vsyncb, DIR = O
  PORT rgb_pin = nrvgap_0_rgb, DIR = O, VEC = [0:8]
- PORT mover_derecha_pin = net_mover_derecha_pin, DIR = I
  PORT mover_izquierda_pin = net_mover_izquierda_pin, DIR = I
+ PORT mover_derecha_pin = net_mover_derecha_pin, DIR = I
  PORT Clk_pin = net_Clk_pin, DIR = I, SIGIS = CLK
 
 
@@ -46,26 +44,6 @@ BEGIN bram_block
  BUS_INTERFACE PORTA = xps_bram_if_cntlr_0_PORTA
 END
 
-BEGIN xps_gpio
- PARAMETER INSTANCE = xps_gpio_0
- PARAMETER HW_VER = 2.00.a
- PARAMETER C_GPIO_WIDTH = 8
- PARAMETER C_BASEADDR = 0x00010000
- PARAMETER C_HIGHADDR = 0x00017fff
- BUS_INTERFACE SPLB = plb_v46_0
- PORT GPIO_IO = xps_gpio_0_GPIO_IO
-END
-
-BEGIN xps_gpio
- PARAMETER INSTANCE = xps_gpio_1
- PARAMETER HW_VER = 2.00.a
- PARAMETER C_GPIO_WIDTH = 8
- PARAMETER C_BASEADDR = 0x00018000
- PARAMETER C_HIGHADDR = 0x0001ffff
- BUS_INTERFACE SPLB = plb_v46_0
- PORT GPIO_IO = xps_gpio_1_GPIO_IO
-END
-
 BEGIN xps_uartlite
  PARAMETER INSTANCE = xps_uartlite_0
  PARAMETER HW_VER = 1.02.a
@@ -87,25 +65,7 @@ BEGIN nrvgap
  PORT hsyncb = nrvgap_0_hsyncb
  PORT vsyncb = nrvgap_0_vsyncb
  PORT rgb = nrvgap_0_rgb
-END
-
-BEGIN xps_gpio
- PARAMETER INSTANCE = boton_derecha
- PARAMETER HW_VER = 2.00.a
- PARAMETER C_GPIO_WIDTH = 1
- PARAMETER C_BASEADDR = 0x81420000
- PARAMETER C_HIGHADDR = 0x81427FFF
- BUS_INTERFACE SPLB = plb_v46_0
- PORT GPIO_IO_I = net_mover_derecha_pin
-END
-
-BEGIN xps_gpio
- PARAMETER INSTANCE = boton_izquierda
- PARAMETER HW_VER = 2.00.a
- PARAMETER C_GPIO_WIDTH = 1
- PARAMETER C_BASEADDR = 0x81400000
- PARAMETER C_HIGHADDR = 0x81407FFF
- BUS_INTERFACE SPLB = plb_v46_0
- PORT GPIO_IO_I = net_mover_izquierda_pin
+ PORT mover_izquierda_pin = net_mover_izquierda_pin
+ PORT mover_derecha_pin = net_mover_derecha_pin
 END
 

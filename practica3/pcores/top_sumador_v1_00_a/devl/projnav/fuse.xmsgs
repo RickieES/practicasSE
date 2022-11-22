@@ -5,10 +5,10 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="89" delta="unknown" >"N:/ws/practica3/pcores/top_sumador_v1_00_a/devl/projnav/../../hdl/vhdl/user_logic.vhd" Line 158: &lt;<arg fmt="%s" index="1">divisor1</arg>&gt; remains a black-box since it has no binding entity.
+<msg type="warning" file="HDLCompiler" num="89" delta="unknown" >"N:/ws/practica3/pcores/top_sumador_v1_00_a/devl/projnav/test_sumador.vhd" Line 63: &lt;<arg fmt="%s" index="1">user_logic</arg>&gt; remains a black-box since it has no binding entity.
 </msg>
 
-<msg type="warning" file="Simulator" num="648" delta="unknown" >&quot;<arg fmt="%s" index="1">N:/ws/practica3/pcores/top_sumador_v1_00_a/devl/projnav/../../hdl/vhdl/user_logic.vhd</arg>&quot; Line <arg fmt="%d" index="2">158</arg>. Instance <arg fmt="%s" index="3">divisor1</arg> is unbound
+<msg type="warning" file="Simulator" num="648" delta="unknown" >&quot;<arg fmt="%s" index="1">N:/ws/practica3/pcores/top_sumador_v1_00_a/devl/projnav/test_sumador.vhd</arg>&quot; Line <arg fmt="%d" index="2">63</arg>. Instance <arg fmt="%s" index="3">user_logic</arg> is unbound
 </msg>
 
 </messages>

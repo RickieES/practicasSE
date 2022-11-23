@@ -194,7 +194,6 @@ begin
         slv_reg2 <= (others => '0');
         slv_reg3 <= (others => '0');
       else
-		  -- my_counter_reset se establece '1' si my_counter tiene que reiniciarse a 0
 		  my_counter_reset <= '0';
         case slv_reg_write_sel is
           when "1000" =>
@@ -216,12 +215,8 @@ begin
               end if;
             end loop;
           when "0001" =>
-             -- Parte D (opcional) de la practica
-             -- Si segundo MSB de switches es 0 y reg0(30) es 1 
-			    -- if ((switches(2) = '0') and (slv_reg0(30) = '1')) then
-				 --  slv_reg3 <= my_counter;
-             -- elsif (slv_reg0(31) = '0') then
 		       -- my_counter_reset se establece '1' si my_counter tiene que reiniciarse a 0
+				 -- lo cual sucede si se ha asignado un resultado a slv_reg3
 				 my_counter_reset <= '1';
              if (slv_reg0(31) = '0') then
 				   slv_reg3 <= slv_reg1 + slv_reg2;
@@ -248,23 +243,34 @@ begin
   end process SLAVE_REG_READ_PROC;
   
   -- Proceso apartado B
-  SW2LEDS : process( Bus2IP_Clk, switches ) is
+  SW2LEDS : process( switches ) is
   begin
-    if Bus2IP_Clk'event and Bus2IP_Clk = '1' then
-	   if (switches(3) = '1') then
+	   if (switches(0) = '0') then
 		  my_leds <= my_counter;
 		else
-		  -- my_leds <= "01010101";
-		  -- my_leds <= (others => '0');
-		  case switches(1 downto 0) is
-          when "00"   => my_leds <= slv_reg0(0 to 7);
-		 	 when "01"   => my_leds <= slv_reg1(0 to 7);
-	 		 when "10"   => my_leds <= slv_reg2(0 to 7);
- 			 when "11"   => my_leds <= slv_reg3(0 to 7);
+		  -- Estamos leyendo switches al revés de como se ven físicamente en la placa
+		  -- y, además, se aplica lógica inversa, de modo que con el switch en on se
+		  -- devuelve 0
+		  -- [1][2][3][4]...[8] <-- disposicion en la placa
+		  -- [0][1][2][3] <-- numeracion de los bits de switches
+		  -- [^][x][x][x] <-- mostrar el contador
+		  -- [0][x][x][x]
+		  -- [_][x][_][_] <-- mostrar slv_reg0, bits 32 --> 11
+		  -- [1][x][1][1]
+		  -- [_][x][_][^] <-- mostrar slv_reg1, bits 32 --> 10
+		  -- [1][x][1][0]
+		  -- [_][x][^][_] <-- mostrar slv_reg2, bits 32 --> 01
+		  -- [1][x][0][1]
+		  -- [_][x][^][^] <-- mostrar slv_reg1, bits 32 --> 00
+		  -- [1][x][0][0]
+		  case switches(3 downto 2) is
+          when "11"   => my_leds <= slv_reg0(24 to 31);
+		 	 when "01"   => my_leds <= slv_reg1(24 to 31);
+	 		 when "10"   => my_leds <= slv_reg2(24 to 31);
+ 			 when "00"   => my_leds <= slv_reg3(24 to 31);
 			 when others => my_leds <= (others => '0');
 		  end case;
 		end if;
-    end if;
   end process SW2LEDS;
   
   --Proceso para el contador desde 0 hasta el valor de reg3 en el apartado C
@@ -274,8 +280,8 @@ begin
       if my_counter_reset = '1' then
         my_counter <= (others => '0');
 		else
-		  if (my_counter < slv_reg3(0 to 7)) then
-		    my_counter <= my_counter + '1';
+		  if (my_counter < slv_reg3(24 to 31)) then
+		    my_counter <= my_counter + 1;
 		  end if;
 		end if;
     end if;

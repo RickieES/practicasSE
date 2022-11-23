@@ -45,10 +45,7 @@ Setup/Hold to clock Clk_pin
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
 RX_pin      |    3.342(R)|   -1.221(R)|Clk_pin_BUFGP     |   0.000|
-Rst_pin     |    3.329(R)|   -0.090(R)|Clk_pin_BUFGP     |   0.000|
-switches<0> |    8.256(R)|   -3.691(R)|Clk_pin_BUFGP     |   0.000|
-switches<1> |    7.024(R)|   -2.819(R)|Clk_pin_BUFGP     |   0.000|
-switches<3> |    9.587(R)|   -2.640(R)|Clk_pin_BUFGP     |   0.000|
+Rst_pin     |    3.956(R)|    0.864(R)|Clk_pin_BUFGP     |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock Clk_pin to Pad
@@ -57,14 +54,14 @@ Clock Clk_pin to Pad
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
 TX_pin      |    6.523(R)|Clk_pin_BUFGP     |   0.000|
-leds<0>     |    6.540(R)|Clk_pin_BUFGP     |   0.000|
-leds<1>     |    6.351(R)|Clk_pin_BUFGP     |   0.000|
-leds<2>     |    6.370(R)|Clk_pin_BUFGP     |   0.000|
-leds<3>     |    6.351(R)|Clk_pin_BUFGP     |   0.000|
-leds<4>     |    6.396(R)|Clk_pin_BUFGP     |   0.000|
-leds<5>     |    6.505(R)|Clk_pin_BUFGP     |   0.000|
-leds<6>     |    6.505(R)|Clk_pin_BUFGP     |   0.000|
-leds<7>     |    6.516(R)|Clk_pin_BUFGP     |   0.000|
+leds<0>     |   12.237(R)|Clk_pin_BUFGP     |   0.000|
+leds<1>     |   13.561(R)|Clk_pin_BUFGP     |   0.000|
+leds<2>     |   12.555(R)|Clk_pin_BUFGP     |   0.000|
+leds<3>     |   12.452(R)|Clk_pin_BUFGP     |   0.000|
+leds<4>     |   13.590(R)|Clk_pin_BUFGP     |   0.000|
+leds<5>     |   11.863(R)|Clk_pin_BUFGP     |   0.000|
+leds<6>     |   13.083(R)|Clk_pin_BUFGP     |   0.000|
+leds<7>     |   11.985(R)|Clk_pin_BUFGP     |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock Clk_pin
@@ -72,11 +69,41 @@ Clock to Setup on destination clock Clk_pin
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clk_pin        |   10.489|         |         |         |
+Clk_pin        |   10.612|         |         |         |
 ---------------+---------+---------+---------+---------+
 
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+switches<0>    |leds<0>        |   11.136|
+switches<0>    |leds<1>        |   12.034|
+switches<0>    |leds<2>        |   12.677|
+switches<0>    |leds<3>        |   12.282|
+switches<0>    |leds<4>        |   12.449|
+switches<0>    |leds<5>        |   10.918|
+switches<0>    |leds<6>        |   11.358|
+switches<0>    |leds<7>        |   11.671|
+switches<2>    |leds<0>        |   12.635|
+switches<2>    |leds<1>        |   13.151|
+switches<2>    |leds<2>        |   13.662|
+switches<2>    |leds<3>        |   13.000|
+switches<2>    |leds<4>        |   14.079|
+switches<2>    |leds<5>        |   13.273|
+switches<2>    |leds<6>        |   13.236|
+switches<2>    |leds<7>        |   13.330|
+switches<3>    |leds<0>        |   12.062|
+switches<3>    |leds<1>        |   13.580|
+switches<3>    |leds<2>        |   14.061|
+switches<3>    |leds<3>        |   13.675|
+switches<3>    |leds<4>        |   13.928|
+switches<3>    |leds<5>        |   13.001|
+switches<3>    |leds<6>        |   13.779|
+switches<3>    |leds<7>        |   13.140|
+---------------+---------------+---------+
 
-Analysis completed Wed Nov 23 00:35:28 2022 
+
+Analysis completed Thu Nov 24 00:29:12 2022 
 --------------------------------------------------------------------------------
 
 Trace Settings:

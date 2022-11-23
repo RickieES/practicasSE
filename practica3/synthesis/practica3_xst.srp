@@ -4,7 +4,7 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> 
 TABLE OF CONTENTS
@@ -551,26 +551,26 @@ Design Statistics
 # IOs                              : 16
 
 Cell Usage :
-# BELS                             : 3280
+# BELS                             : 3272
 #      GND                         : 22
 #      INV                         : 28
 #      LUT1                        : 102
-#      LUT2                        : 221
+#      LUT2                        : 213
 #      LUT2_D                      : 12
 #      LUT2_L                      : 20
 #      LUT3                        : 847
 #      LUT3_D                      : 26
 #      LUT3_L                      : 28
-#      LUT4                        : 964
+#      LUT4                        : 972
 #      LUT4_D                      : 21
 #      LUT4_L                      : 36
 #      MULT_AND                    : 34
 #      MUXCY                       : 189
 #      MUXCY_L                     : 161
-#      MUXF5                       : 352
+#      MUXF5                       : 344
 #      VCC                         : 5
 #      XORCY                       : 212
-# FlipFlops/Latches                : 1962
+# FlipFlops/Latches                : 1954
 #      FD                          : 5
 #      FDC                         : 27
 #      FDE                         : 201
@@ -578,7 +578,7 @@ Cell Usage :
 #      FDRE                        : 856
 #      FDRS                        : 13
 #      FDRSE                       : 3
-#      FDS                         : 41
+#      FDS                         : 33
 #      FDSE                        : 44
 # RAMS                             : 208
 #      RAM16X1D                    : 192
@@ -599,8 +599,8 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-5 
 
- Number of Slices:                     1842  out of   7680    23%  
- Number of Slice Flip Flops:           1962  out of  15360    12%  
+ Number of Slices:                     1844  out of   7680    24%  
+ Number of Slice Flip Flops:           1954  out of  15360    12%  
  Number of 4 input LUTs:               2773  out of  15360    18%  
     Number used as logic:              2305
     Number used as Shift registers:      84
@@ -632,7 +632,7 @@ Clock Information:
 -----------------------------------------------------------+--------------------------------------------------------------+-------+
 Clock Signal                                               | Clock buffer(FF name)                                        | Load  |
 -----------------------------------------------------------+--------------------------------------------------------------+-------+
-Clk_pin                                                    | BUFGP                                                        | 2249  |
+Clk_pin                                                    | BUFGP                                                        | 2241  |
 N0                                                         | NONE(bram_block_0/bram_block_0/ramb16_s2_s2_0/ramb16_s2_s2_0)| 16    |
 top_sumador_0/top_sumador_0/USER_LOGIC_I/mi_divisor/clk_aux| NONE(top_sumador_0/top_sumador_0/USER_LOGIC_I/my_counter_7)  | 8     |
 -----------------------------------------------------------+--------------------------------------------------------------+-------+
@@ -653,9 +653,9 @@ Timing Summary:
 Speed Grade: -5
 
    Minimum period: 11.888ns (Maximum Frequency: 84.119MHz)
-   Minimum input arrival time before clock: 4.464ns
-   Maximum output required time after clock: 6.216ns
-   Maximum combinational path delay: No path found
+   Minimum input arrival time before clock: 4.458ns
+   Maximum output required time after clock: 9.490ns
+   Maximum combinational path delay: 9.460ns
 
 Timing Detail:
 --------------
@@ -664,7 +664,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Clk_pin'
   Clock period: 11.888ns (frequency: 84.119MHz)
-  Total number of paths / destination ports: 181059 / 7061
+  Total number of paths / destination ports: 181027 / 7053
 -------------------------------------------------------------------------
 Delay:               11.888ns (Levels of Logic = 6)
   Source:            microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers_Mux.Instruction_Prefetch_Mux[7].Gen_Instr_DFF (FF)
@@ -721,54 +721,98 @@ Delay:               5.683ns (Levels of Logic = 10)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk_pin'
-  Total number of paths / destination ports: 344 / 312
+  Total number of paths / destination ports: 296 / 296
 -------------------------------------------------------------------------
-Offset:              4.464ns (Levels of Logic = 3)
-  Source:            switches<3> (PAD)
-  Destination:       top_sumador_0/top_sumador_0/USER_LOGIC_I/my_leds_7 (FF)
+Offset:              4.458ns (Levels of Logic = 2)
+  Source:            Rst_pin (PAD)
+  Destination:       microblaze_0/microblaze_0/LOCKSTEP_Out_3765 (FF)
   Destination Clock: Clk_pin rising
 
-  Data Path: switches<3> to top_sumador_0/top_sumador_0/USER_LOGIC_I/my_leds_7
+  Data Path: Rst_pin to microblaze_0/microblaze_0/LOCKSTEP_Out_3765
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            24   0.715   1.697  switches_3_IBUF (switches_3_IBUF)
-     begin scope: 'top_sumador_0'
-     LUT2:I1->O            1   0.479   0.681  top_sumador_0/USER_LOGIC_I/my_leds_mux0002<7>0 (top_sumador_0/USER_LOGIC_I/my_leds_mux0002<7>0)
-     FDS:S                     0.892          top_sumador_0/USER_LOGIC_I/my_leds_7
+     IBUF:I->O           294   0.715   2.851  Rst_pin_IBUF (Rst_pin_IBUF)
+     begin scope: 'microblaze_0'
+     FDR:R                     0.892          microblaze_0/LOCKSTEP_Out_111
     ----------------------------------------
-    Total                      4.464ns (2.086ns logic, 2.378ns route)
-                                       (46.7% logic, 53.3% route)
+    Total                      4.458ns (1.607ns logic, 2.851ns route)
+                                       (36.0% logic, 64.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk_pin'
-  Total number of paths / destination ports: 9 / 9
+  Total number of paths / destination ports: 33 / 9
 -------------------------------------------------------------------------
-Offset:              6.216ns (Levels of Logic = 2)
-  Source:            xps_uartlite_0/xps_uartlite_0/UARTLITE_CORE_I/UARTLITE_TX_I/TX (FF)
-  Destination:       TX_pin (PAD)
+Offset:              9.490ns (Levels of Logic = 4)
+  Source:            top_sumador_0/top_sumador_0/USER_LOGIC_I/slv_reg0_31 (FF)
+  Destination:       leds<0> (PAD)
   Source Clock:      Clk_pin rising
 
-  Data Path: xps_uartlite_0/xps_uartlite_0/UARTLITE_CORE_I/UARTLITE_TX_I/TX to TX_pin
+  Data Path: top_sumador_0/top_sumador_0/USER_LOGIC_I/slv_reg0_31 to leds<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS:C->Q              1   0.626   0.681  xps_uartlite_0/UARTLITE_CORE_I/UARTLITE_TX_I/TX (TX)
-     end scope: 'xps_uartlite_0'
-     OBUF:I->O                 4.909          TX_pin_OBUF (TX_pin)
+     FDRE:C->Q            35   0.626   1.613  top_sumador_0/USER_LOGIC_I/slv_reg0_31 (top_sumador_0/USER_LOGIC_I/slv_reg0<31>)
+     LUT4:I3->O            1   0.479   0.704  top_sumador_0/USER_LOGIC_I/my_leds<0>58_SW0 (N16)
+     LUT4:I3->O            1   0.479   0.681  top_sumador_0/USER_LOGIC_I/my_leds<0>58 (leds<0>)
+     end scope: 'top_sumador_0'
+     OBUF:I->O                 4.909          leds_0_OBUF (leds<0>)
     ----------------------------------------
-    Total                      6.216ns (5.535ns logic, 0.681ns route)
-                                       (89.0% logic, 11.0% route)
+    Total                      9.490ns (6.493ns logic, 2.997ns route)
+                                       (68.4% logic, 31.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'top_sumador_0/top_sumador_0/USER_LOGIC_I/mi_divisor/clk_aux'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              7.525ns (Levels of Logic = 3)
+  Source:            top_sumador_0/top_sumador_0/USER_LOGIC_I/my_counter_7 (FF)
+  Destination:       leds<7> (PAD)
+  Source Clock:      top_sumador_0/top_sumador_0/USER_LOGIC_I/mi_divisor/clk_aux rising
+
+  Data Path: top_sumador_0/top_sumador_0/USER_LOGIC_I/my_counter_7 to leds<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.626   0.830  top_sumador_0/USER_LOGIC_I/my_counter_7 (top_sumador_0/USER_LOGIC_I/my_counter<7>)
+     LUT4:I2->O            1   0.479   0.681  top_sumador_0/USER_LOGIC_I/my_leds<7>58 (leds<7>)
+     end scope: 'top_sumador_0'
+     OBUF:I->O                 4.909          leds_7_OBUF (leds<7>)
+    ----------------------------------------
+    Total                      7.525ns (6.014ns logic, 1.511ns route)
+                                       (79.9% logic, 20.1% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 40 / 8
+-------------------------------------------------------------------------
+Delay:               9.460ns (Levels of Logic = 5)
+  Source:            switches<3> (PAD)
+  Destination:       leds<7> (PAD)
+
+  Data Path: switches<3> to leds<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   0.715   1.346  switches_3_IBUF (switches_3_IBUF)
+     begin scope: 'top_sumador_0'
+     LUT4:I0->O            1   0.479   0.851  top_sumador_0/USER_LOGIC_I/my_leds<7>27 (top_sumador_0/USER_LOGIC_I/my_leds<7>27)
+     LUT4:I1->O            1   0.479   0.681  top_sumador_0/USER_LOGIC_I/my_leds<7>58 (leds<7>)
+     end scope: 'top_sumador_0'
+     OBUF:I->O                 4.909          leds_7_OBUF (leds<7>)
+    ----------------------------------------
+    Total                      9.460ns (6.582ns logic, 2.878ns route)
+                                       (69.6% logic, 30.4% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 94.00 secs
-Total CPU time to Xst completion: 94.43 secs
+Total REAL time to Xst completion: 93.00 secs
+Total CPU time to Xst completion: 93.03 secs
  
 --> 
 
-Total memory usage is 266316 kilobytes
+Total memory usage is 266060 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  349 (   0 filtered)

@@ -190,7 +190,14 @@ int main()
 				// Debemos "escribir" antes de leer para forzar el calculo de la operacion
 				TOP_SUMADOR_mWriteSlaveReg3(XPAR_TOP_SUMADOR_0_BASEADDR,0,0);
 				result = TOP_SUMADOR_mReadSlaveReg3(XPAR_TOP_SUMADOR_0_BASEADDR,0);
-				xil_printf("\r\nEl resultado es: %d \n\r ", result);
+				xil_printf("\r\nEl resultado es: %d \n\r\n\r", result);
+				xil_printf("Ahora puede utilizar los switches de la placa extendida para leer los registros.\n\r");
+				xil_printf("[1][2][3][4]...[8] <-- numeracion de los switches en la placa\n\r");
+				xil_printf("[^][x][x][x] <-- mostrar el contador\n\r");
+				xil_printf("[_][x][_][_] <-- mostrar slv_reg0\n\r");
+				xil_printf("[_][x][_][^] <-- mostrar slv_reg1\n\r");
+				xil_printf("[_][x][^][_] <-- mostrar slv_reg2\n\r");
+				xil_printf("[_][x][^][^] <-- mostrar slv_reg3\n\r");
 			}
 			break;
 			//            default: // otro caracter

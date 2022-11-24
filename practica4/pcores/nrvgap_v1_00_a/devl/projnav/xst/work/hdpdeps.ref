@@ -1,24 +1,27 @@
-V3 11
-FL U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/counter2.vhd 2014/07/18.17:26:22 P.15xf
-EN work/counter2 1668614681 \
-      FL U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/counter2.vhd \
+V3 14
+FL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/counter2.vhd 2014/07/18.18:26:22 P.15xf
+EN work/counter2 1669247592 \
+      FL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/counter2.vhd \
       PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
       PB ieee/STD_LOGIC_UNSIGNED 1335251625
-AR work/counter2/rtl 1668614682 \
-      FL U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/counter2.vhd \
-      EN work/counter2 1668614681 CP d_out
-FL U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/debouncer.vhd 2022/11/16.16:31:27 P.15xf
-EN work/debouncer 1668614675 \
-      FL U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/debouncer.vhd \
+AR work/counter2/rtl 1669247593 \
+      FL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/counter2.vhd \
+      EN work/counter2 1669247592 CP d_out
+FL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/debouncer.vhd 2022/11/16.17:31:28 P.15xf
+EN work/debouncer 1669247587 \
+      FL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/debouncer.vhd \
       PB ieee/std_logic_1164 1335251622 PB ieee/STD_LOGIC_UNSIGNED 1335251625
-AR work/debouncer/debouncerArch 1668614676 \
-      FL U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/debouncer.vhd \
-      EN work/debouncer 1668614675
-FL U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/vgacore.vhd 2022/11/15.20:49:06 P.15xf
-EN work/vgacore 1668614679 \
-      FL U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/vgacore.vhd \
+AR work/debouncer/debouncerArch 1669247588 \
+      FL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/debouncer.vhd \
+      EN work/debouncer 1669247587
+FL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/vgacore.vhd 2022/11/24.00:50:46 P.15xf
+EN work/vgacore 1669247582 \
+      FL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/vgacore.vhd \
       PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
       PB ieee/STD_LOGIC_UNSIGNED 1335251625
-AR work/vgacore/vgacore_arch 1668614680 \
-      FL U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/vgacore.vhd \
-      EN work/vgacore 1668614679 CP debouncer
+AR work/vgacore/vgacore_arch 1669247583 \
+      FL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/vgacore.vhd \
+      EN work/vgacore 1669247582 CP debouncer
+FL U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/counter2.vhd 2014/07/18.17:26:22 P.15xf
+FL U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/debouncer.vhd 2022/11/16.16:31:27 P.15xf
+FL U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/vgacore.vhd 2022/11/15.20:49:06 P.15xf

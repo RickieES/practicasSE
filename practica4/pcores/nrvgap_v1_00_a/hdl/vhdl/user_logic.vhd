@@ -104,11 +104,12 @@ entity user_logic is
     -- ADD USER PORTS BELOW THIS LINE ------------------
     --USER ports added here
     -- ADD USER PORTS ABOVE THIS LINE ------------------
-		hsyncb: out std_logic;
-		vsyncb: out std_logic;							-- vertical (frame) sync
-		rgb: out std_logic_vector(8 downto 0);	-- red,green,blue colors
-		mover_derecha_pin: in std_logic;
-		mover_izquierda_pin: in std_logic;
+		hsyncb                       : out std_logic;
+		vsyncb                       : out std_logic;							-- vertical (frame) sync
+		rgb                          : out std_logic_vector(8 downto 0);	-- red,green,blue colors
+		mover_derecha_pin            : in  std_logic;
+		mover_izquierda_pin          : in  std_logic;
+		switches                     : in  std_logic_vector(3 downto 0);
 		-- DO NOT EDIT BELOW THIS LINE ---------------------
     -- Bus protocol ports, do not add to or delete
     Bus2IP_Clk                     : in  std_logic;
@@ -155,8 +156,9 @@ architecture IMP of user_logic is
 			rectangulo: in std_logic_vector(6 downto 0); -- rectangulo a borrar
 			vsyncb: out std_logic;	-- vertical (frame) sync
 			rgb: out std_logic_vector(8 downto 0);	-- red,green,blue colors
-		    mover_derecha_pin: in std_logic;
-    		mover_izquierda_pin: in std_logic
+		   mover_derecha_pin: in std_logic;
+    		mover_izquierda_pin: in std_logic;
+			switches: in std_logic_vector(3 downto 0)
 		);
 	end component;
 
@@ -230,7 +232,8 @@ timeOut <= "11"; -- 12,5 MHz
 			vsyncb => vsyncb,
 			rgb => rgb,
 			mover_derecha_pin => mover_derecha_pin,
-			mover_izquierda_pin => mover_izquierda_pin
+			mover_izquierda_pin => mover_izquierda_pin,
+			switches => switches
 		);
 
 		sincro : counter2 

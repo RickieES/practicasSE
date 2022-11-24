@@ -1,5 +1,5 @@
 vhdl work "../../hdl/vhdl/debouncer.vhd"
 vhdl work "../../hdl/vhdl/vgacore.vhd"
 vhdl work "../../hdl/vhdl/counter2.vhd"
-vhdl proc_common_v3_00_a "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd"
+vhdl proc_common_v3_00_a "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd"
 vhdl nrvgap_v1_00_a "../../hdl/vhdl/user_logic.vhd"

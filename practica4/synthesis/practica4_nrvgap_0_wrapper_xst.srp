@@ -475,7 +475,7 @@ Analyzing hierarchy for entity <inferred_lut4> in library <proc_common_v3_00_a> 
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <practica4_nrvgap_0_wrapper> in library <work> (Architecture <STRUCTURE>).
-WARNING:Xst:1541 - "//vboxsvr/se/ws/practica4/hdl/practica4_nrvgap_0_wrapper.vhd" line 136: Different binding for component: <nrvgap>. Port <rgb> does not match.
+WARNING:Xst:1541 - "//vboxsvr/se/ws/practica4/hdl/practica4_nrvgap_0_wrapper.vhd" line 138: Different binding for component: <nrvgap>. Port <rgb> does not match.
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
 Entity <practica4_nrvgap_0_wrapper> analyzed. Unit <practica4_nrvgap_0_wrapper> generated.
@@ -497,13 +497,13 @@ Analyzing generic Entity <nrvgap> in library <nrvgap_v1_00_a> (Architecture <IMP
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:821 - "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" line 272: Loop body will iterate zero times
-WARNING:Xst:753 - "//vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/nrvgap.vhd" line 440: Unconnected output port 'WFIFO2IP_Occupancy' of component 'wrpfifo_top'.
-WARNING:Xst:753 - "//vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/nrvgap.vhd" line 440: Unconnected output port 'WFIFO2DMA_AlmostFull' of component 'wrpfifo_top'.
-WARNING:Xst:753 - "//vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/nrvgap.vhd" line 440: Unconnected output port 'WFIFO2DMA_Full' of component 'wrpfifo_top'.
-WARNING:Xst:753 - "//vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/nrvgap.vhd" line 440: Unconnected output port 'WFIFO2DMA_Vacancy' of component 'wrpfifo_top'.
-WARNING:Xst:753 - "//vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/nrvgap.vhd" line 440: Unconnected output port 'FIFO2IRPT_DeadLock' of component 'wrpfifo_top'.
-WARNING:Xst:753 - "//vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/nrvgap.vhd" line 440: Unconnected output port 'FIFO2Bus_Retry' of component 'wrpfifo_top'.
-WARNING:Xst:753 - "//vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/nrvgap.vhd" line 440: Unconnected output port 'FIFO2Bus_ToutSup' of component 'wrpfifo_top'.
+WARNING:Xst:753 - "//vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/nrvgap.vhd" line 441: Unconnected output port 'WFIFO2IP_Occupancy' of component 'wrpfifo_top'.
+WARNING:Xst:753 - "//vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/nrvgap.vhd" line 441: Unconnected output port 'WFIFO2DMA_AlmostFull' of component 'wrpfifo_top'.
+WARNING:Xst:753 - "//vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/nrvgap.vhd" line 441: Unconnected output port 'WFIFO2DMA_Full' of component 'wrpfifo_top'.
+WARNING:Xst:753 - "//vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/nrvgap.vhd" line 441: Unconnected output port 'WFIFO2DMA_Vacancy' of component 'wrpfifo_top'.
+WARNING:Xst:753 - "//vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/nrvgap.vhd" line 441: Unconnected output port 'FIFO2IRPT_DeadLock' of component 'wrpfifo_top'.
+WARNING:Xst:753 - "//vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/nrvgap.vhd" line 441: Unconnected output port 'FIFO2Bus_Retry' of component 'wrpfifo_top'.
+WARNING:Xst:753 - "//vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/nrvgap.vhd" line 441: Unconnected output port 'FIFO2Bus_ToutSup' of component 'wrpfifo_top'.
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
 Entity <nrvgap> analyzed. Unit <nrvgap> generated.
@@ -898,6 +898,7 @@ Unit <pf_counter_bit> synthesized.
 
 Synthesizing Unit <vgacore>.
     Related source file is "//vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/vgacore.vhd".
+WARNING:Xst:647 - Input <switches> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:646 - Signal <debouncer_i> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <debouncer_d> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <deb_rising_i> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -906,14 +907,14 @@ WARNING:Xst:646 - Signal <deb_rising_d> is assigned but never used. This unconne
     Found 1-bit register for signal <vsyncb>.
     Found 3-bit updown counter for signal <cnt>.
     Found 9-bit up counter for signal <hcnt>.
-    Found 10-bit comparator less for signal <hcnt$cmp_lt0000> created at line 160.
+    Found 10-bit comparator less for signal <hcnt$cmp_lt0000> created at line 161.
     Found 1-bit register for signal <hsyncbAux>.
-    Found 10-bit comparator greatequal for signal <hsyncbAux$cmp_ge0000> created at line 192.
-    Found 10-bit comparator less for signal <hsyncbAux$cmp_lt0000> created at line 192.
+    Found 10-bit comparator greatequal for signal <hsyncbAux$cmp_ge0000> created at line 193.
+    Found 10-bit comparator less for signal <hsyncbAux$cmp_lt0000> created at line 193.
     Found 10-bit up counter for signal <vcnt>.
-    Found 11-bit comparator less for signal <vcnt$cmp_lt0000> created at line 176.
-    Found 11-bit comparator greatequal for signal <vsyncb$cmp_ge0000> created at line 208.
-    Found 11-bit comparator less for signal <vsyncb$cmp_lt0000> created at line 208.
+    Found 11-bit comparator less for signal <vcnt$cmp_lt0000> created at line 177.
+    Found 11-bit comparator greatequal for signal <vsyncb$cmp_ge0000> created at line 209.
+    Found 11-bit comparator less for signal <vsyncb$cmp_lt0000> created at line 209.
     Summary:
 	inferred   1 RAM(s).
 	inferred   3 Counter(s).
@@ -1407,7 +1408,7 @@ Optimization Goal                  : speed
 Keep Hierarchy                     : no
 
 Design Statistics
-# IOs                              : 214
+# IOs                              : 218
 
 Cell Usage :
 # BELS                             : 378
@@ -1455,7 +1456,7 @@ Selected Device : 3s1000ft256-5
  Number of 4 input LUTs:                395  out of  15360     2%  
     Number used as logic:               251
     Number used as RAMs:                144
- Number of IOs:                         214
+ Number of IOs:                         218
  Number of bonded IOBs:                   0  out of    173     0%  
  Number of BRAMs:                         1  out of     24     4%  
  Number of GCLKs:                         1  out of      8    12%  
@@ -1691,14 +1692,14 @@ Offset:              4.956ns (Levels of Logic = 4)
 =========================================================================
 
 
-Total REAL time to Xst completion: 24.00 secs
-Total CPU time to Xst completion: 24.44 secs
+Total REAL time to Xst completion: 27.00 secs
+Total CPU time to Xst completion: 27.19 secs
  
 --> 
 
 Total memory usage is 368972 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  239 (   0 filtered)
+Number of warnings :  240 (   0 filtered)
 Number of infos    :    6 (   0 filtered)
 

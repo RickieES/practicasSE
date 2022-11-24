@@ -36,9 +36,9 @@ INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and
 Timing constraint: TS_Clk_pin = PERIOD TIMEGRP "Clk_pin" 20 ns HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 149354 paths analyzed, 8775 endpoints analyzed, 0 failing endpoints
+ 147778 paths analyzed, 8114 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is  12.906ns.
+ Minimum period is  14.425ns.
 --------------------------------------------------------------------------------
 
 
@@ -54,7 +54,7 @@ Clock to Setup on destination clock Clk_pin
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clk_pin        |   12.906|         |         |         |
+Clk_pin        |   14.425|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -63,20 +63,20 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 149354 paths, 0 nets, and 13003 connections
+Constraints cover 147778 paths, 0 nets, and 12031 connections
 
 Design statistics:
-   Minimum period:  12.906ns   (Maximum frequency:  77.483MHz)
+   Minimum period:  14.425ns   (Maximum frequency:  69.324MHz)
 
 
-Analysis completed Sun Nov 13 00:17:02 2022 
+Analysis completed Thu Nov 24 01:04:42 2022 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 156 MB
+Peak Memory Usage: 154 MB
 
 
 

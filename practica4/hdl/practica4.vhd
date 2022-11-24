@@ -17,7 +17,8 @@ entity practica4 is
     rgb_pin : out std_logic_vector(0 to 8);
     mover_izquierda_pin : in std_logic;
     mover_derecha_pin : in std_logic;
-    Clk_pin : in std_logic
+    Clk_pin : in std_logic;
+    switches : in std_logic_vector(3 downto 0)
   );
 end practica4;
 
@@ -898,7 +899,8 @@ architecture STRUCTURE of practica4 is
       vsyncb : out std_logic;
       rgb : out std_logic_vector(0 to 8);
       mover_izquierda_pin : in std_logic;
-      mover_derecha_pin : in std_logic
+      mover_derecha_pin : in std_logic;
+      switches : in std_logic_vector(3 downto 0)
     );
   end component;
 
@@ -917,6 +919,7 @@ architecture STRUCTURE of practica4 is
   signal net_gnd4096 : std_logic_vector(0 to 4095);
   signal net_mover_derecha_pin : std_logic;
   signal net_mover_izquierda_pin : std_logic;
+  signal net_switches : std_logic_vector(3 downto 0);
   signal nrvgap_0_hsyncb : std_logic;
   signal nrvgap_0_rgb : std_logic_vector(0 to 8);
   signal nrvgap_0_vsyncb : std_logic;
@@ -1021,6 +1024,7 @@ begin
   net_mover_izquierda_pin <= mover_izquierda_pin;
   net_mover_derecha_pin <= mover_derecha_pin;
   net_Clk_pin <= Clk_pin;
+  net_switches <= switches;
   net_gnd0 <= '0';
   net_gnd1(0 downto 0) <= B"0";
   net_gnd10(0 to 9) <= B"0000000000";
@@ -1900,7 +1904,8 @@ begin
       vsyncb => nrvgap_0_vsyncb,
       rgb => nrvgap_0_rgb,
       mover_izquierda_pin => net_mover_izquierda_pin,
-      mover_derecha_pin => net_mover_derecha_pin
+      mover_derecha_pin => net_mover_derecha_pin,
+      switches => net_switches
     );
 
 end architecture STRUCTURE;

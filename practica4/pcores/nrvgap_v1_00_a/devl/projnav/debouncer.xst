@@ -1,5 +1,5 @@
-set -tmpdir "U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/devl/projnav/xst/projnav.tmp"
-set -xsthdpdir "U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/devl/projnav/xst"
+set -tmpdir "N:/ws/practica4/pcores/nrvgap_v1_00_a/devl/projnav/xst/projnav.tmp"
+set -xsthdpdir "N:/ws/practica4/pcores/nrvgap_v1_00_a/devl/projnav/xst"
 elaborate
 -ifn debouncer.prj
 -ifmt mixed

@@ -39,7 +39,8 @@ entity vgacore is
 		vsyncb: out std_logic;	-- vertical (frame) sync
 		rgb: out std_logic_vector(8 downto 0);	-- red,green,blue colors
 		mover_derecha_pin: in std_logic; --para mover derecha
-    	mover_izquierda_pin: in std_logic --para mover izquierda
+    	mover_izquierda_pin: in std_logic; --para mover izquierda
+		switches: in std_logic_vector(3 downto 0)
 	);
 end vgacore;
 
@@ -215,24 +216,24 @@ end process;
 
 -- A partir de aqui escribir la parte de dibujar en la pantalla
 
--- Dibujamos rect?ngulos de 16x8
+-- Dibujamos rectangulos de 16x8
 -- vcnt(8 downto 4)x hcnt(6 downto 3)
 process(clock, load, rectangulo)
 begin
-		if clock'event and clock='1' then
-			if load='1' then 
-				RAM(conv_integer(rectangulo))<= color;
-			end if;
+	if clock'event and clock='1' then
+		if load='1' then 
+			RAM(conv_integer(rectangulo)) <= color;
 		end if;
+	end if;
 end process;
 
 process(vcnt, hcnt, RAM)
 begin
-if vcnt(9 downto 8)="00" and hcnt(8 downto 6)="000" then
-rgb<=RAM(conv_integer(hcnt(5 downto 3)&vcnt(7 downto 4)));
-else
-rgb<="000000000";
-end if;
+	if vcnt(9 downto 8)="00" and hcnt(8 downto 6)="000" then
+		rgb <= RAM(conv_integer(hcnt(5 downto 3) & vcnt(7 downto 4)));
+	else
+		rgb <= "000000000";
+	end if;
 end process;
 
 ---------------------------------------------------------------------

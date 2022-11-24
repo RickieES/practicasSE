@@ -32,7 +32,6 @@
 #include "xil_cache.h"
 #include "xuartlite_i.h"
 #include "xbasic_types.h"
-#include "xgpio.h"
 #include "nrvgap.h"
 /* Definiciones para la VGA */
 #define ROJO 				0x000001C0
@@ -41,19 +40,6 @@
 #define AZUL 				0x00000007
 #define BLANCO				0x000001FF
 #define NEGRO				0x00000000
-
-/* Definiciones para switches y leds, probablemente sobran */
-#define XPAR_SWITCHES_BASEADDR  XPAR_XPS_GPIO_0_BASEADDR
-#define XPAR_LEDS_BASEADDR      XPAR_XPS_GPIO_1_BASEADDR
-#define XPAR_SWITCHES_DEVICE_ID XPAR_XPS_GPIO_0_DEVICE_ID
-#define XPAR_LEDS_DEVICE_ID     XPAR_XPS_GPIO_1_DEVICE_ID
-#define SWITCHES_CHANNEL 1
-#define LED_CHANNEL 1
-
-/* Variables globales */
-
-XGpio GpioSwitches;  /* The driver instance for GPIO Device configured as Entrada */
-XGpio GpioLEDs;     /* The driver instance for GPIO Device configured as Salida */
 
 /* Valor predeterminado de filas y columnas; variables para la parte 4b3 */
 int nfilas = 16;
@@ -247,31 +233,12 @@ void practica4b3() {
 }
 
 int main() {
-    int status;
     int color;
     Xuint8 byte = 0;
 	Xuint32 Data;
 	char fila, columna, posicion;
 
     xil_printf("Practica 4 por Nestor Marin y Ricardo Palomares\r\n\r\n");
-
-	status = XGpio_Initialize(&GpioSwitches, (u16) XPAR_SWITCHES_DEVICE_ID); /*Obtiene el puntero a la estructura */
-	// Configuracion de la GPIO para los Switches
-	if (status != XST_SUCCESS) {
-		xil_printf("No se han podido inicializar los SWITCHES\r\n");
-		return XST_FAILURE;
-	}
-
-	// Configuración de la GPIO para los LEDs de la placa extendida
-	status = XGpio_Initialize(&GpioLEDs, (u16) XPAR_LEDS_DEVICE_ID); /*Obtiene el puntero a la estructura */
-	if (status != XST_SUCCESS) {
-		xil_printf("No se han podido inicializar los LED\r\n");
-		return XST_FAILURE;
-	}
-
-	XGpio_SetDataDirection(&GpioSwitches, SWITCHES_CHANNEL, 0xFF); /*Coloca la dirección de entrada */
-	XGpio_SetDataDirection(&GpioLEDs, LED_CHANNEL, 0x0); /*Coloca la dirección de salida */
-	XGpio_DiscreteWrite(&GpioLEDs, LED_CHANNEL, 0xFF);
 
 	// Inicializamos la fila, la columna y el color elegido a un valor no válido
 	filaElegida = -1;

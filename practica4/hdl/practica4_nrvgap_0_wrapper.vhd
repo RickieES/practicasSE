@@ -58,7 +58,8 @@ entity practica4_nrvgap_0_wrapper is
     vsyncb : out std_logic;
     rgb : out std_logic_vector(0 to 8);
     mover_izquierda_pin : in std_logic;
-    mover_derecha_pin : in std_logic
+    mover_derecha_pin : in std_logic;
+    switches : in std_logic_vector(3 downto 0)
   );
 end practica4_nrvgap_0_wrapper;
 
@@ -127,7 +128,8 @@ architecture STRUCTURE of practica4_nrvgap_0_wrapper is
       vsyncb : out std_logic;
       rgb : out std_logic_vector(0 to 8);
       mover_izquierda_pin : in std_logic;
-      mover_derecha_pin : in std_logic
+      mover_derecha_pin : in std_logic;
+      switches : in std_logic_vector(3 downto 0)
     );
   end component;
 
@@ -196,7 +198,8 @@ begin
       vsyncb => vsyncb,
       rgb => rgb,
       mover_izquierda_pin => mover_izquierda_pin,
-      mover_derecha_pin => mover_derecha_pin
+      mover_derecha_pin => mover_derecha_pin,
+      switches => switches
     );
 
 end architecture STRUCTURE;

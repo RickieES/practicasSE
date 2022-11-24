@@ -1,0 +1,161 @@
+Release 14.1 - xst P.15xf (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to N:/ws/practica4/pcores/nrvgap_v1_00_a/devl/projnav/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to N:/ws/practica4/pcores/nrvgap_v1_00_a/devl/projnav/xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit nrvgap_v1_00_a/nrvgap is now defined in a different file.  It was defined in "U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/nrvgap.vhd", and is now defined in "//vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/nrvgap.vhd".
+WARNING:HDLParsers:3607 - Unit nrvgap_v1_00_a/nrvgap/IMP is now defined in a different file.  It was defined in "U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/nrvgap.vhd", and is now defined in "//vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/nrvgap.vhd".
+WARNING:HDLParsers:3607 - Unit plbv46_slave_single_v1_01_a/plbv46_slave_single is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plbv46_slave_single.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plbv46_slave_single.vhd".
+WARNING:HDLParsers:3607 - Unit plbv46_slave_single_v1_01_a/plbv46_slave_single/implementation is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plbv46_slave_single.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plbv46_slave_single.vhd".
+WARNING:HDLParsers:3607 - Unit wrpfifo_v5_01_a/wrpfifo_top is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/wrpfifo_top.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/wrpfifo_top.vhd".
+WARNING:HDLParsers:3607 - Unit wrpfifo_v5_01_a/wrpfifo_top/implementation is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/wrpfifo_top.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/wrpfifo_top.vhd".
+WARNING:HDLParsers:3607 - Unit nrvgap_v1_00_a/user_logic is now defined in a different file.  It was defined in "U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/user_logic.vhd", and is now defined in "//vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/user_logic.vhd".
+WARNING:HDLParsers:3607 - Unit nrvgap_v1_00_a/user_logic/IMP is now defined in a different file.  It was defined in "U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/user_logic.vhd", and is now defined in "//vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/user_logic.vhd".
+WARNING:HDLParsers:3607 - Unit plbv46_slave_single_v1_01_a/plb_slave_attachment is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd".
+WARNING:HDLParsers:3607 - Unit plbv46_slave_single_v1_01_a/plb_slave_attachment/implementation is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/pf_dpram_select is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_dpram_select.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_dpram_select.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/pf_dpram_select/implementation is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_dpram_select.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_dpram_select.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/srl16_fifo is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl16_fifo.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl16_fifo.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/srl16_fifo/implementation is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl16_fifo.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl16_fifo.vhd".
+WARNING:HDLParsers:3607 - Unit wrpfifo_v5_01_a/blkmem_wrapper is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/blkmem_wrapper.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/blkmem_wrapper.vhd".
+WARNING:HDLParsers:3607 - Unit wrpfifo_v5_01_a/blkmem_wrapper/implementation is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/blkmem_wrapper.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/blkmem_wrapper.vhd".
+WARNING:HDLParsers:3607 - Unit wrpfifo_v5_01_a/ipif_control_wr_dre is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/ipif_control_wr_dre.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/ipif_control_wr_dre.vhd".
+WARNING:HDLParsers:3607 - Unit wrpfifo_v5_01_a/ipif_control_wr_dre/implementation is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/ipif_control_wr_dre.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/ipif_control_wr_dre.vhd".
+WARNING:HDLParsers:3607 - Unit wrpfifo_v5_01_a/wrpfifo_dp_cntl is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/wrpfifo_dp_cntl.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/wrpfifo_dp_cntl.vhd".
+WARNING:HDLParsers:3607 - Unit wrpfifo_v5_01_a/wrpfifo_dp_cntl/implementation is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/wrpfifo_dp_cntl.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/wrpfifo_dp_cntl.vhd".
+WARNING:HDLParsers:3607 - Unit work/counter2 is now defined in a different file.  It was defined in "U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/counter2.vhd", and is now defined in "//vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/counter2.vhd".
+WARNING:HDLParsers:3607 - Unit work/counter2/rtl is now defined in a different file.  It was defined in "U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/counter2.vhd", and is now defined in "//vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/counter2.vhd".
+WARNING:HDLParsers:3607 - Unit work/vgacore is now defined in a different file.  It was defined in "U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/vgacore.vhd", and is now defined in "//vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/vgacore.vhd".
+WARNING:HDLParsers:3607 - Unit work/vgacore/vgacore_arch is now defined in a different file.  It was defined in "U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/vgacore.vhd", and is now defined in "//vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/vgacore.vhd".
+WARNING:HDLParsers:3607 - Unit plbv46_slave_single_v1_01_a/plb_address_decoder is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_address_decoder.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_address_decoder.vhd".
+WARNING:HDLParsers:3607 - Unit plbv46_slave_single_v1_01_a/plb_address_decoder/IMP is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_address_decoder.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_address_decoder.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/blk_mem_gen_wrapper is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/blk_mem_gen_wrapper.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/blk_mem_gen_wrapper.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/blk_mem_gen_wrapper/implementation is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/blk_mem_gen_wrapper.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/blk_mem_gen_wrapper.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/counter_f is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/counter_f/imp is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/pf_adder is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/pf_adder/implementation is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/pf_counter_top is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_top.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_top.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/pf_counter_top/implementation is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_top.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_top.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/pf_occ_counter_top is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter_top.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter_top.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/pf_occ_counter_top/implementation is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter_top.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter_top.vhd".
+WARNING:HDLParsers:3607 - Unit wrpfifo_v5_01_a/pf_dly1_mux is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/pf_dly1_mux.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/pf_dly1_mux.vhd".
+WARNING:HDLParsers:3607 - Unit wrpfifo_v5_01_a/pf_dly1_mux/implementation is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/pf_dly1_mux.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/pf_dly1_mux.vhd".
+WARNING:HDLParsers:3607 - Unit work/debouncer is now defined in a different file.  It was defined in "U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/debouncer.vhd", and is now defined in "//vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/debouncer.vhd".
+WARNING:HDLParsers:3607 - Unit work/debouncer/debouncerArch is now defined in a different file.  It was defined in "U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/debouncer.vhd", and is now defined in "//vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/debouncer.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/coregen_comp_defs is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/coregen_comp_defs.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/coregen_comp_defs.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/ipif_pkg is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/ipif_pkg is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/or_gate128 is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/or_gate128/imp is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/pf_adder_bit is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder_bit.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder_bit.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/pf_adder_bit/implementation is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder_bit.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder_bit.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/pf_counter is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/pf_counter/implementation is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/pf_occ_counter is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/pf_occ_counter/implementation is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/pselect_f is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/pselect_f/imp is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/family_support is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/family_support is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/or_muxcy is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/or_muxcy/implementation is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/pf_counter_bit is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/pf_counter_bit/implementation is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/proc_common_pkg is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/proc_common_pkg is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/inferred_lut4 is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/inferred_lut4.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/inferred_lut4.vhd".
+WARNING:HDLParsers:3607 - Unit proc_common_v3_00_a/inferred_lut4/implementation is now defined in a different file.  It was defined in "S:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/inferred_lut4.vhd", and is now defined in "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/inferred_lut4.vhd".
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/inferred_lut4.vhd" in Library proc_common_v3_00_a.
+Architecture implementation of Entity inferred_lut4 is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd" in Library proc_common_v3_00_a.
+Architecture implementation of Entity pf_counter_bit is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder_bit.vhd" in Library proc_common_v3_00_a.
+Architecture implementation of Entity pf_adder_bit is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter.vhd" in Library proc_common_v3_00_a.
+Architecture implementation of Entity pf_counter is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter.vhd" in Library proc_common_v3_00_a.
+Architecture implementation of Entity pf_occ_counter is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" in Library proc_common_v3_00_a.
+Architecture proc_common_pkg of Entity proc_common_pkg is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd" in Library proc_common_v3_00_a.
+Architecture implementation of Entity or_muxcy is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd" in Library proc_common_v3_00_a.
+Architecture family_support of Entity family_support is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter_top.vhd" in Library proc_common_v3_00_a.
+Architecture implementation of Entity pf_occ_counter_top is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_top.vhd" in Library proc_common_v3_00_a.
+Architecture implementation of Entity pf_counter_top is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder.vhd" in Library proc_common_v3_00_a.
+Architecture implementation of Entity pf_adder is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/coregen_comp_defs.vhd" in Library proc_common_v3_00_a.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" in Library proc_common_v3_00_a.
+Architecture imp of Entity counter_f is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/blk_mem_gen_wrapper.vhd" in Library proc_common_v3_00_a.
+Architecture implementation of Entity blk_mem_gen_wrapper is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl16_fifo.vhd" in Library proc_common_v3_00_a.
+Architecture implementation of Entity srl16_fifo is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_dpram_select.vhd" in Library proc_common_v3_00_a.
+Architecture implementation of Entity pf_dpram_select is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd" in Library proc_common_v3_00_a.
+Architecture imp of Entity pselect_f is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd" in Library proc_common_v3_00_a.
+Architecture imp of Entity or_gate128 is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd" in Library proc_common_v3_00_a.
+Architecture ipif_pkg of Entity ipif_pkg is up to date.
+Compiling vhdl file "//vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/debouncer.vhd" in Library work.
+Architecture debouncerarch of Entity debouncer is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_address_decoder.vhd" in Library plbv46_slave_single_v1_01_a.
+Architecture imp of Entity plb_address_decoder is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/pf_dly1_mux.vhd" in Library wrpfifo_v5_01_a.
+Architecture implementation of Entity pf_dly1_mux is up to date.
+Compiling vhdl file "//vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/vgacore.vhd" in Library work.
+Entity <vgacore> compiled.
+Entity <vgacore> (Architecture <vgacore_arch>) compiled.
+Compiling vhdl file "//vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/counter2.vhd" in Library work.
+Architecture rtl of Entity counter2 is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd" in Library plbv46_slave_single_v1_01_a.
+Architecture implementation of Entity plb_slave_attachment is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/ipif_control_wr_dre.vhd" in Library wrpfifo_v5_01_a.
+Architecture implementation of Entity ipif_control_wr_dre is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/wrpfifo_dp_cntl.vhd" in Library wrpfifo_v5_01_a.
+Architecture implementation of Entity wrpfifo_dp_cntl is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/blkmem_wrapper.vhd" in Library wrpfifo_v5_01_a.
+Architecture implementation of Entity blkmem_wrapper is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/wrpfifo_top.vhd" in Library wrpfifo_v5_01_a.
+Architecture implementation of Entity wrpfifo_top is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plbv46_slave_single.vhd" in Library plbv46_slave_single_v1_01_a.
+Architecture implementation of Entity plbv46_slave_single is up to date.
+Compiling vhdl file "//vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/user_logic.vhd" in Library nrvgap_v1_00_a.
+Entity <user_logic> compiled.
+Entity <user_logic> (Architecture <imp>) compiled.
+Compiling vhdl file "//vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/nrvgap.vhd" in Library nrvgap_v1_00_a.
+Entity <nrvgap> compiled.
+Entity <nrvgap> (Architecture <imp>) compiled.
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.03 secs
+ 
+--> 
+
+Total memory usage is 193300 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   64 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

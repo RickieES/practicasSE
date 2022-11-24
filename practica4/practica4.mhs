@@ -11,6 +11,7 @@
  PORT mover_izquierda_pin = net_mover_izquierda_pin, DIR = I
  PORT mover_derecha_pin = net_mover_derecha_pin, DIR = I
  PORT Clk_pin = net_Clk_pin, DIR = I, SIGIS = CLK
+ PORT switches = net_switches, DIR = I, VEC = [3:0]
 
 
 BEGIN microblaze
@@ -67,5 +68,6 @@ BEGIN nrvgap
  PORT rgb = nrvgap_0_rgb
  PORT mover_izquierda_pin = net_mover_izquierda_pin
  PORT mover_derecha_pin = net_mover_derecha_pin
+ PORT switches = net_switches
 END
 

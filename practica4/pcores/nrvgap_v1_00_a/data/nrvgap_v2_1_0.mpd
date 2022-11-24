@@ -84,5 +84,6 @@ PORT vsyncb = "", DIR = O
 PORT rgb = "", DIR = O, VEC = [0:8]
 PORT mover_izquierda_pin = "", DIR = I
 PORT mover_derecha_pin = "", DIR = I
+PORT switches = "", DIR = I, VEC = [3:0]
 
 END

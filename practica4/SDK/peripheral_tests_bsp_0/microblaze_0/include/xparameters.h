@@ -12,15 +12,15 @@
 *
 *******************************************************************/
 
-#define STDIN_BASEADDRESS 0x84000000
-#define STDOUT_BASEADDRESS 0x84000000
+#define STDIN_BASEADDRESS 0x00028000
+#define STDOUT_BASEADDRESS 0x00028000
 
 /******************************************************************/
 
 
 /* Definitions for peripheral NRVGAP_0 */
-#define XPAR_NRVGAP_0_BASEADDR 0xCAC00000
-#define XPAR_NRVGAP_0_HIGHADDR 0xCAC07FFF
+#define XPAR_NRVGAP_0_BASEADDR 0x00038000
+#define XPAR_NRVGAP_0_HIGHADDR 0x0003FFFF
 
 
 /******************************************************************/
@@ -64,33 +64,12 @@
 
 /******************************************************************/
 
-/* Definitions for driver GPIO */
-#define XPAR_XGPIO_NUM_INSTANCES 2
-
-/* Definitions for peripheral XPS_GPIO_0 */
-#define XPAR_XPS_GPIO_0_BASEADDR 0x81420000
-#define XPAR_XPS_GPIO_0_HIGHADDR 0x81427FFF
-#define XPAR_XPS_GPIO_0_DEVICE_ID 0
-#define XPAR_XPS_GPIO_0_INTERRUPT_PRESENT 0
-#define XPAR_XPS_GPIO_0_IS_DUAL 0
-
-
-/* Definitions for peripheral XPS_GPIO_1 */
-#define XPAR_XPS_GPIO_1_BASEADDR 0x81400000
-#define XPAR_XPS_GPIO_1_HIGHADDR 0x81407FFF
-#define XPAR_XPS_GPIO_1_DEVICE_ID 1
-#define XPAR_XPS_GPIO_1_INTERRUPT_PRESENT 0
-#define XPAR_XPS_GPIO_1_IS_DUAL 0
-
-
-/******************************************************************/
-
 /* Definitions for driver UARTLITE */
 #define XPAR_XUARTLITE_NUM_INSTANCES 1
 
 /* Definitions for peripheral XPS_UARTLITE_0 */
-#define XPAR_XPS_UARTLITE_0_BASEADDR 0x84000000
-#define XPAR_XPS_UARTLITE_0_HIGHADDR 0x84007FFF
+#define XPAR_XPS_UARTLITE_0_BASEADDR 0x00028000
+#define XPAR_XPS_UARTLITE_0_HIGHADDR 0x0002FFFF
 #define XPAR_XPS_UARTLITE_0_DEVICE_ID 0
 #define XPAR_XPS_UARTLITE_0_BAUDRATE 9600
 #define XPAR_XPS_UARTLITE_0_USE_PARITY 0
@@ -102,8 +81,8 @@
 
 /* Canonical definitions for peripheral XPS_UARTLITE_0 */
 #define XPAR_UARTLITE_0_DEVICE_ID XPAR_XPS_UARTLITE_0_DEVICE_ID
-#define XPAR_UARTLITE_0_BASEADDR 0x84000000
-#define XPAR_UARTLITE_0_HIGHADDR 0x84007FFF
+#define XPAR_UARTLITE_0_BASEADDR 0x00028000
+#define XPAR_UARTLITE_0_HIGHADDR 0x0002FFFF
 #define XPAR_UARTLITE_0_BAUDRATE 9600
 #define XPAR_UARTLITE_0_USE_PARITY 0
 #define XPAR_UARTLITE_0_ODD_PARITY 1

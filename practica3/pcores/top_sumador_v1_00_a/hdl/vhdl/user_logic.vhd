@@ -137,8 +137,7 @@ architecture IMP of user_logic is
     );
   end component;
   --USER signal declarations added here, as needed for user logic
-  signal my_counter_reset               : std_logic;
-  signal my_counter                     : std_logic_vector(7 downto 0);
+  signal my_counter                     : std_logic_vector(7 downto 0) := (others => '0');
   signal Clk_div                        : std_logic;
   signal my_leds                        : std_logic_vector(7 downto 0);
 
@@ -194,7 +193,6 @@ begin
         slv_reg2 <= (others => '0');
         slv_reg3 <= (others => '0');
       else
-		  my_counter_reset <= '0';
         case slv_reg_write_sel is
           when "1000" =>
             for byte_index in 0 to (C_SLV_DWIDTH/8)-1 loop
@@ -215,9 +213,6 @@ begin
               end if;
             end loop;
           when "0001" =>
-		       -- my_counter_reset se establece '1' si my_counter tiene que reiniciarse a 0
-				 -- lo cual sucede si se ha asignado un resultado a slv_reg3
-				 my_counter_reset <= '1';
              if (slv_reg0(31) = '0') then
 				   slv_reg3 <= slv_reg1 + slv_reg2;
 				 else
@@ -274,16 +269,14 @@ begin
   end process SW2LEDS;
   
   --Proceso para el contador desde 0 hasta el valor de reg3 en el apartado C
-  COUNTERLEDS : process( Clk_div, my_counter_reset ) is
+  COUNTERLEDS : process( Clk_div ) is
   begin
     if Clk_div'event and Clk_div = '1' then
-      if my_counter_reset = '1' then
-        my_counter <= (others => '0');
+      if (my_counter < slv_reg3(24 to 31)) then
+        my_counter <= my_counter + 1;
 		else
-		  if (my_counter < slv_reg3(24 to 31)) then
-		    my_counter <= my_counter + 1;
-		  end if;
-		end if;
+		  my_counter <= (others => '0');
+      end if;
     end if;
   end process COUNTERLEDS;
   

@@ -1,7 +1,7 @@
 Release 14.1 par P.15xf (nt)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-CJRIPA-PC::  Thu Nov 24 00:27:40 2022
+CJRIPA-PC::  Mon Nov 28 23:52:47 2022
 
 par -w -ol high practica3_map.ncd practica3.ncd practica3.pcf 
 
@@ -32,7 +32,7 @@ Device Utilization Summary:
 
    Number of MULT18X18s                      3 out of 24     12%
    Number of RAMB16s                        16 out of 24     66%
-   Number of Slices                       1601 out of 7680   20%
+   Number of Slices                       1567 out of 7680   20%
       Number of SLICEMs                    236 out of 3840    6%
 
 
@@ -116,30 +116,32 @@ WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<31> has no load.  PAR will 
 Starting Router
 
 
-Phase  1  : 13229 unrouted;      REAL time: 6 secs 
+Phase  1  : 13172 unrouted;      REAL time: 5 secs 
 
-Phase  2  : 11685 unrouted;      REAL time: 6 secs 
+Phase  2  : 11664 unrouted;      REAL time: 6 secs 
 
-Phase  3  : 3659 unrouted;      REAL time: 8 secs 
+Phase  3  : 3891 unrouted;      REAL time: 8 secs 
 
-Phase  4  : 4100 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
+Phase  4  : 4118 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 31 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 23 secs 
 
 Updating file: practica3.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 33 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 25 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 22 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 17 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 23 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 18 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 24 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 18 secs 
+
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 19 secs 
 WARNING:Route:455 - CLK Net:top_sumador_0/top_sumador_0/USER_LOGIC_I/mi_divisor/clk_aux may have excessive skew because 
-      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+      4 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 
-Total REAL time to Router completion: 1 mins 24 secs 
-Total CPU time to Router completion: 1 mins 22 secs 
+Total REAL time to Router completion: 1 mins 19 secs 
+Total CPU time to Router completion: 1 mins 17 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -157,11 +159,11 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|       Clk_pin_BUFGP |      BUFGMUX3| No   | 1284 |  0.477     |  1.090      |
+|       Clk_pin_BUFGP |      BUFGMUX3| No   | 1266 |  0.505     |  1.118      |
 +---------------------+--------------+------+------+------------+-------------+
 |top_sumador_0/top_su |              |      |      |            |             |
 |mador_0/USER_LOGIC_I |              |      |      |            |             |
-| /mi_divisor/clk_aux |         Local|      |    5 |  0.002     |  2.012      |
+| /mi_divisor/clk_aux |         Local|      |    5 |  0.601     |  1.554      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -181,11 +183,11 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net Clk | SETUP       |         N/A|    10.612ns|     N/A|           0
-  _pin_BUFGP                                | HOLD        |     0.686ns|            |       0|           0
+  Autotimespec constraint for clock net Clk | SETUP       |         N/A|    10.320ns|     N/A|           0
+  _pin_BUFGP                                | HOLD        |     0.719ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net top | SETUP       |         N/A|     4.490ns|     N/A|           0
-  _sumador_0/top_sumador_0/USER_LOGIC_I/mi_ | HOLD        |     1.173ns|            |       0|           0
+  Autotimespec constraint for clock net top | SETUP       |         N/A|     5.462ns|     N/A|           0
+  _sumador_0/top_sumador_0/USER_LOGIC_I/mi_ | HOLD        |     1.165ns|            |       0|           0
   divisor/clk_aux                           |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
 
@@ -204,10 +206,10 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 51 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 1 mins 27 secs 
-Total CPU time to PAR completion: 1 mins 24 secs 
+Total REAL time to PAR completion: 1 mins 22 secs 
+Total CPU time to PAR completion: 1 mins 19 secs 
 
-Peak Memory Usage:  264 MB
+Peak Memory Usage:  262 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

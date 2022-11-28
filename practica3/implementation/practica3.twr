@@ -45,7 +45,7 @@ Setup/Hold to clock Clk_pin
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
 RX_pin      |    3.342(R)|   -1.221(R)|Clk_pin_BUFGP     |   0.000|
-Rst_pin     |    3.956(R)|    0.864(R)|Clk_pin_BUFGP     |   0.000|
+Rst_pin     |    3.336(R)|   -0.018(R)|Clk_pin_BUFGP     |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock Clk_pin to Pad
@@ -54,14 +54,14 @@ Clock Clk_pin to Pad
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
 TX_pin      |    6.523(R)|Clk_pin_BUFGP     |   0.000|
-leds<0>     |   12.237(R)|Clk_pin_BUFGP     |   0.000|
-leds<1>     |   13.561(R)|Clk_pin_BUFGP     |   0.000|
-leds<2>     |   12.555(R)|Clk_pin_BUFGP     |   0.000|
-leds<3>     |   12.452(R)|Clk_pin_BUFGP     |   0.000|
-leds<4>     |   13.590(R)|Clk_pin_BUFGP     |   0.000|
-leds<5>     |   11.863(R)|Clk_pin_BUFGP     |   0.000|
-leds<6>     |   13.083(R)|Clk_pin_BUFGP     |   0.000|
-leds<7>     |   11.985(R)|Clk_pin_BUFGP     |   0.000|
+leds<0>     |   12.751(R)|Clk_pin_BUFGP     |   0.000|
+leds<1>     |   11.405(R)|Clk_pin_BUFGP     |   0.000|
+leds<2>     |   12.400(R)|Clk_pin_BUFGP     |   0.000|
+leds<3>     |   12.384(R)|Clk_pin_BUFGP     |   0.000|
+leds<4>     |   12.743(R)|Clk_pin_BUFGP     |   0.000|
+leds<5>     |   13.397(R)|Clk_pin_BUFGP     |   0.000|
+leds<6>     |   11.982(R)|Clk_pin_BUFGP     |   0.000|
+leds<7>     |   12.515(R)|Clk_pin_BUFGP     |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock Clk_pin
@@ -69,41 +69,41 @@ Clock to Setup on destination clock Clk_pin
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clk_pin        |   10.612|         |         |         |
+Clk_pin        |   10.320|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-switches<0>    |leds<0>        |   11.136|
-switches<0>    |leds<1>        |   12.034|
-switches<0>    |leds<2>        |   12.677|
-switches<0>    |leds<3>        |   12.282|
-switches<0>    |leds<4>        |   12.449|
-switches<0>    |leds<5>        |   10.918|
-switches<0>    |leds<6>        |   11.358|
-switches<0>    |leds<7>        |   11.671|
-switches<2>    |leds<0>        |   12.635|
-switches<2>    |leds<1>        |   13.151|
-switches<2>    |leds<2>        |   13.662|
-switches<2>    |leds<3>        |   13.000|
-switches<2>    |leds<4>        |   14.079|
-switches<2>    |leds<5>        |   13.273|
-switches<2>    |leds<6>        |   13.236|
-switches<2>    |leds<7>        |   13.330|
-switches<3>    |leds<0>        |   12.062|
-switches<3>    |leds<1>        |   13.580|
-switches<3>    |leds<2>        |   14.061|
-switches<3>    |leds<3>        |   13.675|
-switches<3>    |leds<4>        |   13.928|
-switches<3>    |leds<5>        |   13.001|
-switches<3>    |leds<6>        |   13.779|
-switches<3>    |leds<7>        |   13.140|
+switches<0>    |leds<0>        |   10.706|
+switches<0>    |leds<1>        |   11.209|
+switches<0>    |leds<2>        |   10.860|
+switches<0>    |leds<3>        |   11.262|
+switches<0>    |leds<4>        |   11.757|
+switches<0>    |leds<5>        |   11.589|
+switches<0>    |leds<6>        |   11.381|
+switches<0>    |leds<7>        |   12.694|
+switches<2>    |leds<0>        |   12.365|
+switches<2>    |leds<1>        |   10.923|
+switches<2>    |leds<2>        |   11.837|
+switches<2>    |leds<3>        |   11.796|
+switches<2>    |leds<4>        |   12.549|
+switches<2>    |leds<5>        |   13.023|
+switches<2>    |leds<6>        |   12.607|
+switches<2>    |leds<7>        |   13.041|
+switches<3>    |leds<0>        |   11.681|
+switches<3>    |leds<1>        |   11.322|
+switches<3>    |leds<2>        |   11.828|
+switches<3>    |leds<3>        |   11.869|
+switches<3>    |leds<4>        |   12.402|
+switches<3>    |leds<5>        |   13.002|
+switches<3>    |leds<6>        |   11.498|
+switches<3>    |leds<7>        |   12.205|
 ---------------+---------------+---------+
 
 
-Analysis completed Thu Nov 24 00:29:12 2022 
+Analysis completed Mon Nov 28 23:54:16 2022 
 --------------------------------------------------------------------------------
 
 Trace Settings:

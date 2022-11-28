@@ -4,21 +4,21 @@ EN top_sumador_v1_00_a/top_sumador 1668556409 \
       FL //vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/top_sumador.vhd \
       PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
       PB ieee/STD_LOGIC_UNSIGNED 1335251625 LB proc_common_v3_00_a \
-      PB proc_common_v3_00_a/proc_common_pkg 1669241497 \
+      PB proc_common_v3_00_a/proc_common_pkg 1669675734 \
       PB proc_common_v3_00_a/ipif_pkg 1668556398 LB plbv46_slave_single_v1_01_a \
       EN plbv46_slave_single_v1_01_a/plbv46_slave_single 1668556405 \
-      LB top_sumador_v1_00_a EN top_sumador_v1_00_a/user_logic 1669241500
+      LB top_sumador_v1_00_a EN top_sumador_v1_00_a/user_logic 1669675737
 AR top_sumador_v1_00_a/top_sumador/IMP 1668556410 \
       FL //vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/top_sumador.vhd \
       EN top_sumador_v1_00_a/top_sumador 1668556409 \
       CP plbv46_slave_single_v1_01_a/plbv46_slave_single \
       CP top_sumador_v1_00_a/user_logic
-FL //vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/user_logic.vhd 2022/11/23.23:11:14 P.15xf
-EN top_sumador_v1_00_a/user_logic 1669241500 \
+FL //vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/user_logic.vhd 2022/11/28.23:48:48 P.15xf
+EN top_sumador_v1_00_a/user_logic 1669675737 \
       FL //vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/user_logic.vhd \
       PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
       PB ieee/STD_LOGIC_UNSIGNED 1335251625 LB proc_common_v3_00_a \
-      PB proc_common_v3_00_a/proc_common_pkg 1669241497
-AR top_sumador_v1_00_a/user_logic/IMP 1669241501 \
+      PB proc_common_v3_00_a/proc_common_pkg 1669675734
+AR top_sumador_v1_00_a/user_logic/IMP 1669675738 \
       FL //vboxsvr/se/ws/practica3/pcores/top_sumador_v1_00_a/hdl/vhdl/user_logic.vhd \
-      EN top_sumador_v1_00_a/user_logic 1669241500 CP divisor1
+      EN top_sumador_v1_00_a/user_logic 1669675737 CP divisor1

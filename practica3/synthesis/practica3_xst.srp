@@ -4,7 +4,7 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> 
 TABLE OF CONTENTS
@@ -551,9 +551,9 @@ Design Statistics
 # IOs                              : 16
 
 Cell Usage :
-# BELS                             : 3272
+# BELS                             : 3271
 #      GND                         : 22
-#      INV                         : 28
+#      INV                         : 27
 #      LUT1                        : 102
 #      LUT2                        : 213
 #      LUT2_D                      : 12
@@ -570,12 +570,12 @@ Cell Usage :
 #      MUXF5                       : 344
 #      VCC                         : 5
 #      XORCY                       : 212
-# FlipFlops/Latches                : 1954
+# FlipFlops/Latches                : 1953
 #      FD                          : 5
 #      FDC                         : 27
-#      FDE                         : 201
-#      FDR                         : 772
-#      FDRE                        : 856
+#      FDE                         : 200
+#      FDR                         : 780
+#      FDRE                        : 848
 #      FDRS                        : 13
 #      FDRSE                       : 3
 #      FDS                         : 33
@@ -599,10 +599,10 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-5 
 
- Number of Slices:                     1844  out of   7680    24%  
- Number of Slice Flip Flops:           1954  out of  15360    12%  
- Number of 4 input LUTs:               2773  out of  15360    18%  
-    Number used as logic:              2305
+ Number of Slices:                     1843  out of   7680    23%  
+ Number of Slice Flip Flops:           1953  out of  15360    12%  
+ Number of 4 input LUTs:               2772  out of  15360    18%  
+    Number used as logic:              2304
     Number used as Shift registers:      84
     Number used as RAMs:                384
  Number of IOs:                          16
@@ -632,7 +632,7 @@ Clock Information:
 -----------------------------------------------------------+--------------------------------------------------------------+-------+
 Clock Signal                                               | Clock buffer(FF name)                                        | Load  |
 -----------------------------------------------------------+--------------------------------------------------------------+-------+
-Clk_pin                                                    | BUFGP                                                        | 2241  |
+Clk_pin                                                    | BUFGP                                                        | 2240  |
 N0                                                         | NONE(bram_block_0/bram_block_0/ramb16_s2_s2_0/ramb16_s2_s2_0)| 16    |
 top_sumador_0/top_sumador_0/USER_LOGIC_I/mi_divisor/clk_aux| NONE(top_sumador_0/top_sumador_0/USER_LOGIC_I/my_counter_7)  | 8     |
 -----------------------------------------------------------+--------------------------------------------------------------+-------+
@@ -664,7 +664,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Clk_pin'
   Clock period: 11.888ns (frequency: 84.119MHz)
-  Total number of paths / destination ports: 181027 / 7053
+  Total number of paths / destination ports: 181022 / 7051
 -------------------------------------------------------------------------
 Delay:               11.888ns (Levels of Logic = 6)
   Source:            microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers_Mux.Instruction_Prefetch_Mux[7].Gen_Instr_DFF (FF)
@@ -690,10 +690,10 @@ Delay:               11.888ns (Levels of Logic = 6)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'top_sumador_0/top_sumador_0/USER_LOGIC_I/mi_divisor/clk_aux'
-  Clock period: 5.683ns (frequency: 175.968MHz)
+  Clock period: 4.997ns (frequency: 200.120MHz)
   Total number of paths / destination ports: 164 / 16
 -------------------------------------------------------------------------
-Delay:               5.683ns (Levels of Logic = 10)
+Delay:               4.997ns (Levels of Logic = 9)
   Source:            top_sumador_0/top_sumador_0/USER_LOGIC_I/my_counter_0 (FF)
   Destination:       top_sumador_0/top_sumador_0/USER_LOGIC_I/my_counter_7 (FF)
   Source Clock:      top_sumador_0/top_sumador_0/USER_LOGIC_I/mi_divisor/clk_aux rising
@@ -703,8 +703,8 @@ Delay:               5.683ns (Levels of Logic = 10)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             3   0.626   0.941  top_sumador_0/USER_LOGIC_I/my_counter_0 (top_sumador_0/USER_LOGIC_I/my_counter<0>)
-     LUT2:I1->O            1   0.479   0.000  top_sumador_0/USER_LOGIC_I/Mcompar_my_counter_cmp_lt0000_lut<0> (top_sumador_0/USER_LOGIC_I/Mcompar_my_counter_cmp_lt0000_lut<0>)
+     FDR:C->Q              3   0.626   1.066  top_sumador_0/USER_LOGIC_I/my_counter_0 (top_sumador_0/USER_LOGIC_I/my_counter<0>)
+     LUT2:I0->O            1   0.479   0.000  top_sumador_0/USER_LOGIC_I/Mcompar_my_counter_cmp_lt0000_lut<0> (top_sumador_0/USER_LOGIC_I/Mcompar_my_counter_cmp_lt0000_lut<0>)
      MUXCY:S->O            1   0.435   0.000  top_sumador_0/USER_LOGIC_I/Mcompar_my_counter_cmp_lt0000_cy<0> (top_sumador_0/USER_LOGIC_I/Mcompar_my_counter_cmp_lt0000_cy<0>)
      MUXCY:CI->O           1   0.056   0.000  top_sumador_0/USER_LOGIC_I/Mcompar_my_counter_cmp_lt0000_cy<1> (top_sumador_0/USER_LOGIC_I/Mcompar_my_counter_cmp_lt0000_cy<1>)
      MUXCY:CI->O           1   0.056   0.000  top_sumador_0/USER_LOGIC_I/Mcompar_my_counter_cmp_lt0000_cy<2> (top_sumador_0/USER_LOGIC_I/Mcompar_my_counter_cmp_lt0000_cy<2>)
@@ -712,12 +712,11 @@ Delay:               5.683ns (Levels of Logic = 10)
      MUXCY:CI->O           1   0.056   0.000  top_sumador_0/USER_LOGIC_I/Mcompar_my_counter_cmp_lt0000_cy<4> (top_sumador_0/USER_LOGIC_I/Mcompar_my_counter_cmp_lt0000_cy<4>)
      MUXCY:CI->O           1   0.056   0.000  top_sumador_0/USER_LOGIC_I/Mcompar_my_counter_cmp_lt0000_cy<5> (top_sumador_0/USER_LOGIC_I/Mcompar_my_counter_cmp_lt0000_cy<5>)
      MUXCY:CI->O           1   0.056   0.000  top_sumador_0/USER_LOGIC_I/Mcompar_my_counter_cmp_lt0000_cy<6> (top_sumador_0/USER_LOGIC_I/Mcompar_my_counter_cmp_lt0000_cy<6>)
-     MUXCY:CI->O           1   0.265   0.681  top_sumador_0/USER_LOGIC_I/Mcompar_my_counter_cmp_lt0000_cy<7> (top_sumador_0/USER_LOGIC_I/Mcompar_my_counter_cmp_lt0000_cy<7>)
-     INV:I->O              8   0.479   0.921  top_sumador_0/USER_LOGIC_I/Mcompar_my_counter_cmp_lt0000_cy<7>_inv_INV_0 (top_sumador_0/USER_LOGIC_I/my_counter_cmp_lt0000)
-     FDRE:CE                   0.524          top_sumador_0/USER_LOGIC_I/my_counter_0
+     MUXCY:CI->O           8   0.246   0.921  top_sumador_0/USER_LOGIC_I/Mcompar_my_counter_cmp_lt0000_cy<7> (top_sumador_0/USER_LOGIC_I/Mcompar_my_counter_cmp_lt0000_cy<7>)
+     FDR:R                     0.892          top_sumador_0/USER_LOGIC_I/my_counter_0
     ----------------------------------------
-    Total                      5.683ns (3.141ns logic, 2.542ns route)
-                                       (55.3% logic, 44.7% route)
+    Total                      4.997ns (3.011ns logic, 1.987ns route)
+                                       (60.2% logic, 39.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk_pin'
@@ -774,7 +773,7 @@ Offset:              7.525ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             3   0.626   0.830  top_sumador_0/USER_LOGIC_I/my_counter_7 (top_sumador_0/USER_LOGIC_I/my_counter<7>)
+     FDR:C->Q              3   0.626   0.830  top_sumador_0/USER_LOGIC_I/my_counter_7 (top_sumador_0/USER_LOGIC_I/my_counter<7>)
      LUT4:I2->O            1   0.479   0.681  top_sumador_0/USER_LOGIC_I/my_leds<7>58 (leds<7>)
      end scope: 'top_sumador_0'
      OBUF:I->O                 4.909          leds_7_OBUF (leds<7>)
@@ -807,12 +806,12 @@ Delay:               9.460ns (Levels of Logic = 5)
 =========================================================================
 
 
-Total REAL time to Xst completion: 93.00 secs
-Total CPU time to Xst completion: 93.03 secs
+Total REAL time to Xst completion: 100.00 secs
+Total CPU time to Xst completion: 99.48 secs
  
 --> 
 
-Total memory usage is 266060 kilobytes
+Total memory usage is 235468 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  349 (   0 filtered)

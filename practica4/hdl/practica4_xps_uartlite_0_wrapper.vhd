@@ -139,8 +139,8 @@ begin
     generic map (
       C_FAMILY => "spartan3",
       C_SPLB_CLK_FREQ_HZ => 50000000,
-      C_BASEADDR => X"00028000",
-      C_HIGHADDR => X"0002ffff",
+      C_BASEADDR => X"84000000",
+      C_HIGHADDR => X"8400ffff",
       C_SPLB_AWIDTH => 32,
       C_SPLB_DWIDTH => 32,
       C_SPLB_P2P => 0,

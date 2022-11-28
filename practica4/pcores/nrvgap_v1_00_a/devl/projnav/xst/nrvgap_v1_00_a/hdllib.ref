@@ -1,4 +1,4 @@
-EN nrvgap NULL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/nrvgap.vhd sub00/vhpl02 1669247605
-AR user_logic imp //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/user_logic.vhd sub00/vhpl01 1669247584
-EN user_logic NULL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/user_logic.vhd sub00/vhpl00 1669247583
-AR nrvgap imp //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/nrvgap.vhd sub00/vhpl03 1669247606
+EN nrvgap NULL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/nrvgap.vhd sub00/vhpl02 1669677737
+AR user_logic imp //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/user_logic.vhd sub00/vhpl01 1669677698
+EN user_logic NULL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/user_logic.vhd sub00/vhpl00 1669677697
+AR nrvgap imp //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/nrvgap.vhd sub00/vhpl03 1669677738

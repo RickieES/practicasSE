@@ -1,7 +1,7 @@
 Release 14.1 par P.15xf (nt)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-CJRIPA-PC::  Thu Nov 24 01:03:57 2022
+CJRIPA-PC::  Tue Nov 29 00:26:10 2022
 
 par -w -ol high practica4_map.ncd practica4.ncd practica4.pcf 
 
@@ -27,7 +27,7 @@ Device Utilization Summary:
 
    Number of MULT18X18s                      3 out of 24     12%
    Number of RAMB16s                        17 out of 24     70%
-   Number of Slices                       1500 out of 7680   19%
+   Number of Slices                       1498 out of 7680   19%
       Number of SLICEMs                    308 out of 3840    8%
 
 
@@ -35,8 +35,8 @@ Device Utilization Summary:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 6 secs 
-Finished initial Timing Analysis.  REAL time: 6 secs 
+Starting initial Timing Analysis.  REAL time: 5 secs 
+Finished initial Timing Analysis.  REAL time: 5 secs 
 
 WARNING:Par:288 - The signal xps_bram_if_cntlr_0_PORTA_BRAM_Addr<0> has no load.  PAR will not attempt to route this
    signal.
@@ -111,28 +111,28 @@ WARNING:Par:288 - The signal bram_block_0/BRAM_Din_B<31> has no load.  PAR will 
 Starting Router
 
 
-Phase  1  : 13630 unrouted;      REAL time: 8 secs 
+Phase  1  : 13616 unrouted;      REAL time: 5 secs 
 
-Phase  2  : 12135 unrouted;      REAL time: 9 secs 
+Phase  2  : 12114 unrouted;      REAL time: 6 secs 
 
-Phase  3  : 3805 unrouted;      REAL time: 12 secs 
+Phase  3  : 3874 unrouted;      REAL time: 8 secs 
 
-Phase  4  : 3805 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 13 secs 
+Phase  4  : 3874 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 9 secs 
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 22 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 15 secs 
 
 Updating file: practica4.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 27 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 17 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 28 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 17 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 30 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 18 secs 
 WARNING:Route:455 - CLK Net:hsyncb_pin_OBUF may have excessive skew because 
       0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 
-Total REAL time to Router completion: 30 secs 
-Total CPU time to Router completion: 28 secs 
+Total REAL time to Router completion: 18 secs 
+Total CPU time to Router completion: 18 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -150,12 +150,12 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|       Clk_pin_BUFGP |      BUFGMUX3| No   | 1178 |  0.442     |  1.061      |
+|       Clk_pin_BUFGP |      BUFGMUX3| No   | 1173 |  0.411     |  1.023      |
 +---------------------+--------------+------+------+------------+-------------+
 |nrvgap_0/nrvgap_0/US |              |      |      |            |             |
-|    ER_LOGIC_I/clock |      BUFGMUX4| No   |   78 |  0.264     |  0.925      |
+|    ER_LOGIC_I/clock |      BUFGMUX4| No   |   78 |  0.228     |  0.843      |
 +---------------------+--------------+------+------+------------+-------------+
-|     hsyncb_pin_OBUF |         Local|      |    7 |  0.099     |  2.888      |
+|     hsyncb_pin_OBUF |         Local|      |    7 |  0.567     |  3.119      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -175,8 +175,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  TS_Clk_pin = PERIOD TIMEGRP "Clk_pin" 20  | SETUP       |     5.575ns|    14.425ns|       0|           0
-  ns HIGH 50%                               | HOLD        |     0.656ns|            |       0|           0
+  TS_Clk_pin = PERIOD TIMEGRP "Clk_pin" 20  | SETUP       |     6.031ns|    13.969ns|       0|           0
+  ns HIGH 50%                               | HOLD        |     0.691ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -189,10 +189,10 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 51 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 35 secs 
-Total CPU time to PAR completion: 32 secs 
+Total REAL time to PAR completion: 21 secs 
+Total CPU time to PAR completion: 19 secs 
 
-Peak Memory Usage:  260 MB
+Peak Memory Usage:  241 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

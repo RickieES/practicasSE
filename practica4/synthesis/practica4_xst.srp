@@ -4,7 +4,7 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.22 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> 
 TABLE OF CONTENTS
@@ -420,7 +420,7 @@ WARNING:Xst:753 - "//vboxsvr/se/ws/practica4/hdl/practica4.vhd" line 1638: Uncon
 WARNING:Xst:753 - "//vboxsvr/se/ws/practica4/hdl/practica4.vhd" line 1638: Unconnected output port 'PLB_SwrDAck' of component 'practica4_plb_v46_0_wrapper'.
 WARNING:Xst:753 - "//vboxsvr/se/ws/practica4/hdl/practica4.vhd" line 1638: Unconnected output port 'Bus_Error_Det' of component 'practica4_plb_v46_0_wrapper'.
 WARNING:Xst:753 - "//vboxsvr/se/ws/practica4/hdl/practica4.vhd" line 1792: Unconnected output port 'BRAM_Din_B' of component 'practica4_bram_block_0_wrapper'.
-WARNING:Xst:753 - "//vboxsvr/se/ws/practica4/hdl/practica4.vhd" line 1810: Unconnected output port 'Interrupt' of component 'practica4_xps_uartlite_0_wrapper'.
+WARNING:Xst:753 - "//vboxsvr/se/ws/practica4/hdl/practica4.vhd" line 1862: Unconnected output port 'Interrupt' of component 'practica4_xps_uartlite_0_wrapper'.
 Entity <practica4> analyzed. Unit <practica4> generated.
 
 
@@ -449,14 +449,14 @@ Reading core <../implementation/practica4_microblaze_0_wrapper.ngc>.
 Reading core <../implementation/practica4_plb_v46_0_wrapper.ngc>.
 Reading core <../implementation/practica4_xps_bram_if_cntlr_0_wrapper.ngc>.
 Reading core <../implementation/practica4_bram_block_0_wrapper.ngc>.
-Reading core <../implementation/practica4_xps_uartlite_0_wrapper.ngc>.
 Reading core <../implementation/practica4_nrvgap_0_wrapper.ngc>.
+Reading core <../implementation/practica4_xps_uartlite_0_wrapper.ngc>.
 Loading core <practica4_microblaze_0_wrapper> for timing and area information for instance <microblaze_0>.
 Loading core <practica4_plb_v46_0_wrapper> for timing and area information for instance <plb_v46_0>.
 Loading core <practica4_xps_bram_if_cntlr_0_wrapper> for timing and area information for instance <xps_bram_if_cntlr_0>.
 Loading core <practica4_bram_block_0_wrapper> for timing and area information for instance <bram_block_0>.
-Loading core <practica4_xps_uartlite_0_wrapper> for timing and area information for instance <xps_uartlite_0>.
 Loading core <practica4_nrvgap_0_wrapper> for timing and area information for instance <nrvgap_0>.
+Loading core <practica4_xps_uartlite_0_wrapper> for timing and area information for instance <xps_uartlite_0>.
 
 =========================================================================
 Advanced HDL Synthesis Report
@@ -544,19 +544,19 @@ Design Statistics
 # IOs                              : 21
 
 Cell Usage :
-# BELS                             : 3187
+# BELS                             : 3188
 #      GND                         : 23
 #      INV                         : 28
 #      LUT1                        : 69
-#      LUT2                        : 220
+#      LUT2                        : 221
 #      LUT2_D                      : 12
-#      LUT2_L                      : 22
-#      LUT3                        : 852
-#      LUT3_D                      : 28
+#      LUT2_L                      : 21
+#      LUT3                        : 853
+#      LUT3_D                      : 27
 #      LUT3_L                      : 29
 #      LUT4                        : 954
-#      LUT4_D                      : 27
-#      LUT4_L                      : 37
+#      LUT4_D                      : 26
+#      LUT4_L                      : 39
 #      MULT_AND                    : 34
 #      MUXCY                       : 155
 #      MUXCY_L                     : 161
@@ -596,10 +596,10 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-5 
 
- Number of Slices:                     1819  out of   7680    23%  
+ Number of Slices:                     1821  out of   7680    23%  
  Number of Slice Flip Flops:           1903  out of  15360    12%  
- Number of 4 input LUTs:               2890  out of  15360    18%  
-    Number used as logic:              2278
+ Number of 4 input LUTs:               2891  out of  15360    18%  
+    Number used as logic:              2279
     Number used as Shift registers:      84
     Number used as RAMs:                528
  Number of IOs:                          21
@@ -641,7 +641,7 @@ Asynchronous Control Signals Information:
 ---------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 Control Signal                                                                                                                                     | Buffer(FF name)                                                                                                                                      | Load  |
 ---------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
-plb_v46_0/SPLB_Rst<2>(plb_v46_0/plb_v46_0/GEN_SPLB_RST[2].I_SPLB_RST:Q)                                                                            | NONE(nrvgap_0/nrvgap_0/USER_LOGIC_I/cuenta_0)                                                                                                        | 25    |
+plb_v46_0/SPLB_Rst<1>(plb_v46_0/plb_v46_0/GEN_SPLB_RST[1].I_SPLB_RST:Q)                                                                            | NONE(nrvgap_0/nrvgap_0/USER_LOGIC_I/cuenta_0)                                                                                                        | 25    |
 microblaze_0/Trace_EX_PipeRun(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Use_MuxCy[2].OF_Piperun_Stage/Using_FPGA.MUXCY_I:LO)| NONE(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_MULT18x18_Architecture.Using_FPGA.MULT18x18S_AD)| 3     |
 microblaze_0/microblaze_0/MicroBlaze_Core_I/sync_reset_1(microblaze_0/microblaze_0/MicroBlaze_Core_I/sync_reset_1:Q)                               | NONE(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_MULT18x18_Architecture.Using_FPGA.MULT18x18S_AD)| 3     |
 ---------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
@@ -839,12 +839,12 @@ Offset:              11.756ns (Levels of Logic = 7)
 =========================================================================
 
 
-Total REAL time to Xst completion: 112.00 secs
-Total CPU time to Xst completion: 112.66 secs
+Total REAL time to Xst completion: 98.00 secs
+Total CPU time to Xst completion: 98.39 secs
  
 --> 
 
-Total memory usage is 235340 kilobytes
+Total memory usage is 236300 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  349 (   0 filtered)

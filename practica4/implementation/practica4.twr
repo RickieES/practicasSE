@@ -38,7 +38,7 @@ For more information, see Period Analysis in the Timing Closure User Guide (UG61
 
  147778 paths analyzed, 8114 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is  14.425ns.
+ Minimum period is  13.969ns.
 --------------------------------------------------------------------------------
 
 
@@ -54,7 +54,7 @@ Clock to Setup on destination clock Clk_pin
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clk_pin        |   14.425|         |         |         |
+Clk_pin        |   13.969|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -63,13 +63,13 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 147778 paths, 0 nets, and 12031 connections
+Constraints cover 147778 paths, 0 nets, and 12013 connections
 
 Design statistics:
-   Minimum period:  14.425ns   (Maximum frequency:  69.324MHz)
+   Minimum period:  13.969ns   (Maximum frequency:  71.587MHz)
 
 
-Analysis completed Thu Nov 24 01:04:42 2022 
+Analysis completed Tue Nov 29 00:26:38 2022 
 --------------------------------------------------------------------------------
 
 Trace Settings:

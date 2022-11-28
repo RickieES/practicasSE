@@ -5,10 +5,10 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="LIT" num="243" delta="new" >Logical network <arg fmt="%s" index="1">mover_derecha_pin_IBUF</arg> has no load.
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">mover_derecha_pin_IBUF</arg> has no load.
 </msg>
 
-<msg type="info" file="LIT" num="243" delta="new" >Logical network <arg fmt="%s" index="1">mover_izquierda_pin_IBUF</arg> has no load.
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">mover_izquierda_pin_IBUF</arg> has no load.
 </msg>
 
 <msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">plb_v46_0_PLB_MBusy&lt;0&gt;</arg> has no load.
@@ -263,16 +263,16 @@
 <msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">plb_v46_0_PLB_wrPrim&lt;0&gt;</arg> has no load.
 </msg>
 
-<msg type="info" file="LIT" num="243" delta="new" >Logical network <arg fmt="%s" index="1">switches_0_IBUF</arg> has no load.
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">switches_0_IBUF</arg> has no load.
 </msg>
 
-<msg type="info" file="LIT" num="243" delta="new" >Logical network <arg fmt="%s" index="1">switches_1_IBUF</arg> has no load.
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">switches_1_IBUF</arg> has no load.
 </msg>
 
-<msg type="info" file="LIT" num="243" delta="new" >Logical network <arg fmt="%s" index="1">switches_2_IBUF</arg> has no load.
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">switches_2_IBUF</arg> has no load.
 </msg>
 
-<msg type="info" file="LIT" num="243" delta="new" >Logical network <arg fmt="%s" index="1">switches_3_IBUF</arg> has no load.
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">switches_3_IBUF</arg> has no load.
 </msg>
 
 <msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">xps_bram_if_cntlr_0_PORTA_BRAM_Addr&lt;0&gt;</arg> has no load.
@@ -1781,22 +1781,22 @@
 <msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">plb_v46_0/Bus_Error_Det</arg> has no load.
 </msg>
 
-<msg type="info" file="LIT" num="243" delta="new" >Logical network <arg fmt="%s" index="1">plb_v46_0/PLB_SrdBTerm</arg> has no load.
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">plb_v46_0/PLB_SrdBTerm</arg> has no load.
 </msg>
 
-<msg type="info" file="LIT" num="243" delta="new" >Logical network <arg fmt="%s" index="1">plb_v46_0/PLB_SrdDAck</arg> has no load.
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">plb_v46_0/PLB_SrdDAck</arg> has no load.
 </msg>
 
-<msg type="info" file="LIT" num="243" delta="new" >Logical network <arg fmt="%s" index="1">plb_v46_0/PLB_SwrBTerm</arg> has no load.
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">plb_v46_0/PLB_SwrBTerm</arg> has no load.
 </msg>
 
-<msg type="info" file="LIT" num="243" delta="new" >Logical network <arg fmt="%s" index="1">plb_v46_0/PLB_SwrDAck</arg> has no load.
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">plb_v46_0/PLB_SwrDAck</arg> has no load.
 </msg>
 
-<msg type="info" file="LIT" num="243" delta="new" >Logical network <arg fmt="%s" index="1">plb_v46_0/PLB_Sssize&lt;0&gt;</arg> has no load.
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">plb_v46_0/PLB_Sssize&lt;0&gt;</arg> has no load.
 </msg>
 
-<msg type="info" file="LIT" num="243" delta="new" >Logical network <arg fmt="%s" index="1">plb_v46_0/PLB_Sssize&lt;1&gt;</arg> has no load.
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">plb_v46_0/PLB_Sssize&lt;1&gt;</arg> has no load.
 </msg>
 
 <msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">plb_v46_0/MPLB_Rst&lt;0&gt;</arg> has no load.
@@ -1899,15 +1899,6 @@
 </msg>
 
 <msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">bram_block_0/BRAM_Din_B&lt;31&gt;</arg> has no load.
-</msg>
-
-<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">xps_uartlite_0/xps_uartlite_0/UARTLITE_CORE_I/Interrupt</arg> has no load.
-</msg>
-
-<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">xps_uartlite_0/xps_uartlite_0/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/CNTR_INCR_DECR_ADDN_F_I/STRUCTURAL_A_GEN.Addr_Counters[4].MUXCY_L_I/LO</arg> has no load.
-</msg>
-
-<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">xps_uartlite_0/xps_uartlite_0/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/CNTR_INCR_DECR_ADDN_F_I/STRUCTURAL_A_GEN.Addr_Counters[4].MUXCY_L_I/LO</arg> has no load.
 </msg>
 
 <msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM72/SPO</arg> has no load.
@@ -2126,37 +2117,46 @@
 <msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM1/SPO</arg> has no load.
 </msg>
 
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">xps_uartlite_0/xps_uartlite_0/UARTLITE_CORE_I/Interrupt</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">xps_uartlite_0/xps_uartlite_0/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/CNTR_INCR_DECR_ADDN_F_I/STRUCTURAL_A_GEN.Addr_Counters[4].MUXCY_L_I/LO</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">xps_uartlite_0/xps_uartlite_0/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/CNTR_INCR_DECR_ADDN_F_I/STRUCTURAL_A_GEN.Addr_Counters[4].MUXCY_L_I/LO</arg> has no load.
+</msg>
+
 <msg type="info" file="MapLib" num="562" delta="old" >No environment variables are currently set.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">mover_derecha_pin</arg> connected to top level port <arg fmt="%s" index="2">mover_derecha_pin</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">mover_derecha_pin</arg> connected to top level port <arg fmt="%s" index="2">mover_derecha_pin</arg> has been removed.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">mover_izquierda_pin</arg> connected to top level port <arg fmt="%s" index="2">mover_izquierda_pin</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">mover_izquierda_pin</arg> connected to top level port <arg fmt="%s" index="2">mover_izquierda_pin</arg> has been removed.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">switches&lt;3&gt;</arg> connected to top level port <arg fmt="%s" index="2">switches&lt;3&gt;</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">switches&lt;3&gt;</arg> connected to top level port <arg fmt="%s" index="2">switches&lt;3&gt;</arg> has been removed.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">switches&lt;2&gt;</arg> connected to top level port <arg fmt="%s" index="2">switches&lt;2&gt;</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">switches&lt;2&gt;</arg> connected to top level port <arg fmt="%s" index="2">switches&lt;2&gt;</arg> has been removed.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">switches&lt;1&gt;</arg> connected to top level port <arg fmt="%s" index="2">switches&lt;1&gt;</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">switches&lt;1&gt;</arg> connected to top level port <arg fmt="%s" index="2">switches&lt;1&gt;</arg> has been removed.
 </msg>
 
-<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">switches&lt;0&gt;</arg> connected to top level port <arg fmt="%s" index="2">switches&lt;0&gt;</arg> has been removed.
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">switches&lt;0&gt;</arg> connected to top level port <arg fmt="%s" index="2">switches&lt;0&gt;</arg> has been removed.
 </msg>
 
 <msg type="info" file="LIT" num="244" delta="old" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
 </msg>
 
-<msg type="info" file="Pack" num="1716" delta="new" >Initializing temperature to <arg fmt="%0.3f" index="1">85.000</arg> Celsius. (default - Range: <arg fmt="%0.3f" index="2">0.000</arg> to <arg fmt="%0.3f" index="3">85.000</arg> Celsius)
+<msg type="info" file="Pack" num="1716" delta="old" >Initializing temperature to <arg fmt="%0.3f" index="1">85.000</arg> Celsius. (default - Range: <arg fmt="%0.3f" index="2">0.000</arg> to <arg fmt="%0.3f" index="3">85.000</arg> Celsius)
 </msg>
 
-<msg type="info" file="Pack" num="1720" delta="new" >Initializing voltage to <arg fmt="%0.3f" index="1">1.140</arg> Volts. (default - Range: <arg fmt="%0.3f" index="2">1.140</arg> to <arg fmt="%0.3f" index="3">1.260</arg> Volts)
+<msg type="info" file="Pack" num="1720" delta="old" >Initializing voltage to <arg fmt="%0.3f" index="1">1.140</arg> Volts. (default - Range: <arg fmt="%0.3f" index="2">1.140</arg> to <arg fmt="%0.3f" index="3">1.260</arg> Volts)
 </msg>
 
-<msg type="info" file="Pack" num="1650" delta="new" >Map created a placed design.
+<msg type="info" file="Pack" num="1650" delta="old" >Map created a placed design.
 </msg>
 
 </messages>

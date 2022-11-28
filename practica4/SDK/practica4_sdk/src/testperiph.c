@@ -61,7 +61,8 @@ int main2() {
 	{
 		Xuint32 baseaddr;
 		Xuint32 Data;
-		char fila, columna, posicion, color;
+		Xuint32 color;
+		char fila, columna, posicion;
 		baseaddr = XPAR_NRVGAP_0_BASEADDR;
 		color = BLANCO; /*ponemos color blanco */
 

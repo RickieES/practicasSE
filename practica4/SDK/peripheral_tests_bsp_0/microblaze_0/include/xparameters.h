@@ -12,15 +12,15 @@
 *
 *******************************************************************/
 
-#define STDIN_BASEADDRESS 0x00028000
-#define STDOUT_BASEADDRESS 0x00028000
+#define STDIN_BASEADDRESS 0x84000000
+#define STDOUT_BASEADDRESS 0x84000000
 
 /******************************************************************/
 
 
 /* Definitions for peripheral NRVGAP_0 */
-#define XPAR_NRVGAP_0_BASEADDR 0x00038000
-#define XPAR_NRVGAP_0_HIGHADDR 0x0003FFFF
+#define XPAR_NRVGAP_0_BASEADDR 0x84018000
+#define XPAR_NRVGAP_0_HIGHADDR 0x8401FFFF
 
 
 /******************************************************************/
@@ -68,8 +68,8 @@
 #define XPAR_XUARTLITE_NUM_INSTANCES 1
 
 /* Definitions for peripheral XPS_UARTLITE_0 */
-#define XPAR_XPS_UARTLITE_0_BASEADDR 0x00028000
-#define XPAR_XPS_UARTLITE_0_HIGHADDR 0x0002FFFF
+#define XPAR_XPS_UARTLITE_0_BASEADDR 0x84000000
+#define XPAR_XPS_UARTLITE_0_HIGHADDR 0x8400FFFF
 #define XPAR_XPS_UARTLITE_0_DEVICE_ID 0
 #define XPAR_XPS_UARTLITE_0_BAUDRATE 9600
 #define XPAR_XPS_UARTLITE_0_USE_PARITY 0
@@ -81,8 +81,8 @@
 
 /* Canonical definitions for peripheral XPS_UARTLITE_0 */
 #define XPAR_UARTLITE_0_DEVICE_ID XPAR_XPS_UARTLITE_0_DEVICE_ID
-#define XPAR_UARTLITE_0_BASEADDR 0x00028000
-#define XPAR_UARTLITE_0_HIGHADDR 0x0002FFFF
+#define XPAR_UARTLITE_0_BASEADDR 0x84000000
+#define XPAR_UARTLITE_0_HIGHADDR 0x8400FFFF
 #define XPAR_UARTLITE_0_BAUDRATE 9600
 #define XPAR_UARTLITE_0_USE_PARITY 0
 #define XPAR_UARTLITE_0_ODD_PARITY 1

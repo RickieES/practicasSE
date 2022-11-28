@@ -137,8 +137,8 @@ WRAPPER_NGC_FILES = implementation/practica4_microblaze_0_wrapper.ngc \
 implementation/practica4_plb_v46_0_wrapper.ngc \
 implementation/practica4_xps_bram_if_cntlr_0_wrapper.ngc \
 implementation/practica4_bram_block_0_wrapper.ngc \
-implementation/practica4_xps_uartlite_0_wrapper.ngc \
-implementation/practica4_nrvgap_0_wrapper.ngc
+implementation/practica4_nrvgap_0_wrapper.ngc \
+implementation/practica4_xps_uartlite_0_wrapper.ngc
 
 POSTSYN_NETLIST = implementation/$(SYSTEM).ngc
 

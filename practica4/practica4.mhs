@@ -3,15 +3,15 @@
 
 
  PORT Rst_pin = net_Rst_pin, DIR = I, SIGIS = RST
- PORT RX_pin = net_RX_pin, DIR = I
- PORT TX_pin = xps_uartlite_0_TX, DIR = O
  PORT hsyncb_pin = nrvgap_0_hsyncb, DIR = O
  PORT vsyncb_pin = nrvgap_0_vsyncb, DIR = O
  PORT rgb_pin = nrvgap_0_rgb, DIR = O, VEC = [0:8]
  PORT mover_izquierda_pin = net_mover_izquierda_pin, DIR = I
  PORT mover_derecha_pin = net_mover_derecha_pin, DIR = I
- PORT Clk_pin = net_Clk_pin, DIR = I, SIGIS = CLK
  PORT switches = net_switches, DIR = I, VEC = [3:0]
+ PORT RX_pin = net_RX_pin, DIR = I
+ PORT TX_pin = xps_uartlite_0_TX, DIR = O
+ PORT Clk_pin = net_Clk_pin, DIR = I, SIGIS = CLK
 
 
 BEGIN microblaze
@@ -45,23 +45,11 @@ BEGIN bram_block
  BUS_INTERFACE PORTA = xps_bram_if_cntlr_0_PORTA
 END
 
-BEGIN xps_uartlite
- PARAMETER INSTANCE = xps_uartlite_0
- PARAMETER HW_VER = 1.02.a
- PARAMETER C_USE_PARITY = 0
- PARAMETER C_SPLB_CLK_FREQ_HZ = 50000000
- PARAMETER C_BASEADDR = 0x00028000
- PARAMETER C_HIGHADDR = 0x0002ffff
- BUS_INTERFACE SPLB = plb_v46_0
- PORT RX = net_RX_pin
- PORT TX = xps_uartlite_0_TX
-END
-
 BEGIN nrvgap
  PARAMETER INSTANCE = nrvgap_0
  PARAMETER HW_VER = 1.00.a
- PARAMETER C_BASEADDR = 0x00038000
- PARAMETER C_HIGHADDR = 0x0003ffff
+ PARAMETER C_BASEADDR = 0x84018000
+ PARAMETER C_HIGHADDR = 0x8401ffff
  BUS_INTERFACE SPLB = plb_v46_0
  PORT hsyncb = nrvgap_0_hsyncb
  PORT vsyncb = nrvgap_0_vsyncb
@@ -69,5 +57,17 @@ BEGIN nrvgap
  PORT mover_izquierda_pin = net_mover_izquierda_pin
  PORT mover_derecha_pin = net_mover_derecha_pin
  PORT switches = net_switches
+END
+
+BEGIN xps_uartlite
+ PARAMETER INSTANCE = xps_uartlite_0
+ PARAMETER HW_VER = 1.02.a
+ PARAMETER C_USE_PARITY = 0
+ PARAMETER C_SPLB_CLK_FREQ_HZ = 50000000
+ PARAMETER C_BASEADDR = 0x84000000
+ PARAMETER C_HIGHADDR = 0x8400ffff
+ BUS_INTERFACE SPLB = plb_v46_0
+ PORT RX = net_RX_pin
+ PORT TX = xps_uartlite_0_TX
 END
 

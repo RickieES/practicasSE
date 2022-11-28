@@ -10,15 +10,15 @@ use UNISIM.VCOMPONENTS.ALL;
 entity practica4 is
   port (
     Rst_pin : in std_logic;
-    RX_pin : in std_logic;
-    TX_pin : out std_logic;
     hsyncb_pin : out std_logic;
     vsyncb_pin : out std_logic;
     rgb_pin : out std_logic_vector(0 to 8);
     mover_izquierda_pin : in std_logic;
     mover_derecha_pin : in std_logic;
-    Clk_pin : in std_logic;
-    switches : in std_logic_vector(3 downto 0)
+    switches : in std_logic_vector(3 downto 0);
+    RX_pin : in std_logic;
+    TX_pin : out std_logic;
+    Clk_pin : in std_logic
   );
 end practica4;
 
@@ -801,56 +801,6 @@ architecture STRUCTURE of practica4 is
     );
   end component;
 
-  component practica4_xps_uartlite_0_wrapper is
-    port (
-      SPLB_Clk : in std_logic;
-      SPLB_Rst : in std_logic;
-      PLB_ABus : in std_logic_vector(0 to 31);
-      PLB_PAValid : in std_logic;
-      PLB_masterID : in std_logic_vector(0 to 0);
-      PLB_RNW : in std_logic;
-      PLB_BE : in std_logic_vector(0 to 3);
-      PLB_size : in std_logic_vector(0 to 3);
-      PLB_type : in std_logic_vector(0 to 2);
-      PLB_wrDBus : in std_logic_vector(0 to 31);
-      PLB_UABus : in std_logic_vector(0 to 31);
-      PLB_SAValid : in std_logic;
-      PLB_rdPrim : in std_logic;
-      PLB_wrPrim : in std_logic;
-      PLB_abort : in std_logic;
-      PLB_busLock : in std_logic;
-      PLB_MSize : in std_logic_vector(0 to 1);
-      PLB_lockErr : in std_logic;
-      PLB_wrBurst : in std_logic;
-      PLB_rdBurst : in std_logic;
-      PLB_wrPendReq : in std_logic;
-      PLB_rdPendReq : in std_logic;
-      PLB_wrPendPri : in std_logic_vector(0 to 1);
-      PLB_rdPendPri : in std_logic_vector(0 to 1);
-      PLB_reqPri : in std_logic_vector(0 to 1);
-      PLB_TAttribute : in std_logic_vector(0 to 15);
-      Sl_addrAck : out std_logic;
-      Sl_SSize : out std_logic_vector(0 to 1);
-      Sl_wait : out std_logic;
-      Sl_rearbitrate : out std_logic;
-      Sl_wrDAck : out std_logic;
-      Sl_wrComp : out std_logic;
-      Sl_rdDBus : out std_logic_vector(0 to 31);
-      Sl_rdDAck : out std_logic;
-      Sl_rdComp : out std_logic;
-      Sl_MBusy : out std_logic_vector(0 to 1);
-      Sl_MWrErr : out std_logic_vector(0 to 1);
-      Sl_MRdErr : out std_logic_vector(0 to 1);
-      Sl_wrBTerm : out std_logic;
-      Sl_rdWdAddr : out std_logic_vector(0 to 3);
-      Sl_rdBTerm : out std_logic;
-      Sl_MIRQ : out std_logic_vector(0 to 1);
-      RX : in std_logic;
-      TX : out std_logic;
-      Interrupt : out std_logic
-    );
-  end component;
-
   component practica4_nrvgap_0_wrapper is
     port (
       SPLB_Clk : in std_logic;
@@ -901,6 +851,56 @@ architecture STRUCTURE of practica4 is
       mover_izquierda_pin : in std_logic;
       mover_derecha_pin : in std_logic;
       switches : in std_logic_vector(3 downto 0)
+    );
+  end component;
+
+  component practica4_xps_uartlite_0_wrapper is
+    port (
+      SPLB_Clk : in std_logic;
+      SPLB_Rst : in std_logic;
+      PLB_ABus : in std_logic_vector(0 to 31);
+      PLB_PAValid : in std_logic;
+      PLB_masterID : in std_logic_vector(0 to 0);
+      PLB_RNW : in std_logic;
+      PLB_BE : in std_logic_vector(0 to 3);
+      PLB_size : in std_logic_vector(0 to 3);
+      PLB_type : in std_logic_vector(0 to 2);
+      PLB_wrDBus : in std_logic_vector(0 to 31);
+      PLB_UABus : in std_logic_vector(0 to 31);
+      PLB_SAValid : in std_logic;
+      PLB_rdPrim : in std_logic;
+      PLB_wrPrim : in std_logic;
+      PLB_abort : in std_logic;
+      PLB_busLock : in std_logic;
+      PLB_MSize : in std_logic_vector(0 to 1);
+      PLB_lockErr : in std_logic;
+      PLB_wrBurst : in std_logic;
+      PLB_rdBurst : in std_logic;
+      PLB_wrPendReq : in std_logic;
+      PLB_rdPendReq : in std_logic;
+      PLB_wrPendPri : in std_logic_vector(0 to 1);
+      PLB_rdPendPri : in std_logic_vector(0 to 1);
+      PLB_reqPri : in std_logic_vector(0 to 1);
+      PLB_TAttribute : in std_logic_vector(0 to 15);
+      Sl_addrAck : out std_logic;
+      Sl_SSize : out std_logic_vector(0 to 1);
+      Sl_wait : out std_logic;
+      Sl_rearbitrate : out std_logic;
+      Sl_wrDAck : out std_logic;
+      Sl_wrComp : out std_logic;
+      Sl_rdDBus : out std_logic_vector(0 to 31);
+      Sl_rdDAck : out std_logic;
+      Sl_rdComp : out std_logic;
+      Sl_MBusy : out std_logic_vector(0 to 1);
+      Sl_MWrErr : out std_logic_vector(0 to 1);
+      Sl_MRdErr : out std_logic_vector(0 to 1);
+      Sl_wrBTerm : out std_logic;
+      Sl_rdWdAddr : out std_logic_vector(0 to 3);
+      Sl_rdBTerm : out std_logic;
+      Sl_MIRQ : out std_logic_vector(0 to 1);
+      RX : in std_logic;
+      TX : out std_logic;
+      Interrupt : out std_logic
     );
   end component;
 
@@ -1008,23 +1008,23 @@ architecture STRUCTURE of practica4 is
   attribute BOX_TYPE of practica4_plb_v46_0_wrapper : component is "user_black_box";
   attribute BOX_TYPE of practica4_xps_bram_if_cntlr_0_wrapper : component is "user_black_box";
   attribute BOX_TYPE of practica4_bram_block_0_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of practica4_xps_uartlite_0_wrapper : component is "user_black_box";
   attribute BOX_TYPE of practica4_nrvgap_0_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of practica4_xps_uartlite_0_wrapper : component is "user_black_box";
 
 begin
 
   -- Internal assignments
 
   net_Rst_pin <= Rst_pin;
-  net_RX_pin <= RX_pin;
-  TX_pin <= xps_uartlite_0_TX;
   hsyncb_pin <= nrvgap_0_hsyncb;
   vsyncb_pin <= nrvgap_0_vsyncb;
   rgb_pin <= nrvgap_0_rgb;
   net_mover_izquierda_pin <= mover_izquierda_pin;
   net_mover_derecha_pin <= mover_derecha_pin;
-  net_Clk_pin <= Clk_pin;
   net_switches <= switches;
+  net_RX_pin <= RX_pin;
+  TX_pin <= xps_uartlite_0_TX;
+  net_Clk_pin <= Clk_pin;
   net_gnd0 <= '0';
   net_gnd1(0 downto 0) <= B"0";
   net_gnd10(0 to 9) <= B"0000000000";
@@ -1807,26 +1807,26 @@ begin
       BRAM_Dout_B => net_gnd32
     );
 
-  xps_uartlite_0 : practica4_xps_uartlite_0_wrapper
+  nrvgap_0 : practica4_nrvgap_0_wrapper
     port map (
       SPLB_Clk => net_Clk_pin,
       SPLB_Rst => plb_v46_0_SPLB_Rst(1),
       PLB_ABus => plb_v46_0_PLB_ABus,
-      PLB_PAValid => plb_v46_0_PLB_PAValid,
-      PLB_masterID => plb_v46_0_PLB_masterID(0 to 0),
-      PLB_RNW => plb_v46_0_PLB_RNW,
-      PLB_BE => plb_v46_0_PLB_BE,
-      PLB_size => plb_v46_0_PLB_size,
-      PLB_type => plb_v46_0_PLB_type,
-      PLB_wrDBus => plb_v46_0_PLB_wrDBus,
       PLB_UABus => plb_v46_0_PLB_UABus,
+      PLB_PAValid => plb_v46_0_PLB_PAValid,
       PLB_SAValid => plb_v46_0_PLB_SAValid,
       PLB_rdPrim => plb_v46_0_PLB_rdPrim(1),
       PLB_wrPrim => plb_v46_0_PLB_wrPrim(1),
+      PLB_masterID => plb_v46_0_PLB_masterID(0 to 0),
       PLB_abort => plb_v46_0_PLB_abort,
       PLB_busLock => plb_v46_0_PLB_busLock,
+      PLB_RNW => plb_v46_0_PLB_RNW,
+      PLB_BE => plb_v46_0_PLB_BE,
       PLB_MSize => plb_v46_0_PLB_MSize,
+      PLB_size => plb_v46_0_PLB_size,
+      PLB_type => plb_v46_0_PLB_type,
       PLB_lockErr => plb_v46_0_PLB_lockErr,
+      PLB_wrDBus => plb_v46_0_PLB_wrDBus,
       PLB_wrBurst => plb_v46_0_PLB_wrBurst,
       PLB_rdBurst => plb_v46_0_PLB_rdBurst,
       PLB_wrPendReq => plb_v46_0_PLB_wrPendReq,
@@ -1841,41 +1841,44 @@ begin
       Sl_rearbitrate => plb_v46_0_Sl_rearbitrate(1),
       Sl_wrDAck => plb_v46_0_Sl_wrDAck(1),
       Sl_wrComp => plb_v46_0_Sl_wrComp(1),
+      Sl_wrBTerm => plb_v46_0_Sl_wrBTerm(1),
       Sl_rdDBus => plb_v46_0_Sl_rdDBus(32 to 63),
+      Sl_rdWdAddr => plb_v46_0_Sl_rdWdAddr(4 to 7),
       Sl_rdDAck => plb_v46_0_Sl_rdDAck(1),
       Sl_rdComp => plb_v46_0_Sl_rdComp(1),
+      Sl_rdBTerm => plb_v46_0_Sl_rdBTerm(1),
       Sl_MBusy => plb_v46_0_Sl_MBusy(2 to 3),
       Sl_MWrErr => plb_v46_0_Sl_MWrErr(2 to 3),
       Sl_MRdErr => plb_v46_0_Sl_MRdErr(2 to 3),
-      Sl_wrBTerm => plb_v46_0_Sl_wrBTerm(1),
-      Sl_rdWdAddr => plb_v46_0_Sl_rdWdAddr(4 to 7),
-      Sl_rdBTerm => plb_v46_0_Sl_rdBTerm(1),
       Sl_MIRQ => plb_v46_0_Sl_MIRQ(2 to 3),
-      RX => net_RX_pin,
-      TX => xps_uartlite_0_TX,
-      Interrupt => open
+      hsyncb => nrvgap_0_hsyncb,
+      vsyncb => nrvgap_0_vsyncb,
+      rgb => nrvgap_0_rgb,
+      mover_izquierda_pin => net_mover_izquierda_pin,
+      mover_derecha_pin => net_mover_derecha_pin,
+      switches => net_switches
     );
 
-  nrvgap_0 : practica4_nrvgap_0_wrapper
+  xps_uartlite_0 : practica4_xps_uartlite_0_wrapper
     port map (
       SPLB_Clk => net_Clk_pin,
       SPLB_Rst => plb_v46_0_SPLB_Rst(2),
       PLB_ABus => plb_v46_0_PLB_ABus,
-      PLB_UABus => plb_v46_0_PLB_UABus,
       PLB_PAValid => plb_v46_0_PLB_PAValid,
+      PLB_masterID => plb_v46_0_PLB_masterID(0 to 0),
+      PLB_RNW => plb_v46_0_PLB_RNW,
+      PLB_BE => plb_v46_0_PLB_BE,
+      PLB_size => plb_v46_0_PLB_size,
+      PLB_type => plb_v46_0_PLB_type,
+      PLB_wrDBus => plb_v46_0_PLB_wrDBus,
+      PLB_UABus => plb_v46_0_PLB_UABus,
       PLB_SAValid => plb_v46_0_PLB_SAValid,
       PLB_rdPrim => plb_v46_0_PLB_rdPrim(2),
       PLB_wrPrim => plb_v46_0_PLB_wrPrim(2),
-      PLB_masterID => plb_v46_0_PLB_masterID(0 to 0),
       PLB_abort => plb_v46_0_PLB_abort,
       PLB_busLock => plb_v46_0_PLB_busLock,
-      PLB_RNW => plb_v46_0_PLB_RNW,
-      PLB_BE => plb_v46_0_PLB_BE,
       PLB_MSize => plb_v46_0_PLB_MSize,
-      PLB_size => plb_v46_0_PLB_size,
-      PLB_type => plb_v46_0_PLB_type,
       PLB_lockErr => plb_v46_0_PLB_lockErr,
-      PLB_wrDBus => plb_v46_0_PLB_wrDBus,
       PLB_wrBurst => plb_v46_0_PLB_wrBurst,
       PLB_rdBurst => plb_v46_0_PLB_rdBurst,
       PLB_wrPendReq => plb_v46_0_PLB_wrPendReq,
@@ -1890,22 +1893,19 @@ begin
       Sl_rearbitrate => plb_v46_0_Sl_rearbitrate(2),
       Sl_wrDAck => plb_v46_0_Sl_wrDAck(2),
       Sl_wrComp => plb_v46_0_Sl_wrComp(2),
-      Sl_wrBTerm => plb_v46_0_Sl_wrBTerm(2),
       Sl_rdDBus => plb_v46_0_Sl_rdDBus(64 to 95),
-      Sl_rdWdAddr => plb_v46_0_Sl_rdWdAddr(8 to 11),
       Sl_rdDAck => plb_v46_0_Sl_rdDAck(2),
       Sl_rdComp => plb_v46_0_Sl_rdComp(2),
-      Sl_rdBTerm => plb_v46_0_Sl_rdBTerm(2),
       Sl_MBusy => plb_v46_0_Sl_MBusy(4 to 5),
       Sl_MWrErr => plb_v46_0_Sl_MWrErr(4 to 5),
       Sl_MRdErr => plb_v46_0_Sl_MRdErr(4 to 5),
+      Sl_wrBTerm => plb_v46_0_Sl_wrBTerm(2),
+      Sl_rdWdAddr => plb_v46_0_Sl_rdWdAddr(8 to 11),
+      Sl_rdBTerm => plb_v46_0_Sl_rdBTerm(2),
       Sl_MIRQ => plb_v46_0_Sl_MIRQ(4 to 5),
-      hsyncb => nrvgap_0_hsyncb,
-      vsyncb => nrvgap_0_vsyncb,
-      rgb => nrvgap_0_rgb,
-      mover_izquierda_pin => net_mover_izquierda_pin,
-      mover_derecha_pin => net_mover_derecha_pin,
-      switches => net_switches
+      RX => net_RX_pin,
+      TX => xps_uartlite_0_TX,
+      Interrupt => open
     );
 
 end architecture STRUCTURE;

@@ -107,8 +107,8 @@ entity user_logic is
 		hsyncb                       : out std_logic;
 		vsyncb                       : out std_logic;							-- vertical (frame) sync
 		rgb                          : out std_logic_vector(8 downto 0);	-- red,green,blue colors
-		mover_derecha_pin            : in  std_logic;
-		mover_izquierda_pin          : in  std_logic;
+		mover_derecha_pin            : in std_logic;
+		mover_izquierda_pin          : in std_logic;
 		switches                     : in  std_logic_vector(3 downto 0);
 		-- DO NOT EDIT BELOW THIS LINE ---------------------
     -- Bus protocol ports, do not add to or delete
@@ -156,7 +156,7 @@ architecture IMP of user_logic is
 			rectangulo: in std_logic_vector(6 downto 0); -- rectangulo a borrar
 			vsyncb: out std_logic;	-- vertical (frame) sync
 			rgb: out std_logic_vector(8 downto 0);	-- red,green,blue colors
-		   mover_derecha_pin: in std_logic;
+		    mover_derecha_pin: in std_logic;
     		mover_izquierda_pin: in std_logic;
 			switches: in std_logic_vector(3 downto 0)
 		);

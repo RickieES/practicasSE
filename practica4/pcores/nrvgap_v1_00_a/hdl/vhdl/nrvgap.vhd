@@ -511,7 +511,7 @@ begin
       -- MAP USER PORTS ABOVE THIS LINE ------------------
 
       Bus2IP_Clk                     => ipif_Bus2IP_Clk,
-      Bus2IP_Reset                   => ipif_Bus2IP_Reset,
+      Bus2IP_Reset                   => not ipif_Bus2IP_Reset,
       Bus2IP_Data                    => ipif_Bus2IP_Data,
       Bus2IP_BE                      => ipif_Bus2IP_BE,
       Bus2IP_RdCE                    => user_Bus2IP_RdCE,

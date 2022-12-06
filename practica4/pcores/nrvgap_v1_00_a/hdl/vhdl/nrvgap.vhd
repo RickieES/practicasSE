@@ -159,7 +159,8 @@ entity nrvgap is
     C_SPLB_SMALLEST_MASTER         : integer              := 32;
     C_SPLB_CLK_PERIOD_PS           : integer              := 10000;
     C_INCLUDE_DPHASE_TIMER         : integer              := 1;
-    C_FAMILY                       : string               := "virtex6"
+    --C_INCLUDE_DPHASE_TIMER         : integer              := 0;
+	C_FAMILY                       : string               := "virtex6"
     -- DO NOT EDIT ABOVE THIS LINE ---------------------
   );
   port
@@ -169,8 +170,8 @@ entity nrvgap is
     vsyncb                         : out std_logic;			-- vertical (frame) sync
     rgb                            : out std_logic_vector(8 downto 0);	-- red,green,blue colors
     mover_derecha_pin              : in std_logic;
-	 mover_izquierda_pin            : in std_logic;
-	 switches                       : in std_logic_vector(3 downto 0);
+	mover_izquierda_pin            : in std_logic;
+	switches                       : in std_logic_vector(3 downto 0);
 	 -- ADD USER PORTS ABOVE THIS LINE ------------------
 
     -- DO NOT EDIT BELOW THIS LINE ---------------------
@@ -288,7 +289,7 @@ architecture IMP of nrvgap is
   -- Write FIFO desired depth specified as a Log2(x) value (2 to 14)
   ------------------------------------------
   constant USER_WRFIFO_DEPTH              : integer              := 256;
-
+--  constant USER_WRFIFO_DEPTH              : integer              := 512;
   constant WFF_FIFO_DEPTH_LOG2X           : integer              := log2(USER_WRFIFO_DEPTH);
 
   ------------------------------------------

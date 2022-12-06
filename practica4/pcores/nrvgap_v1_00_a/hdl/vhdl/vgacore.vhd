@@ -131,7 +131,7 @@ debouncer_derecho: debouncer port map(
 	rst => not reset,
 	clk => clock,
 	x => mover_derecha_pin,
-	xDeb => debouncer_d,
+	xDeb => debouncer_d,				 
 	xDebFallingEdge => der,
 	xDebRisingEdge => deb_rising_d
 );
@@ -230,6 +230,7 @@ end process;
 process(vcnt, hcnt, RAM)
 begin
 	if vcnt(9 downto 8)="00" and hcnt(8 downto 6)="000" then
+	--if vcnt(9 downto 8)="00" and hcnt(8 downto 6)=counter then
 		rgb <= RAM(conv_integer(hcnt(5 downto 3) & vcnt(7 downto 4)));
 	else
 		rgb <= "000000000";

@@ -1,0 +1,15 @@
+##############################################################################
+## Filename:          N:\ws\practica5/drivers/top_keypad_v1_00_a/data/top_keypad_v2_1_0.mdd
+## Description:       Microprocessor Driver Definition
+## Date:              Tue Dec 06 21:44:31 2022 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+OPTION psf_version = 2.1.0;
+
+BEGIN DRIVER top_keypad
+
+  OPTION supported_peripherals = (top_keypad);
+  OPTION depends = (common_v1_00_a);
+  OPTION copyfiles = all;
+
+END DRIVER

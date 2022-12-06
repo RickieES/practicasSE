@@ -1,0 +1,10 @@
+V3 5
+FL //vboxsvr/se/ws/practica5/pcores/top_keypad_v1_00_a/hdl/vhdl/user_logic.vhd 2022/12/06.22:30:43 P.15xf
+EN top_keypad_v1_00_a/user_logic 1670362368 \
+      FL //vboxsvr/se/ws/practica5/pcores/top_keypad_v1_00_a/hdl/vhdl/user_logic.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
+      PB ieee/STD_LOGIC_UNSIGNED 1335251625 LB proc_common_v3_00_a \
+      PB proc_common_v3_00_a/proc_common_pkg 1670362365
+AR top_keypad_v1_00_a/user_logic/IMP 1670362369 \
+      FL //vboxsvr/se/ws/practica5/pcores/top_keypad_v1_00_a/hdl/vhdl/user_logic.vhd \
+      EN top_keypad_v1_00_a/user_logic 1670362368 CP teclaDetect

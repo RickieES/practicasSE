@@ -1,0 +1,5 @@
+set -tmpdir "N:/ws/practica5/pcores/top_keypad_v1_00_a/devl/projnav/xst/projnav.tmp"
+set -xsthdpdir "N:/ws/practica5/pcores/top_keypad_v1_00_a/devl/projnav/xst"
+elaborate
+-ifn teclaDetect.prj
+-ifmt mixed

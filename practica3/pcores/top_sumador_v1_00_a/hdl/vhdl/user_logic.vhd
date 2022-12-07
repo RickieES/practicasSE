@@ -155,7 +155,7 @@ architecture IMP of user_logic is
   signal slv_write_ack                  : std_logic;
 
 begin
-  mi_divisor: divisor1 port map(Bus2IP_Reset, Bus2IP_Clk, Clk_div);
+  mi_divisor: divisor1 port map(not Bus2IP_Reset, Bus2IP_Clk, Clk_div);
   
   --USER logic implementation added here
 
@@ -273,7 +273,7 @@ begin
   begin
     if Clk_div'event and Clk_div = '1' then
       if (my_counter < slv_reg3(24 to 31)) then
-        my_counter <= my_counter + 1;
+        my_counter <= my_counter + '1';
 		else
 		  my_counter <= (others => '0');
       end if;

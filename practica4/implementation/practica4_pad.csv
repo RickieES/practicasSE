@@ -1,7 +1,7 @@
-#Release 14.1 - par P.15xf (nt)
+#Release 14.1 - par P.15xf (nt64)
 #Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-#Tue Nov 29 00:26:29 2022
+#Wed Dec 07 17:45:55 2022
 
 #
 ## NOTE: This file is designed to be imported into a spreadsheet program
@@ -93,7 +93,7 @@ E7,rgb_pin<1>,IOB,IO_L29N_0,OUTPUT,LVCMOS25*,0,12,SLOW,NONE**,,,LOCATED,NO,NONE,
 E8,,,VCCO_0,,,0,,,,,2.50,,,,
 E9,,,VCCO_1,,,1,,,,,2.50,,,,
 E10,,DIFFM,IO_L30P_1,UNUSED,,1,,,,,,,,,
-E11,Rst_pin,IOB,IO_L28P_1,INPUT,LVCMOS25*,1,,,,IFD,,LOCATED,YES,NONE,
+E11,,DIFFM,IO_L28P_1,UNUSED,,1,,,,,,,,,
 E12,,,VCCINT,,,,,,,,1.2,,,,
 E13,,DIFFS,IO_L19N_2,UNUSED,,2,,,,,,,,,
 E14,,DIFFM,IO_L19P_2,UNUSED,,2,,,,,,,,,
@@ -166,7 +166,7 @@ J16,,DIFFS,IO_L40N_3/VREF_3,UNUSED,,3,,,,,,,,,
 K1,,DIFFM,IO,UNUSED,,6,,,,,,,,,
 K2,,DIFFM,IO_L24P_6,UNUSED,,6,,,,,,,,,
 K3,,DIFFS,IO_L24N_6/VREF_6,UNUSED,,6,,,,,,,,,
-K4,,DIFFM,IO_L23P_6,UNUSED,,6,,,,,,,,,
+K4,Rst_pin,IOB,IO_L23P_6,INPUT,LVCMOS25*,6,,,,IFD,,LOCATED,YES,NONE,
 K5,,DIFFS,IO_L23N_6,UNUSED,,6,,,,,,,,,
 K6,,,VCCO_6,,,6,,,,,2.50,,,,
 K7,,,GND,,,,,,,,,,,,

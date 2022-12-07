@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<document OS="nt" product="ISE" version="14.1">
+<document OS="nt64" product="ISE" version="14.1">
 
   <!--The data in this file is primarily intended for consumption by Xilinx tools.
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Tue Nov 29 00:23:34 2022">
+  <application stringID="Xst" timeStamp="Wed Dec 07 17:44:15 2022">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
           <item stringID="variable" value="PATH"/>
-          <item stringID="value" value="C:\Xilinx\14.1\ISE_DS\ISE\\lib\nt;C:\Xilinx\14.1\ISE_DS\EDK\lib\nt;C:\Xilinx\14.1\ISE_DS\ISE\\bin\nt;C:\Xilinx\14.1\ISE_DS\EDK\bin\nt;C:\Xilinx\14.1\ISE_DS\EDK\gnu\microblaze\nt\bin;C:\Xilinx\14.1\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;C:\Xilinx\14.1\ISE_DS\EDK\gnuwin\bin;C:\Xilinx\14.1\ISE_DS\ISE\bin\nt;C:\Xilinx\14.1\ISE_DS\ISE\lib\nt;C:\Xilinx\Vivado\2012.1\bin;C:\Xilinx\14.1\ISE_DS\PlanAhead\bin;C:\Xilinx\14.1\ISE_DS\EDK\gnu\arm\nt\bin;C:\Xilinx\14.1\ISE_DS\common\bin\nt;C:\Xilinx\14.1\ISE_DS\common\lib\nt;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\XSTOOLs;C:\Program Files\PuTTY\"/>
+          <item stringID="value" value="C:\software\electronica\xilinx\14.1\ISE_DS\ISE\\lib\nt64;C:\software\electronica\xilinx\14.1\ISE_DS\EDK\lib\nt64;C:\software\electronica\xilinx\14.1\ISE_DS\ISE\\bin\nt64;C:\software\electronica\xilinx\14.1\ISE_DS\EDK\bin\nt64;C:\software\electronica\xilinx\14.1\ISE_DS\EDK\gnu\microblaze\nt64\bin;C:\software\electronica\xilinx\14.1\ISE_DS\EDK\gnu\powerpc-eabi\nt64\bin;C:\software\electronica\xilinx\14.1\ISE_DS\EDK\gnuwin\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;c:\software\electronica\XSTOOLs;C:\JDK\jdk8-64bits\jre\bin"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATHEXT"/>
@@ -20,36 +20,40 @@
         </row>
         <row stringID="row" value="2">
           <item stringID="variable" value="XILINX_DSP"/>
-          <item stringID="value" value="C:\Xilinx\14.1\ISE_DS\ISE"/>
+          <item stringID="value" value="C:\software\electronica\xilinx\14.1\ISE_DS\ISE"/>
         </row>
         <row stringID="row" value="3">
           <item stringID="variable" value="XILINX_EDK"/>
-          <item stringID="value" value="C:\Xilinx\14.1\ISE_DS\EDK"/>
+          <item stringID="value" value="C:\software\electronica\xilinx\14.1\ISE_DS\EDK"/>
         </row>
         <row stringID="row" value="4">
           <item stringID="variable" value="XILINX_PLANAHEAD"/>
-          <item stringID="value" value="C:\Xilinx\14.1\ISE_DS\PlanAhead"/>
+          <item stringID="value" value="C:\software\electronica\xilinx\14.1\ISE_DS\PlanAhead"/>
         </row>
         <row stringID="row" value="5">
           <item stringID="variable" value="XILINX_VIVADO"/>
-          <item stringID="value" value="C:\Xilinx\Vivado\2012.1"/>
+          <item stringID="value" value="C:\software\electronica\xilinx\Vivado\2012.1"/>
         </row>
         <row stringID="row" value="6">
           <item stringID="variable" value="XILINX"/>
-          <item stringID="value" value="C:\Xilinx\14.1\ISE_DS\ISE\;C:\Xilinx\14.1\ISE_DS\EDK"/>
+          <item stringID="value" value="C:\software\electronica\xilinx\14.1\ISE_DS\ISE\;C:\software\electronica\xilinx\14.1\ISE_DS\EDK"/>
+        </row>
+        <row stringID="row" value="7">
+          <item stringID="variable" value="XILINXD_LICENSE_FILE"/>
+          <item stringID="value" value="1717@fdilicencias1.fdi.ucm.es;2100@fdilicencias1.fdi.ucm.es"/>
         </row>
       </table>
       <item stringID="User_EnvOs" value="OS Information">
-        <item stringID="User_EnvOsname" value="Microsoft Windows 7 , 32-bit"/>
-        <item stringID="User_EnvOsrelease" value="major release  (build 7600)"/>
+        <item stringID="User_EnvOsname" value="Microsoft , 64-bit"/>
+        <item stringID="User_EnvOsrelease" value="major release  (build 9200)"/>
       </item>
-      <item stringID="User_EnvHost" value="CJRipa-PC"/>
+      <item stringID="User_EnvHost" value="PTO0816"/>
       <table stringID="User_EnvCpu">
         <column stringID="arch"/>
         <column stringID="speed"/>
         <row stringID="row" value="0">
-          <item stringID="arch" value="AMD A8-6600K APU with Radeon(tm) HD Graphics   "/>
-          <item stringID="speed" value="3896 MHz"/>
+          <item stringID="arch" value="Intel(R) Core(TM) i7-9700 CPU @ 3.00GHz"/>
+          <item stringID="speed" value="3000 MHz"/>
         </row>
       </table>
     </section>
@@ -66,7 +70,7 @@
       <item DEFAULT="YES" label="-iobuf" stringID="XST_IOBUF" value="YES"/>
       <item DEFAULT="500" label="-max_fanout" stringID="XST_MAXFANOUT" value="10000"/>
       <item DEFAULT="" label="-sd" stringID="XST_SD" value="{../implementation}"/>
-      <item DEFAULT="" label="-vlgincdir" stringID="XST_VLGINCDIR" value="{&quot;N:\ws\practica4\pcores\&quot; &quot;C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\&quot; &quot;C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\&quot; }"/>
+      <item DEFAULT="" label="-vlgincdir" stringID="XST_VLGINCDIR" value="{&quot;U:\hlocal\practicasSE-main\practica4\pcores\&quot; &quot;C:\software\electronica\xilinx\14.1\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\&quot; &quot;C:\software\electronica\xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\&quot; }"/>
     </section>
     <section stringID="XST_ADVANCED_HDL_SYNTHESIS_REPORTFOUND_NO_MACRO"/>
     <section stringID="XST_FINAL_REGISTER_REPORTFOUND_NO_MACRO"/>
@@ -136,7 +140,7 @@
     </section>
     <section stringID="XST_DEVICE_UTILIZATION_SUMMARY">
       <item stringID="XST_SELECTED_DEVICE" value="3s1000ft256-5"/>
-      <item AVAILABLE="7680" dataType="int" label="Number of Slices" stringID="XST_NUMBER_OF_SLICES" value="1821"/>
+      <item AVAILABLE="7680" dataType="int" label="Number of Slices" stringID="XST_NUMBER_OF_SLICES" value="1827"/>
       <item AVAILABLE="15360" dataType="int" label="Number of Slice Flip Flops" stringID="XST_NUMBER_OF_SLICE_FLIP_FLOPS" value="1903"/>
       <item AVAILABLE="15360" dataType="int" label="Number of 4 input LUTs" stringID="XST_NUMBER_OF_4_INPUT_LUTS" value="2891"/>
       <item dataType="int" label="Number used as Logic" stringID="XST_NUMBER_USED_AS_LOGIC" value="2279"/>

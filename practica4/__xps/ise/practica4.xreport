@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2022-11-29T00:22:15</DateModified>
+  <DateModified>2022-12-07T17:43:46</DateModified>
   <ModuleName>practica4</ModuleName>
-  <SummaryTimeStamp>2022-11-29T00:22:14</SummaryTimeStamp>
-  <SavedFilePath>N:/ws/practica4/__xps/ise/practica4.xreport</SavedFilePath>
+  <SummaryTimeStamp>2022-12-07T17:43:46</SummaryTimeStamp>
+  <SavedFilePath>U:/hlocal/practicasSE-main/practica4/__xps/ise/practica4.xreport</SavedFilePath>
   <FilterFile>filter.filter</FilterFile>
-  <SavedFilterFilePath>N:/ws/practica4/__xps/ise</SavedFilterFilePath>
+  <SavedFilterFilePath>U:/hlocal/practicasSE-main/practica4/__xps/ise</SavedFilterFilePath>
   <DateInitialized>2022-11-12T21:33:19</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

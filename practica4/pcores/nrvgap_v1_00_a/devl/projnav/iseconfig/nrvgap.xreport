@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2022-11-28T23:57:43</DateModified>
+  <DateModified>2022-12-07T17:25:20</DateModified>
   <ModuleName>nrvgap</ModuleName>
   <SummaryTimeStamp>2022-11-16T17:00:02</SummaryTimeStamp>
-  <SavedFilePath>N:/ws/practica4/pcores/nrvgap_v1_00_a/devl/projnav/iseconfig/nrvgap.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>N:/ws/practica4/pcores/nrvgap_v1_00_a/devl/projnav\</ImplementationReportsDirectory>
+  <SavedFilePath>U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/devl/projnav/iseconfig/nrvgap.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/devl/projnav\</ImplementationReportsDirectory>
   <DateInitialized>2022-11-16T17:04:31</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

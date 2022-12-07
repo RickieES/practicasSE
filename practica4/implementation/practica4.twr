@@ -1,9 +1,9 @@
 --------------------------------------------------------------------------------
-Release 14.1 Trace  (nt)
+Release 14.1 Trace  (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-C:\Xilinx\14.1\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -e 3 -xml practica4.twx
-practica4.ncd practica4.pcf
+C:\software\electronica\xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -e 3
+-xml practica4.twx practica4.ncd practica4.pcf
 
 Design file:              practica4.ncd
 Physical constraint file: practica4.pcf
@@ -38,7 +38,7 @@ For more information, see Period Analysis in the Timing Closure User Guide (UG61
 
  147778 paths analyzed, 8114 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is  13.969ns.
+ Minimum period is  12.951ns.
 --------------------------------------------------------------------------------
 
 
@@ -54,7 +54,7 @@ Clock to Setup on destination clock Clk_pin
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clk_pin        |   13.969|         |         |         |
+Clk_pin        |   12.951|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -63,20 +63,20 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 147778 paths, 0 nets, and 12013 connections
+Constraints cover 147778 paths, 0 nets, and 11981 connections
 
 Design statistics:
-   Minimum period:  13.969ns   (Maximum frequency:  71.587MHz)
+   Minimum period:  12.951ns   (Maximum frequency:  77.214MHz)
 
 
-Analysis completed Tue Nov 29 00:26:38 2022 
+Analysis completed Wed Dec 07 17:45:58 2022 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 154 MB
+Peak Memory Usage: 4553 MB
 
 
 

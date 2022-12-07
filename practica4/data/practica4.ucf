@@ -5,10 +5,12 @@
 ############################################################################
 
 Net Clk_pin LOC=P8;
-#push buttons placa superior
-#NET SW2 LOC=E11; 
-#NET SW3 LOC=A13; 
-Net Rst_pin LOC=E11;
+# Switches placa superior
+NET Rst_Pin LOC=K4;
+#NET SW<2> LOC=K3;
+#NET SW<3> LOC=K2;
+#NET SW<4> LOC=J4;
+
 ## System level constraints
 Net Clk_pin TNM_NET = Clk_pin;
 TIMESPEC TS_Clk_pin = PERIOD Clk_pin 20000 ps;
@@ -19,7 +21,6 @@ Net Rst_pin TIG;
 #### Module RS232 constraints
 Net RX_pin LOC=G5;
 Net TX_pin LOC=J2;
-
 
 # Push button placa extendida
 NET mover_izquierda_pin LOC=H4;
@@ -37,16 +38,17 @@ NET mover_derecha_pin LOC=M3;
 
 ## GPIO SWITCHEs #################################
 
-#switches placa superior
-#NET SW<1> LOC=K4;
-#NET SW<2> LOC=K3;
-#NET SW<3> LOC=K2;
-#NET SW<4> LOC=J4;
+# Switches placa extendida
+NET switches<0> LOC=P12;
+NET switches<1> LOC=J1;
+NET switches<2> LOC=H1;
+NET switches<3> LOC=H3;
+#NET switches<4> LOC=G2;
+#NET switches<5> LOC=K15;
+#NET switches<6> LOC=K16;
+#NET switches<7> LOC=F15;
 
-Net switches<0> LOC=K4;
-Net switches<1> LOC=K3;
-Net switches<2> LOC=K2;
-Net switches<3> LOC=J4;
+
 
 ## VGA #################################
 Net hsyncb_pin LOC=B7;

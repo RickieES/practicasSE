@@ -248,42 +248,8 @@ int main() {
 
     // Mientras no pulse 'X' o 'x'
     while ((byte != 0x58) && (byte != 0x78)) {
-		while (!(NRVGAP_mWriteFIFOFull(XPAR_NRVGAP_0_BASEADDR))) {
-			/* La pantalla es un array de 16 filas por 8 columnas
-			 * Se accede a una posición dada por columna*16+fila
-			 * El dato hay que enviarlo con el siguiente formato
-			 * 7 bits menos significativos (bits 6..0) la posición			 *
-			 * 9 bits mas significativos (bits 31 .. 23) el color
-			 * bits 16-13 para fila modificada
-			 * bits 12-9 para columna modificada
-			 */
-			for (fila = 0; fila < nfilas; fila++) {
-				for (columna = 0; columna < ncolumnas; columna++) {
-					posicion = columna * nfilas + fila;
-
-					if ((columna == columnaElegida) && (fila = filaElegida)) {
-						color = colorElegido;
-					} else {
-						if ((columna + fila) % 2 == 0) {
-							color = BLANCO;
-						} else {
-							color = NEGRO;
-						}
-					}
-
-					Data = ((color & 0x1FF) << 23)   |
-						   ((nfilas & 0x1F) << 13)   |
-						   ((ncolumnas & 0x1F) << 9) |
-						   (posicion & 0x7F);
-					NRVGAP_mWriteToFIFO(XPAR_NRVGAP_0_BASEADDR, 0, Data);
-					xil_printf("Data configuracion =%d %d %08x\r\n", fila,
-							columna, Data);
-				}
-			}
-		}
-
 		xil_printf("Elija una opcion:\r\n");
-        xil_printf("  (La parte a es mostrar el tablero)");
+        xil_printf("  (La parte a es mostrar el tablero)\r\n");
         xil_printf("  b. (Parte b1) de la practica - colorear un recuadro\r\n");
         xil_printf("  c. (Parte b3) de la práctica - Establecer filas y columnas por software\r\n");
         xil_printf("  x. Salir\r\n");
@@ -307,6 +273,41 @@ int main() {
             default: // otro caracter
                 xil_printf("Debe introducir una de las opciones del menu (b, c).\r\n");
         }
+
+        // while (!(NRVGAP_mWriteFIFOFull(XPAR_NRVGAP_0_BASEADDR))) {
+			/* La pantalla es un array de 16 filas por 8 columnas
+			 * Se accede a una posición dada por columna*16+fila
+			 * El dato hay que enviarlo con el siguiente formato
+			 * 7 bits menos significativos (bits 6..0) la posición			 *
+			 * 9 bits mas significativos (bits 31 .. 23) el color
+			 * bits 16-13 para fila modificada
+			 * bits 12-9 para columna modificada
+			 */
+			for (fila = 0; fila < nfilas; fila++) {
+				for (columna = 0; columna < ncolumnas; columna++) {
+					posicion = columna * nfilas + fila;
+
+					if ((columna == columnaElegida) && (fila == filaElegida)) {
+						color = colorElegido;
+					} else {
+						if ((columna + fila) % 2 == 0) {
+							color = BLANCO;
+						} else {
+							color = NEGRO;
+						}
+					}
+
+					Data = ((color & 0x1FF) << 23)   |
+						   ((nfilas & 0x1F) << 13)   |
+						   ((ncolumnas & 0x1F) << 9) |
+						   (posicion & 0x7F);
+					NRVGAP_mWriteToFIFO(XPAR_NRVGAP_0_BASEADDR, 0, Data);
+					xil_printf("Data configuracion =%d %d %08x\r\n", fila,
+							columna, Data);
+				}
+			}
+		// }
+
     }
 
     xil_printf("Ha elegido salir del menu. Fin de la ejecucion del programa de Spartan.\r\n");

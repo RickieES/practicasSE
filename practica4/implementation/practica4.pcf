@@ -1,11 +1,11 @@
 //! **************************************************************************
-// Written by: Map P.15xf on Tue Nov 29 00:26:06 2022
+// Written by: Map P.15xf on Wed Dec 07 17:45:42 2022
 //! **************************************************************************
 
 SCHEMATIC START;
 COMP "Clk_pin" LOCATE = SITE "P8" LEVEL 1;
 COMP "hsyncb_pin" LOCATE = SITE "B7" LEVEL 1;
-COMP "Rst_pin" LOCATE = SITE "E11" LEVEL 1;
+COMP "Rst_pin" LOCATE = SITE "K4" LEVEL 1;
 COMP "RX_pin" LOCATE = SITE "G5" LEVEL 1;
 COMP "TX_pin" LOCATE = SITE "J2" LEVEL 1;
 COMP "vsyncb_pin" LOCATE = SITE "D8" LEVEL 1;

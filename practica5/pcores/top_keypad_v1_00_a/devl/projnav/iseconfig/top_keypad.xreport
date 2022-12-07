@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2022-12-06T22:30:04</DateModified>
+  <DateModified>2022-12-07T17:26:49</DateModified>
   <ModuleName>top_keypad</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>N:/ws/practica5/pcores/top_keypad_v1_00_a/devl/projnav/iseconfig/top_keypad.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>N:/ws/practica5/pcores/top_keypad_v1_00_a/devl/projnav</ImplementationReportsDirectory>
+  <SavedFilePath>U:/hlocal/practicasSE-main/practica5/pcores/top_keypad_v1_00_a/devl/projnav/iseconfig/top_keypad.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>U:/hlocal/practicasSE-main/practica5/pcores/top_keypad_v1_00_a/devl/projnav\</ImplementationReportsDirectory>
   <DateInitialized>2022-12-06T22:30:04</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

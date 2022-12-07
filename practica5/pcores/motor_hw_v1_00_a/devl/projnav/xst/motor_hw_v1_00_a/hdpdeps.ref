@@ -1,0 +1,25 @@
+V3 14
+FL C:/hlocal/XilinxProyectos/Practica5/pcores/motor_hw_v1_00_a/hdl/vhdl/motor_hw.vhd 2021/02/20.01:17:09 P.15xf
+EN motor_hw_v1_00_a/motor_hw 1613782214 \
+      FL C:/hlocal/XilinxProyectos/Practica5/pcores/motor_hw_v1_00_a/hdl/vhdl/motor_hw.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
+      PB ieee/STD_LOGIC_UNSIGNED 1335251625 LB proc_common_v3_00_a \
+      PB proc_common_v3_00_a/proc_common_pkg 1613782187 \
+      PB proc_common_v3_00_a/ipif_pkg 1613782199 LB plbv46_slave_single_v1_01_a \
+      EN plbv46_slave_single_v1_01_a/plbv46_slave_single 1613782210 \
+      LB motor_hw_v1_00_a EN motor_hw_v1_00_a/user_logic 1613782212
+AR motor_hw_v1_00_a/motor_hw/IMP 1613782215 \
+      FL C:/hlocal/XilinxProyectos/Practica5/pcores/motor_hw_v1_00_a/hdl/vhdl/motor_hw.vhd \
+      EN motor_hw_v1_00_a/motor_hw 1613782214 \
+      CP plbv46_slave_single_v1_01_a/plbv46_slave_single \
+      CP motor_hw_v1_00_a/user_logic
+FL C:/hlocal/XilinxProyectos/Practica5/pcores/motor_hw_v1_00_a/hdl/vhdl/user_logic.vhd 2021/02/20.01:49:41 P.15xf
+EN motor_hw_v1_00_a/user_logic 1613782212 \
+      FL C:/hlocal/XilinxProyectos/Practica5/pcores/motor_hw_v1_00_a/hdl/vhdl/user_logic.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
+      PB ieee/STD_LOGIC_UNSIGNED 1335251625 LB proc_common_v3_00_a \
+      PB proc_common_v3_00_a/proc_common_pkg 1613782187
+AR motor_hw_v1_00_a/user_logic/IMP 1613782213 \
+      FL C:/hlocal/XilinxProyectos/Practica5/pcores/motor_hw_v1_00_a/hdl/vhdl/user_logic.vhd \
+      EN motor_hw_v1_00_a/user_logic 1613782212 CP debouncer CP motorstep \
+      CP one_hundred_K_counter

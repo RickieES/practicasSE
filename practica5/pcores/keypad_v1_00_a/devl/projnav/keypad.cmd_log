@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "C:/hlocal/XilinxProyectos/Practica5/pcores/keypad_v1_00_a/devl/projnav/keypad.xst" -ofn "C:/hlocal/XilinxProyectos/Practica5/pcores/keypad_v1_00_a/devl/projnav/keypad.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-5 keypad.ngc keypad.ngd  
+map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o keypad_map.ncd keypad.ngd keypad.pcf 

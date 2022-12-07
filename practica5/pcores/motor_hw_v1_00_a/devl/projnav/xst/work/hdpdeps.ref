@@ -1,0 +1,23 @@
+V3 9
+FL C:/hlocal/XilinxProyectos/Practica5/pcores/motor_hw_v1_00_a/hdl/vhdl/100_k_counter.vhd 2021/02/15.20:33:11 P.15xf
+EN work/one_hundred_K_counter 1613782206 \
+      FL C:/hlocal/XilinxProyectos/Practica5/pcores/motor_hw_v1_00_a/hdl/vhdl/100_k_counter.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
+      PB ieee/STD_LOGIC_UNSIGNED 1335251625
+AR work/one_hundred_K_counter/Behavioral 1613782207 \
+      FL C:/hlocal/XilinxProyectos/Practica5/pcores/motor_hw_v1_00_a/hdl/vhdl/100_k_counter.vhd \
+      EN work/one_hundred_K_counter 1613782206
+FL C:/hlocal/XilinxProyectos/Practica5/pcores/motor_hw_v1_00_a/hdl/vhdl/debouncer.vhd 2014/07/18.18:26:22 P.15xf
+EN work/debouncer 1613782202 \
+      FL C:/hlocal/XilinxProyectos/Practica5/pcores/motor_hw_v1_00_a/hdl/vhdl/debouncer.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/STD_LOGIC_UNSIGNED 1335251625
+AR work/debouncer/debouncerArch 1613782203 \
+      FL C:/hlocal/XilinxProyectos/Practica5/pcores/motor_hw_v1_00_a/hdl/vhdl/debouncer.vhd \
+      EN work/debouncer 1613782202
+FL C:/hlocal/XilinxProyectos/Practica5/pcores/motor_hw_v1_00_a/hdl/vhdl/motorstep.vhd 2021/02/15.20:33:14 P.15xf
+EN work/motorstep 1613782204 \
+      FL C:/hlocal/XilinxProyectos/Practica5/pcores/motor_hw_v1_00_a/hdl/vhdl/motorstep.vhd \
+      PB ieee/std_logic_1164 1335251622
+AR work/motorstep/Behavioral 1613782205 \
+      FL C:/hlocal/XilinxProyectos/Practica5/pcores/motor_hw_v1_00_a/hdl/vhdl/motorstep.vhd \
+      EN work/motorstep 1613782204

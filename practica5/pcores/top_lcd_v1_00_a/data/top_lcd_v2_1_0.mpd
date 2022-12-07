@@ -78,10 +78,9 @@ PORT Sl_MBusy = Sl_MBusy, DIR = O, VEC = [0:(C_SPLB_NUM_MASTERS-1)], BUS = SPLB
 PORT Sl_MWrErr = Sl_MWrErr, DIR = O, VEC = [0:(C_SPLB_NUM_MASTERS-1)], BUS = SPLB
 PORT Sl_MRdErr = Sl_MRdErr, DIR = O, VEC = [0:(C_SPLB_NUM_MASTERS-1)], BUS = SPLB
 PORT Sl_MIRQ = Sl_MIRQ, DIR = O, VEC = [0:(C_SPLB_NUM_MASTERS-1)], BUS = SPLB
-PORT rw = rw, DIR = O, BUS = SPLB
-PORT rs = rs, DIR = O, BUS = SPLB
-PORT e = e, DIR = O, BUS = SPLB
-PORT lcd_data = lcd_data, DIR = O, VEC = [7:0], BUS = SPLB
-
+PORT rw = "", DIR = O
+PORT rs = "", DIR = O
+PORT e = "", DIR = O
+PORT lcd_data = "", DIR = O, VEC = [7:0], ENDIAN = LITTLE
 
 END

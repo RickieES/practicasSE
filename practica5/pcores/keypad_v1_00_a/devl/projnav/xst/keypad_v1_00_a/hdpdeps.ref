@@ -1,0 +1,24 @@
+V3 12
+FL C:/hlocal/XilinxProyectos/Practica5/pcores/keypad_v1_00_a/hdl/vhdl/keypad.vhd 2021/01/07.03:01:51 P.15xf
+EN keypad_v1_00_a/keypad 1609991335 \
+      FL C:/hlocal/XilinxProyectos/Practica5/pcores/keypad_v1_00_a/hdl/vhdl/keypad.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
+      PB ieee/STD_LOGIC_UNSIGNED 1335251625 LB proc_common_v3_00_a \
+      PB proc_common_v3_00_a/proc_common_pkg 1609991312 \
+      PB proc_common_v3_00_a/ipif_pkg 1609991324 LB plbv46_slave_single_v1_01_a \
+      EN plbv46_slave_single_v1_01_a/plbv46_slave_single 1609991331 \
+      LB keypad_v1_00_a EN keypad_v1_00_a/user_logic 1609991333
+AR keypad_v1_00_a/keypad/IMP 1609991336 \
+      FL C:/hlocal/XilinxProyectos/Practica5/pcores/keypad_v1_00_a/hdl/vhdl/keypad.vhd \
+      EN keypad_v1_00_a/keypad 1609991335 \
+      CP plbv46_slave_single_v1_01_a/plbv46_slave_single \
+      CP keypad_v1_00_a/user_logic
+FL C:/hlocal/XilinxProyectos/Practica5/pcores/keypad_v1_00_a/hdl/vhdl/user_logic.vhd 2021/01/07.02:45:25 P.15xf
+EN keypad_v1_00_a/user_logic 1609991333 \
+      FL C:/hlocal/XilinxProyectos/Practica5/pcores/keypad_v1_00_a/hdl/vhdl/user_logic.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
+      PB ieee/STD_LOGIC_UNSIGNED 1335251625 LB proc_common_v3_00_a \
+      PB proc_common_v3_00_a/proc_common_pkg 1609991312
+AR keypad_v1_00_a/user_logic/IMP 1609991334 \
+      FL C:/hlocal/XilinxProyectos/Practica5/pcores/keypad_v1_00_a/hdl/vhdl/user_logic.vhd \
+      EN keypad_v1_00_a/user_logic 1609991333 CP teclaDetect

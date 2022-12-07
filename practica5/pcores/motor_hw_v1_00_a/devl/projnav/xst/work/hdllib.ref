@@ -1,0 +1,6 @@
+AR debouncer debouncerarch C:/hlocal/XilinxProyectos/Practica5/pcores/motor_hw_v1_00_a/hdl/vhdl/debouncer.vhd sub00/vhpl01 1613782203
+EN motorstep NULL C:/hlocal/XilinxProyectos/Practica5/pcores/motor_hw_v1_00_a/hdl/vhdl/motorstep.vhd sub00/vhpl02 1613782204
+AR one_hundred_k_counter behavioral C:/hlocal/XilinxProyectos/Practica5/pcores/motor_hw_v1_00_a/hdl/vhdl/100_k_counter.vhd sub00/vhpl05 1613782207
+AR motorstep behavioral C:/hlocal/XilinxProyectos/Practica5/pcores/motor_hw_v1_00_a/hdl/vhdl/motorstep.vhd sub00/vhpl03 1613782205
+EN one_hundred_k_counter NULL C:/hlocal/XilinxProyectos/Practica5/pcores/motor_hw_v1_00_a/hdl/vhdl/100_k_counter.vhd sub00/vhpl04 1613782206
+EN debouncer NULL C:/hlocal/XilinxProyectos/Practica5/pcores/motor_hw_v1_00_a/hdl/vhdl/debouncer.vhd sub00/vhpl00 1613782202

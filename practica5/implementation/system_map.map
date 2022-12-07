@@ -1,0 +1,121 @@
+Release 14.1 Map P.15xf (nt64)
+Xilinx Map Application Log File for Design 'system'
+
+Design Information
+------------------
+Command Line   : map -o system_map.ncd -pr b -ol high -timing -detail system.ngd
+system.pcf 
+Target Device  : xc3s1000
+Target Package : ft256
+Target Speed   : -5
+Mapper Version : spartan3 -- $Revision: 1.55 $
+Mapped Date    : Mon Feb 22 01:55:37 2021
+
+Mapping design into LUTs...
+WARNING:MapLib:701 - Signal ledrgb_0_switches_pin<0> connected to top level port
+   ledrgb_0_switches_pin<0> has been removed.
+Writing file system_map.ngm...
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 18 secs 
+Total CPU  time at the beginning of Placer: 8 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:25239f3b) REAL time: 22 secs 
+
+Phase 2.7  Design Feasibility Check
+INFO:Place:834 - Only a subset of IOs are locked. Out of 50 IOs, 34 are locked
+   and 16 are not locked. If you would like to print the names of these IOs,
+   please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
+Phase 2.7  Design Feasibility Check (Checksum:25239f3b) REAL time: 22 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:25239f3b) REAL time: 22 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+.....
+Phase 4.2  Initial Clock and IO Placement (Checksum:3b074c0) REAL time: 24 secs 
+
+Phase 5.36  Local Placement Optimization
+Phase 5.36  Local Placement Optimization (Checksum:3b074c0) REAL time: 24 secs 
+
+Phase 6.3  Local Placement Optimization
+......
+Phase 6.3  Local Placement Optimization (Checksum:95004f2a) REAL time: 24 secs 
+
+Phase 7.5  Local Placement Optimization
+Phase 7.5  Local Placement Optimization (Checksum:95004f2a) REAL time: 24 secs 
+
+Phase 8.4  Local Placement Optimization
+..................................
+..................
+Phase 8.4  Local Placement Optimization (Checksum:95004f2a) REAL time: 30 secs 
+
+Phase 9.28  Local Placement Optimization
+Phase 9.28  Local Placement Optimization (Checksum:95004f2a) REAL time: 30 secs 
+
+Phase 10.8  Global Placement
+....................................
+...................
+............
+......................................................................................................................
+........................................................................
+........................................................................
+Phase 10.8  Global Placement (Checksum:5ed2107) REAL time: 43 secs 
+
+Phase 11.29  Local Placement Optimization
+Phase 11.29  Local Placement Optimization (Checksum:5ed2107) REAL time: 43 secs 
+
+Phase 12.5  Local Placement Optimization
+Phase 12.5  Local Placement Optimization (Checksum:5ed2107) REAL time: 43 secs 
+
+Phase 13.18  Placement Optimization
+Phase 13.18  Placement Optimization (Checksum:b98165aa) REAL time: 1 mins 1 secs 
+
+Phase 14.5  Local Placement Optimization
+Phase 14.5  Local Placement Optimization (Checksum:b98165aa) REAL time: 1 mins 1 secs 
+
+Total REAL time to Placer completion: 1 mins 2 secs 
+Total CPU  time to Placer completion: 47 secs 
+Running post-placement packing...
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    1
+Logic Utilization:
+  Number of Slice Flip Flops:         1,834 out of  15,360   11%
+  Number of 4 input LUTs:             2,957 out of  15,360   19%
+Logic Distribution:
+  Number of occupied Slices:          2,231 out of   7,680   29%
+    Number of Slices containing only related logic:   2,231 out of   2,231 100%
+    Number of Slices containing unrelated logic:          0 out of   2,231   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       3,098 out of  15,360   20%
+    Number used as logic:             2,473
+    Number used as a route-thru:        141
+    Number used for Dual Port RAMs:     384
+      (Two LUTs used per Dual Port RAM)
+    Number used as Shift registers:     100
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 50 out of     173   28%
+    IOB Flip Flops:                      21
+  Number of RAMB16s:                     17 out of      24   70%
+  Number of MULT18X18s:                   3 out of      24   12%
+  Number of BUFGMUXs:                     2 out of       8   25%
+
+Average Fanout of Non-Clock Nets:                3.78
+
+Peak Memory Usage:  4496 MB
+Total REAL time to MAP completion:  1 mins 5 secs 
+Total CPU time to MAP completion:   49 secs 
+
+Mapping completed.
+See MAP report file "system_map.mrp" for details.

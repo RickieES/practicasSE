@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Parameter xsthdpdir set to N:/ws/practica4/pcores/nrvgap_v1_00_a/devl/projnav/xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
 
@@ -26,15 +26,16 @@ Architecture vgacore_arch of Entity vgacore is up to date.
 Compiling vhdl file "//vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/counter2.vhd" in Library work.
 Architecture rtl of Entity counter2 is up to date.
 Compiling vhdl file "//vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/user_logic.vhd" in Library nrvgap_v1_00_a.
-Architecture imp of Entity user_logic is up to date.
+Entity <user_logic> compiled.
+Entity <user_logic> (Architecture <imp>) compiled.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.66 secs
+Total CPU time to Xst completion: 0.73 secs
  
 --> 
 
-Total memory usage is 169492 kilobytes
+Total memory usage is 168980 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

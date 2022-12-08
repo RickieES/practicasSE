@@ -8,10 +8,11 @@
  PORT rgb_pin = nrvgap_0_rgb, DIR = O, VEC = [0:8]
  PORT mover_izquierda_pin = net_mover_izquierda_pin, DIR = I
  PORT mover_derecha_pin = net_mover_derecha_pin, DIR = I
- PORT switches = net_switches, DIR = I, VEC = [3:0]
  PORT RX_pin = net_RX_pin, DIR = I
  PORT TX_pin = xps_uartlite_0_TX, DIR = O
  PORT Clk_pin = net_Clk_pin, DIR = I, SIGIS = CLK
+ PORT mover_arriba_pin = net_mover_arriba_pin, DIR = I
+ PORT mover_abajo_pin = net_mover_abajo_pin, DIR = I
 
 
 BEGIN microblaze
@@ -56,7 +57,8 @@ BEGIN nrvgap
  PORT rgb = nrvgap_0_rgb
  PORT mover_izquierda_pin = net_mover_izquierda_pin
  PORT mover_derecha_pin = net_mover_derecha_pin
- PORT switches = net_switches
+ PORT mover_arriba_pin = net_mover_arriba_pin
+ PORT mover_abajo_pin = net_mover_abajo_pin
 END
 
 BEGIN xps_uartlite

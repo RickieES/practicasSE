@@ -24,9 +24,9 @@ Net TX_pin LOC=J2;
 
 # Push button placa extendida
 NET mover_izquierda_pin LOC=H4;
-#NET pushb2 LOC=L5;
-#NET pushb3 LOC=N2;
-NET mover_derecha_pin LOC=M3;
+NET mover_arriba_pin    LOC=L5;
+NET mover_abajo_pin     LOC=N2;
+NET mover_derecha_pin   LOC=M3;
 
 ## GPIO LEDs #####################################
 
@@ -39,10 +39,10 @@ NET mover_derecha_pin LOC=M3;
 ## GPIO SWITCHEs #################################
 
 # Switches placa extendida
-NET switches<0> LOC=P12;
-NET switches<1> LOC=J1;
-NET switches<2> LOC=H1;
-NET switches<3> LOC=H3;
+#NET switches<0> LOC=P12;
+#NET switches<1> LOC=J1;
+#NET switches<2> LOC=H1;
+#NET switches<3> LOC=H3;
 #NET switches<4> LOC=G2;
 #NET switches<5> LOC=K15;
 #NET switches<6> LOC=K16;

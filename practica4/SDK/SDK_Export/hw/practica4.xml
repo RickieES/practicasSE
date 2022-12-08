@@ -1,5 +1,5 @@
 
-<EDKSYSTEM EDKVERSION="14.1" EDWVERSION="1.2" TIMESTAMP="Mon Nov 28 17:05:30 2022">
+<EDKSYSTEM EDKVERSION="14.1" EDWVERSION="1.2" TIMESTAMP="Thu Dec 08 22:57:18 2022">
 
   <SYSTEMINFO ARCH="spartan3" DEVICE="xc3s1000" PACKAGE="ft256" PART="xc3s1000ft256-5" SOURCE="//vboxsvr/se/ws/practica4/practica4.xmp" SPEEDGRADE="-5"/>
 
@@ -35,28 +35,33 @@
         <CONNECTION INSTANCE="nrvgap_0" PORT="mover_derecha_pin"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" ENDIAN="LITTLE" LEFT="3" LSB="0" MHS_INDEX="6" MSB="3" NAME="switches" RIGHT="0" SIGNAME="net_switches">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="nrvgap_0" PORT="switches"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" MHS_INDEX="7" NAME="RX_pin" SIGNAME="net_RX_pin">
+    <PORT DIR="I" MHS_INDEX="6" NAME="RX_pin" SIGNAME="net_RX_pin">
       <CONNECTIONS>
         <CONNECTION BUSINTERFACE="[uart_0]" INSTANCE="xps_uartlite_0" PORT="RX"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" MHS_INDEX="8" NAME="TX_pin" SIGNAME="xps_uartlite_0_TX">
+    <PORT DIR="O" MHS_INDEX="7" NAME="TX_pin" SIGNAME="xps_uartlite_0_TX">
       <CONNECTIONS>
         <CONNECTION BUSINTERFACE="[uart_0]" INSTANCE="xps_uartlite_0" PORT="TX"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" MHS_INDEX="9" NAME="Clk_pin" SIGIS="CLK" SIGNAME="net_Clk_pin">
+    <PORT DIR="I" MHS_INDEX="8" NAME="Clk_pin" SIGIS="CLK" SIGNAME="net_Clk_pin">
       <CONNECTIONS>
         <CONNECTION BUSINTERFACE="[DPLB:IPLB:DLMB:ILMB]" INSTANCE="microblaze_0" PORT="CLK"/>
         <CONNECTION INSTANCE="plb_v46_0" PORT="PLB_Clk"/>
         <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="SPLB_Clk"/>
         <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="nrvgap_0" PORT="SPLB_Clk"/>
         <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="SPLB_Clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" MHS_INDEX="9" NAME="mover_arriba_pin" SIGNAME="net_mover_arriba_pin">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="nrvgap_0" PORT="mover_arriba_pin"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" MHS_INDEX="10" NAME="mover_abajo_pin" SIGNAME="net_mover_abajo_pin">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="nrvgap_0" PORT="mover_abajo_pin"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -3628,9 +3633,14 @@
             <CONNECTION INSTANCE="External Ports" PORT="mover_derecha_pin"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" ENDIAN="LITTLE" IS_INSTANTIATED="TRUE" LEFT="3" LSB="0" MHS_INDEX="5" MPD_INDEX="47" MSB="3" NAME="switches" RIGHT="0" SIGNAME="net_switches" VECFORMULA="[3:0]">
+        <PORT DIR="I" IS_INSTANTIATED="TRUE" MHS_INDEX="5" MPD_INDEX="47" NAME="mover_arriba_pin" SIGNAME="net_mover_arriba_pin">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External Ports" PORT="switches"/>
+            <CONNECTION INSTANCE="External Ports" PORT="mover_arriba_pin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" IS_INSTANTIATED="TRUE" MHS_INDEX="6" MPD_INDEX="48" NAME="mover_abajo_pin" SIGNAME="net_mover_abajo_pin">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="mover_abajo_pin"/>
           </CONNECTIONS>
         </PORT>
         <PORT BUS="SPLB" DEF_SIGNAME="net_Clk_pin" DIR="I" MPD_INDEX="0" NAME="SPLB_Clk" SIGIS="CLK" SIGNAME="net_Clk_pin">

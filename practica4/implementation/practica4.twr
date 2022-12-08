@@ -1,9 +1,9 @@
 --------------------------------------------------------------------------------
-Release 14.1 Trace  (nt64)
+Release 14.1 Trace  (nt)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-C:\software\electronica\xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -e 3
--xml practica4.twx practica4.ncd practica4.pcf
+C:\Xilinx\14.1\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -e 3 -xml practica4.twx
+practica4.ncd practica4.pcf
 
 Design file:              practica4.ncd
 Physical constraint file: practica4.pcf
@@ -36,9 +36,9 @@ INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and
 Timing constraint: TS_Clk_pin = PERIOD TIMEGRP "Clk_pin" 20 ns HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 147778 paths analyzed, 8114 endpoints analyzed, 0 failing endpoints
+ 147778 paths analyzed, 8113 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is  12.951ns.
+ Minimum period is  15.776ns.
 --------------------------------------------------------------------------------
 
 
@@ -54,7 +54,7 @@ Clock to Setup on destination clock Clk_pin
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clk_pin        |   12.951|         |         |         |
+Clk_pin        |   15.776|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -63,20 +63,20 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 147778 paths, 0 nets, and 11981 connections
+Constraints cover 147778 paths, 0 nets, and 11974 connections
 
 Design statistics:
-   Minimum period:  12.951ns   (Maximum frequency:  77.214MHz)
+   Minimum period:  15.776ns   (Maximum frequency:  63.387MHz)
 
 
-Analysis completed Wed Dec 07 17:45:58 2022 
+Analysis completed Thu Dec 08 22:56:45 2022 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 4553 MB
+Peak Memory Usage: 155 MB
 
 
 

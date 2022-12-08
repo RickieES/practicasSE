@@ -15,10 +15,11 @@ entity practica4_stub is
     rgb_pin : out std_logic_vector(0 to 8);
     mover_izquierda_pin : in std_logic;
     mover_derecha_pin : in std_logic;
-    switches : in std_logic_vector(3 downto 0);
     RX_pin : in std_logic;
     TX_pin : out std_logic;
-    Clk_pin : in std_logic
+    Clk_pin : in std_logic;
+    mover_arriba_pin : in std_logic;
+    mover_abajo_pin : in std_logic
   );
 end practica4_stub;
 
@@ -32,10 +33,11 @@ architecture STRUCTURE of practica4_stub is
       rgb_pin : out std_logic_vector(0 to 8);
       mover_izquierda_pin : in std_logic;
       mover_derecha_pin : in std_logic;
-      switches : in std_logic_vector(3 downto 0);
       RX_pin : in std_logic;
       TX_pin : out std_logic;
-      Clk_pin : in std_logic
+      Clk_pin : in std_logic;
+      mover_arriba_pin : in std_logic;
+      mover_abajo_pin : in std_logic
     );
   end component;
 
@@ -52,10 +54,11 @@ begin
       rgb_pin => rgb_pin,
       mover_izquierda_pin => mover_izquierda_pin,
       mover_derecha_pin => mover_derecha_pin,
-      switches => switches,
       RX_pin => RX_pin,
       TX_pin => TX_pin,
-      Clk_pin => Clk_pin
+      Clk_pin => Clk_pin,
+      mover_arriba_pin => mover_arriba_pin,
+      mover_abajo_pin => mover_abajo_pin
     );
 
 end architecture STRUCTURE;

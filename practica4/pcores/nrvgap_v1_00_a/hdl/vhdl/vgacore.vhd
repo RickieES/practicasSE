@@ -40,7 +40,8 @@ entity vgacore is
 		rgb: out std_logic_vector(8 downto 0);	-- red,green,blue colors
 		mover_derecha_pin: in std_logic; --para mover derecha
     	mover_izquierda_pin: in std_logic; --para mover izquierda
-		switches: in std_logic_vector(3 downto 0)
+		mover_arriba_pin: in std_logic; --para mover derecha
+    	mover_abajo_pin: in std_logic --para mover izquierda
 	);
 end vgacore;
 
@@ -60,7 +61,8 @@ end component;
 
 signal hcnt: std_logic_vector(8 downto 0);	-- horizontal pixel counter
 signal vcnt: std_logic_vector(9 downto 0);	-- vertical line counter
-signal cnt: std_logic_vector(2 downto 0); --contador
+signal hoffset: std_logic_vector(2 downto 0); --contador
+signal voffset: std_logic_vector(1 downto 0); --contador
 
 type ram_type is array (0 to 127) of std_logic_vector(8 downto 0);
 signal RAM : ram_type :=
@@ -109,10 +111,16 @@ signal RAM : ram_type :=
 signal hsyncbAux : std_logic;
 signal debouncer_d : std_logic;
 signal debouncer_i : std_logic;
+signal debouncer_a : std_logic;
+signal debouncer_b : std_logic;
 signal deb_rising_d : std_logic;
 signal deb_rising_i : std_logic;
+signal deb_rising_a : std_logic;
+signal deb_rising_b : std_logic;
 signal der : std_logic;
 signal izq : std_logic;
+signal arr : std_logic;
+signal aba : std_logic;
 
 begin
 
@@ -136,19 +144,51 @@ debouncer_derecho: debouncer port map(
 	xDebRisingEdge => deb_rising_d
 );
 
-process(clock,reset,der,izq)
+debouncer_superior: debouncer port map(
+	rst => not reset,
+	clk => clock,
+	x => mover_arriba_pin,
+	xDeb => debouncer_a,
+	xDebFallingEdge => arr,
+	xDebRisingEdge => deb_rising_a
+);
+
+debouncer_inferior: debouncer port map(
+	rst => not reset,
+	clk => clock,
+	x => mover_abajo_pin,
+	xDeb => debouncer_b,
+	xDebFallingEdge => aba,
+	xDebRisingEdge => deb_rising_b
+);
+
+HORIZONTAL:
+process(clock, reset, der, izq)
 begin
-    if reset = '1' then 
-	cnt <="000";
-    elsif (clock' event and clock='1') then
-	if izq='1' then 
-		cnt <= cnt+1;
-	elsif der ='1' then
-		cnt <= cnt-1;
-	end if;
+  if reset = '1' then
+    hoffset <= "000";
+  elsif (clock'event and clock = '1') then
+    if (izq='1' and hoffset < 8) then
+		hoffset <= hoffset + 1;
+    elsif (der ='1' and hoffset > 0) then
+      hoffset <= hoffset - 1;
     end if;
+  end if;
 end process;
 
+VERTICAL:
+process(clock, reset, arr, aba)
+begin
+  if reset = '1' then
+    voffset <= "00";
+  elsif (clock'event and clock = '1') then
+    if (arr='1' and voffset < 4) then
+		voffset <= voffset + 1;
+    elsif (aba ='1' and voffset > 0) then
+      voffset <= voffset - 1;
+    end if;
+  end if;
+end process;
 
 A: process(clock,reset)
 begin
@@ -230,7 +270,7 @@ end process;
 process(vcnt, hcnt, RAM)
 begin
 	--if vcnt(9 downto 8)="00" and hcnt(8 downto 6)="000" then
-	if vcnt(9 downto 8)="00" and hcnt(8 downto 6)=cnt then
+	if vcnt(9 downto 8)=voffset and hcnt(8 downto 6)=hoffset then
 		rgb <= RAM(conv_integer(hcnt(5 downto 3) & vcnt(7 downto 4)));
 	else
 		rgb <= "000000000";

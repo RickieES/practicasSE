@@ -1,27 +1,27 @@
 V3 14
 FL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/counter2.vhd 2014/07/18.18:26:22 P.15xf
-EN work/counter2 1669677711 \
+EN work/counter2 1670535955 \
       FL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/counter2.vhd \
       PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
       PB ieee/STD_LOGIC_UNSIGNED 1335251625
-AR work/counter2/rtl 1669677712 \
+AR work/counter2/rtl 1670535956 \
       FL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/counter2.vhd \
-      EN work/counter2 1669677711 CP d_out
+      EN work/counter2 1670535955 CP d_out
 FL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/debouncer.vhd 2022/11/16.17:31:28 P.15xf
-EN work/debouncer 1669677704 \
+EN work/debouncer 1670536207 \
       FL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/debouncer.vhd \
       PB ieee/std_logic_1164 1335251622 PB ieee/STD_LOGIC_UNSIGNED 1335251625
-AR work/debouncer/debouncerArch 1669677705 \
+AR work/debouncer/debouncerArch 1670536208 \
       FL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/debouncer.vhd \
-      EN work/debouncer 1669677704
-FL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/vgacore.vhd 2022/11/24.00:50:46 P.15xf
-EN work/vgacore 1669677700 \
+      EN work/debouncer 1670536207
+FL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/vgacore.vhd 2022/12/08.22:50:02 P.15xf
+EN work/vgacore 1670536209 \
       FL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/vgacore.vhd \
       PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
       PB ieee/STD_LOGIC_UNSIGNED 1335251625
-AR work/vgacore/vgacore_arch 1669677701 \
+AR work/vgacore/vgacore_arch 1670536210 \
       FL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/vgacore.vhd \
-      EN work/vgacore 1669677700 CP debouncer
+      EN work/vgacore 1670536209 CP debouncer
 FL U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/counter2.vhd 2014/07/18.17:26:22 P.15xf
 FL U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/debouncer.vhd 2022/11/16.16:31:27 P.15xf
 FL U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/vgacore.vhd 2022/11/15.20:49:06 P.15xf

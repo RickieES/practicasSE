@@ -1,7 +1,7 @@
-INFILE=U:\hlocal\practicasSE-main\practica4\implementation\practica4.ncd
-OUTFILE=U:\hlocal\practicasSE-main\practica4\implementation\practica4.bit
+INFILE=N:\ws\practica4\implementation\practica4.ncd
+OUTFILE=N:\ws\practica4\implementation\practica4.bit
 FAMILY=Spartan3
 PART=xc3s1000-5ft256
-WORKINGDIR=U:\hlocal\practicasSE-main\practica4\implementation
-LICENSE=ISE
-USER_INFO=210699396_1777489394_210552810_807
+WORKINGDIR=N:\ws\practica4\implementation
+LICENSE=WebPack
+USER_INFO=__0_0_0

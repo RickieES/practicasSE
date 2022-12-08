@@ -109,7 +109,8 @@ entity user_logic is
 		rgb                          : out std_logic_vector(8 downto 0);	-- red,green,blue colors
 		mover_derecha_pin            : in std_logic;
 		mover_izquierda_pin          : in std_logic;
-		switches                     : in  std_logic_vector(3 downto 0);
+		mover_arriba_pin             : in std_logic;
+		mover_abajo_pin              : in std_logic;
 		-- DO NOT EDIT BELOW THIS LINE ---------------------
     -- Bus protocol ports, do not add to or delete
     Bus2IP_Clk                     : in  std_logic;
@@ -156,9 +157,10 @@ architecture IMP of user_logic is
 			rectangulo: in std_logic_vector(6 downto 0); -- rectangulo a borrar
 			vsyncb: out std_logic;	-- vertical (frame) sync
 			rgb: out std_logic_vector(8 downto 0);	-- red,green,blue colors
-		    mover_derecha_pin: in std_logic;
+         mover_derecha_pin: in std_logic;
     		mover_izquierda_pin: in std_logic;
-			switches: in std_logic_vector(3 downto 0)
+         mover_arriba_pin: in std_logic;
+    		mover_abajo_pin: in std_logic
 		);
 	end component;
 
@@ -233,7 +235,8 @@ timeOut <= "11"; -- 12,5 MHz
 			rgb => rgb,
 			mover_derecha_pin => mover_derecha_pin,
 			mover_izquierda_pin => mover_izquierda_pin,
-			switches => switches
+			mover_arriba_pin => mover_arriba_pin,
+			mover_abajo_pin => mover_abajo_pin
 		);
 
 		sincro : counter2 

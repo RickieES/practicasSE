@@ -1,7 +1,7 @@
 
-<EDKSYSTEM EDKVERSION="14.1" EDWVERSION="1.2" TIMESTAMP="Wed Dec 07 17:43:46 2022">
+<EDKSYSTEM EDKVERSION="14.1" EDWVERSION="1.2" TIMESTAMP="Thu Dec 08 22:52:52 2022">
 
-  <SYSTEMINFO ARCH="spartan3" DEVICE="xc3s1000" PACKAGE="ft256" PART="xc3s1000ft256-5" SOURCE="U:/hlocal/practicasSE-main/practica4/practica4.xmp" SPEEDGRADE="-5"/>
+  <SYSTEMINFO ARCH="spartan3" DEVICE="xc3s1000" PACKAGE="ft256" PART="xc3s1000ft256-5" SOURCE="//vboxsvr/se/ws/practica4/practica4.xmp" SPEEDGRADE="-5"/>
 
   <EXTERNALPORTS>
     <PORT DIR="I" MHS_INDEX="0" NAME="Rst_pin" SIGIS="RST" SIGNAME="net_Rst_pin">
@@ -35,28 +35,33 @@
         <CONNECTION INSTANCE="nrvgap_0" PORT="mover_derecha_pin"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" ENDIAN="LITTLE" LEFT="3" LSB="0" MHS_INDEX="6" MSB="3" NAME="switches" RIGHT="0" SIGNAME="net_switches">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="nrvgap_0" PORT="switches"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" MHS_INDEX="7" NAME="RX_pin" SIGNAME="net_RX_pin">
+    <PORT DIR="I" MHS_INDEX="6" NAME="RX_pin" SIGNAME="net_RX_pin">
       <CONNECTIONS>
         <CONNECTION BUSINTERFACE="[uart_0]" INSTANCE="xps_uartlite_0" PORT="RX"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" MHS_INDEX="8" NAME="TX_pin" SIGNAME="xps_uartlite_0_TX">
+    <PORT DIR="O" MHS_INDEX="7" NAME="TX_pin" SIGNAME="xps_uartlite_0_TX">
       <CONNECTIONS>
         <CONNECTION BUSINTERFACE="[uart_0]" INSTANCE="xps_uartlite_0" PORT="TX"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" MHS_INDEX="9" NAME="Clk_pin" SIGIS="CLK" SIGNAME="net_Clk_pin">
+    <PORT DIR="I" MHS_INDEX="8" NAME="Clk_pin" SIGIS="CLK" SIGNAME="net_Clk_pin">
       <CONNECTIONS>
         <CONNECTION BUSINTERFACE="[DPLB:IPLB:DLMB:ILMB]" INSTANCE="microblaze_0" PORT="CLK"/>
         <CONNECTION INSTANCE="plb_v46_0" PORT="PLB_Clk"/>
         <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_bram_if_cntlr_0" PORT="SPLB_Clk"/>
         <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="nrvgap_0" PORT="SPLB_Clk"/>
         <CONNECTION BUSINTERFACE="[SPLB]" INSTANCE="xps_uartlite_0" PORT="SPLB_Clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" MHS_INDEX="9" NAME="mover_arriba_pin" SIGNAME="net_mover_arriba_pin">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="nrvgap_0" PORT="mover_arriba_pin"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" MHS_INDEX="10" NAME="mover_abajo_pin" SIGNAME="net_mover_abajo_pin">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="nrvgap_0" PORT="mover_abajo_pin"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -66,7 +71,7 @@
       <DESCRIPTION TYPE="SHORT">MicroBlaze</DESCRIPTION>
       <DESCRIPTION TYPE="LONG">The MicroBlaze 32 bit soft processor</DESCRIPTION>
       <DOCUMENTATION>
-        <DOCUMENT SOURCE="C:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_30_a/doc/microblaze.pdf" TYPE="IP"/>
+        <DOCUMENT SOURCE="C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_30_a/doc/microblaze.pdf" TYPE="IP"/>
       </DOCUMENTATION>
       <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
@@ -2393,7 +2398,7 @@
       <DESCRIPTION TYPE="SHORT">Processor Local Bus (PLB) 4.6</DESCRIPTION>
       <DESCRIPTION TYPE="LONG">'Xilinx 64-bit Processor Local Bus (PLB) consists of a bus control unit, a watchdog timer, and separate address, write, and read data path units with a a three-cycle only arbitration feature'</DESCRIPTION>
       <DOCUMENTATION>
-        <DOCUMENT SOURCE="C:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/doc/plb_v46.pdf" TYPE="IP"/>
+        <DOCUMENT SOURCE="C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/doc/plb_v46.pdf" TYPE="IP"/>
       </DOCUMENTATION>
       <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
@@ -2976,7 +2981,7 @@
       <DESCRIPTION TYPE="SHORT">XPS BRAM Controller</DESCRIPTION>
       <DESCRIPTION TYPE="LONG">Attaches BRAM to the PLBV46</DESCRIPTION>
       <DOCUMENTATION>
-        <DOCUMENT SOURCE="C:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_bram_if_cntlr_v1_00_b/doc/xps_bram_if_cntlr.pdf" TYPE="IP"/>
+        <DOCUMENT SOURCE="C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_bram_if_cntlr_v1_00_b/doc/xps_bram_if_cntlr.pdf" TYPE="IP"/>
       </DOCUMENTATION>
       <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
@@ -3310,7 +3315,7 @@
       <DESCRIPTION TYPE="SHORT">Block RAM (BRAM) Block</DESCRIPTION>
       <DESCRIPTION TYPE="LONG">The BRAM Block is a configurable memory module that attaches to a variety of BRAM Interface Controllers.</DESCRIPTION>
       <DOCUMENTATION>
-        <DOCUMENT SOURCE="C:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/doc/bram_block.pdf" TYPE="IP"/>
+        <DOCUMENT SOURCE="C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/doc/bram_block.pdf" TYPE="IP"/>
       </DOCUMENTATION>
       <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>
@@ -3434,9 +3439,14 @@
             <CONNECTION INSTANCE="External Ports" PORT="mover_derecha_pin"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" ENDIAN="LITTLE" IS_INSTANTIATED="TRUE" LEFT="3" LSB="0" MHS_INDEX="5" MPD_INDEX="47" MSB="3" NAME="switches" RIGHT="0" SIGNAME="net_switches" VECFORMULA="[3:0]">
+        <PORT DIR="I" IS_INSTANTIATED="TRUE" MHS_INDEX="5" MPD_INDEX="47" NAME="mover_arriba_pin" SIGNAME="net_mover_arriba_pin">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External Ports" PORT="switches"/>
+            <CONNECTION INSTANCE="External Ports" PORT="mover_arriba_pin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" IS_INSTANTIATED="TRUE" MHS_INDEX="6" MPD_INDEX="48" NAME="mover_abajo_pin" SIGNAME="net_mover_abajo_pin">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="mover_abajo_pin"/>
           </CONNECTIONS>
         </PORT>
         <PORT BUS="SPLB" DEF_SIGNAME="net_Clk_pin" DIR="I" MPD_INDEX="0" NAME="SPLB_Clk" SIGIS="CLK" SIGNAME="net_Clk_pin">
@@ -3710,7 +3720,7 @@
       <DESCRIPTION TYPE="SHORT">XPS UART (Lite)</DESCRIPTION>
       <DESCRIPTION TYPE="LONG">Generic UART (Universal Asynchronous Receiver/Transmitter) for PLBV46 bus.</DESCRIPTION>
       <DOCUMENTATION>
-        <DOCUMENT SOURCE="C:/software/electronica/xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_uartlite_v1_02_a/doc/xps_uartlite.pdf" TYPE="IP"/>
+        <DOCUMENT SOURCE="C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_uartlite_v1_02_a/doc/xps_uartlite.pdf" TYPE="IP"/>
       </DOCUMENTATION>
       <LICENSEINFO ICON_NAME="ps_core_preferred"/>
       <PARAMETERS>

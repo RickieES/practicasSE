@@ -170,8 +170,9 @@ entity nrvgap is
     vsyncb                         : out std_logic;			-- vertical (frame) sync
     rgb                            : out std_logic_vector(8 downto 0);	-- red,green,blue colors
     mover_derecha_pin              : in std_logic;
-	mover_izquierda_pin            : in std_logic;
-	switches                       : in std_logic_vector(3 downto 0);
+    mover_izquierda_pin            : in std_logic;
+    mover_arriba_pin               : in std_logic;
+    mover_abajo_pin                : in std_logic;
 	 -- ADD USER PORTS ABOVE THIS LINE ------------------
 
     -- DO NOT EDIT BELOW THIS LINE ---------------------
@@ -507,8 +508,9 @@ begin
       vsyncb                         => vsyncb,
       rgb                            => rgb,
       mover_derecha_pin              => mover_derecha_pin,
-	  mover_izquierda_pin            => mover_izquierda_pin,
-	  switches                       => switches,
+      mover_izquierda_pin            => mover_izquierda_pin,
+      mover_arriba_pin               => mover_arriba_pin,
+      mover_abajo_pin                => mover_abajo_pin,
       -- MAP USER PORTS ABOVE THIS LINE ------------------
 
       Bus2IP_Clk                     => ipif_Bus2IP_Clk,

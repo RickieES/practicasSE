@@ -1,6 +1,6 @@
-AR vgacore vgacore_arch //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/vgacore.vhd sub00/vhpl01 1669677701
-AR counter2 rtl //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/counter2.vhd sub00/vhpl03 1669677712
-AR debouncer debouncerarch //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/debouncer.vhd sub00/vhpl05 1669677705
-EN debouncer NULL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/debouncer.vhd sub00/vhpl04 1669677704
-EN vgacore NULL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/vgacore.vhd sub00/vhpl00 1669677700
-EN counter2 NULL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/counter2.vhd sub00/vhpl02 1669677711
+AR vgacore vgacore_arch //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/vgacore.vhd sub00/vhpl01 1670536210
+AR counter2 rtl //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/counter2.vhd sub00/vhpl03 1670535956
+AR debouncer debouncerarch //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/debouncer.vhd sub00/vhpl05 1670536208
+EN debouncer NULL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/debouncer.vhd sub00/vhpl04 1670536207
+EN vgacore NULL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/vgacore.vhd sub00/vhpl00 1670536209
+EN counter2 NULL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/counter2.vhd sub00/vhpl02 1670535955

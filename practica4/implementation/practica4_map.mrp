@@ -1,4 +1,4 @@
-Release 14.1 Map P.15xf (nt64)
+Release 14.1 Map P.15xf (nt)
 Xilinx Mapping Report File for Design 'practica4'
 
 Design Information
@@ -9,22 +9,22 @@ Target Device  : xc3s1000
 Target Package : ft256
 Target Speed   : -5
 Mapper Version : spartan3 -- $Revision: 1.55 $
-Mapped Date    : Wed Dec 07 17:45:29 2022
+Mapped Date    : Thu Dec 08 22:55:42 2022
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:    6
+Number of warnings:    0
 Logic Utilization:
-  Number of Slice Flip Flops:         1,170 out of  15,360    7%
-  Number of 4 input LUTs:             2,474 out of  15,360   16%
+  Number of Slice Flip Flops:         1,275 out of  15,360    8%
+  Number of 4 input LUTs:             2,608 out of  15,360   16%
 Logic Distribution:
-  Number of occupied Slices:          1,472 out of   7,680   19%
-    Number of Slices containing only related logic:   1,472 out of   1,472 100%
-    Number of Slices containing unrelated logic:          0 out of   1,472   0%
+  Number of occupied Slices:          1,548 out of   7,680   20%
+    Number of Slices containing only related logic:   1,548 out of   1,548 100%
+    Number of Slices containing unrelated logic:          0 out of   1,548   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       2,516 out of  15,360   16%
-    Number used as logic:             1,862
+  Total Number of 4 input LUTs:       2,650 out of  15,360   17%
+    Number used as logic:             1,996
     Number used as a route-thru:         42
     Number used for Dual Port RAMs:     528
       (Two LUTs used per Dual Port RAM)
@@ -33,17 +33,17 @@ Logic Distribution:
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
-  Number of bonded IOBs:                 15 out of     173    8%
-    IOB Flip Flops:                       5
+  Number of bonded IOBs:                 19 out of     173   10%
+    IOB Flip Flops:                       9
   Number of RAMB16s:                     17 out of      24   70%
   Number of MULT18X18s:                   3 out of      24   12%
   Number of BUFGMUXs:                     2 out of       8   25%
 
-Average Fanout of Non-Clock Nets:                4.20
+Average Fanout of Non-Clock Nets:                4.21
 
-Peak Memory Usage:  4519 MB
-Total REAL time to MAP completion:  13 secs 
-Total CPU time to MAP completion:   13 secs 
+Peak Memory Usage:  244 MB
+Total REAL time to MAP completion:  32 secs 
+Total CPU time to MAP completion:   30 secs 
 
 Table of Contents
 -----------------
@@ -66,34 +66,9 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
-WARNING:Security:43 - No license file was found in the standard Xilinx license
-directory.
-WARNING:Security:44 - Since no license file was found,
-WARNING:Security:42 - Your software subscription period has lapsed. Your current
-version of Xilinx tools will continue to function, but you no longer qualify for
-Xilinx software updates or new releases.
-WARNING:MapLib:701 - Signal mover_derecha_pin connected to top level port
-   mover_derecha_pin has been removed.
-WARNING:MapLib:701 - Signal mover_izquierda_pin connected to top level port
-   mover_izquierda_pin has been removed.
-WARNING:MapLib:701 - Signal switches<3> connected to top level port switches<3>
-   has been removed.
-WARNING:MapLib:701 - Signal switches<2> connected to top level port switches<2>
-   has been removed.
-WARNING:MapLib:701 - Signal switches<1> connected to top level port switches<1>
-   has been removed.
-WARNING:MapLib:701 - Signal switches<0> connected to top level port switches<0>
-   has been removed.
 
 Section 3 - Informational
 -------------------------
-INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to
-'1717@fdilicencias1.fdi.ucm.es;2100@fdilicencias1.fdi.ucm.es'.
-INFO:Security:52 - The LM_LICENSE_FILE environment variable is set to
-'1717@fdilicencias1.fdi.ucm.es;2100@fdilicencias1.fdi.ucm.es'.
-INFO:Security:54 - 'xc3s1000' is a WebPack part.
-INFO:LIT:243 - Logical network mover_derecha_pin_IBUF has no load.
-INFO:LIT:243 - Logical network mover_izquierda_pin_IBUF has no load.
 INFO:LIT:243 - Logical network plb_v46_0_PLB_MBusy<0> has no load.
 INFO:LIT:243 - Logical network plb_v46_0_PLB_MBusy<1> has no load.
 INFO:LIT:243 - Logical network plb_v46_0_PLB_MIRQ<0> has no load.
@@ -178,10 +153,6 @@ INFO:LIT:243 - Logical network plb_v46_0_PLB_wrPendPri<0> has no load.
 INFO:LIT:243 - Logical network plb_v46_0_PLB_wrPendPri<1> has no load.
 INFO:LIT:243 - Logical network plb_v46_0_PLB_wrPendReq has no load.
 INFO:LIT:243 - Logical network plb_v46_0_PLB_wrPrim<0> has no load.
-INFO:LIT:243 - Logical network switches_0_IBUF has no load.
-INFO:LIT:243 - Logical network switches_1_IBUF has no load.
-INFO:LIT:243 - Logical network switches_2_IBUF has no load.
-INFO:LIT:243 - Logical network switches_3_IBUF has no load.
 INFO:LIT:243 - Logical network xps_bram_if_cntlr_0_PORTA_BRAM_Addr<0> has no
    load.
 INFO:LIT:243 - Logical network xps_bram_if_cntlr_0_PORTA_BRAM_Addr<10> has no
@@ -1437,39 +1408,39 @@ INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM65/SPO
    has no load.
 INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM67/SPO
    has no load.
+INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM64/SPO
+   has no load.
 INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM63/SPO
    has no load.
 INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM62/SPO
    has no load.
-INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM64/SPO
-   has no load.
-INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM60/SPO
+INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM61/SPO
    has no load.
 INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM59/SPO
    has no load.
-INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM61/SPO
-   has no load.
 INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM58/SPO
    has no load.
-INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM57/SPO
-   has no load.
-INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM55/SPO
-   has no load.
-INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM54/SPO
+INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM60/SPO
    has no load.
 INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM56/SPO
    has no load.
+INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM55/SPO
+   has no load.
+INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM57/SPO
+   has no load.
+INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM53/SPO
+   has no load.
 INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM52/SPO
+   has no load.
+INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM54/SPO
    has no load.
 INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM51/SPO
    has no load.
-INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM53/SPO
+INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM50/SPO
    has no load.
 INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM49/SPO
    has no load.
 INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM48/SPO
-   has no load.
-INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM50/SPO
    has no load.
 INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM46/SPO
    has no load.
@@ -1489,81 +1460,81 @@ INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM39/SPO
    has no load.
 INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM41/SPO
    has no load.
+INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM38/SPO
+   has no load.
 INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM37/SPO
    has no load.
 INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM36/SPO
    has no load.
-INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM38/SPO
-   has no load.
 INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM35/SPO
-   has no load.
-INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM34/SPO
-   has no load.
-INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM32/SPO
-   has no load.
-INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM31/SPO
    has no load.
 INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM33/SPO
    has no load.
-INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM29/SPO
+INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM32/SPO
    has no load.
-INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM28/SPO
+INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM34/SPO
    has no load.
 INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM30/SPO
    has no load.
-INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM26/SPO
+INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM29/SPO
    has no load.
-INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM25/SPO
+INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM31/SPO
    has no load.
 INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM27/SPO
    has no load.
-INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM23/SPO
+INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM26/SPO
    has no load.
-INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM22/SPO
+INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM28/SPO
    has no load.
 INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM24/SPO
    has no load.
-INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM20/SPO
+INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM23/SPO
    has no load.
-INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM19/SPO
+INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM25/SPO
    has no load.
 INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM21/SPO
    has no load.
-INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM17/SPO
+INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM20/SPO
    has no load.
-INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM16/SPO
+INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM22/SPO
    has no load.
 INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM18/SPO
    has no load.
-INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM14/SPO
+INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM17/SPO
    has no load.
-INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM13/SPO
+INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM19/SPO
    has no load.
 INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM15/SPO
+   has no load.
+INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM14/SPO
+   has no load.
+INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM16/SPO
+   has no load.
+INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM13/SPO
    has no load.
 INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM12/SPO
    has no load.
 INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM11/SPO
    has no load.
-INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM9/SPO
+INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM10/SPO
    has no load.
 INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM8/SPO
    has no load.
-INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM10/SPO
+INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM7/SPO
    has no load.
-INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM6/SPO
+INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM9/SPO
    has no load.
 INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM5/SPO
    has no load.
-INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM7/SPO
+INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM4/SPO
    has no load.
-INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM3/SPO
+INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM6/SPO
    has no load.
 INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM2/SPO
    has no load.
-INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM4/SPO
-   has no load.
 INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM1/SPO
+   has no load.
+INFO:LIT:243 - Logical network nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Mram_RAM3/SPO
    has no load.
 INFO:LIT:243 - Logical network
    xps_uartlite_0/xps_uartlite_0/UARTLITE_CORE_I/Interrupt has no load.
@@ -1587,10 +1558,10 @@ INFO:Pack:1650 - Map created a placed design.
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-1119 block(s) removed
+1107 block(s) removed
   63 block(s) optimized away
-1109 signal(s) removed
- 458 Block(s) redundant
+1097 signal(s) removed
+ 463 Block(s) redundant
 
 Section 5 - Removed Logic
 -------------------------
@@ -1605,14 +1576,6 @@ To quickly locate the original cause for the removal of a chain of logic, look
 above the place where that logic is listed in the trimming report, then locate
 the lines that are least indented (begin at the leftmost edge).
 
-The signal "mover_derecha_pin_IBUF" is loadless and has been removed.
- Loadless block "mover_derecha_pin_IBUF" (BUF) removed.
-  The signal "mover_derecha_pin" is loadless and has been removed.
-   Loadless block "mover_derecha_pin" (PAD) removed.
-The signal "mover_izquierda_pin_IBUF" is loadless and has been removed.
- Loadless block "mover_izquierda_pin_IBUF" (BUF) removed.
-  The signal "mover_izquierda_pin" is loadless and has been removed.
-   Loadless block "mover_izquierda_pin" (PAD) removed.
 The signal "plb_v46_0_PLB_MBusy<0>" is loadless and has been removed.
  Loadless block
 "plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_SLAVE_ORS/MBUSY_OR/Y_0_or00001" (ROM)
@@ -2771,22 +2734,6 @@ removed.
   The signal "plb_v46_0/N10" is loadless and has been removed.
    Loadless block "plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/wrPrim_SW0"
 (ROM) removed.
-The signal "switches_0_IBUF" is loadless and has been removed.
- Loadless block "switches_0_IBUF" (BUF) removed.
-  The signal "switches<0>" is loadless and has been removed.
-   Loadless block "switches<0>" (PAD) removed.
-The signal "switches_1_IBUF" is loadless and has been removed.
- Loadless block "switches_1_IBUF" (BUF) removed.
-  The signal "switches<1>" is loadless and has been removed.
-   Loadless block "switches<1>" (PAD) removed.
-The signal "switches_2_IBUF" is loadless and has been removed.
- Loadless block "switches_2_IBUF" (BUF) removed.
-  The signal "switches<2>" is loadless and has been removed.
-   Loadless block "switches<2>" (PAD) removed.
-The signal "switches_3_IBUF" is loadless and has been removed.
- Loadless block "switches_3_IBUF" (BUF) removed.
-  The signal "switches<3>" is loadless and has been removed.
-   Loadless block "switches<3>" (PAD) removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out<111>" is loadless and has
 been removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_111" (SFF) removed.
@@ -8060,6 +8007,9 @@ d0000_SW0/LUT4_L_BUF
 LOCALBUF 		nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/vsyncb_mux00018/LUT4_L_BUF
 LOCALBUF 		nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/hsyncbAux_mux000136/LUT4_L_BUF
 LOCALBUF
+		nrvgap_0/nrvgap_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/inc_nocc1/LUT4_D
+_BUF
+LOCALBUF
 		nrvgap_0/nrvgap_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rearbitrate_ns14
 7/LUT4_D_BUF
 LOCALBUF
@@ -8068,7 +8018,7 @@ URES.I_NORMAL_OCCUPANCY/sig_empty1_SW1/LUT3_L_BUF
 LOCALBUF 		nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/vcnt_not0001_inv251_SW0/LUT4_D_BUF
 LOCALBUF
 		nrvgap_0/nrvgap_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEAT
-URES.I_NORMAL_OCCUPANCY/sig_cnt_enable_SW2/LUT4_D_BUF
+URES.I_NORMAL_OCCUPANCY/sig_almost_empty2_SW2/LUT2_L_BUF
 LOCALBUF 		nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/vcnt_not0001_inv212/LUT4_D_BUF
 LOCALBUF 		nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/hcnt_not0001_inv1_SW0/LUT4_D_BUF
 LOCALBUF
@@ -8084,6 +8034,12 @@ LOCALBUF
 4_D_BUF
 LOCALBUF
 		nrvgap_0/nrvgap_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/FIFO2Bus_Error9/LUT4_D_
+BUF
+LOCALBUF
+		nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/debouncer_izquierdo/xDebFallingEdge1/LUT3_D
+_BUF
+LOCALBUF
+		nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/debouncer_superior/xDebFallingEdge1/LUT3_D_
 BUF
 LOCALBUF
 		xps_uartlite_0/xps_uartlite_0/PLBV46_I/I_SLAVE_ATTACHMENT/sl_rearbitrate_ns147
@@ -8365,6 +8321,8 @@ INV
 V_0
 INV 		nrvgap_0/nrvgap_0/USER_LOGIC_I/Mcount_cuenta_xor<0>11_INV_0
 INV 		nrvgap_0/nrvgap_0/USER_LOGIC_I/sincro/Mcount_cs_xor<0>11_INV_0
+INV 		nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Result<0>1_INV_0
+INV 		nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/Result<0>11_INV_0
 INV 		nrvgap_0/nrvgap_0/USER_LOGIC_I/Bus2IP_Reset_inv1_INV_0
 INV
 		xps_uartlite_0/xps_uartlite_0/UARTLITE_CORE_I/UARTLITE_TX_I/Mcount_mux_sel_xor
@@ -8564,6 +8522,10 @@ Section 6 - IOB Properties
 |                                    |                  |           |                      |       |          |      | INFF2        |          |          |
 | TX_pin                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          |          |
 | hsyncb_pin                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| mover_abajo_pin                    | IOB              | INPUT     | LVCMOS25             |       |          |      | INFF1        |          | IFD      |
+| mover_arriba_pin                   | IOB              | INPUT     | LVCMOS25             |       |          |      | INFF1        |          | IFD      |
+| mover_derecha_pin                  | IOB              | INPUT     | LVCMOS25             |       |          |      | INFF1        |          | IFD      |
+| mover_izquierda_pin                | IOB              | INPUT     | LVCMOS25             |       |          |      | INFF1        |          | IFD      |
 | rgb_pin<0>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | rgb_pin<1>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | rgb_pin<2>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
@@ -9919,13 +9881,13 @@ Section 13 - Utilization by Hierarchy
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Module                                                              | Partition | Slices        | Slice Reg     | LUTs          | LUTRAM        | BRAM      | MULT18X18 | BUFG  | DCM   | Full Hierarchical Name                                                                                                                                                    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| practica4/                                                          |           | 0/2070        | 0/1170        | 0/2508        | 0/612         | 0/17      | 0/3       | 1/2   | 0/0   | practica4                                                                                                                                                                 |
+| practica4/                                                          |           | 0/2140        | 0/1275        | 0/2643        | 0/612         | 0/17      | 0/3       | 1/2   | 0/0   | practica4                                                                                                                                                                 |
 | +bram_block_0                                                       |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/16      | 0/0       | 0/0   | 0/0   | practica4/bram_block_0                                                                                                                                                    |
 | ++bram_block_0                                                      |           | 0/0           | 0/0           | 0/0           | 0/0           | 16/16     | 0/0       | 0/0   | 0/0   | practica4/bram_block_0/bram_block_0                                                                                                                                       |
-| +microblaze_0                                                       |           | 0/1285        | 0/643         | 0/1804        | 0/449         | 0/0       | 0/3       | 0/0   | 0/0   | practica4/microblaze_0                                                                                                                                                    |
-| ++microblaze_0                                                      |           | 0/1285        | 0/643         | 0/1804        | 0/449         | 0/0       | 0/3       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0                                                                                                                                       |
-| +++MicroBlaze_Core_I                                                |           | 3/1285        | 3/643         | 0/1804        | 0/449         | 0/0       | 0/3       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I                                                                                                                     |
-| ++++Performance.Data_Flow_I                                         |           | 159/806       | 0/290         | 258/1292      | 0/384         | 0/0       | 0/3       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I                                                                                             |
+| +microblaze_0                                                       |           | 0/1288        | 0/643         | 0/1804        | 0/449         | 0/0       | 0/3       | 0/0   | 0/0   | practica4/microblaze_0                                                                                                                                                    |
+| ++microblaze_0                                                      |           | 0/1288        | 0/643         | 0/1804        | 0/449         | 0/0       | 0/3       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0                                                                                                                                       |
+| +++MicroBlaze_Core_I                                                |           | 3/1288        | 3/643         | 0/1804        | 0/449         | 0/0       | 0/3       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I                                                                                                                     |
+| ++++Performance.Data_Flow_I                                         |           | 158/807       | 0/290         | 258/1292      | 0/384         | 0/0       | 0/3       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I                                                                                             |
 | +++++ALU_I                                                          |           | 1/34          | 0/0           | 1/35          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I                                                                                       |
 | ++++++FPGA_Target.ALL_Bits[0].ALU_Bit_I1                            |           | 2/2           | 0/0           | 3/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[0].ALU_Bit_I1                                                    |
 | ++++++FPGA_Target.ALL_Bits[10].ALU_Bit_I1                           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[10].ALU_Bit_I1                                                   |
@@ -9959,9 +9921,9 @@ Section 13 - Utilization by Hierarchy
 | ++++++FPGA_Target.ALL_Bits[7].ALU_Bit_I1                            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[7].ALU_Bit_I1                                                    |
 | ++++++FPGA_Target.ALL_Bits[8].ALU_Bit_I1                            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[8].ALU_Bit_I1                                                    |
 | ++++++FPGA_Target.ALL_Bits[9].ALU_Bit_I1                            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[9].ALU_Bit_I1                                                    |
-| +++++Byte_Doublet_Handle_gti_I                                      |           | 47/47         | 43/43         | 84/84         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Byte_Doublet_Handle_gti_I                                                                   |
-| +++++Data_Flow_Logic_I                                              |           | 52/52         | 65/65         | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Data_Flow_Logic_I                                                                           |
-| +++++MUL_Unit_I                                                     |           | 28/28         | 32/32         | 32/32         | 0/0           | 0/0       | 3/3       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/MUL_Unit_I                                                                                  |
+| +++++Byte_Doublet_Handle_gti_I                                      |           | 49/49         | 43/43         | 84/84         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Byte_Doublet_Handle_gti_I                                                                   |
+| +++++Data_Flow_Logic_I                                              |           | 53/53         | 65/65         | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Data_Flow_Logic_I                                                                           |
+| +++++MUL_Unit_I                                                     |           | 27/27         | 32/32         | 32/32         | 0/0           | 0/0       | 3/3       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/MUL_Unit_I                                                                                  |
 | +++++Operand_Select_I                                               |           | 161/161       | 144/144       | 291/291       | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Operand_Select_I                                                                            |
 | +++++Register_File_I                                                |           | 192/192       | 0/0           | 384/384       | 384/384       | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I                                                                             |
 | +++++Shift_Logic_Module_I                                           |           | 46/66         | 0/0           | 80/109        | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Shift_Logic_Module_I                                                                        |
@@ -10005,9 +9967,9 @@ Section 13 - Utilization by Hierarchy
 | ++++++FPGA_Target.ALL_Bits[9].Wb_Mux_I1                             |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/WB_Mux_I/FPGA_Target.ALL_Bits[9].Wb_Mux_I1                                                  |
 | +++++Zero_Detect_I                                                  |           | 5/5           | 0/0           | 9/9           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Zero_Detect_I                                                                               |
 | +++++msr_reg_i                                                      |           | 12/12         | 6/6           | 16/16         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i                                                                                   |
-| ++++Performance.Decode_I                                            |           | 134/360       | 122/246       | 159/472       | 0/65          | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I                                                                                                |
-| +++++PC_Module_I                                                    |           | 113/113       | 64/64         | 158/158       | 32/32         | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PC_Module_I                                                                                    |
-| +++++PreFetch_Buffer_I1                                             |           | 87/87         | 50/50         | 136/136       | 33/33         | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PreFetch_Buffer_I1                                                                             |
+| ++++Performance.Decode_I                                            |           | 135/362       | 122/246       | 159/472       | 0/65          | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I                                                                                                |
+| +++++PC_Module_I                                                    |           | 111/111       | 64/64         | 158/158       | 32/32         | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PC_Module_I                                                                                    |
+| +++++PreFetch_Buffer_I1                                             |           | 89/89         | 50/50         | 136/136       | 33/33         | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PreFetch_Buffer_I1                                                                             |
 | +++++Use_MuxCy[1].OF_Piperun_Stage                                  |           | 1/1           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Use_MuxCy[1].OF_Piperun_Stage                                                                  |
 | +++++Use_MuxCy[2].OF_Piperun_Stage                                  |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Use_MuxCy[2].OF_Piperun_Stage                                                                  |
 | +++++Use_MuxCy[3].OF_Piperun_Stage                                  |           | 1/1           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Use_MuxCy[3].OF_Piperun_Stage                                                                  |
@@ -10019,20 +9981,20 @@ Section 13 - Utilization by Hierarchy
 | +++++Use_MuxCy[9].OF_Piperun_Stage                                  |           | 1/1           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Use_MuxCy[9].OF_Piperun_Stage                                                                  |
 | +++++if_pc_incr_carry_and_0                                         |           | 1/1           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/if_pc_incr_carry_and_0                                                                         |
 | +++++if_pc_incr_carry_and_3                                         |           | 1/1           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/if_pc_incr_carry_and_3                                                                         |
-| +++++jump_logic_I1                                                  |           | 13/13         | 10/10         | 17/17         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1                                                                                  |
+| +++++jump_logic_I1                                                  |           | 14/14         | 10/10         | 17/17         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1                                                                                  |
 | +++++mem_PipeRun_carry_and                                          |           | 1/1           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/mem_PipeRun_carry_and                                                                          |
 | +++++mem_wait_on_ready_N_carry_or                                   |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/mem_wait_on_ready_N_carry_or                                                                   |
 | ++++Performance.No_Debug.combined_carry_or_I                        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.No_Debug.combined_carry_or_I                                                                            |
-| ++++Performance.Use_DBUS.Using_D_PLB.DPLB_Interface_I2              |           | 33/33         | 37/37         | 4/4           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DBUS.Using_D_PLB.DPLB_Interface_I2                                                                  |
-| ++++Performance.Use_IBUS.Using_IPLB.Iplb_Interface_I2               |           | 50/50         | 67/67         | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_IBUS.Using_IPLB.Iplb_Interface_I2                                                                   |
+| ++++Performance.Use_DBUS.Using_D_PLB.DPLB_Interface_I2              |           | 34/34         | 37/37         | 4/4           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DBUS.Using_D_PLB.DPLB_Interface_I2                                                                  |
+| ++++Performance.Use_IBUS.Using_IPLB.Iplb_Interface_I2               |           | 52/52         | 67/67         | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_IBUS.Using_IPLB.Iplb_Interface_I2                                                                   |
 | ++++Performance.mem_databus_ready_sel_carry_or                      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.mem_databus_ready_sel_carry_or                                                                          |
-| ++++Performance.read_data_mux_I                                     |           | 31/31         | 0/0           | 32/32         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.read_data_mux_I                                                                                         |
-| +nrvgap_0                                                           |           | 0/355         | 0/211         | 0/364         | 0/144         | 0/1       | 0/0       | 0/1   | 0/0   | practica4/nrvgap_0                                                                                                                                                        |
-| ++nrvgap_0                                                          |           | 4/355         | 0/211         | 5/364         | 0/144         | 0/1       | 0/0       | 0/1   | 0/0   | practica4/nrvgap_0/nrvgap_0                                                                                                                                               |
-| +++PLBV46_SLAVE_SINGLE_I                                            |           | 0/96          | 0/107         | 0/40          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/PLBV46_SLAVE_SINGLE_I                                                                                                                         |
-| ++++I_SLAVE_ATTACHMENT                                              |           | 62/96         | 80/107        | 13/40         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT                                                                                                      |
-| +++++INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER                          |           | 7/7           | 9/9           | 11/11         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER                                                                |
-| +++++I_DECODER                                                      |           | 16/27         | 18/18         | 2/16          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER                                                                                            |
+| ++++Performance.read_data_mux_I                                     |           | 28/28         | 0/0           | 32/32         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.read_data_mux_I                                                                                         |
+| +nrvgap_0                                                           |           | 0/442         | 0/316         | 0/499         | 0/144         | 0/1       | 0/0       | 0/1   | 0/0   | practica4/nrvgap_0                                                                                                                                                        |
+| ++nrvgap_0                                                          |           | 3/442         | 0/316         | 5/499         | 0/144         | 0/1       | 0/0       | 0/1   | 0/0   | practica4/nrvgap_0/nrvgap_0                                                                                                                                               |
+| +++PLBV46_SLAVE_SINGLE_I                                            |           | 0/99          | 0/107         | 0/40          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/PLBV46_SLAVE_SINGLE_I                                                                                                                         |
+| ++++I_SLAVE_ATTACHMENT                                              |           | 64/99         | 80/107        | 13/40         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT                                                                                                      |
+| +++++INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER                          |           | 9/9           | 9/9           | 11/11         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER                                                                |
+| +++++I_DECODER                                                      |           | 15/26         | 18/18         | 2/16          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER                                                                                            |
 | ++++++I_OR_CS                                                       |           | 0/2           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/I_OR_CS                                                                                    |
 | +++++++USE_MUXCY_OR_GEN.BUS_WIDTH_FOR_GEN[0].OR_BITS_I              |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/I_OR_CS/USE_MUXCY_OR_GEN.BUS_WIDTH_FOR_GEN[0].OR_BITS_I                                    |
 | ++++++MEM_DECODE_GEN[0].GEN_PLB_SHARED.MEM_SELECT_I                 |           | 4/4           | 0/0           | 7/7           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].GEN_PLB_SHARED.MEM_SELECT_I                                              |
@@ -10041,15 +10003,19 @@ Section 13 - Utilization by Hierarchy
 | ++++++MEM_DECODE_GEN[1].PER_CE_GEN[1].MULTIPLE_CES_THIS_CS_GEN.CE_I |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[1].PER_CE_GEN[1].MULTIPLE_CES_THIS_CS_GEN.CE_I                              |
 | ++++++MEM_DECODE_GEN[1].PER_CE_GEN[2].MULTIPLE_CES_THIS_CS_GEN.CE_I |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[1].PER_CE_GEN[2].MULTIPLE_CES_THIS_CS_GEN.CE_I                              |
 | ++++++MEM_DECODE_GEN[2].GEN_PLB_SHARED.MEM_SELECT_I                 |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[2].GEN_PLB_SHARED.MEM_SELECT_I                                              |
-| +++USER_LOGIC_I                                                     |           | 4/130         | 5/27          | 4/240         | 0/144         | 0/0       | 0/0       | 1/1   | 0/0   | practica4/nrvgap_0/nrvgap_0/USER_LOGIC_I                                                                                                                                  |
-| ++++sincro                                                          |           | 1/1           | 2/2           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/USER_LOGIC_I/sincro                                                                                                                           |
-| ++++vga                                                             |           | 125/125       | 20/20         | 235/235       | 144/144       | 0/0       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/USER_LOGIC_I/vga                                                                                                                              |
-| +++WRPFIFO_TOP_I                                                    |           | 0/125         | 0/77          | 0/79          | 0/0           | 0/1       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/WRPFIFO_TOP_I                                                                                                                                 |
-| ++++I_IPIF_INTERFACE_BLOCK                                          |           | 41/41         | 45/45         | 21/21         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK                                                                                                          |
+| +++USER_LOGIC_I                                                     |           | 4/211         | 5/132         | 4/375         | 0/144         | 0/0       | 0/0       | 1/1   | 0/0   | practica4/nrvgap_0/nrvgap_0/USER_LOGIC_I                                                                                                                                  |
+| ++++sincro                                                          |           | 2/2           | 2/2           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/USER_LOGIC_I/sincro                                                                                                                           |
+| ++++vga                                                             |           | 135/205       | 25/125        | 244/370       | 144/144       | 0/0       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/USER_LOGIC_I/vga                                                                                                                              |
+| +++++debouncer_derecho                                              |           | 17/17         | 25/25         | 31/31         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/debouncer_derecho                                                                                                            |
+| +++++debouncer_inferior                                             |           | 17/17         | 25/25         | 31/31         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/debouncer_inferior                                                                                                           |
+| +++++debouncer_izquierdo                                            |           | 18/18         | 25/25         | 32/32         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/debouncer_izquierdo                                                                                                          |
+| +++++debouncer_superior                                             |           | 18/18         | 25/25         | 32/32         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/debouncer_superior                                                                                                           |
+| +++WRPFIFO_TOP_I                                                    |           | 0/129         | 0/77          | 0/79          | 0/0           | 0/1       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/WRPFIFO_TOP_I                                                                                                                                 |
+| ++++I_IPIF_INTERFACE_BLOCK                                          |           | 47/47         | 45/45         | 21/21         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK                                                                                                          |
 | ++++USE_BLOCK_RAM.GEN_BRAM_NOT_V6_S6.I_DP_CORE                      |           | 0/0           | 0/0           | 0/0           | 0/0           | 1/1       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.GEN_BRAM_NOT_V6_S6.I_DP_CORE                                                                                      |
-| ++++USE_BLOCK_RAM.I_DP_CONTROLLER                                   |           | 17/84         | 6/32          | 14/58         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER                                                                                                   |
+| ++++USE_BLOCK_RAM.I_DP_CONTROLLER                                   |           | 16/82         | 6/32          | 14/58         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER                                                                                                   |
 | +++++OMIT_PACKET_FEATURES.I_DELAY_MUX                               |           | 2/2           | 1/1           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_DELAY_MUX                                                                  |
-| +++++OMIT_PACKET_FEATURES.I_NORMAL_OCCUPANCY                        |           | 8/30          | 0/9           | 10/23         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_NORMAL_OCCUPANCY                                                           |
+| +++++OMIT_PACKET_FEATURES.I_NORMAL_OCCUPANCY                        |           | 7/29          | 0/9           | 10/23         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_NORMAL_OCCUPANCY                                                           |
 | ++++++I_UP_DWN_COUNTER                                              |           | 4/22          | 0/9           | 4/13          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_NORMAL_OCCUPANCY/I_UP_DWN_COUNTER                                          |
 | +++++++I_ADDSUB_GEN[0].Counter_Bit_I                                |           | 1/2           | 1/1           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_NORMAL_OCCUPANCY/I_UP_DWN_COUNTER/I_ADDSUB_GEN[0].Counter_Bit_I            |
 | ++++++++I_ALU_LUT                                                   |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_NORMAL_OCCUPANCY/I_UP_DWN_COUNTER/I_ADDSUB_GEN[0].Counter_Bit_I/I_ALU_LUT  |
@@ -10105,49 +10071,49 @@ Section 13 - Utilization by Hierarchy
 | ++++++++I_ALU_LUT                                                   |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[6].Counter_Bit_I/I_ALU_LUT   |
 | +++++++I_ADDSUB_GEN[7].Counter_Bit_I                                |           | 1/2           | 1/1           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[7].Counter_Bit_I             |
 | ++++++++I_ALU_LUT                                                   |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/nrvgap_0/nrvgap_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[7].Counter_Bit_I/I_ALU_LUT   |
-| +plb_v46_0                                                          |           | 0/177         | 0/76          | 0/193         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0                                                                                                                                                       |
-| ++plb_v46_0                                                         |           | 2/177         | 2/76          | 0/193         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0/plb_v46_0                                                                                                                                             |
-| +++GEN_SHARED.I_PLB_ADDRPATH                                        |           | 23/46         | 36/36         | 0/36          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ADDRPATH                                                                                                                   |
-| ++++I_PLBADDR_MUX                                                   |           | 19/19         | 0/0           | 32/32         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ADDRPATH/I_PLBADDR_MUX                                                                                                     |
+| +plb_v46_0                                                          |           | 0/166         | 0/76          | 0/193         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0                                                                                                                                                       |
+| ++plb_v46_0                                                         |           | 2/166         | 2/76          | 0/193         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0/plb_v46_0                                                                                                                                             |
+| +++GEN_SHARED.I_PLB_ADDRPATH                                        |           | 21/43         | 36/36         | 0/36          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ADDRPATH                                                                                                                   |
+| ++++I_PLBADDR_MUX                                                   |           | 18/18         | 0/0           | 32/32         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ADDRPATH/I_PLBADDR_MUX                                                                                                     |
 | ++++I_PLBBE_MUX                                                     |           | 4/4           | 0/0           | 4/4           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ADDRPATH/I_PLBBE_MUX                                                                                                       |
-| +++GEN_SHARED.I_PLB_ARBITER_LOGIC                                   |           | 2/86          | 2/38          | 0/104         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC                                                                                                              |
-| ++++I_ARBCONTROL_SM                                                 |           | 60/60         | 25/25         | 84/84         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM                                                                                              |
-| ++++I_ARB_ENCODER                                                   |           | 6/11          | 6/6           | 0/6           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER                                                                                                |
+| +++GEN_SHARED.I_PLB_ARBITER_LOGIC                                   |           | 2/79          | 2/38          | 0/104         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC                                                                                                              |
+| ++++I_ARBCONTROL_SM                                                 |           | 56/56         | 25/25         | 84/84         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM                                                                                              |
+| ++++I_ARB_ENCODER                                                   |           | 4/9           | 6/6           | 0/6           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER                                                                                                |
 | +++++GTR_ONE_MASTER.FIXED_ARB_GEN.I_PRIOR_ENC                       |           | 4/5           | 0/0           | 5/6           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/GTR_ONE_MASTER.FIXED_ARB_GEN.I_PRIOR_ENC                                                       |
 | ++++++MASTER_LVLS[0].I_QUAL_MASTERS_REQUEST                         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/GTR_ONE_MASTER.FIXED_ARB_GEN.I_PRIOR_ENC/MASTER_LVLS[0].I_QUAL_MASTERS_REQUEST                 |
 | ++++I_GENQUALREQ                                                    |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_GENQUALREQ                                                                                                 |
-| ++++I_MUXEDSIGNALS                                                  |           | 3/5           | 0/0           | 3/5           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_MUXEDSIGNALS                                                                                               |
-| +++++RNW_MUX                                                        |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_MUXEDSIGNALS/RNW_MUX                                                                                       |
+| ++++I_MUXEDSIGNALS                                                  |           | 3/4           | 0/0           | 3/5           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_MUXEDSIGNALS                                                                                               |
+| +++++RNW_MUX                                                        |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_MUXEDSIGNALS/RNW_MUX                                                                                       |
 | ++++I_WDT                                                           |           | 3/6           | 1/5           | 4/7           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_WDT                                                                                                        |
 | +++++WDT_TIMEOUT_CNTR_I                                             |           | 3/3           | 4/4           | 3/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_WDT/WDT_TIMEOUT_CNTR_I                                                                                     |
 | ++++MSTR_REQ_MUX                                                    |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/MSTR_REQ_MUX                                                                                                 |
 | +++GEN_SHARED.I_PLB_RD_DATAPATH                                     |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_RD_DATAPATH                                                                                                                |
-| +++GEN_SHARED.I_PLB_SLAVE_ORS                                       |           | 0/14          | 0/0           | 0/17          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_SLAVE_ORS                                                                                                                  |
+| +++GEN_SHARED.I_PLB_SLAVE_ORS                                       |           | 0/15          | 0/0           | 0/17          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_SLAVE_ORS                                                                                                                  |
 | ++++ADDRACK_OR                                                      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_SLAVE_ORS/ADDRACK_OR                                                                                                       |
-| ++++RDBUS_OR                                                        |           | 10/10         | 0/0           | 13/13         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR                                                                                                         |
+| ++++RDBUS_OR                                                        |           | 11/11         | 0/0           | 13/13         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_SLAVE_ORS/RDBUS_OR                                                                                                         |
 | ++++RDCOMP_OR                                                       |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_SLAVE_ORS/RDCOMP_OR                                                                                                        |
 | ++++REARB_OR                                                        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_SLAVE_ORS/REARB_OR                                                                                                         |
 | ++++WRCOMP_OR                                                       |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_SLAVE_ORS/WRCOMP_OR                                                                                                        |
-| +++GEN_SHARED.I_PLB_WR_DATAPATH                                     |           | 2/27          | 0/0           | 2/34          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_WR_DATAPATH                                                                                                                |
-| ++++I_WRDBUS_MUX                                                    |           | 25/25         | 0/0           | 32/32         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX                                                                                                   |
+| +++GEN_SHARED.I_PLB_WR_DATAPATH                                     |           | 2/25          | 0/0           | 2/34          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_WR_DATAPATH                                                                                                                |
+| ++++I_WRDBUS_MUX                                                    |           | 23/23         | 0/0           | 32/32         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX                                                                                                   |
 | +practica4                                                          |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/practica4                                                                                                                                                       |
 | +xps_bram_if_cntlr_0                                                |           | 0/106         | 0/113         | 0/25          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/xps_bram_if_cntlr_0                                                                                                                                             |
-| ++xps_bram_if_cntlr_0                                               |           | 11/106        | 3/113         | 8/25          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/xps_bram_if_cntlr_0/xps_bram_if_cntlr_0                                                                                                                         |
-| +++SINGLES_ONLY_SUPPORT.I_SLAVE_SINGLE_ATTACH                       |           | 95/95         | 110/110       | 17/17         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/xps_bram_if_cntlr_0/xps_bram_if_cntlr_0/SINGLES_ONLY_SUPPORT.I_SLAVE_SINGLE_ATTACH                                                                              |
-| +xps_uartlite_0                                                     |           | 0/147         | 0/127         | 0/122         | 0/19          | 0/0       | 0/0       | 0/0   | 0/0   | practica4/xps_uartlite_0                                                                                                                                                  |
-| ++xps_uartlite_0                                                    |           | 0/147         | 0/127         | 0/122         | 0/19          | 0/0       | 0/0       | 0/0   | 0/0   | practica4/xps_uartlite_0/xps_uartlite_0                                                                                                                                   |
-| +++PLBV46_I                                                         |           | 0/76          | 0/77          | 0/39          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/xps_uartlite_0/xps_uartlite_0/PLBV46_I                                                                                                                          |
-| ++++I_SLAVE_ATTACHMENT                                              |           | 50/76         | 56/77         | 14/39         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/xps_uartlite_0/xps_uartlite_0/PLBV46_I/I_SLAVE_ATTACHMENT                                                                                                       |
-| +++++INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER                          |           | 7/7           | 9/9           | 11/11         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/xps_uartlite_0/xps_uartlite_0/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER                                                                 |
-| +++++I_DECODER                                                      |           | 11/19         | 12/12         | 2/14          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/xps_uartlite_0/xps_uartlite_0/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER                                                                                             |
+| ++xps_bram_if_cntlr_0                                               |           | 10/106        | 3/113         | 8/25          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/xps_bram_if_cntlr_0/xps_bram_if_cntlr_0                                                                                                                         |
+| +++SINGLES_ONLY_SUPPORT.I_SLAVE_SINGLE_ATTACH                       |           | 96/96         | 110/110       | 17/17         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/xps_bram_if_cntlr_0/xps_bram_if_cntlr_0/SINGLES_ONLY_SUPPORT.I_SLAVE_SINGLE_ATTACH                                                                              |
+| +xps_uartlite_0                                                     |           | 0/138         | 0/127         | 0/122         | 0/19          | 0/0       | 0/0       | 0/0   | 0/0   | practica4/xps_uartlite_0                                                                                                                                                  |
+| ++xps_uartlite_0                                                    |           | 0/138         | 0/127         | 0/122         | 0/19          | 0/0       | 0/0       | 0/0   | 0/0   | practica4/xps_uartlite_0/xps_uartlite_0                                                                                                                                   |
+| +++PLBV46_I                                                         |           | 0/70          | 0/77          | 0/39          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/xps_uartlite_0/xps_uartlite_0/PLBV46_I                                                                                                                          |
+| ++++I_SLAVE_ATTACHMENT                                              |           | 45/70         | 56/77         | 14/39         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/xps_uartlite_0/xps_uartlite_0/PLBV46_I/I_SLAVE_ATTACHMENT                                                                                                       |
+| +++++INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER                          |           | 8/8           | 9/9           | 11/11         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/xps_uartlite_0/xps_uartlite_0/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER                                                                 |
+| +++++I_DECODER                                                      |           | 9/17          | 12/12         | 2/14          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/xps_uartlite_0/xps_uartlite_0/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER                                                                                             |
 | ++++++MEM_DECODE_GEN[0].GEN_PLB_SHARED.MEM_SELECT_I                 |           | 4/4           | 0/0           | 8/8           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/xps_uartlite_0/xps_uartlite_0/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].GEN_PLB_SHARED.MEM_SELECT_I                                               |
 | ++++++MEM_DECODE_GEN[0].PER_CE_GEN[0].MULTIPLE_CES_THIS_CS_GEN.CE_I |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/xps_uartlite_0/xps_uartlite_0/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].PER_CE_GEN[0].MULTIPLE_CES_THIS_CS_GEN.CE_I                               |
 | ++++++MEM_DECODE_GEN[0].PER_CE_GEN[1].MULTIPLE_CES_THIS_CS_GEN.CE_I |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/xps_uartlite_0/xps_uartlite_0/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].PER_CE_GEN[1].MULTIPLE_CES_THIS_CS_GEN.CE_I                               |
 | ++++++MEM_DECODE_GEN[0].PER_CE_GEN[2].MULTIPLE_CES_THIS_CS_GEN.CE_I |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/xps_uartlite_0/xps_uartlite_0/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].PER_CE_GEN[2].MULTIPLE_CES_THIS_CS_GEN.CE_I                               |
 | ++++++MEM_DECODE_GEN[0].PER_CE_GEN[3].MULTIPLE_CES_THIS_CS_GEN.CE_I |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/xps_uartlite_0/xps_uartlite_0/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].PER_CE_GEN[3].MULTIPLE_CES_THIS_CS_GEN.CE_I                               |
-| +++UARTLITE_CORE_I                                                  |           | 16/71         | 6/50          | 13/83         | 0/19          | 0/0       | 0/0       | 0/0   | 0/0   | practica4/xps_uartlite_0/xps_uartlite_0/UARTLITE_CORE_I                                                                                                                   |
-| ++++BAUD_RATE_I                                                     |           | 8/8           | 10/10         | 13/13         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/xps_uartlite_0/xps_uartlite_0/UARTLITE_CORE_I/BAUD_RATE_I                                                                                                       |
-| ++++UARTLITE_RX_I                                                   |           | 19/27         | 14/20         | 12/27         | 2/10          | 0/0       | 0/0       | 0/0   | 0/0   | practica4/xps_uartlite_0/xps_uartlite_0/UARTLITE_CORE_I/UARTLITE_RX_I                                                                                                     |
+| +++UARTLITE_CORE_I                                                  |           | 16/68         | 6/50          | 13/83         | 0/19          | 0/0       | 0/0       | 0/0   | 0/0   | practica4/xps_uartlite_0/xps_uartlite_0/UARTLITE_CORE_I                                                                                                                   |
+| ++++BAUD_RATE_I                                                     |           | 7/7           | 10/10         | 13/13         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/xps_uartlite_0/xps_uartlite_0/UARTLITE_CORE_I/BAUD_RATE_I                                                                                                       |
+| ++++UARTLITE_RX_I                                                   |           | 17/25         | 14/20         | 12/27         | 2/10          | 0/0       | 0/0       | 0/0   | 0/0   | practica4/xps_uartlite_0/xps_uartlite_0/UARTLITE_CORE_I/UARTLITE_RX_I                                                                                                     |
 | +++++SRL_FIFO_I                                                     |           | 0/8           | 0/6           | 0/15          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/xps_uartlite_0/xps_uartlite_0/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I                                                                                          |
 | ++++++I_SRL_FIFO_RBU_F                                              |           | 1/8           | 1/6           | 2/15          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/xps_uartlite_0/xps_uartlite_0/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F                                                                         |
 | +++++++CNTR_INCR_DECR_ADDN_F_I                                      |           | 3/3           | 5/5           | 5/5           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | practica4/xps_uartlite_0/xps_uartlite_0/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/CNTR_INCR_DECR_ADDN_F_I                                                 |

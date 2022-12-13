@@ -66,7 +66,7 @@ int main2() {
 		baseaddr = XPAR_NRVGAP_0_BASEADDR;
 		color = BLANCO; /*ponemos color blanco */
 
-		xil_printf("Data configuracion =%x\r\n", Data);
+		// xil_printf("Data configuracion =%x\r\n", Data);
 
 		while (!(NRVGAP_mWriteFIFOFull(baseaddr))) {
 			/* La pantalla es un array de 16 filas por 8 columnas
@@ -81,8 +81,8 @@ int main2() {
 
 					Data = ((color & 0x1FF) << 23) | (posicion & 0x7f);
 					NRVGAP_mWriteToFIFO(baseaddr, 0, Data);
-					xil_printf("Data configuracion =%d %d %08x\r\n", fila,
-							columna, Data);
+					// xil_printf("Data configuracion =%d %d %08x\r\n", fila,
+					//		columna, Data);
 				}
 			}
 		}
@@ -208,7 +208,7 @@ void practica4b1() {
 		xil_printf("Opcion cancelada\r\n");
 		return;
 	}
-	colorElegido = (rojo << 6) + (verde << 3) + (azul);
+	colorElegido = (azul << 6) + (verde << 3) + (rojo);
 }
 
 void practica4b3() {
@@ -302,8 +302,8 @@ int main() {
 						   ((ncolumnas & 0x1F) << 9) |
 						   (posicion & 0x7F);
 					NRVGAP_mWriteToFIFO(XPAR_NRVGAP_0_BASEADDR, 0, Data);
-					xil_printf("Data configuracion =%d %d %08x\r\n", fila,
-							columna, Data);
+					// xil_printf("Data configuracion =%d %d %08x\r\n", fila,
+					//		columna, Data);
 				}
 			}
 		// }

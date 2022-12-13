@@ -1,27 +1,27 @@
 V3 17
-FL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/nrvgap.vhd 2022/12/08.22:31:28 P.15xf
-EN nrvgap_v1_00_a/nrvgap 1670535971 \
+FL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/nrvgap.vhd 2022/12/13.23:49:35 P.15xf
+EN nrvgap_v1_00_a/nrvgap 1670971882 \
       FL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/nrvgap.vhd \
       PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
       PB ieee/STD_LOGIC_UNSIGNED 1335251625 LB proc_common_v3_00_a \
-      PB proc_common_v3_00_a/proc_common_pkg 1670535921 \
-      PB proc_common_v3_00_a/ipif_pkg 1670535946 LB wrpfifo_v5_01_a \
-      EN wrpfifo_v5_01_a/wrpfifo_top 1670535965 LB plbv46_slave_single_v1_01_a \
-      EN plbv46_slave_single_v1_01_a/plbv46_slave_single 1670535967 \
-      LB nrvgap_v1_00_a EN nrvgap_v1_00_a/user_logic 1670535969
-AR nrvgap_v1_00_a/nrvgap/IMP 1670535972 \
+      PB proc_common_v3_00_a/proc_common_pkg 1670971834 \
+      PB proc_common_v3_00_a/ipif_pkg 1670971859 LB wrpfifo_v5_01_a \
+      EN wrpfifo_v5_01_a/wrpfifo_top 1670971876 LB plbv46_slave_single_v1_01_a \
+      EN plbv46_slave_single_v1_01_a/plbv46_slave_single 1670971878 \
+      LB nrvgap_v1_00_a EN nrvgap_v1_00_a/user_logic 1670971880
+AR nrvgap_v1_00_a/nrvgap/IMP 1670971883 \
       FL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/nrvgap.vhd \
-      EN nrvgap_v1_00_a/nrvgap 1670535971 \
+      EN nrvgap_v1_00_a/nrvgap 1670971882 \
       CP plbv46_slave_single_v1_01_a/plbv46_slave_single \
       CP wrpfifo_v5_01_a/wrpfifo_top CP nrvgap_v1_00_a/user_logic
-FL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/user_logic.vhd 2022/12/08.22:33:20 P.15xf
-EN nrvgap_v1_00_a/user_logic 1670535969 \
+FL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/user_logic.vhd 2014/07/18.18:26:22 P.15xf
+EN nrvgap_v1_00_a/user_logic 1670971880 \
       FL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/user_logic.vhd \
       PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
       PB ieee/STD_LOGIC_UNSIGNED 1335251625 LB proc_common_v3_00_a \
-      PB proc_common_v3_00_a/proc_common_pkg 1670535921
-AR nrvgap_v1_00_a/user_logic/IMP 1670535970 \
+      PB proc_common_v3_00_a/proc_common_pkg 1670971834
+AR nrvgap_v1_00_a/user_logic/IMP 1670971881 \
       FL //vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/user_logic.vhd \
-      EN nrvgap_v1_00_a/user_logic 1670535969 CP vgacore CP counter2
+      EN nrvgap_v1_00_a/user_logic 1670971880 CP vgacore CP counter2
 FL U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/nrvgap.vhd 2022/11/15.20:49:06 P.15xf
 FL U:/hlocal/practicasSE-main/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/user_logic.vhd 2022/11/15.20:49:06 P.15xf

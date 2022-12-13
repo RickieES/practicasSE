@@ -3,8 +3,8 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to N:\ws\practica4\synthesis\xst_temp_dir\
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.19 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> 
 TABLE OF CONTENTS
@@ -544,7 +544,7 @@ Design Statistics
 # IOs                              : 19
 
 Cell Usage :
-# BELS                             : 3520
+# BELS                             : 3522
 #      GND                         : 23
 #      INV                         : 30
 #      LUT1                        : 69
@@ -552,11 +552,11 @@ Cell Usage :
 #      LUT2_D                      : 12
 #      LUT2_L                      : 22
 #      LUT3                        : 863
-#      LUT3_D                      : 29
+#      LUT3_D                      : 30
 #      LUT3_L                      : 29
-#      LUT4                        : 1073
+#      LUT4                        : 1071
 #      LUT4_D                      : 26
-#      LUT4_L                      : 39
+#      LUT4_L                      : 42
 #      MULT_AND                    : 34
 #      MUXCY                       : 263
 #      MUXCY_L                     : 161
@@ -597,10 +597,10 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-5 
 
- Number of Slices:                     1913  out of   7680    24%  
+ Number of Slices:                     1908  out of   7680    24%  
  Number of Slice Flip Flops:           2012  out of  15360    13%  
- Number of 4 input LUTs:               3028  out of  15360    19%  
-    Number used as logic:              2416
+ Number of 4 input LUTs:               3030  out of  15360    19%  
+    Number used as logic:              2418
     Number used as Shift registers:      84
     Number used as RAMs:                528
  Number of IOs:                          19
@@ -663,7 +663,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Clk_pin'
   Clock period: 11.888ns (frequency: 84.119MHz)
-  Total number of paths / destination ports: 180387 / 6937
+  Total number of paths / destination ports: 180351 / 6937
 -------------------------------------------------------------------------
 Delay:               11.888ns (Levels of Logic = 6)
   Source:            microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers_Mux.Instruction_Prefetch_Mux[7].Gen_Instr_DFF (FF)
@@ -690,7 +690,7 @@ Delay:               11.888ns (Levels of Logic = 6)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'nrvgap_0/nrvgap_0/USER_LOGIC_I/clock1'
   Clock period: 6.631ns (frequency: 150.804MHz)
-  Total number of paths / destination ports: 7103 / 212
+  Total number of paths / destination ports: 7104 / 212
 -------------------------------------------------------------------------
 Delay:               6.631ns (Levels of Logic = 12)
   Source:            nrvgap_0/nrvgap_0/USER_LOGIC_I/vga/hcnt_3 (FF)
@@ -703,7 +703,7 @@ Delay:               6.631ns (Levels of Logic = 12)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDC:C->Q             40   0.626   1.637  nrvgap_0/USER_LOGIC_I/vga/hcnt_3 (nrvgap_0/USER_LOGIC_I/vga/hcnt<3>)
-     LUT4_D:I3->LO         1   0.479   0.123  nrvgap_0/USER_LOGIC_I/vga/hcnt_not0001_inv1_SW0 (N69)
+     LUT4_D:I3->LO         1   0.479   0.123  nrvgap_0/USER_LOGIC_I/vga/hcnt_not0001_inv1_SW0 (N73)
      LUT4:I3->O            6   0.479   1.023  nrvgap_0/USER_LOGIC_I/vga/hcnt_not00011 (nrvgap_0/USER_LOGIC_I/vga/hcnt_not0001)
      LUT2:I1->O            1   0.479   0.000  nrvgap_0/USER_LOGIC_I/vga/Mcount_hcnt_lut<0> (nrvgap_0/USER_LOGIC_I/vga/Mcount_hcnt_lut<0>)
      MUXCY:S->O            1   0.435   0.000  nrvgap_0/USER_LOGIC_I/vga/Mcount_hcnt_cy<0> (nrvgap_0/USER_LOGIC_I/vga/Mcount_hcnt_cy<0>)
@@ -736,7 +736,7 @@ Delay:               7.339ns (Levels of Logic = 7)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDC:C->Q             76   0.626   2.084  nrvgap_0/USER_LOGIC_I/vga/vcnt_7 (nrvgap_0/USER_LOGIC_I/vga/vcnt<7>)
-     LUT4_D:I0->O          2   0.479   0.768  nrvgap_0/USER_LOGIC_I/vga/vcnt_not0001_inv251_SW0 (N41)
+     LUT4_D:I0->O          2   0.479   0.768  nrvgap_0/USER_LOGIC_I/vga/vcnt_not0001_inv251_SW0 (N42)
      LUT4:I3->O            2   0.479   0.915  nrvgap_0/USER_LOGIC_I/vga/vcnt_not00011 (nrvgap_0/USER_LOGIC_I/vga/vcnt_not0001)
      LUT2:I1->O            1   0.479   0.000  nrvgap_0/USER_LOGIC_I/vga/Mcount_vcnt_lut<6> (nrvgap_0/USER_LOGIC_I/vga/Mcount_vcnt_lut<6>)
      MUXCY:S->O            1   0.435   0.000  nrvgap_0/USER_LOGIC_I/vga/Mcount_vcnt_cy<6> (nrvgap_0/USER_LOGIC_I/vga/Mcount_vcnt_cy<6>)
@@ -802,7 +802,7 @@ Offset:              10.823ns (Levels of Logic = 5)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDC:C->Q              8   0.626   1.216  nrvgap_0/USER_LOGIC_I/vga/hcnt_7 (nrvgap_0/USER_LOGIC_I/vga/hcnt<7>)
-     LUT4:I0->O            1   0.479   0.704  nrvgap_0/USER_LOGIC_I/vga/rgb_and000078_SW0 (N56)
+     LUT4:I0->O            1   0.479   0.704  nrvgap_0/USER_LOGIC_I/vga/rgb_and000078_SW0 (N59)
      LUT4:I3->O            9   0.479   1.250  nrvgap_0/USER_LOGIC_I/vga/rgb_and000078 (nrvgap_0/USER_LOGIC_I/vga/rgb_and0000)
      LUT2:I0->O            1   0.479   0.681  nrvgap_0/USER_LOGIC_I/vga/rgb<8>1 (rgb<0>)
      end scope: 'nrvgap_0'
@@ -859,12 +859,12 @@ Offset:              11.756ns (Levels of Logic = 7)
 =========================================================================
 
 
-Total REAL time to Xst completion: 101.00 secs
-Total CPU time to Xst completion: 101.01 secs
+Total REAL time to Xst completion: 92.00 secs
+Total CPU time to Xst completion: 92.48 secs
  
 --> 
 
-Total memory usage is 235916 kilobytes
+Total memory usage is 268556 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  349 (   0 filtered)

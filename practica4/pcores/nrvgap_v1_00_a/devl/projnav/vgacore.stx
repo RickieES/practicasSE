@@ -3,13 +3,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to N:/ws/practica4/pcores/nrvgap_v1_00_a/devl/projnav/xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.16 secs
  
 --> Parameter xsthdpdir set to N:/ws/practica4/pcores/nrvgap_v1_00_a/devl/projnav/xst
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.16 secs
  
 --> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
@@ -17,19 +17,16 @@ Total CPU time to Xst completion: 0.16 secs
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "//vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/debouncer.vhd" in Library work.
-Architecture debouncerarch of Entity debouncer is up to date.
 Compiling vhdl file "//vboxsvr/se/ws/practica4/pcores/nrvgap_v1_00_a/hdl/vhdl/vgacore.vhd" in Library work.
-Entity <vgacore> compiled.
-Entity <vgacore> (Architecture <vgacore_arch>) compiled.
+Architecture vgacore_arch of Entity vgacore is up to date.
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.41 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.34 secs
  
 --> 
 
-Total memory usage is 168148 kilobytes
+Total memory usage is 169684 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

@@ -1,0 +1,109 @@
+Release 14.1 Map P.15xf (nt)
+Xilinx Map Application Log File for Design 'practica5'
+
+Design Information
+------------------
+Command Line   : map -o practica5_map.ncd -pr b -ol high -timing -detail
+practica5.ngd practica5.pcf 
+Target Device  : xc3s1000
+Target Package : ft256
+Target Speed   : -5
+Mapper Version : spartan3 -- $Revision: 1.55 $
+Mapped Date    : Mon Jan 02 21:06:43 2023
+
+Mapping design into LUTs...
+Writing file practica5_map.ngm...
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 7 secs 
+Total CPU  time at the beginning of Placer: 7 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:d6ac803) REAL time: 9 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:d6ac803) REAL time: 9 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:d6ac803) REAL time: 9 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+
+Phase 4.2  Initial Clock and IO Placement (Checksum:55d8b3dc) REAL time: 10 secs 
+
+Phase 5.36  Local Placement Optimization
+Phase 5.36  Local Placement Optimization (Checksum:55d8b3dc) REAL time: 10 secs 
+
+Phase 6.4  Local Placement Optimization
+...................................
+.......................................
+Phase 6.4  Local Placement Optimization (Checksum:55d8b3dc) REAL time: 16 secs 
+
+Phase 7.28  Local Placement Optimization
+Phase 7.28  Local Placement Optimization (Checksum:55d8b3dc) REAL time: 16 secs 
+
+Phase 8.8  Global Placement
+...................................
+.........................
+.........
+......................................................................
+.........................
+..............................................
+Phase 8.8  Global Placement (Checksum:66f8f5f3) REAL time: 26 secs 
+
+Phase 9.29  Local Placement Optimization
+Phase 9.29  Local Placement Optimization (Checksum:66f8f5f3) REAL time: 26 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:66f8f5f3) REAL time: 26 secs 
+
+Phase 11.18  Placement Optimization
+Phase 11.18  Placement Optimization (Checksum:a7756ccb) REAL time: 43 secs 
+
+Phase 12.5  Local Placement Optimization
+Phase 12.5  Local Placement Optimization (Checksum:a7756ccb) REAL time: 43 secs 
+
+Total REAL time to Placer completion: 43 secs 
+Total CPU  time to Placer completion: 43 secs 
+Running post-placement packing...
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+  Number of Slice Flip Flops:         1,420 out of  15,360    9%
+  Number of 4 input LUTs:             2,664 out of  15,360   17%
+Logic Distribution:
+  Number of occupied Slices:          1,760 out of   7,680   22%
+    Number of Slices containing only related logic:   1,760 out of   1,760 100%
+    Number of Slices containing unrelated logic:          0 out of   1,760   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       2,760 out of  15,360   17%
+    Number used as logic:             2,196
+    Number used as a route-thru:         96
+    Number used for Dual Port RAMs:     384
+      (Two LUTs used per Dual Port RAM)
+    Number used as Shift registers:      84
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 23 out of     173   13%
+    IOB Flip Flops:                       4
+  Number of RAMB16s:                     17 out of      24   70%
+  Number of MULT18X18s:                   3 out of      24   12%
+  Number of BUFGMUXs:                     2 out of       8   25%
+
+Average Fanout of Non-Clock Nets:                3.95
+
+Peak Memory Usage:  247 MB
+Total REAL time to MAP completion:  45 secs 
+Total CPU time to MAP completion:   45 secs 
+
+Mapping completed.
+See MAP report file "practica5_map.mrp" for details.

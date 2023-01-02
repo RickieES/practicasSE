@@ -1,0 +1,7 @@
+INFILE=N:\ws\practica5\implementation\practica5.ncd
+OUTFILE=N:\ws\practica5\implementation\practica5.bit
+FAMILY=Spartan3
+PART=xc3s1000-5ft256
+WORKINGDIR=N:\ws\practica5\implementation
+LICENSE=WebPack
+USER_INFO=__0_0_0

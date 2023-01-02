@@ -18,45 +18,17 @@
 /******************************************************************/
 
 
-/* Definitions for peripheral KEYPAD_0 */
-#define XPAR_KEYPAD_0_BASEADDR 0xC9600000
-#define XPAR_KEYPAD_0_HIGHADDR 0xC960FFFF
-
-
-/* Definitions for peripheral LCD_0 */
-#define XPAR_LCD_0_BASEADDR 0xCB400000
-#define XPAR_LCD_0_HIGHADDR 0xCB40FFFF
-
-
-/* Definitions for peripheral LEDRGB_0 */
-#define XPAR_LEDRGB_0_BASEADDR 0xCF400000
-#define XPAR_LEDRGB_0_HIGHADDR 0xCF40FFFF
-
-
-/* Definitions for peripheral MOTOR_HW_0 */
-#define XPAR_MOTOR_HW_0_BASEADDR 0xC0A00000
-#define XPAR_MOTOR_HW_0_HIGHADDR 0xC0A0FFFF
+/* Definitions for peripheral TOP_KEYPAD_0 */
+#define XPAR_TOP_KEYPAD_0_BASEADDR 0x84010000
+#define XPAR_TOP_KEYPAD_0_HIGHADDR 0x84017FFF
 
 
 /******************************************************************/
 
-/* Definitions for driver GPIO */
-#define XPAR_XGPIO_NUM_INSTANCES 2
 
-/* Definitions for peripheral LEDSI */
-#define XPAR_LEDSI_BASEADDR 0x81420000
-#define XPAR_LEDSI_HIGHADDR 0x8142FFFF
-#define XPAR_LEDSI_DEVICE_ID 0
-#define XPAR_LEDSI_INTERRUPT_PRESENT 0
-#define XPAR_LEDSI_IS_DUAL 0
-
-
-/* Definitions for peripheral SWITCHESI */
-#define XPAR_SWITCHESI_BASEADDR 0x81400000
-#define XPAR_SWITCHESI_HIGHADDR 0x8140FFFF
-#define XPAR_SWITCHESI_DEVICE_ID 1
-#define XPAR_SWITCHESI_INTERRUPT_PRESENT 0
-#define XPAR_SWITCHESI_IS_DUAL 0
+/* Definitions for peripheral TOP_LCD_0 */
+#define XPAR_TOP_LCD_0_BASEADDR 0x84018000
+#define XPAR_TOP_LCD_0_HIGHADDR 0x8401FFFF
 
 
 /******************************************************************/

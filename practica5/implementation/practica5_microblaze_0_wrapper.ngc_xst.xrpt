@@ -5,14 +5,14 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Tue Dec 06 22:20:02 2022">
+  <application stringID="Xst" timeStamp="Sun Oct 16 21:44:09 2022">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
           <item stringID="variable" value="PATH"/>
-          <item stringID="value" value="C:\Xilinx\14.1\ISE_DS\ISE\\lib\nt;C:\Xilinx\14.1\ISE_DS\EDK\lib\nt;C:\Xilinx\14.1\ISE_DS\ISE\\bin\nt;C:\Xilinx\14.1\ISE_DS\EDK\bin\nt;C:\Xilinx\14.1\ISE_DS\EDK\gnu\microblaze\nt\bin;C:\Xilinx\14.1\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;C:\Xilinx\14.1\ISE_DS\EDK\gnuwin\bin;C:\Xilinx\14.1\ISE_DS\EDK\\bin\nt;C:\Xilinx\14.1\ISE_DS\EDK\\lib\nt;C:\Xilinx\14.1\ISE_DS\ISE\bin\nt;C:\Xilinx\14.1\ISE_DS\ISE\lib\nt;C:\Xilinx\Vivado\2012.1\bin;C:\Xilinx\14.1\ISE_DS\PlanAhead\bin;C:\Xilinx\14.1\ISE_DS\EDK\gnu\arm\nt\bin;C:\Xilinx\14.1\ISE_DS\common\bin\nt;C:\Xilinx\14.1\ISE_DS\common\lib\nt;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\XSTOOLs;C:\Program Files\PuTTY\"/>
+          <item stringID="value" value="C:\Xilinx\14.1\ISE_DS\ISE\\lib\nt;C:\Xilinx\14.1\ISE_DS\EDK\lib\nt;C:\Xilinx\14.1\ISE_DS\ISE\\bin\nt;C:\Xilinx\14.1\ISE_DS\EDK\bin\nt;C:\Xilinx\14.1\ISE_DS\EDK\gnu\microblaze\nt\bin;C:\Xilinx\14.1\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;C:\Xilinx\14.1\ISE_DS\EDK\gnuwin\bin;C:\Xilinx\14.1\ISE_DS\EDK\\bin\nt;C:\Xilinx\14.1\ISE_DS\EDK\\lib\nt;C:\Xilinx\14.1\ISE_DS\ISE\bin\nt;C:\Xilinx\14.1\ISE_DS\ISE\lib\nt;C:\Xilinx\Vivado\2012.1\bin;C:\Xilinx\14.1\ISE_DS\PlanAhead\bin;C:\Xilinx\14.1\ISE_DS\EDK\gnu\arm\nt\bin;C:\Xilinx\14.1\ISE_DS\common\bin\nt;C:\Xilinx\14.1\ISE_DS\common\lib\nt;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\XSTOOLs"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATHEXT"/>
@@ -48,8 +48,8 @@
         <column stringID="arch"/>
         <column stringID="speed"/>
         <row stringID="row" value="0">
-          <item stringID="arch" value="AMD A8-6600K APU with Radeon(tm) HD Graphics   "/>
-          <item stringID="speed" value="3892 MHz"/>
+          <item stringID="arch" value="Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz"/>
+          <item stringID="speed" value="1799 MHz"/>
         </row>
       </table>
     </section>

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2022-12-06T22:33:27</DateModified>
+  <DateModified>2022-12-23T20:25:37</DateModified>
   <ModuleName>top_lcd</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>N:/ws/practica5/pcores/top_lcd_v1_00_a/devl/projnav/iseconfig/top_lcd.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>N:/ws/practica5/pcores/top_lcd_v1_00_a/devl/projnav</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>N:/ws/practica5/pcores/top_lcd_v1_00_a/devl/projnav\</ImplementationReportsDirectory>
   <DateInitialized>2022-12-06T22:33:27</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

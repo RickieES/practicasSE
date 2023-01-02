@@ -3,7 +3,7 @@
 	<name>peripheral_tests_bsp_0</name>
 	<comment></comment>
 	<projects>
-		<project>PruebaXilinxPlatformStudio_hw_platform</project>
+		<project>practica5_hw_platform</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

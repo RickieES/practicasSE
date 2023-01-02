@@ -263,9 +263,9 @@ Entity <practica5_top_keypad_0_wrapper> (Architecture <STRUCTURE>) compiled.
 Analyzing hierarchy for entity <practica5_top_keypad_0_wrapper> in library <work> (architecture <STRUCTURE>).
 
 Analyzing hierarchy for entity <top_keypad> in library <top_keypad_v1_00_a> (architecture <IMP>) with generics.
-	C_BASEADDR = "11111111111111111111111111111111"
+	C_BASEADDR = "10000100000000010000000000000000"
 	C_FAMILY = "spartan3"
-	C_HIGHADDR = "00000000000000000000000000000000"
+	C_HIGHADDR = "10000100000000010111111111111111"
 	C_INCLUDE_DPHASE_TIMER = 1
 	C_SPLB_AWIDTH = 32
 	C_SPLB_CLK_PERIOD_PS = 10000
@@ -279,8 +279,8 @@ Analyzing hierarchy for entity <top_keypad> in library <top_keypad_v1_00_a> (arc
 WARNING:Xst:821 - "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" line 272: Loop body will iterate zero times
 
 Analyzing hierarchy for entity <plbv46_slave_single> in library <plbv46_slave_single_v1_01_a> (architecture <implementation>) with generics.
-	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000000000000000000000000000000000000")
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000100000000010000000000000000",
+	                          "0000000000000000000000000000000010000100000000010111111111111111")
 	C_ARD_NUM_CE_ARRAY = (1)
 	C_BUS2CORE_CLK_RATIO = 1
 	C_FAMILY = "spartan3"
@@ -297,8 +297,8 @@ Analyzing hierarchy for entity <user_logic> in library <top_keypad_v1_00_a> (arc
 	C_SLV_DWIDTH = 32
 
 Analyzing hierarchy for entity <plb_slave_attachment> in library <plbv46_slave_single_v1_01_a> (architecture <implementation>) with generics.
-	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000000000000000000000000000000000000")
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000100000000010000000000000000",
+	                          "0000000000000000000000000000000010000100000000010111111111111111")
 	C_ARD_NUM_CE_ARRAY = (1)
 	C_BUS2CORE_CLK_RATIO = 1
 	C_DPHASE_TIMEOUT = 128
@@ -313,8 +313,8 @@ Analyzing hierarchy for entity <plb_slave_attachment> in library <plbv46_slave_s
 Analyzing hierarchy for entity <teclaDetect> in library <top_keypad_v1_00_a> (architecture <Behavioral>).
 
 Analyzing hierarchy for entity <plb_address_decoder> in library <plbv46_slave_single_v1_01_a> (architecture <IMP>) with generics.
-	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000000000000000000000000000000000000")
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000100000000010000000000000000",
+	                          "0000000000000000000000000000000010000100000000010111111111111111")
 	C_ARD_NUM_CE_ARRAY = (1)
 	C_BUS_AWIDTH = 32
 	C_FAMILY = "nofamily"
@@ -325,9 +325,9 @@ Analyzing hierarchy for entity <counter_f> in library <proc_common_v3_00_a> (arc
 	C_NUM_BITS = 8
 
 Analyzing hierarchy for entity <pselect_f> in library <proc_common_v3_00_a> (architecture <imp>) with generics.
-	C_AB = 0
+	C_AB = 17
 	C_AW = 32
-	C_BAR = "11111111111111111111111111111111"
+	C_BAR = "10000100000000010000000000000000"
 	C_FAMILY = "nofamily"
 
 Analyzing hierarchy for entity <or_gate128> in library <proc_common_v3_00_a> (architecture <imp>) with generics.
@@ -343,12 +343,671 @@ Analyzing hierarchy for entity <or_muxcy> in library <proc_common_v3_00_a> (arch
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <practica5_top_keypad_0_wrapper> in library <work> (Architecture <STRUCTURE>).
-ERROR:Xst:762 - "//vboxsvr/se/ws/practica5/hdl/practica5_top_keypad_0_wrapper.vhd" line 130: No default binding for component: <top_keypad>. Port <R> does not match.
+WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+Entity <practica5_top_keypad_0_wrapper> analyzed. Unit <practica5_top_keypad_0_wrapper> generated.
+
+Analyzing generic Entity <top_keypad> in library <top_keypad_v1_00_a> (Architecture <IMP>).
+	C_BASEADDR = "10000100000000010000000000000000"
+	C_FAMILY = "spartan3"
+	C_HIGHADDR = "10000100000000010111111111111111"
+	C_INCLUDE_DPHASE_TIMER = 1
+	C_SPLB_AWIDTH = 32
+	C_SPLB_CLK_PERIOD_PS = 10000
+	C_SPLB_DWIDTH = 32
+	C_SPLB_MID_WIDTH = 1
+	C_SPLB_NATIVE_DWIDTH = 32
+	C_SPLB_NUM_MASTERS = 2
+	C_SPLB_P2P = 0
+	C_SPLB_SMALLEST_MASTER = 32
+	C_SPLB_SUPPORT_BURSTS = 0
+WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:821 - "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" line 272: Loop body will iterate zero times
+WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+Entity <top_keypad> analyzed. Unit <top_keypad> generated.
+
+Analyzing generic Entity <plbv46_slave_single> in library <plbv46_slave_single_v1_01_a> (Architecture <implementation>).
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000100000000010000000000000000",
+	                          "0000000000000000000000000000000010000100000000010111111111111111")
+	C_ARD_NUM_CE_ARRAY = (1)
+	C_BUS2CORE_CLK_RATIO = 1
+	C_FAMILY = "spartan3"
+	C_INCLUDE_DPHASE_TIMER = 1
+	C_SIPIF_DWIDTH = 32
+	C_SPLB_AWIDTH = 32
+	C_SPLB_DWIDTH = 32
+	C_SPLB_MID_WIDTH = 1
+	C_SPLB_NUM_MASTERS = 2
+	C_SPLB_P2P = 0
+Entity <plbv46_slave_single> analyzed. Unit <plbv46_slave_single> generated.
+
+Analyzing generic Entity <plb_slave_attachment> in library <plbv46_slave_single_v1_01_a> (Architecture <implementation>).
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000100000000010000000000000000",
+	                          "0000000000000000000000000000000010000100000000010111111111111111")
+	C_ARD_NUM_CE_ARRAY = (1)
+	C_BUS2CORE_CLK_RATIO = 1
+	C_DPHASE_TIMEOUT = 128
+	C_FAMILY = "spartan3"
+	C_INCLUDE_DPHASE_TIMER = 1
+	C_IPIF_ABUS_WIDTH = 32
+	C_IPIF_DBUS_WIDTH = 32
+	C_PLB_MID_WIDTH = 1
+	C_PLB_NUM_MASTERS = 2
+	C_SPLB_P2P = 0
+WARNING:Xst:753 - "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd" line 1201: Unconnected output port 'Count_Out' of component 'counter_f'.
+Entity <plb_slave_attachment> analyzed. Unit <plb_slave_attachment> generated.
+
+Analyzing generic Entity <plb_address_decoder> in library <plbv46_slave_single_v1_01_a> (Architecture <IMP>).
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000100000000010000000000000000",
+	                          "0000000000000000000000000000000010000100000000010111111111111111")
+	C_ARD_NUM_CE_ARRAY = (1)
+	C_BUS_AWIDTH = 32
+	C_FAMILY = "nofamily"
+	C_SPLB_P2P = 0
+Entity <plb_address_decoder> analyzed. Unit <plb_address_decoder> generated.
+
+Analyzing generic Entity <pselect_f> in library <proc_common_v3_00_a> (Architecture <imp>).
+	C_AB = 17
+	C_AW = 32
+	C_BAR = "10000100000000010000000000000000"
+	C_FAMILY = "nofamily"
+Entity <pselect_f> analyzed. Unit <pselect_f> generated.
+
+Analyzing generic Entity <or_gate128> in library <proc_common_v3_00_a> (Architecture <imp>).
+	C_BUS_WIDTH = 1
+	C_OR_WIDTH = 1
+	C_USE_LUT_OR = false
+Entity <or_gate128> analyzed. Unit <or_gate128> generated.
+
+Analyzing generic Entity <or_muxcy> in library <proc_common_v3_00_a> (Architecture <implementation>).
+	C_NUM_BITS = 1
+Entity <or_muxcy> analyzed. Unit <or_muxcy> generated.
+
+Analyzing generic Entity <counter_f> in library <proc_common_v3_00_a> (Architecture <imp>).
+	C_FAMILY = "nofamily"
+	C_NUM_BITS = 8
+Entity <counter_f> analyzed. Unit <counter_f> generated.
+
+Analyzing generic Entity <user_logic> in library <top_keypad_v1_00_a> (Architecture <IMP>).
+	C_NUM_REG = 1
+	C_SLV_DWIDTH = 32
+WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+Entity <user_logic> analyzed. Unit <user_logic> generated.
+
+Analyzing Entity <teclaDetect> in library <top_keypad_v1_00_a> (Architecture <Behavioral>).
+WARNING:Xst:819 - "//vboxsvr/se/ws/practica5/pcores/top_keypad_v1_00_a/hdl/vhdl/teclaDetect.vhd" line 102: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <state>
+Entity <teclaDetect> analyzed. Unit <teclaDetect> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <counter_f>.
+    Related source file is "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd".
+    Found 9-bit register for signal <icount_out>.
+    Found 9-bit subtractor for signal <icount_out$sub0000> created at line 297.
+    Summary:
+	inferred   9 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <counter_f> synthesized.
+
+
+Synthesizing Unit <pselect_f>.
+    Related source file is "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+WARNING:Xst:647 - Input <A<17:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <pselect_f> synthesized.
+
+
+Synthesizing Unit <or_muxcy>.
+    Related source file is "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd".
+Unit <or_muxcy> synthesized.
+
+
+Synthesizing Unit <teclaDetect>.
+    Related source file is "//vboxsvr/se/ws/practica5/pcores/top_keypad_v1_00_a/hdl/vhdl/teclaDetect.vhd".
+WARNING:Xst:1780 - Signal <R4sync> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 16                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 12                                             |
+    | Clock              | reloj                     (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | waitingpression                                |
+    | Power Up State     | waitingpression                                |
+    | Encoding           | automatic                                      |
+    | Implementation     | automatic                                      |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <aux1>.
+    Found 20-bit up counter for signal <count>.
+    Found 1-bit register for signal <ldCode2>.
+    Found 4-bit register for signal <regcode>.
+    Found 1-bit register for signal <xSync>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred   7 D-type flip-flop(s).
+Unit <teclaDetect> synthesized.
+
+
+Synthesizing Unit <user_logic>.
+    Related source file is "//vboxsvr/se/ws/practica5/pcores/top_keypad_v1_00_a/hdl/vhdl/user_logic.vhd".
+    Found 4-bit up counter for signal <count>.
+    Found 1-bit register for signal <reloj12>.
+    Found 32-bit register for signal <slv_reg0>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  33 D-type flip-flop(s).
+Unit <user_logic> synthesized.
+
+
+Synthesizing Unit <or_gate128>.
+    Related source file is "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd".
+WARNING:Xst:1780 - Signal <test> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <or_gate128> synthesized.
+
+
+Synthesizing Unit <plb_address_decoder>.
+    Related source file is "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_address_decoder.vhd".
+WARNING:Xst:647 - Input <Bus_RNW_Erly> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Address_In_Erly> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Address_Valid_Erly> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <cs_s_h_clr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cs_ce_clr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <addr_out_s_h> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <addr_match_clr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <cs_out_i<0>>.
+    Found 1-bit register for signal <cs_out_s_h<0>>.
+    Found 1-bit register for signal <decode_hit_reg>.
+    Found 1-bit register for signal <rdce_out_i<0>>.
+    Found 1-bit register for signal <rnw_s_h>.
+    Found 1-bit register for signal <wrce_out_i<0>>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+Unit <plb_address_decoder> synthesized.
+
+
+Synthesizing Unit <plb_slave_attachment>.
+    Related source file is "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd".
+WARNING:Xst:647 - Input <PLB_UABus> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <valid_plb_type> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <valid_plb_size> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <start_data_phase> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sl_wrdack_ns> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sl_wrcomp_ns> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sl_wait_ns> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sl_rddack_ns> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sl_rdcomp_ns> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sl_data_ack> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <set_sl_busy_ns> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <rd_ce_ld_enable> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <clear_sl_rd_busy_ns> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <clear_sl_rd_busy> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <clear_sl_busy_ns> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <clear_rd_ce> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Register <sl_rdcomp_i> equivalent to <rd_clear_sl_busy> has been removed
+    Register <sl_rddack_i> equivalent to <rd_clear_sl_busy> has been removed
+    Register <sl_addrack_i> equivalent to <set_sl_busy> has been removed
+    Register <sl_wrdack_i> equivalent to <sl_wrcomp_i> has been removed
+    Register <wr_clear_sl_busy> equivalent to <sl_wrcomp_i> has been removed
+    Found 1-bit register for signal <addr_cntl_cs<0>>.
+    Found 1-bit register for signal <addr_cycle_flush>.
+    Found 32-bit register for signal <bus2ip_addr_i>.
+    Found 4-bit register for signal <bus2ip_be_i>.
+    Found 1-bit register for signal <bus2ip_rnw_i>.
+    Found 1-bit register for signal <data_timeout>.
+    Found 1-bit register for signal <master_id<31>>.
+    Found 32-bit register for signal <plb_abus_reg>.
+    Found 4-bit register for signal <plb_be_reg>.
+    Found 1-bit register for signal <plb_masterid_reg<0>>.
+    Found 1-bit register for signal <plb_pavalid_reg>.
+    Found 1-bit register for signal <plb_rnw_reg>.
+    Found 4-bit register for signal <plb_size_reg>.
+    Found 3-bit register for signal <plb_type_reg>.
+    Found 32-bit register for signal <plb_wrdbus_reg>.
+    Found 1-bit register for signal <rd_clear_sl_busy>.
+    Found 1-bit register for signal <set_sl_busy>.
+    Found 1-bit register for signal <sl_busy>.
+    Found 2-bit register for signal <sl_mbusy_i>.
+    Found 2-bit register for signal <sl_mrderr_i>.
+    Found 2-bit register for signal <sl_mwrerr_i>.
+    Found 32-bit register for signal <sl_rddbus_i>.
+    Found 1-bit register for signal <sl_rearbitrate_i>.
+    Found 1-bit register for signal <sl_wrcomp_i>.
+    Summary:
+	inferred 162 D-type flip-flop(s).
+Unit <plb_slave_attachment> synthesized.
+
+
+Synthesizing Unit <plbv46_slave_single>.
+    Related source file is "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plbv46_slave_single.vhd".
+WARNING:Xst:647 - Input <PLB_wrPrim> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_MSize> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_rdBurst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_SAValid> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_wrPendReq> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_wrPendPri> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_rdPendReq> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_rdPendPri> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_busLock> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_reqPri> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_lockErr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_wrBurst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_TAttribute> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_rdPrim> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_abort> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <plbv46_slave_single> synthesized.
+
+
+Synthesizing Unit <top_keypad>.
+    Related source file is "//vboxsvr/se/ws/practica5/pcores/top_keypad_v1_00_a/hdl/vhdl/top_keypad.vhd".
+WARNING:Xst:646 - Signal <ipif_Bus2IP_RNW> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ipif_Bus2IP_CS<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ipif_Bus2IP_Addr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <top_keypad> synthesized.
+
+
+Synthesizing Unit <practica5_top_keypad_0_wrapper>.
+    Related source file is "//vboxsvr/se/ws/practica5/hdl/practica5_top_keypad_0_wrapper.vhd".
+Unit <practica5_top_keypad_0_wrapper> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 9-bit subtractor                                      : 1
+# Counters                                             : 2
+ 20-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 71
+ 1-bit register                                        : 61
+ 3-bit register                                        : 1
+ 32-bit register                                       : 4
+ 4-bit register                                        : 4
+ 9-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <top_keypad_0/USER_LOGIC_I/TeclaDetecInst/state/FSM> on signal <state[1:8]> with one-hot encoding.
+----------------------------------
+ State                | Encoding
+----------------------------------
+ waitingpression      | 00000001
+ pressiondebouncing   | 00000010
+ scancol1             | 00000100
+ scancol2             | 00001000
+ scancol3             | 00100000
+ scancol4             | 01000000
+ waitingdepression    | 00010000
+ depressiondebouncing | 10000000
+----------------------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Adders/Subtractors                                   : 1
+ 9-bit subtractor                                      : 1
+# Counters                                             : 2
+ 20-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 217
+ Flip-Flops                                            : 217
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <addr_cntl_cs_0> in Unit <plb_slave_attachment> is equivalent to the following FF/Latch, which will be removed : <addr_cycle_flush> 
+
+Optimizing unit <practica5_top_keypad_0_wrapper> ...
+
+Optimizing unit <counter_f> ...
+
+Optimizing unit <teclaDetect> ...
+
+Optimizing unit <user_logic> ...
+
+Optimizing unit <plb_address_decoder> ...
+
+Optimizing unit <plb_slave_attachment> ...
+WARNING:Xst:1710 - FF/Latch <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mrderr_i_1> (without init value) has a constant value of 0 in block <practica5_top_keypad_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mrderr_i_0> (without init value) has a constant value of 0 in block <practica5_top_keypad_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mwrerr_i_1> (without init value) has a constant value of 0 in block <practica5_top_keypad_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mwrerr_i_0> (without init value) has a constant value of 0 in block <practica5_top_keypad_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_s_h_0> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_0> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_1> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_2> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_3> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_4> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_5> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_6> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_7> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_8> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_9> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_10> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_11> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_12> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_13> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_14> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_15> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_16> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_17> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_18> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_19> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_20> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_21> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_22> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_23> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_24> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_25> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_26> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_27> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_28> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_29> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_30> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_31> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_17> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_18> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_19> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_20> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_21> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_22> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_23> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_24> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_25> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_26> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_27> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_28> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_29> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_30> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+WARNING:Xst:2677 - Node <top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_31> of sequential type is unconnected in block <practica5_top_keypad_0_wrapper>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+FlipFlop top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_0 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 196
+ Flip-Flops                                            : 196
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : ../implementation/practica5_top_keypad_0_wrapper.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 209
+
+Cell Usage :
+# BELS                             : 202
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 54
+#      LUT2_L                      : 2
+#      LUT3                        : 28
+#      LUT3_D                      : 1
+#      LUT4                        : 58
+#      LUT4_D                      : 4
+#      LUT4_L                      : 3
+#      MUXCY                       : 29
+#      VCC                         : 1
+#      XORCY                       : 20
+# FlipFlops/Latches                : 196
+#      FD                          : 1
+#      FDC                         : 12
+#      FDCE                        : 17
+#      FDP                         : 3
+#      FDPE                        : 8
+#      FDR                         : 101
+#      FDRE                        : 45
+#      FDRS                        : 2
+#      FDS                         : 7
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1000ft256-5 
+
+ Number of Slices:                      134  out of   7680     1%  
+ Number of Slice Flip Flops:            196  out of  15360     1%  
+ Number of 4 input LUTs:                151  out of  15360     0%  
+ Number of IOs:                         209
+ Number of bonded IOBs:                   0  out of    173     0%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+----------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                  | Load  |
+-----------------------------------+----------------------------------------+-------+
+top_keypad_0/USER_LOGIC_I/reloj121 | BUFG                                   | 35    |
+SPLB_Clk                           | NONE(top_keypad_0/USER_LOGIC_I/count_3)| 161   |
+-----------------------------------+----------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+SPLB_Rst                           | NONE                   | 40    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 6.134ns (Maximum Frequency: 163.038MHz)
+   Minimum input arrival time before clock: 3.860ns
+   Maximum output required time after clock: 2.372ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'top_keypad_0/USER_LOGIC_I/reloj121'
+  Clock period: 6.134ns (frequency: 163.038MHz)
+  Total number of paths / destination ports: 1533 / 58
+-------------------------------------------------------------------------
+Delay:               6.134ns (Levels of Logic = 7)
+  Source:            top_keypad_0/USER_LOGIC_I/TeclaDetecInst/count_7 (FF)
+  Destination:       top_keypad_0/USER_LOGIC_I/TeclaDetecInst/count_1 (FF)
+  Source Clock:      top_keypad_0/USER_LOGIC_I/reloj121 rising
+  Destination Clock: top_keypad_0/USER_LOGIC_I/reloj121 rising
+
+  Data Path: top_keypad_0/USER_LOGIC_I/TeclaDetecInst/count_7 to top_keypad_0/USER_LOGIC_I/TeclaDetecInst/count_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.626   1.040  top_keypad_0/USER_LOGIC_I/TeclaDetecInst/count_7 (top_keypad_0/USER_LOGIC_I/TeclaDetecInst/count_7)
+     LUT4:I0->O            1   0.479   0.000  top_keypad_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_lut<0> (top_keypad_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.435   0.000  top_keypad_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_cy<0> (top_keypad_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.056   0.000  top_keypad_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_cy<1> (top_keypad_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  top_keypad_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_cy<2> (top_keypad_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  top_keypad_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_cy<3> (top_keypad_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           5   0.265   0.806  top_keypad_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_cy<4> (top_keypad_0/USER_LOGIC_I/TeclaDetecInst/timerEnd)
+     LUT4:I3->O           20   0.479   1.313  top_keypad_0/USER_LOGIC_I/TeclaDetecInst/count_not00011 (top_keypad_0/USER_LOGIC_I/TeclaDetecInst/count_not0001)
+     FDCE:CE                   0.524          top_keypad_0/USER_LOGIC_I/TeclaDetecInst/count_1
+    ----------------------------------------
+    Total                      6.134ns (2.974ns logic, 3.160ns route)
+                                       (48.5% logic, 51.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SPLB_Clk'
+  Clock period: 5.668ns (frequency: 176.418MHz)
+  Total number of paths / destination ports: 573 / 197
+-------------------------------------------------------------------------
+Delay:               5.668ns (Levels of Logic = 3)
+  Source:            top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_3 (FF)
+  Destination:       top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_7 (FF)
+  Source Clock:      SPLB_Clk rising
+  Destination Clock: SPLB_Clk rising
+
+  Data Path: top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_3 to top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              2   0.626   1.040  top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_3 (top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_3)
+     LUT4_D:I0->LO         1   0.479   0.123  top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_sub0000<3>11 (N20)
+     LUT4:I3->O            2   0.479   0.804  top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_sub0000<7>11 (top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/N0)
+     LUT3:I2->O            2   0.479   0.745  top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_sub0000<8>1 (top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_sub0000<8>1)
+     FDS:S                     0.892          top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER/icount_out_7
+    ----------------------------------------
+    Total                      5.668ns (2.955ns logic, 2.713ns route)
+                                       (52.1% logic, 47.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'top_keypad_0/USER_LOGIC_I/reloj121'
+  Total number of paths / destination ports: 73 / 16
+-------------------------------------------------------------------------
+Offset:              3.860ns (Levels of Logic = 3)
+  Source:            R<1> (PAD)
+  Destination:       top_keypad_0/USER_LOGIC_I/TeclaDetecInst/regcode_3 (FF)
+  Destination Clock: top_keypad_0/USER_LOGIC_I/reloj121 rising
+
+  Data Path: R<1> to top_keypad_0/USER_LOGIC_I/TeclaDetecInst/regcode_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT2:I0->O            1   0.479   0.976  top_keypad_0/USER_LOGIC_I/TeclaDetecInst/xCode<3>4 (top_keypad_0/USER_LOGIC_I/TeclaDetecInst/xCode<3>4)
+     LUT4:I0->O            1   0.479   0.976  top_keypad_0/USER_LOGIC_I/TeclaDetecInst/xCode<3>10 (top_keypad_0/USER_LOGIC_I/TeclaDetecInst/xCode<3>10)
+     LUT2:I0->O            1   0.479   0.000  top_keypad_0/USER_LOGIC_I/TeclaDetecInst/xCode<3>21 (top_keypad_0/USER_LOGIC_I/TeclaDetecInst/xCode<3>)
+     FDCE:D                    0.176          top_keypad_0/USER_LOGIC_I/TeclaDetecInst/regcode_3
+    ----------------------------------------
+    Total                      3.860ns (1.908ns logic, 1.952ns route)
+                                       (49.4% logic, 50.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'SPLB_Clk'
+  Total number of paths / destination ports: 210 / 210
+-------------------------------------------------------------------------
+Offset:              3.241ns (Levels of Logic = 1)
+  Source:            SPLB_Rst (PAD)
+  Destination:       top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_0 (FF)
+  Destination Clock: SPLB_Clk rising
+
+  Data Path: SPLB_Rst to top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT3:I0->O           32   0.479   1.575  top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_or00001 (top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_or0000)
+     FDR:R                     0.892          top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_31
+    ----------------------------------------
+    Total                      3.241ns (1.666ns logic, 1.575ns route)
+                                       (51.4% logic, 48.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SPLB_Clk'
+  Total number of paths / destination ports: 40 / 40
+-------------------------------------------------------------------------
+Offset:              0.626ns (Levels of Logic = 0)
+  Source:            top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rearbitrate_i (FF)
+  Destination:       Sl_rearbitrate (PAD)
+  Source Clock:      SPLB_Clk rising
+
+  Data Path: top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rearbitrate_i to Sl_rearbitrate
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              0   0.626   0.000  top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rearbitrate_i (top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rearbitrate_i)
+    ----------------------------------------
+    Total                      0.626ns (0.626ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'top_keypad_0/USER_LOGIC_I/reloj121'
+  Total number of paths / destination ports: 12 / 4
+-------------------------------------------------------------------------
+Offset:              2.372ns (Levels of Logic = 1)
+  Source:            top_keypad_0/USER_LOGIC_I/TeclaDetecInst/state_FSM_FFd3 (FF)
+  Destination:       S<2> (PAD)
+  Source Clock:      top_keypad_0/USER_LOGIC_I/reloj121 rising
+
+  Data Path: top_keypad_0/USER_LOGIC_I/TeclaDetecInst/state_FSM_FFd3 to S<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             11   0.626   1.267  top_keypad_0/USER_LOGIC_I/TeclaDetecInst/state_FSM_FFd3 (top_keypad_0/USER_LOGIC_I/TeclaDetecInst/state_FSM_FFd3)
+     LUT3:I0->O            1   0.479   0.000  top_keypad_0/USER_LOGIC_I/TeclaDetecInst/state_FSM_Out91 (S<2>)
+    ----------------------------------------
+    Total                      2.372ns (1.105ns logic, 1.267ns route)
+                                       (46.6% logic, 53.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 13.25 secs
+ 
 --> 
 
-Total memory usage is 250316 kilobytes
+Total memory usage is 270540 kilobytes
 
-Number of errors   :    1 (   0 filtered)
-Number of warnings :    1 (   0 filtered)
-Number of infos    :    0 (   0 filtered)
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  109 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
 

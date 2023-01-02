@@ -2,12 +2,16 @@
  PARAMETER VERSION = 2.1.0
 
 
- PORT Clk_pin = net_Clk_pin, DIR = I, SIGIS = CLK
  PORT Rst_pin = net_Rst_pin, DIR = I, SIGIS = RST
- PORT switches = xps_gpio_0_GPIO_IO, DIR = IO, VEC = [0:7]
- PORT leds = xps_gpio_1_GPIO_IO, DIR = IO, VEC = [0:7]
  PORT RX_pin = net_RX_pin, DIR = I
  PORT TX_pin = xps_uartlite_0_TX, DIR = O
+ PORT Clk_pin = net_Clk_pin, DIR = I, SIGIS = CLK
+ PORT lcd_rw = top_lcd_0_rw, DIR = O
+ PORT lcd_rs = top_lcd_0_rs, DIR = O
+ PORT lcd_e = top_lcd_0_e, DIR = O
+ PORT lcd_data = top_lcd_0_lcd_data, DIR = O, VEC = [7:0]
+ PORT keypad_0_S_pin = top_keypad_0_S, DIR = O, VEC = [3:0]
+ PORT keypad_0_R_pin = net_keypad_0_R_pin, DIR = I, VEC = [3:0]
 
 
 BEGIN microblaze
@@ -30,7 +34,7 @@ BEGIN xps_bram_if_cntlr
  PARAMETER HW_VER = 1.00.b
  PARAMETER C_SPLB_NATIVE_DWIDTH = 32
  PARAMETER C_BASEADDR = 0x00000000
- PARAMETER C_HIGHADDR = 0x00007FFF
+ PARAMETER C_HIGHADDR = 0x00007fff
  BUS_INTERFACE SPLB = plb_v46_0
  BUS_INTERFACE PORTA = xps_bram_if_cntlr_0_PORTA
 END
@@ -39,26 +43,6 @@ BEGIN bram_block
  PARAMETER INSTANCE = bram_block_0
  PARAMETER HW_VER = 1.00.a
  BUS_INTERFACE PORTA = xps_bram_if_cntlr_0_PORTA
-END
-
-BEGIN xps_gpio
- PARAMETER INSTANCE = xps_gpio_0
- PARAMETER HW_VER = 2.00.a
- PARAMETER C_GPIO_WIDTH = 8
- PARAMETER C_BASEADDR = 0x81420000
- PARAMETER C_HIGHADDR = 0x8142ffff
- BUS_INTERFACE SPLB = plb_v46_0
- PORT GPIO_IO = xps_gpio_0_GPIO_IO
-END
-
-BEGIN xps_gpio
- PARAMETER INSTANCE = xps_gpio_1
- PARAMETER HW_VER = 2.00.a
- PARAMETER C_GPIO_WIDTH = 8
- PARAMETER C_BASEADDR = 0x81400000
- PARAMETER C_HIGHADDR = 0x8140ffff
- BUS_INTERFACE SPLB = plb_v46_0
- PORT GPIO_IO = xps_gpio_1_GPIO_IO
 END
 
 BEGIN xps_uartlite
@@ -73,15 +57,25 @@ BEGIN xps_uartlite
  PORT TX = xps_uartlite_0_TX
 END
 
-BEGIN top_keypad
- PARAMETER INSTANCE = top_keypad_0
- PARAMETER HW_VER = 1.00.a
- BUS_INTERFACE SPLB = plb_v46_0
-END
-
 BEGIN top_lcd
  PARAMETER INSTANCE = top_lcd_0
  PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x84018000
+ PARAMETER C_HIGHADDR = 0x8401ffff
  BUS_INTERFACE SPLB = plb_v46_0
+ PORT rw = top_lcd_0_rw
+ PORT rs = top_lcd_0_rs
+ PORT e = top_lcd_0_e
+ PORT lcd_data = top_lcd_0_lcd_data
+END
+
+BEGIN top_keypad
+ PARAMETER INSTANCE = top_keypad_0
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x84010000
+ PARAMETER C_HIGHADDR = 0x84017fff
+ BUS_INTERFACE SPLB = plb_v46_0
+ PORT S = top_keypad_0_S
+ PORT R = net_keypad_0_R_pin
 END
 

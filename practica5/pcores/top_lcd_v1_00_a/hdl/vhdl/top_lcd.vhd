@@ -165,10 +165,10 @@ entity top_lcd is
   port
   (
     -- ADD USER PORTS BELOW THIS LINE ------------------
-	 rw			: OUT   STD_LOGIC;  --read/write for lcd
-	 rs			: OUT   STD_LOGIC;  --setup/data for lcd
-	 e  		: OUT   STD_LOGIC;  --enable for lcd
-	 lcd_data	: OUT   STD_LOGIC_VECTOR(7 DOWNTO 0); --data signals for lcd
+	 rw         : OUT   STD_LOGIC;  --read/write for lcd
+	 rs         : OUT   STD_LOGIC;  --setup/data for lcd
+	 e          : OUT   STD_LOGIC;  --enable for lcd
+	 lcd_data   : OUT   STD_LOGIC_VECTOR(7 DOWNTO 0); --data signals for lcd
     -- ADD USER PORTS ABOVE THIS LINE ------------------
 
     -- DO NOT EDIT BELOW THIS LINE ---------------------
@@ -499,8 +499,8 @@ begin
       -- MAP USER GENERICS ABOVE THIS LINE ---------------
 
       C_SLV_DWIDTH                   => USER_SLV_DWIDTH,
-      C_NUM_REG                      => USER_NUM_REG,
-      C_WRFIFO_DEPTH                 => USER_WRFIFO_DEPTH
+      C_NUM_REG                      => USER_NUM_REG
+      -- C_WRFIFO_DEPTH                 => USER_WRFIFO_DEPTH
     )
     port map
     (
@@ -522,14 +522,14 @@ begin
       IP2Bus_WrAck                   => user_IP2Bus_WrAck,
       IP2Bus_Error                   => user_IP2Bus_Error,
       IP2WFIFO_RdReq                 => user_IP2WFIFO_RdReq,
-      IP2WFIFO_RdMark                => user_IP2WFIFO_RdMark,
-      IP2WFIFO_RdRelease             => user_IP2WFIFO_RdRelease,
-      IP2WFIFO_RdRestore             => user_IP2WFIFO_RdRestore,
+      -- IP2WFIFO_RdMark                => user_IP2WFIFO_RdMark,
+      -- IP2WFIFO_RdRelease             => user_IP2WFIFO_RdRelease,
+      -- IP2WFIFO_RdRestore             => user_IP2WFIFO_RdRestore,
       WFIFO2IP_Data                  => wff_WFIFO2IP_Data,
       WFIFO2IP_RdAck                 => wff_WFIFO2IP_RdAck,
       WFIFO2IP_AlmostEmpty           => wff_WFIFO2IP_AlmostEmpty,
-      WFIFO2IP_Empty                 => wff_WFIFO2IP_Empty,
-      WFIFO2IP_Occupancy             => wff_WFIFO2IP_Occupancy
+      WFIFO2IP_Empty                 => wff_WFIFO2IP_Empty
+      -- WFIFO2IP_Occupancy             => wff_WFIFO2IP_Occupancy
     );
 
   ------------------------------------------

@@ -1,13 +1,9 @@
-C:\hlocal\XilinxProyectos\Practica5\implementation\system.ngc 1613955282
-C:/hlocal/XilinxProyectos/Practica5/implementation/system_microblaze_0_wrapper.ngc 1613955063
-C:/hlocal/XilinxProyectos/Practica5/implementation/system_plb_v46_0_wrapper.ngc 1613955063
-C:/hlocal/XilinxProyectos/Practica5/implementation/system_bram_block_0_wrapper.ngc 1613955063
-C:/hlocal/XilinxProyectos/Practica5/implementation/system_xps_bram_if_cntlr_0_wrapper.ngc 1613955063
-C:/hlocal/XilinxProyectos/Practica5/implementation/system_xps_uartlite_0_wrapper.ngc 1613955063
-C:/hlocal/XilinxProyectos/Practica5/implementation/system_ledsi_wrapper.ngc 1613955063
-C:/hlocal/XilinxProyectos/Practica5/implementation/system_switchesi_wrapper.ngc 1613955063
-C:/hlocal/XilinxProyectos/Practica5/implementation/system_keypad_0_wrapper.ngc 1613955106
-C:/hlocal/XilinxProyectos/Practica5/implementation/system_lcd_0_wrapper.ngc 1613955131
-C:/hlocal/XilinxProyectos/Practica5/implementation/system_motor_hw_0_wrapper.ngc 1613955149
-C:/hlocal/XilinxProyectos/Practica5/implementation/system_ledrgb_0_wrapper.ngc 1613955165
+N:\ws\practica5\implementation\practica5.ngc 1672689978
+N:/ws/practica5/implementation/practica5_microblaze_0_wrapper.ngc 1672689832
+N:/ws/practica5/implementation/practica5_plb_v46_0_wrapper.ngc 1672689832
+N:/ws/practica5/implementation/practica5_xps_bram_if_cntlr_0_wrapper.ngc 1672689833
+N:/ws/practica5/implementation/practica5_bram_block_0_wrapper.ngc 1672689833
+N:/ws/practica5/implementation/practica5_xps_uartlite_0_wrapper.ngc 1672689833
+N:/ws/practica5/implementation/practica5_top_lcd_0_wrapper.ngc 1672689859
+N:/ws/practica5/implementation/practica5_top_keypad_0_wrapper.ngc 1672689874
 OK

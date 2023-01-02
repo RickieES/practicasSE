@@ -151,14 +151,14 @@ architecture IMP of user_logic is
   signal slv_read_ack                   : std_logic;
   signal slv_write_ack                  : std_logic;
 
-  signal KeyCode, signalS :  STD_LOGIC_VECTOR (3 downto 0);
-  signal keyPressed:  std_logic;
-  signal reloj12,reloj, rst: std_logic;
+  signal KeyCode, signalS               : std_logic_vector(3 downto 0);
+  signal keyPressed                     : std_logic;
+  signal reloj12,reloj, rst             : std_logic;
 
 begin
 
-  --USER logic implementation added here
-  S <= signalS;
+--USER logic implementation added here
+S <= signalS;
 
   ------------------------------------------
   -- Example code to read/write user logic slave model s/w accessible registers
@@ -184,17 +184,17 @@ begin
   slv_read_ack      <= Bus2IP_RdCE(0);
 
   TeclaDetecInst: teclaDetect
-	port map (
-            reloj => reloj12,
-        	reset=> rst,
-        	S => signalS,
-        	R => R,
-        	KeyCode => KeyCode,
-        	keyPressed => keyPressed
-        	);
+    port map (
+      reloj      => reloj12,
+      reset      => rst,
+      S          => signalS,
+      R          => R,
+      KeyCode    => KeyCode,
+      keyPressed => keyPressed
+    );
 
   reloj <= Bus2IP_Clk;
-  rst <= not Bus2IP_Reset;
+  rst   <= Bus2IP_Reset;
 
 divisor: -- divide entre 4 la frecuencia de reloj
   PROCESS (rst, reloj)
@@ -202,23 +202,22 @@ divisor: -- divide entre 4 la frecuencia de reloj
     CONSTANT num: std_logic_vector (3 DOWNTO 0) :=	"0010";
     VARIABLE count: std_logic_vector (3 DOWNTO 0);
     BEGIN
-      IF (rst='0') THEN
-        count := (OTHERS=>'0');
-		reloj12<= '0';
-      ELSIF (reloj'EVENT AND reloj='1') THEN
-        IF (count=num) THEN
-          reloj12<= not reloj12;
-	 	  count := (OTHERS=>'0');
+      IF (rst = '1') THEN
+        count := (OTHERS => '0');
+		reloj12 <= '0';
+      ELSIF (reloj'EVENT AND reloj = '1') THEN
+        IF (count = num) THEN
+          reloj12 <= not reloj12;
+	 	  count := (OTHERS => '0');
         ELSE 
 		  count := count + 1;
         END IF;
       END IF;
-  END PROCESS divisor;	
+  END PROCESS divisor;
 
   -- implement slave model software accessible register(s)
-  SLAVE_REG_WRITE_PROC : process( Bus2IP_Clk ) is
+  SLAVE_REG_WRITE_PROC : process(Bus2IP_Clk) is
   begin
-
     if Bus2IP_Clk'event and Bus2IP_Clk = '1' then
       if Bus2IP_Reset = '1' then
         slv_reg0 <= (others => '0');
@@ -233,9 +232,10 @@ divisor: -- divide entre 4 la frecuencia de reloj
           when others =>
             if (keyPressed = '1') then
 			  slv_reg0(0 to 3) <= KeyCode(3 downto 0); -- La tecla pulsada se carga bits 0-3
+              -- Para saber si el valor '0000' es la tecla pulsada o la ausencia de pulsación
+              slv_reg0(31) <= keyPressed;
 			end if;
 			-- Para depuración
-            -- slv_reg0(31) <= keyPressed;
             -- slv_reg0(8 to 11) <= R;
             -- slv_reg0(12 to 15) <= signalS;
         end case;
@@ -246,12 +246,10 @@ divisor: -- divide entre 4 la frecuencia de reloj
   -- implement slave model software accessible register(s) read mux
   SLAVE_REG_READ_PROC : process( slv_reg_read_sel, slv_reg0 ) is
   begin
-
     case slv_reg_read_sel is
       when "1" => slv_ip2bus_data <= slv_reg0;
       when others => slv_ip2bus_data <= (others => '0');
     end case;
-
   end process SLAVE_REG_READ_PROC;
 
   ------------------------------------------

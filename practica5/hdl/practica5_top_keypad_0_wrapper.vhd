@@ -55,7 +55,7 @@ entity practica5_top_keypad_0_wrapper is
     Sl_MRdErr : out std_logic_vector(0 to 1);
     Sl_MIRQ : out std_logic_vector(0 to 1);
     S : out std_logic_vector(3 downto 0);
-    R : out std_logic_vector(3 downto 0)
+    R : in std_logic_vector(3 downto 0)
   );
 end practica5_top_keypad_0_wrapper;
 
@@ -121,7 +121,7 @@ architecture STRUCTURE of practica5_top_keypad_0_wrapper is
       Sl_MRdErr : out std_logic_vector(0 to (C_SPLB_NUM_MASTERS-1));
       Sl_MIRQ : out std_logic_vector(0 to (C_SPLB_NUM_MASTERS-1));
       S : out std_logic_vector(3 downto 0);
-      R : out std_logic_vector(3 downto 0)
+      R : in std_logic_vector(3 downto 0)
     );
   end component;
 
@@ -129,8 +129,8 @@ begin
 
   top_keypad_0 : top_keypad
     generic map (
-      C_BASEADDR => X"ffffffff",
-      C_HIGHADDR => X"00000000",
+      C_BASEADDR => X"84010000",
+      C_HIGHADDR => X"84017fff",
       C_SPLB_AWIDTH => 32,
       C_SPLB_DWIDTH => 32,
       C_SPLB_NUM_MASTERS => 2,

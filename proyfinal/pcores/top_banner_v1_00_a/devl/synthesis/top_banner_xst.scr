@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "\\vboxsvr\se\ws\proyfinal\pcores\top_banner_v1_00_a\devl\synthesis\top_banner_xst.prj"
+-top top_banner
+-p virtex6
+-ofn "\\vboxsvr\se\ws\proyfinal\pcores\top_banner_v1_00_a\devl\synthesis\top_banner_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib top_banner_v1_00_a

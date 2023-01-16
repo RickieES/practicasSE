@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="Xst" num="2585" delta="new" >Port &lt;<arg fmt="%s" index="1">col_clk</arg>&gt; of instance &lt;<arg fmt="%s" index="2">top_banner_0</arg>&gt; does not exist in definition &lt;<arg fmt="%s" index="3">top_banner</arg>&gt;. Please compare the definition of block &lt;<arg fmt="%s" index="4">top_banner</arg>&gt; to its component declaration to detect the mismatch.
+</msg>
+
+<msg type="error" file="Xst" num="2585" delta="new" >Port &lt;<arg fmt="%s" index="1">col_serial_out</arg>&gt; of instance &lt;<arg fmt="%s" index="2">top_banner_0</arg>&gt; does not exist in definition &lt;<arg fmt="%s" index="3">top_banner</arg>&gt;. Please compare the definition of block &lt;<arg fmt="%s" index="4">top_banner</arg>&gt; to its component declaration to detect the mismatch.
+</msg>
+
+<msg type="error" file="Xst" num="2585" delta="new" >Port &lt;<arg fmt="%s" index="1">reset2_out</arg>&gt; of instance &lt;<arg fmt="%s" index="2">top_banner_0</arg>&gt; does not exist in definition &lt;<arg fmt="%s" index="3">top_banner</arg>&gt;. Please compare the definition of block &lt;<arg fmt="%s" index="4">top_banner</arg>&gt; to its component declaration to detect the mismatch.
+</msg>
+
+<msg type="error" file="Xst" num="2585" delta="new" >Port &lt;<arg fmt="%s" index="1">reset_out</arg>&gt; of instance &lt;<arg fmt="%s" index="2">top_banner_0</arg>&gt; does not exist in definition &lt;<arg fmt="%s" index="3">top_banner</arg>&gt;. Please compare the definition of block &lt;<arg fmt="%s" index="4">top_banner</arg>&gt; to its component declaration to detect the mismatch.
+</msg>
+
+<msg type="error" file="Xst" num="2585" delta="new" >Port &lt;<arg fmt="%s" index="1">row_clk</arg>&gt; of instance &lt;<arg fmt="%s" index="2">top_banner_0</arg>&gt; does not exist in definition &lt;<arg fmt="%s" index="3">top_banner</arg>&gt;. Please compare the definition of block &lt;<arg fmt="%s" index="4">top_banner</arg>&gt; to its component declaration to detect the mismatch.
+</msg>
+
+<msg type="error" file="Xst" num="2585" delta="new" >Port &lt;<arg fmt="%s" index="1">row_serial_out</arg>&gt; of instance &lt;<arg fmt="%s" index="2">top_banner_0</arg>&gt; does not exist in definition &lt;<arg fmt="%s" index="3">top_banner</arg>&gt;. Please compare the definition of block &lt;<arg fmt="%s" index="4">top_banner</arg>&gt; to its component declaration to detect the mismatch.
+</msg>
+
+</messages>
+

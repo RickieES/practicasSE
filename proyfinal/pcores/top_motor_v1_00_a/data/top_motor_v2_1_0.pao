@@ -1,0 +1,12 @@
+##############################################################################
+## Filename:          N:/ws/proyfinal/pcores/top_motor_v1_00_a/data/top_motor_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Mon Jan 16 23:01:52 2023 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib plbv46_slave_single_v1_01_a  all 
+lib top_motor_v1_00_a user_logic vhdl
+lib top_motor_v1_00_a top_motor vhdl
+lib top_motor_v1_00_a motorstep vhdl
+lib top_motor_v1_00_a 100_k_counter vhdl

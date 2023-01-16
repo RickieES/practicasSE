@@ -1,0 +1,10 @@
+V3 5
+FL //vboxsvr/se/ws/practica5/pcores/top_lcd_v1_00_a/hdl/vhdl/user_logic.vhd 2022/12/06.21:29:08 P.15xf
+EN top_lcd_v1_00_a/user_logic 1671825832 \
+      FL //vboxsvr/se/ws/practica5/pcores/top_lcd_v1_00_a/hdl/vhdl/user_logic.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
+      PB ieee/STD_LOGIC_UNSIGNED 1335251625 LB proc_common_v3_00_a \
+      PB proc_common_v3_00_a/proc_common_pkg 1671825829
+AR top_lcd_v1_00_a/user_logic/IMP 1671825833 \
+      FL //vboxsvr/se/ws/practica5/pcores/top_lcd_v1_00_a/hdl/vhdl/user_logic.vhd \
+      EN top_lcd_v1_00_a/user_logic 1671825832 CP lcd_controller

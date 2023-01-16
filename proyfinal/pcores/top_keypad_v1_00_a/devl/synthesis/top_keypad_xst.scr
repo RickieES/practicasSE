@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "\\vboxsvr\se\ws\practica5\pcores\top_keypad_v1_00_a\devl\synthesis\top_keypad_xst.prj"
+-top top_keypad
+-p virtex6
+-ofn "\\vboxsvr\se\ws\practica5\pcores\top_keypad_v1_00_a\devl\synthesis\top_keypad_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib top_keypad_v1_00_a

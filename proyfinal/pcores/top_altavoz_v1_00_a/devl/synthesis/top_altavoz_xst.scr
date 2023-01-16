@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "\\vboxsvr\se\ws\proyfinal\pcores\top_altavoz_v1_00_a\devl\synthesis\top_altavoz_xst.prj"
+-top top_altavoz
+-p virtex6
+-ofn "\\vboxsvr\se\ws\proyfinal\pcores\top_altavoz_v1_00_a\devl\synthesis\top_altavoz_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib top_altavoz_v1_00_a

@@ -165,7 +165,12 @@ entity top_banner is
   port
   (
     -- ADD USER PORTS BELOW THIS LINE ------------------
-    --USER ports added here
+    col_serial_out                 : out std_logic;	
+    col_clk                        : out std_logic;
+    row_serial_out                 : out std_logic; 
+    row_clk                        : out std_logic; 
+    reset_out                      : out std_logic;
+    reset2_out                     : out std_logic;
     -- ADD USER PORTS ABOVE THIS LINE ------------------
 
     -- DO NOT EDIT BELOW THIS LINE ---------------------
@@ -497,7 +502,12 @@ begin
     port map
     (
       -- MAP USER PORTS BELOW THIS LINE ------------------
-      --USER ports mapped here
+      col_serial_out                 => col_serial_out,
+      col_clk                        => col_clk,
+      row_serial_out                 => row_serial_out,
+      row_clk                        => row_clk,
+      reset_out                      => reset_out,
+      reset2_out                     => reset2_out,
       -- MAP USER PORTS ABOVE THIS LINE ------------------
 
       Bus2IP_Clk                     => ipif_Bus2IP_Clk,
@@ -522,7 +532,6 @@ begin
   ------------------------------------------
   IP2BUS_DATA_MUX_PROC : process( ipif_Bus2IP_CS, user_IP2Bus_Data, wff_IP2Bus_Data ) is
   begin
-
     case ipif_Bus2IP_CS is
       when "100" => ipif_IP2Bus_Data <= user_IP2Bus_Data;
       when "010" => ipif_IP2Bus_Data <= wff_IP2Bus_Data;

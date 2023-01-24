@@ -18,7 +18,18 @@ entity proyfinal is
     lcd_e : out std_logic;
     lcd_data : out std_logic_vector(7 downto 0);
     keypad_0_S_pin : out std_logic_vector(3 downto 0);
-    keypad_0_R_pin : in std_logic_vector(3 downto 0)
+    keypad_0_R_pin : in std_logic_vector(3 downto 0);
+    top_banner_0_col_serial_out_pin : out std_logic;
+    top_banner_0_col_clk_pin : out std_logic;
+    top_banner_0_row_serial_out_pin : out std_logic;
+    top_banner_0_row_clk_pin : out std_logic;
+    top_banner_0_reset_out_pin : out std_logic;
+    top_banner_0_reset2_out_pin : out std_logic;
+    top_leds_0_red_pin : out std_logic;
+    top_leds_0_green_pin : out std_logic;
+    top_leds_0_blue_pin : out std_logic;
+    top_motor_0_control_motor_pin : out std_logic_vector(3 downto 0);
+    top_altavoz_0_sonido_pin : out std_logic
   );
 end proyfinal;
 
@@ -1048,7 +1059,7 @@ architecture STRUCTURE of proyfinal is
       Sl_MWrErr : out std_logic_vector(0 to 1);
       Sl_MRdErr : out std_logic_vector(0 to 1);
       Sl_MIRQ : out std_logic_vector(0 to 1);
-      snd : out std_logic
+      sonido_pin : out std_logic
     );
   end component;
 
@@ -1235,11 +1246,21 @@ architecture STRUCTURE of proyfinal is
   signal plb_v46_0_Sl_wrBTerm : std_logic_vector(0 to 7);
   signal plb_v46_0_Sl_wrComp : std_logic_vector(0 to 7);
   signal plb_v46_0_Sl_wrDAck : std_logic_vector(0 to 7);
+  signal top_banner_0_col_clk : std_logic;
+  signal top_banner_0_col_serial_out : std_logic;
+  signal top_banner_0_reset2_out : std_logic;
+  signal top_banner_0_reset_out : std_logic;
+  signal top_banner_0_row_clk : std_logic;
+  signal top_banner_0_row_serial_out : std_logic;
   signal top_keypad_0_S : std_logic_vector(3 downto 0);
   signal top_lcd_0_e : std_logic;
   signal top_lcd_0_lcd_data : std_logic_vector(7 downto 0);
   signal top_lcd_0_rs : std_logic;
   signal top_lcd_0_rw : std_logic;
+  signal top_leds_0_blue : std_logic;
+  signal top_leds_0_green : std_logic;
+  signal top_leds_0_red : std_logic;
+  signal top_motor_0_control_motor : std_logic_vector(3 downto 0);
   signal xps_bram_if_cntlr_0_PORTA_BRAM_Addr : std_logic_vector(0 to 31);
   signal xps_bram_if_cntlr_0_PORTA_BRAM_Clk : std_logic;
   signal xps_bram_if_cntlr_0_PORTA_BRAM_Din : std_logic_vector(0 to 31);
@@ -1276,6 +1297,16 @@ begin
   lcd_data <= top_lcd_0_lcd_data;
   keypad_0_S_pin <= top_keypad_0_S;
   net_keypad_0_R_pin <= keypad_0_R_pin;
+  top_banner_0_col_serial_out_pin <= top_banner_0_col_serial_out;
+  top_banner_0_col_clk_pin <= top_banner_0_col_clk;
+  top_banner_0_row_serial_out_pin <= top_banner_0_row_serial_out;
+  top_banner_0_row_clk_pin <= top_banner_0_row_clk;
+  top_banner_0_reset_out_pin <= top_banner_0_reset_out;
+  top_banner_0_reset2_out_pin <= top_banner_0_reset2_out;
+  top_leds_0_red_pin <= top_leds_0_red;
+  top_leds_0_green_pin <= top_leds_0_green;
+  top_leds_0_blue_pin <= top_leds_0_blue;
+  top_motor_0_control_motor_pin <= top_motor_0_control_motor;
   net_gnd0 <= '0';
   net_gnd1(0 downto 0) <= B"0";
   net_gnd10(0 to 9) <= B"0000000000";
@@ -2249,12 +2280,12 @@ begin
       Sl_MWrErr => plb_v46_0_Sl_MWrErr(8 to 9),
       Sl_MRdErr => plb_v46_0_Sl_MRdErr(8 to 9),
       Sl_MIRQ => plb_v46_0_Sl_MIRQ(8 to 9),
-      col_serial_out => open,
-      col_clk => open,
-      row_serial_out => open,
-      row_clk => open,
-      reset_out => open,
-      reset2_out => open
+      col_serial_out => top_banner_0_col_serial_out,
+      col_clk => top_banner_0_col_clk,
+      row_serial_out => top_banner_0_row_serial_out,
+      row_clk => top_banner_0_row_clk,
+      reset_out => top_banner_0_reset_out,
+      reset2_out => top_banner_0_reset2_out
     );
 
   top_altavoz_0 : proyfinal_top_altavoz_0_wrapper
@@ -2301,7 +2332,7 @@ begin
       Sl_MWrErr => plb_v46_0_Sl_MWrErr(10 to 11),
       Sl_MRdErr => plb_v46_0_Sl_MRdErr(10 to 11),
       Sl_MIRQ => plb_v46_0_Sl_MIRQ(10 to 11),
-      snd => open
+      sonido_pin => top_altavoz_0_sonido_pin
     );
 
   top_leds_0 : proyfinal_top_leds_0_wrapper
@@ -2348,9 +2379,9 @@ begin
       Sl_MWrErr => plb_v46_0_Sl_MWrErr(12 to 13),
       Sl_MRdErr => plb_v46_0_Sl_MRdErr(12 to 13),
       Sl_MIRQ => plb_v46_0_Sl_MIRQ(12 to 13),
-      red => open,
-      green => open,
-      blue => open
+      red => top_leds_0_red,
+      green => top_leds_0_green,
+      blue => top_leds_0_blue
     );
 
   top_motor_0 : proyfinal_top_motor_0_wrapper
@@ -2397,7 +2428,7 @@ begin
       Sl_MWrErr => plb_v46_0_Sl_MWrErr(14 to 15),
       Sl_MRdErr => plb_v46_0_Sl_MRdErr(14 to 15),
       Sl_MIRQ => plb_v46_0_Sl_MIRQ(14 to 15),
-      control_motor => open
+      control_motor => top_motor_0_control_motor
     );
 
 end architecture STRUCTURE;

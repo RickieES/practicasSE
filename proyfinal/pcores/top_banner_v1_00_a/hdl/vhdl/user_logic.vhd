@@ -104,12 +104,12 @@ entity user_logic is
     -- ADD USER PORTS BELOW THIS LINE ------------------
     --USER ports added here
     -- ADD USER PORTS ABOVE THIS LINE ------------------
-		col_serial_out: out std_logic;	
-		col_clk: out std_logic;
-		row_serial_out: out std_logic; 
-		row_clk: out std_logic; 
-		reset_out: out std_logic;
-		reset2_out: out std_logic;
+    col_serial_out                 : out std_logic;	
+    col_clk                        : out std_logic;
+    row_serial_out                 : out std_logic; 
+    row_clk                        : out std_logic; 
+    reset_out                      : out std_logic;
+    reset2_out                     : out std_logic;
     -- DO NOT EDIT BELOW THIS LINE ---------------------
     -- Bus protocol ports, do not add to or delete
     Bus2IP_Clk                     : in  std_logic;
@@ -145,9 +145,8 @@ end entity user_logic;
 architecture IMP of user_logic is
 
   --USER signal declarations added here, as needed for user logic
-component  bannerDesp is
-	port
-	(
+  component  bannerDesp is
+	port (
 		reset_in: in std_logic;	-- reset
 		clock: in std_logic; -- 
 		col_serial_out: out std_logic;	
@@ -161,40 +160,38 @@ component  bannerDesp is
 		dato: in std_logic_vector (4 downto 0);
 		load: in std_logic
 	);
-end component;
-	type statesLectura is (estadoEsperaLectura, estadoEnviarDato);
-	signal currentStateLectura, nextStateLectura : statesLectura;
+  end component;
 
-
-
-
-	signal fifo_rdreq_cmb : std_logic;
-	signal fila: std_logic_vector (2 downto 0);
-	signal 	columna: std_logic_vector ( 2 downto 0);
-	signal 	dato:  std_logic_vector (4 downto 0);
-	signal 	load:  std_logic;
+  type statesLectura is (estadoEsperaLectura, estadoEnviarDato);
+  signal currentStateLectura, nextStateLectura : statesLectura;
+  signal fifo_rdreq_cmb: std_logic;
+  signal fila          : std_logic_vector(2 downto 0);
+  signal columna       : std_logic_vector(2 downto 0);
+  signal dato          : std_logic_vector(4 downto 0);
+  signal load          : std_logic;
 
 begin
 
   --USER logic implementation added here
-mybanner: bannerDesp port map (
-		reset_in =>  Bus2IP_Reset ,
-		clock =>  Bus2IP_Clk , -- 
+  mybanner: bannerDesp port map (
+		reset_in       => Bus2IP_Reset,
+		clock          => Bus2IP_Clk, -- 
 		col_serial_out => col_serial_out,
-		col_clk => col_clk,
-		row_serial_out =>row_serial_out,
-		row_clk =>row_clk,
-		reset_out=>reset_out, 
-		reset2_out=>reset2_out, 
-		fila => fila,
-		columna => columna,
-		dato => dato,
-		load => load
-);
+		col_clk        => col_clk,
+		row_serial_out => row_serial_out,
+		row_clk        => row_clk,
+		reset_out      => reset_out, 
+		reset2_out     => reset2_out, 
+		fila           => fila,
+		columna        => columna,
+		dato           => dato,
+		load           => load
+  );
 
-fila(2 downto 0) <= WFIFO2IP_Data(5 to 7);
-columna(2 downto 0) <= WFIFO2IP_Data(13 to 15);
-dato(4 downto 0)<=WFIFO2IP_Data(19 to 23);
+  fila(2 downto 0)    <= WFIFO2IP_Data(5 to 7);
+  columna(2 downto 0) <= WFIFO2IP_Data(13 to 15);
+  dato(4 downto 0)    <= WFIFO2IP_Data(19 to 23);
+
 --   fila(0) <= WFIFO2IP_Data(31);
 --	fila(1) <= WFIFO2IP_Data(30);
 --	fila(2) <= WFIFO2IP_Data(29);
@@ -208,43 +205,39 @@ dato(4 downto 0)<=WFIFO2IP_Data(19 to 23);
 --	dato(2) <= WFIFO2IP_Data(2);
 --	dato(3) <= WFIFO2IP_Data(3);
 --	dato(4) <= WFIFO2IP_Data(4);
-	
-	-- Maquinas de estados		
-		unidadDeControl: process(currentStateLectura, WFIFO2IP_empty)
-		begin
-		
-			nextStateLectura <= currentStateLectura;
-			load <= '0';
-			fifo_rdreq_cmb <= '0';
-		
-			case currentStateLectura is
-			
-				when estadoEsperaLectura =>
-					if (WFIFO2IP_empty = '0') then
-						fifo_rdreq_cmb <= '1';
-						nextStateLectura   <= estadoEnviarDato ;
-					end if;
-					
-				when estadoEnviarDato =>
-					load <= '1';
-						nextStateLectura   <= estadoEsperaLectura;
-				end case;
-		end process unidadDeControl;
 
-		state: process (Bus2IP_Clk)
-		begin			  
-			  if Bus2IP_Clk'EVENT and Bus2IP_Clk='1' then
-				 if Bus2IP_Reset = '1' then
-					currentStateLectura <= estadoEsperaLectura;
-					IP2WFIFO_RdReq <= '0';
-				 else
-					currentStateLectura <= nextStateLectura;
-					IP2WFIFO_RdReq <= fifo_rdreq_cmb;
-				 end if;
-			  end if;
-		end process state;
+-- Maquinas de estados		
+  unidadDeControl: process(currentStateLectura, WFIFO2IP_empty)
+    begin
+      nextStateLectura <= currentStateLectura;
+      load <= '0';
+      fifo_rdreq_cmb <= '0';
 
+      case currentStateLectura is
+        when estadoEsperaLectura =>
+          if (WFIFO2IP_empty = '0') then
+            fifo_rdreq_cmb   <= '1';
+            nextStateLectura <= estadoEnviarDato;
+          end if;
 
+        when estadoEnviarDato =>
+          load <= '1';
+          nextStateLectura   <= estadoEsperaLectura;
+      end case;
+    end process unidadDeControl;
+
+  state: process (Bus2IP_Clk)
+    begin			  
+      if Bus2IP_Clk'EVENT and Bus2IP_Clk='1' then
+        if Bus2IP_Reset = '1' then
+          currentStateLectura <= estadoEsperaLectura;
+          IP2WFIFO_RdReq <= '0';
+        else
+          currentStateLectura <= nextStateLectura;
+          IP2WFIFO_RdReq <= fifo_rdreq_cmb;
+        end if;
+      end if;
+    end process state;
 
   ------------------------------------------
   -- Example code to drive IP to Bus signals
@@ -254,5 +247,4 @@ dato(4 downto 0)<=WFIFO2IP_Data(19 to 23);
   IP2Bus_WrAck <= '0';
   IP2Bus_RdAck <= '0';
   IP2Bus_Error <= '0';
-
 end IMP;

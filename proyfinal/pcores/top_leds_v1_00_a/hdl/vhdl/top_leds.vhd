@@ -162,7 +162,9 @@ entity top_leds is
   port
   (
     -- ADD USER PORTS BELOW THIS LINE ------------------
-    --USER ports added here
+    red                            : out std_logic;
+    green                          : out std_logic;
+    blue                           : out std_logic;
     -- ADD USER PORTS ABOVE THIS LINE ------------------
 
     -- DO NOT EDIT BELOW THIS LINE ---------------------
@@ -390,6 +392,9 @@ begin
     port map
     (
       -- MAP USER PORTS BELOW THIS LINE ------------------
+      red                            => red,
+      green                          => green,
+      blue                           => blue,
       --USER ports mapped here
       -- MAP USER PORTS ABOVE THIS LINE ------------------
 

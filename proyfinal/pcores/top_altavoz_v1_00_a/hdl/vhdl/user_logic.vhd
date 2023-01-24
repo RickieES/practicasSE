@@ -214,8 +214,6 @@ begin
   IP2Bus_RdAck <= slv_read_ack;
   IP2Bus_Error <= '0';
 
-
-
   --------------------------
   -- GENERADOR DEL SONIDO --
   --------------------------
@@ -223,21 +221,21 @@ begin
   BEGIN
     IF(Bus2IP_Reset='1')THEN
       q <= '0';
-		cs <= (OTHERS=>'0');
-    ELSIF(Bus2IP_Clk'event and Bus2IP_Clk='1') THEN	
-		 IF (slv_write_ack = '1') THEN
-			q <= '0';
-			cs <= (OTHERS=>'0');
-		 ELSIF (slv_reg0 = cs) THEN
-			cs <= (OTHERS=>'0');
-			q <= not q;
-		 ELSE
-			cs <= cs + 1;
-			q <= q;
-		 END IF;
+      cs <= (OTHERS => '0');
+    ELSIF(Bus2IP_Clk'event and Bus2IP_Clk='1') THEN
+      IF (slv_write_ack = '1') THEN
+        q <= '0';
+        cs <= (OTHERS => '0');
+      ELSIF (slv_reg0 = cs) THEN
+        cs <= (OTHERS => '0');
+        q <= not q;
+      ELSE
+        cs <= cs + 1;
+        q <= q;
+      END IF;
     END IF;
-   END PROCESS;
-	
-	sonido <= q;
-	
+  END PROCESS;
+
+  sonido <= q;
+
 end IMP;

@@ -100,10 +100,9 @@ entity user_logic is
     -- ADD USER PORTS BELOW THIS LINE ------------------
     --USER ports added here
     -- ADD USER PORTS ABOVE THIS LINE ------------------
-	 red: out std_logic;
-	 green: out std_logic;
-	 blue: out std_logic;
-
+    red                            : out std_logic;
+    green                          : out std_logic;
+    blue                           : out std_logic;
 
     -- DO NOT EDIT BELOW THIS LINE ---------------------
     -- Bus protocol ports, do not add to or delete
@@ -148,9 +147,8 @@ architecture IMP of user_logic is
   signal slv_read_ack                   : std_logic;
   signal slv_write_ack                  : std_logic;
 
- 
-    signal cnt_red, cnt_green, cnt_blue, ref_red, ref_green, ref_blue: unsigned (n-1 downto 0);
-	 signal output_red, output_green, output_blue: std_logic;
+  signal cnt_red, cnt_green, cnt_blue, ref_red, ref_green, ref_blue: unsigned (n-1 downto 0);
+  signal output_red, output_green, output_blue: std_logic;
 begin
 
   --USER logic implementation added here
@@ -217,75 +215,71 @@ begin
   -- implement slave model software accessible register(s) read mux
   SLAVE_REG_READ_PROC : process( slv_reg_read_sel, slv_reg0, slv_reg1, slv_reg2 ) is
   begin
-
     case slv_reg_read_sel is
       when "100" => slv_ip2bus_data <= slv_reg0;
       when "010" => slv_ip2bus_data <= slv_reg1;
       when "001" => slv_ip2bus_data <= slv_reg2;
       when others => slv_ip2bus_data <= (others => '0');
     end case;
-
   end process SLAVE_REG_READ_PROC;
 
-
-
-    ref_red <= unsigned(slv_reg0);
-	 ref_green <= unsigned(slv_reg1);
-	 ref_blue <= unsigned(slv_reg2);
+  ref_red   <= unsigned(slv_reg0);
+  ref_green <= unsigned(slv_reg1);
+  ref_blue  <= unsigned(slv_reg2);
 	 
-	 -- ===========
-	 -- PWM1 (rojo)
-	 -- ===========
-    PWM1: process (Bus2IP_Reset, Bus2IP_Clk) begin
-        if (Bus2IP_Reset = '1') then
-            cnt_red <= (others => '0');
-        elsif rising_edge(Bus2IP_Clk) then
-            if (cnt_red = 2**n-1) then
-                cnt_red <= (others => '0');
-            else
-                cnt_red <= cnt_red + 1;
-            end if;
-        end if;
-    end process;
-	 
-    output_red <= '0' when (cnt_red < ref_red) else '1';
-	 red <= output_red;
+-- ===========
+-- PWM1 (rojo)
+-- ===========
+  PWM1: process (Bus2IP_Reset, Bus2IP_Clk) begin
+    if (Bus2IP_Reset = '1') then
+      cnt_red <= (others => '0');
+    elsif rising_edge(Bus2IP_Clk) then
+      if (cnt_red = 2**n-1) then
+        cnt_red <= (others => '0');
+      else
+        cnt_red <= cnt_red + 1;
+      end if;
+    end if;
+  end process;
 
-	 -- ===========
-	 -- PWM2 (verde)
-	 -- ===========
-    PWM2: process (Bus2IP_Reset, Bus2IP_Clk) begin
-        if (Bus2IP_Reset = '1') then
-            cnt_green <= (others => '0');
-        elsif rising_edge(Bus2IP_Clk) then
-            if (cnt_green = 2**n-1) then
-                cnt_green <= (others => '0');
-            else
-                cnt_green <= cnt_green + 1;
-            end if;
-        end if;
-    end process;
-	 
-    output_green <= '0' when (cnt_green < ref_green) else '1';
-	 green <= output_green;
+  output_red <= '0' when (cnt_red < ref_red) else '1';
+  red <= output_red;
 
-	 -- ===========
-	 -- PWM3 (azul)
-	 -- ===========
-    PWM3: process (Bus2IP_Reset, Bus2IP_Clk) begin
-        if (Bus2IP_Reset = '1') then
-            cnt_blue <= (others => '0');
-        elsif rising_edge(Bus2IP_Clk) then
-            if (cnt_blue = 2**n-1) then
-                cnt_blue <= (others => '0');
-            else
-                cnt_blue <= cnt_blue + 1;
-            end if;
-        end if;
-    end process;
-	 
-    output_blue <= '0' when (cnt_blue < ref_blue) else '1';
-	 blue <= output_blue;
+-- ===========
+-- PWM2 (verde)
+-- ===========
+  PWM2: process (Bus2IP_Reset, Bus2IP_Clk) begin
+    if (Bus2IP_Reset = '1') then
+      cnt_green <= (others => '0');
+    elsif rising_edge(Bus2IP_Clk) then
+      if (cnt_green = 2**n-1) then
+        cnt_green <= (others => '0');
+      else
+        cnt_green <= cnt_green + 1;
+      end if;
+    end if;
+  end process;
+
+  output_green <= '0' when (cnt_green < ref_green) else '1';
+  green <= output_green;
+
+-- ===========
+-- PWM3 (azul)
+-- ===========
+  PWM3: process (Bus2IP_Reset, Bus2IP_Clk) begin
+    if (Bus2IP_Reset = '1') then
+      cnt_blue <= (others => '0');
+    elsif rising_edge(Bus2IP_Clk) then
+      if (cnt_blue = 2**n-1) then
+        cnt_blue <= (others => '0');
+      else
+        cnt_blue <= cnt_blue + 1;
+      end if;
+    end if;
+  end process;
+
+  output_blue <= '0' when (cnt_blue < ref_blue) else '1';
+  blue <= output_blue;
 
   ------------------------------------------
   -- Example code to drive IP to Bus signals

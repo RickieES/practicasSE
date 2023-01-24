@@ -1,5 +1,5 @@
 
-<EDKSYSTEM EDKVERSION="14.1" EDWVERSION="1.2" TIMESTAMP="Mon Jan 16 23:28:59 2023">
+<EDKSYSTEM EDKVERSION="14.1" EDWVERSION="1.2" TIMESTAMP="Mon Jan 23 01:21:05 2023">
 
   <SYSTEMINFO ARCH="spartan3" DEVICE="xc3s1000" PACKAGE="ft256" PART="xc3s1000ft256-5" SOURCE="//vboxsvr/se/ws/proyfinal/proyfinal.xmp" SPEEDGRADE="-5"/>
 
@@ -62,6 +62,61 @@
     <PORT DIR="I" ENDIAN="LITTLE" LEFT="3" LSB="0" MHS_INDEX="9" MSB="3" NAME="keypad_0_R_pin" RIGHT="0" SIGNAME="net_keypad_0_R_pin">
       <CONNECTIONS>
         <CONNECTION INSTANCE="top_keypad_0" PORT="R"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" MHS_INDEX="10" NAME="top_banner_0_col_serial_out_pin" SIGNAME="top_banner_0_col_serial_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="top_banner_0" PORT="col_serial_out"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" MHS_INDEX="11" NAME="top_banner_0_col_clk_pin" SIGNAME="top_banner_0_col_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="top_banner_0" PORT="col_clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" MHS_INDEX="12" NAME="top_banner_0_row_serial_out_pin" SIGNAME="top_banner_0_row_serial_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="top_banner_0" PORT="row_serial_out"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" MHS_INDEX="13" NAME="top_banner_0_row_clk_pin" SIGNAME="top_banner_0_row_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="top_banner_0" PORT="row_clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" MHS_INDEX="14" NAME="top_banner_0_reset_out_pin" SIGNAME="top_banner_0_reset_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="top_banner_0" PORT="reset_out"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" MHS_INDEX="15" NAME="top_banner_0_reset2_out_pin" SIGNAME="top_banner_0_reset2_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="top_banner_0" PORT="reset2_out"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" MHS_INDEX="16" NAME="top_leds_0_red_pin" SIGNAME="top_leds_0_red">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="top_leds_0" PORT="red"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" MHS_INDEX="17" NAME="top_leds_0_green_pin" SIGNAME="top_leds_0_green">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="top_leds_0" PORT="green"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" MHS_INDEX="18" NAME="top_leds_0_blue_pin" SIGNAME="top_leds_0_blue">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="top_leds_0" PORT="blue"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" ENDIAN="LITTLE" LEFT="3" LSB="0" MHS_INDEX="19" MSB="3" NAME="top_motor_0_control_motor_pin" RIGHT="0" SIGNAME="top_motor_0_control_motor">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="top_motor_0" PORT="control_motor"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" MHS_INDEX="20" NAME="top_altavoz_0_sonido_pin" SIGNAME="top_altavoz_0_sonido_pin">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="top_altavoz_0" PORT="sonido_pin"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -4544,6 +4599,36 @@
         <PARAMETER ASSIGNMENT="OPTIONAL" CHANGEDBY="SYSTEM" MPD_INDEX="12" NAME="C_FAMILY" TYPE="STRING" VALUE="spartan3"/>
       </PARAMETERS>
       <PORTS>
+        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="0" MPD_INDEX="42" NAME="col_serial_out" SIGNAME="top_banner_0_col_serial_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="top_banner_0_col_serial_out_pin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="1" MPD_INDEX="43" NAME="col_clk" SIGNAME="top_banner_0_col_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="top_banner_0_col_clk_pin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="2" MPD_INDEX="44" NAME="row_serial_out" SIGNAME="top_banner_0_row_serial_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="top_banner_0_row_serial_out_pin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="3" MPD_INDEX="45" NAME="row_clk" SIGNAME="top_banner_0_row_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="top_banner_0_row_clk_pin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="4" MPD_INDEX="46" NAME="reset_out" SIGNAME="top_banner_0_reset_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="top_banner_0_reset_out_pin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="5" MPD_INDEX="47" NAME="reset2_out" SIGNAME="top_banner_0_reset2_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="top_banner_0_reset2_out_pin"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT BUS="SPLB" DEF_SIGNAME="net_Clk_pin" DIR="I" MPD_INDEX="0" NAME="SPLB_Clk" SIGIS="CLK" SIGNAME="net_Clk_pin">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External Ports" PORT="Clk_pin"/>
@@ -4754,12 +4839,6 @@
             <CONNECTION INSTANCE="plb_v46_0" PORT="Sl_MIRQ"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" MPD_INDEX="42" NAME="col_serial_out" SIGNAME="__NOC__"/>
-        <PORT DIR="O" MPD_INDEX="43" NAME="col_clk" SIGNAME="__NOC__"/>
-        <PORT DIR="O" MPD_INDEX="44" NAME="row_serial_out" SIGNAME="__NOC__"/>
-        <PORT DIR="O" MPD_INDEX="45" NAME="row_clk" SIGNAME="__NOC__"/>
-        <PORT DIR="O" MPD_INDEX="46" NAME="reset_out" SIGNAME="__NOC__"/>
-        <PORT DIR="O" MPD_INDEX="47" NAME="reset2_out" SIGNAME="__NOC__"/>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="plb_v46_0" BUSSTD="PLBV46" BUSSTD_PSF="PLBV46" IS_INSTANTIATED="TRUE" MHS_INDEX="0" MPD_INDEX="0" NAME="SPLB" TYPE="SLAVE">
@@ -4837,6 +4916,11 @@
         <PARAMETER ASSIGNMENT="OPTIONAL" CHANGEDBY="SYSTEM" MPD_INDEX="12" NAME="C_FAMILY" TYPE="STRING" VALUE="spartan3"/>
       </PARAMETERS>
       <PORTS>
+        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="0" MPD_INDEX="42" NAME="sonido_pin" SIGNAME="top_altavoz_0_sonido_pin">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="top_altavoz_0_sonido_pin"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT BUS="SPLB" DEF_SIGNAME="net_Clk_pin" DIR="I" MPD_INDEX="0" NAME="SPLB_Clk" SIGIS="CLK" SIGNAME="net_Clk_pin">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External Ports" PORT="Clk_pin"/>
@@ -5047,7 +5131,6 @@
             <CONNECTION INSTANCE="plb_v46_0" PORT="Sl_MIRQ"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" MPD_INDEX="42" NAME="snd" SIGNAME="__NOC__"/>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="plb_v46_0" BUSSTD="PLBV46" BUSSTD_PSF="PLBV46" IS_INSTANTIATED="TRUE" MHS_INDEX="0" MPD_INDEX="0" NAME="SPLB" TYPE="SLAVE">
@@ -5125,6 +5208,21 @@
         <PARAMETER ASSIGNMENT="OPTIONAL" CHANGEDBY="SYSTEM" MPD_INDEX="12" NAME="C_FAMILY" TYPE="STRING" VALUE="spartan3"/>
       </PARAMETERS>
       <PORTS>
+        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="0" MPD_INDEX="42" NAME="red" SIGNAME="top_leds_0_red">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="top_leds_0_red_pin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="1" MPD_INDEX="43" NAME="green" SIGNAME="top_leds_0_green">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="top_leds_0_green_pin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="2" MPD_INDEX="44" NAME="blue" SIGNAME="top_leds_0_blue">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="top_leds_0_blue_pin"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT BUS="SPLB" DEF_SIGNAME="net_Clk_pin" DIR="I" MPD_INDEX="0" NAME="SPLB_Clk" SIGIS="CLK" SIGNAME="net_Clk_pin">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External Ports" PORT="Clk_pin"/>
@@ -5335,9 +5433,6 @@
             <CONNECTION INSTANCE="plb_v46_0" PORT="Sl_MIRQ"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" MPD_INDEX="42" NAME="red" SIGNAME="__NOC__"/>
-        <PORT DIR="O" MPD_INDEX="43" NAME="green" SIGNAME="__NOC__"/>
-        <PORT DIR="O" MPD_INDEX="44" NAME="blue" SIGNAME="__NOC__"/>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="plb_v46_0" BUSSTD="PLBV46" BUSSTD_PSF="PLBV46" IS_INSTANTIATED="TRUE" MHS_INDEX="0" MPD_INDEX="0" NAME="SPLB" TYPE="SLAVE">
@@ -5415,6 +5510,11 @@
         <PARAMETER ASSIGNMENT="OPTIONAL" CHANGEDBY="SYSTEM" MPD_INDEX="12" NAME="C_FAMILY" TYPE="STRING" VALUE="spartan3"/>
       </PARAMETERS>
       <PORTS>
+        <PORT DIR="O" ENDIAN="LITTLE" IS_INSTANTIATED="TRUE" LEFT="3" LSB="0" MHS_INDEX="0" MPD_INDEX="42" MSB="3" NAME="control_motor" RIGHT="0" SIGNAME="top_motor_0_control_motor" VECFORMULA="[3:0]">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="top_motor_0_control_motor_pin"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT BUS="SPLB" DEF_SIGNAME="net_Clk_pin" DIR="I" MPD_INDEX="0" NAME="SPLB_Clk" SIGIS="CLK" SIGNAME="net_Clk_pin">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External Ports" PORT="Clk_pin"/>
@@ -5625,7 +5725,6 @@
             <CONNECTION INSTANCE="plb_v46_0" PORT="Sl_MIRQ"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" ENDIAN="LITTLE" LEFT="3" LSB="0" MPD_INDEX="42" MSB="3" NAME="control_motor" RIGHT="0" SIGNAME="__NOC__" VECFORMULA="[3:0]"/>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="plb_v46_0" BUSSTD="PLBV46" BUSSTD_PSF="PLBV46" IS_INSTANTIATED="TRUE" MHS_INDEX="0" MPD_INDEX="0" NAME="SPLB" TYPE="SLAVE">

@@ -28,45 +28,38 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 --use UNISIM.VComponents.all;
 
 entity one_hundred_K_counter is
-    Port ( clk : in  STD_LOGIC;
-           rst : in  STD_LOGIC; -- active low
-			  clk_10 : out  STD_LOGIC;
-           ce_10 : out  STD_LOGIC);
+  Port (clk    : in   STD_LOGIC;
+        rst    : in   STD_LOGIC; -- active low
+        clk_10 : out  STD_LOGIC;
+        ce_10  : out  STD_LOGIC);
 end one_hundred_K_counter;
 
-
 architecture Behavioral of one_hundred_K_counter is
-constant divisor: std_logic_vector(26 downto 0) :=    "000000001001100010010110100";
---constant divisor: std_logic_vector(26 downto 0) :=  "001011111010111100001000000";
-signal count : std_logic_vector (26 downto 0) := "000000000000000000000000000";
-signal co,ce : std_logic := '0';
-begin
+  constant divisor: std_logic_vector(26 downto 0) := "000000001001100010010110100";
+--constant divisor: std_logic_vector(26 downto 0) := "001011111010111100001000000";
+  signal count : std_logic_vector (26 downto 0) := "000000000000000000000000000";
+  signal co,ce : std_logic := '0';
+  begin
+    clk_10 <= co;
+    ce_10  <= ce;
 
-
- 
-clk_10 <= co;
-ce_10  <= ce;
-
-
-
-process (clk, rst)
-begin
-if (rst='0') then
-  count <= (others=>'0');
-	co <= '0';
-	 ce <= '0';
-  elsif (clk'event and clk='1') then
-    
-	  if (count = divisor) then 
-			  count <= (others=>'0');
-			  co <= (not co) ;
-			  ce <= co;
-		  else
-			count <= count+1;
-			 ce <= '0';
-		  end if;
-end if;
-end process;
+    process (clk, rst)
+    begin
+      if (rst = '0') then
+        count <= (others => '0');
+        co <= '0';
+        ce <= '0';
+      elsif (clk'event and clk = '1') then
+        if (count = divisor) then
+          count <= (others => '0');
+          co <= (not co);
+          ce <= co;
+        else
+          count <= count + 1;
+          ce <= '0';
+        end if;
+      end if;
+    end process;
 
 end Behavioral;
 

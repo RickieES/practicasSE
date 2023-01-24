@@ -12,6 +12,17 @@
  PORT lcd_data = top_lcd_0_lcd_data, DIR = O, VEC = [7:0]
  PORT keypad_0_S_pin = top_keypad_0_S, DIR = O, VEC = [3:0]
  PORT keypad_0_R_pin = net_keypad_0_R_pin, DIR = I, VEC = [3:0]
+ PORT top_banner_0_col_serial_out_pin = top_banner_0_col_serial_out, DIR = O
+ PORT top_banner_0_col_clk_pin = top_banner_0_col_clk, DIR = O
+ PORT top_banner_0_row_serial_out_pin = top_banner_0_row_serial_out, DIR = O
+ PORT top_banner_0_row_clk_pin = top_banner_0_row_clk, DIR = O
+ PORT top_banner_0_reset_out_pin = top_banner_0_reset_out, DIR = O
+ PORT top_banner_0_reset2_out_pin = top_banner_0_reset2_out, DIR = O
+ PORT top_leds_0_red_pin = top_leds_0_red, DIR = O
+ PORT top_leds_0_green_pin = top_leds_0_green, DIR = O
+ PORT top_leds_0_blue_pin = top_leds_0_blue, DIR = O
+ PORT top_motor_0_control_motor_pin = top_motor_0_control_motor, DIR = O, VEC = [3:0]
+ PORT top_altavoz_0_sonido_pin = top_altavoz_0_sonido_pin, DIR = O
 
 
 BEGIN microblaze
@@ -83,23 +94,34 @@ BEGIN top_banner
  PARAMETER INSTANCE = top_banner_0
  PARAMETER HW_VER = 1.00.a
  BUS_INTERFACE SPLB = plb_v46_0
+ PORT col_serial_out = top_banner_0_col_serial_out
+ PORT col_clk = top_banner_0_col_clk
+ PORT row_serial_out = top_banner_0_row_serial_out
+ PORT row_clk = top_banner_0_row_clk
+ PORT reset_out = top_banner_0_reset_out
+ PORT reset2_out = top_banner_0_reset2_out
 END
 
 BEGIN top_altavoz
  PARAMETER INSTANCE = top_altavoz_0
  PARAMETER HW_VER = 1.00.a
  BUS_INTERFACE SPLB = plb_v46_0
+ PORT sonido_pin = top_altavoz_0_sonido_pin
 END
 
 BEGIN top_leds
  PARAMETER INSTANCE = top_leds_0
  PARAMETER HW_VER = 1.00.a
  BUS_INTERFACE SPLB = plb_v46_0
+ PORT red = top_leds_0_red
+ PORT green = top_leds_0_green
+ PORT blue = top_leds_0_blue
 END
 
 BEGIN top_motor
  PARAMETER INSTANCE = top_motor_0
  PARAMETER HW_VER = 1.00.a
  BUS_INTERFACE SPLB = plb_v46_0
+ PORT control_motor = top_motor_0_control_motor
 END
 

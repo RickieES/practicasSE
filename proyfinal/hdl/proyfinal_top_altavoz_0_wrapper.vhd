@@ -54,7 +54,7 @@ entity proyfinal_top_altavoz_0_wrapper is
     Sl_MWrErr : out std_logic_vector(0 to 1);
     Sl_MRdErr : out std_logic_vector(0 to 1);
     Sl_MIRQ : out std_logic_vector(0 to 1);
-    snd : out std_logic
+    sonido_pin : out std_logic
   );
 end proyfinal_top_altavoz_0_wrapper;
 
@@ -119,7 +119,7 @@ architecture STRUCTURE of proyfinal_top_altavoz_0_wrapper is
       Sl_MWrErr : out std_logic_vector(0 to (C_SPLB_NUM_MASTERS-1));
       Sl_MRdErr : out std_logic_vector(0 to (C_SPLB_NUM_MASTERS-1));
       Sl_MIRQ : out std_logic_vector(0 to (C_SPLB_NUM_MASTERS-1));
-      snd : out std_logic
+      sonido_pin : out std_logic
     );
   end component;
 
@@ -184,7 +184,7 @@ begin
       Sl_MWrErr => Sl_MWrErr,
       Sl_MRdErr => Sl_MRdErr,
       Sl_MIRQ => Sl_MIRQ,
-      snd => snd
+      sonido_pin => sonido_pin
     );
 
 end architecture STRUCTURE;

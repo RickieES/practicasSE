@@ -43,6 +43,8 @@
 #define DINERO_INSUFICIENTE "Dinero insuficiente.\n"
 #define OPC_NO_VALIDA "Opcion no valida, prueba otra vez.\n"
 #define AGOTADO "Lo sentimos, producto agotado.\n"
+#define ELIGE_PROD "Elige un producto.\n"
+#define INTRODUCE_DINERO "Introduce dinero.\n"
 
 typedef struct {
     char nombre[MAX_LENGTH];
@@ -67,6 +69,7 @@ tProducto prods[MAX_ITEMS] = {
 	{"Nestea", 1.00, 5},
 	{"Kinder Bueno", 1.20, 4}	
 };
+
 
 void TOP_LCD_enviarcadena(char s[]) {
 	int i = 0;
@@ -149,12 +152,18 @@ void menu() {
 int main() {
     float dinero = 0.0;
     int elegido;
+	Xuint32 entrada;
 
     while (1) {
         menu();
-        scanf("%d", &elegido);
+        //scanf("%d", &elegido);
+		TOP_LCD_inicializa();
+		TOP_LCD_enviarcadena(ELIGE_PROD);
 
-        if (elegido < 1 || elegido > MAX_ITEMS) {
+		entrada = TOP_KEYPAD_mReadReg(XPAR_TOP_KEYPAD_0_BASEADDR, 0);
+        elegido = (entrada && 0x1); //no se si he hecho bien esto
+
+		if (elegido < 1 || elegido > MAX_ITEMS) {
             xil_printf("Opción no válida.\n");
             TOP_LCD_inicializa();
 			TOP_LCD_enviarcadena(OPC_NO_VALIDA);
@@ -171,7 +180,11 @@ int main() {
         }
 
         xil_printf("Ingrese dinero: ");
-        scanf("%f", &dinero);
+        TOP_LCD_inicializa();
+		TOP_LCD_enviarcadena(INTRODUCE_DINERO);
+        //scanf("%f", &dinero);
+		entrada = TOP_KEYPAD_mReadReg(XPAR_TOP_KEYPAD_0_BASEADDR, 0);
+        dinero = (entrada && 0x1); //no se si he hecho bien esto
         if (dinero < prod.precio) {
             xil_printf("Dinero insuficiente.\n");
             TOP_LCD_inicializa();

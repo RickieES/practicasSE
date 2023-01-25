@@ -143,7 +143,7 @@ void my_delay(int delay) {
 }
 
 void TOP_LCD_enviarCMD(Xuint32 cmd) {
-	// Comprobamos que la FIFO no esté llena
+	// Comprobamos que la FIFO no estï¿½ llena
 	while(TOP_LCD_mWriteFIFOFull(XPAR_TOP_LCD_0_BASEADDR)){}
 	// Escribimos el comando en la FIFO
 	TOP_LCD_mWriteToFIFO(XPAR_TOP_LCD_0_BASEADDR, 0, cmd);
@@ -162,8 +162,8 @@ void TOP_LCD_enviarcadena(char s[]) {
 	int slen = strlen(s);
 	// Se asume que la cadena es inferior a 80 caracteres
 
-	// Si la cadena es superior a 40 caracteres, busca el último espacio antes de
-	// la posición 39 y divide la cadena entre las dos filas
+	// Si la cadena es superior a 40 caracteres, busca el ï¿½ltimo espacio antes de
+	// la posiciï¿½n 39 y divide la cadena entre las dos filas
 	if (slen > 40) {
 		i = 39;
 		while ((i > 0) && (j == 0)) {
@@ -178,21 +178,21 @@ void TOP_LCD_enviarcadena(char s[]) {
 			primeraFila[i] = s[i];
 		}
 
-		// Marca el final de la primera línea
+		// Marca el final de la primera lï¿½nea
 		primeraFila[j] = '\0';
 
-		// Copia desde el carácter siguiente al final de la primera línea
+		// Copia desde el carï¿½cter siguiente al final de la primera lï¿½nea
 		// hasta que se agotan los 40 caracteres o el texto
 		for(i = j + 1; (i < (j + 41)) && (i < slen); i++) {
 			segundaFila[i - (j + 1)] = s[i];
 		}
 		segundaFila[i - (j + 1)] = '\0';
 
-		// Impresión de depuración
+		// Impresiï¿½n de depuraciï¿½n
 		xil_printf("Primera fila: %s\r\n", primeraFila);
 		xil_printf("Segunda fila: %s\r\n", segundaFila);
 	} else {
-		// Copia en la primera fila la cadena y marca como vacía la segunda fila
+		// Copia en la primera fila la cadena y marca como vacï¿½a la segunda fila
 		strncpy(primeraFila, s, 40);
 		segundaFila[0] = '\0';
 	}
@@ -231,13 +231,13 @@ char *leerKeypad() {
 
 	entrada = TOP_KEYPAD_mReadReg(XPAR_TOP_KEYPAD_0_BASEADDR, 0);
 	// xil_printf("Se ha leido %x del registro 0 del teclado \n\r", entrada);
-	/* Se escribe un 0 para borrar la última tecla leída */
+	/* Se escribe un 0 para borrar la ï¿½ltima tecla leï¿½da */
 	TOP_KEYPAD_mWriteReg(XPAR_TOP_KEYPAD_0_BASEADDR, 0, 0);
-	/* Se guarda el último valor recibido para compararlo con el siguiente */
+	/* Se guarda el ï¿½ltimo valor recibido para compararlo con el siguiente */
 	teclaOld = entrada;
 	while ((pos < 80) && !salir) {
 		entrada = TOP_KEYPAD_mReadReg(XPAR_TOP_KEYPAD_0_BASEADDR, 0);
-        /* Se escribe un 0 para borrar la última tecla leída */
+        /* Se escribe un 0 para borrar la ï¿½ltima tecla leï¿½da */
 		TOP_KEYPAD_mWriteReg(XPAR_TOP_KEYPAD_0_BASEADDR, 0 ,0);
 		if (entrada != teclaOld) {
 			// xil_printf("Se ha leido %x del registro 0 del teclado \n\r", entrada);
@@ -247,16 +247,16 @@ char *leerKeypad() {
 			// xil_printf("  El valor de teclaPulsada es %d\n\r", teclaPulsada);
 		}
 		if (teclaPulsada) {
-			/* La tecla pulsada se recibe en los bits 27-31, así que los desplazamos */
+			/* La tecla pulsada se recibe en los bits 27-31, asï¿½ que los desplazamos */
 			caracter = (char) (entrada >> 28);
 			// xil_printf("  El valor de caracter es %c\n\r", caracter);
 			/* Se termina cuando se pulsa la tecla F */
             salir = (caracter == 0x0F);
     		// xil_printf("  El valor de salir es %d\n\r", salir);
             if (!salir) {
-            	/* Si el caracter está entre 0xA y 0xE (10 y 14), añadimos la letra mayúscula
+            	/* Si el caracter estï¿½ entre 0xA y 0xE (10 y 14), aï¿½adimos la letra mayï¿½scula
             	 * sumando 55 al valor, de modo que 65 es 'A', 66 es 'B?', etc.; si no,
-            	 * añadimos 48 al valor, de modo 48 es '0', 49 es '1', etc.
+            	 * aï¿½adimos 48 al valor, de modo 48 es '0', 49 es '1', etc.
             	 */
             	caracter = (caracter > 9) ? (0x37 + caracter) : (0x30 + caracter);
     			xil_printf("  Se va a agregar a la cadena %c\n\r", caracter);

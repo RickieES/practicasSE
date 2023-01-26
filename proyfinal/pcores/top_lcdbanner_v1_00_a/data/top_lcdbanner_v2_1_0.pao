@@ -1,0 +1,15 @@
+##############################################################################
+## Filename:          N:/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/data/top_lcdbanner_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Thu Jan 26 22:38:24 2023 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib plbv46_slave_single_v1_01_a  all 
+lib wrpfifo_v5_01_a  all 
+lib top_lcdbanner_v1_00_a user_logic vhdl
+lib top_lcdbanner_v1_00_a top_lcdbanner vhdl
+lib top_lcdbanner_v1_00_a bannerDesp vhdl
+lib top_lcdbanner_v1_00_a lcd_controller vhdl
+
+

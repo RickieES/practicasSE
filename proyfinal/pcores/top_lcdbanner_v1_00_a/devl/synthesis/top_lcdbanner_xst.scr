@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "\\vboxsvr\se\ws\proyfinal\pcores\top_lcdbanner_v1_00_a\devl\synthesis\top_lcdbanner_xst.prj"
+-top top_lcdbanner
+-p virtex6
+-ofn "\\vboxsvr\se\ws\proyfinal\pcores\top_lcdbanner_v1_00_a\devl\synthesis\top_lcdbanner_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib top_lcdbanner_v1_00_a

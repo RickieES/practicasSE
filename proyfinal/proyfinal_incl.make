@@ -122,20 +122,9 @@ C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl
 C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_address_decoder.vhd \
 C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd \
 C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plbv46_slave_single.vhd \
-C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/pf_dly1_mux.vhd \
-C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/wrpfifo_dp_cntl.vhd \
-C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/ipif_control_wr_dre.vhd \
-C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/blkmem_wrapper.vhd \
-C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/wrpfifo_top.vhd \
-pcores/top_lcd_v1_00_a/hdl/vhdl/user_logic.vhd \
-pcores/top_lcd_v1_00_a/hdl/vhdl/top_lcd.vhd \
-pcores/top_lcd_v1_00_a/hdl/vhdl/lcd_controller.vhd \
 pcores/top_keypad_v1_00_a/hdl/vhdl/user_logic.vhd \
 pcores/top_keypad_v1_00_a/hdl/vhdl/top_keypad.vhd \
 pcores/top_keypad_v1_00_a/hdl/vhdl/teclaDetect.vhd \
-pcores/top_banner_v1_00_a/hdl/vhdl/user_logic.vhd \
-pcores/top_banner_v1_00_a/hdl/vhdl/top_banner.vhd \
-pcores/top_banner_v1_00_a/hdl/vhdl/bannerDesp.vhd \
 pcores/top_altavoz_v1_00_a/hdl/vhdl/user_logic.vhd \
 pcores/top_altavoz_v1_00_a/hdl/vhdl/top_altavoz.vhd \
 pcores/top_leds_v1_00_a/hdl/vhdl/user_logic.vhd \
@@ -143,19 +132,27 @@ pcores/top_leds_v1_00_a/hdl/vhdl/top_leds.vhd \
 pcores/top_motor_v1_00_a/hdl/vhdl/user_logic.vhd \
 pcores/top_motor_v1_00_a/hdl/vhdl/top_motor.vhd \
 pcores/top_motor_v1_00_a/hdl/vhdl/motorstep.vhd \
-pcores/top_motor_v1_00_a/hdl/vhdl/100_k_counter.vhd
+pcores/top_motor_v1_00_a/hdl/vhdl/100_k_counter.vhd \
+C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/pf_dly1_mux.vhd \
+C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/wrpfifo_dp_cntl.vhd \
+C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/ipif_control_wr_dre.vhd \
+C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/blkmem_wrapper.vhd \
+C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/wrpfifo_top.vhd \
+pcores/top_lcdbanner_v1_00_a/hdl/vhdl/user_logic.vhd \
+pcores/top_lcdbanner_v1_00_a/hdl/vhdl/top_lcdbanner.vhd \
+pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd \
+pcores/top_lcdbanner_v1_00_a/hdl/vhdl/lcd_controller.vhd
 
 WRAPPER_NGC_FILES = implementation/proyfinal_microblaze_0_wrapper.ngc \
 implementation/proyfinal_plb_v46_0_wrapper.ngc \
 implementation/proyfinal_xps_bram_if_cntlr_0_wrapper.ngc \
 implementation/proyfinal_bram_block_0_wrapper.ngc \
 implementation/proyfinal_xps_uartlite_0_wrapper.ngc \
-implementation/proyfinal_top_lcd_0_wrapper.ngc \
 implementation/proyfinal_top_keypad_0_wrapper.ngc \
-implementation/proyfinal_top_banner_0_wrapper.ngc \
 implementation/proyfinal_top_altavoz_0_wrapper.ngc \
 implementation/proyfinal_top_leds_0_wrapper.ngc \
-implementation/proyfinal_top_motor_0_wrapper.ngc
+implementation/proyfinal_top_motor_0_wrapper.ngc \
+implementation/proyfinal_top_lcdbanner_0_wrapper.ngc
 
 POSTSYN_NETLIST = implementation/$(SYSTEM).ngc
 

@@ -5,24 +5,18 @@
  PORT Rst_pin = net_Rst_pin, DIR = I, SIGIS = RST
  PORT RX_pin = net_RX_pin, DIR = I
  PORT TX_pin = xps_uartlite_0_TX, DIR = O
- PORT Clk_pin = net_Clk_pin, DIR = I, SIGIS = CLK
- PORT lcd_rw = top_lcd_0_rw, DIR = O
- PORT lcd_rs = top_lcd_0_rs, DIR = O
- PORT lcd_e = top_lcd_0_e, DIR = O
- PORT lcd_data = top_lcd_0_lcd_data, DIR = O, VEC = [7:0]
  PORT keypad_0_S_pin = top_keypad_0_S, DIR = O, VEC = [3:0]
  PORT keypad_0_R_pin = net_keypad_0_R_pin, DIR = I, VEC = [3:0]
- PORT top_banner_0_col_serial_out_pin = top_banner_0_col_serial_out, DIR = O
- PORT top_banner_0_col_clk_pin = top_banner_0_col_clk, DIR = O
- PORT top_banner_0_row_serial_out_pin = top_banner_0_row_serial_out, DIR = O
- PORT top_banner_0_row_clk_pin = top_banner_0_row_clk, DIR = O
- PORT top_banner_0_reset_out_pin = top_banner_0_reset_out, DIR = O
- PORT top_banner_0_reset2_out_pin = top_banner_0_reset2_out, DIR = O
- PORT top_leds_0_red_pin = top_leds_0_red, DIR = O
- PORT top_leds_0_green_pin = top_leds_0_green, DIR = O
- PORT top_leds_0_blue_pin = top_leds_0_blue, DIR = O
  PORT top_motor_0_control_motor_pin = top_motor_0_control_motor, DIR = O, VEC = [3:0]
  PORT top_altavoz_0_sonido_pin = top_altavoz_0_sonido_pin, DIR = O
+ PORT Clk_pin = net_Clk_pin, DIR = I, SIGIS = CLK
+ PORT lb_rw_cc_pin = top_lcdbanner_0_lb_rw_cc, DIR = O
+ PORT lb_rs_cso_pin = top_lcdbanner_0_lb_rs_cso, DIR = O
+ PORT lb_e_ro_pin = top_lcdbanner_0_lb_e_ro, DIR = O
+ PORT lb_data_pin = top_lcdbanner_0_lb_data, DIR = O, VEC = [7:0]
+ PORT USER1_RED_pin = top_leds_0_red, DIR = O
+ PORT USER1_GREEN_pin = top_leds_0_green, DIR = O
+ PORT USER1_BLUE_pin = top_leds_0_blue, DIR = O
 
 
 BEGIN microblaze
@@ -68,18 +62,6 @@ BEGIN xps_uartlite
  PORT TX = xps_uartlite_0_TX
 END
 
-BEGIN top_lcd
- PARAMETER INSTANCE = top_lcd_0
- PARAMETER HW_VER = 1.00.a
- PARAMETER C_BASEADDR = 0x84018000
- PARAMETER C_HIGHADDR = 0x8401ffff
- BUS_INTERFACE SPLB = plb_v46_0
- PORT rw = top_lcd_0_rw
- PORT rs = top_lcd_0_rs
- PORT e = top_lcd_0_e
- PORT lcd_data = top_lcd_0_lcd_data
-END
-
 BEGIN top_keypad
  PARAMETER INSTANCE = top_keypad_0
  PARAMETER HW_VER = 1.00.a
@@ -88,18 +70,6 @@ BEGIN top_keypad
  BUS_INTERFACE SPLB = plb_v46_0
  PORT S = top_keypad_0_S
  PORT R = net_keypad_0_R_pin
-END
-
-BEGIN top_banner
- PARAMETER INSTANCE = top_banner_0
- PARAMETER HW_VER = 1.00.a
- BUS_INTERFACE SPLB = plb_v46_0
- PORT col_serial_out = top_banner_0_col_serial_out
- PORT col_clk = top_banner_0_col_clk
- PORT row_serial_out = top_banner_0_row_serial_out
- PORT row_clk = top_banner_0_row_clk
- PORT reset_out = top_banner_0_reset_out
- PORT reset2_out = top_banner_0_reset2_out
 END
 
 BEGIN top_altavoz
@@ -123,5 +93,15 @@ BEGIN top_motor
  PARAMETER HW_VER = 1.00.a
  BUS_INTERFACE SPLB = plb_v46_0
  PORT control_motor = top_motor_0_control_motor
+END
+
+BEGIN top_lcdbanner
+ PARAMETER INSTANCE = top_lcdbanner_0
+ PARAMETER HW_VER = 1.00.a
+ BUS_INTERFACE SPLB = plb_v46_0
+ PORT lb_rw_cc = top_lcdbanner_0_lb_rw_cc
+ PORT lb_rs_cso = top_lcdbanner_0_lb_rs_cso
+ PORT lb_e_ro = top_lcdbanner_0_lb_e_ro
+ PORT lb_data = top_lcdbanner_0_lb_data
 END
 

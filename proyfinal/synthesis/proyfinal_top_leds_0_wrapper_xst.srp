@@ -4,7 +4,7 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.27 secs
+Total CPU time to Xst completion: 0.19 secs
  
 --> 
 TABLE OF CONTENTS
@@ -955,8 +955,8 @@ Offset:              3.203ns (Levels of Logic = 9)
 =========================================================================
 
 
-Total REAL time to Xst completion: 25.00 secs
-Total CPU time to Xst completion: 24.56 secs
+Total REAL time to Xst completion: 17.00 secs
+Total CPU time to Xst completion: 16.78 secs
  
 --> 
 

@@ -1,0 +1,15 @@
+##############################################################################
+## Filename:          N:\ws\proyfinal/drivers/top_lcdbanner_v1_00_a/data/top_lcdbanner_v2_1_0.mdd
+## Description:       Microprocessor Driver Definition
+## Date:              Thu Jan 26 22:38:33 2023 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+OPTION psf_version = 2.1.0;
+
+BEGIN DRIVER top_lcdbanner
+
+  OPTION supported_peripherals = (top_lcdbanner);
+  OPTION depends = (common_v1_00_a);
+  OPTION copyfiles = all;
+
+END DRIVER

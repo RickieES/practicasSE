@@ -1,13 +1,12 @@
-N:\ws\proyfinal\implementation\proyfinal.ngc 1674431266
-N:/ws/proyfinal/implementation/proyfinal_microblaze_0_wrapper.ngc 1674430880
-N:/ws/proyfinal/implementation/proyfinal_plb_v46_0_wrapper.ngc 1674430880
-N:/ws/proyfinal/implementation/proyfinal_xps_bram_if_cntlr_0_wrapper.ngc 1674430880
-N:/ws/proyfinal/implementation/proyfinal_bram_block_0_wrapper.ngc 1674430880
-N:/ws/proyfinal/implementation/proyfinal_xps_uartlite_0_wrapper.ngc 1674430880
-N:/ws/proyfinal/implementation/proyfinal_top_lcd_0_wrapper.ngc 1674430942
-N:/ws/proyfinal/implementation/proyfinal_top_keypad_0_wrapper.ngc 1674430970
-N:/ws/proyfinal/implementation/proyfinal_top_banner_0_wrapper.ngc 1674431013
-N:/ws/proyfinal/implementation/proyfinal_top_altavoz_0_wrapper.ngc 1674431037
-N:/ws/proyfinal/implementation/proyfinal_top_leds_0_wrapper.ngc 1674431063
-N:/ws/proyfinal/implementation/proyfinal_top_motor_0_wrapper.ngc 1674431090
+N:\ws\proyfinal\implementation\proyfinal.ngc 1674851152
+N:/ws/proyfinal/implementation/proyfinal_microblaze_0_wrapper.ngc 1674850955
+N:/ws/proyfinal/implementation/proyfinal_plb_v46_0_wrapper.ngc 1674850955
+N:/ws/proyfinal/implementation/proyfinal_xps_bram_if_cntlr_0_wrapper.ngc 1674850955
+N:/ws/proyfinal/implementation/proyfinal_bram_block_0_wrapper.ngc 1674850955
+N:/ws/proyfinal/implementation/proyfinal_xps_uartlite_0_wrapper.ngc 1674850955
+N:/ws/proyfinal/implementation/proyfinal_top_keypad_0_wrapper.ngc 1674850975
+N:/ws/proyfinal/implementation/proyfinal_top_altavoz_0_wrapper.ngc 1674850987
+N:/ws/proyfinal/implementation/proyfinal_top_leds_0_wrapper.ngc 1674851003
+N:/ws/proyfinal/implementation/proyfinal_top_motor_0_wrapper.ngc 1674851017
+N:/ws/proyfinal/implementation/proyfinal_top_lcdbanner_0_wrapper.ngc 1674851040
 OK

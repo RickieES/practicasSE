@@ -190,27 +190,28 @@ architecture IMP of user_logic is
   signal load          : std_logic;
   signal fifo_rdreq_cmb: std_logic;
 
+  signal lcd_rw        : std_logic;
+  signal lcd_rs        : std_logic;
+  signal lcd_e         : std_logic;
   signal lcd_bus       : std_logic_vector(9 downto 0);
-  signal busy          : std_logic;
+  signal lcd_busy      : std_logic;
 
-  signal fila          : std_logic_vector(2 downto 0);
-  signal columna       : std_logic_vector(2 downto 0);
-  signal dato          : std_logic_vector(4 downto 0);
+  signal banner_fila   : std_logic_vector(2 downto 0);
+  signal banner_columna: std_logic_vector(2 downto 0);
+  signal banner_dato   : std_logic_vector(4 downto 0);
+  signal banner_row_s_o: std_logic;
+  signal banner_row_clk: std_logic;
+  signal banner_rs2_out: std_logic;
 
 begin
 
-  lcd_controller_i : lcd_controller
-    port map (
-      clk        => Bus2IP_Clk,
-      reset      => Bus2IP_Reset,
-      lcd_enable => load,
-      lcd_bus    => lcd_bus,
-      busy       => busy,
-      rw         => lb_rw_cc,
-      rs         => lb_rs_cso,
-      e          => lb_e_ro,
-      lcd_data   => lb_data
-    );
+  -- lb_rw_cc  <= lcd_rw;
+  -- lb_rs_cso <= lcd_rs;
+  -- lb_e_ro   <= lcd_e;
+
+  -- lb_data(0) <= banner_row_s_o;
+  -- lb_data(1) <= banner_row_clk;
+  -- lb_data(2) <= banner_rs2_out;
 
   mybanner: bannerDesp
     port map (
@@ -218,14 +219,27 @@ begin
       clock          => Bus2IP_Clk,
       col_serial_out => lb_rs_cso,
       col_clk        => lb_rw_cc,
-      row_serial_out => lb_data(0),
-      row_clk        => lb_data(1),
+      row_serial_out => banner_row_s_o,
+      row_clk        => banner_row_clk,
       reset_out      => lb_e_ro,
-      reset2_out     => lb_data(2),
-      fila           => fila,
-      columna        => columna,
-      dato           => dato,
+      reset2_out     => banner_rs2_out,
+      fila           => banner_fila,
+      columna        => banner_columna,
+      dato           => banner_dato,
       load           => load
+    );
+
+  lcd_controller_i : lcd_controller
+    port map (
+      clk        => Bus2IP_Clk,
+      reset      => Bus2IP_Reset,
+      lcd_enable => load,
+      lcd_bus    => lcd_bus,
+      busy       => lcd_busy,
+      rw         => lcd_rw,
+      rs         => lcd_rs,
+      e          => lcd_e,
+      lcd_data   => lb_data
     );
 
   --USER logic implementation added here

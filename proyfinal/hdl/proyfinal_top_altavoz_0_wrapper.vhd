@@ -127,8 +127,8 @@ begin
 
   top_altavoz_0 : top_altavoz
     generic map (
-      C_BASEADDR => X"ffffffff",
-      C_HIGHADDR => X"00000000",
+      C_BASEADDR => X"84010000",
+      C_HIGHADDR => X"84017fff",
       C_SPLB_AWIDTH => 32,
       C_SPLB_DWIDTH => 32,
       C_SPLB_NUM_MASTERS => 2,

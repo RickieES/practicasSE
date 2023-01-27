@@ -3,8 +3,8 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to N:\ws\proyfinal\synthesis\xst_temp_dir\
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.19 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> 
 TABLE OF CONTENTS
@@ -260,9 +260,9 @@ Entity <proyfinal_top_leds_0_wrapper> (Architecture <STRUCTURE>) compiled.
 Analyzing hierarchy for entity <proyfinal_top_leds_0_wrapper> in library <work> (architecture <STRUCTURE>).
 
 Analyzing hierarchy for entity <top_leds> in library <top_leds_v1_00_a> (architecture <IMP>) with generics.
-	C_BASEADDR = "11111111111111111111111111111111"
+	C_BASEADDR = "10000100000000100000000000000000"
 	C_FAMILY = "spartan3"
-	C_HIGHADDR = "00000000000000000000000000000000"
+	C_HIGHADDR = "10000100000000100111111111111111"
 	C_INCLUDE_DPHASE_TIMER = 0
 	C_SPLB_AWIDTH = 32
 	C_SPLB_CLK_PERIOD_PS = 10000
@@ -275,8 +275,8 @@ Analyzing hierarchy for entity <top_leds> in library <top_leds_v1_00_a> (archite
 	C_SPLB_SUPPORT_BURSTS = 0
 
 Analyzing hierarchy for entity <plbv46_slave_single> in library <plbv46_slave_single_v1_01_a> (architecture <implementation>) with generics.
-	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000000000000000000000000000000000000")
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000100000000100000000000000000",
+	                          "0000000000000000000000000000000010000100000000100111111111111111")
 	C_ARD_NUM_CE_ARRAY = (4)
 	C_BUS2CORE_CLK_RATIO = 1
 	C_FAMILY = "spartan3"
@@ -294,8 +294,8 @@ Analyzing hierarchy for entity <user_logic> in library <top_leds_v1_00_a> (archi
 	n = 8
 
 Analyzing hierarchy for entity <plb_slave_attachment> in library <plbv46_slave_single_v1_01_a> (architecture <implementation>) with generics.
-	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000000000000000000000000000000000000")
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000100000000100000000000000000",
+	                          "0000000000000000000000000000000010000100000000100111111111111111")
 	C_ARD_NUM_CE_ARRAY = (4)
 	C_BUS2CORE_CLK_RATIO = 1
 	C_DPHASE_TIMEOUT = 128
@@ -308,17 +308,17 @@ Analyzing hierarchy for entity <plb_slave_attachment> in library <plbv46_slave_s
 	C_SPLB_P2P = 0
 
 Analyzing hierarchy for entity <plb_address_decoder> in library <plbv46_slave_single_v1_01_a> (architecture <IMP>) with generics.
-	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000000000000000000000000000000000000")
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000100000000100000000000000000",
+	                          "0000000000000000000000000000000010000100000000100111111111111111")
 	C_ARD_NUM_CE_ARRAY = (4)
 	C_BUS_AWIDTH = 32
 	C_FAMILY = "nofamily"
 	C_SPLB_P2P = 0
 
 Analyzing hierarchy for entity <pselect_f> in library <proc_common_v3_00_a> (architecture <imp>) with generics.
-	C_AB = 0
+	C_AB = 17
 	C_AW = 32
-	C_BAR = "11111111111111111111111111111111"
+	C_BAR = "10000100000000100000000000000000"
 	C_FAMILY = "nofamily"
 
 Analyzing hierarchy for entity <pselect_f> in library <proc_common_v3_00_a> (architecture <imp>) with generics.
@@ -363,9 +363,9 @@ WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/p
 Entity <proyfinal_top_leds_0_wrapper> analyzed. Unit <proyfinal_top_leds_0_wrapper> generated.
 
 Analyzing generic Entity <top_leds> in library <top_leds_v1_00_a> (Architecture <IMP>).
-	C_BASEADDR = "11111111111111111111111111111111"
+	C_BASEADDR = "10000100000000100000000000000000"
 	C_FAMILY = "spartan3"
-	C_HIGHADDR = "00000000000000000000000000000000"
+	C_HIGHADDR = "10000100000000100111111111111111"
 	C_INCLUDE_DPHASE_TIMER = 0
 	C_SPLB_AWIDTH = 32
 	C_SPLB_CLK_PERIOD_PS = 10000
@@ -383,8 +383,8 @@ WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/p
 Entity <top_leds> analyzed. Unit <top_leds> generated.
 
 Analyzing generic Entity <plbv46_slave_single> in library <plbv46_slave_single_v1_01_a> (Architecture <implementation>).
-	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000000000000000000000000000000000000")
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000100000000100000000000000000",
+	                          "0000000000000000000000000000000010000100000000100111111111111111")
 	C_ARD_NUM_CE_ARRAY = (4)
 	C_BUS2CORE_CLK_RATIO = 1
 	C_FAMILY = "spartan3"
@@ -398,8 +398,8 @@ Analyzing generic Entity <plbv46_slave_single> in library <plbv46_slave_single_v
 Entity <plbv46_slave_single> analyzed. Unit <plbv46_slave_single> generated.
 
 Analyzing generic Entity <plb_slave_attachment> in library <plbv46_slave_single_v1_01_a> (Architecture <implementation>).
-	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000000000000000000000000000000000000")
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000100000000100000000000000000",
+	                          "0000000000000000000000000000000010000100000000100111111111111111")
 	C_ARD_NUM_CE_ARRAY = (4)
 	C_BUS2CORE_CLK_RATIO = 1
 	C_DPHASE_TIMEOUT = 128
@@ -413,8 +413,8 @@ Analyzing generic Entity <plb_slave_attachment> in library <plbv46_slave_single_
 Entity <plb_slave_attachment> analyzed. Unit <plb_slave_attachment> generated.
 
 Analyzing generic Entity <plb_address_decoder> in library <plbv46_slave_single_v1_01_a> (Architecture <IMP>).
-	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000000000000000000000000000000000000")
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000100000000100000000000000000",
+	                          "0000000000000000000000000000000010000100000000100111111111111111")
 	C_ARD_NUM_CE_ARRAY = (4)
 	C_BUS_AWIDTH = 32
 	C_FAMILY = "nofamily"
@@ -422,9 +422,9 @@ Analyzing generic Entity <plb_address_decoder> in library <plbv46_slave_single_v
 Entity <plb_address_decoder> analyzed. Unit <plb_address_decoder> generated.
 
 Analyzing generic Entity <pselect_f.1> in library <proc_common_v3_00_a> (Architecture <imp>).
-	C_AB = 0
+	C_AB = 17
 	C_AW = 32
-	C_BAR = "11111111111111111111111111111111"
+	C_BAR = "10000100000000100000000000000000"
 	C_FAMILY = "nofamily"
 Entity <pselect_f.1> analyzed. Unit <pselect_f.1> generated.
 
@@ -504,7 +504,7 @@ Unit <user_logic> synthesized.
 
 Synthesizing Unit <pselect_f_1>.
     Related source file is "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
-WARNING:Xst:647 - Input <A> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <A<17:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <pselect_f_1> synthesized.
 
 
@@ -735,23 +735,6 @@ WARNING:Xst:2677 - Node <top_leds_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus
 WARNING:Xst:2677 - Node <top_leds_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_30> of sequential type is unconnected in block <proyfinal_top_leds_0_wrapper>.
 WARNING:Xst:2677 - Node <top_leds_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_31> of sequential type is unconnected in block <proyfinal_top_leds_0_wrapper>.
 WARNING:Xst:2677 - Node <top_leds_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_rnw_i> of sequential type is unconnected in block <proyfinal_top_leds_0_wrapper>.
-WARNING:Xst:2677 - Node <top_leds_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_0> of sequential type is unconnected in block <proyfinal_top_leds_0_wrapper>.
-WARNING:Xst:2677 - Node <top_leds_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_1> of sequential type is unconnected in block <proyfinal_top_leds_0_wrapper>.
-WARNING:Xst:2677 - Node <top_leds_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_2> of sequential type is unconnected in block <proyfinal_top_leds_0_wrapper>.
-WARNING:Xst:2677 - Node <top_leds_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_3> of sequential type is unconnected in block <proyfinal_top_leds_0_wrapper>.
-WARNING:Xst:2677 - Node <top_leds_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_4> of sequential type is unconnected in block <proyfinal_top_leds_0_wrapper>.
-WARNING:Xst:2677 - Node <top_leds_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_5> of sequential type is unconnected in block <proyfinal_top_leds_0_wrapper>.
-WARNING:Xst:2677 - Node <top_leds_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_6> of sequential type is unconnected in block <proyfinal_top_leds_0_wrapper>.
-WARNING:Xst:2677 - Node <top_leds_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_7> of sequential type is unconnected in block <proyfinal_top_leds_0_wrapper>.
-WARNING:Xst:2677 - Node <top_leds_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_8> of sequential type is unconnected in block <proyfinal_top_leds_0_wrapper>.
-WARNING:Xst:2677 - Node <top_leds_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_9> of sequential type is unconnected in block <proyfinal_top_leds_0_wrapper>.
-WARNING:Xst:2677 - Node <top_leds_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_10> of sequential type is unconnected in block <proyfinal_top_leds_0_wrapper>.
-WARNING:Xst:2677 - Node <top_leds_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_11> of sequential type is unconnected in block <proyfinal_top_leds_0_wrapper>.
-WARNING:Xst:2677 - Node <top_leds_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_12> of sequential type is unconnected in block <proyfinal_top_leds_0_wrapper>.
-WARNING:Xst:2677 - Node <top_leds_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_13> of sequential type is unconnected in block <proyfinal_top_leds_0_wrapper>.
-WARNING:Xst:2677 - Node <top_leds_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_14> of sequential type is unconnected in block <proyfinal_top_leds_0_wrapper>.
-WARNING:Xst:2677 - Node <top_leds_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_15> of sequential type is unconnected in block <proyfinal_top_leds_0_wrapper>.
-WARNING:Xst:2677 - Node <top_leds_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_16> of sequential type is unconnected in block <proyfinal_top_leds_0_wrapper>.
 WARNING:Xst:2677 - Node <top_leds_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_17> of sequential type is unconnected in block <proyfinal_top_leds_0_wrapper>.
 WARNING:Xst:2677 - Node <top_leds_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_18> of sequential type is unconnected in block <proyfinal_top_leds_0_wrapper>.
 WARNING:Xst:2677 - Node <top_leds_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_19> of sequential type is unconnected in block <proyfinal_top_leds_0_wrapper>.
@@ -778,8 +761,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 226
- Flip-Flops                                            : 226
+# Registers                                            : 243
+ Flip-Flops                                            : 243
 
 =========================================================================
 
@@ -807,22 +790,22 @@ Design Statistics
 # IOs                              : 204
 
 Cell Usage :
-# BELS                             : 278
+# BELS                             : 290
 #      GND                         : 1
 #      INV                         : 3
 #      LUT1                        : 21
-#      LUT2                        : 28
-#      LUT2_L                      : 1
+#      LUT2                        : 29
 #      LUT3                        : 65
-#      LUT4                        : 50
+#      LUT4                        : 55
 #      LUT4_D                      : 7
-#      MUXCY                       : 45
+#      LUT4_L                      : 2
+#      MUXCY                       : 50
 #      MUXF5                       : 32
 #      VCC                         : 1
 #      XORCY                       : 24
-# FlipFlops/Latches                : 226
+# FlipFlops/Latches                : 243
 #      FDC                         : 24
-#      FDR                         : 86
+#      FDR                         : 103
 #      FDRE                        : 116
 =========================================================================
 
@@ -831,9 +814,9 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-5 
 
- Number of Slices:                      173  out of   7680     2%  
- Number of Slice Flip Flops:            226  out of  15360     1%  
- Number of 4 input LUTs:                175  out of  15360     1%  
+ Number of Slices:                      186  out of   7680     2%  
+ Number of Slice Flip Flops:            243  out of  15360     1%  
+ Number of 4 input LUTs:                182  out of  15360     1%  
  Number of IOs:                         204
  Number of bonded IOBs:                   0  out of    173     0%  
 
@@ -858,7 +841,7 @@ Clock Information:
 -----------------------------------+------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                    | Load  |
 -----------------------------------+------------------------------------------+-------+
-SPLB_Clk                           | NONE(top_leds_0/USER_LOGIC_I/cnt_green_7)| 226   |
+SPLB_Clk                           | NONE(top_leds_0/USER_LOGIC_I/cnt_green_7)| 243   |
 -----------------------------------+------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -886,7 +869,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'SPLB_Clk'
   Clock period: 5.421ns (frequency: 184.485MHz)
-  Total number of paths / destination ports: 1343 / 344
+  Total number of paths / destination ports: 1567 / 344
 -------------------------------------------------------------------------
 Delay:               5.421ns (Levels of Logic = 2)
   Source:            top_leds_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_2 (FF)
@@ -908,7 +891,7 @@ Delay:               5.421ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'SPLB_Clk'
-  Total number of paths / destination ports: 250 / 250
+  Total number of paths / destination ports: 284 / 284
 -------------------------------------------------------------------------
 Offset:              3.241ns (Levels of Logic = 1)
   Source:            SPLB_Rst (PAD)
@@ -955,14 +938,14 @@ Offset:              3.203ns (Levels of Logic = 9)
 =========================================================================
 
 
-Total REAL time to Xst completion: 17.00 secs
-Total CPU time to Xst completion: 16.78 secs
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 15.13 secs
  
 --> 
 
 Total memory usage is 309580 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  129 (   0 filtered)
+Number of warnings :  112 (   0 filtered)
 Number of infos    :    2 (   0 filtered)
 

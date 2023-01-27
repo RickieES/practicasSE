@@ -127,8 +127,8 @@ begin
 
   top_motor_0 : top_motor
     generic map (
-      C_BASEADDR => X"ffffffff",
-      C_HIGHADDR => X"00000000",
+      C_BASEADDR => X"84028000",
+      C_HIGHADDR => X"8402ffff",
       C_SPLB_AWIDTH => 32,
       C_SPLB_DWIDTH => 32,
       C_SPLB_NUM_MASTERS => 2,

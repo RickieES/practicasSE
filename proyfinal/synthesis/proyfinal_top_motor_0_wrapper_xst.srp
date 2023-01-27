@@ -3,7 +3,7 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to N:\ws\proyfinal\synthesis\xst_temp_dir\
 
 
-Total REAL time to Xst completion: 1.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.17 secs
  
 --> 
@@ -266,9 +266,9 @@ Entity <proyfinal_top_motor_0_wrapper> (Architecture <STRUCTURE>) compiled.
 Analyzing hierarchy for entity <proyfinal_top_motor_0_wrapper> in library <work> (architecture <STRUCTURE>).
 
 Analyzing hierarchy for entity <top_motor> in library <top_motor_v1_00_a> (architecture <IMP>) with generics.
-	C_BASEADDR = "11111111111111111111111111111111"
+	C_BASEADDR = "10000100000000101000000000000000"
 	C_FAMILY = "spartan3"
-	C_HIGHADDR = "00000000000000000000000000000000"
+	C_HIGHADDR = "10000100000000101111111111111111"
 	C_INCLUDE_DPHASE_TIMER = 0
 	C_SPLB_AWIDTH = 32
 	C_SPLB_CLK_PERIOD_PS = 10000
@@ -281,8 +281,8 @@ Analyzing hierarchy for entity <top_motor> in library <top_motor_v1_00_a> (archi
 	C_SPLB_SUPPORT_BURSTS = 0
 
 Analyzing hierarchy for entity <plbv46_slave_single> in library <plbv46_slave_single_v1_01_a> (architecture <implementation>) with generics.
-	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000000000000000000000000000000000000")
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000100000000101000000000000000",
+	                          "0000000000000000000000000000000010000100000000101111111111111111")
 	C_ARD_NUM_CE_ARRAY = (2)
 	C_BUS2CORE_CLK_RATIO = 1
 	C_FAMILY = "spartan3"
@@ -299,8 +299,8 @@ Analyzing hierarchy for entity <user_logic> in library <top_motor_v1_00_a> (arch
 	C_SLV_DWIDTH = 32
 
 Analyzing hierarchy for entity <plb_slave_attachment> in library <plbv46_slave_single_v1_01_a> (architecture <implementation>) with generics.
-	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000000000000000000000000000000000000")
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000100000000101000000000000000",
+	                          "0000000000000000000000000000000010000100000000101111111111111111")
 	C_ARD_NUM_CE_ARRAY = (2)
 	C_BUS2CORE_CLK_RATIO = 1
 	C_DPHASE_TIMEOUT = 128
@@ -317,17 +317,17 @@ Analyzing hierarchy for entity <motorstep> in library <top_motor_v1_00_a> (archi
 Analyzing hierarchy for entity <one_hundred_K_counter> in library <top_motor_v1_00_a> (architecture <Behavioral>).
 
 Analyzing hierarchy for entity <plb_address_decoder> in library <plbv46_slave_single_v1_01_a> (architecture <IMP>) with generics.
-	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000000000000000000000000000000000000")
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000100000000101000000000000000",
+	                          "0000000000000000000000000000000010000100000000101111111111111111")
 	C_ARD_NUM_CE_ARRAY = (2)
 	C_BUS_AWIDTH = 32
 	C_FAMILY = "nofamily"
 	C_SPLB_P2P = 0
 
 Analyzing hierarchy for entity <pselect_f> in library <proc_common_v3_00_a> (architecture <imp>) with generics.
-	C_AB = 0
+	C_AB = 17
 	C_AW = 32
-	C_BAR = "11111111111111111111111111111111"
+	C_BAR = "10000100000000101000000000000000"
 	C_FAMILY = "nofamily"
 
 Analyzing hierarchy for entity <pselect_f> in library <proc_common_v3_00_a> (architecture <imp>) with generics.
@@ -360,9 +360,9 @@ WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/p
 Entity <proyfinal_top_motor_0_wrapper> analyzed. Unit <proyfinal_top_motor_0_wrapper> generated.
 
 Analyzing generic Entity <top_motor> in library <top_motor_v1_00_a> (Architecture <IMP>).
-	C_BASEADDR = "11111111111111111111111111111111"
+	C_BASEADDR = "10000100000000101000000000000000"
 	C_FAMILY = "spartan3"
-	C_HIGHADDR = "00000000000000000000000000000000"
+	C_HIGHADDR = "10000100000000101111111111111111"
 	C_INCLUDE_DPHASE_TIMER = 0
 	C_SPLB_AWIDTH = 32
 	C_SPLB_CLK_PERIOD_PS = 10000
@@ -380,8 +380,8 @@ WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/p
 Entity <top_motor> analyzed. Unit <top_motor> generated.
 
 Analyzing generic Entity <plbv46_slave_single> in library <plbv46_slave_single_v1_01_a> (Architecture <implementation>).
-	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000000000000000000000000000000000000")
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000100000000101000000000000000",
+	                          "0000000000000000000000000000000010000100000000101111111111111111")
 	C_ARD_NUM_CE_ARRAY = (2)
 	C_BUS2CORE_CLK_RATIO = 1
 	C_FAMILY = "spartan3"
@@ -395,8 +395,8 @@ Analyzing generic Entity <plbv46_slave_single> in library <plbv46_slave_single_v
 Entity <plbv46_slave_single> analyzed. Unit <plbv46_slave_single> generated.
 
 Analyzing generic Entity <plb_slave_attachment> in library <plbv46_slave_single_v1_01_a> (Architecture <implementation>).
-	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000000000000000000000000000000000000")
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000100000000101000000000000000",
+	                          "0000000000000000000000000000000010000100000000101111111111111111")
 	C_ARD_NUM_CE_ARRAY = (2)
 	C_BUS2CORE_CLK_RATIO = 1
 	C_DPHASE_TIMEOUT = 128
@@ -410,8 +410,8 @@ Analyzing generic Entity <plb_slave_attachment> in library <plbv46_slave_single_
 Entity <plb_slave_attachment> analyzed. Unit <plb_slave_attachment> generated.
 
 Analyzing generic Entity <plb_address_decoder> in library <plbv46_slave_single_v1_01_a> (Architecture <IMP>).
-	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111",
-	                          "0000000000000000000000000000000000000000000000000000000000000000")
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000100000000101000000000000000",
+	                          "0000000000000000000000000000000010000100000000101111111111111111")
 	C_ARD_NUM_CE_ARRAY = (2)
 	C_BUS_AWIDTH = 32
 	C_FAMILY = "nofamily"
@@ -419,9 +419,9 @@ Analyzing generic Entity <plb_address_decoder> in library <plbv46_slave_single_v
 Entity <plb_address_decoder> analyzed. Unit <plb_address_decoder> generated.
 
 Analyzing generic Entity <pselect_f.1> in library <proc_common_v3_00_a> (Architecture <imp>).
-	C_AB = 0
+	C_AB = 17
 	C_AW = 32
-	C_BAR = "11111111111111111111111111111111"
+	C_BAR = "10000100000000101000000000000000"
 	C_FAMILY = "nofamily"
 Entity <pselect_f.1> analyzed. Unit <pselect_f.1> generated.
 
@@ -500,7 +500,7 @@ Performing bidirectional port resolution...
 
 Synthesizing Unit <pselect_f_1>.
     Related source file is "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
-WARNING:Xst:647 - Input <A> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <A<17:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <pselect_f_1> synthesized.
 
 
@@ -783,23 +783,6 @@ WARNING:Xst:2677 - Node <top_motor_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bu
 WARNING:Xst:2677 - Node <top_motor_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_30> of sequential type is unconnected in block <proyfinal_top_motor_0_wrapper>.
 WARNING:Xst:2677 - Node <top_motor_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_31> of sequential type is unconnected in block <proyfinal_top_motor_0_wrapper>.
 WARNING:Xst:2677 - Node <top_motor_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_rnw_i> of sequential type is unconnected in block <proyfinal_top_motor_0_wrapper>.
-WARNING:Xst:2677 - Node <top_motor_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_0> of sequential type is unconnected in block <proyfinal_top_motor_0_wrapper>.
-WARNING:Xst:2677 - Node <top_motor_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_1> of sequential type is unconnected in block <proyfinal_top_motor_0_wrapper>.
-WARNING:Xst:2677 - Node <top_motor_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_2> of sequential type is unconnected in block <proyfinal_top_motor_0_wrapper>.
-WARNING:Xst:2677 - Node <top_motor_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_3> of sequential type is unconnected in block <proyfinal_top_motor_0_wrapper>.
-WARNING:Xst:2677 - Node <top_motor_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_4> of sequential type is unconnected in block <proyfinal_top_motor_0_wrapper>.
-WARNING:Xst:2677 - Node <top_motor_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_5> of sequential type is unconnected in block <proyfinal_top_motor_0_wrapper>.
-WARNING:Xst:2677 - Node <top_motor_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_6> of sequential type is unconnected in block <proyfinal_top_motor_0_wrapper>.
-WARNING:Xst:2677 - Node <top_motor_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_7> of sequential type is unconnected in block <proyfinal_top_motor_0_wrapper>.
-WARNING:Xst:2677 - Node <top_motor_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_8> of sequential type is unconnected in block <proyfinal_top_motor_0_wrapper>.
-WARNING:Xst:2677 - Node <top_motor_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_9> of sequential type is unconnected in block <proyfinal_top_motor_0_wrapper>.
-WARNING:Xst:2677 - Node <top_motor_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_10> of sequential type is unconnected in block <proyfinal_top_motor_0_wrapper>.
-WARNING:Xst:2677 - Node <top_motor_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_11> of sequential type is unconnected in block <proyfinal_top_motor_0_wrapper>.
-WARNING:Xst:2677 - Node <top_motor_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_12> of sequential type is unconnected in block <proyfinal_top_motor_0_wrapper>.
-WARNING:Xst:2677 - Node <top_motor_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_13> of sequential type is unconnected in block <proyfinal_top_motor_0_wrapper>.
-WARNING:Xst:2677 - Node <top_motor_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_14> of sequential type is unconnected in block <proyfinal_top_motor_0_wrapper>.
-WARNING:Xst:2677 - Node <top_motor_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_15> of sequential type is unconnected in block <proyfinal_top_motor_0_wrapper>.
-WARNING:Xst:2677 - Node <top_motor_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_16> of sequential type is unconnected in block <proyfinal_top_motor_0_wrapper>.
 WARNING:Xst:2677 - Node <top_motor_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_17> of sequential type is unconnected in block <proyfinal_top_motor_0_wrapper>.
 WARNING:Xst:2677 - Node <top_motor_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_18> of sequential type is unconnected in block <proyfinal_top_motor_0_wrapper>.
 WARNING:Xst:2677 - Node <top_motor_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_19> of sequential type is unconnected in block <proyfinal_top_motor_0_wrapper>.
@@ -824,8 +807,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 166
- Flip-Flops                                            : 166
+# Registers                                            : 183
+ Flip-Flops                                            : 183
 
 =========================================================================
 
@@ -853,22 +836,22 @@ Design Statistics
 # IOs                              : 205
 
 Cell Usage :
-# BELS                             : 201
+# BELS                             : 212
 #      GND                         : 1
 #      INV                         : 4
 #      LUT1                        : 26
-#      LUT2                        : 36
+#      LUT2                        : 38
 #      LUT3                        : 42
-#      LUT4                        : 27
+#      LUT4                        : 31
 #      LUT4_D                      : 3
-#      MUXCY                       : 33
+#      MUXCY                       : 38
 #      MUXF5                       : 1
 #      VCC                         : 1
 #      XORCY                       : 27
-# FlipFlops/Latches                : 166
+# FlipFlops/Latches                : 183
 #      FDC                         : 31
 #      FDCE                        : 4
-#      FDR                         : 85
+#      FDR                         : 102
 #      FDRE                        : 45
 #      FDSE                        : 1
 =========================================================================
@@ -878,9 +861,9 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-5 
 
- Number of Slices:                      121  out of   7680     1%  
- Number of Slice Flip Flops:            166  out of  15360     1%  
- Number of 4 input LUTs:                138  out of  15360     0%  
+ Number of Slices:                      134  out of   7680     1%  
+ Number of Slice Flip Flops:            183  out of  15360     1%  
+ Number of 4 input LUTs:                144  out of  15360     0%  
  Number of IOs:                         205
  Number of bonded IOBs:                   0  out of    173     0%  
 
@@ -906,7 +889,7 @@ Clock Information:
 Clock Signal                            | Clock buffer(FF name)                                                 | Load  |
 ----------------------------------------+-----------------------------------------------------------------------+-------+
 top_motor_0/USER_LOGIC_I/divisor_frec/co| NONE(top_motor_0/USER_LOGIC_I/motor_step_entity/current_step_FSM_FFd2)| 3     |
-SPLB_Clk                                | NONE(top_motor_0/USER_LOGIC_I/divisor_frec/count_26)                  | 163   |
+SPLB_Clk                                | NONE(top_motor_0/USER_LOGIC_I/divisor_frec/count_26)                  | 180   |
 ----------------------------------------+-----------------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -956,7 +939,7 @@ Delay:               2.882ns (Levels of Logic = 1)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'SPLB_Clk'
   Clock period: 6.204ns (frequency: 161.179MHz)
-  Total number of paths / destination ports: 1645 / 204
+  Total number of paths / destination ports: 1784 / 204
 -------------------------------------------------------------------------
 Delay:               6.204ns (Levels of Logic = 28)
   Source:            top_motor_0/USER_LOGIC_I/divisor_frec/count_1 (FF)
@@ -1004,7 +987,7 @@ Delay:               6.204ns (Levels of Logic = 28)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'SPLB_Clk'
-  Total number of paths / destination ports: 178 / 178
+  Total number of paths / destination ports: 212 / 212
 -------------------------------------------------------------------------
 Offset:              3.241ns (Levels of Logic = 1)
   Source:            SPLB_Rst (PAD)
@@ -1062,14 +1045,14 @@ Offset:              2.306ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 14.00 secs
-Total CPU time to Xst completion: 14.14 secs
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 13.06 secs
  
 --> 
 
-Total memory usage is 283916 kilobytes
+Total memory usage is 283980 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  124 (   0 filtered)
+Number of warnings :  107 (   0 filtered)
 Number of infos    :   31 (   0 filtered)
 

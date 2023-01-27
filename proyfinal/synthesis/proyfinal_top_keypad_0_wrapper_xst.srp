@@ -3,7 +3,7 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to N:\ws\proyfinal\synthesis\xst_temp_dir\
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.14 secs
  
 --> 
@@ -263,9 +263,9 @@ Entity <proyfinal_top_keypad_0_wrapper> (Architecture <STRUCTURE>) compiled.
 Analyzing hierarchy for entity <proyfinal_top_keypad_0_wrapper> in library <work> (architecture <STRUCTURE>).
 
 Analyzing hierarchy for entity <top_keypad> in library <top_keypad_v1_00_a> (architecture <IMP>) with generics.
-	C_BASEADDR = "10000100000000010000000000000000"
+	C_BASEADDR = "10000100000000111000000000000000"
 	C_FAMILY = "spartan3"
-	C_HIGHADDR = "10000100000000010111111111111111"
+	C_HIGHADDR = "10000100000000111111111111111111"
 	C_INCLUDE_DPHASE_TIMER = 1
 	C_SPLB_AWIDTH = 32
 	C_SPLB_CLK_PERIOD_PS = 10000
@@ -279,8 +279,8 @@ Analyzing hierarchy for entity <top_keypad> in library <top_keypad_v1_00_a> (arc
 WARNING:Xst:821 - "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" line 272: Loop body will iterate zero times
 
 Analyzing hierarchy for entity <plbv46_slave_single> in library <plbv46_slave_single_v1_01_a> (architecture <implementation>) with generics.
-	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000100000000010000000000000000",
-	                          "0000000000000000000000000000000010000100000000010111111111111111")
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000100000000111000000000000000",
+	                          "0000000000000000000000000000000010000100000000111111111111111111")
 	C_ARD_NUM_CE_ARRAY = (1)
 	C_BUS2CORE_CLK_RATIO = 1
 	C_FAMILY = "spartan3"
@@ -297,8 +297,8 @@ Analyzing hierarchy for entity <user_logic> in library <top_keypad_v1_00_a> (arc
 	C_SLV_DWIDTH = 32
 
 Analyzing hierarchy for entity <plb_slave_attachment> in library <plbv46_slave_single_v1_01_a> (architecture <implementation>) with generics.
-	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000100000000010000000000000000",
-	                          "0000000000000000000000000000000010000100000000010111111111111111")
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000100000000111000000000000000",
+	                          "0000000000000000000000000000000010000100000000111111111111111111")
 	C_ARD_NUM_CE_ARRAY = (1)
 	C_BUS2CORE_CLK_RATIO = 1
 	C_DPHASE_TIMEOUT = 128
@@ -313,8 +313,8 @@ Analyzing hierarchy for entity <plb_slave_attachment> in library <plbv46_slave_s
 Analyzing hierarchy for entity <teclaDetect> in library <top_keypad_v1_00_a> (architecture <Behavioral>).
 
 Analyzing hierarchy for entity <plb_address_decoder> in library <plbv46_slave_single_v1_01_a> (architecture <IMP>) with generics.
-	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000100000000010000000000000000",
-	                          "0000000000000000000000000000000010000100000000010111111111111111")
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000100000000111000000000000000",
+	                          "0000000000000000000000000000000010000100000000111111111111111111")
 	C_ARD_NUM_CE_ARRAY = (1)
 	C_BUS_AWIDTH = 32
 	C_FAMILY = "nofamily"
@@ -327,7 +327,7 @@ Analyzing hierarchy for entity <counter_f> in library <proc_common_v3_00_a> (arc
 Analyzing hierarchy for entity <pselect_f> in library <proc_common_v3_00_a> (architecture <imp>) with generics.
 	C_AB = 17
 	C_AW = 32
-	C_BAR = "10000100000000010000000000000000"
+	C_BAR = "10000100000000111000000000000000"
 	C_FAMILY = "nofamily"
 
 Analyzing hierarchy for entity <or_gate128> in library <proc_common_v3_00_a> (architecture <imp>) with generics.
@@ -348,9 +348,9 @@ WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/p
 Entity <proyfinal_top_keypad_0_wrapper> analyzed. Unit <proyfinal_top_keypad_0_wrapper> generated.
 
 Analyzing generic Entity <top_keypad> in library <top_keypad_v1_00_a> (Architecture <IMP>).
-	C_BASEADDR = "10000100000000010000000000000000"
+	C_BASEADDR = "10000100000000111000000000000000"
 	C_FAMILY = "spartan3"
-	C_HIGHADDR = "10000100000000010111111111111111"
+	C_HIGHADDR = "10000100000000111111111111111111"
 	C_INCLUDE_DPHASE_TIMER = 1
 	C_SPLB_AWIDTH = 32
 	C_SPLB_CLK_PERIOD_PS = 10000
@@ -369,8 +369,8 @@ WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/p
 Entity <top_keypad> analyzed. Unit <top_keypad> generated.
 
 Analyzing generic Entity <plbv46_slave_single> in library <plbv46_slave_single_v1_01_a> (Architecture <implementation>).
-	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000100000000010000000000000000",
-	                          "0000000000000000000000000000000010000100000000010111111111111111")
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000100000000111000000000000000",
+	                          "0000000000000000000000000000000010000100000000111111111111111111")
 	C_ARD_NUM_CE_ARRAY = (1)
 	C_BUS2CORE_CLK_RATIO = 1
 	C_FAMILY = "spartan3"
@@ -384,8 +384,8 @@ Analyzing generic Entity <plbv46_slave_single> in library <plbv46_slave_single_v
 Entity <plbv46_slave_single> analyzed. Unit <plbv46_slave_single> generated.
 
 Analyzing generic Entity <plb_slave_attachment> in library <plbv46_slave_single_v1_01_a> (Architecture <implementation>).
-	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000100000000010000000000000000",
-	                          "0000000000000000000000000000000010000100000000010111111111111111")
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000100000000111000000000000000",
+	                          "0000000000000000000000000000000010000100000000111111111111111111")
 	C_ARD_NUM_CE_ARRAY = (1)
 	C_BUS2CORE_CLK_RATIO = 1
 	C_DPHASE_TIMEOUT = 128
@@ -400,8 +400,8 @@ WARNING:Xst:753 - "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv
 Entity <plb_slave_attachment> analyzed. Unit <plb_slave_attachment> generated.
 
 Analyzing generic Entity <plb_address_decoder> in library <plbv46_slave_single_v1_01_a> (Architecture <IMP>).
-	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000100000000010000000000000000",
-	                          "0000000000000000000000000000000010000100000000010111111111111111")
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000100000000111000000000000000",
+	                          "0000000000000000000000000000000010000100000000111111111111111111")
 	C_ARD_NUM_CE_ARRAY = (1)
 	C_BUS_AWIDTH = 32
 	C_FAMILY = "nofamily"
@@ -411,7 +411,7 @@ Entity <plb_address_decoder> analyzed. Unit <plb_address_decoder> generated.
 Analyzing generic Entity <pselect_f> in library <proc_common_v3_00_a> (Architecture <imp>).
 	C_AB = 17
 	C_AW = 32
-	C_BAR = "10000100000000010000000000000000"
+	C_BAR = "10000100000000111000000000000000"
 	C_FAMILY = "nofamily"
 Entity <pselect_f> analyzed. Unit <pselect_f> generated.
 
@@ -1001,11 +1001,11 @@ Offset:              2.372ns (Levels of Logic = 1)
 
 
 Total REAL time to Xst completion: 13.00 secs
-Total CPU time to Xst completion: 13.41 secs
+Total CPU time to Xst completion: 12.25 secs
  
 --> 
 
-Total memory usage is 270540 kilobytes
+Total memory usage is 269900 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  109 (   0 filtered)

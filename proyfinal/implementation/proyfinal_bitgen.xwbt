@@ -1,0 +1,7 @@
+INFILE=N:\ws\proyfinal\implementation\proyfinal.ncd
+OUTFILE=N:\ws\proyfinal\implementation\proyfinal.bit
+FAMILY=Spartan3
+PART=xc3s1000-5ft256
+WORKINGDIR=N:\ws\proyfinal\implementation
+LICENSE=WebPack
+USER_INFO=__0_0_0

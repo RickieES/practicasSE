@@ -65,8 +65,8 @@ END
 BEGIN top_keypad
  PARAMETER INSTANCE = top_keypad_0
  PARAMETER HW_VER = 1.00.a
- PARAMETER C_BASEADDR = 0x84010000
- PARAMETER C_HIGHADDR = 0x84017fff
+ PARAMETER C_BASEADDR = 0x84038000
+ PARAMETER C_HIGHADDR = 0x8403ffff
  BUS_INTERFACE SPLB = plb_v46_0
  PORT S = top_keypad_0_S
  PORT R = net_keypad_0_R_pin
@@ -75,6 +75,8 @@ END
 BEGIN top_altavoz
  PARAMETER INSTANCE = top_altavoz_0
  PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x84010000
+ PARAMETER C_HIGHADDR = 0x84017fff
  BUS_INTERFACE SPLB = plb_v46_0
  PORT sonido_pin = top_altavoz_0_sonido_pin
 END
@@ -82,6 +84,8 @@ END
 BEGIN top_leds
  PARAMETER INSTANCE = top_leds_0
  PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x84020000
+ PARAMETER C_HIGHADDR = 0x84027fff
  BUS_INTERFACE SPLB = plb_v46_0
  PORT red = top_leds_0_red
  PORT green = top_leds_0_green
@@ -91,6 +95,8 @@ END
 BEGIN top_motor
  PARAMETER INSTANCE = top_motor_0
  PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x84028000
+ PARAMETER C_HIGHADDR = 0x8402ffff
  BUS_INTERFACE SPLB = plb_v46_0
  PORT control_motor = top_motor_0_control_motor
 END
@@ -98,6 +104,8 @@ END
 BEGIN top_lcdbanner
  PARAMETER INSTANCE = top_lcdbanner_0
  PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x84018000
+ PARAMETER C_HIGHADDR = 0x8401ffff
  BUS_INTERFACE SPLB = plb_v46_0
  PORT lb_rw_cc = top_lcdbanner_0_lb_rw_cc
  PORT lb_rs_cso = top_lcdbanner_0_lb_rs_cso

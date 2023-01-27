@@ -129,8 +129,8 @@ begin
 
   top_keypad_0 : top_keypad
     generic map (
-      C_BASEADDR => X"84010000",
-      C_HIGHADDR => X"84017fff",
+      C_BASEADDR => X"84038000",
+      C_HIGHADDR => X"8403ffff",
       C_SPLB_AWIDTH => 32,
       C_SPLB_DWIDTH => 32,
       C_SPLB_NUM_MASTERS => 2,

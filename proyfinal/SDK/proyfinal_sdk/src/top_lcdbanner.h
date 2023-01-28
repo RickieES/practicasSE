@@ -16,6 +16,18 @@
 
 /************************** Constant Definitions ***************************/
 
+/**
+ * Constantes a�adidas externamente al fichero original generado por XPS
+ */
+# define CLEAR_DISPLAY_CMD 0x00000001      // RS=0, RW=0, inicializa display
+# define RETURN_HOME_CMD 0x00000002        // RS=0, RW=0, vuelta a casa
+# define L2R_SCROLLVIEWPORT_CMD 0x00000018 // RS=0, RW=0, 0001 1000, desplazamiento del cursor (s=0) e incremento de AR (c=1)
+# define R2L_SCROLLVIEWPORT_CMD 0x0000001C // RS=0, RW=0, 0001 1100, desplazamiento de viewport (s=1) e incremento de AR (c=1)
+# define L2R_SCROLLONWRITE_CMD 0x00000007  // RS=0, RW=0, 0000 0111, desplazamiento de viewport (s=1) a derecha (c=1)
+# define R2L_SCROLLONWRITE_CMD 0x00000005  // RS=0, RW=0, 0000 0101, desplazamiento de viewport (s=1) a izquierda (c=0)
+# define WRITE_CMD 0x00000200              // RS=1, RW=0, OR con caracter
+# define FIRST_ROW 0x00000080              // RS=0, RW=0, fija direccion DDRAM 10000000, AR=00
+# define SECOND_ROW 0x000000C0   
 
 /**
  * User Logic Slave Space Offsets

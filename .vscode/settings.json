@@ -3,6 +3,9 @@
         "bram_header.h": "c",
         "xil_cache.h": "c",
         "xbasic_types.h": "c",
-        "xparameters.h": "c"
+        "xparameters.h": "c",
+        "top_lcdbanner.h": "c",
+        "top_motor.h": "c",
+        "top_leds.h": "c"
     }
 }

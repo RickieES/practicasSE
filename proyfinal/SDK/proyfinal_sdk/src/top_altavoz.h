@@ -16,6 +16,16 @@
 
 /************************** Constant Definitions ***************************/
 
+# define SILENCIO 0x00000000
+# define DO 0x00000BAA
+# define RE 0x00000A64
+# define MI 0x00000942
+# define FA 0x000008BD
+# define SOL 0x000007C9
+# define LA 0x000006F0
+# define SI 0x0000062E
+# define OCTAVA 3
+
 
 /**
  * User Logic Slave Space Offsets

@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "xparameters.h": "c",
+        "top_lcdbanner.h": "c",
+        "xbasic_types.h": "c",
+        "top_altavoz.h": "c",
+        "top_keypad.h": "c"
+    }
+}

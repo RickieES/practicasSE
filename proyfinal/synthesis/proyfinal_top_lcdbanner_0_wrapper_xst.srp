@@ -267,6 +267,7 @@ Entity <plbv46_slave_single> compiled.
 Entity <plbv46_slave_single> (Architecture <implementation>) compiled.
 Compiling vhdl file "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/user_logic.vhd" in Library top_lcdbanner_v1_00_a.
 Entity <user_logic> compiled.
+WARNING:HDLParsers:1406 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/user_logic.vhd" Line 303. No sensitivity list and no wait in the process
 Entity <user_logic> (Architecture <IMP>) compiled.
 Compiling vhdl file "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/top_lcdbanner.vhd" in Library top_lcdbanner_v1_00_a.
 Entity <top_lcdbanner> compiled.
@@ -710,19 +711,21 @@ Analyzing generic Entity <user_logic> in library <top_lcdbanner_v1_00_a> (Archit
 	C_SLV_DWIDTH = 32
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:819 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/user_logic.vhd" line 303: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <lcd_e>, <lcd_rs>, <lcd_rw>, <lcd_data>, <banner_col_s_o>, <banner_col_clk>, <banner_rs1_out>, <banner_row_s_o>, <banner_row_clk>, <banner_rs2_out>
 Entity <user_logic> analyzed. Unit <user_logic> generated.
 
 Analyzing Entity <bannerDesp> in library <top_lcdbanner_v1_00_a> (Architecture <banner_arch>).
-WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 92: Index value(s) does not match array range, simulation mismatch.
-WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 232: Index value(s) does not match array range, simulation mismatch.
-WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 233: Index value(s) does not match array range, simulation mismatch.
-WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 234: Index value(s) does not match array range, simulation mismatch.
-WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 235: Index value(s) does not match array range, simulation mismatch.
-WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 236: Index value(s) does not match array range, simulation mismatch.
-WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 237: Index value(s) does not match array range, simulation mismatch.
-WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 238: Index value(s) does not match array range, simulation mismatch.
-WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 239: Index value(s) does not match array range, simulation mismatch.
-WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 256: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 81: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 224: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 225: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 226: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 227: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 228: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 229: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 230: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 231: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 240: Index value(s) does not match array range, simulation mismatch.
 Entity <bannerDesp> analyzed. Unit <bannerDesp> generated.
 
 Analyzing Entity <lcd_controller> in library <top_lcdbanner_v1_00_a> (Architecture <controller>).
@@ -835,20 +838,20 @@ Synthesizing Unit <bannerDesp>.
     Found 27-bit up counter for signal <count2>.
     Found 6-bit up counter for signal <desplazamiento>.
     Found 1-bit register for signal <fin_per>.
-    Found 13-bit comparator less for signal <fin_per$cmp_lt0000> created at line 150.
+    Found 13-bit comparator less for signal <fin_per$cmp_lt0000> created at line 142.
     Found 1-bit register for signal <fin_pixel_cont>.
-    Found 6-bit comparator less for signal <fin_pixel_cont$cmp_lt0000> created at line 167.
+    Found 6-bit comparator less for signal <fin_pixel_cont$cmp_lt0000> created at line 160.
     Found 40-bit register for signal <miregistro>.
-    Found 6-bit adder for signal <miregistro$sub0000> created at line 256.
+    Found 6-bit adder for signal <miregistro$sub0000> created at line 240.
     Found 6-bit register for signal <pixel_count>.
-    Found 6-bit adder for signal <pixel_count$addsub0000> created at line 168.
-    Found 6-bit adder for signal <RAM$add0000> created at line 233.
-    Found 6-bit adder for signal <RAM$add0001> created at line 234.
-    Found 6-bit adder for signal <RAM$add0002> created at line 235.
-    Found 6-bit adder for signal <RAM$add0003> created at line 236.
-    Found 6-bit adder for signal <RAM$add0004> created at line 237.
-    Found 6-bit adder for signal <RAM$add0005> created at line 238.
-    Found 6-bit adder for signal <RAM$add0006> created at line 239.
+    Found 6-bit adder for signal <pixel_count$addsub0000> created at line 161.
+    Found 6-bit adder for signal <RAM$add0000> created at line 225.
+    Found 6-bit adder for signal <RAM$add0001> created at line 226.
+    Found 6-bit adder for signal <RAM$add0002> created at line 227.
+    Found 6-bit adder for signal <RAM$add0003> created at line 228.
+    Found 6-bit adder for signal <RAM$add0004> created at line 229.
+    Found 6-bit adder for signal <RAM$add0005> created at line 230.
+    Found 6-bit adder for signal <RAM$add0006> created at line 231.
     Found 1-bit register for signal <reloj12>.
     Found 3-bit up counter for signal <row_number>.
     Found 13-bit up counter for signal <t_persistencia>.
@@ -911,26 +914,15 @@ WARNING:Xst:647 - Input <Bus2IP_Data> is never used. This port will be preserved
 WARNING:Xst:647 - Input <Bus2IP_RdCE<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <WFIFO2IP_AlmostEmpty> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <Bus2IP_WrCE<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <WFIFO2IP_Data> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <WFIFO2IP_RdAck> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <WFIFO2IP_Data<1:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <WFIFO2IP_Data<8:12>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <WFIFO2IP_Data<16:18>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <Bus2IP_BE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <WFIFO2IP_Empty> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:1305 - Output <IP2WFIFO_RdReq> is never assigned. Tied to value 0.
-WARNING:Xst:1780 - Signal <nextStateLectura> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:653 - Signal <load> is used but never assigned. This sourceless signal will be automatically connected to value 0.
-WARNING:Xst:646 - Signal <lcd_rw> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <lcd_rs> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <lcd_e> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <lcd_busy> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:653 - Signal <lcd_bus> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000.
-WARNING:Xst:1780 - Signal <fifo_rdreq_cmb> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <currentStateLectura> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <banner_rs2_out> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <banner_row_s_o> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <banner_row_clk> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:653 - Signal <banner_fila> is used but never assigned. This sourceless signal will be automatically connected to value 000.
-WARNING:Xst:653 - Signal <banner_dato> is used but never assigned. This sourceless signal will be automatically connected to value 00000.
-WARNING:Xst:653 - Signal <banner_columna> is used but never assigned. This sourceless signal will be automatically connected to value 000.
+WARNING:Xst:1780 - Signal <lcd_enable> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <IP2WFIFO_RdReq>.
+    Found 1-bit register for signal <currentStateLectura<0>>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
 Unit <user_logic> synthesized.
 
 
@@ -1142,8 +1134,8 @@ Macro Statistics
  3-bit up counter                                      : 1
  4-bit up counter                                      : 1
  6-bit up counter                                      : 1
-# Registers                                            : 128
- 1-bit register                                        : 111
+# Registers                                            : 130
+ 1-bit register                                        : 113
  3-bit register                                        : 1
  32-bit register                                       : 5
  4-bit register                                        : 4
@@ -1327,8 +1319,8 @@ Macro Statistics
  3-bit up counter                                      : 1
  4-bit up counter                                      : 1
  6-bit up counter                                      : 1
-# Registers                                            : 381
- Flip-Flops                                            : 381
+# Registers                                            : 383
+ Flip-Flops                                            : 383
 # Comparators                                          : 14
  13-bit comparator less                                : 1
  32-bit comparator less                                : 12
@@ -1344,64 +1336,19 @@ Macro Statistics
 *                         Low Level Synthesis                           *
 =========================================================================
 INFO:Xst:2261 - The FF/Latch <addr_cntl_cs_0> in Unit <plb_slave_attachment> is equivalent to the following FF/Latch, which will be removed : <addr_cycle_flush> 
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <rdack_dly1> is unconnected in block <wrpfifo_dp_cntl>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <int_rdack> is unconnected in block <wrpfifo_dp_cntl>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <bkup_recover> is unconnected in block <wrpfifo_dp_cntl>.
-WARNING:Xst:1710 - FF/Latch <USER_LOGIC_I/lcd_controller_i/lcd_data_6> (without init value) has a constant value of 0 in block <top_lcdbanner>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/lcd_controller_i/lcd_data_7> (without init value) has a constant value of 0 in block <top_lcdbanner>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/lcd_controller_i/busy> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/lcd_controller_i/e> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/lcd_controller_i/rs> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/lcd_controller_i/rw> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/row_clk> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_5> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_23> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_24> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_18> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_6> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_19> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_7> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_30> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_25> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_8> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_26> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_31> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_9> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_32> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_27> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_33> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_28> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_35> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_34> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_29> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_36> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_37> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_38> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_39> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_10> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_11> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_12> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_0> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_1> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_13> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_14> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_2> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_20> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_15> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_3> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_21> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_16> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_4> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_22> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/miregistro_17> of sequential type is unconnected in block <top_lcdbanner>.
-WARNING:Xst:2677 - Node <USER_LOGIC_I/mybanner/ce_row_clk> of sequential type is unconnected in block <top_lcdbanner>.
 INFO:Xst:1901 - Instance WRPFIFO_TOP_I/USE_BLOCK_RAM.GEN_BRAM_NOT_V6_S6.I_DP_CORE/Using_RAMB16_S36_S36.BRAM_LOOP[1].I_DPB16_512x32 in unit WRPFIFO_TOP_I/USE_BLOCK_RAM.GEN_BRAM_NOT_V6_S6.I_DP_CORE/Using_RAMB16_S36_S36.BRAM_LOOP[1].I_DPB16_512x32 of type RAMB16_S36_S36 has been replaced by RAMB16
 
 Optimizing unit <proyfinal_top_lcdbanner_0_wrapper> ...
 
 Optimizing unit <ipif_control_wr_dre> ...
 
+Optimizing unit <bannerDesp> ...
+
+Optimizing unit <lcd_controller> ...
+
 Optimizing unit <pf_dly1_mux> ...
+
+Optimizing unit <user_logic> ...
 
 Optimizing unit <plb_address_decoder> ...
 
@@ -1506,8 +1453,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 269
- Flip-Flops                                            : 269
+# Registers                                            : 355
+ Flip-Flops                                            : 355
 
 =========================================================================
 
@@ -1535,35 +1482,39 @@ Design Statistics
 # IOs                              : 212
 
 Cell Usage :
-# BELS                             : 673
+# BELS                             : 1119
 #      GND                         : 2
-#      INV                         : 48
-#      LUT1                        : 49
-#      LUT2                        : 96
-#      LUT2_D                      : 1
+#      INV                         : 46
+#      LUT1                        : 80
+#      LUT2                        : 142
 #      LUT2_L                      : 1
-#      LUT3                        : 60
+#      LUT3                        : 229
 #      LUT3_D                      : 1
 #      LUT3_L                      : 2
-#      LUT4                        : 127
-#      LUT4_D                      : 2
-#      LUT4_L                      : 1
-#      MUXCY                       : 207
-#      MUXF5                       : 5
+#      LUT4                        : 175
+#      LUT4_D                      : 8
+#      LUT4_L                      : 4
+#      MUXCY                       : 263
+#      MUXF5                       : 60
+#      MUXF6                       : 5
+#      MUXF7                       : 2
+#      MUXF8                       : 1
 #      VCC                         : 1
-#      XORCY                       : 70
-# FlipFlops/Latches                : 269
-#      FD                          : 32
-#      FDC                         : 19
-#      FDCE                        : 10
-#      FDP                         : 2
-#      FDR                         : 96
+#      XORCY                       : 97
+# FlipFlops/Latches                : 355
+#      FD                          : 37
+#      FDC                         : 46
+#      FDCE                        : 56
+#      FDE                         : 1
+#      FDP                         : 3
+#      FDR                         : 101
 #      FDRE                        : 96
-#      FDRS                        : 4
-#      FDRSE                       : 1
-#      FDS                         : 8
+#      FDRS                        : 3
+#      FDRSE                       : 2
+#      FDS                         : 9
 #      FDSE                        : 1
-# RAMS                             : 1
+# RAMS                             : 161
+#      RAM16X1D                    : 160
 #      RAMB16                      : 1
 # Clock Buffers                    : 1
 #      BUFG                        : 1
@@ -1574,9 +1525,11 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-5 
 
- Number of Slices:                      258  out of   7680     3%  
- Number of Slice Flip Flops:            269  out of  15360     1%  
- Number of 4 input LUTs:                388  out of  15360     2%  
+ Number of Slices:                      479  out of   7680     6%  
+ Number of Slice Flip Flops:            355  out of  15360     2%  
+ Number of 4 input LUTs:               1008  out of  15360     6%  
+    Number used as logic:               688
+    Number used as RAMs:                320
  Number of IOs:                         212
  Number of bonded IOBs:                   0  out of    173     0%  
  Number of BRAMs:                         1  out of     24     4%  
@@ -1600,12 +1553,12 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
-----------------------------------------------+-----------------------------------------------------------------------------+-------+
-Clock Signal                                  | Clock buffer(FF name)                                                       | Load  |
-----------------------------------------------+-----------------------------------------------------------------------------+-------+
-SPLB_Clk                                      | NONE(top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/valid_read)| 244   |
-top_lcdbanner_0/USER_LOGIC_I/mybanner/reloj121| BUFG                                                                        | 26    |
-----------------------------------------------+-----------------------------------------------------------------------------+-------+
+----------------------------------------------+----------------------------------------------------------------------------+-------+
+Clock Signal                                  | Clock buffer(FF name)                                                      | Load  |
+----------------------------------------------+----------------------------------------------------------------------------+-------+
+SPLB_Clk                                      | NONE(top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/int_rdack)| 449   |
+top_lcdbanner_0/USER_LOGIC_I/mybanner/reloj121| BUFG                                                                       | 67    |
+----------------------------------------------+----------------------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
@@ -1613,17 +1566,17 @@ Asynchronous Control Signals Information:
 -----------------------------------+------------------------+-------+
 Control Signal                     | Buffer(FF name)        | Load  |
 -----------------------------------+------------------------+-------+
-SPLB_Rst                           | NONE                   | 31    |
+SPLB_Rst                           | NONE                   | 105   |
 -----------------------------------+------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 12.345ns (Maximum Frequency: 81.006MHz)
+   Minimum period: 12.474ns (Maximum Frequency: 80.167MHz)
    Minimum input arrival time before clock: 2.621ns
-   Maximum output required time after clock: 0.626ns
-   Maximum combinational path delay: 0.479ns
+   Maximum output required time after clock: 7.955ns
+   Maximum combinational path delay: 0.774ns
 
 Timing Detail:
 --------------
@@ -1631,23 +1584,22 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'SPLB_Clk'
-  Clock period: 12.345ns (frequency: 81.006MHz)
-  Total number of paths / destination ports: 170857 / 389
+  Clock period: 12.474ns (frequency: 80.167MHz)
+  Total number of paths / destination ports: 194093 / 606
 -------------------------------------------------------------------------
-Delay:               12.345ns (Levels of Logic = 35)
-  Source:            top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_1 (FF)
+Delay:               12.474ns (Levels of Logic = 35)
+  Source:            top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_2 (FF)
   Destination:       top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_31 (FF)
   Source Clock:      SPLB_Clk rising
   Destination Clock: SPLB_Clk rising
 
-  Data Path: top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_1 to top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_31
+  Data Path: top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_2 to top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               1   0.626   0.976  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_1 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_1)
-     LUT1:I0->O            1   0.479   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<1>_rt (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<1>_rt)
-     MUXCY:S->O            1   0.435   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<1> (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<1>)
-     MUXCY:CI->O           1   0.056   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<2> (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<2>)
+     FD:C->Q               2   0.626   1.040  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_2 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_2)
+     LUT1:I0->O            1   0.479   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<2>_rt (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<2>_rt)
+     MUXCY:S->O            1   0.435   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<2> (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<2>)
      MUXCY:CI->O           1   0.056   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<3> (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<3>)
      MUXCY:CI->O           1   0.056   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<4> (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<4>)
      MUXCY:CI->O           1   0.056   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<5> (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<5>)
@@ -1673,22 +1625,23 @@ Delay:               12.345ns (Levels of Logic = 35)
      MUXCY:CI->O           1   0.056   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<25> (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<25>)
      MUXCY:CI->O           1   0.056   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<26> (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<26>)
      MUXCY:CI->O           1   0.056   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<27> (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<27>)
-     XORCY:CI->O           9   0.786   1.250  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_xor<28> (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/state_add0000<28>)
-     LUT3:I0->O            1   0.479   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_lut<11>3 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_lut<11>3)
-     MUXCY:S->O            1   0.435   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<11>_2 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<11>3)
-     MUXCY:CI->O           5   0.265   1.078  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<12>_1 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<12>2)
-     LUT4:I0->O            1   0.479   0.740  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<0>110 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<0>110)
-     LUT4_D:I2->O         31   0.479   1.740  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<0>161 (top_lcdbanner_0/N0)
-     LUT2:I1->O            1   0.479   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<9>1 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<9>)
-     FD:D                      0.176          top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_22
+     MUXCY:CI->O           1   0.056   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<28> (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<28>)
+     XORCY:CI->O           9   0.786   1.250  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_xor<29> (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/state_add0000<29>)
+     LUT2:I0->O            1   0.479   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_lut<10>3 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_lut<10>3)
+     MUXCY:S->O            1   0.435   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<10>_2 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<10>3)
+     MUXCY:CI->O           5   0.265   1.078  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<11>_1 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<11>2)
+     LUT4:I0->O            2   0.479   0.804  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<0>119 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<0>119)
+     LUT4_D:I2->O         31   0.479   1.740  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<0>1 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/N01)
+     LUT2:I1->O            1   0.479   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<8>1 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<8>)
+     FD:D                      0.176          top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_23
     ----------------------------------------
-    Total                     12.345ns (6.561ns logic, 5.784ns route)
-                                       (53.1% logic, 46.9% route)
+    Total                     12.474ns (6.561ns logic, 5.913ns route)
+                                       (52.6% logic, 47.4% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'top_lcdbanner_0/USER_LOGIC_I/mybanner/reloj121'
   Clock period: 6.957ns (frequency: 143.748MHz)
-  Total number of paths / destination ports: 1636 / 35
+  Total number of paths / destination ports: 1975 / 116
 -------------------------------------------------------------------------
 Delay:               6.957ns (Levels of Logic = 23)
   Source:            top_lcdbanner_0/USER_LOGIC_I/mybanner/t_persistencia_0 (FF)
@@ -1710,7 +1663,7 @@ Delay:               6.957ns (Levels of Logic = 23)
      MUXCY:CI->O           1   0.056   0.000  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcompar_fin_per_cmp_lt0000_cy<5> (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcompar_fin_per_cmp_lt0000_cy<5>)
      MUXCY:CI->O           1   0.056   0.000  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcompar_fin_per_cmp_lt0000_cy<6> (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcompar_fin_per_cmp_lt0000_cy<6>)
      MUXCY:CI->O          15   0.246   1.010  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcompar_fin_per_cmp_lt0000_cy<7> (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcompar_fin_per_cmp_lt0000_cy<7>)
-     INV:I->O              1   0.479   0.681  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcompar_fin_per_cmp_lt0000_cy<7>_inv_INV_0 (top_lcdbanner_0/USER_LOGIC_I/mybanner/fin_per_cmp_lt0000)
+     INV:I->O              1   0.479   0.681  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcompar_fin_per_cmp_lt0000_cy<7>_inv_INV_0 (top_lcdbanner_0/USER_LOGIC_I/mybanner/fin_per_mux0001_inv)
      MUXCY:CI->O           1   0.056   0.000  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_t_persistencia_cy<0> (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_t_persistencia_cy<0>)
      MUXCY:CI->O           1   0.056   0.000  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_t_persistencia_cy<1> (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_t_persistencia_cy<1>)
      MUXCY:CI->O           1   0.056   0.000  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_t_persistencia_cy<2> (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_t_persistencia_cy<2>)
@@ -1731,7 +1684,7 @@ Delay:               6.957ns (Levels of Logic = 23)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'SPLB_Clk'
-  Total number of paths / destination ports: 230 / 229
+  Total number of paths / destination ports: 233 / 232
 -------------------------------------------------------------------------
 Offset:              2.621ns (Levels of Logic = 1)
   Source:            SPLB_Rst (PAD)
@@ -1749,46 +1702,60 @@ Offset:              2.621ns (Levels of Logic = 1)
                                        (63.6% logic, 36.4% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'top_lcdbanner_0/USER_LOGIC_I/mybanner/reloj121'
-  Total number of paths / destination ports: 2 / 2
--------------------------------------------------------------------------
-Offset:              0.626ns (Levels of Logic = 0)
-  Source:            top_lcdbanner_0/USER_LOGIC_I/mybanner/col_clk (FF)
-  Destination:       lb_rw_cc (PAD)
-  Source Clock:      top_lcdbanner_0/USER_LOGIC_I/mybanner/reloj121 rising
-
-  Data Path: top_lcdbanner_0/USER_LOGIC_I/mybanner/col_clk to lb_rw_cc
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q              0   0.626   0.000  top_lcdbanner_0/USER_LOGIC_I/mybanner/col_clk (top_lcdbanner_0/USER_LOGIC_I/mybanner/col_clk)
-    ----------------------------------------
-    Total                      0.626ns (0.626ns logic, 0.000ns route)
-                                       (100.0% logic, 0.0% route)
-
-=========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'SPLB_Clk'
-  Total number of paths / destination ports: 22 / 22
+  Total number of paths / destination ports: 90 / 27
 -------------------------------------------------------------------------
-Offset:              0.626ns (Levels of Logic = 0)
-  Source:            top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rearbitrate_i (FF)
-  Destination:       Sl_rearbitrate (PAD)
+Offset:              7.955ns (Levels of Logic = 7)
+  Source:            top_lcdbanner_0/USER_LOGIC_I/mybanner/desplazamiento_3 (FF)
+  Destination:       lb_data<0> (PAD)
   Source Clock:      SPLB_Clk rising
 
-  Data Path: top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rearbitrate_i to Sl_rearbitrate
+  Data Path: top_lcdbanner_0/USER_LOGIC_I/mybanner/desplazamiento_3 to lb_data<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              0   0.626   0.000  top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rearbitrate_i (top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rearbitrate_i)
+     FDCE:C->Q            25   0.626   1.711  top_lcdbanner_0/USER_LOGIC_I/mybanner/desplazamiento_3 (top_lcdbanner_0/USER_LOGIC_I/mybanner/desplazamiento_3)
+     LUT2:I1->O            8   0.479   0.921  top_lcdbanner_0/USER_LOGIC_I/mybanner/Madd_miregistro_sub0000_xor<4>11 (top_lcdbanner_0/USER_LOGIC_I/mybanner/miregistro_sub0000<4>)
+     MUXF5:S->O            1   0.540   0.000  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_8_f5 (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_8_f5)
+     MUXF6:I1->O           1   0.298   0.000  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_7_f6 (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_7_f6)
+     MUXF7:I1->O           1   0.298   0.000  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_6_f7 (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_6_f7)
+     MUXF8:I1->O           1   0.298   0.976  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_5_f8 (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_5_f8)
+     LUT4:I0->O            1   0.479   0.851  top_lcdbanner_0/USER_LOGIC_I/lb_data_0_mux000030 (top_lcdbanner_0/USER_LOGIC_I/lb_data_0_mux000030)
+     LUT4:I1->O            0   0.479   0.000  top_lcdbanner_0/USER_LOGIC_I/lb_data_0_mux000091 (lb_data<0>)
     ----------------------------------------
-    Total                      0.626ns (0.626ns logic, 0.000ns route)
-                                       (100.0% logic, 0.0% route)
+    Total                      7.955ns (3.497ns logic, 4.458ns route)
+                                       (44.0% logic, 56.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'top_lcdbanner_0/USER_LOGIC_I/mybanner/reloj121'
+  Total number of paths / destination ports: 42 / 3
+-------------------------------------------------------------------------
+Offset:              6.013ns (Levels of Logic = 7)
+  Source:            top_lcdbanner_0/USER_LOGIC_I/mybanner/miregistro_0 (FF)
+  Destination:       lb_data<0> (PAD)
+  Source Clock:      top_lcdbanner_0/USER_LOGIC_I/mybanner/reloj121 rising
+
+  Data Path: top_lcdbanner_0/USER_LOGIC_I/mybanner/miregistro_0 to lb_data<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.626   0.915  top_lcdbanner_0/USER_LOGIC_I/mybanner/miregistro_0 (top_lcdbanner_0/USER_LOGIC_I/mybanner/miregistro_0)
+     LUT3:I1->O            1   0.479   0.000  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_13 (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_13)
+     MUXF5:I0->O           1   0.314   0.000  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_11_f5 (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_11_f5)
+     MUXF6:I0->O           1   0.298   0.000  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_9_f6 (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_9_f6)
+     MUXF7:I0->O           1   0.298   0.000  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_7_f7 (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_7_f7)
+     MUXF8:I0->O           1   0.298   0.976  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_5_f8 (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_5_f8)
+     LUT4:I0->O            1   0.479   0.851  top_lcdbanner_0/USER_LOGIC_I/lb_data_0_mux000030 (top_lcdbanner_0/USER_LOGIC_I/lb_data_0_mux000030)
+     LUT4:I1->O            0   0.479   0.000  top_lcdbanner_0/USER_LOGIC_I/lb_data_0_mux000091 (lb_data<0>)
+    ----------------------------------------
+    Total                      6.013ns (3.271ns logic, 2.742ns route)
+                                       (54.4% logic, 45.6% route)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 1 / 1
+  Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
-Delay:               0.479ns (Levels of Logic = 1)
+Delay:               0.774ns (Levels of Logic = 1)
   Source:            SPLB_Rst (PAD)
   Destination:       lb_e_ro (PAD)
 
@@ -1796,22 +1763,22 @@ Delay:               0.479ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     INV:I->O              0   0.479   0.000  top_lcdbanner_0/USER_LOGIC_I/mybanner/reset_in_inv1_INV_0 (lb_e_ro)
+     LUT2:I0->O            0   0.479   0.000  top_lcdbanner_0/USER_LOGIC_I/lb_e_ro1 (lb_e_ro)
     ----------------------------------------
-    Total                      0.479ns (0.479ns logic, 0.000ns route)
+    Total                      0.774ns (0.774ns logic, 0.000ns route)
                                        (100.0% logic, 0.0% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 23.00 secs
-Total CPU time to Xst completion: 22.34 secs
+Total REAL time to Xst completion: 26.00 secs
+Total CPU time to Xst completion: 25.81 secs
  
 --> 
 
-Total memory usage is 355660 kilobytes
+Total memory usage is 359756 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  258 (   0 filtered)
+Number of warnings :  194 (   0 filtered)
 Number of infos    :   13 (   0 filtered)
 

@@ -9,24 +9,24 @@ Target Device  : xc3s1000
 Target Package : ft256
 Target Speed   : -5
 Mapper Version : spartan3 -- $Revision: 1.55 $
-Mapped Date    : Fri Jan 27 21:29:07 2023
+Mapped Date    : Sun Jan 29 11:26:23 2023
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    0
 Logic Utilization:
-  Number of Slice Flip Flops:         1,876 out of  15,360   12%
-  Number of 4 input LUTs:             2,963 out of  15,360   19%
+  Number of Slice Flip Flops:         2,045 out of  15,360   13%
+  Number of 4 input LUTs:             3,573 out of  15,360   23%
 Logic Distribution:
-  Number of occupied Slices:          2,316 out of   7,680   30%
-    Number of Slices containing only related logic:   2,316 out of   2,316 100%
-    Number of Slices containing unrelated logic:          0 out of   2,316   0%
+  Number of occupied Slices:          2,644 out of   7,680   34%
+    Number of Slices containing only related logic:   2,644 out of   2,644 100%
+    Number of Slices containing unrelated logic:          0 out of   2,644   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       3,132 out of  15,360   20%
-    Number used as logic:             2,495
-    Number used as a route-thru:        169
-    Number used for Dual Port RAMs:     384
+  Total Number of 4 input LUTs:       3,773 out of  15,360   24%
+    Number used as logic:             2,785
+    Number used as a route-thru:        200
+    Number used for Dual Port RAMs:     704
       (Two LUTs used per Dual Port RAM)
     Number used as Shift registers:      84
 
@@ -34,16 +34,16 @@ Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
   Number of bonded IOBs:                 31 out of     173   17%
-    IOB Flip Flops:                       6
-  Number of RAMB16s:                     16 out of      24   66%
+    IOB Flip Flops:                       4
+  Number of RAMB16s:                     17 out of      24   70%
   Number of MULT18X18s:                   3 out of      24   12%
   Number of BUFGMUXs:                     3 out of       8   37%
 
-Average Fanout of Non-Clock Nets:                3.79
+Average Fanout of Non-Clock Nets:                3.85
 
-Peak Memory Usage:  254 MB
-Total REAL time to MAP completion:  54 secs 
-Total CPU time to MAP completion:   53 secs 
+Peak Memory Usage:  259 MB
+Total REAL time to MAP completion:  1 mins 1 secs 
+Total CPU time to MAP completion:   1 mins 
 
 Table of Contents
 -----------------
@@ -1396,6 +1396,486 @@ INFO:LIT:243 - Logical network
    xps_uartlite_0/xps_uartlite_0/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_
    FIFO_RBU_F/CNTR_INCR_DECR_ADDN_F_I/STRUCTURAL_A_GEN.Addr_Counters[4].MUXCY_L_
    I/LO has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_620/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_619/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_617/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_616/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_618/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_615/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_614/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_613/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_612/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_610/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_69/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_611/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_68/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_67/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_66/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_65/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_63/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_62/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_64/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_61/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_420/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_419/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_418/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_417/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_415/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_414/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_416/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_413/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_412/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_411/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_410/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_48/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_47/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_49/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_46/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_45/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_44/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_43/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_41/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_42/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_320/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_319/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_318/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_317/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_316/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_315/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_313/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_312/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_314/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_311/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_310/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_39/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_38/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_36/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_35/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_37/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_34/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_33/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_32/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_31/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_520/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_518/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_517/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_519/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_516/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_515/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_514/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_513/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_511/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_510/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_512/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_59/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_58/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_57/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_56/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_54/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_53/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_55/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_52/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_51/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_220/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_219/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_218/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_217/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_215/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_214/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_216/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_213/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_212/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_211/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_210/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_28/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_27/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_29/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_26/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_25/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_24/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_23/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_21/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_22/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_120/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_119/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_118/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_117/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_116/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_115/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_113/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_112/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_114/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_111/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_110/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_19/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_18/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_16/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_15/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_17/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_14/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_13/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_12/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren_11/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren20/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren18/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren17/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren19/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren16/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren15/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren14/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren13/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren11/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren10/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren12/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren9/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren8/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren7/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren6/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren4/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren3/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren5/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren2/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM_ren1/SPO has
+   no load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM15/SPO has no
+   load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM14/SPO has no
+   load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM13/SPO has no
+   load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM12/SPO has no
+   load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM11/SPO has no
+   load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM9/SPO has no
+   load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM8/SPO has no
+   load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM10/SPO has no
+   load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM7/SPO has no
+   load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM6/SPO has no
+   load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM5/SPO has no
+   load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM4/SPO has no
+   load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM2/SPO has no
+   load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM1/SPO has no
+   load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM3/SPO has no
+   load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM20/SPO has no
+   load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM19/SPO has no
+   load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM18/SPO has no
+   load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM16/SPO has no
+   load.
+INFO:LIT:243 - Logical network
+   top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mram_RAM17/SPO has no
+   load.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
    rate limited output drivers. The delay on speed critical single ended outputs
@@ -1408,10 +1888,10 @@ INFO:Pack:1650 - Map created a placed design.
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-1278 block(s) removed
+1142 block(s) removed
  102 block(s) optimized away
-1267 signal(s) removed
- 597 Block(s) redundant
+1133 signal(s) removed
+ 639 Block(s) redundant
 
 Section 5 - Removed Logic
 -------------------------
@@ -5552,877 +6032,6 @@ Loadless block
 "plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/GTR_ONE_MASTER
 .FIXED_ARB_GEN.I_PRIOR_ENC/_not0003" (ROM) removed.
 Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.GEN_BRAM_NOT_V6_S6.
-I_DP_CORE/Using_RAMB16_S36_S36.BRAM_LOOP[1].I_DPB16_512x32" (RAMB16_S36_S36)
-removed.
- The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_enable" is
-loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/DP_
-core_wren1" (ROM) removed.
- The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_rd_enable" is
-loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/DP_
-core_rden1" (ROM) removed.
- The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_addr<0>" is
-loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[0].Counter_Bit
-_I/FDRE_I" (SFF) removed.
-   The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[0].Counter_Bit
-_I/count_Result" is loadless and has been removed.
-    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[0].Counter_Bit
-_I/XOR_I" (XOR) removed.
-     The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/alu_cy<1>" is loadless and
-has been removed.
-      Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[1].Counter_Bit
-_I/MUXCY_I" (MUX) removed.
-       The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/alu_cy<2>" is loadless and
-has been removed.
-        Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[2].Counter_Bit
-_I/MUXCY_I" (MUX) removed.
-         The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/alu_cy<3>" is loadless and
-has been removed.
-          Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[3].Counter_Bit
-_I/MUXCY_I" (MUX) removed.
-           The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/alu_cy<4>" is loadless and
-has been removed.
-            Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[4].Counter_Bit
-_I/MUXCY_I" (MUX) removed.
-             The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/alu_cy<5>" is loadless and
-has been removed.
-              Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[5].Counter_Bit
-_I/MUXCY_I" (MUX) removed.
-               The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/alu_cy<6>" is loadless and
-has been removed.
-                Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[6].Counter_Bit
-_I/MUXCY_I" (MUX) removed.
-                 The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/alu_cy<7>" is loadless and
-has been removed.
-                  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[7].Counter_Bit
-_I/MUXCY_I" (MUX) removed.
-                   The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/sig_cnt_up_n_dwn" is loadless and has been
-removed.
-                    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/sig_cnt_up_n_dwn1" (ROM) removed.
-                   The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[7].Counter_Bit
-_I/I_ALU_LUT/Mrom_O_rom0000" is loadless and has been removed.
-                    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[7].Counter_Bit
-_I/I_ALU_LUT/Mrom_O_rom000011" (ROM) removed.
-                     The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_addr<7>" is
-loadless and has been removed.
-                      Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[7].Counter_Bit
-_I/FDRE_I" (SFF) removed.
-                       The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[7].Counter_Bit
-_I/count_Result" is loadless and has been removed.
-                        Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[7].Counter_Bit
-_I/XOR_I" (XOR) removed.
-                 The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[6].Counter_Bit
-_I/I_ALU_LUT/Mrom_O_rom0000" is loadless and has been removed.
-                  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[6].Counter_Bit
-_I/I_ALU_LUT/Mrom_O_rom000011" (ROM) removed.
-                   The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_addr<6>" is
-loadless and has been removed.
-                    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[6].Counter_Bit
-_I/FDRE_I" (SFF) removed.
-                     The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[6].Counter_Bit
-_I/count_Result" is loadless and has been removed.
-                      Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[6].Counter_Bit
-_I/XOR_I" (XOR) removed.
-               The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[5].Counter_Bit
-_I/I_ALU_LUT/Mrom_O_rom0000" is loadless and has been removed.
-                Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[5].Counter_Bit
-_I/I_ALU_LUT/Mrom_O_rom000011" (ROM) removed.
-                 The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_addr<5>" is
-loadless and has been removed.
-                  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[5].Counter_Bit
-_I/FDRE_I" (SFF) removed.
-                   The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[5].Counter_Bit
-_I/count_Result" is loadless and has been removed.
-                    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[5].Counter_Bit
-_I/XOR_I" (XOR) removed.
-             The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[4].Counter_Bit
-_I/I_ALU_LUT/Mrom_O_rom0000" is loadless and has been removed.
-              Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[4].Counter_Bit
-_I/I_ALU_LUT/Mrom_O_rom000011" (ROM) removed.
-               The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_addr<4>" is
-loadless and has been removed.
-                Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[4].Counter_Bit
-_I/FDRE_I" (SFF) removed.
-                 The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[4].Counter_Bit
-_I/count_Result" is loadless and has been removed.
-                  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[4].Counter_Bit
-_I/XOR_I" (XOR) removed.
-           The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[3].Counter_Bit
-_I/I_ALU_LUT/Mrom_O_rom0000" is loadless and has been removed.
-            Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[3].Counter_Bit
-_I/I_ALU_LUT/Mrom_O_rom000011" (ROM) removed.
-             The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_addr<3>" is
-loadless and has been removed.
-              Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[3].Counter_Bit
-_I/FDRE_I" (SFF) removed.
-               The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[3].Counter_Bit
-_I/count_Result" is loadless and has been removed.
-                Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[3].Counter_Bit
-_I/XOR_I" (XOR) removed.
-         The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[2].Counter_Bit
-_I/I_ALU_LUT/Mrom_O_rom0000" is loadless and has been removed.
-          Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[2].Counter_Bit
-_I/I_ALU_LUT/Mrom_O_rom000011" (ROM) removed.
-           The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_addr<2>" is
-loadless and has been removed.
-            Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[2].Counter_Bit
-_I/FDRE_I" (SFF) removed.
-             The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[2].Counter_Bit
-_I/count_Result" is loadless and has been removed.
-              Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[2].Counter_Bit
-_I/XOR_I" (XOR) removed.
-       The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[1].Counter_Bit
-_I/I_ALU_LUT/Mrom_O_rom0000" is loadless and has been removed.
-        Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[1].Counter_Bit
-_I/I_ALU_LUT/Mrom_O_rom000011" (ROM) removed.
-         The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_addr<1>" is
-loadless and has been removed.
-          Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[1].Counter_Bit
-_I/FDRE_I" (SFF) removed.
-           The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[1].Counter_Bit
-_I/count_Result" is loadless and has been removed.
-            Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[1].Counter_Bit
-_I/XOR_I" (XOR) removed.
-     The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[0].Counter_Bit
-_I/I_ALU_LUT/Mrom_O_rom0000" is loadless and has been removed.
-      Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[0].Counter_Bit
-_I/I_ALU_LUT/Mrom_O_rom000011" (ROM) removed.
- The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_rd_addr<0>" is
-loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[0].Counter_Bit_
-I/FDRE_I" (SFF) removed.
-   The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/count_clock_en" is loadless
-and has been removed.
-    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/rd_
-backup1" (ROM) removed.
-   The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[0].Counter_Bit_
-I/count_Result" is loadless and has been removed.
-    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[0].Counter_Bit_
-I/XOR_I" (XOR) removed.
-     The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/alu_cy<1>" is loadless and
-has been removed.
-      Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[1].Counter_Bit_
-I/MUXCY_I" (MUX) removed.
-       The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/alu_cy<2>" is loadless and
-has been removed.
-        Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[2].Counter_Bit_
-I/MUXCY_I" (MUX) removed.
-         The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/alu_cy<3>" is loadless and
-has been removed.
-          Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[3].Counter_Bit_
-I/MUXCY_I" (MUX) removed.
-           The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/alu_cy<4>" is loadless and
-has been removed.
-            Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[4].Counter_Bit_
-I/MUXCY_I" (MUX) removed.
-             The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/alu_cy<5>" is loadless and
-has been removed.
-              Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[5].Counter_Bit_
-I/MUXCY_I" (MUX) removed.
-               The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/alu_cy<6>" is loadless and
-has been removed.
-                Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[6].Counter_Bit_
-I/MUXCY_I" (MUX) removed.
-                 The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/alu_cy<7>" is loadless and
-has been removed.
-                  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[7].Counter_Bit_
-I/MUXCY_I" (MUX) removed.
-                   The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[7].Counter_Bit_
-I/I_ALU_LUT/Mrom_O_rom0000" is loadless and has been removed.
-                    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[7].Counter_Bit_
-I/I_ALU_LUT/Mrom_O_rom000011_INV_0" (BUF) removed.
-                     The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_rd_addr<7>" is
-loadless and has been removed.
-                      Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[7].Counter_Bit_
-I/FDRE_I" (SFF) removed.
-                       The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[7].Counter_Bit_
-I/count_Result" is loadless and has been removed.
-                        Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[7].Counter_Bit_
-I/XOR_I" (XOR) removed.
-                 The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[6].Counter_Bit_
-I/I_ALU_LUT/Mrom_O_rom0000" is loadless and has been removed.
-                  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[6].Counter_Bit_
-I/I_ALU_LUT/Mrom_O_rom000011_INV_0" (BUF) removed.
-                   The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_rd_addr<6>" is
-loadless and has been removed.
-                    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[6].Counter_Bit_
-I/FDRE_I" (SFF) removed.
-                     The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[6].Counter_Bit_
-I/count_Result" is loadless and has been removed.
-                      Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[6].Counter_Bit_
-I/XOR_I" (XOR) removed.
-               The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[5].Counter_Bit_
-I/I_ALU_LUT/Mrom_O_rom0000" is loadless and has been removed.
-                Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[5].Counter_Bit_
-I/I_ALU_LUT/Mrom_O_rom000011_INV_0" (BUF) removed.
-                 The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_rd_addr<5>" is
-loadless and has been removed.
-                  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[5].Counter_Bit_
-I/FDRE_I" (SFF) removed.
-                   The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[5].Counter_Bit_
-I/count_Result" is loadless and has been removed.
-                    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[5].Counter_Bit_
-I/XOR_I" (XOR) removed.
-             The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[4].Counter_Bit_
-I/I_ALU_LUT/Mrom_O_rom0000" is loadless and has been removed.
-              Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[4].Counter_Bit_
-I/I_ALU_LUT/Mrom_O_rom000011_INV_0" (BUF) removed.
-               The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_rd_addr<4>" is
-loadless and has been removed.
-                Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[4].Counter_Bit_
-I/FDRE_I" (SFF) removed.
-                 The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[4].Counter_Bit_
-I/count_Result" is loadless and has been removed.
-                  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[4].Counter_Bit_
-I/XOR_I" (XOR) removed.
-           The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[3].Counter_Bit_
-I/I_ALU_LUT/Mrom_O_rom0000" is loadless and has been removed.
-            Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[3].Counter_Bit_
-I/I_ALU_LUT/Mrom_O_rom000011_INV_0" (BUF) removed.
-             The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_rd_addr<3>" is
-loadless and has been removed.
-              Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[3].Counter_Bit_
-I/FDRE_I" (SFF) removed.
-               The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[3].Counter_Bit_
-I/count_Result" is loadless and has been removed.
-                Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[3].Counter_Bit_
-I/XOR_I" (XOR) removed.
-         The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[2].Counter_Bit_
-I/I_ALU_LUT/Mrom_O_rom0000" is loadless and has been removed.
-          Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[2].Counter_Bit_
-I/I_ALU_LUT/Mrom_O_rom000011_INV_0" (BUF) removed.
-           The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_rd_addr<2>" is
-loadless and has been removed.
-            Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[2].Counter_Bit_
-I/FDRE_I" (SFF) removed.
-             The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[2].Counter_Bit_
-I/count_Result" is loadless and has been removed.
-              Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[2].Counter_Bit_
-I/XOR_I" (XOR) removed.
-       The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[1].Counter_Bit_
-I/I_ALU_LUT/Mrom_O_rom0000" is loadless and has been removed.
-        Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[1].Counter_Bit_
-I/I_ALU_LUT/Mrom_O_rom000011_INV_0" (BUF) removed.
-         The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_rd_addr<1>" is
-loadless and has been removed.
-          Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[1].Counter_Bit_
-I/FDRE_I" (SFF) removed.
-           The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[1].Counter_Bit_
-I/count_Result" is loadless and has been removed.
-            Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[1].Counter_Bit_
-I/XOR_I" (XOR) removed.
-     The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[0].Counter_Bit_
-I/I_ALU_LUT/Mrom_O_rom0000" is loadless and has been removed.
-      Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[0].Counter_Bit_
-I/I_ALU_LUT/Mrom_O_rom000011_INV_0" (BUF) removed.
- The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_data<0>" is
-loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_0_0" (SFF) removed.
-   The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_0_not0001" is loadless and has been removed.
-    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_0_not00011" (ROM) removed.
-   The signal
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg<0>" is loadless and has been removed.
-    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg_0" (SFF) removed.
- The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_data<1>" is
-loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_0_1" (SFF) removed.
-   The signal
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg<1>" is loadless and has been removed.
-    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg_1" (SFF) removed.
- The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_data<2>" is
-loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_0_2" (SFF) removed.
-   The signal
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg<2>" is loadless and has been removed.
-    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg_2" (SFF) removed.
- The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_data<3>" is
-loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_0_3" (SFF) removed.
-   The signal
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg<3>" is loadless and has been removed.
-    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg_3" (SFF) removed.
- The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_data<4>" is
-loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_0_4" (SFF) removed.
-   The signal
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg<4>" is loadless and has been removed.
-    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg_4" (SFF) removed.
- The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_data<5>" is
-loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_0_5" (SFF) removed.
-   The signal
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg<5>" is loadless and has been removed.
-    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg_5" (SFF) removed.
- The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_data<6>" is
-loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_0_6" (SFF) removed.
-   The signal
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg<6>" is loadless and has been removed.
-    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg_6" (SFF) removed.
- The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_data<7>" is
-loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_0_7" (SFF) removed.
-   The signal
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg<7>" is loadless and has been removed.
-    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg_7" (SFF) removed.
- The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_data<8>" is
-loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_1_0" (SFF) removed.
-   The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_1_not0001" is loadless and has been removed.
-    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_1_not00011" (ROM) removed.
-     The signal
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip
-_be_i<1>" is loadless and has been removed.
-      Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip
-_be_i_1" (SFF) removed.
-       The signal
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_be
-_reg<1>" is loadless and has been removed.
-        Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_be
-_reg_1" (SFF) removed.
-   The signal
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg<8>" is loadless and has been removed.
-    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg_8" (SFF) removed.
- The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_data<9>" is
-loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_1_1" (SFF) removed.
-   The signal
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg<9>" is loadless and has been removed.
-    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg_9" (SFF) removed.
- The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_data<10>"
-is loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_1_2" (SFF) removed.
-   The signal
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg<10>" is loadless and has been removed.
-    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg_10" (SFF) removed.
- The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_data<11>"
-is loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_1_3" (SFF) removed.
-   The signal
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg<11>" is loadless and has been removed.
-    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg_11" (SFF) removed.
- The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_data<12>"
-is loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_1_4" (SFF) removed.
-   The signal
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg<12>" is loadless and has been removed.
-    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg_12" (SFF) removed.
- The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_data<13>"
-is loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_1_5" (SFF) removed.
-   The signal
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg<13>" is loadless and has been removed.
-    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg_13" (SFF) removed.
- The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_data<14>"
-is loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_1_6" (SFF) removed.
-   The signal
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg<14>" is loadless and has been removed.
-    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg_14" (SFF) removed.
- The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_data<15>"
-is loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_1_7" (SFF) removed.
-   The signal
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg<15>" is loadless and has been removed.
-    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg_15" (SFF) removed.
- The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_data<16>"
-is loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_2_0" (SFF) removed.
-   The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_2_not0001" is loadless and has been removed.
-    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_2_not00011" (ROM) removed.
-     The signal
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip
-_be_i<2>" is loadless and has been removed.
-      Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip
-_be_i_2" (SFF) removed.
-       The signal
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_be
-_reg<2>" is loadless and has been removed.
-        Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_be
-_reg_2" (SFF) removed.
-   The signal
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg<16>" is loadless and has been removed.
-    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg_16" (SFF) removed.
- The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_data<17>"
-is loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_2_1" (SFF) removed.
-   The signal
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg<17>" is loadless and has been removed.
-    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg_17" (SFF) removed.
- The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_data<18>"
-is loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_2_2" (SFF) removed.
-   The signal
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg<18>" is loadless and has been removed.
-    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg_18" (SFF) removed.
- The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_data<19>"
-is loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_2_3" (SFF) removed.
-   The signal
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg<19>" is loadless and has been removed.
-    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg_19" (SFF) removed.
- The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_data<20>"
-is loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_2_4" (SFF) removed.
-   The signal
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg<20>" is loadless and has been removed.
-    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg_20" (SFF) removed.
- The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_data<21>"
-is loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_2_5" (SFF) removed.
-   The signal
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg<21>" is loadless and has been removed.
-    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg_21" (SFF) removed.
- The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_data<22>"
-is loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_2_6" (SFF) removed.
-   The signal
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg<22>" is loadless and has been removed.
-    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg_22" (SFF) removed.
- The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_data<23>"
-is loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_2_7" (SFF) removed.
-   The signal
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg<23>" is loadless and has been removed.
-    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg_23" (SFF) removed.
- The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_data<24>"
-is loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_3_0" (SFF) removed.
-   The signal
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg<24>" is loadless and has been removed.
-    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg_24" (SFF) removed.
- The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_data<25>"
-is loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_3_1" (SFF) removed.
-   The signal
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg<25>" is loadless and has been removed.
-    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg_25" (SFF) removed.
- The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_data<26>"
-is loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_3_2" (SFF) removed.
-   The signal
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg<26>" is loadless and has been removed.
-    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg_26" (SFF) removed.
- The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_data<27>"
-is loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_3_3" (SFF) removed.
-   The signal
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg<27>" is loadless and has been removed.
-    Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wr
-dbus_reg_27" (SFF) removed.
- The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_data<28>"
-is loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_3_4" (SFF) removed.
- The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_data<29>"
-is loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_3_5" (SFF) removed.
- The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_data<30>"
-is loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_3_6" (SFF) removed.
- The signal "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/sig_mem_wr_data<31>"
-is loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/write_data
-_reg_3_7" (SFF) removed.
-Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_DELAY_MUX/MAKE_DLY_MUX[0].I_SEL_LUT" (ROM) removed.
- The signal
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_DELAY_MUX/reg_out<0>" is loadless and has been removed.
-  Loadless block
-"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
-T_PACKET_FEATURES.I_DELAY_MUX/MAKE_DLY_MUX[0].FDRE_I" (SFF) removed.
-Loadless block
 "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
 T_PACKET_FEATURES.I_DELAY_MUX/MAKE_DLY_MUX[10].I_SEL_LUT" (ROM) removed.
  The signal
@@ -6532,7 +6141,7 @@ loadless and has been removed.
   Loadless block
 "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
 T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/Mxor_carry_active_high_Resul
-t1_INV_0" (BUF) removed.
+t1" (ROM) removed.
    The signal
 "top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMI
 T_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/alu_cy<0>" is loadless and
@@ -9133,29 +8742,52 @@ LOCALBUF
 e_ns147/LUT4_D_BUF
 LOCALBUF 		top_motor_0/top_motor_0/USER_LOGIC_I/motor_ctl_4_not000121/LUT4_D_BUF
 LOCALBUF
-		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/lcd_data_mux0000
-<0>10_SW0/LUT2_L_BUF
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/N231/LUT4_D_BUF
 LOCALBUF
 		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/lcd_data_mux0000
-<5>10_SW3/LUT4_L_BUF
+<1>21/LUT3_D_BUF
+LOCALBUF
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/e_mux000235/LUT4
+_L_BUF
+LOCALBUF
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/lcd_data_mux0000
+<3>15_SW0_SW0/LUT4_L_BUF
+LOCALBUF
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/lcd_data_mux0000
+<6>11_SW3/LUT4_L_BUF
+LOCALBUF
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/lcd_data_mux0000
+<6>111_SW3/LUT3_L_BUF
+LOCALBUF
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/lcd_data_mux0000
+<6>111_SW1/LUT4_D_BUF
+LOCALBUF
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/lcd_data_mux0000
+<2>21_SW0/LUT3_L_BUF
+LOCALBUF
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/lcd_data_mux0000
+<6>111_SW0/LUT4_D_BUF
+LOCALBUF
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/lcd_data_mux0000
+<0>26/LUT2_L_BUF
+LOCALBUF
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/lcd_data_mux0000
+<6>11_SW1/LUT4_D_BUF
 LOCALBUF
 		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux000
-9<0>161/LUT4_D_BUF
+9<0>1/LUT4_D_BUF
+LOCALBUF
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/e_mux000275/LUT4
+_L_BUF
+LOCALBUF
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux000
+9<0>114/LUT4_D_BUF
 LOCALBUF
 		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/lcd_data_mux0000
-<2>6/LUT3_L_BUF
+<3>25/LUT4_D_BUF
 LOCALBUF
-		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/lcd_data_mux0000
-<1>6/LUT3_L_BUF
-LOCALBUF
-		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/lcd_data_mux0000
-<0>112/LUT2_D_BUF
-LOCALBUF
-		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/lcd_data_mux0000
-<0>21/LUT3_D_BUF
-LOCALBUF
-		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/lcd_data_mux0000
-<3>11/LUT4_D_BUF
+		top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OM
+IT_PACKET_FEATURES.I_NORMAL_OCCUPANCY/sig_almost_empty2/LUT4_D_BUF
 INV
 		microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/EX_SWAP_BYTE_
 Instr_0_not00011_INV_0
@@ -9468,6 +9100,15 @@ LUT1 		top_motor_0/top_motor_0/USER_LOGIC_I/divisor_frec/Mcount_count_cy<23>_rt
 LUT1 		top_motor_0/top_motor_0/USER_LOGIC_I/divisor_frec/Mcount_count_cy<24>_rt
 LUT1 		top_motor_0/top_motor_0/USER_LOGIC_I/divisor_frec/Mcount_count_cy<25>_rt
 INV
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Madd_miregistro_not0000<
+0>1_INV_0
+INV
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Madd_miregistro_not0000<
+1>1_INV_0
+INV
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Madd_miregistro_not0000<
+2>1_INV_0
+INV
 		top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK/Bus2FIFO_
 Data_WrCE_inv1_INV_0
 INV
@@ -9483,38 +9124,7 @@ LUT1
 		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add00
 00_xor<31>_rt
 LUT1
-		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cm
-p_lt0009_cy<2>_rt
-LUT1
-		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add00
-00_cy<8>_rt
-LUT1
-		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cm
-p_lt0009_cy<4>_rt
-LUT1
-		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cm
-p_lt0009_cy<4>_0_rt
-LUT1
-		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add00
-00_cy<10>_rt
-LUT1
-		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cm
-p_lt0009_cy<0>_0_rt
-LUT1
-		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add00
-00_cy<5>_rt
-LUT1
-		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cm
-p_lt0009_cy<6>_0_rt
-LUT1
-		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add00
-00_cy<13>_rt
-LUT1
-		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cm
-p_lt0009_cy<10>_0_rt
-LUT1
-		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add00
-00_cy<21>_rt
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_count2_xor<26>_rt
 LUT1
 		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add00
 00_cy<1>_rt
@@ -9525,17 +9135,47 @@ LUT1
 		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add00
 00_cy<3>_rt
 LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cm
+p_lt0009_cy<0>_2_rt
+LUT1
 		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add00
 00_cy<4>_rt
 LUT1
 		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add00
+00_cy<5>_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cm
+p_lt0009_cy<0>_1_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add00
 00_cy<6>_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cm
+p_lt0009_cy<2>_0_rt
 LUT1
 		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add00
 00_cy<7>_rt
 LUT1
 		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add00
+00_cy<8>_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cm
+p_lt0009_cy<2>_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add00
 00_cy<9>_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add00
+00_cy<10>_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cm
+p_lt0009_cy<4>_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cm
+p_lt0009_cy<4>_0_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cm
+p_lt0009_cy<4>_1_rt
 LUT1
 		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add00
 00_cy<11>_rt
@@ -9543,8 +9183,20 @@ LUT1
 		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add00
 00_cy<12>_rt
 LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cm
+p_lt0009_cy<4>_2_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add00
+00_cy<13>_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cm
+p_lt0009_cy<6>_1_rt
+LUT1
 		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add00
 00_cy<14>_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cm
+p_lt0009_cy<6>_0_rt
 LUT1
 		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add00
 00_cy<15>_rt
@@ -9563,6 +9215,12 @@ LUT1
 LUT1
 		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add00
 00_cy<20>_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add00
+00_cy<21>_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cm
+p_lt0009_cy<10>_1_rt
 LUT1
 		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add00
 00_cy<22>_rt
@@ -9591,41 +9249,91 @@ LUT1
 		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add00
 00_cy<30>_rt
 LUT1
-		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcompar_fin_per_cmp_lt00
-00_cy<2>_rt
-LUT1
 		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cm
 p_lt0008_cy<6>_rt
 LUT1
 		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cm
-p_lt0008_cy<3>_0_rt
+p_lt0008_cy<3>_1_rt
 LUT1
 		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cm
 p_lt0008_cy<4>_2_rt
 LUT1
 		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cm
-p_lt0008_cy<4>_1_rt
+p_lt0008_cy<0>_0_rt
 LUT1
 		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cm
 p_lt0008_cy<0>_2_rt
 LUT1
 		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cm
-p_lt0008_cy<0>_3_rt
-LUT1
-		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cm
 p_lt0008_cy<0>_6_rt
 LUT1
 		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cm
-p_lt0008_cy<4>_3_rt
+p_lt0008_cy<4>_0_rt
 LUT1
 		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cm
 p_lt0008_cy<3>_6_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cm
+p_lt0008_cy<4>_3_rt
 LUT1
 		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cm
 p_lt0008_cy<2>_4_rt
 LUT1
 		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cm
 p_lt0008_cy<4>_5_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcompar_fin_per_cmp_lt00
+00_cy<2>_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_count2_cy<1>_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_count2_cy<2>_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_count2_cy<3>_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_count2_cy<4>_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_count2_cy<5>_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_count2_cy<6>_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_count2_cy<7>_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_count2_cy<8>_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_count2_cy<9>_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_count2_cy<10>_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_count2_cy<11>_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_count2_cy<12>_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_count2_cy<13>_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_count2_cy<14>_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_count2_cy<15>_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_count2_cy<16>_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_count2_cy<17>_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_count2_cy<18>_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_count2_cy<19>_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_count2_cy<20>_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_count2_cy<21>_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_count2_cy<22>_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_count2_cy<23>_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_count2_cy<24>_rt
+LUT1
+		top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_count2_cy<25>_rt
 LUT2
 		microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_IBUS.Using_IPLB.Ip
 lb_Interface_I2/IPLB_M_request_and00001
@@ -9832,7 +9540,7 @@ Section 6 - IOB Properties
 | RX_pin                             | IOB              | INPUT     | LVCMOS25             |       |          |      | INFF1        |          | IFD      |
 | Rst_pin                            | IOB              | INPUT     | LVCMOS25             |       |          |      | INFF1        |          | IFD      |
 |                                    |                  |           |                      |       |          |      | INFF2        |          |          |
-| TX_pin                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF2         |          |          |
+| TX_pin                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          |          |
 | USER1_BLUE_pin                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | USER1_GREEN_pin                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | USER1_RED_pin                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
@@ -9853,8 +9561,8 @@ Section 6 - IOB Properties
 | lb_data_pin<6>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | lb_data_pin<7>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | lb_e_ro_pin                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| lb_rs_cso_pin                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          |          |
-| lb_rw_cc_pin                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF1         |          |          |
+| lb_rs_cso_pin                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| lb_rw_cc_pin                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | top_altavoz_0_sonido_pin           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | top_motor_0_control_motor_pin<0>   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | top_motor_0_control_motor_pin<1>   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
@@ -11115,6 +10823,91 @@ DISABLE_ATTR:LOW
 
 
 
+RAMB16
+"top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.GEN_BRAM_NOT_V6_S6.
+I_DP_CORE/Using_RAMB16_S36_S36.BRAM_LOOP[1].I_DPB16_512x32":
+INITP_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_08 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_09 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_10 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_11 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_12 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_13 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_14 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_15 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_16 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_17 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_18 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_19 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_20 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_21 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_22 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_23 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_24 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_25 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_26 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_27 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_28 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_29 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_30 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_31 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_32 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_33 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_34 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_35 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_36 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_37 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_38 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_39 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3f = 0000000000000000000000000000000000000000000000000000000000000000
+PORTA_ATTR:512X36
+WRITEMODEA:WRITE_FIRST
+INIT_A = 000000000
+SRVAL_A = 000000000
+PORTB_ATTR:512X36
+WRITEMODEB:WRITE_FIRST
+INIT_B = 000000000
+SRVAL_B = 000000000
+
+
 
 Section 12 - Control Set Information
 ------------------------------------
@@ -11125,13 +10918,13 @@ Section 13 - Utilization by Hierarchy
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Module                                                              | Partition | Slices        | Slice Reg     | LUTs          | LUTRAM        | BRAM      | MULT18X18 | BUFG  | DCM   | Full Hierarchical Name                                                                                                                                                                  |
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| proyfinal/                                                          |           | 0/3012        | 0/1876        | 0/3126        | 0/468         | 0/16      | 0/3       | 1/3   | 0/0   | proyfinal                                                                                                                                                                               |
+| proyfinal/                                                          |           | 0/3421        | 0/2045        | 0/3767        | 0/788         | 0/17      | 0/3       | 1/3   | 0/0   | proyfinal                                                                                                                                                                               |
 | +bram_block_0                                                       |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/16      | 0/0       | 0/0   | 0/0   | proyfinal/bram_block_0                                                                                                                                                                  |
 | ++bram_block_0                                                      |           | 0/0           | 0/0           | 0/0           | 0/0           | 16/16     | 0/0       | 0/0   | 0/0   | proyfinal/bram_block_0/bram_block_0                                                                                                                                                     |
-| +microblaze_0                                                       |           | 0/1344        | 0/643         | 0/1804        | 0/449         | 0/0       | 0/3       | 0/0   | 0/0   | proyfinal/microblaze_0                                                                                                                                                                  |
-| ++microblaze_0                                                      |           | 0/1344        | 0/643         | 0/1804        | 0/449         | 0/0       | 0/3       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0                                                                                                                                                     |
-| +++MicroBlaze_Core_I                                                |           | 3/1344        | 3/643         | 0/1804        | 0/449         | 0/0       | 0/3       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I                                                                                                                                   |
-| ++++Performance.Data_Flow_I                                         |           | 168/815       | 0/290         | 258/1292      | 0/384         | 0/0       | 0/3       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I                                                                                                           |
+| +microblaze_0                                                       |           | 0/1332        | 0/643         | 0/1804        | 0/449         | 0/0       | 0/3       | 0/0   | 0/0   | proyfinal/microblaze_0                                                                                                                                                                  |
+| ++microblaze_0                                                      |           | 0/1332        | 0/643         | 0/1804        | 0/449         | 0/0       | 0/3       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0                                                                                                                                                     |
+| +++MicroBlaze_Core_I                                                |           | 3/1332        | 3/643         | 0/1804        | 0/449         | 0/0       | 0/3       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I                                                                                                                                   |
+| ++++Performance.Data_Flow_I                                         |           | 166/819       | 0/290         | 258/1292      | 0/384         | 0/0       | 0/3       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I                                                                                                           |
 | +++++ALU_I                                                          |           | 1/34          | 0/0           | 1/35          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I                                                                                                     |
 | ++++++FPGA_Target.ALL_Bits[0].ALU_Bit_I1                            |           | 2/2           | 0/0           | 3/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[0].ALU_Bit_I1                                                                  |
 | ++++++FPGA_Target.ALL_Bits[10].ALU_Bit_I1                           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[10].ALU_Bit_I1                                                                 |
@@ -11165,12 +10958,12 @@ Section 13 - Utilization by Hierarchy
 | ++++++FPGA_Target.ALL_Bits[7].ALU_Bit_I1                            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[7].ALU_Bit_I1                                                                  |
 | ++++++FPGA_Target.ALL_Bits[8].ALU_Bit_I1                            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[8].ALU_Bit_I1                                                                  |
 | ++++++FPGA_Target.ALL_Bits[9].ALU_Bit_I1                            |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[9].ALU_Bit_I1                                                                  |
-| +++++Byte_Doublet_Handle_gti_I                                      |           | 50/50         | 43/43         | 84/84         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Byte_Doublet_Handle_gti_I                                                                                 |
-| +++++Data_Flow_Logic_I                                              |           | 53/53         | 65/65         | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Data_Flow_Logic_I                                                                                         |
-| +++++MUL_Unit_I                                                     |           | 24/24         | 32/32         | 32/32         | 0/0           | 0/0       | 3/3       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/MUL_Unit_I                                                                                                |
-| +++++Operand_Select_I                                               |           | 160/160       | 144/144       | 291/291       | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Operand_Select_I                                                                                          |
+| +++++Byte_Doublet_Handle_gti_I                                      |           | 48/48         | 43/43         | 84/84         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Byte_Doublet_Handle_gti_I                                                                                 |
+| +++++Data_Flow_Logic_I                                              |           | 55/55         | 65/65         | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Data_Flow_Logic_I                                                                                         |
+| +++++MUL_Unit_I                                                     |           | 29/29         | 32/32         | 32/32         | 0/0           | 0/0       | 3/3       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/MUL_Unit_I                                                                                                |
+| +++++Operand_Select_I                                               |           | 162/162       | 144/144       | 291/291       | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Operand_Select_I                                                                                          |
 | +++++Register_File_I                                                |           | 192/192       | 0/0           | 384/384       | 384/384       | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I                                                                                           |
-| +++++Shift_Logic_Module_I                                           |           | 46/66         | 0/0           | 80/109        | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Shift_Logic_Module_I                                                                                      |
+| +++++Shift_Logic_Module_I                                           |           | 45/65         | 0/0           | 80/109        | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Shift_Logic_Module_I                                                                                      |
 | ++++++Use_PCMP_instr.Using_FPGA_PCMP.carry_equal_byte1              |           | 3/3           | 0/0           | 5/5           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Shift_Logic_Module_I/Use_PCMP_instr.Using_FPGA_PCMP.carry_equal_byte1                                     |
 | ++++++Use_PCMP_instr.Using_FPGA_PCMP.carry_equal_byte2              |           | 3/3           | 0/0           | 5/5           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Shift_Logic_Module_I/Use_PCMP_instr.Using_FPGA_PCMP.carry_equal_byte2                                     |
 | ++++++Use_PCMP_instr.Using_FPGA_PCMP.carry_equal_byte3              |           | 3/3           | 0/0           | 5/5           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Shift_Logic_Module_I/Use_PCMP_instr.Using_FPGA_PCMP.carry_equal_byte3                                     |
@@ -11211,9 +11004,9 @@ Section 13 - Utilization by Hierarchy
 | ++++++FPGA_Target.ALL_Bits[9].Wb_Mux_I1                             |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/WB_Mux_I/FPGA_Target.ALL_Bits[9].Wb_Mux_I1                                                                |
 | +++++Zero_Detect_I                                                  |           | 5/5           | 0/0           | 9/9           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Zero_Detect_I                                                                                             |
 | +++++msr_reg_i                                                      |           | 13/13         | 6/6           | 16/16         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i                                                                                                 |
-| ++++Performance.Decode_I                                            |           | 152/394       | 122/246       | 159/472       | 0/65          | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I                                                                                                              |
-| +++++PC_Module_I                                                    |           | 125/125       | 64/64         | 158/158       | 32/32         | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PC_Module_I                                                                                                  |
-| +++++PreFetch_Buffer_I1                                             |           | 88/88         | 50/50         | 136/136       | 33/33         | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PreFetch_Buffer_I1                                                                                           |
+| ++++Performance.Decode_I                                            |           | 143/388       | 122/246       | 159/472       | 0/65          | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I                                                                                                              |
+| +++++PC_Module_I                                                    |           | 129/129       | 64/64         | 158/158       | 32/32         | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PC_Module_I                                                                                                  |
+| +++++PreFetch_Buffer_I1                                             |           | 89/89         | 50/50         | 136/136       | 33/33         | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PreFetch_Buffer_I1                                                                                           |
 | +++++Use_MuxCy[1].OF_Piperun_Stage                                  |           | 1/1           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Use_MuxCy[1].OF_Piperun_Stage                                                                                |
 | +++++Use_MuxCy[2].OF_Piperun_Stage                                  |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Use_MuxCy[2].OF_Piperun_Stage                                                                                |
 | +++++Use_MuxCy[3].OF_Piperun_Stage                                  |           | 1/1           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Use_MuxCy[3].OF_Piperun_Stage                                                                                |
@@ -11225,23 +11018,23 @@ Section 13 - Utilization by Hierarchy
 | +++++Use_MuxCy[9].OF_Piperun_Stage                                  |           | 1/1           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Use_MuxCy[9].OF_Piperun_Stage                                                                                |
 | +++++if_pc_incr_carry_and_0                                         |           | 1/1           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/if_pc_incr_carry_and_0                                                                                       |
 | +++++if_pc_incr_carry_and_3                                         |           | 1/1           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/if_pc_incr_carry_and_3                                                                                       |
-| +++++jump_logic_I1                                                  |           | 16/16         | 10/10         | 17/17         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1                                                                                                |
+| +++++jump_logic_I1                                                  |           | 14/14         | 10/10         | 17/17         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/jump_logic_I1                                                                                                |
 | +++++mem_PipeRun_carry_and                                          |           | 1/1           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/mem_PipeRun_carry_and                                                                                        |
 | +++++mem_wait_on_ready_N_carry_or                                   |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/mem_wait_on_ready_N_carry_or                                                                                 |
 | ++++Performance.No_Debug.combined_carry_or_I                        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.No_Debug.combined_carry_or_I                                                                                          |
-| ++++Performance.Use_DBUS.Using_D_PLB.DPLB_Interface_I2              |           | 38/38         | 37/37         | 4/4           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DBUS.Using_D_PLB.DPLB_Interface_I2                                                                                |
-| ++++Performance.Use_IBUS.Using_IPLB.Iplb_Interface_I2               |           | 62/62         | 67/67         | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_IBUS.Using_IPLB.Iplb_Interface_I2                                                                                 |
+| ++++Performance.Use_DBUS.Using_D_PLB.DPLB_Interface_I2              |           | 33/33         | 37/37         | 4/4           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DBUS.Using_D_PLB.DPLB_Interface_I2                                                                                |
+| ++++Performance.Use_IBUS.Using_IPLB.Iplb_Interface_I2               |           | 59/59         | 67/67         | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_IBUS.Using_IPLB.Iplb_Interface_I2                                                                                 |
 | ++++Performance.mem_databus_ready_sel_carry_or                      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.mem_databus_ready_sel_carry_or                                                                                        |
-| ++++Performance.read_data_mux_I                                     |           | 30/30         | 0/0           | 32/32         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.read_data_mux_I                                                                                                       |
-| +plb_v46_0                                                          |           | 0/212         | 0/80          | 0/248         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/plb_v46_0                                                                                                                                                                     |
-| ++plb_v46_0                                                         |           | 6/212         | 6/80          | 0/248         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/plb_v46_0/plb_v46_0                                                                                                                                                           |
-| +++GEN_SHARED.I_PLB_ADDRPATH                                        |           | 29/58         | 36/36         | 0/36          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ADDRPATH                                                                                                                                 |
-| ++++I_PLBADDR_MUX                                                   |           | 25/25         | 0/0           | 32/32         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ADDRPATH/I_PLBADDR_MUX                                                                                                                   |
+| ++++Performance.read_data_mux_I                                     |           | 28/28         | 0/0           | 32/32         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.read_data_mux_I                                                                                                       |
+| +plb_v46_0                                                          |           | 0/208         | 0/80          | 0/248         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/plb_v46_0                                                                                                                                                                     |
+| ++plb_v46_0                                                         |           | 6/208         | 6/80          | 0/248         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/plb_v46_0/plb_v46_0                                                                                                                                                           |
+| +++GEN_SHARED.I_PLB_ADDRPATH                                        |           | 24/49         | 36/36         | 0/36          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ADDRPATH                                                                                                                                 |
+| ++++I_PLBADDR_MUX                                                   |           | 21/21         | 0/0           | 32/32         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ADDRPATH/I_PLBADDR_MUX                                                                                                                   |
 | ++++I_PLBBE_MUX                                                     |           | 4/4           | 0/0           | 4/4           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ADDRPATH/I_PLBBE_MUX                                                                                                                     |
-| +++GEN_SHARED.I_PLB_ARBITER_LOGIC                                   |           | 2/77          | 2/38          | 0/101         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC                                                                                                                            |
-| ++++I_ARBCONTROL_SM                                                 |           | 54/54         | 25/25         | 83/83         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM                                                                                                            |
-| ++++I_ARB_ENCODER                                                   |           | 5/10          | 6/6           | 0/6           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER                                                                                                              |
-| +++++GTR_ONE_MASTER.FIXED_ARB_GEN.I_PRIOR_ENC                       |           | 4/5           | 0/0           | 5/6           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/GTR_ONE_MASTER.FIXED_ARB_GEN.I_PRIOR_ENC                                                                     |
+| +++GEN_SHARED.I_PLB_ARBITER_LOGIC                                   |           | 2/78          | 2/38          | 0/101         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC                                                                                                                            |
+| ++++I_ARBCONTROL_SM                                                 |           | 56/56         | 25/25         | 83/83         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM                                                                                                            |
+| ++++I_ARB_ENCODER                                                   |           | 3/9           | 6/6           | 0/6           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER                                                                                                              |
+| +++++GTR_ONE_MASTER.FIXED_ARB_GEN.I_PRIOR_ENC                       |           | 5/6           | 0/0           | 5/6           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/GTR_ONE_MASTER.FIXED_ARB_GEN.I_PRIOR_ENC                                                                     |
 | ++++++MASTER_LVLS[0].I_QUAL_MASTERS_REQUEST                         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/GTR_ONE_MASTER.FIXED_ARB_GEN.I_PRIOR_ENC/MASTER_LVLS[0].I_QUAL_MASTERS_REQUEST                               |
 | ++++I_GENQUALREQ                                                    |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_GENQUALREQ                                                                                                               |
 | ++++I_MUXEDSIGNALS                                                  |           | 1/3           | 0/0           | 1/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_MUXEDSIGNALS                                                                                                             |
@@ -11258,30 +11051,30 @@ Section 13 - Utilization by Hierarchy
 | ++++REARB_OR                                                        |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_SLAVE_ORS/REARB_OR                                                                                                                       |
 | ++++WRCOMP_OR                                                       |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_SLAVE_ORS/WRCOMP_OR                                                                                                                      |
 | ++++WRDACK_OR                                                       |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_SLAVE_ORS/WRDACK_OR                                                                                                                      |
-| +++GEN_SHARED.I_PLB_WR_DATAPATH                                     |           | 2/29          | 0/0           | 2/34          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_WR_DATAPATH                                                                                                                              |
-| ++++I_WRDBUS_MUX                                                    |           | 27/27         | 0/0           | 32/32         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX                                                                                                                 |
+| +++GEN_SHARED.I_PLB_WR_DATAPATH                                     |           | 2/33          | 0/0           | 2/34          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_WR_DATAPATH                                                                                                                              |
+| ++++I_WRDBUS_MUX                                                    |           | 31/31         | 0/0           | 32/32         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/plb_v46_0/plb_v46_0/GEN_SHARED.I_PLB_WR_DATAPATH/I_WRDBUS_MUX                                                                                                                 |
 | +proyfinal                                                          |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/proyfinal                                                                                                                                                                     |
-| +top_altavoz_0                                                      |           | 0/202         | 0/166         | 0/134         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_altavoz_0                                                                                                                                                                 |
-| ++top_altavoz_0                                                     |           | 0/202         | 0/166         | 0/134         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_altavoz_0/top_altavoz_0                                                                                                                                                   |
+| +top_altavoz_0                                                      |           | 0/198         | 0/166         | 0/134         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_altavoz_0                                                                                                                                                                 |
+| ++top_altavoz_0                                                     |           | 0/198         | 0/166         | 0/134         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_altavoz_0/top_altavoz_0                                                                                                                                                   |
 | +++PLBV46_SLAVE_SINGLE_I                                            |           | 0/96          | 0/101         | 0/16          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_altavoz_0/top_altavoz_0/PLBV46_SLAVE_SINGLE_I                                                                                                                             |
 | ++++I_SLAVE_ATTACHMENT                                              |           | 87/96         | 97/101        | 9/16          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_altavoz_0/top_altavoz_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT                                                                                                          |
 | +++++I_DECODER                                                      |           | 6/9           | 4/4           | 2/7           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_altavoz_0/top_altavoz_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER                                                                                                |
 | ++++++MEM_DECODE_GEN[0].GEN_PLB_SHARED.MEM_SELECT_I                 |           | 3/3           | 0/0           | 5/5           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_altavoz_0/top_altavoz_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].GEN_PLB_SHARED.MEM_SELECT_I                                                  |
-| +++USER_LOGIC_I                                                     |           | 106/106       | 65/65         | 118/118       | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_altavoz_0/top_altavoz_0/USER_LOGIC_I                                                                                                                                      |
-| +top_keypad_0                                                       |           | 0/223         | 0/185         | 0/145         | 0/0           | 0/0       | 0/0       | 0/1   | 0/0   | proyfinal/top_keypad_0                                                                                                                                                                  |
-| ++top_keypad_0                                                      |           | 0/223         | 0/185         | 0/145         | 0/0           | 0/0       | 0/0       | 0/1   | 0/0   | proyfinal/top_keypad_0/top_keypad_0                                                                                                                                                     |
-| +++PLBV46_SLAVE_SINGLE_I                                            |           | 0/112         | 0/113         | 0/32          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_keypad_0/top_keypad_0/PLBV46_SLAVE_SINGLE_I                                                                                                                               |
-| ++++I_SLAVE_ATTACHMENT                                              |           | 95/112        | 99/113        | 14/32         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_keypad_0/top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT                                                                                                            |
-| +++++INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER                          |           | 7/7           | 9/9           | 11/11         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_keypad_0/top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER                                                                      |
+| +++USER_LOGIC_I                                                     |           | 102/102       | 65/65         | 118/118       | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_altavoz_0/top_altavoz_0/USER_LOGIC_I                                                                                                                                      |
+| +top_keypad_0                                                       |           | 0/221         | 0/185         | 0/145         | 0/0           | 0/0       | 0/0       | 0/1   | 0/0   | proyfinal/top_keypad_0                                                                                                                                                                  |
+| ++top_keypad_0                                                      |           | 0/221         | 0/185         | 0/145         | 0/0           | 0/0       | 0/0       | 0/1   | 0/0   | proyfinal/top_keypad_0/top_keypad_0                                                                                                                                                     |
+| +++PLBV46_SLAVE_SINGLE_I                                            |           | 0/109         | 0/113         | 0/32          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_keypad_0/top_keypad_0/PLBV46_SLAVE_SINGLE_I                                                                                                                               |
+| ++++I_SLAVE_ATTACHMENT                                              |           | 91/109        | 99/113        | 14/32         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_keypad_0/top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT                                                                                                            |
+| +++++INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER                          |           | 8/8           | 9/9           | 11/11         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_keypad_0/top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER                                                                      |
 | +++++I_DECODER                                                      |           | 7/10          | 5/5           | 2/7           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_keypad_0/top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER                                                                                                  |
 | ++++++MEM_DECODE_GEN[0].GEN_PLB_SHARED.MEM_SELECT_I                 |           | 3/3           | 0/0           | 5/5           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_keypad_0/top_keypad_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].GEN_PLB_SHARED.MEM_SELECT_I                                                    |
-| +++USER_LOGIC_I                                                     |           | 70/111        | 37/72         | 48/113        | 0/0           | 0/0       | 0/0       | 1/1   | 0/0   | proyfinal/top_keypad_0/top_keypad_0/USER_LOGIC_I                                                                                                                                        |
+| +++USER_LOGIC_I                                                     |           | 71/112        | 37/72         | 48/113        | 0/0           | 0/0       | 0/0       | 1/1   | 0/0   | proyfinal/top_keypad_0/top_keypad_0/USER_LOGIC_I                                                                                                                                        |
 | ++++TeclaDetecInst                                                  |           | 41/41         | 35/35         | 65/65         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_keypad_0/top_keypad_0/USER_LOGIC_I/TeclaDetecInst                                                                                                                         |
-| +top_lcdbanner_0                                                    |           | 0/264         | 0/158         | 0/336         | 0/0           | 0/0       | 0/0       | 0/1   | 0/0   | proyfinal/top_lcdbanner_0                                                                                                                                                               |
-| ++top_lcdbanner_0                                                   |           | 3/264         | 0/158         | 4/336         | 0/0           | 0/0       | 0/0       | 0/1   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0                                                                                                                                               |
-| +++PLBV46_SLAVE_SINGLE_I                                            |           | 0/67          | 0/63          | 0/24          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I                                                                                                                         |
-| ++++I_SLAVE_ATTACHMENT                                              |           | 42/67         | 45/63         | 9/24          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT                                                                                                      |
-| +++++I_DECODER                                                      |           | 15/25         | 18/18         | 2/15          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER                                                                                            |
+| +top_lcdbanner_0                                                    |           | 0/708         | 0/327         | 0/977         | 0/320         | 0/1       | 0/0       | 0/1   | 0/0   | proyfinal/top_lcdbanner_0                                                                                                                                                               |
+| ++top_lcdbanner_0                                                   |           | 3/708         | 0/327         | 4/977         | 0/320         | 0/1       | 0/0       | 0/1   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0                                                                                                                                               |
+| +++PLBV46_SLAVE_SINGLE_I                                            |           | 0/97          | 0/95          | 0/24          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I                                                                                                                         |
+| ++++I_SLAVE_ATTACHMENT                                              |           | 69/97         | 77/95         | 9/24          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT                                                                                                      |
+| +++++I_DECODER                                                      |           | 18/28         | 18/18         | 2/15          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER                                                                                            |
 | ++++++I_OR_CS                                                       |           | 0/1           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/I_OR_CS                                                                                    |
 | +++++++USE_MUXCY_OR_GEN.BUS_WIDTH_FOR_GEN[0].OR_BITS_I              |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/I_OR_CS/USE_MUXCY_OR_GEN.BUS_WIDTH_FOR_GEN[0].OR_BITS_I                                    |
 | ++++++MEM_DECODE_GEN[0].GEN_PLB_SHARED.MEM_SELECT_I                 |           | 4/4           | 0/0           | 7/7           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].GEN_PLB_SHARED.MEM_SELECT_I                                              |
@@ -11290,14 +11083,16 @@ Section 13 - Utilization by Hierarchy
 | ++++++MEM_DECODE_GEN[1].PER_CE_GEN[1].MULTIPLE_CES_THIS_CS_GEN.CE_I |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[1].PER_CE_GEN[1].MULTIPLE_CES_THIS_CS_GEN.CE_I                              |
 | ++++++MEM_DECODE_GEN[1].PER_CE_GEN[2].MULTIPLE_CES_THIS_CS_GEN.CE_I |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[1].PER_CE_GEN[2].MULTIPLE_CES_THIS_CS_GEN.CE_I                              |
 | ++++++MEM_DECODE_GEN[2].GEN_PLB_SHARED.MEM_SELECT_I                 |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[2].GEN_PLB_SHARED.MEM_SELECT_I                                              |
-| +++USER_LOGIC_I                                                     |           | 0/142         | 0/69          | 0/265         | 0/0           | 0/0       | 0/0       | 0/1   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I                                                                                                                                  |
-| ++++lcd_controller_i                                                |           | 113/113       | 40/40         | 220/220       | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i                                                                                                                 |
-| ++++mybanner                                                        |           | 29/29         | 29/29         | 45/45         | 0/0           | 0/0       | 0/0       | 1/1   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner                                                                                                                         |
-| +++WRPFIFO_TOP_I                                                    |           | 0/52          | 0/26          | 0/43          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I                                                                                                                                 |
-| ++++I_IPIF_INTERFACE_BLOCK                                          |           | 19/19         | 12/12         | 19/19         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK                                                                                                          |
-| ++++USE_BLOCK_RAM.I_DP_CONTROLLER                                   |           | 9/33          | 5/14          | 6/24          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER                                                                                                   |
-| +++++OMIT_PACKET_FEATURES.I_NORMAL_OCCUPANCY                        |           | 3/24          | 0/9           | 5/18          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_NORMAL_OCCUPANCY                                                           |
-| ++++++I_UP_DWN_COUNTER                                              |           | 3/21          | 0/9           | 4/13          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_NORMAL_OCCUPANCY/I_UP_DWN_COUNTER                                          |
+| +++USER_LOGIC_I                                                     |           | 14/482        | 2/154         | 14/873        | 0/320         | 0/0       | 0/0       | 0/1   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I                                                                                                                                  |
+| ++++lcd_controller_i                                                |           | 141/141       | 46/46         | 269/269       | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i                                                                                                                 |
+| ++++mybanner                                                        |           | 327/327       | 106/106       | 590/590       | 320/320       | 0/0       | 0/0       | 1/1   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner                                                                                                                         |
+| +++WRPFIFO_TOP_I                                                    |           | 0/126         | 0/78          | 0/76          | 0/0           | 0/1       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I                                                                                                                                 |
+| ++++I_IPIF_INTERFACE_BLOCK                                          |           | 46/46         | 44/44         | 22/22         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/I_IPIF_INTERFACE_BLOCK                                                                                                          |
+| ++++USE_BLOCK_RAM.GEN_BRAM_NOT_V6_S6.I_DP_CORE                      |           | 0/0           | 0/0           | 0/0           | 0/0           | 1/1       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.GEN_BRAM_NOT_V6_S6.I_DP_CORE                                                                                      |
+| ++++USE_BLOCK_RAM.I_DP_CONTROLLER                                   |           | 16/80         | 8/34          | 15/54         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER                                                                                                   |
+| +++++OMIT_PACKET_FEATURES.I_DELAY_MUX                               |           | 2/2           | 1/1           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_DELAY_MUX                                                                  |
+| +++++OMIT_PACKET_FEATURES.I_NORMAL_OCCUPANCY                        |           | 5/27          | 0/9           | 6/19          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_NORMAL_OCCUPANCY                                                           |
+| ++++++I_UP_DWN_COUNTER                                              |           | 4/22          | 0/9           | 4/13          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_NORMAL_OCCUPANCY/I_UP_DWN_COUNTER                                          |
 | +++++++I_ADDSUB_GEN[0].Counter_Bit_I                                |           | 1/2           | 1/1           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_NORMAL_OCCUPANCY/I_UP_DWN_COUNTER/I_ADDSUB_GEN[0].Counter_Bit_I            |
 | ++++++++I_ALU_LUT                                                   |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_NORMAL_OCCUPANCY/I_UP_DWN_COUNTER/I_ADDSUB_GEN[0].Counter_Bit_I/I_ALU_LUT  |
 | +++++++I_ADDSUB_GEN[1].Counter_Bit_I                                |           | 1/2           | 1/1           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_NORMAL_OCCUPANCY/I_UP_DWN_COUNTER/I_ADDSUB_GEN[1].Counter_Bit_I            |
@@ -11316,49 +11111,85 @@ Section 13 - Utilization by Hierarchy
 | ++++++++I_ALU_LUT                                                   |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_NORMAL_OCCUPANCY/I_UP_DWN_COUNTER/I_ADDSUB_GEN[7].Counter_Bit_I/I_ALU_LUT  |
 | +++++++I_COUNTER_BIT_LSB                                            |           | 1/2           | 1/1           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_NORMAL_OCCUPANCY/I_UP_DWN_COUNTER/I_COUNTER_BIT_LSB                        |
 | ++++++++I_ALU_LUT                                                   |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_NORMAL_OCCUPANCY/I_UP_DWN_COUNTER/I_COUNTER_BIT_LSB/I_ALU_LUT              |
-| +top_leds_0                                                         |           | 0/282         | 0/232         | 0/176         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_leds_0                                                                                                                                                                    |
-| ++top_leds_0                                                        |           | 0/282         | 0/232         | 0/176         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_leds_0/top_leds_0                                                                                                                                                         |
-| +++PLBV46_SLAVE_SINGLE_I                                            |           | 0/114         | 0/112         | 0/20          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_leds_0/top_leds_0/PLBV46_SLAVE_SINGLE_I                                                                                                                                   |
-| ++++I_SLAVE_ATTACHMENT                                              |           | 95/114        | 99/112        | 10/20         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_leds_0/top_leds_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT                                                                                                                |
-| +++++I_DECODER                                                      |           | 13/19         | 13/13         | 2/10          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_leds_0/top_leds_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER                                                                                                      |
+| +++++OMIT_PACKET_FEATURES.I_READ_ADDR_CNTR                          |           | 2/18          | 0/8           | 2/10          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_READ_ADDR_CNTR                                                             |
+| ++++++I_UP_DWN_COUNTER                                              |           | 0/16          | 0/8           | 0/8           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER                                            |
+| +++++++I_ADDSUB_GEN[0].Counter_Bit_I                                |           | 1/2           | 1/1           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[0].Counter_Bit_I              |
+| ++++++++I_ALU_LUT                                                   |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[0].Counter_Bit_I/I_ALU_LUT    |
+| +++++++I_ADDSUB_GEN[1].Counter_Bit_I                                |           | 1/2           | 1/1           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[1].Counter_Bit_I              |
+| ++++++++I_ALU_LUT                                                   |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[1].Counter_Bit_I/I_ALU_LUT    |
+| +++++++I_ADDSUB_GEN[2].Counter_Bit_I                                |           | 1/2           | 1/1           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[2].Counter_Bit_I              |
+| ++++++++I_ALU_LUT                                                   |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[2].Counter_Bit_I/I_ALU_LUT    |
+| +++++++I_ADDSUB_GEN[3].Counter_Bit_I                                |           | 1/2           | 1/1           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[3].Counter_Bit_I              |
+| ++++++++I_ALU_LUT                                                   |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[3].Counter_Bit_I/I_ALU_LUT    |
+| +++++++I_ADDSUB_GEN[4].Counter_Bit_I                                |           | 1/2           | 1/1           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[4].Counter_Bit_I              |
+| ++++++++I_ALU_LUT                                                   |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[4].Counter_Bit_I/I_ALU_LUT    |
+| +++++++I_ADDSUB_GEN[5].Counter_Bit_I                                |           | 1/2           | 1/1           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[5].Counter_Bit_I              |
+| ++++++++I_ALU_LUT                                                   |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[5].Counter_Bit_I/I_ALU_LUT    |
+| +++++++I_ADDSUB_GEN[6].Counter_Bit_I                                |           | 1/2           | 1/1           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[6].Counter_Bit_I              |
+| ++++++++I_ALU_LUT                                                   |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[6].Counter_Bit_I/I_ALU_LUT    |
+| +++++++I_ADDSUB_GEN[7].Counter_Bit_I                                |           | 1/2           | 1/1           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[7].Counter_Bit_I              |
+| ++++++++I_ALU_LUT                                                   |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[7].Counter_Bit_I/I_ALU_LUT    |
+| +++++OMIT_PACKET_FEATURES.I_WRITE_ADDR_CNTR                         |           | 1/17          | 0/8           | 1/9           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_WRITE_ADDR_CNTR                                                            |
+| ++++++I_UP_DWN_COUNTER                                              |           | 0/16          | 0/8           | 0/8           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER                                           |
+| +++++++I_ADDSUB_GEN[0].Counter_Bit_I                                |           | 1/2           | 1/1           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[0].Counter_Bit_I             |
+| ++++++++I_ALU_LUT                                                   |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[0].Counter_Bit_I/I_ALU_LUT   |
+| +++++++I_ADDSUB_GEN[1].Counter_Bit_I                                |           | 1/2           | 1/1           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[1].Counter_Bit_I             |
+| ++++++++I_ALU_LUT                                                   |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[1].Counter_Bit_I/I_ALU_LUT   |
+| +++++++I_ADDSUB_GEN[2].Counter_Bit_I                                |           | 1/2           | 1/1           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[2].Counter_Bit_I             |
+| ++++++++I_ALU_LUT                                                   |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[2].Counter_Bit_I/I_ALU_LUT   |
+| +++++++I_ADDSUB_GEN[3].Counter_Bit_I                                |           | 1/2           | 1/1           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[3].Counter_Bit_I             |
+| ++++++++I_ALU_LUT                                                   |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[3].Counter_Bit_I/I_ALU_LUT   |
+| +++++++I_ADDSUB_GEN[4].Counter_Bit_I                                |           | 1/2           | 1/1           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[4].Counter_Bit_I             |
+| ++++++++I_ALU_LUT                                                   |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[4].Counter_Bit_I/I_ALU_LUT   |
+| +++++++I_ADDSUB_GEN[5].Counter_Bit_I                                |           | 1/2           | 1/1           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[5].Counter_Bit_I             |
+| ++++++++I_ALU_LUT                                                   |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[5].Counter_Bit_I/I_ALU_LUT   |
+| +++++++I_ADDSUB_GEN[6].Counter_Bit_I                                |           | 1/2           | 1/1           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[6].Counter_Bit_I             |
+| ++++++++I_ALU_LUT                                                   |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[6].Counter_Bit_I/I_ALU_LUT   |
+| +++++++I_ADDSUB_GEN[7].Counter_Bit_I                                |           | 1/2           | 1/1           | 0/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[7].Counter_Bit_I             |
+| ++++++++I_ALU_LUT                                                   |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_ADDSUB_GEN[7].Counter_Bit_I/I_ALU_LUT   |
+| +top_leds_0                                                         |           | 0/277         | 0/232         | 0/176         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_leds_0                                                                                                                                                                    |
+| ++top_leds_0                                                        |           | 0/277         | 0/232         | 0/176         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_leds_0/top_leds_0                                                                                                                                                         |
+| +++PLBV46_SLAVE_SINGLE_I                                            |           | 0/113         | 0/112         | 0/20          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_leds_0/top_leds_0/PLBV46_SLAVE_SINGLE_I                                                                                                                                   |
+| ++++I_SLAVE_ATTACHMENT                                              |           | 95/113        | 99/112        | 10/20         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_leds_0/top_leds_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT                                                                                                                |
+| +++++I_DECODER                                                      |           | 12/18         | 13/13         | 2/10          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_leds_0/top_leds_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER                                                                                                      |
 | ++++++MEM_DECODE_GEN[0].GEN_PLB_SHARED.MEM_SELECT_I                 |           | 3/3           | 0/0           | 5/5           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_leds_0/top_leds_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].GEN_PLB_SHARED.MEM_SELECT_I                                                        |
 | ++++++MEM_DECODE_GEN[0].PER_CE_GEN[0].MULTIPLE_CES_THIS_CS_GEN.CE_I |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_leds_0/top_leds_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].PER_CE_GEN[0].MULTIPLE_CES_THIS_CS_GEN.CE_I                                        |
 | ++++++MEM_DECODE_GEN[0].PER_CE_GEN[1].MULTIPLE_CES_THIS_CS_GEN.CE_I |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_leds_0/top_leds_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].PER_CE_GEN[1].MULTIPLE_CES_THIS_CS_GEN.CE_I                                        |
 | ++++++MEM_DECODE_GEN[0].PER_CE_GEN[2].MULTIPLE_CES_THIS_CS_GEN.CE_I |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_leds_0/top_leds_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].PER_CE_GEN[2].MULTIPLE_CES_THIS_CS_GEN.CE_I                                        |
-| +++USER_LOGIC_I                                                     |           | 168/168       | 120/120       | 156/156       | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_leds_0/top_leds_0/USER_LOGIC_I                                                                                                                                            |
-| +top_motor_0                                                        |           | 0/213         | 0/172         | 0/136         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_motor_0                                                                                                                                                                   |
-| ++top_motor_0                                                       |           | 0/213         | 0/172         | 0/136         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_motor_0/top_motor_0                                                                                                                                                       |
-| +++PLBV46_SLAVE_SINGLE_I                                            |           | 0/100         | 0/105         | 0/18          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_motor_0/top_motor_0/PLBV46_SLAVE_SINGLE_I                                                                                                                                 |
-| ++++I_SLAVE_ATTACHMENT                                              |           | 87/100        | 98/105        | 9/18          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_motor_0/top_motor_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT                                                                                                              |
-| +++++I_DECODER                                                      |           | 8/13          | 7/7           | 2/9           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_motor_0/top_motor_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER                                                                                                    |
+| +++USER_LOGIC_I                                                     |           | 164/164       | 120/120       | 156/156       | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_leds_0/top_leds_0/USER_LOGIC_I                                                                                                                                            |
+| +top_motor_0                                                        |           | 0/217         | 0/172         | 0/136         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_motor_0                                                                                                                                                                   |
+| ++top_motor_0                                                       |           | 0/217         | 0/172         | 0/136         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_motor_0/top_motor_0                                                                                                                                                       |
+| +++PLBV46_SLAVE_SINGLE_I                                            |           | 0/104         | 0/105         | 0/18          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_motor_0/top_motor_0/PLBV46_SLAVE_SINGLE_I                                                                                                                                 |
+| ++++I_SLAVE_ATTACHMENT                                              |           | 90/104        | 98/105        | 9/18          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_motor_0/top_motor_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT                                                                                                              |
+| +++++I_DECODER                                                      |           | 9/14          | 7/7           | 2/9           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_motor_0/top_motor_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER                                                                                                    |
 | ++++++MEM_DECODE_GEN[0].GEN_PLB_SHARED.MEM_SELECT_I                 |           | 3/3           | 0/0           | 5/5           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_motor_0/top_motor_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].GEN_PLB_SHARED.MEM_SELECT_I                                                      |
 | ++++++MEM_DECODE_GEN[0].PER_CE_GEN[0].MULTIPLE_CES_THIS_CS_GEN.CE_I |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_motor_0/top_motor_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].PER_CE_GEN[0].MULTIPLE_CES_THIS_CS_GEN.CE_I                                      |
 | ++++++MEM_DECODE_GEN[0].PER_CE_GEN[1].MULTIPLE_CES_THIS_CS_GEN.CE_I |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_motor_0/top_motor_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].PER_CE_GEN[1].MULTIPLE_CES_THIS_CS_GEN.CE_I                                      |
-| +++USER_LOGIC_I                                                     |           | 73/113        | 35/67         | 50/118        | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_motor_0/top_motor_0/USER_LOGIC_I                                                                                                                                          |
-| ++++divisor_frec                                                    |           | 33/33         | 29/29         | 62/62         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_motor_0/top_motor_0/USER_LOGIC_I/divisor_frec                                                                                                                             |
-| ++++motor_step_entity                                               |           | 7/7           | 3/3           | 6/6           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_motor_0/top_motor_0/USER_LOGIC_I/motor_step_entity                                                                                                                        |
-| +xps_bram_if_cntlr_0                                                |           | 0/117         | 0/113         | 0/25          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_bram_if_cntlr_0                                                                                                                                                           |
-| ++xps_bram_if_cntlr_0                                               |           | 10/117        | 3/113         | 8/25          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_bram_if_cntlr_0/xps_bram_if_cntlr_0                                                                                                                                       |
-| +++SINGLES_ONLY_SUPPORT.I_SLAVE_SINGLE_ATTACH                       |           | 107/107       | 110/110       | 17/17         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_bram_if_cntlr_0/xps_bram_if_cntlr_0/SINGLES_ONLY_SUPPORT.I_SLAVE_SINGLE_ATTACH                                                                                            |
-| +xps_uartlite_0                                                     |           | 0/155         | 0/127         | 0/122         | 0/19          | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_uartlite_0                                                                                                                                                                |
-| ++xps_uartlite_0                                                    |           | 0/155         | 0/127         | 0/122         | 0/19          | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_uartlite_0/xps_uartlite_0                                                                                                                                                 |
-| +++PLBV46_I                                                         |           | 0/82          | 0/77          | 0/39          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_uartlite_0/xps_uartlite_0/PLBV46_I                                                                                                                                        |
-| ++++I_SLAVE_ATTACHMENT                                              |           | 53/82         | 56/77         | 14/39         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_uartlite_0/xps_uartlite_0/PLBV46_I/I_SLAVE_ATTACHMENT                                                                                                                     |
-| +++++INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER                          |           | 7/7           | 9/9           | 11/11         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_uartlite_0/xps_uartlite_0/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER                                                                               |
-| +++++I_DECODER                                                      |           | 14/22         | 12/12         | 2/14          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_uartlite_0/xps_uartlite_0/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER                                                                                                           |
+| +++USER_LOGIC_I                                                     |           | 74/113        | 35/67         | 50/118        | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_motor_0/top_motor_0/USER_LOGIC_I                                                                                                                                          |
+| ++++divisor_frec                                                    |           | 34/34         | 29/29         | 62/62         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_motor_0/top_motor_0/USER_LOGIC_I/divisor_frec                                                                                                                             |
+| ++++motor_step_entity                                               |           | 5/5           | 3/3           | 6/6           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/top_motor_0/top_motor_0/USER_LOGIC_I/motor_step_entity                                                                                                                        |
+| +xps_bram_if_cntlr_0                                                |           | 0/113         | 0/113         | 0/25          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_bram_if_cntlr_0                                                                                                                                                           |
+| ++xps_bram_if_cntlr_0                                               |           | 10/113        | 3/113         | 8/25          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_bram_if_cntlr_0/xps_bram_if_cntlr_0                                                                                                                                       |
+| +++SINGLES_ONLY_SUPPORT.I_SLAVE_SINGLE_ATTACH                       |           | 103/103       | 110/110       | 17/17         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_bram_if_cntlr_0/xps_bram_if_cntlr_0/SINGLES_ONLY_SUPPORT.I_SLAVE_SINGLE_ATTACH                                                                                            |
+| +xps_uartlite_0                                                     |           | 0/147         | 0/127         | 0/122         | 0/19          | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_uartlite_0                                                                                                                                                                |
+| ++xps_uartlite_0                                                    |           | 0/147         | 0/127         | 0/122         | 0/19          | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_uartlite_0/xps_uartlite_0                                                                                                                                                 |
+| +++PLBV46_I                                                         |           | 0/77          | 0/77          | 0/39          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_uartlite_0/xps_uartlite_0/PLBV46_I                                                                                                                                        |
+| ++++I_SLAVE_ATTACHMENT                                              |           | 49/77         | 56/77         | 14/39         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_uartlite_0/xps_uartlite_0/PLBV46_I/I_SLAVE_ATTACHMENT                                                                                                                     |
+| +++++INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER                          |           | 8/8           | 9/9           | 11/11         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_uartlite_0/xps_uartlite_0/PLBV46_I/I_SLAVE_ATTACHMENT/INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER                                                                               |
+| +++++I_DECODER                                                      |           | 12/20         | 12/12         | 2/14          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_uartlite_0/xps_uartlite_0/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER                                                                                                           |
 | ++++++MEM_DECODE_GEN[0].GEN_PLB_SHARED.MEM_SELECT_I                 |           | 4/4           | 0/0           | 8/8           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_uartlite_0/xps_uartlite_0/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].GEN_PLB_SHARED.MEM_SELECT_I                                                             |
 | ++++++MEM_DECODE_GEN[0].PER_CE_GEN[0].MULTIPLE_CES_THIS_CS_GEN.CE_I |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_uartlite_0/xps_uartlite_0/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].PER_CE_GEN[0].MULTIPLE_CES_THIS_CS_GEN.CE_I                                             |
 | ++++++MEM_DECODE_GEN[0].PER_CE_GEN[1].MULTIPLE_CES_THIS_CS_GEN.CE_I |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_uartlite_0/xps_uartlite_0/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].PER_CE_GEN[1].MULTIPLE_CES_THIS_CS_GEN.CE_I                                             |
 | ++++++MEM_DECODE_GEN[0].PER_CE_GEN[2].MULTIPLE_CES_THIS_CS_GEN.CE_I |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_uartlite_0/xps_uartlite_0/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].PER_CE_GEN[2].MULTIPLE_CES_THIS_CS_GEN.CE_I                                             |
 | ++++++MEM_DECODE_GEN[0].PER_CE_GEN[3].MULTIPLE_CES_THIS_CS_GEN.CE_I |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_uartlite_0/xps_uartlite_0/PLBV46_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].PER_CE_GEN[3].MULTIPLE_CES_THIS_CS_GEN.CE_I                                             |
-| +++UARTLITE_CORE_I                                                  |           | 16/73         | 6/50          | 13/83         | 0/19          | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_uartlite_0/xps_uartlite_0/UARTLITE_CORE_I                                                                                                                                 |
+| +++UARTLITE_CORE_I                                                  |           | 16/70         | 6/50          | 13/83         | 0/19          | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_uartlite_0/xps_uartlite_0/UARTLITE_CORE_I                                                                                                                                 |
 | ++++BAUD_RATE_I                                                     |           | 8/8           | 10/10         | 13/13         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_uartlite_0/xps_uartlite_0/UARTLITE_CORE_I/BAUD_RATE_I                                                                                                                     |
-| ++++UARTLITE_RX_I                                                   |           | 21/29         | 14/20         | 12/27         | 2/10          | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_uartlite_0/xps_uartlite_0/UARTLITE_CORE_I/UARTLITE_RX_I                                                                                                                   |
+| ++++UARTLITE_RX_I                                                   |           | 19/27         | 14/20         | 12/27         | 2/10          | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_uartlite_0/xps_uartlite_0/UARTLITE_CORE_I/UARTLITE_RX_I                                                                                                                   |
 | +++++SRL_FIFO_I                                                     |           | 0/8           | 0/6           | 0/15          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_uartlite_0/xps_uartlite_0/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I                                                                                                        |
 | ++++++I_SRL_FIFO_RBU_F                                              |           | 1/8           | 1/6           | 2/15          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_uartlite_0/xps_uartlite_0/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F                                                                                       |
 | +++++++CNTR_INCR_DECR_ADDN_F_I                                      |           | 3/3           | 5/5           | 5/5           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_uartlite_0/xps_uartlite_0/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/CNTR_INCR_DECR_ADDN_F_I                                                               |
 | +++++++DYNSHREG_F_I                                                 |           | 4/4           | 0/0           | 8/8           | 8/8           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_uartlite_0/xps_uartlite_0/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I                                                                          |
-| ++++UARTLITE_TX_I                                                   |           | 12/20         | 8/14          | 15/30         | 1/9           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_uartlite_0/xps_uartlite_0/UARTLITE_CORE_I/UARTLITE_TX_I                                                                                                                   |
+| ++++UARTLITE_TX_I                                                   |           | 11/19         | 8/14          | 15/30         | 1/9           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_uartlite_0/xps_uartlite_0/UARTLITE_CORE_I/UARTLITE_TX_I                                                                                                                   |
 | +++++SRL_FIFO_I                                                     |           | 0/8           | 0/6           | 0/15          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_uartlite_0/xps_uartlite_0/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I                                                                                                        |
 | ++++++I_SRL_FIFO_RBU_F                                              |           | 1/8           | 1/6           | 2/15          | 0/8           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_uartlite_0/xps_uartlite_0/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F                                                                                       |
 | +++++++CNTR_INCR_DECR_ADDN_F_I                                      |           | 3/3           | 5/5           | 5/5           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | proyfinal/xps_uartlite_0/xps_uartlite_0/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/CNTR_INCR_DECR_ADDN_F_I                                                               |

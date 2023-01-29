@@ -4,7 +4,7 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> 
 TABLE OF CONTENTS
@@ -560,40 +560,43 @@ Design Statistics
 # IOs                              : 31
 
 Cell Usage :
-# BELS                             : 4466
+# BELS                             : 4912
 #      GND                         : 27
-#      INV                         : 80
-#      LUT1                        : 196
-#      LUT2                        : 440
-#      LUT2_D                      : 13
+#      INV                         : 78
+#      LUT1                        : 227
+#      LUT2                        : 486
+#      LUT2_D                      : 12
 #      LUT2_L                      : 26
-#      LUT3                        : 952
+#      LUT3                        : 1121
 #      LUT3_D                      : 28
 #      LUT3_L                      : 29
-#      LUT4                        : 1248
-#      LUT4_D                      : 35
-#      LUT4_L                      : 39
+#      LUT4                        : 1296
+#      LUT4_D                      : 41
+#      LUT4_L                      : 42
 #      MULT_AND                    : 34
-#      MUXCY                       : 481
+#      MUXCY                       : 537
 #      MUXCY_L                     : 161
-#      MUXF5                       : 350
+#      MUXF5                       : 405
+#      MUXF6                       : 5
+#      MUXF7                       : 2
+#      MUXF8                       : 1
 #      VCC                         : 9
-#      XORCY                       : 318
-# FlipFlops/Latches                : 2735
-#      FD                          : 38
-#      FDC                         : 118
-#      FDCE                        : 32
-#      FDE                         : 199
-#      FDP                         : 5
+#      XORCY                       : 345
+# FlipFlops/Latches                : 2821
+#      FD                          : 43
+#      FDC                         : 145
+#      FDCE                        : 78
+#      FDE                         : 200
+#      FDP                         : 6
 #      FDPE                        : 8
-#      FDR                         : 1172
+#      FDR                         : 1177
 #      FDRE                        : 1042
-#      FDRS                        : 19
-#      FDRSE                       : 4
-#      FDS                         : 52
+#      FDRS                        : 18
+#      FDRSE                       : 5
+#      FDS                         : 53
 #      FDSE                        : 46
-# RAMS                             : 209
-#      RAM16X1D                    : 192
+# RAMS                             : 369
+#      RAM16X1D                    : 352
 #      RAMB16                      : 17
 # Shift Registers                  : 84
 #      SRL16E                      : 84
@@ -612,12 +615,12 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-5 
 
- Number of Slices:                     2474  out of   7680    32%  
- Number of Slice Flip Flops:           2735  out of  15360    17%  
- Number of 4 input LUTs:               3554  out of  15360    23%  
-    Number used as logic:              3086
+ Number of Slices:                     2689  out of   7680    35%  
+ Number of Slice Flip Flops:           2821  out of  15360    18%  
+ Number of 4 input LUTs:               4174  out of  15360    27%  
+    Number used as logic:              3386
     Number used as Shift registers:      84
-    Number used as RAMs:                384
+    Number used as RAMs:                704
  Number of IOs:                          31
  Number of bonded IOBs:                  31  out of    173    17%  
  Number of BRAMs:                        17  out of     24    70%  
@@ -645,11 +648,11 @@ Clock Information:
 --------------------------------------------------------------+-----------------------------------------------------------------------------------+-------+
 Clock Signal                                                  | Clock buffer(FF name)                                                             | Load  |
 --------------------------------------------------------------+-----------------------------------------------------------------------------------+-------+
-Clk_pin                                                       | BUFGP                                                                             | 2967  |
+Clk_pin                                                       | BUFGP                                                                             | 3172  |
 N0                                                            | NONE(bram_block_0/bram_block_0/ramb16_s2_s2_0/ramb16_s2_s2_0)                     | 16    |
 top_keypad_0/top_keypad_0/USER_LOGIC_I/reloj121               | BUFG                                                                              | 35    |
 top_motor_0/top_motor_0/USER_LOGIC_I/divisor_frec/co          | NONE(top_motor_0/top_motor_0/USER_LOGIC_I/motor_step_entity/current_step_FSM_FFd2)| 3     |
-top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/reloj121| BUFG                                                                              | 26    |
+top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/reloj121| BUFG                                                                              | 67    |
 --------------------------------------------------------------+-----------------------------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -658,10 +661,10 @@ Asynchronous Control Signals Information:
 ---------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 Control Signal                                                                                                                                     | Buffer(FF name)                                                                                                                                      | Load  |
 ---------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+plb_v46_0/SPLB_Rst<6>(plb_v46_0/plb_v46_0/GEN_SPLB_RST[6].I_SPLB_RST:Q)                                                                            | NONE(top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/ce_row_clk)                                                                               | 105   |
 plb_v46_0/SPLB_Rst<2>(plb_v46_0/plb_v46_0/GEN_SPLB_RST[2].I_SPLB_RST:Q)                                                                            | NONE(top_keypad_0/top_keypad_0/USER_LOGIC_I/TeclaDetecInst/aux1)                                                                                     | 40    |
 plb_v46_0/SPLB_Rst<5>(plb_v46_0/plb_v46_0/GEN_SPLB_RST[5].I_SPLB_RST:Q)                                                                            | NONE(top_motor_0/top_motor_0/USER_LOGIC_I/divisor_frec/ce)                                                                                           | 35    |
 plb_v46_0/SPLB_Rst<3>(plb_v46_0/plb_v46_0/GEN_SPLB_RST[3].I_SPLB_RST:Q)                                                                            | NONE(top_altavoz_0/top_altavoz_0/USER_LOGIC_I/cs_0)                                                                                                  | 33    |
-plb_v46_0/SPLB_Rst<6>(plb_v46_0/plb_v46_0/GEN_SPLB_RST[6].I_SPLB_RST:Q)                                                                            | NONE(top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/col_clk)                                                                                  | 31    |
 plb_v46_0/SPLB_Rst<4>(plb_v46_0/plb_v46_0/GEN_SPLB_RST[4].I_SPLB_RST:Q)                                                                            | NONE(top_leds_0/top_leds_0/USER_LOGIC_I/cnt_blue_0)                                                                                                  | 24    |
 microblaze_0/Trace_EX_PipeRun(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Use_MuxCy[2].OF_Piperun_Stage/Using_FPGA.MUXCY_I:LO)| NONE(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_MULT18x18_Architecture.Using_FPGA.MULT18x18S_AD)| 3     |
 microblaze_0/microblaze_0/MicroBlaze_Core_I/sync_reset_1(microblaze_0/microblaze_0/MicroBlaze_Core_I/sync_reset_1:Q)                               | NONE(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_MULT18x18_Architecture.Using_FPGA.MULT18x18S_AD)| 3     |
@@ -671,9 +674,9 @@ Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 12.345ns (Maximum Frequency: 81.006MHz)
+   Minimum period: 12.474ns (Maximum Frequency: 80.167MHz)
    Minimum input arrival time before clock: 5.481ns
-   Maximum output required time after clock: 8.927ns
+   Maximum output required time after clock: 13.545ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -682,23 +685,22 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Clk_pin'
-  Clock period: 12.345ns (frequency: 81.006MHz)
-  Total number of paths / destination ports: 355580 / 8615
+  Clock period: 12.474ns (frequency: 80.167MHz)
+  Total number of paths / destination ports: 378819 / 8835
 -------------------------------------------------------------------------
-Delay:               12.345ns (Levels of Logic = 35)
-  Source:            top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_1 (FF)
+Delay:               12.474ns (Levels of Logic = 35)
+  Source:            top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_2 (FF)
   Destination:       top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_31 (FF)
   Source Clock:      Clk_pin rising
   Destination Clock: Clk_pin rising
 
-  Data Path: top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_1 to top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_31
+  Data Path: top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_2 to top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               1   0.626   0.976  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_1 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count<1>)
-     LUT1:I0->O            1   0.479   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<1>_rt (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<1>_rt)
-     MUXCY:S->O            1   0.435   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<1> (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<1>)
-     MUXCY:CI->O           1   0.056   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<2> (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<2>)
+     FD:C->Q               2   0.626   1.040  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_2 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count<2>)
+     LUT1:I0->O            1   0.479   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<2>_rt (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<2>_rt)
+     MUXCY:S->O            1   0.435   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<2> (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<2>)
      MUXCY:CI->O           1   0.056   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<3> (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<3>)
      MUXCY:CI->O           1   0.056   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<4> (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<4>)
      MUXCY:CI->O           1   0.056   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<5> (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<5>)
@@ -724,17 +726,18 @@ Delay:               12.345ns (Levels of Logic = 35)
      MUXCY:CI->O           1   0.056   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<25> (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<25>)
      MUXCY:CI->O           1   0.056   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<26> (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<26>)
      MUXCY:CI->O           1   0.056   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<27> (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<27>)
-     XORCY:CI->O           9   0.786   1.250  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_xor<28> (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/state_add0000<28>)
-     LUT3:I0->O            1   0.479   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_lut<11>3 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_lut<11>3)
-     MUXCY:S->O            1   0.435   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<11>_2 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<11>3)
-     MUXCY:CI->O           5   0.265   1.078  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<12>_1 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<12>2)
-     LUT4:I0->O            1   0.479   0.740  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<0>110 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<0>110)
-     LUT4_D:I2->O         31   0.479   1.740  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<0>161 (top_lcdbanner_0/N0)
-     LUT2:I1->O            1   0.479   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<9>1 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<9>)
-     FD:D                      0.176          top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_22
+     MUXCY:CI->O           1   0.056   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<28> (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<28>)
+     XORCY:CI->O           9   0.786   1.250  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_xor<29> (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/state_add0000<29>)
+     LUT2:I0->O            1   0.479   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_lut<10>3 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_lut<10>3)
+     MUXCY:S->O            1   0.435   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<10>_2 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<10>3)
+     MUXCY:CI->O           5   0.265   1.078  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<11>_1 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<11>2)
+     LUT4:I0->O            2   0.479   0.804  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<0>119 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<0>119)
+     LUT4_D:I2->O         31   0.479   1.740  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<0>1 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/N01)
+     LUT2:I1->O            1   0.479   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<8>1 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<8>)
+     FD:D                      0.176          top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_23
     ----------------------------------------
-    Total                     12.345ns (6.561ns logic, 5.784ns route)
-                                       (53.1% logic, 46.9% route)
+    Total                     12.474ns (6.561ns logic, 5.913ns route)
+                                       (52.6% logic, 47.4% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'top_keypad_0/top_keypad_0/USER_LOGIC_I/reloj121'
@@ -789,7 +792,7 @@ Delay:               2.882ns (Levels of Logic = 1)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/reloj121'
   Clock period: 6.957ns (frequency: 143.748MHz)
-  Total number of paths / destination ports: 1636 / 35
+  Total number of paths / destination ports: 1975 / 116
 -------------------------------------------------------------------------
 Delay:               6.957ns (Levels of Logic = 23)
   Source:            top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/t_persistencia_0 (FF)
@@ -811,7 +814,7 @@ Delay:               6.957ns (Levels of Logic = 23)
      MUXCY:CI->O           1   0.056   0.000  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcompar_fin_per_cmp_lt0000_cy<5> (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcompar_fin_per_cmp_lt0000_cy<5>)
      MUXCY:CI->O           1   0.056   0.000  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcompar_fin_per_cmp_lt0000_cy<6> (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcompar_fin_per_cmp_lt0000_cy<6>)
      MUXCY:CI->O          15   0.246   1.010  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcompar_fin_per_cmp_lt0000_cy<7> (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcompar_fin_per_cmp_lt0000_cy<7>)
-     INV:I->O              1   0.479   0.681  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcompar_fin_per_cmp_lt0000_cy<7>_inv_INV_0 (top_lcdbanner_0/USER_LOGIC_I/mybanner/fin_per_cmp_lt0000)
+     INV:I->O              1   0.479   0.681  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcompar_fin_per_cmp_lt0000_cy<7>_inv_INV_0 (top_lcdbanner_0/USER_LOGIC_I/mybanner/fin_per_mux0001_inv)
      MUXCY:CI->O           1   0.056   0.000  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_t_persistencia_cy<0> (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_t_persistencia_cy<0>)
      MUXCY:CI->O           1   0.056   0.000  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_t_persistencia_cy<1> (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_t_persistencia_cy<1>)
      MUXCY:CI->O           1   0.056   0.000  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_t_persistencia_cy<2> (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mcount_t_persistencia_cy<2>)
@@ -875,46 +878,57 @@ Offset:              5.481ns (Levels of Logic = 5)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk_pin'
-  Total number of paths / destination ports: 85 / 16
+  Total number of paths / destination ports: 154 / 20
 -------------------------------------------------------------------------
-Offset:              8.927ns (Levels of Logic = 4)
-  Source:            plb_v46_0/plb_v46_0/GEN_SPLB_RST[6].I_SPLB_RST (FF)
-  Destination:       lb_e_ro_pin (PAD)
+Offset:              13.545ns (Levels of Logic = 9)
+  Source:            top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/desplazamiento_3 (FF)
+  Destination:       lb_data_pin<0> (PAD)
   Source Clock:      Clk_pin rising
 
-  Data Path: plb_v46_0/plb_v46_0/GEN_SPLB_RST[6].I_SPLB_RST to lb_e_ro_pin
+  Data Path: top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/desplazamiento_3 to lb_data_pin<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS:C->Q            167   0.626   2.232  plb_v46_0/GEN_SPLB_RST[6].I_SPLB_RST (SPLB_Rst<6>)
-     end scope: 'plb_v46_0'
-     begin scope: 'top_lcdbanner_0'
-     INV:I->O              1   0.479   0.681  top_lcdbanner_0/USER_LOGIC_I/mybanner/reset_in_inv1_INV_0 (lb_e_ro)
+     FDCE:C->Q            25   0.626   1.711  top_lcdbanner_0/USER_LOGIC_I/mybanner/desplazamiento_3 (top_lcdbanner_0/USER_LOGIC_I/mybanner/desplazamiento<3>)
+     LUT2:I1->O            8   0.479   0.921  top_lcdbanner_0/USER_LOGIC_I/mybanner/Madd_miregistro_sub0000_xor<4>11 (top_lcdbanner_0/USER_LOGIC_I/mybanner/miregistro_sub0000<4>)
+     MUXF5:S->O            1   0.540   0.000  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_8_f5 (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_8_f5)
+     MUXF6:I1->O           1   0.298   0.000  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_7_f6 (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_7_f6)
+     MUXF7:I1->O           1   0.298   0.000  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_6_f7 (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_6_f7)
+     MUXF8:I1->O           1   0.298   0.976  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_5_f8 (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_5_f8)
+     LUT4:I0->O            1   0.479   0.851  top_lcdbanner_0/USER_LOGIC_I/lb_data_0_mux000030 (top_lcdbanner_0/USER_LOGIC_I/lb_data_0_mux000030)
+     LUT4:I1->O            1   0.479   0.681  top_lcdbanner_0/USER_LOGIC_I/lb_data_0_mux000091 (lb_data<0>)
      end scope: 'top_lcdbanner_0'
-     OBUF:I->O                 4.909          lb_e_ro_pin_OBUF (lb_e_ro_pin)
+     OBUF:I->O                 4.909          lb_data_pin_0_OBUF (lb_data_pin<0>)
     ----------------------------------------
-    Total                      8.927ns (6.014ns logic, 2.913ns route)
-                                       (67.4% logic, 32.6% route)
+    Total                     13.545ns (8.406ns logic, 5.139ns route)
+                                       (62.1% logic, 37.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/reloj121'
-  Total number of paths / destination ports: 2 / 2
+  Total number of paths / destination ports: 42 / 3
 -------------------------------------------------------------------------
-Offset:              6.216ns (Levels of Logic = 2)
-  Source:            top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/col_serial_out (FF)
-  Destination:       lb_rs_cso_pin (PAD)
+Offset:              11.603ns (Levels of Logic = 9)
+  Source:            top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/miregistro_0 (FF)
+  Destination:       lb_data_pin<0> (PAD)
   Source Clock:      top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/reloj121 rising
 
-  Data Path: top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/col_serial_out to lb_rs_cso_pin
+  Data Path: top_lcdbanner_0/top_lcdbanner_0/USER_LOGIC_I/mybanner/miregistro_0 to lb_data_pin<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDP:C->Q              1   0.626   0.681  top_lcdbanner_0/USER_LOGIC_I/mybanner/col_serial_out (lb_rs_cso)
+     FDCE:C->Q             2   0.626   0.915  top_lcdbanner_0/USER_LOGIC_I/mybanner/miregistro_0 (top_lcdbanner_0/USER_LOGIC_I/mybanner/miregistro<0>)
+     LUT3:I1->O            1   0.479   0.000  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_13 (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_13)
+     MUXF5:I0->O           1   0.314   0.000  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_11_f5 (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_11_f5)
+     MUXF6:I0->O           1   0.298   0.000  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_9_f6 (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_9_f6)
+     MUXF7:I0->O           1   0.298   0.000  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_7_f7 (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_7_f7)
+     MUXF8:I0->O           1   0.298   0.976  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_5_f8 (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_5_f8)
+     LUT4:I0->O            1   0.479   0.851  top_lcdbanner_0/USER_LOGIC_I/lb_data_0_mux000030 (top_lcdbanner_0/USER_LOGIC_I/lb_data_0_mux000030)
+     LUT4:I1->O            1   0.479   0.681  top_lcdbanner_0/USER_LOGIC_I/lb_data_0_mux000091 (lb_data<0>)
      end scope: 'top_lcdbanner_0'
-     OBUF:I->O                 4.909          lb_rs_cso_pin_OBUF (lb_rs_cso_pin)
+     OBUF:I->O                 4.909          lb_data_pin_0_OBUF (lb_data_pin<0>)
     ----------------------------------------
-    Total                      6.216ns (5.535ns logic, 0.681ns route)
-                                       (89.0% logic, 11.0% route)
+    Total                     11.603ns (8.180ns logic, 3.423ns route)
+                                       (70.5% logic, 29.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'top_motor_0/top_motor_0/USER_LOGIC_I/divisor_frec/co'
@@ -961,12 +975,12 @@ Offset:              8.027ns (Levels of Logic = 3)
 =========================================================================
 
 
-Total REAL time to Xst completion: 110.00 secs
-Total CPU time to Xst completion: 110.13 secs
+Total REAL time to Xst completion: 111.00 secs
+Total CPU time to Xst completion: 110.67 secs
  
 --> 
 
-Total memory usage is 241164 kilobytes
+Total memory usage is 243084 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  349 (   0 filtered)

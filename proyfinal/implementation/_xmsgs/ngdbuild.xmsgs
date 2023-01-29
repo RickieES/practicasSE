@@ -20,10 +20,10 @@
 <msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.Gen_Bits[27].MEM_EX_Result_Inst</arg>&apos; has unconnected output pin
 </msg>
 
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_CARRY_OUT</arg>&apos; has unconnected output pin
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_CARRY_OUT</arg>&apos; has unconnected output pin
 </msg>
 
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_CARRY_OUT</arg>&apos; has unconnected output pin
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">top_lcdbanner_0/top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKET_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_CARRY_OUT</arg>&apos; has unconnected output pin
 </msg>
 
 </messages>

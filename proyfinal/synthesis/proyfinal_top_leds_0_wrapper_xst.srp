@@ -472,9 +472,9 @@ Analyzing generic Entity <user_logic> in library <top_leds_v1_00_a> (Architectur
 	n = 8
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
-WARNING:Xst:1610 - "//vboxsvr/se/ws/proyfinal/pcores/top_leds_v1_00_a/hdl/vhdl/user_logic.vhd" line 226: Width mismatch. <ref_red> has a width of 8 bits but assigned expression is 32-bit wide.
-WARNING:Xst:1610 - "//vboxsvr/se/ws/proyfinal/pcores/top_leds_v1_00_a/hdl/vhdl/user_logic.vhd" line 227: Width mismatch. <ref_green> has a width of 8 bits but assigned expression is 32-bit wide.
-WARNING:Xst:1610 - "//vboxsvr/se/ws/proyfinal/pcores/top_leds_v1_00_a/hdl/vhdl/user_logic.vhd" line 228: Width mismatch. <ref_blue> has a width of 8 bits but assigned expression is 32-bit wide.
+WARNING:Xst:1610 - "//vboxsvr/se/ws/proyfinal/pcores/top_leds_v1_00_a/hdl/vhdl/user_logic.vhd" line 228: Width mismatch. <ref_red> has a width of 8 bits but assigned expression is 32-bit wide.
+WARNING:Xst:1610 - "//vboxsvr/se/ws/proyfinal/pcores/top_leds_v1_00_a/hdl/vhdl/user_logic.vhd" line 229: Width mismatch. <ref_green> has a width of 8 bits but assigned expression is 32-bit wide.
+WARNING:Xst:1610 - "//vboxsvr/se/ws/proyfinal/pcores/top_leds_v1_00_a/hdl/vhdl/user_logic.vhd" line 230: Width mismatch. <ref_blue> has a width of 8 bits but assigned expression is 32-bit wide.
 Entity <user_logic> analyzed. Unit <user_logic> generated.
 
 
@@ -489,9 +489,9 @@ Synthesizing Unit <user_logic>.
     Found 8-bit up counter for signal <cnt_blue>.
     Found 8-bit up counter for signal <cnt_green>.
     Found 8-bit up counter for signal <cnt_red>.
-    Found 8-bit comparator less for signal <output_blue$cmp_lt0000> created at line 281.
-    Found 8-bit comparator less for signal <output_green$cmp_lt0000> created at line 263.
-    Found 8-bit comparator less for signal <output_red$cmp_lt0000> created at line 245.
+    Found 8-bit comparator less for signal <output_blue$cmp_lt0000> created at line 283.
+    Found 8-bit comparator less for signal <output_green$cmp_lt0000> created at line 265.
+    Found 8-bit comparator less for signal <output_red$cmp_lt0000> created at line 247.
     Found 32-bit register for signal <slv_reg0>.
     Found 32-bit register for signal <slv_reg1>.
     Found 32-bit register for signal <slv_reg2>.
@@ -939,11 +939,11 @@ Offset:              3.203ns (Levels of Logic = 9)
 
 
 Total REAL time to Xst completion: 15.00 secs
-Total CPU time to Xst completion: 15.13 secs
+Total CPU time to Xst completion: 15.31 secs
  
 --> 
 
-Total memory usage is 309580 kilobytes
+Total memory usage is 310156 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  112 (   0 filtered)

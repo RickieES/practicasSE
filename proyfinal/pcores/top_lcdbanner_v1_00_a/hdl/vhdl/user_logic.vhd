@@ -261,7 +261,6 @@ begin
 
 
   --USER logic implementation added here
-  -- TODO: trasladar y ajustar resto de lógica de user_logic_banner y user_logic_lcd
 
 -- Maquinas de estados
   unidadDeControl: process(currentStateLectura, WFIFO2IP_empty, WFIFO2IP_RdAck, lcd_busy, command4lcd)

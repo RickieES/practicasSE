@@ -60,21 +60,21 @@ ENTITY lcd_controller IS
 END lcd_controller;
 
 ARCHITECTURE controller OF lcd_controller IS
-  TYPE CONTROL IS(power_up, initialize, ready, send);
+  TYPE CONTROL IS (power_up, initialize, ready, send);
   SIGNAL    state      : CONTROL;
   CONSTANT  freq       : INTEGER := 50; --system clock frequency in MHz
+
 BEGIN
+
   PROCESS(clk)
     VARIABLE clk_count : INTEGER := 0; --event counter for timing
   BEGIN
   IF(clk'EVENT and clk = '1') THEN
-    
       CASE state IS
-        
         --wait 50 ms to ensure Vdd has risen and required LCD wait is met
         WHEN power_up =>
           busy <= '1';
-          IF(clk_count < (50000 * freq)) THEN    --wait 50 ms
+          IF (clk_count < (50000 * freq)) THEN    --wait 50 ms
             clk_count := clk_count + 1;
             state <= power_up;
           ELSE                                   --power-up complete
@@ -89,7 +89,7 @@ BEGIN
         WHEN initialize =>
           busy <= '1';
           clk_count := clk_count + 1;
-          IF(clk_count < (10 * freq)) THEN       --function set
+          IF (clk_count < (10 * freq)) THEN       --function set
             lcd_data <= "00111100";      --2-line mode, display on
             --lcd_data <= "00110100";    --1-line mode, display on
             --lcd_data <= "00110000";    --1-line mdoe, display off
@@ -161,9 +161,9 @@ BEGIN
         --send instruction to lcd        
         WHEN send =>
         busy <= '1';
-        IF(clk_count < (600 * freq)) THEN  --do not exit for 500ms
+        IF(clk_count < (600 * freq)) THEN        --do not exit for 500ms
            busy <= '1';
-           IF(clk_count < 100*freq) THEN      --negative enable 100ms
+           IF(clk_count < 100*freq) THEN         --negative enable 100ms
             e <= '0';
            ELSIF(clk_count < (350 * freq)) THEN  --positive enable half-cycle
             e <= '1';

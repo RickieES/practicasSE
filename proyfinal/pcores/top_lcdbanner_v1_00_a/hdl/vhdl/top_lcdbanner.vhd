@@ -515,16 +515,13 @@ begin
 
       -- lb_rs_cso_pin es Reset para LCD, Column Serial Out para Banner
       lb_rs_cso                      => lb_rs_cso,
-
       -- lb_rw_cc_pin es Read/Write para LCD (no se usa en la placa nueva, porque siempre se escribe, no se lee), Column Clock para Banner
       lb_rw_cc                       => lb_rw_cc,
-
       -- lb_e_ro_pin es Enable para LCD, Reset Out para Banner
       lb_e_ro                        => lb_e_ro,
-
       -- lb_data_pin<0> es data<0> para LCD, Row Serial Out para Banner
       -- lb_data_pin<1> es data<1> para LCD, Row Clk para Banner
-      -- lb_data_pin<2> es data<2> para LCD, Reset2 Out para Banner
+      -- lb_data_pin<2> es data<2> para LCD, Reset2 Out para Banner (probablemente sin uso)
       -- lb_data_pin<3> a lb_data_pin<7> son data<3> a data<7> para LCD, sin uso para Banner
       lb_data                        => lb_data,
 

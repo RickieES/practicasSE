@@ -29,80 +29,69 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity bannerDesp is
   port (
-    reset_in      : in std_logic; -- reset
-    clock         : in std_logic; -- 
+    reset_in      : in  std_logic; -- reset
+    clock         : in  std_logic; -- 
     col_serial_out: out std_logic;	
     col_clk       : out std_logic;
     row_serial_out: out std_logic; 
     row_clk       : out std_logic; 
     reset_out     : out std_logic;
     reset2_out    : out std_logic;
-    fila          : in std_logic_vector(2 downto 0);
-    columna       : in std_logic_vector(2 downto 0);
-    dato          : in std_logic_vector(4 downto 0);
-    load          : in std_logic
+    fila          : in  std_logic_vector(2 downto 0);
+    columna       : in  std_logic_vector(2 downto 0);
+    dato          : in  std_logic_vector(4 downto 0);
+    load          : in  std_logic
   );
 end bannerDesp;
 
 architecture banner_arch of bannerDesp is
   type ram_type is array(0 to 55) of std_logic_vector(4 downto 0);
-  signal RAM : ram_type :=
-(
-"10001", "11111", "11111", "11111", "10000", "11111", "11111", "11011",
-"11001", "10001", "00100", "10001", "10000", "00100", "10001", "10101",
-"10101", "10001", "00100", "10001", "10000", "00100", "10001", "10101",
-"10011", "11111", "00100", "11111", "10000", "00100", "11111", "10001",
-"10001", "10001", "00100", "10001", "10000", "00100", "10001", "10001",
-"10001", "10001", "00100", "10001", "10000", "00100", "10001", "01010",
-"10001", "10001", "00100", "10001", "11111", "11111", "10001", "00100"
-);
---signal RAM : ram_type :=
---(
---"00000", "00000", "00000", "00000", "00000", "00000", "00000","00000",
---"00100", "00000", "00000", "00000", "00000", "00000", "00000","00000",
---"00000", "00100", "00000", "00000", "00000", "00000", "00000","00000",
---"00000", "00000", "00100", "00000", "00000", "00000", "00000","00000",
---"00000", "00000", "00000", "00100", "00000", "00000", "00000","00000",
---"00000", "00000", "00000", "00000", "01000", "00000", "00000","00000",
---"00000", "00000", "00000", "00000", "00000", "00100", "00000","00000",
---"00000", "00000", "00000", "00000", "00000", "00100", "00000","00000"
---"11111", "11111", "11111", "11111", "11111", "11111", "11011", "11111"
---);
+  signal RAM : ram_type := (
+    "01110", "11110", "00100", "01110", "11111", "00100", "01110", "00000",
+    "10001", "10001", "01010", "10001", "00100", "01010", "10001", "00000",
+    "10000", "10001", "11011", "10000", "00100", "11011", "10000", "00000",
+    "10011", "11110", "10001", "10000", "00100", "10001", "01110", "00000",
+    "10001", "10100", "11111", "10000", "00100", "11111", "00001", "00000",
+    "10001", "10010", "10001", "10001", "00100", "10001", "10001", "00000",
+    "01110", "10001", "10001", "01110", "11111", "10001", "01110", "00000"
+  );
 
-  signal row_number                   : std_logic_vector(2 downto 0);
-  signal miregistro                   : std_logic_vector(39 downto 0);
-  signal desplazamiento               : std_logic_vector(5 downto 0);
-  signal fin_per, reset, reloj12,reloj: std_logic;
-  signal pixel_count                  : std_logic_vector(5 downto 0);
-  signal ce_row_clk, fin_pixel_cont   : std_logic; -- reset asynchronously clears line counter
-  signal posicion                     : std_logic_vector(5 downto 0);
+  signal row_number                    : std_logic_vector(2 downto 0);
+  signal miregistro                    : std_logic_vector(39 downto 0);
+  signal desplazamiento                : std_logic_vector(5 downto 0);
+  signal fin_per, reset, reloj12       : std_logic;
+  signal pixel_count                   : std_logic_vector(5 downto 0);
+  signal ce_row_clk, fin_pixel_cont    : std_logic; -- reset asynchronously clears line counter
+  signal posicion                      : std_logic_vector(5 downto 0);
 
   begin
     reset                <= reset_in;
     reset_out            <= not reset_in;
     reset2_out           <= not reset_in;
-    reloj                <= clock;
     posicion(5 downto 3) <= fila;
     posicion(2 downto 0) <= columna;
 
-cargar: process (reloj, load, fila, columna, dato)
+-- Si se recibe orden de cargar un dato (load = 1)
+-- carga en la posición de RAM el mapa de bits que se quiere mostrar en esa fila y bloque del panel LED
+-- El mapa de bits, por tanto, se debe generar y enviar desde el código C si se quiere que cambie
+cargar: process (clock, load, fila, columna, dato)
   begin
-    if (reloj'EVENT AND reloj = '1') then
+    if (clock'EVENT AND clock = '1') then
       if (load = '1') then
         RAM(conv_integer(posicion)) <= dato;
       end if;
     end if;
   end process;	
 
--- divide entre 4 la frecuencia de reloj
-divisor: process (reset, reloj)
+-- divide entre ¿4? (más bien entre 2) la frecuencia de reloj
+divisor: process (reset, clock)
   CONSTANT num  : std_logic_vector(3 DOWNTO 0) := "0010";
   VARIABLE count: std_logic_vector(3 DOWNTO 0);
   BEGIN
     IF (reset = '1') THEN
       count := (OTHERS => '0');
       reloj12 <= '0';
-    ELSIF (reloj'EVENT AND reloj = '1') THEN
+    ELSIF (clock'EVENT AND clock = '1') THEN
       row_clk <= not(reloj12 and ce_row_clk);
       IF (count = num) THEN
         reloj12 <= not reloj12;
@@ -114,14 +103,17 @@ divisor: process (reset, reloj)
   END PROCESS divisor;			
 
 -- Produce una velocidad de 3 desplazamientos por segundo
-pdesplazamiento: PROCESS (reset, reloj)
+-- Cada vez que count2 alcanza el tope del contador ("desplaza"),
+-- se avanza desplazamiento para pintar el siguiente píxel de la fila
+-- de 40 (5 x 8)
+pdesplazamiento: PROCESS (reset, clock)
   CONSTANT desplaza: std_logic_vector (26 DOWNTO 0) :=	"000111101011110000100000000";
   VARIABLE count2: std_logic_vector (26 DOWNTO 0);
   BEGIN
     IF (reset = '1') THEN
       count2 := (OTHERS => '0');
       desplazamiento <= (OTHERS => '0');
-    ELSIF (reloj'EVENT AND reloj = '1') THEN
+    ELSIF (clock'EVENT AND clock = '1') THEN
       IF (count2 = desplaza) THEN
         count2 := (OTHERS => '0');
         if (desplazamiento = 40) then
@@ -164,17 +156,18 @@ pixel_countp: process(reloj12, reset, fin_per)
       ce_row_clk <= '1';
       fin_pixel_cont <= '0';
     elsif (reloj12'event and reloj12 = '1') then
+      -- si la cuenta de píxel es menor que 41
       if (pixel_count < "101001") then
         pixel_count <= pixel_count + '1';
         ce_row_clk <= '1';
         fin_pixel_cont <= '0';
       elsif (pixel_count = "101001") then
-        fin_pixel_cont <= '1';
-        ce_row_clk <= '0';
         pixel_count <= pixel_count + '1';
-      else
-        fin_pixel_cont <= '0';
         ce_row_clk <= '0';
+        fin_pixel_cont <= '1';
+      else
+        ce_row_clk <= '0';
+        fin_pixel_cont <= '0';
         if (fin_per = '1') then
           pixel_count <= (OTHERS => '0');
         end if;
@@ -209,9 +202,8 @@ reg_col: process(reloj12, reset, fin_pixel_cont)
         col_serial_out <= '1';
       else
         col_serial_out <= '0';
---      col_serial_out <= '1';
       end if;
-      if (fin_pixel_cont='1') then
+      if (fin_pixel_cont = '1') then
         col_clk <= '1';
       else
         col_clk <= '0';
@@ -224,27 +216,19 @@ reg_col: process(reloj12, reset, fin_pixel_cont)
 reg_fila: process(reset, reloj12, fin_per, row_number)
   variable fila: std_logic_vector(5 downto 0);
   begin
-    fila:= row_number & "000";
+    fila := row_number & "000";
     if (reset = '1') then
       miregistro <= (OTHERS =>'0');
     elsif (reloj12'event and reloj12 = '1') then
-      if fin_per='1' then
+      if (fin_per = '1') then
         miregistro(39 downto 35) <= RAM(conv_integer(fila));
         miregistro(34 downto 30) <= RAM(conv_integer(fila + 1));
         miregistro(29 downto 25) <= RAM(conv_integer(fila + 2));
         miregistro(24 downto 20) <= RAM(conv_integer(fila + 3));
         miregistro(19 downto 15) <= RAM(conv_integer(fila + 4));
         miregistro(14 downto 10) <= RAM(conv_integer(fila + 5));
-        miregistro(9 downto 5)   <= RAM(conv_integer(fila + 6));
-        miregistro(4 downto 0)   <= RAM(conv_integer(fila + 7));
---				miregistro(39 downto 35) <= switches(7 downto 3);
---				miregistro(34 downto 30) <= switches(2 downto 0)&"00";
---				miregistro(29 downto 25) <= switches(7 downto 3);
---				miregistro(24 downto 20) <= switches(7 downto 3);
---				miregistro(19 downto 15) <= switches(7 downto 3);
---				miregistro(14 downto 10) <= switches(7 downto 3);
---				miregistro(9 downto 5) <= switches(7 downto 3);
---				miregistro(4 downto 0) <= switches(7 downto 3);
+        miregistro(9  downto 5)  <= RAM(conv_integer(fila + 6));
+        miregistro(4  downto 0)  <= RAM(conv_integer(fila + 7));
       elsif (ce_row_clk = '1') then
         miregistro(39 downto 0) <= miregistro(38 downto 0) & miregistro(39);
       end if;

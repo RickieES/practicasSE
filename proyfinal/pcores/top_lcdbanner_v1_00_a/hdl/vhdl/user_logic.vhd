@@ -196,7 +196,7 @@ architecture IMP of user_logic is
   signal lcd_bus       : std_logic_vector(9 downto 0);
   signal lcd_busy      : std_logic;
   signal lcd_enable    : std_logic;
-  signal lcd_data      : std_logic_vector(7 downto 0)
+  signal lcd_data      : std_logic_vector(7 downto 0);
   signal lcd_load      : std_logic;
 
   signal banner_fila   : std_logic_vector(2 downto 0);
@@ -264,22 +264,24 @@ begin
   -- TODO: trasladar y ajustar resto de lógica de user_logic_banner y user_logic_lcd
 
 -- Maquinas de estados
-  unidadDeControl: process(currentStateLectura, WFIFO2IP_empty, WFIFO2IP_RdAck, busy, command4lcd)
+  unidadDeControl: process(currentStateLectura, WFIFO2IP_empty, WFIFO2IP_RdAck, lcd_busy, command4lcd)
     begin
       nextStateLectura <= currentStateLectura;
-      load <= '0';
+      lcd_load <= '0';
+      banner_load <= '0';
       fifo_rdreq_cmb <= '0';
 
       case currentStateLectura is
         when estadoEsperaLectura =>
-          if (WFIFO2IP_empty = '0' and (lcd_busy = '0' or command4lcd = '0') then
+          if (WFIFO2IP_empty = '0' and (lcd_busy = '0' or command4lcd = '0')) then
             fifo_rdreq_cmb   <= '1';
             nextStateLectura <= estadoEnviarDato;
           end if;
 
         when estadoEnviarDato =>
           if (WFIFO2IP_RdAck = '1') then
-            load <= '1';
+            lcd_load <= '1';
+            banner_load <= '1';
             nextStateLectura   <= estadoEsperaLectura;
           end if;
       end case;

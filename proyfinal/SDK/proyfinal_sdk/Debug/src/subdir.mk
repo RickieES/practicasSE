@@ -4,16 +4,19 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../src/proyfinal.c 
+../src/proyfinal.c \
+../src/top_lcdbanner.c 
 
 LD_SRCS += \
 ../src/lscript.ld 
 
 OBJS += \
-./src/proyfinal.o 
+./src/proyfinal.o \
+./src/top_lcdbanner.o 
 
 C_DEPS += \
-./src/proyfinal.d 
+./src/proyfinal.d \
+./src/top_lcdbanner.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

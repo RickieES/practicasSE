@@ -17,7 +17,7 @@
 /************************** Constant Definitions ***************************/
 
 /**
- * Constantes aï¿½adidas externamente al fichero original generado por XPS
+ * Constantes añadidas externamente al fichero original generado por XPS
  */
 # define CLEAR_DISPLAY_CMD 0x00000001      // RS=0, RW=0, inicializa display
 # define RETURN_HOME_CMD 0x00000002        // RS=0, RW=0, vuelta a casa
@@ -188,5 +188,39 @@
  *
  */
 XStatus TOP_LCDBANNER_SelfTest(void * baseaddr_p);
+
+
+/**
+ *
+ * Envía una instrucción de configuración al panel LCD
+ *
+ * @param cmd es la instrucción que se envía, usando los valores definidos al principio
+ *            de este fichero de cabecera
+ */
+void TOP_LCDBANNER_enviarCMD2LCD(Xuint32 cmd);
+
+
+/**
+ *
+ * Inicializa el panel LCD
+ *
+ */
+void TOP_LCDBANNER_inicializaLCD();
+
+/**
+ *
+ * Acepta una cadena de hasta 80 caracteres y la envia al panel LCD en una o dos lineas
+ *
+ * @param s es la cadena de caracteres que se quiere enviar al LCD
+ */
+void TOP_LCDBANNER_enviarcadena2LCD(char s[]);
+
+/**
+ *
+ * Desplaza el contenido del LCD hacia izquierda o derecha, según la instrucción pasada
+ *
+ * @param cmd es la orden de desplazamiento, usando los valores definidos al principio
+ */
+void scrollLCD(Xuint32 cmd);
 
 #endif /** TOP_LCDBANNER_H */

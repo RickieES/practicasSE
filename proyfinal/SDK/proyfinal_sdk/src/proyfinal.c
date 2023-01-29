@@ -27,7 +27,6 @@
  *
  */
 
-
 #include <stdio.h>
 #include "xparameters.h"
 #include "xil_cache.h"
@@ -38,167 +37,95 @@
 #include "top_leds.h"
 #include "top_motor.h"
 
-#define MAX_ITEMS 16 //numero de productos en la maquina expendedora
+#define MAX_ITEMS 22 //numero de productos en la maquina expendedora
 #define MAX_LENGTH 40 //maxima longitud de la linea
-
 #define DINERO_INSUFICIENTE "Dinero insuficiente."
 #define OPC_NO_VALIDA "Opcion no valida"
 #define AGOTADO "Producto agotado."
-#define ELIGE_PROD "Elige un producto."
-#define INTRODUCE_DINERO "Introduce dinero."
-
-
-char primeraFila[40];
-char segundaFila[40];
-
+#define ELIGE_PROD "Elija un producto."
+#define INTRODUCE_DINERO "Introduzca dinero."
 
 typedef struct {//estructura correspondiente a un producto
-    char nombre[MAX_LENGTH]; //nombre del producto
-    float precio; //precio del producto
-    int udsDisponibles; //unidades en stock
-}tProducto;
+	char numProducto[2]; // Numero del producto en el expositor
+	char nombre[MAX_LENGTH]; //nombre del producto
+	float precio; //precio del producto
+	int udsDisponibles; //unidades en stock
+} tProducto;
 
 tProducto prods[MAX_ITEMS] = { //array de productos
-    {"0-Coca-Cola", 1.50, 8},
-    {"1-Pepsi", 1.75, 5},
-    {"2-Sprite", 1.50, 8},
-    {"3-Fanta", 1.50, 8},
-    {"4-Agua", 1.00, 9},
-	{"5-KitKat", 1.20, 8},
-	{"6-Patatas Fritas", 1.50, 8},
-	{"7-Sandwich Mixto", 1.80, 5},
-	{"8-Sandwich Pollo", 1.80, 5},
-	{"9-Sandwich Tortilla", 1.80, 8},
-	{"10-Media Noche", 1.20, 3},
-	{"11-Galletas chocolate", 1.00, 4},
-	{"12-Aquarius", 1.00, 5},
-	{"13-Nestea", 1.00, 5},
-	{"14-Kinder Bueno", 1.20, 4},
-	{"15-Bollicao", 1.20, 4}
-};
+		{ "11", "Coca-Cola", 1.50, 8 }, { "12", "Coca-Cola Zero", 1.75, 5 }, {
+				"13", "Coca-Cola Zero Zero", 1.75, 5 }, { "14", "Sprite", 1.50,
+				8 }, { "15", "Sprite Zero", 1.50, 8 }, { "16", "Fanta Naranja",
+				1.50, 8 }, { "17", "Fanta Naranja Zero", 1.50, 8 }, { "18",
+				"Fanta Limon", 1.50, 8 },
+				{ "19", "Fanta Limon Zero", 1.50, 8 }, { "1A", "Agua aquaBona",
+						1.00, 9 }, { "1B", "Aquarius Limon", 1.00, 5 }, { "1C",
+						"Aquarius Naranja", 1.00, 5 }, { "1D", "Nestea", 1.00,
+						5 }, { "21", "Patatas Fritas", 1.50, 8 }, { "22",
+						"Sandwich Mixto", 1.80, 5 }, { "23", "Sandwich Pollo",
+						1.80, 5 }, { "24", "Sandwich Tortilla", 1.80, 8 }, {
+						"25", "Media Noche", 1.20, 3 }, { "31",
+						"Galletas chocolate", 1.00, 4 }, { "32",
+						"Kinder Bueno", 1.20, 4 },
+				{ "33", "Bollicao", 1.20, 4 }, { "34", "KitKat", 1.20, 8 } };
 
+/*
+ * Funciones de uso general
+ * FIXME: se usa por el motor y por LCDBanner, habr� que sacarlo a un utils.c
+ */
 
-void my_delay ( int delay ){ 
+void myDelay(int delay) {
 	int i, j;
-	for (i =0; i<delay; i=i+1){
-		for (j =0; j <500; j=j +1){
+	for (i = 0; i < delay; i = i + 1) {
+		for (j = 0; j < 500; j = j + 1) {
 			//no hago nada
 		}
 	}
 }
 
-
-void TOP_LCD_enviarcadena(char s[]) {
-	int i = 0;
-	int j = 0;
-	int slen = strlen(s);
-	// Se asume que la cadena es inferior a 80 caracteres
-
-	// Si la cadena es superior a 40 caracteres, busca el �ltimo espacio antes de
-	// la posici�n 39 y divide la cadena entre las dos filas
-	if (slen > 40) {
-		i = 39;
-		while ((i > 0) && (j == 0)) {
-			if (s[i] == ' ')
-				j = i;
-			i--;
-		}
-
-		xil_printf("slen: %d, i: %d, j: %d\r\n", slen, i, j);
-
-		for(i = 0; i < j; i++) {
-			primeraFila[i] = s[i];
-		}
-
-		// Marca el final de la primera l�nea
-		primeraFila[j] = '\0';
-
-		// Copia desde el car�cter siguiente al final de la primera l�nea
-		// hasta que se agotan los 40 caracteres o el texto
-		for(i = j + 1; (i < (j + 41)) && (i < slen); i++) {
-			segundaFila[i - (j + 1)] = s[i];
-		}
-		segundaFila[i - (j + 1)] = '\0';
-
-		// Impresi�n de depuraci�n
-		xil_printf("Primera fila: %s\r\n", primeraFila);
-		xil_printf("Segunda fila: %s\r\n", segundaFila);
-	} else {
-		// Copia en la primera fila la cadena y marca como vac�a la segunda fila
-		strncpy(primeraFila, s, 40);
-		segundaFila[0] = '\0';
-	}
-
-	for(i = 0; i < strlen(primeraFila); i++) {
-		TOP_LCD_enviarCMD(WRITE_CMD + primeraFila[i]);
-	}
-
-	if (strlen(segundaFila) > 0) {
-		TOP_LCD_enviarCMD(SECOND_ROW);
-		for(i = 0; i < strlen(segundaFila); i++) {
-			TOP_LCD_enviarCMD(WRITE_CMD + segundaFila[i]);
-		}
-	}
-}
-
 //funcion que hace girar el motor 16 posiciones en sentido horario y 16 en sentido antihorario
-void giraMotor(){ 
+void giraMotor() {
 	Xuint32 Data;
-	Data =0x9F000000 ;
+	Data = 0x9F000000;
 	TOP_MOTOR_mWriteReg( XPAR_TOP_MOTOR_0_BASEADDR, 0, Data );
 	Data = TOP_MOTOR_mReadReg ( XPAR_TOP_MOTOR_0_BASEADDR, 0);
-	while (!( Data & 0x40000000 )) {
-	Data = TOP_MOTOR_mReadReg ( XPAR_TOP_MOTOR_0_BASEADDR, 0);
+	while (!(Data & 0x40000000)) {
+		Data = TOP_MOTOR_mReadReg ( XPAR_TOP_MOTOR_0_BASEADDR, 0);
 	}
-	my_delay(1000);
+	myDelay(1000);
 	Data = 0x0F000000;
 	TOP_MOTOR_mWriteReg ( XPAR_TOP_MOTOR_0_BASEADDR , 0, Data );
 	Data = TOP_MOTOR_mReadReg ( XPAR_TOP_MOTOR_0_BASEADDR , 0);
-	while (!( Data & 0x40000000 )) {
-	Data = TOP_MOTOR_mReadReg ( XPAR_TOP_MOTOR_0_BASEADDR , 0);
+	while (!(Data & 0x40000000)) {
+		Data = TOP_MOTOR_mReadReg ( XPAR_TOP_MOTOR_0_BASEADDR , 0);
 	}
 }
 
-void TOP_LCD_enviarCMD(Xuint32 cmd) {
-	// Comprobamos que la FIFO no est� llena
-	while(TOP_LCD_mWriteFIFOFull(XPAR_TOP_LCDBANNER_0_BASEADDR)){}
-	// Escribimos el comando en la FIFO
-	TOP_LCD_mWriteToFIFO(XPAR_TOP_LCDBANNER_0_BASEADDR, 0, cmd);
+void altavozCalla() {
+	TOP_ALTAVOZ_mWriteSlaveReg0( XPAR_TOP_ALTAVOZ_0_BASEADDR, 0, SILENCIO );
 }
 
-void TOP_LCD_inicializa() {
-	TOP_LCD_mResetWriteFIFO(XPAR_TOP_LCDBANNER_0_BASEADDR);
-	TOP_LCD_enviarCMD(CLEAR_DISPLAY_CMD);
-	TOP_LCD_enviarCMD(RETURN_HOME_CMD); // moverse al comienzo de la pantalla LCD
-	TOP_LCD_enviarCMD(WRITE_CMD); // primera escritura
-}
-
-void altavozCalla(){ 
- 	TOP_ALTAVOZ_mWriteSlaveReg0( XPAR_TOP_ALTAVOZ_0_BASEADDR, 0, SILENCIO ); 
-}
-
-void altavozSuena(Xuint32 nota , Xuint32 octava){
+void altavozSuena(Xuint32 nota, Xuint32 octava) {
 	TOP_ALTAVOZ_mWriteSlaveReg0(XPAR_TOP_ALTAVOZ_0_BASEADDR , 0, nota << octava );
 }
 
-void monedasCaen(){
-	for(int i =0; i < 5;i++ ){
-		my_delay(300);
-		altavozSuena(MI,OCTAVA);
-		my_delay(300);
-		altavozSuena(FA,OCTAVA);
-		my_delay(300);
-		altavozSuena(SOL,OCTAVA);
-		my_delay(300);
-		altavozSuena(FA,OCTAVA);
-		my_delay(300);
-		altavozSuena(MI,OCTAVA);
+void monedasCaen() {
+	int i = 0;
+	for (i = 0; i < 5; i++) {
+		myDelay(300);
+		altavozSuena(MI, OCTAVA);
+		myDelay(300);
+		altavozSuena(FA, OCTAVA);
+		myDelay(300);
+		altavozSuena(SOL, OCTAVA);
+		myDelay(300);
+		altavozSuena(FA, OCTAVA);
+		myDelay(300);
+		altavozSuena(MI, OCTAVA);
 	}
-
 }
 
-
-char *leerKeypad() {//funcion que lee del keypad
+char *leerKeypad(int maxLen) {//funcion que lee del keypad
 	Xuint32 entrada;
 	Xuint32 teclaOld;
 	char keypad[80];
@@ -209,14 +136,12 @@ char *leerKeypad() {//funcion que lee del keypad
 
 	entrada = TOP_KEYPAD_mReadReg(XPAR_TOP_KEYPAD_0_BASEADDR, 0);
 	// xil_printf("Se ha leido %x del registro 0 del teclado \n\r", entrada);
-	/* Se escribe un 0 para borrar la �ltima tecla le�da */
-	TOP_KEYPAD_mWriteReg(XPAR_TOP_KEYPAD_0_BASEADDR, 0, 0);
+	/* Se escribe un 0 para borrar la �ltima tecla le�da */TOP_KEYPAD_mWriteReg(XPAR_TOP_KEYPAD_0_BASEADDR, 0, 0);
 	/* Se guarda el �ltimo valor recibido para compararlo con el siguiente */
 	teclaOld = entrada;
-	while ((pos < 80) && !salir) {
+	while ((pos < maxLen) && !salir) {
 		entrada = TOP_KEYPAD_mReadReg(XPAR_TOP_KEYPAD_0_BASEADDR, 0);
-        /* Se escribe un 0 para borrar la �ltima tecla le�da */
-		TOP_KEYPAD_mWriteReg(XPAR_TOP_KEYPAD_0_BASEADDR, 0 ,0);
+		/* Se escribe un 0 para borrar la �ltima tecla le�da */TOP_KEYPAD_mWriteReg(XPAR_TOP_KEYPAD_0_BASEADDR, 0 ,0);
 		if (entrada != teclaOld) {
 			// xil_printf("Se ha leido %x del registro 0 del teclado \n\r", entrada);
 			teclaOld = entrada;
@@ -229,114 +154,119 @@ char *leerKeypad() {//funcion que lee del keypad
 			caracter = (char) (entrada >> 28);
 			// xil_printf("  El valor de caracter es %c\n\r", caracter);
 			/* Se termina cuando se pulsa la tecla F */
-            salir = (caracter == 0x0F);
-    		// xil_printf("  El valor de salir es %d\n\r", salir);
-            if (!salir) {
-            	/* Si el caracter est� entre 0xA y 0xE (10 y 14), a�adimos la letra may�scula
-            	 * sumando 55 al valor, de modo que 65 es 'A', 66 es 'B?', etc.; si no,
-            	 * a�adimos 48 al valor, de modo 48 es '0', 49 es '1', etc.
-            	 */
-            	caracter = (caracter > 9) ? (0x37 + caracter) : (0x30 + caracter);
-    			xil_printf("  Se va a agregar a la cadena %c\n\r", caracter);
-            	keypad[pos] = caracter;
-            	pos++;
-            }
+			salir = (caracter == 0x0F);
+			// xil_printf("  El valor de salir es %d\n\r", salir);
+			if (!salir) {
+				/* Si el caracter est� entre 0xA y 0xE (10 y 14), a�adimos la letra may�scula
+				 * sumando 55 al valor, de modo que 65 es 'A', 66 es 'B?', etc.; si no,
+				 * a�adimos 48 al valor, de modo 48 es '0', 49 es '1', etc.
+				 */
+				caracter = (caracter > 9) ? (0x37 + caracter) : (0x30
+						+ caracter);
+				xil_printf("  Se va a agregar a la cadena %c\n\r", caracter);
+				keypad[pos] = caracter;
+				pos++;
+			}
 		}
 	}
 	return &keypad;
 }
 
-
 void menu() {//menu que se muestra en el termite
-    xil_printf("\n--- Maquina expendedora ---\n");
-    for (int i = 0; i < MAX_ITEMS; i++) {
-        xil_printf("%d. %s - $%.2f - Productos: %d\n", i+1, prods[i].nombre, prods[i].precio, prods[i].udsDisponibles);
-    }
-    xil_printf("\nSeleccione un articulo: ");
+	int i = 0;
+	xil_printf("\n--- Maquina expendedora ---\n");
+	for (i = 0; i < MAX_ITEMS; i++) {
+		xil_printf("%s - %s - Precio: %.2f EUR - Existencias: %d\n",
+				prods[i].numProducto, prods[i].nombre, prods[i].precio,
+				prods[i].udsDisponibles);
+	}
+	xil_printf("\nSeleccione un articulo: ");
 }
 
+int main() {
+	float dinero = 0.0;
+	int elegido;
+	char *entrada;
+	char *salida;
+	// Xuint32 Data;
+	Xil_ICacheEnable();
+	Xil_DCacheEnable();
 
-int main() 
-{
+	while (1) {
+		menu();
+		TOP_LCDBANNER_inicializaLCD();
+		TOP_LCDBANNER_enviarcadena2LCD(ELIGE_PROD);
 
-   
-   Xil_ICacheEnable();
-   Xil_DCacheEnable();
+		entrada = leerKeypad(2);
 
-   print("---Entering main---\n\r");
+		elegido = 0;
+		while ((elegido < MAX_ITEMS) && (strcmp(entrada,
+				prods[elegido].numProducto) != 0))
+			elegido++;
 
-   	float dinero = 0.0;
-    int elegido;
-	Xuint32 entrada;
-	Xuint32 Data;
+		if (elegido == MAX_ITEMS) {
+			xil_printf("Opcion no valida.\n");
+			TOP_LCDBANNER_inicializaLCD();
+			TOP_LCDBANNER_enviarcadena2LCD(OPC_NO_VALIDA);
+		} else {
+			tProducto prod = prods[elegido];
+			sprintf(salida, "Ha seleccionado: %s - $%.2f", prod.nombre,	prod.precio);
+			xil_printf("\n", salida, "\n");
 
-    while (1) {
-        menu();
-        //scanf("%d", &elegido);
-		TOP_LCD_inicializa();
-		TOP_LCD_enviarcadena(ELIGE_PROD);
+			TOP_LCDBANNER_inicializaLCD();
+			TOP_LCDBANNER_enviarcadena2LCD(salida);
+			scrollLCD(L2R_SCROLLVIEWPORT_CMD);
+			scrollLCD(R2L_SCROLLVIEWPORT_CMD);
 
-		entrada = TOP_KEYPAD_mReadReg(XPAR_TOP_KEYPAD_0_BASEADDR, 0);
-        elegido = (entrada && 0x1); //no se si he hecho bien esto
+			if (prod.udsDisponibles == 0) {
+				xil_printf("Lo sentimos, producto agotado.\n");
+				TOP_LCDBANNER_inicializaLCD();
+				TOP_LCDBANNER_enviarcadena2LCD(AGOTADO);
+				TOP_LEDS_mWriteSlaveReg0(XPAR_TOP_LEDS_0_BASEADDR, 0, 255); //Red
+				TOP_LEDS_mWriteSlaveReg1(XPAR_TOP_LEDS_0_BASEADDR, 0, 0); //Green
+				TOP_LEDS_mWriteSlaveReg2(XPAR_TOP_LEDS_0_BASEADDR, 0, 0); //Blue
+			}
 
-		if (elegido < 0 || elegido > MAX_ITEMS) {
-            xil_printf("Opción no válida.\n");
-            TOP_LCD_inicializa();
-			TOP_LCD_enviarcadena(OPC_NO_VALIDA);
-        }
+			xil_printf("Ingrese dinero: ");
+			TOP_LCDBANNER_inicializaLCD();
+			TOP_LCDBANNER_enviarcadena2LCD(INTRODUCE_DINERO);
+			TOP_LEDS_mWriteSlaveReg0(XPAR_TOP_LEDS_0_BASEADDR, 0, 0); //Red
+			TOP_LEDS_mWriteSlaveReg1(XPAR_TOP_LEDS_0_BASEADDR, 0, 0); //Green
+			TOP_LEDS_mWriteSlaveReg2(XPAR_TOP_LEDS_0_BASEADDR, 0, 255); //Blue
+			//scanf("%f", &dinero);
+			// ESTO NO VA A FUNCIONAR PORQUE EL KEYPAD NO TIENE PUNTO DECIMAL
+			// SUGIERO QUE SE PIDA POR TERMINAL
+			entrada = TOP_KEYPAD_mReadReg(XPAR_TOP_KEYPAD_0_BASEADDR, 0);
+			dinero = (entrada && 0x1); //no se si he hecho bien esto
+			if (dinero < prod.precio) {
+				xil_printf("Dinero insuficiente.\n");
+				TOP_LCDBANNER_inicializaLCD();
+				TOP_LCDBANNER_enviarcadena2LCD(DINERO_INSUFICIENTE);
+				TOP_LEDS_mWriteSlaveReg0(XPAR_TOP_LEDS_0_BASEADDR, 0, 255); //Red
+				TOP_LEDS_mWriteSlaveReg1(XPAR_TOP_LEDS_0_BASEADDR, 0, 0); //Green
+				TOP_LEDS_mWriteSlaveReg2(XPAR_TOP_LEDS_0_BASEADDR, 0, 0); //Blue
+			}
 
-        tProducto prod = prods[elegido];
-        xil_printf("\nHa seleccionado: %s - $%.2f\n", prod.nombre, prod.precio);
-        
+			prod.udsDisponibles--;
 
-        if (prod.udsDisponibles == 0) {
-            xil_printf("Lo sentimos, producto agotado.\n");
-            TOP_LCD_inicializa();
-			TOP_LCD_enviarcadena(AGOTADO);
-			LEDRGB_mWriteSlaveReg0(XPAR_TOP_LEDS_0_BASEADDR, 0, 255); 	 //Red
-			LEDRGB_mWriteSlaveReg1(XPAR_TOP_LEDS_0_BASEADDR, 0, 0);   //Green
-			LEDRGB_mWriteSlaveReg2(XPAR_TOP_LEDS_0_BASEADDR, 0, 0);   //Blue
-        }
+			xil_printf("\nAhi tiene su articulo.\n");
 
-        xil_printf("Ingrese dinero: ");
-        TOP_LCD_inicializa();
-		TOP_LCD_enviarcadena(INTRODUCE_DINERO);
-		LEDRGB_mWriteSlaveReg0(XPAR_TOP_LEDS_0_BASEADDR, 0, 0); 	 //Red
-		LEDRGB_mWriteSlaveReg1(XPAR_TOP_LEDS_0_BASEADDR, 0, 0);   //Green
-		LEDRGB_mWriteSlaveReg2(XPAR_TOP_LEDS_0_BASEADDR, 0, 255);   //Blue
-        //scanf("%f", &dinero);
-		entrada = TOP_KEYPAD_mReadReg(XPAR_TOP_KEYPAD_0_BASEADDR, 0);
-        dinero = (entrada && 0x1); //no se si he hecho bien esto
-        if (dinero < prod.precio) {
-            xil_printf("Dinero insuficiente.\n");
-            TOP_LCD_inicializa();
-			TOP_LCD_enviarcadena(DINERO_INSUFICIENTE);
-			LEDRGB_mWriteSlaveReg0(XPAR_TOP_LEDS_0_BASEADDR, 0, 255); 	 //Red
-			LEDRGB_mWriteSlaveReg1(XPAR_TOP_LEDS_0_BASEADDR, 0, 0);   //Green
-			LEDRGB_mWriteSlaveReg2(XPAR_TOP_LEDS_0_BASEADDR, 0, 0);   //Blue
-        }
+			TOP_LEDS_mWriteSlaveReg0(XPAR_TOP_LEDS_0_BASEADDR, 0, 0); //Red
+			TOP_LEDS_mWriteSlaveReg1(XPAR_TOP_LEDS_0_BASEADDR, 0, 255); //Green
+			TOP_LEDS_mWriteSlaveReg2(XPAR_TOP_LEDS_0_BASEADDR, 0, 0); //Blue
 
-        prod.udsDisponibles--;
+			giraMotor();
 
-        xil_printf("\nAhi tiene su artículo.\n");
+			xil_printf("Su cambio es: %.2f\n", dinero - prod.precio);
+			//suena el altavoz
+			monedasCaen();
+			altavozCalla();
+		}
+	}
 
-		LEDRGB_mWriteSlaveReg0(XPAR_TOP_LEDS_0_BASEADDR, 0, 0); 	 //Red
-		LEDRGB_mWriteSlaveReg1(XPAR_TOP_LEDS_0_BASEADDR, 0, 255);   //Green
-		LEDRGB_mWriteSlaveReg2(XPAR_TOP_LEDS_0_BASEADDR, 0, 0);   //Blue
-
-		giraMotor();
-
-        xil_printf("Su cambio es: %.2f\n", dinero - prod.precio);
-		//suena el altavoz
-		monedasCaen();
-		altavozCalla();
-    }
-
-   print("---Exiting main---\n\r");
-
-   Xil_DCacheDisable();
-   Xil_ICacheDisable();
-
-   return 0;
+	print("---Exiting main---\n\r");
+	Xil_DCacheDisable();
+	Xil_ICacheDisable();
+	return 0;
 }
 

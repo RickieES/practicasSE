@@ -53,21 +53,28 @@ typedef struct {//estructura correspondiente a un producto
 } tProducto;
 
 tProducto prods[MAX_ITEMS] = { //array de productos
-		{ "11", "Coca-Cola", 1.50, 8 }, { "12", "Coca-Cola Zero", 1.75, 5 }, {
-				"13", "Coca-Cola Zero Zero", 1.75, 5 }, { "14", "Sprite", 1.50,
-				8 }, { "15", "Sprite Zero", 1.50, 8 }, { "16", "Fanta Naranja",
-				1.50, 8 }, { "17", "Fanta Naranja Zero", 1.50, 8 }, { "18",
-				"Fanta Limon", 1.50, 8 },
-				{ "19", "Fanta Limon Zero", 1.50, 8 }, { "1A", "Agua aquaBona",
-						1.00, 9 }, { "1B", "Aquarius Limon", 1.00, 5 }, { "1C",
-						"Aquarius Naranja", 1.00, 5 }, { "1D", "Nestea", 1.00,
-						5 }, { "21", "Patatas Fritas", 1.50, 8 }, { "22",
-						"Sandwich Mixto", 1.80, 5 }, { "23", "Sandwich Pollo",
-						1.80, 5 }, { "24", "Sandwich Tortilla", 1.80, 8 }, {
-						"25", "Media Noche", 1.20, 3 }, { "31",
-						"Galletas chocolate", 1.00, 4 }, { "32",
-						"Kinder Bueno", 1.20, 4 },
-				{ "33", "Bollicao", 1.20, 4 }, { "34", "KitKat", 1.20, 8 } };
+		{ "11", "Coca-Cola", 1.50, 8 },
+		{ "12", "Coca-Cola Zero", 1.75, 5 },
+		{ "13", "Coca-Cola Zero Zero", 1.75, 5 },
+		{ "14", "Sprite", 1.50, 8 },
+		{ "15", "Sprite Zero", 1.50, 8 },
+		{ "16", "Fanta Naranja", 1.50, 8 },
+		{ "17", "Fanta Naranja Zero", 1.50, 8 },
+		{ "18",	"Fanta Limon", 1.50, 8 },
+		{ "19", "Fanta Limon Zero", 1.50, 8 },
+		{ "1A", "Agua aquaBona", 1.00, 9 },
+		{ "1B", "Aquarius Limon", 1.00, 5 },
+		{ "1C",	"Aquarius Naranja", 1.00, 5 },
+		{ "1D", "Nestea", 1.00,	5 },
+		{ "21", "Patatas Fritas", 1.50, 8 },
+		{ "22",	"Sandwich Mixto", 1.80, 5 },
+		{ "23", "Sandwich Pollo", 1.80, 5 },
+		{ "24", "Sandwich Tortilla", 1.80, 8 },
+		{ "25", "Media Noche", 1.20, 3 },
+		{ "31",	"Galletas chocolate", 1.00, 4 },
+		{ "32",	"Kinder Bueno", 1.20, 4 },
+		{ "33", "Bollicao", 1.20, 4 },
+		{ "34", "KitKat", 1.20, 8 } };
 
 /*
  * Funciones de uso general
@@ -82,6 +89,92 @@ void myDelay(int delay) {
 		}
 	}
 }
+
+int getFloatNumber() {
+	Xuint8 byte;
+	Xuint8 uartBuffer[16];
+	Xboolean validNumber;
+	int digitIndex;
+	int digit, sign;
+	int c;
+	int isDecimal;
+	float number;
+
+	while(1){
+		byte = 0x00;
+		digit = 0;
+		digitIndex = 0;
+		number = 0.0;
+		isDecimal = -1;
+		validNumber = XTRUE;
+
+		// Filtra los caracteres LF y CR
+		do {
+			byte = XUartLite_RecvByte(XPAR_XPS_UARTLITE_0_BASEADDR);
+		} while ((byte == 0x0A) || (byte == 0x0D));
+
+		// Recibe bytes de la UART hasta que se reciba RETURN (0x0D o 0x0A)
+		do {
+			uartBuffer[digitIndex] = byte;
+			XUartLite_SendByte(XPAR_XPS_UARTLITE_0_BASEADDR, byte);
+			digitIndex++;
+			byte = XUartLite_RecvByte(XPAR_XPS_UARTLITE_0_BASEADDR);
+		} while ((byte != 0x0A) && (byte != 0x0D));
+		// Envia un salto de linea
+		XUartLite_SendByte(XPAR_XPS_UARTLITE_0_BASEADDR, (Xuint8) 0x0A);
+
+		// Calcula el numero a partir de la cadena de digitos recibidos
+		for(c = 0; c < digitIndex; c++){
+			if(c == 0){
+				// Comprueba si el primer byte es un signo "-"
+				if(uartBuffer[c] == 0x2D){
+					sign = -1;
+					digit = 0;
+				}
+				// Comprueba si el primer byte es un digito, que en
+				// ASCII van de 0x30 ("0") a 0x39 ("9")
+				else if((uartBuffer[c] >> 4) == 0x03){
+					sign = 1;
+					digit = (uartBuffer[c] & 0x0F);
+				}
+				else
+					validNumber = XFALSE;
+			}
+			else{
+				// Comprueba si el byte es un digito en ASCII
+				if((uartBuffer[c] >> 4) == 0x03){
+					digit = (uartBuffer[c] & 0x0F);
+				}
+				else if (uartBuffer[c] == '.') {
+					if (isDecimal == -1) {
+						isDecimal = 0;
+					} else {
+						// Hay dos puntos decimales
+						validNumber = XFALSE;
+					}
+				} else
+					validNumber = XFALSE;
+			}
+
+			if (isDecimal > 0) {
+				number = (number * 10) + digit;
+			} else if (isDecimal == 0) {
+				isDecimal = 0.1;
+			} else {
+				number = number + (digit * isDecimal);
+				isDecimal = isDecimal / 10;
+			}
+		}
+		number *= sign;
+		if(validNumber == XTRUE){
+			return number;
+		} else {
+			xil_printf("Esto no es un numero valido.\n\r");
+			return -1;
+		}
+	}
+}
+
 
 //funcion que hace girar el motor 16 posiciones en sentido horario y 16 en sentido antihorario
 void giraMotor() {
@@ -233,11 +326,7 @@ int main() {
 			TOP_LEDS_mWriteSlaveReg0(XPAR_TOP_LEDS_0_BASEADDR, 0, 0); //Red
 			TOP_LEDS_mWriteSlaveReg1(XPAR_TOP_LEDS_0_BASEADDR, 0, 0); //Green
 			TOP_LEDS_mWriteSlaveReg2(XPAR_TOP_LEDS_0_BASEADDR, 0, 255); //Blue
-			//scanf("%f", &dinero);
-			// ESTO NO VA A FUNCIONAR PORQUE EL KEYPAD NO TIENE PUNTO DECIMAL
-			// SUGIERO QUE SE PIDA POR TERMINAL
-			entrada = TOP_KEYPAD_mReadReg(XPAR_TOP_KEYPAD_0_BASEADDR, 0);
-			dinero = (entrada && 0x1); //no se si he hecho bien esto
+			dinero = getFloatNumber();
 			if (dinero < prod.precio) {
 				xil_printf("Dinero insuficiente.\n");
 				TOP_LCDBANNER_inicializaLCD();

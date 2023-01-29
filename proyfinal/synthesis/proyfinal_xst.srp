@@ -3,8 +3,8 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to N:\ws\proyfinal\synthesis\xst_temp_dir\
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.27 secs
  
 --> 
 TABLE OF CONTENTS
@@ -975,8 +975,8 @@ Offset:              8.027ns (Levels of Logic = 3)
 =========================================================================
 
 
-Total REAL time to Xst completion: 111.00 secs
-Total CPU time to Xst completion: 110.67 secs
+Total REAL time to Xst completion: 98.00 secs
+Total CPU time to Xst completion: 98.09 secs
  
 --> 
 

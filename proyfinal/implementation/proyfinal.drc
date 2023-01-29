@@ -1,7 +1,7 @@
 Release 14.1 Drc P.15xf (nt)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Sun Jan 29 11:29:02 2023
+Sun Jan 29 21:49:48 2023
 
 drc -z proyfinal.ncd proyfinal.pcf
 

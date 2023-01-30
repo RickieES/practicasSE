@@ -4,7 +4,6 @@
  *  Created on: 29/01/2023
  *      Author: Rpalomares
  */
-#include <string.h>
 #include "xparameters.h"
 #include "xbasic_types.h"
 #include "top_lcdbanner.h"

@@ -9,7 +9,7 @@ Target Device  : xc3s1000
 Target Package : ft256
 Target Speed   : -5
 Mapper Version : spartan3 -- $Revision: 1.55 $
-Mapped Date    : Sun Jan 29 21:47:07 2023
+Mapped Date    : Mon Jan 30 22:16:35 2023
 
 Design Summary
 --------------
@@ -42,8 +42,8 @@ Logic Distribution:
 Average Fanout of Non-Clock Nets:                3.85
 
 Peak Memory Usage:  259 MB
-Total REAL time to MAP completion:  1 mins 17 secs 
-Total CPU time to MAP completion:   59 secs 
+Total REAL time to MAP completion:  1 mins 
+Total CPU time to MAP completion:   58 secs 
 
 Table of Contents
 -----------------
@@ -1891,7 +1891,7 @@ Section 4 - Removed Logic Summary
 1142 block(s) removed
  102 block(s) optimized away
 1133 signal(s) removed
- 639 Block(s) redundant
+ 642 Block(s) redundant
 
 Section 5 - Removed Logic
 -------------------------
@@ -9045,6 +9045,15 @@ LUT1 		top_altavoz_0/top_altavoz_0/USER_LOGIC_I/Madd_cs_addsub0000_cy<27>_rt
 LUT1 		top_altavoz_0/top_altavoz_0/USER_LOGIC_I/Madd_cs_addsub0000_cy<28>_rt
 LUT1 		top_altavoz_0/top_altavoz_0/USER_LOGIC_I/Madd_cs_addsub0000_cy<29>_rt
 LUT1 		top_altavoz_0/top_altavoz_0/USER_LOGIC_I/Madd_cs_addsub0000_cy<30>_rt
+INV
+		top_leds_0/top_leds_0/USER_LOGIC_I/Mcompar_output_green_cmp_lt0000_cy<7>_inv_I
+NV_0
+INV
+		top_leds_0/top_leds_0/USER_LOGIC_I/Mcompar_output_red_cmp_lt0000_cy<7>_inv_INV
+_0
+INV
+		top_leds_0/top_leds_0/USER_LOGIC_I/Mcompar_output_blue_cmp_lt0000_cy<7>_inv_IN
+V_0
 LUT1 		top_leds_0/top_leds_0/USER_LOGIC_I/Mcount_cnt_green_xor<7>_rt
 LUT1 		top_leds_0/top_leds_0/USER_LOGIC_I/Mcount_cnt_blue_xor<7>_rt
 LUT1 		top_leds_0/top_leds_0/USER_LOGIC_I/Mcount_cnt_red_xor<7>_rt

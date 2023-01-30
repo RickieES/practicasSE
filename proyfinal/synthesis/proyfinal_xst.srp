@@ -4,7 +4,7 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.27 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> 
 TABLE OF CONTENTS
@@ -560,9 +560,9 @@ Design Statistics
 # IOs                              : 31
 
 Cell Usage :
-# BELS                             : 4912
+# BELS                             : 4915
 #      GND                         : 27
-#      INV                         : 78
+#      INV                         : 81
 #      LUT1                        : 227
 #      LUT2                        : 486
 #      LUT2_D                      : 12
@@ -617,8 +617,8 @@ Selected Device : 3s1000ft256-5
 
  Number of Slices:                     2689  out of   7680    35%  
  Number of Slice Flip Flops:           2821  out of  15360    18%  
- Number of 4 input LUTs:               4174  out of  15360    27%  
-    Number used as logic:              3386
+ Number of 4 input LUTs:               4177  out of  15360    27%  
+    Number used as logic:              3389
     Number used as Shift registers:      84
     Number used as RAMs:                704
  Number of IOs:                          31
@@ -975,8 +975,8 @@ Offset:              8.027ns (Levels of Logic = 3)
 =========================================================================
 
 
-Total REAL time to Xst completion: 98.00 secs
-Total CPU time to Xst completion: 98.09 secs
+Total REAL time to Xst completion: 108.00 secs
+Total CPU time to Xst completion: 107.47 secs
  
 --> 
 

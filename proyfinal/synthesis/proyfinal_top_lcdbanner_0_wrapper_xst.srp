@@ -4,7 +4,7 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.21 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> 
 TABLE OF CONTENTS
@@ -1525,7 +1525,7 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-5 
 
- Number of Slices:                      481  out of   7680     6%  
+ Number of Slices:                      479  out of   7680     6%  
  Number of Slice Flip Flops:            355  out of  15360     2%  
  Number of 4 input LUTs:               1008  out of  15360     6%  
     Number used as logic:               688
@@ -1771,12 +1771,12 @@ Delay:               0.774ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 35.00 secs
-Total CPU time to Xst completion: 35.44 secs
+Total REAL time to Xst completion: 23.00 secs
+Total CPU time to Xst completion: 23.28 secs
  
 --> 
 
-Total memory usage is 359756 kilobytes
+Total memory usage is 360332 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  194 (   0 filtered)

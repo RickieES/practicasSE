@@ -790,9 +790,9 @@ Design Statistics
 # IOs                              : 204
 
 Cell Usage :
-# BELS                             : 290
+# BELS                             : 293
 #      GND                         : 1
-#      INV                         : 3
+#      INV                         : 6
 #      LUT1                        : 21
 #      LUT2                        : 29
 #      LUT3                        : 65
@@ -816,7 +816,7 @@ Selected Device : 3s1000ft256-5
 
  Number of Slices:                      186  out of   7680     2%  
  Number of Slice Flip Flops:            243  out of  15360     1%  
- Number of 4 input LUTs:                182  out of  15360     1%  
+ Number of 4 input LUTs:                185  out of  15360     1%  
  Number of IOs:                         204
  Number of bonded IOBs:                   0  out of    173     0%  
 
@@ -859,7 +859,7 @@ Speed Grade: -5
 
    Minimum period: 5.421ns (Maximum Frequency: 184.485MHz)
    Minimum input arrival time before clock: 3.241ns
-   Maximum output required time after clock: 3.203ns
+   Maximum output required time after clock: 4.363ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -912,7 +912,7 @@ Offset:              3.241ns (Levels of Logic = 1)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'SPLB_Clk'
   Total number of paths / destination ports: 112 / 43
 -------------------------------------------------------------------------
-Offset:              3.203ns (Levels of Logic = 9)
+Offset:              4.363ns (Levels of Logic = 10)
   Source:            top_leds_0/USER_LOGIC_I/cnt_blue_0 (FF)
   Destination:       blue (PAD)
   Source Clock:      SPLB_Clk rising
@@ -930,16 +930,17 @@ Offset:              3.203ns (Levels of Logic = 9)
      MUXCY:CI->O           1   0.056   0.000  top_leds_0/USER_LOGIC_I/Mcompar_output_blue_cmp_lt0000_cy<4> (top_leds_0/USER_LOGIC_I/Mcompar_output_blue_cmp_lt0000_cy<4>)
      MUXCY:CI->O           1   0.056   0.000  top_leds_0/USER_LOGIC_I/Mcompar_output_blue_cmp_lt0000_cy<5> (top_leds_0/USER_LOGIC_I/Mcompar_output_blue_cmp_lt0000_cy<5>)
      MUXCY:CI->O           1   0.056   0.000  top_leds_0/USER_LOGIC_I/Mcompar_output_blue_cmp_lt0000_cy<6> (top_leds_0/USER_LOGIC_I/Mcompar_output_blue_cmp_lt0000_cy<6>)
-     MUXCY:CI->O           0   0.265   0.000  top_leds_0/USER_LOGIC_I/Mcompar_output_blue_cmp_lt0000_cy<7> (blue)
+     MUXCY:CI->O           1   0.265   0.681  top_leds_0/USER_LOGIC_I/Mcompar_output_blue_cmp_lt0000_cy<7> (top_leds_0/USER_LOGIC_I/Mcompar_output_blue_cmp_lt0000_cy<7>)
+     INV:I->O              0   0.479   0.000  top_leds_0/USER_LOGIC_I/Mcompar_output_blue_cmp_lt0000_cy<7>_inv_INV_0 (blue)
     ----------------------------------------
-    Total                      3.203ns (2.138ns logic, 1.066ns route)
-                                       (66.7% logic, 33.3% route)
+    Total                      4.363ns (2.617ns logic, 1.747ns route)
+                                       (60.0% logic, 40.0% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 14.00 secs
-Total CPU time to Xst completion: 14.06 secs
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 13.72 secs
  
 --> 
 

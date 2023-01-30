@@ -244,7 +244,7 @@ begin
     end if;
   end process;
 
-  output_red <= '0' when (cnt_red < ref_red) else '1';
+  output_red <= '1' when (cnt_red < ref_red) else '0';
   red <= output_red;
 
 -- ===========
@@ -262,7 +262,7 @@ begin
     end if;
   end process;
 
-  output_green <= '0' when (cnt_green < ref_green) else '1';
+  output_green <= '1' when (cnt_green < ref_green) else '0';
   green <= output_green;
 
 -- ===========
@@ -280,7 +280,7 @@ begin
     end if;
   end process;
 
-  output_blue <= '0' when (cnt_blue < ref_blue) else '1';
+  output_blue <= '1' when (cnt_blue < ref_blue) else '0';
   blue <= output_blue;
 
   ------------------------------------------

@@ -55,7 +55,7 @@ typedef struct {//estructura correspondiente a un producto
 tProducto prods[MAX_ITEMS] = { //array de productos
 		{ "11", "Coca-Cola", 2, 8 },
 		{ "12", "Coca-Cola Zero", 2, 5 },
-		{ "13", "Coca-Cola Zero Zero", 2, 5 },
+		{ "13", "Coca-Cola Zero Zero", 2, 1 }, //para probar que no hay existencias
 		{ "14", "Sprite", 1, 8 },
 		{ "15", "Sprite Zero", 1, 8 },
 		{ "16", "Fanta Naranja", 1, 8 },
@@ -78,7 +78,7 @@ tProducto prods[MAX_ITEMS] = { //array de productos
 
 /*
  * Funciones de uso general
- * FIXME: se usa por el motor y por LCDBanner, habr· que sacarlo a un utils.c
+ * FIXME: se usa por el motor y por LCDBanner, habr√° que sacarlo a un utils.c
  */
 
 void myDelay(int delay) {
@@ -94,25 +94,32 @@ void myDelay(int delay) {
 //funcion que hace girar el motor 16 posiciones en sentido horario y 16 en sentido antihorario
 void giraMotor() {
 	Xuint32 Data;
-	Data = 0x9F000000;
-	TOP_MOTOR_mWriteReg( XPAR_TOP_MOTOR_0_BASEADDR, 0, Data );
-	Data = TOP_MOTOR_mReadReg ( XPAR_TOP_MOTOR_0_BASEADDR, 0);
-	while (!(Data & 0x40000000)) {
+	int i;
+	for(i=0; i<15; i++ ){
+		Data = 0x9F000000;
+		TOP_MOTOR_mWriteReg( XPAR_TOP_MOTOR_0_BASEADDR, 0, Data );
 		Data = TOP_MOTOR_mReadReg ( XPAR_TOP_MOTOR_0_BASEADDR, 0);
+		while (!(Data & 0x40000000)) {
+			Data = TOP_MOTOR_mReadReg ( XPAR_TOP_MOTOR_0_BASEADDR, 0);
+		}
 	}
 	myDelay(1000);
-	Data = 0x0F000000;
-	TOP_MOTOR_mWriteReg ( XPAR_TOP_MOTOR_0_BASEADDR , 0, Data );
-	Data = TOP_MOTOR_mReadReg ( XPAR_TOP_MOTOR_0_BASEADDR , 0);
-	while (!(Data & 0x40000000)) {
+	for(i=0; i<15; i++ ){
+		Data = 0x0F000000;
+		TOP_MOTOR_mWriteReg ( XPAR_TOP_MOTOR_0_BASEADDR , 0, Data );
 		Data = TOP_MOTOR_mReadReg ( XPAR_TOP_MOTOR_0_BASEADDR , 0);
+		while (!(Data & 0x40000000)) {
+			Data = TOP_MOTOR_mReadReg ( XPAR_TOP_MOTOR_0_BASEADDR , 0);
+		}
 	}
+
 }
 
 void iluminaPWMLeds(int r, int g, int b) {
 	TOP_LEDS_mWriteSlaveReg0(XPAR_TOP_LEDS_0_BASEADDR, 0, r); //Red
 	TOP_LEDS_mWriteSlaveReg1(XPAR_TOP_LEDS_0_BASEADDR, 0, g); //Green
 	TOP_LEDS_mWriteSlaveReg2(XPAR_TOP_LEDS_0_BASEADDR, 0, b); //Blue
+	myDelay(1000);
 }
 
 void altavozCalla() {
@@ -288,4 +295,3 @@ int main() {
 	Xil_ICacheDisable();
 	return 0;
 }
-

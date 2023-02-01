@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.15xf on Mon Jan 30 22:17:33 2023
+// Written by: Map P.15xf on Thu Feb 02 00:23:35 2023
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -33,7 +33,7 @@ COMP "lb_data_pin<7>" LOCATE = SITE "F3" LEVEL 1;
 COMP "lb_rw_cc_pin" LOCATE = SITE "J1" LEVEL 1;
 COMP "USER1_GREEN_pin" LOCATE = SITE "D16" LEVEL 1;
 COMP "USER1_BLUE_pin" LOCATE = SITE "J16" LEVEL 1;
-COMP "top_altavoz_0_sonido_pin" LOCATE = SITE "N11" LEVEL 1;
+COMP "top_altavoz_0_sonido_pin" LOCATE = SITE "N1" LEVEL 1;
 NET "Clk_pin_BUFGP/IBUFG" BEL "Clk_pin_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
 SCHEMATIC END;
 

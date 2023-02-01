@@ -45,7 +45,7 @@ Setup/Hold to clock Clk_pin
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
 RX_pin      |    3.342(R)|   -1.221(R)|Clk_pin_BUFGP     |   0.000|
-Rst_pin     |    3.336(R)|   -0.104(R)|Clk_pin_BUFGP     |   0.000|
+Rst_pin     |    3.336(R)|   -0.360(R)|Clk_pin_BUFGP     |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock Clk_pin to Pad
@@ -53,26 +53,23 @@ Clock Clk_pin to Pad
                                 | clk (edge) |                  | Clock  |
 Destination                     |   to PAD   |Internal Clock(s) | Phase  |
 --------------------------------+------------+------------------+--------+
-TX_pin                          |    6.523(R)|Clk_pin_BUFGP     |   0.000|
-USER1_BLUE_pin                  |   11.770(R)|Clk_pin_BUFGP     |   0.000|
-USER1_GREEN_pin                 |   12.471(R)|Clk_pin_BUFGP     |   0.000|
-USER1_RED_pin                   |   12.319(R)|Clk_pin_BUFGP     |   0.000|
-lb_data_pin<0>                  |   15.651(R)|Clk_pin_BUFGP     |   0.000|
-lb_data_pin<1>                  |   11.480(R)|Clk_pin_BUFGP     |   0.000|
-lb_data_pin<2>                  |   15.516(R)|Clk_pin_BUFGP     |   0.000|
-lb_data_pin<3>                  |   15.149(R)|Clk_pin_BUFGP     |   0.000|
-lb_data_pin<4>                  |   16.217(R)|Clk_pin_BUFGP     |   0.000|
-lb_data_pin<5>                  |    9.655(R)|Clk_pin_BUFGP     |   0.000|
-lb_data_pin<6>                  |    8.935(R)|Clk_pin_BUFGP     |   0.000|
-lb_data_pin<7>                  |    9.642(R)|Clk_pin_BUFGP     |   0.000|
-lb_e_ro_pin                     |   10.199(R)|Clk_pin_BUFGP     |   0.000|
-lb_rs_cso_pin                   |   15.215(R)|Clk_pin_BUFGP     |   0.000|
-lb_rw_cc_pin                    |   12.553(R)|Clk_pin_BUFGP     |   0.000|
-top_altavoz_0_sonido_pin        |    8.834(R)|Clk_pin_BUFGP     |   0.000|
-top_motor_0_control_motor_pin<0>|   10.521(R)|Clk_pin_BUFGP     |   0.000|
-top_motor_0_control_motor_pin<1>|   11.469(R)|Clk_pin_BUFGP     |   0.000|
-top_motor_0_control_motor_pin<2>|   10.459(R)|Clk_pin_BUFGP     |   0.000|
-top_motor_0_control_motor_pin<3>|   10.338(R)|Clk_pin_BUFGP     |   0.000|
+TX_pin                          |    6.868(R)|Clk_pin_BUFGP     |   0.000|
+USER1_BLUE_pin                  |   11.336(R)|Clk_pin_BUFGP     |   0.000|
+USER1_GREEN_pin                 |   13.142(R)|Clk_pin_BUFGP     |   0.000|
+USER1_RED_pin                   |   12.578(R)|Clk_pin_BUFGP     |   0.000|
+lb_data_pin<0>                  |   18.732(R)|Clk_pin_BUFGP     |   0.000|
+lb_data_pin<1>                  |   13.564(R)|Clk_pin_BUFGP     |   0.000|
+lb_data_pin<2>                  |   15.172(R)|Clk_pin_BUFGP     |   0.000|
+lb_data_pin<3>                  |   12.681(R)|Clk_pin_BUFGP     |   0.000|
+lb_data_pin<4>                  |   11.459(R)|Clk_pin_BUFGP     |   0.000|
+lb_data_pin<5>                  |   11.233(R)|Clk_pin_BUFGP     |   0.000|
+lb_data_pin<6>                  |   10.870(R)|Clk_pin_BUFGP     |   0.000|
+lb_data_pin<7>                  |   11.786(R)|Clk_pin_BUFGP     |   0.000|
+top_altavoz_0_sonido_pin        |   10.528(R)|Clk_pin_BUFGP     |   0.000|
+top_motor_0_control_motor_pin<0>|   11.264(R)|Clk_pin_BUFGP     |   0.000|
+top_motor_0_control_motor_pin<1>|   10.597(R)|Clk_pin_BUFGP     |   0.000|
+top_motor_0_control_motor_pin<2>|   11.397(R)|Clk_pin_BUFGP     |   0.000|
+top_motor_0_control_motor_pin<3>|   11.633(R)|Clk_pin_BUFGP     |   0.000|
 --------------------------------+------------+------------------+--------+
 
 Clock to Setup on destination clock Clk_pin
@@ -80,18 +77,18 @@ Clock to Setup on destination clock Clk_pin
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clk_pin        |   11.198|         |         |         |
+Clk_pin        |   11.383|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Mon Jan 30 22:19:06 2023 
+Analysis completed Thu Feb 02 00:25:15 2023 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 169 MB
+Peak Memory Usage: 165 MB
 
 
 

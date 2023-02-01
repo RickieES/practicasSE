@@ -99,7 +99,7 @@ NET Rst_pin LOC=K4;
 ### Altavoz
 #######################################
 
-NET top_altavoz_0_sonido_pin loc=N11;
+NET top_altavoz_0_sonido_pin loc=N1;
 # Tiene que ser uno libre no usado por el resto de periféricos
 # Se ha elegido el punto decimal del display de 7 segmentos
 

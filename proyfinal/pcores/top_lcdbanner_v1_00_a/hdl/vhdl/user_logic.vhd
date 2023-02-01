@@ -247,7 +247,7 @@ begin
       columna        => banner_columna,
       dato           => banner_dato,
       load           => banner_load,
-		scroll         => scrollbanner
+      scroll         => scrollbanner
     );
 
   lcd_controller_i : lcd_controller
@@ -276,16 +276,31 @@ begin
 
       case currentStateLectura is
         when estadoEsperaLectura =>
-          if (WFIFO2IP_empty = '0' and (lcd_busy = '0' or command4lcd = '0')) then
-            fifo_rdreq_cmb   <= '1';
-            nextStateLectura <= estadoEnviarDato;
+          if (WFIFO2IP_empty = '0') then
+            -- command4lcd = '0' --> banner
+            if (command4lcd = '0') then
+              fifo_rdreq_cmb   <= '1';
+              nextStateLectura <= estadoEnviarDato;
+            else
+              -- command4lcd = '1' --> LCD
+              if (lcd_busy = '0') then
+                fifo_rdreq_cmb   <= '1';
+                nextStateLectura <= estadoEnviarDato;
+              end if;
+            end if;
           end if;
 
         when estadoEnviarDato =>
-          if (WFIFO2IP_RdAck = '1') then
-            lcd_load <= '1';
+          -- command4lcd = '0' --> banner
+          if (command4lcd = '0') then
             banner_load <= '1';
             nextStateLectura   <= estadoEsperaLectura;
+          else
+            -- command4lcd = '1' --> LCD
+            if (WFIFO2IP_RdAck = '1') then
+              lcd_load <= '1';
+              nextStateLectura   <= estadoEsperaLectura;
+            end if;
           end if;
       end case;
 	end process unidadDeControl;

@@ -4,7 +4,7 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> 
 TABLE OF CONTENTS
@@ -267,7 +267,7 @@ Entity <plbv46_slave_single> compiled.
 Entity <plbv46_slave_single> (Architecture <implementation>) compiled.
 Compiling vhdl file "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/user_logic.vhd" in Library top_lcdbanner_v1_00_a.
 Entity <user_logic> compiled.
-WARNING:HDLParsers:1406 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/user_logic.vhd" Line 302. No sensitivity list and no wait in the process
+WARNING:HDLParsers:1406 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/user_logic.vhd" Line 321. No sensitivity list and no wait in the process
 Entity <user_logic> (Architecture <IMP>) compiled.
 Compiling vhdl file "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/top_lcdbanner.vhd" in Library top_lcdbanner_v1_00_a.
 Entity <top_lcdbanner> compiled.
@@ -711,21 +711,23 @@ Analyzing generic Entity <user_logic> in library <top_lcdbanner_v1_00_a> (Archit
 	C_SLV_DWIDTH = 32
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
-WARNING:Xst:819 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/user_logic.vhd" line 302: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <lcd_e>, <lcd_rs>, <lcd_rw>, <lcd_data>, <banner_col_s_o>, <banner_col_clk>, <banner_rs1_out>, <banner_row_s_o>, <banner_row_clk>, <banner_rs2_out>
+WARNING:Xst:819 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/user_logic.vhd" line 321: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <lcd_busy>, <lcd_rs>, <lcd_rw>, <lcd_e>, <lcd_data>, <scrollbanner>, <banner_col_s_o>, <banner_col_clk>, <banner_rs1_out>, <banner_row_s_o>, <banner_row_clk>, <banner_rs2_out>
 Entity <user_logic> analyzed. Unit <user_logic> generated.
 
 Analyzing Entity <bannerDesp> in library <top_lcdbanner_v1_00_a> (Architecture <banner_arch>).
-WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 81: Index value(s) does not match array range, simulation mismatch.
-WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 224: Index value(s) does not match array range, simulation mismatch.
-WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 225: Index value(s) does not match array range, simulation mismatch.
-WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 226: Index value(s) does not match array range, simulation mismatch.
-WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 227: Index value(s) does not match array range, simulation mismatch.
-WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 228: Index value(s) does not match array range, simulation mismatch.
-WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 229: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 86: Index value(s) does not match array range, simulation mismatch.
 WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 230: Index value(s) does not match array range, simulation mismatch.
 WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 231: Index value(s) does not match array range, simulation mismatch.
-WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 240: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 232: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 233: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 234: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 235: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 236: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 237: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:819 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 221: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <mask>
+WARNING:Xst:790 - "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 248: Index value(s) does not match array range, simulation mismatch.
 Entity <bannerDesp> analyzed. Unit <bannerDesp> generated.
 
 Analyzing Entity <lcd_controller> in library <top_lcdbanner_v1_00_a> (Architecture <controller>).
@@ -821,14 +823,7 @@ Unit <inferred_lut4> synthesized.
 
 Synthesizing Unit <bannerDesp>.
     Related source file is "//vboxsvr/se/ws/proyfinal/pcores/top_lcdbanner_v1_00_a/hdl/vhdl/bannerDesp.vhd".
-    Found 56x5-bit dual-port RAM <Mram_RAM> for signal <RAM>.
-    Found 56x5-bit dual-port RAM <Mram_RAM_ren> for signal <RAM>.
-    Found 56x5-bit dual-port RAM <Mram_RAM_ren_1> for signal <RAM>.
-    Found 56x5-bit dual-port RAM <Mram_RAM_ren_2> for signal <RAM>.
-    Found 56x5-bit dual-port RAM <Mram_RAM_ren_3> for signal <RAM>.
-    Found 56x5-bit dual-port RAM <Mram_RAM_ren_4> for signal <RAM>.
-    Found 56x5-bit dual-port RAM <Mram_RAM_ren_5> for signal <RAM>.
-    Found 56x5-bit dual-port RAM <Mram_RAM_ren_6> for signal <RAM>.
+WARNING:Xst:646 - Signal <RAM> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Found 1-bit register for signal <col_clk>.
     Found 1-bit register for signal <row_clk>.
     Found 1-bit register for signal <col_serial_out>.
@@ -838,28 +833,21 @@ Synthesizing Unit <bannerDesp>.
     Found 27-bit up counter for signal <count2>.
     Found 6-bit up counter for signal <desplazamiento>.
     Found 1-bit register for signal <fin_per>.
-    Found 13-bit comparator less for signal <fin_per$cmp_lt0000> created at line 142.
+    Found 13-bit comparator less for signal <fin_per$cmp_lt0000> created at line 147.
     Found 1-bit register for signal <fin_pixel_cont>.
-    Found 6-bit comparator less for signal <fin_pixel_cont$cmp_lt0000> created at line 160.
-    Found 40-bit register for signal <miregistro>.
-    Found 6-bit adder for signal <miregistro$sub0000> created at line 240.
+    Found 6-bit comparator less for signal <fin_pixel_cont$cmp_lt0000> created at line 165.
+    Found 6-bit adder for signal <miregistro$sub0000> created at line 248.
     Found 6-bit register for signal <pixel_count>.
-    Found 6-bit adder for signal <pixel_count$addsub0000> created at line 161.
-    Found 6-bit adder for signal <RAM$add0000> created at line 225.
-    Found 6-bit adder for signal <RAM$add0001> created at line 226.
-    Found 6-bit adder for signal <RAM$add0002> created at line 227.
-    Found 6-bit adder for signal <RAM$add0003> created at line 228.
-    Found 6-bit adder for signal <RAM$add0004> created at line 229.
-    Found 6-bit adder for signal <RAM$add0005> created at line 230.
-    Found 6-bit adder for signal <RAM$add0006> created at line 231.
+    Found 6-bit adder for signal <pixel_count$addsub0000> created at line 166.
+    Found 280-bit register for signal <RAM>.
     Found 1-bit register for signal <reloj12>.
     Found 3-bit up counter for signal <row_number>.
     Found 13-bit up counter for signal <t_persistencia>.
+INFO:Xst:738 - HDL ADVISOR - 280 flip-flops were inferred for signal <RAM>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
     Summary:
-	inferred   8 RAM(s).
 	inferred   5 Counter(s).
-	inferred  53 D-type flip-flop(s).
-	inferred   9 Adder/Subtractor(s).
+	inferred 293 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
 	inferred   2 Comparator(s).
 	inferred   1 Multiplexer(s).
 Unit <bannerDesp> synthesized.
@@ -914,11 +902,14 @@ WARNING:Xst:647 - Input <Bus2IP_Data> is never used. This port will be preserved
 WARNING:Xst:647 - Input <Bus2IP_RdCE<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <WFIFO2IP_AlmostEmpty> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <Bus2IP_WrCE<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <WFIFO2IP_Data<1:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <WFIFO2IP_Data<2:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <WFIFO2IP_Data<8:12>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <WFIFO2IP_Data<16:18>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <Bus2IP_BE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:1780 - Signal <lcd_enable> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:737 - Found 1-bit latch for signal <lb_rs_cso>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lb_e_ro>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lb_rw_cc>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Found 1-bit register for signal <IP2WFIFO_RdReq>.
     Found 1-bit register for signal <currentStateLectura<0>>.
     Summary:
@@ -1121,27 +1112,27 @@ Unit <proyfinal_top_lcdbanner_0_wrapper> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 8
- 56x5-bit dual-port RAM                                : 8
 # ROMs                                                 : 25
  16x1-bit ROM                                          : 25
-# Adders/Subtractors                                   : 10
+# Adders/Subtractors                                   : 3
  32-bit adder                                          : 1
- 6-bit adder                                           : 9
+ 6-bit adder                                           : 2
 # Counters                                             : 5
  13-bit up counter                                     : 1
  27-bit up counter                                     : 1
  3-bit up counter                                      : 1
  4-bit up counter                                      : 1
  6-bit up counter                                      : 1
-# Registers                                            : 130
- 1-bit register                                        : 113
+# Registers                                            : 90
+ 1-bit register                                        : 73
  3-bit register                                        : 1
  32-bit register                                       : 5
  4-bit register                                        : 4
  6-bit register                                        : 1
  8-bit register                                        : 5
  9-bit register                                        : 1
+# Latches                                              : 3
+ 1-bit latch                                           : 3
 # Comparators                                          : 14
  13-bit comparator less                                : 1
  32-bit comparator less                                : 12
@@ -1167,137 +1158,6 @@ Optimizing FSM <top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/state/FSM> on sign
  ready      | 11
  send       | 10
 ------------------------
-
-Synthesizing (advanced) Unit <bannerDesp>.
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RAM> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 56-word x 5-bit                     |          |
-    |     clkA           | connected to signal <clock>         | rise     |
-    |     weA            | connected to signal <load>          | high     |
-    |     addrA          | connected to signal <columna>       |          |
-    |     diA            | connected to signal <dato>          |          |
-    -----------------------------------------------------------------------
-    | Port B                                                              |
-    |     aspect ratio   | 56-word x 5-bit                     |          |
-    |     addrB          | connected to internal node          |          |
-    |     doB            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RAM_ren> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 56-word x 5-bit                     |          |
-    |     clkA           | connected to signal <clock>         | rise     |
-    |     weA            | connected to signal <load>          | high     |
-    |     addrA          | connected to signal <columna>       |          |
-    |     diA            | connected to signal <dato>          |          |
-    -----------------------------------------------------------------------
-    | Port B                                                              |
-    |     aspect ratio   | 56-word x 5-bit                     |          |
-    |     addrB          | connected to internal node          |          |
-    |     doB            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RAM_ren_1> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 56-word x 5-bit                     |          |
-    |     clkA           | connected to signal <clock>         | rise     |
-    |     weA            | connected to signal <load>          | high     |
-    |     addrA          | connected to signal <columna>       |          |
-    |     diA            | connected to signal <dato>          |          |
-    -----------------------------------------------------------------------
-    | Port B                                                              |
-    |     aspect ratio   | 56-word x 5-bit                     |          |
-    |     addrB          | connected to internal node          |          |
-    |     doB            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RAM_ren_2> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 56-word x 5-bit                     |          |
-    |     clkA           | connected to signal <clock>         | rise     |
-    |     weA            | connected to signal <load>          | high     |
-    |     addrA          | connected to signal <columna>       |          |
-    |     diA            | connected to signal <dato>          |          |
-    -----------------------------------------------------------------------
-    | Port B                                                              |
-    |     aspect ratio   | 56-word x 5-bit                     |          |
-    |     addrB          | connected to internal node          |          |
-    |     doB            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RAM_ren_3> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 56-word x 5-bit                     |          |
-    |     clkA           | connected to signal <clock>         | rise     |
-    |     weA            | connected to signal <load>          | high     |
-    |     addrA          | connected to signal <columna>       |          |
-    |     diA            | connected to signal <dato>          |          |
-    -----------------------------------------------------------------------
-    | Port B                                                              |
-    |     aspect ratio   | 56-word x 5-bit                     |          |
-    |     addrB          | connected to internal node          |          |
-    |     doB            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RAM_ren_4> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 56-word x 5-bit                     |          |
-    |     clkA           | connected to signal <clock>         | rise     |
-    |     weA            | connected to signal <load>          | high     |
-    |     addrA          | connected to signal <columna>       |          |
-    |     diA            | connected to signal <dato>          |          |
-    -----------------------------------------------------------------------
-    | Port B                                                              |
-    |     aspect ratio   | 56-word x 5-bit                     |          |
-    |     addrB          | connected to internal node          |          |
-    |     doB            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RAM_ren_5> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 56-word x 5-bit                     |          |
-    |     clkA           | connected to signal <clock>         | rise     |
-    |     weA            | connected to signal <load>          | high     |
-    |     addrA          | connected to signal <columna>       |          |
-    |     diA            | connected to signal <dato>          |          |
-    -----------------------------------------------------------------------
-    | Port B                                                              |
-    |     aspect ratio   | 56-word x 5-bit                     |          |
-    |     addrB          | connected to internal node          |          |
-    |     doB            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RAM_ren_6> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 56-word x 5-bit                     |          |
-    |     clkA           | connected to signal <clock>         | rise     |
-    |     weA            | connected to signal <load>          | high     |
-    |     addrA          | connected to signal <columna>       |          |
-    |     diA            | connected to signal <dato>          |          |
-    -----------------------------------------------------------------------
-    | Port B                                                              |
-    |     aspect ratio   | 56-word x 5-bit                     |          |
-    |     addrB          | connected to internal node          |          |
-    |     doB            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-Unit <bannerDesp> synthesized (advanced).
 WARNING:Xst:2677 - Node <addr_out_s_h_3> of sequential type is unconnected in block <plb_address_decoder>.
 WARNING:Xst:2677 - Node <addr_out_s_h_2> of sequential type is unconnected in block <plb_address_decoder>.
 
@@ -1306,21 +1166,21 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # FSMs                                                 : 1
-# RAMs                                                 : 8
- 56x5-bit dual-port distributed RAM                    : 8
 # ROMs                                                 : 25
  16x1-bit ROM                                          : 25
-# Adders/Subtractors                                   : 10
+# Adders/Subtractors                                   : 3
  32-bit adder                                          : 1
- 6-bit adder                                           : 9
+ 6-bit adder                                           : 2
 # Counters                                             : 5
  13-bit up counter                                     : 1
  27-bit up counter                                     : 1
  3-bit up counter                                      : 1
  4-bit up counter                                      : 1
  6-bit up counter                                      : 1
-# Registers                                            : 383
- Flip-Flops                                            : 383
+# Registers                                            : 343
+ Flip-Flops                                            : 343
+# Latches                                              : 3
+ 1-bit latch                                           : 3
 # Comparators                                          : 14
  13-bit comparator less                                : 1
  32-bit comparator less                                : 12
@@ -1337,6 +1197,46 @@ Macro Statistics
 =========================================================================
 INFO:Xst:2261 - The FF/Latch <addr_cntl_cs_0> in Unit <plb_slave_attachment> is equivalent to the following FF/Latch, which will be removed : <addr_cycle_flush> 
 INFO:Xst:1901 - Instance WRPFIFO_TOP_I/USE_BLOCK_RAM.GEN_BRAM_NOT_V6_S6.I_DP_CORE/Using_RAMB16_S36_S36.BRAM_LOOP[1].I_DPB16_512x32 in unit WRPFIFO_TOP_I/USE_BLOCK_RAM.GEN_BRAM_NOT_V6_S6.I_DP_CORE/Using_RAMB16_S36_S36.BRAM_LOOP[1].I_DPB16_512x32 of type RAMB16_S36_S36 has been replaced by RAMB16
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<4>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<14>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<26>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<38>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<3>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<13>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<25>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<37>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<2>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<24>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<36>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<1>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<23>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<35>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<0>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<12>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<22>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<34>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<11>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<21>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<33>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<10>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<20>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<32>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<9>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<19>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<31>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<8>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<18>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<30>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<7>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<17>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<29>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<39>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<6>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<16>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<28>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<5>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<15>.
+WARNING:Xst:2170 - Unit bannerDesp : the following signal(s) form a combinatorial loop: miregistro<27>.
 
 Optimizing unit <proyfinal_top_lcdbanner_0_wrapper> ...
 
@@ -1453,8 +1353,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 355
- Flip-Flops                                            : 355
+# Registers                                            : 315
+ Flip-Flops                                            : 315
 
 =========================================================================
 
@@ -1482,39 +1382,39 @@ Design Statistics
 # IOs                              : 212
 
 Cell Usage :
-# BELS                             : 1119
+# BELS                             : 1000
 #      GND                         : 2
 #      INV                         : 46
 #      LUT1                        : 80
-#      LUT2                        : 142
-#      LUT2_L                      : 1
-#      LUT3                        : 229
-#      LUT3_D                      : 1
-#      LUT3_L                      : 2
-#      LUT4                        : 175
+#      LUT2                        : 187
+#      LUT2_D                      : 1
+#      LUT3                        : 111
+#      LUT3_D                      : 3
+#      LUT3_L                      : 4
+#      LUT4                        : 167
 #      LUT4_D                      : 8
 #      LUT4_L                      : 4
 #      MUXCY                       : 263
-#      MUXF5                       : 60
+#      MUXF5                       : 18
 #      MUXF6                       : 5
 #      MUXF7                       : 2
 #      MUXF8                       : 1
 #      VCC                         : 1
 #      XORCY                       : 97
-# FlipFlops/Latches                : 355
+# FlipFlops/Latches                : 318
 #      FD                          : 37
 #      FDC                         : 46
-#      FDCE                        : 56
+#      FDCE                        : 16
 #      FDE                         : 1
 #      FDP                         : 3
 #      FDR                         : 101
 #      FDRE                        : 96
-#      FDRS                        : 3
-#      FDRSE                       : 2
+#      FDRS                        : 4
+#      FDRSE                       : 1
 #      FDS                         : 9
 #      FDSE                        : 1
-# RAMS                             : 161
-#      RAM16X1D                    : 160
+#      LDCP                        : 3
+# RAMS                             : 1
 #      RAMB16                      : 1
 # Clock Buffers                    : 1
 #      BUFG                        : 1
@@ -1525,11 +1425,9 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-5 
 
- Number of Slices:                      479  out of   7680     6%  
- Number of Slice Flip Flops:            355  out of  15360     2%  
- Number of 4 input LUTs:               1008  out of  15360     6%  
-    Number used as logic:               688
-    Number used as RAMs:                320
+ Number of Slices:                      346  out of   7680     4%  
+ Number of Slice Flip Flops:            318  out of  15360     2%  
+ Number of 4 input LUTs:                611  out of  15360     3%  
  Number of IOs:                         212
  Number of bonded IOBs:                   0  out of    173     0%  
  Number of BRAMs:                         1  out of     24     4%  
@@ -1553,30 +1451,37 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
-----------------------------------------------+----------------------------------------------------------------------------+-------+
-Clock Signal                                  | Clock buffer(FF name)                                                      | Load  |
-----------------------------------------------+----------------------------------------------------------------------------+-------+
-SPLB_Clk                                      | NONE(top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/int_rdack)| 449   |
-top_lcdbanner_0/USER_LOGIC_I/mybanner/reloj121| BUFG                                                                       | 67    |
-----------------------------------------------+----------------------------------------------------------------------------+-------+
+-------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+-------+
+Clock Signal                                                                                                                   | Clock buffer(FF name)                                                      | Load  |
+-------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+-------+
+SPLB_Clk                                                                                                                       | NONE(top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/int_rdack)| 289   |
+top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.GEN_BRAM_NOT_V6_S6.I_DP_CORE/Using_RAMB16_S36_S36.BRAM_LOOP[1].I_DPB16_512x32/DOB30| NONE(top_lcdbanner_0/USER_LOGIC_I/lb_rw_cc)                                | 3     |
+top_lcdbanner_0/USER_LOGIC_I/mybanner/reloj121                                                                                 | BUFG                                                                       | 27    |
+-------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
------------------------------------+------------------------+-------+
-Control Signal                     | Buffer(FF name)        | Load  |
------------------------------------+------------------------+-------+
-SPLB_Rst                           | NONE                   | 105   |
------------------------------------+------------------------+-------+
+---------------------------------------------------------------------------------------------------+---------------------------------------------+-------+
+Control Signal                                                                                     | Buffer(FF name)                             | Load  |
+---------------------------------------------------------------------------------------------------+---------------------------------------------+-------+
+SPLB_Rst                                                                                           | NONE                                        | 65    |
+top_lcdbanner_0/USER_LOGIC_I/lb_e_ro__and0000(top_lcdbanner_0/USER_LOGIC_I/lb_e_ro__and00001:O)    | NONE(top_lcdbanner_0/USER_LOGIC_I/lb_e_ro)  | 1     |
+top_lcdbanner_0/USER_LOGIC_I/lb_e_ro__and0001(top_lcdbanner_0/USER_LOGIC_I/lb_e_ro__and00011:O)    | NONE(top_lcdbanner_0/USER_LOGIC_I/lb_e_ro)  | 1     |
+top_lcdbanner_0/USER_LOGIC_I/lb_rs_cso__and0000(top_lcdbanner_0/USER_LOGIC_I/lb_rs_cso__and00001:O)| NONE(top_lcdbanner_0/USER_LOGIC_I/lb_rs_cso)| 1     |
+top_lcdbanner_0/USER_LOGIC_I/lb_rs_cso__and0001(top_lcdbanner_0/USER_LOGIC_I/lb_rs_cso__and00011:O)| NONE(top_lcdbanner_0/USER_LOGIC_I/lb_rs_cso)| 1     |
+top_lcdbanner_0/USER_LOGIC_I/lb_rw_cc__and0000(top_lcdbanner_0/USER_LOGIC_I/lb_rw_cc__and00001:O)  | NONE(top_lcdbanner_0/USER_LOGIC_I/lb_rw_cc) | 1     |
+top_lcdbanner_0/USER_LOGIC_I/lb_rw_cc__and0001(top_lcdbanner_0/USER_LOGIC_I/lb_rw_cc__and00011:O)  | NONE(top_lcdbanner_0/USER_LOGIC_I/lb_rw_cc) | 1     |
+---------------------------------------------------------------------------------------------------+---------------------------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 12.474ns (Maximum Frequency: 80.167MHz)
+   Minimum period: 11.910ns (Maximum Frequency: 83.963MHz)
    Minimum input arrival time before clock: 2.621ns
-   Maximum output required time after clock: 7.955ns
-   Maximum combinational path delay: 0.774ns
+   Maximum output required time after clock: 8.187ns
+   Maximum combinational path delay: 0.502ns
 
 Timing Detail:
 --------------
@@ -1584,10 +1489,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'SPLB_Clk'
-  Clock period: 12.474ns (frequency: 80.167MHz)
-  Total number of paths / destination ports: 194093 / 606
+  Clock period: 11.910ns (frequency: 83.963MHz)
+  Total number of paths / destination ports: 193290 / 446
 -------------------------------------------------------------------------
-Delay:               12.474ns (Levels of Logic = 35)
+Delay:               11.910ns (Levels of Logic = 35)
   Source:            top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_2 (FF)
   Destination:       top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_31 (FF)
   Source Clock:      SPLB_Clk rising
@@ -1627,21 +1532,21 @@ Delay:               12.474ns (Levels of Logic = 35)
      MUXCY:CI->O           1   0.056   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<27> (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<27>)
      MUXCY:CI->O           1   0.056   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<28> (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<28>)
      XORCY:CI->O           9   0.786   1.250  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_xor<29> (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/state_add0000<29>)
-     LUT2:I0->O            1   0.479   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_lut<10>3 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_lut<10>3)
-     MUXCY:S->O            1   0.435   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<10>_2 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<10>3)
-     MUXCY:CI->O           5   0.265   1.078  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<11>_1 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<11>2)
-     LUT4:I0->O            2   0.479   0.804  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<0>119 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<0>119)
-     LUT4_D:I2->O         31   0.479   1.740  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<0>1 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/N01)
-     LUT2:I1->O            1   0.479   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<8>1 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<8>)
-     FD:D                      0.176          top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_23
+     LUT2:I0->O            1   0.479   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_lut<9>4 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_lut<9>4)
+     MUXCY:S->O            1   0.435   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<9>_3 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<9>4)
+     MUXCY:CI->O           4   0.265   1.074  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<10>_3 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<10>4)
+     LUT4_D:I0->O          2   0.479   0.804  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<0>114 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<0>114)
+     LUT4_D:I2->O         15   0.479   1.180  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<0>1 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/N01)
+     LUT2:I1->O            1   0.479   0.000  top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<22>1 (top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<22>)
+     FD:D                      0.176          top_lcdbanner_0/USER_LOGIC_I/lcd_controller_i/clk_count_9
     ----------------------------------------
-    Total                     12.474ns (6.561ns logic, 5.913ns route)
-                                       (52.6% logic, 47.4% route)
+    Total                     11.910ns (6.561ns logic, 5.350ns route)
+                                       (55.1% logic, 44.9% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'top_lcdbanner_0/USER_LOGIC_I/mybanner/reloj121'
   Clock period: 6.957ns (frequency: 143.748MHz)
-  Total number of paths / destination ports: 1975 / 116
+  Total number of paths / destination ports: 1575 / 36
 -------------------------------------------------------------------------
 Delay:               6.957ns (Levels of Logic = 23)
   Source:            top_lcdbanner_0/USER_LOGIC_I/mybanner/t_persistencia_0 (FF)
@@ -1702,10 +1607,47 @@ Offset:              2.621ns (Levels of Logic = 1)
                                        (63.6% logic, 36.4% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'SPLB_Clk'
-  Total number of paths / destination ports: 90 / 27
+Timing constraint: Default OFFSET IN BEFORE for Clock 'top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.GEN_BRAM_NOT_V6_S6.I_DP_CORE/Using_RAMB16_S36_S36.BRAM_LOOP[1].I_DPB16_512x32/DOB30'
+  Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              7.955ns (Levels of Logic = 7)
+Offset:              0.825ns (Levels of Logic = 1)
+  Source:            SPLB_Rst (PAD)
+  Destination:       top_lcdbanner_0/USER_LOGIC_I/lb_e_ro (LATCH)
+  Destination Clock: top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.GEN_BRAM_NOT_V6_S6.I_DP_CORE/Using_RAMB16_S36_S36.BRAM_LOOP[1].I_DPB16_512x32/DOB30 falling
+
+  Data Path: SPLB_Rst to top_lcdbanner_0/USER_LOGIC_I/lb_e_ro
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT3:I1->O            1   0.479   0.000  top_lcdbanner_0/USER_LOGIC_I/lb_e_ro_mux00011 (top_lcdbanner_0/USER_LOGIC_I/lb_e_ro_mux0001)
+     LDCP:D                    0.176          top_lcdbanner_0/USER_LOGIC_I/lb_e_ro
+    ----------------------------------------
+    Total                      0.825ns (0.825ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.GEN_BRAM_NOT_V6_S6.I_DP_CORE/Using_RAMB16_S36_S36.BRAM_LOOP[1].I_DPB16_512x32/DOB30'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              0.551ns (Levels of Logic = 0)
+  Source:            top_lcdbanner_0/USER_LOGIC_I/lb_rw_cc (LATCH)
+  Destination:       lb_rw_cc (PAD)
+  Source Clock:      top_lcdbanner_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.GEN_BRAM_NOT_V6_S6.I_DP_CORE/Using_RAMB16_S36_S36.BRAM_LOOP[1].I_DPB16_512x32/DOB30 falling
+
+  Data Path: top_lcdbanner_0/USER_LOGIC_I/lb_rw_cc to lb_rw_cc
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCP:G->Q             0   0.551   0.000  top_lcdbanner_0/USER_LOGIC_I/lb_rw_cc (top_lcdbanner_0/USER_LOGIC_I/lb_rw_cc)
+    ----------------------------------------
+    Total                      0.551ns (0.551ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SPLB_Clk'
+  Total number of paths / destination ports: 124 / 24
+-------------------------------------------------------------------------
+Offset:              8.187ns (Levels of Logic = 8)
   Source:            top_lcdbanner_0/USER_LOGIC_I/mybanner/desplazamiento_3 (FF)
   Destination:       lb_data<0> (PAD)
   Source Clock:      SPLB_Clk rising
@@ -1719,66 +1661,42 @@ Offset:              7.955ns (Levels of Logic = 7)
      MUXF5:S->O            1   0.540   0.000  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_8_f5 (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_8_f5)
      MUXF6:I1->O           1   0.298   0.000  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_7_f6 (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_7_f6)
      MUXF7:I1->O           1   0.298   0.000  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_6_f7 (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_6_f7)
-     MUXF8:I1->O           1   0.298   0.976  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_5_f8 (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_5_f8)
-     LUT4:I0->O            1   0.479   0.851  top_lcdbanner_0/USER_LOGIC_I/lb_data_0_mux000030 (top_lcdbanner_0/USER_LOGIC_I/lb_data_0_mux000030)
-     LUT4:I1->O            0   0.479   0.000  top_lcdbanner_0/USER_LOGIC_I/lb_data_0_mux000091 (lb_data<0>)
+     MUXF8:I1->O           2   0.298   1.040  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_5_f8 (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_5_f8)
+     LUT4:I0->O            1   0.479   0.000  top_lcdbanner_0/USER_LOGIC_I/lb_data_0_mux000191_SW02 (top_lcdbanner_0/USER_LOGIC_I/lb_data_0_mux000191_SW01)
+     MUXF5:I0->O           1   0.314   0.704  top_lcdbanner_0/USER_LOGIC_I/lb_data_0_mux000191_SW0_f5 (N84)
+     LUT4:I3->O            0   0.479   0.000  top_lcdbanner_0/USER_LOGIC_I/lb_data_0_mux000191 (lb_data<0>)
     ----------------------------------------
-    Total                      7.955ns (3.497ns logic, 4.458ns route)
-                                       (44.0% logic, 56.0% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'top_lcdbanner_0/USER_LOGIC_I/mybanner/reloj121'
-  Total number of paths / destination ports: 42 / 3
--------------------------------------------------------------------------
-Offset:              6.013ns (Levels of Logic = 7)
-  Source:            top_lcdbanner_0/USER_LOGIC_I/mybanner/miregistro_0 (FF)
-  Destination:       lb_data<0> (PAD)
-  Source Clock:      top_lcdbanner_0/USER_LOGIC_I/mybanner/reloj121 rising
-
-  Data Path: top_lcdbanner_0/USER_LOGIC_I/mybanner/miregistro_0 to lb_data<0>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDCE:C->Q             2   0.626   0.915  top_lcdbanner_0/USER_LOGIC_I/mybanner/miregistro_0 (top_lcdbanner_0/USER_LOGIC_I/mybanner/miregistro_0)
-     LUT3:I1->O            1   0.479   0.000  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_13 (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_13)
-     MUXF5:I0->O           1   0.314   0.000  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_11_f5 (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_11_f5)
-     MUXF6:I0->O           1   0.298   0.000  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_9_f6 (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_9_f6)
-     MUXF7:I0->O           1   0.298   0.000  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_7_f7 (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_7_f7)
-     MUXF8:I0->O           1   0.298   0.976  top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_5_f8 (top_lcdbanner_0/USER_LOGIC_I/mybanner/Mmux_row_serial_out_5_f8)
-     LUT4:I0->O            1   0.479   0.851  top_lcdbanner_0/USER_LOGIC_I/lb_data_0_mux000030 (top_lcdbanner_0/USER_LOGIC_I/lb_data_0_mux000030)
-     LUT4:I1->O            0   0.479   0.000  top_lcdbanner_0/USER_LOGIC_I/lb_data_0_mux000091 (lb_data<0>)
-    ----------------------------------------
-    Total                      6.013ns (3.271ns logic, 2.742ns route)
-                                       (54.4% logic, 45.6% route)
+    Total                      8.187ns (3.811ns logic, 4.376ns route)
+                                       (46.5% logic, 53.5% route)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 2 / 2
+  Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Delay:               0.774ns (Levels of Logic = 1)
+Delay:               0.502ns (Levels of Logic = 1)
   Source:            SPLB_Rst (PAD)
-  Destination:       lb_e_ro (PAD)
+  Destination:       lb_data<2> (PAD)
 
-  Data Path: SPLB_Rst to lb_e_ro
+  Data Path: SPLB_Rst to lb_data<2>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LUT2:I0->O            0   0.479   0.000  top_lcdbanner_0/USER_LOGIC_I/lb_e_ro1 (lb_e_ro)
+     LUT4:I3->O            0   0.479   0.000  top_lcdbanner_0/USER_LOGIC_I/lb_data_2_mux00011 (lb_data<2>)
     ----------------------------------------
-    Total                      0.774ns (0.774ns logic, 0.000ns route)
+    Total                      0.502ns (0.502ns logic, 0.000ns route)
                                        (100.0% logic, 0.0% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 23.00 secs
-Total CPU time to Xst completion: 23.28 secs
+Total REAL time to Xst completion: 24.00 secs
+Total CPU time to Xst completion: 23.86 secs
  
 --> 
 
-Total memory usage is 360332 kilobytes
+Total memory usage is 357708 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  194 (   0 filtered)
-Number of infos    :   13 (   0 filtered)
+Number of warnings :  239 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
 

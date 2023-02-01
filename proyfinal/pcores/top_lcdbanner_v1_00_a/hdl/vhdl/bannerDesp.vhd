@@ -41,7 +41,7 @@ entity bannerDesp is
     columna       : in  std_logic_vector(2 downto 0);
     dato          : in  std_logic_vector(4 downto 0);
     load          : in  std_logic;
-	 scroll        : in  std_logic
+    scroll        : in  std_logic
   );
 end bannerDesp;
 
@@ -239,8 +239,8 @@ reg_fila: process(reset, reloj12, fin_per, row_number)
         tempr(39 downto 0) := miregistro(38 downto 0) & miregistro(39);
       end if;
     end if;
-	 tempr := mask and tempr;
-	 miregistro <= tempr;
+	 tempr := mask(39 downto 0) and tempr(39 downto 0);
+	 miregistro(39 downto 0) <= tempr(39 downto 0);
   end process;
 
 -- row_serial_out <= miregistro(39);

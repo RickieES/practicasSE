@@ -43,7 +43,7 @@
 #define OPC_NO_VALIDA       "Opcion no valida"
 #define AGOTADO             "Producto agotado"
 #define ELIGE_PROD          "Elija producto"
-#define INTRODUCE_DINERO    "Introduzca dinero"
+#define INTRODUCE_DINERO    "Ingrese monedas"
 #define GRACIASXCOMPRA      "Gracias por su compra"
 
 typedef struct {//estructura correspondiente a un producto
@@ -227,7 +227,7 @@ int main() {
 
 	while (1) {
 		menu();
-		TOP_LCDBANNER_enviarCMD2LCD(STOPBANNER);
+		TOP_LCDBANNER_enviarCMD2LCD(SCROLLBANNER);
 		TOP_LCDBANNER_inicializaLCD();
 		TOP_LCDBANNER_enviarcadena2LCD(ELIGE_PROD);
 

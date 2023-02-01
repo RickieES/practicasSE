@@ -40,7 +40,8 @@ entity bannerDesp is
     fila          : in  std_logic_vector(2 downto 0);
     columna       : in  std_logic_vector(2 downto 0);
     dato          : in  std_logic_vector(4 downto 0);
-    load          : in  std_logic
+    load          : in  std_logic;
+	 scroll        : in  std_logic
   );
 end bannerDesp;
 
@@ -58,6 +59,7 @@ architecture banner_arch of bannerDesp is
 
   signal row_number                    : std_logic_vector(2 downto 0);
   signal miregistro                    : std_logic_vector(39 downto 0);
+  signal mask                          : std_logic_vector(39 downto 0);
   signal desplazamiento                : std_logic_vector(5 downto 0);
   signal fin_per, reset, reloj12       : std_logic;
   signal pixel_count                   : std_logic_vector(5 downto 0);
@@ -70,6 +72,9 @@ architecture banner_arch of bannerDesp is
     reset2_out           <= not reset_in;
     posicion(5 downto 3) <= fila;
     posicion(2 downto 0) <= columna;
+	 
+	 mask <= (others => '1') when (scroll = '1') else
+	         (others => '0');
 
 -- Si se recibe orden de cargar un dato (load = 1)
 -- carga en la posición de RAM el mapa de bits que se quiere mostrar en esa fila y bloque del panel LED
@@ -215,24 +220,27 @@ reg_col: process(reloj12, reset, fin_pixel_cont)
 
 reg_fila: process(reset, reloj12, fin_per, row_number)
   variable fila: std_logic_vector(5 downto 0);
+  variable tempr: std_logic_vector(39 downto 0);
   begin
     fila := row_number & "000";
     if (reset = '1') then
-      miregistro <= (OTHERS =>'0');
+      tempr := (OTHERS =>'0');
     elsif (reloj12'event and reloj12 = '1') then
       if (fin_per = '1') then
-        miregistro(39 downto 35) <= RAM(conv_integer(fila));
-        miregistro(34 downto 30) <= RAM(conv_integer(fila + 1));
-        miregistro(29 downto 25) <= RAM(conv_integer(fila + 2));
-        miregistro(24 downto 20) <= RAM(conv_integer(fila + 3));
-        miregistro(19 downto 15) <= RAM(conv_integer(fila + 4));
-        miregistro(14 downto 10) <= RAM(conv_integer(fila + 5));
-        miregistro(9  downto 5)  <= RAM(conv_integer(fila + 6));
-        miregistro(4  downto 0)  <= RAM(conv_integer(fila + 7));
+        tempr(39 downto 35) := RAM(conv_integer(fila));
+        tempr(34 downto 30) := RAM(conv_integer(fila + 1));
+        tempr(29 downto 25) := RAM(conv_integer(fila + 2));
+        tempr(24 downto 20) := RAM(conv_integer(fila + 3));
+        tempr(19 downto 15) := RAM(conv_integer(fila + 4));
+        tempr(14 downto 10) := RAM(conv_integer(fila + 5));
+        tempr(9  downto 5)  := RAM(conv_integer(fila + 6));
+        tempr(4  downto 0)  := RAM(conv_integer(fila + 7));
       elsif (ce_row_clk = '1') then
-        miregistro(39 downto 0) <= miregistro(38 downto 0) & miregistro(39);
+        tempr(39 downto 0) := miregistro(38 downto 0) & miregistro(39);
       end if;
     end if;
+	 tempr := mask and tempr;
+	 miregistro <= tempr;
   end process;
 
 -- row_serial_out <= miregistro(39);

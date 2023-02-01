@@ -39,11 +39,12 @@
 
 #define MAX_ITEMS 22 //numero de productos en la maquina expendedora
 #define MAX_LENGTH 40 //maxima longitud de la linea
-#define DINERO_INSUFICIENTE "Dinero insuficiente."
-#define OPC_NO_VALIDA "Opcion no valida"
-#define AGOTADO "Producto agotado."
-#define ELIGE_PROD "Elija un producto."
-#define INTRODUCE_DINERO "Introduzca dinero."
+#define DINERO_INSUFICIENTE "Dinero insuficiente"
+#define OPC_NO_VALIDA       "Opcion no valida"
+#define AGOTADO             "Producto agotado"
+#define ELIGE_PROD          "Elija producto"
+#define INTRODUCE_DINERO    "Introduzca dinero"
+#define GRACIASXCOMPRA      "Gracias por su compra"
 
 typedef struct {//estructura correspondiente a un producto
 	char numProducto[3]; // Numero del producto en el expositor
@@ -78,18 +79,8 @@ tProducto prods[MAX_ITEMS] = { //array de productos
 
 /*
  * Funciones de uso general
- * FIXME: se usa por el motor y por LCDBanner, habr√° que sacarlo a un utils.c
+ * FIXME: se usa por el motor y por LCDBanner, habr· que sacarlo a un utils.c
  */
-
-void myDelay(int delay) {
-	int i, j;
-	for (i = 0; i < delay; i = i + 1) {
-		for (j = 0; j < 500; j = j + 1) {
-			//no hago nada
-		}
-	}
-}
-
 
 //funcion que hace girar el motor 16 posiciones en sentido horario y 16 en sentido antihorario
 void giraMotor() {
@@ -215,9 +206,7 @@ int leerNumeroDeKeypad() {
 	}
 }
 
-
-
-void menu() {//menu que se muestra en el termite
+void menu() {//menu que se muestra en la terminal
 	int i = 0;
 	xil_printf("\n--- Maquina expendedora ---\n");
 	for (i = 0; i < MAX_ITEMS; i++) {
@@ -238,6 +227,7 @@ int main() {
 
 	while (1) {
 		menu();
+		TOP_LCDBANNER_enviarCMD2LCD(STOPBANNER);
 		TOP_LCDBANNER_inicializaLCD();
 		TOP_LCDBANNER_enviarcadena2LCD(ELIGE_PROD);
 
@@ -256,6 +246,11 @@ int main() {
 		} else {
 			tProducto prod = prods[elegido];
 			xil_printf("Ha seleccionado: %s - EUR %d\n", prod.nombre, prod.precio);
+			TOP_LCDBANNER_inicializaLCD();
+			TOP_LCDBANNER_enviarcadena2LCD(strcat("Ha elegido: ", prod.nombre));
+			TOP_LCDBANNER_scrollLCD(L2R_SCROLLVIEWPORT_CMD);
+			myDelay(500);
+			TOP_LCDBANNER_scrollLCD(R2L_SCROLLVIEWPORT_CMD);
 
 			if (prod.udsDisponibles == 0) {
 				xil_printf("Lo sentimos, producto agotado.\n");
@@ -266,6 +261,9 @@ int main() {
 				xil_printf("Ingrese dinero (por keypad, valores enteros de 0 a 99, use F para finalizar tras un solo digito): ");
 				TOP_LCDBANNER_inicializaLCD();
 				TOP_LCDBANNER_enviarcadena2LCD(INTRODUCE_DINERO);
+				TOP_LCDBANNER_scrollLCD(L2R_SCROLLVIEWPORT_CMD);
+				myDelay(500);
+				TOP_LCDBANNER_scrollLCD(R2L_SCROLLVIEWPORT_CMD);
 				iluminaPWMLeds(0, 0, 255);
 				dinero = leerNumeroDeKeypad(3);
 				xil_printf("\nHa introducido: %d EUR\n", dinero);
@@ -273,24 +271,33 @@ int main() {
 					xil_printf("Dinero insuficiente.\n");
 					TOP_LCDBANNER_inicializaLCD();
 					TOP_LCDBANNER_enviarcadena2LCD(DINERO_INSUFICIENTE);
+					TOP_LCDBANNER_scrollLCD(L2R_SCROLLVIEWPORT_CMD);
+					myDelay(500);
+					TOP_LCDBANNER_scrollLCD(R2L_SCROLLVIEWPORT_CMD);
 					iluminaPWMLeds(255, 0, 0);
 				} else {
 					prods[elegido].udsDisponibles--;
-					xil_printf("\nAhi tiene su articulo.\n");
+					xil_printf("\nRecoja su articulo.\n");
 					iluminaPWMLeds(0, 255, 0);
+					TOP_LCDBANNER_inicializaLCD();
+					TOP_LCDBANNER_enviarcadena2LCD(GRACIASXCOMPRA);
+					TOP_LCDBANNER_scrollLCD(L2R_SCROLLVIEWPORT_CMD);
+					myDelay(500);
+					TOP_LCDBANNER_scrollLCD(R2L_SCROLLVIEWPORT_CMD);
+					TOP_LCDBANNER_enviarCMD2LCD(SCROLLBANNER);
 					giraMotor();
 
 					xil_printf("Su cambio es: %d\n", dinero - prod.precio);
 					//suena el altavoz
 					monedasCaen();
 					altavozCalla();
+					TOP_LCDBANNER_enviarCMD2LCD(STOPBANNER);
 				}
 			}
 		}
 		iluminaPWMLeds(0, 0, 0);
 	}
 
-	print("---Exiting main---\n\r");
 	Xil_DCacheDisable();
 	Xil_ICacheDisable();
 	return 0;

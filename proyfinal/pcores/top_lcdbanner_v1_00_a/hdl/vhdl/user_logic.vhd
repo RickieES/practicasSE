@@ -168,7 +168,8 @@ architecture IMP of user_logic is
 		fila           : in  std_logic_vector(2 downto 0);
 		columna        : in  std_logic_vector(2 downto 0);
 		dato           : in  std_logic_vector(4 downto 0);
-		load           : in  std_logic
+		load           : in  std_logic;
+		scroll         : in  std_logic
 	);
   end component;
 
@@ -188,6 +189,7 @@ architecture IMP of user_logic is
   signal currentStateLectura, nextStateLectura : statesLectura;
 
   signal command4lcd   : std_logic; -- recibido en WFIFO2IP_Data(0), vale 1 si la orden es para LCD
+  signal scrollbanner  : std_logic; -- recibido en WFIFO2IP_Data(1), vale 1 si el banner desplaza
   signal fifo_rdreq_cmb: std_logic;
 
   signal lcd_rw        : std_logic;
@@ -228,7 +230,8 @@ begin
     banner_columna(2 downto 0) <= WFIFO2IP_Data(13 to 15);
     banner_dato(4 downto 0)    <= WFIFO2IP_Data(19 to 23);
 
-	command4lcd <= WFIFO2IP_Data(0);
+	command4lcd  <= WFIFO2IP_Data(0);
+	scrollbanner <= WFIFO2IP_Data(1);
 
   mybanner: bannerDesp
     port map (
@@ -243,7 +246,8 @@ begin
       fila           => banner_fila,
       columna        => banner_columna,
       dato           => banner_dato,
-      load           => banner_load
+      load           => banner_load,
+		scroll         => scrollbanner
     );
 
   lcd_controller_i : lcd_controller
@@ -303,13 +307,14 @@ begin
     begin
       lb_data <= (others => '0');
 
-      -- se env√≠a se√±al Enable a LCD, por lo que tiene preferencia
-      if (lcd_e = '1') then
+      -- se envi≠a seÒal Busy a LCD, por lo que est· recibiendo comandos
+		-- y tiene preferencia
+      if (lcd_busy = '1') then
         lb_rs_cso           <= lcd_rs;
         lb_rw_cc            <= lcd_rw;
         lb_e_ro             <= lcd_e;
         lb_data(7 downto 0) <= lcd_data(7 downto 0);
-      else
+      elsif (scrollbanner = '1') then
         lb_rs_cso           <= banner_col_s_o;
         lb_rw_cc            <= banner_col_clk;
         lb_e_ro             <= banner_rs1_out;

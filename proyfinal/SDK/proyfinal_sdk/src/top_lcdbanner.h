@@ -28,6 +28,9 @@
 # define WRITE_CMD 0x00000200              // RS=1, RW=0, OR con caracter
 # define FIRST_ROW 0x00000080              // RS=0, RW=0, fija direccion DDRAM 10000000, AR=00
 # define SECOND_ROW 0x000000C0   
+# define SCROLLBANNER 0x40000000		   // Fija el bit 2 del registro FIFO en 1 para activar el desplazamiento del banner
+# define STOPBANNER 0x00000000			   // Fija el bit 2 del registro FIFO en 0 para detener el desplazamiento del banner
+
 
 /**
  * User Logic Slave Space Offsets
@@ -189,6 +192,15 @@
  */
 XStatus TOP_LCDBANNER_SelfTest(void * baseaddr_p);
 
+/**
+ *
+ * Espera un tiempo determinado similar a un milisegundo
+ *
+ * @param el tiempo en milisegundos
+ *
+ */
+ void myDelay(int delay);
+
 
 /**
  *
@@ -221,6 +233,6 @@ void TOP_LCDBANNER_enviarcadena2LCD(char s[]);
  *
  * @param cmd es la orden de desplazamiento, usando los valores definidos al principio
  */
-void scrollLCD(Xuint32 cmd);
+void TOP_LCDBANNER_scrollLCD(Xuint32 cmd);
 
 #endif /** TOP_LCDBANNER_H */
